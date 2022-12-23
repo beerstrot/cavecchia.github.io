@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specialisti in Hamburger Goduriosi | Ca' Vecchia Beerstrot </title>
-    <meta name="description" content="Siamo specialisti in Hamburger Goduriosi e Birra Artigianale, ma quella buona">
+    <title>Riserva un Tavolo | Ca' Vecchia Beerstrot </title>
+    <meta name="description" content="Riserva un Tavolo a Ca&#x27; Vecchia Beerstrot direttamente dal nostro sitoweb">
     <meta name="author" content="Ca' Vecchia Beerstrot">
     <meta name="copyright" content="Beerstrot Copyright (c) 2023">
-    <link rel="canonical" href="https://www.beerstrot.it">
+    <link rel="canonical" href="">
     <meta name="p:domain_verify" content="ca68ebe696c4699798a5a243ca187b2d">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"/>
@@ -33,181 +33,219 @@
     	<ul class="menu1">
     		<li class="logo"><a href=""><img class="img-logo" src="assets/img/svgs/logo-completo.svg" alt="Ca' Vecchia Beerstrot"><meta itemprop="name" content="Ca' Vecchia Beerstrot"></a>
     		</li>
-    		<li class="item "><a href="prenota">Riserva un Tavolo</a></li>
-    		<li class="item "><a href="menu">Menù</a></li>
-    		<li class="item "><a href="asporto">Asporto</a></li>
-    		<li class="item "><a href="contatti">Contatti</a></li>
+    		<li class="item  attuale "><a href="prenota.html">Riserva un Tavolo</a></li>
+    		<li class="item "><a href="menu.html">Menù</a></li>
+    		<li class="item "><a href="asporto.html">Asporto</a></li>
+    		<li class="item "><a href="contatti.html">Contatti</a></li>
     		<li class="item "><a href="asporto/useraccount.html"><i class="fas fa-user"></i></a></li>
     		<li class="toggle"><a href="javascript:void(0)"><i class="fas fa-bars"></i></a></li>
     	</ul>
     </nav>
-    
-    <header class="homepage-hero" itemscope itemtype="http://schema.org/Restaurant">
-    <div class="grid-x align-center-middle text-center">
-    	<div class="small-12 cell">
-    		<h1 class="text-highlight" itemprop="description">Ca' Vecchia Beerstrot:<br>per chi ama gli hamburger goduriosi<br>e la birra artigianale</h1>
-    	</div>
-    	<div class="small-12 cell align-self-bottom extra-space">
-    		<a class="button large" href="prenota">Riserva un Tavolo</a>
-    	</div>
-    </div>
+    <header class="grid-container">
+        <div class="grid-x">
+            <div class="small-12 cell">
+                <h1 class="first-paragraph-no-hero" id="ttitle">Riserva un Tavolo</h1>
+            </div>
+        </div>
     </header>
-    <!-- fine header -->
-    <div class="panel-home-n ">
-    	<div class="grid-container">
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="small-12 cell">
-    				<h1 class="first-paragraph">Orari</h1>
-    			</div>
-    		</div>
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="small-12 medium-6 cell">
-    				<h2>Ristorante</h2>
-    				<ul class="orari-schedule no-bullet">
-    					<li><span>Lunedì:</span>chiuso</li>
-    					<li><span>Martedì:</span>chiuso</li>
-    					<li><span>Mercoledì:</span>chiuso</li>
-    					<li><span>Giovedì:</span>19.00 - 22.00</li>
-    					<li><span>Venerdì:</span>19.00 - 22.00</li>
-    					<li><span>Sabato:</span>19.00 - 23.00</li>
-    					<li><span>Domenica:</span>19.00 - 22.00</li>
-    				</ul>
-    				<span class="extra-space"><a role="button" href="https://www.beerstrot.it/prenota" class="button left">Riserva un Tavolo</a></span>
-    				<span class="sottobottone"><p><strong>Nota bene</strong>: per 15 persone o più chiama il numero<a role="button" href="tel:+390718853384"> 071&nbsp;8853384</a></p></span>
-    			</div>
-    			<div class="small-12 medium-6 cell">
-    				<h2>Asporto</h2>
-    				<ul class="orari-schedule no-bullet">
-    					<li><span>Lunedì:</span>chiuso</li>
-    					<li><span>Martedì:</span>chiuso</li>
-    					<li><span>Mercoledì:</span>chiuso</li>
-    					<li><span>Giovedì:</span>19.00 - 21.30</li>
-    					<li><span>Venerdì:</span>19.00 - 21.30</li>
-    					<li><span>Sabato:</span>19.00 - 21.30</li>
-    					<li><span>Domenica:</span>19.00 - 21.30</li>
-    				</ul>
-    				<!-- <p style="margin-bottom: 0px;" >Nota bene:</p>
-    				<ul class="disc">
-    				<li>Dato l'elevato afflusso di ospiti al ristorante, nei mesi di luglio e agosto non riusciamo a garantire asporti dopo le 19.30.</li>
-    				<li>In caso di pioggia o minaccia di pioggia il ristorante è chiuso anche per gli asporti.</li>
-    				</ul> -->
-    				<span class="extra-space"><a role="button" href="asporto" class="button left">Ordina l'Asporto Online</a></span>
-    			</div>
-    		</div>
-    	</div>
+    <!-- inizio loader -->
+    <div id="loading" hidden></div>
+    <!-- fine loader -->
+    
+    <!-- inizio dashboard -->
+    <div class="grid-container" id="notesDiv" hidden>
+        <div class="grid-x grid-margin-x grid-margin-y" >
+            <div class="small-6 medium-4 cell" id="innerNotesDiv_" >
+                <label>Seleziona giorno
+                    <input tabindex="5" id="from2" type="text">
+                </label>
+            </div>
+            <div class="small-12 cell" id="notesDiv3" >
+            </div>
+            <div class="small-12 cell" id="innerNotesDiv1" >
+            </div>
+            <div class="small-12 cell" id="innerNotesDiv2" >
+            </div>
+            <div class="small-12 medium-12 large-12 cell table-scroll" id="innerNotesDiv">
+                <table id="shiftsTable" style="table-layout: auto; width:auto; font-size: 0.875rem;" >
+                    <caption class="text-left" style="font-size: 1rem;padding-left:0rem;">Numero persone per turno</caption>
+                    <thead>
+                        <tr>
+                            <th>Turno</th>
+                            <th>Nr. Persone Totali</th>
+                            <th>Nr. Persone Prenotate online</th>
+                            <th>Nr. Persone Prenotate da Scloby</th>
+                        </tr>
+                    </thead>
+                    <tbody id="shiftsTableBody" style="text-align:center;"></tbody>
+                </table>
+                <table id="notesTable" class="extra-space" style="table-layout: auto; width:auto; font-size: 0.875rem;" >
+                    <caption class="text-left" style="font-size: 1rem; padding-left:0rem;">Prenotazioni online</caption>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Nr. Persone</th>
+                            <th>Tavolo</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                            <th>Orario</th>
+                            <th>Cani</th>
+                            <th>Seggioloni</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody id="notesTableBody" style="text-align:center;"></tbody>
+                </table>
+                <table id="anonTable" class="extra-space" style="table-layout: auto; width:auto; font-size: 0.875rem;">
+                    <caption class="text-left" style="font-size: 1rem;padding-left:0rem;">Prenotazioni da Scloby senza turno</caption>
+                    <thead>
+                        <tr>
+                            <th>Inizio</th>
+                            <th>Fine</th>
+                            <th>Nr. Persone</th>
+                            <th>Tavolo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="anonTableBody" style="text-align:left;"></tbody>
+                </table>
+                <br><br>
+            </div>
+        </div>
     </div>
-    <div class="panel-home-n">
-    	<div class="grid-container">
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="small-12 cell">
-    				<h1>Menù</h1>
-    			</div>
-    		</div>
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="medium-6 cell small-order-1 medium-order-2">
-    				<section id="fotoMenu" class="splide extra-space-image-tab-home" aria-label="Immagini menù di Ca' Vecchia Beerstrot">
-    					<div class="splide__track">
-    						<ul class="splide__list grid-margin-y">
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    						</ul>
-    					</div>
-    				</section>
-    				<br>
-    				<!-- <p class="text-center extra-spece show-for-small-only">Scorri le immagini del menù</p> -->
-    			</div>
-    			<div class="medium-6 cell small-order-2 medium-order-1">
-    				<p>A <strong>Ca' Vecchia Beerstrot</strong> siamo specialisti in Hamburger Goduriosi e Birra Artigianale, ma quella buona.</p>
-    				<p>Gli Hamburger, di nostra produzione, contengono solo carne di prima scelta e l'arte della perfetta macinatura. Per creare i nostri Hamburger utilizziamo verdure di stagione e prodotti di piccole realtà marchigiane.</p>
-    				<p>Per le Birre Artigianali, collaboriamo con micro birrifici marchigiani di comprovata qualità: Birrificio dei Castelli, Mukkeller, MC-77, Resina.</p>
-    				<a itemprop="menu" role="button " class="button" href="menu">Scopri il Menù</a>
-    			</div>
-    		</div>
-    	</div>
+    <!-- fine dashboard -->
+    <!-- inizio form -->
+    <div class="panel-home-n form">
+        <div class="grid-container">
+            <form id="form">
+                <div class="grid-x ">
+                    <div class="small-12 cell">
+                         <h6>Includi in <strong>Quante persone*</strong> anche eventuali seggioloni. Esempio: 4 persone e 2 seggioloni seleziona 6.</h6>
+                         <h6 class="extra-space-hero"><strong>* </strong> Indica un campo obbligatorio.</h6>
+                    </div>
+                    <div class="small-12 cell"><hr></div>
+                </div>
+                <div class="grid-x grid-margin-x grid-margin-y">
+                    <div class="small-6 medium-3 cell ">
+                        <label><strong>Quale giorno*</strong>
+                            <input tabindex="5" id="from" type="text" name="LNAME" class="required error" placeholder="Seleziona Giorno" readonly/>
+                        </label>
+                    </div>
+                    <div class="small-6 medium-3 cell">
+                        <label><strong>Quante persone*</strong>
+                            <select name="MMERGE4" class="required error" id="quantity" disabled>
+                                <option value="">Seleziona Numero</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="small-12 medium-4 cell">
+                        <label><strong>Quale turno*</strong>
+                            <div id="shiftGridL"></div>
+                        </label>
+                        <div class="grid-x small-up-2 required error" id="shiftGrid">
+                            <div class="cell bShift"><a class="button disabled">19.00-21.00</a></div>
+                            <div class="cell bShift"><a class="button disabled">19.30-21.30</a></div>
+                            <div class="cell bShift"><a class="button disabled">20.00-22.00</a></div>
+                            <div class="cell bShift"><a class="button disabled">20.30-22.30</a></div>
+                            <div class="cell bShift"><a class="button disabled">21.00-23.00</a></div>
+                            <div class="cell bShift"><a class="button disabled">21.30-23.00</a></div>
+                        </div>
+                        <h6>Turno: orario d'arrivo-orario in cui bisogna lasciare il tavolo</h6>
+                    </div>
+                    <div class="small-12 cell"><hr></div>
+                </div>
+                <div class="grid-x grid-margin-x grid-margin-y">
+                    <div class="small-12 medium-6 cell">
+                        <label><strong>Note</strong>
+                            <textarea maxlength="200" id="obs" placeholder="Intolleranze, accesso con sedia a rotelle, ..."></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="small-7 medium-4 cell">
+                        <label><strong>Ho bisogno di seggioloni</strong>
+                            <select name="MMERGE4" class="" id="seggiolini">
+                                <option value="0">No</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x ">
+                    <div class="small-9 medium-6 cell" >
+                        <input id="cani" type="checkbox"><label for="checkbox1">Ho uno o più cani</label>
+                    </div>
+                    <div class="small-12 cell"><hr></div>
+                </div>
+                <div class="grid-x grid-margin-x grid-margin-y">
+                    <div class="small-6 medium-4 cell">
+                        <label><strong>Nome*</strong>
+                            <input type="text" class="required error" id="name" placeholder="Nome" maxlength="20"/>
+                        </label>
+                    </div>
+                    <div class="small-6 medium-4 cell">
+                        <label><strong>Cognome*</strong>
+                            <input type="text" class="required error" id="surname" placeholder="Cognome" maxlength="20"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="small-12  medium-5 cell ">
+                        <label><strong>Email*</strong>
+                            <input type="email" class="required error email" id="email" placeholder="esempio@esempio.it" maxlength="200"/>
+                          </label>
+                    </div>
+                    <div class="small-6  medium-3 cell">
+                        <label><strong>Telefono*</strong>
+                            <input type="tel" class="required error" id="telephone" placeholder="3332221111" maxlength="35" />
+                        </label>
+                    </div>
+                    <div class="small-12 cell"><hr></div>
+                </div>
+                <div class="grid-x grid-margin-x grid-margin-y">
+                    <div class="small-12 cell" id="privacy3">
+                        <input id="privacy" type="checkbox" checked><label for="checkbox2"> Accetto la<a id="privacy2" class="required error"> privacy</a>*</label>
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="small-12 cell">
+                        <a id="prenota" role="button" class="button float-right" style="margin-bottom:0.5rem; margin-top:0.3rem;">Riserva il Tavolo</a>
+                    </div>
+                    <br>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="panel-home-n">
-    	<div class="grid-container">
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="small-12 cell">
-    				<h1>Asporto</h1>
-    			</div>
-    		</div>
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="medium-6 cell">
-    				<a role="button" href="https://www.beerstrot.it/asporto/"><img src="https://www.beerstrot.it/asset/img/medium/asporto.jpg" alt="Asporto" class="extra-space-image-tab-home"></a>
-    			</div>
-    			<div class="medium-6 cell">
-    				<p>Non hai voglia di cucinare? Stai guardando la partita da solo o con gli amici e hai voglia di mettere qualcosa sotto i denti?</p>
-    				<p>Abbiamo un menù anche per questo.</p>
-    				<a role="button" class="button" href="asporto">Ordina l'Asporto Online</a>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <div class="panel-home-n">
-    	<div class="grid-container">
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="small-12 cell">
-    				<h1>Contatti</h1>
-    			</div>
-    		</div>
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="medium-6 cell small-order-1 medium-order-2">
-    				<div class="flex-video widescreen extra-space-video-home">
-    					<video controls width="250" poster="https://www.beerstrot.it/asset/img/large/interior-look-feel.jpg">
-    						<source src="https://www.beerstrot.it/asset/video/Ca-vecchia-beerstrot.mp4" type="video/mp4">
-    					</video>
-    				</div>
-    			</div>
-    			<div class="medium-6 cell small-order-2 medium-order-1">
-    				<p>Come raggiungerci, contattarci o prenotare un tavolo.</p>
-    				<a role="button" class="button "href="contatti">Contattaci</a>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <div class="panel-home-n">
-    	<div class="grid-container">
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="small-12 cell">
-    				<h1>Dai un'occhiata</h1>
-    			</div>
-    		</div>
-    		<div class="grid-x grid-margin-x grid-margin-y">
-    			<div class="small-12 cell last-paragraph">
-    				<section id="fotoLocale" class="splide"  aria-label="Immagini di Ca' Vecchia Beerstrot">
-    					<div class="splide__track">
-    						<ul class="splide__list">
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    							<li class="splide__slide"><img src="https://picsum.photos/960/540"></li>
-    						</ul>
-    					</div>
-    				</section>
-    				<!--<p class="text-center extra-space-image-tab-home show-for-small-only">Scorri le immagini del locale</p> -->
-    			</div>
-    		</div>
-    	</div>
-    </div>
+    <!-- fine form -->
+    
+    <!-- inizio modale messaggio locale completo -->
+        <div id="myModal" class="reveal grid-x grid-margin-x grid-margin-y" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <div class="small-12 cell grid-margin-y extra-space">
+                <p class="lead extra-space" style="margin-top: 4.5rem; margin-bottom:10%;" id="modalLead">In questa data siamo al completo.</p>
+            </div>
+            <button class="close-button" data-close aria-label="Close reveal" type="button" id="close-modal">
+                <span aria-hidden="true">&#215;</span>
+            </button>
+        </div>
+    <!-- fine modale messaggio locale completo -->
+    <!-- inizio modale invio promemoria ai clienti e aggiungere/rimuovere giorni chiusura-->
+        <div id="myModal2" class="reveal grid-x grid-margin-x grid-margin-y" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    
+            <div class="small-12 cell grid-margin-x extra-space" style="margin-bottom:10%">
+                <div class="lead extra-space" id="modalLead2">Vuoi inviare il promemoria della prenotazione ai clienti?</div>
+                <a role="button" id="no" class="button small tiny right" style="margin-top: 5px;">No, non inviare</a>
+                <a role="button" id="yes" class="button small tiny left" style="margin-top: 5px;">Sì, Invia</a>
+            </div>
+            <button class="close-button" data-close aria-label="Close reveal" type="button" id="close-modal">
+                <span aria-hidden="true">&#215;</span>
+            </button>
+        </div>
+    <!-- fine modale invio promemoria ai clienti e aggiungere/rimuovere giorni chiusura-->
+    
+    
 
     <footer class="panel-footer">
     	<div class="grid-container">

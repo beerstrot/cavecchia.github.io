@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> | Ca' Vecchia Beerstrot </title>
-    <meta name="description" content="">
+    <title>Account | Ca' Vecchia Beerstrot </title>
+    <meta name="description" content="i tuoi dati per l&#x27;asporto e le prenotazioni">
     <meta name="author" content="Ca' Vecchia Beerstrot">
     <meta name="copyright" content="Beerstrot Copyright (c) 2023">
     <link rel="canonical" href="">
@@ -33,72 +33,80 @@
     	<ul class="menu1">
     		<li class="logo"><a href="../"><img class="img-logo" src="../assets/img/svgs/logo-completo.svg" alt="Ca' Vecchia Beerstrot"><meta itemprop="name" content="Ca' Vecchia Beerstrot"></a>
     		</li>
-    		<li class="item "><a href="../prenota">Riserva un Tavolo</a></li>
-    		<li class="item "><a href="../menu">Menù</a></li>
-    		<li class="item "><a href="../asporto">Asporto</a></li>
-    		<li class="item "><a href="../contatti">Contatti</a></li>
+    		<li class="item "><a href="../prenota.html">Riserva un Tavolo</a></li>
+    		<li class="item "><a href="../menu.html">Menù</a></li>
+    		<li class="item "><a href="../asporto.html">Asporto</a></li>
+    		<li class="item "><a href="../contatti.html">Contatti</a></li>
     		<li class="item "><a href="../asporto/useraccount.html"><i class="fas fa-user"></i></a></li>
     		<li class="toggle"><a href="javascript:void(0)"><i class="fas fa-bars"></i></a></li>
     	</ul>
     </nav>
-    <div class="grid-container">
+    <div class="grid-container panel-home-n">
         <header class="grid-x grid-margin-x">
-            <div class="small-12 cell extra-space">
-                <h1 class="first-no-hero" id="ttitle">Tavolo Riservato. Grazie</h1>
-                <br>
+            <div class="small-12 cell">
+                <h1 class="first-paragraph-no-hero" id="">Account</h1>
             </div>
         </header>
-    </div>
-    <!-- inizio loader -->
-    <div id="loading" hidden></div>
-    <!-- fine loader -->
-    <div class="panel-home-2n">
-        <div class="grid-container">
-            <div class="grid-x grid-margin-x grid-margin-y">
-                <div class="small-12 cell">
-                    <fieldset class="fieldset">
-                         <legend id="tlegend">Dettaglio prenotazione </legend>
-                            <ul class="no-bullet" id="infoList">
-                                <li><strong>Nome: </strong><span id="name"></span></li>
-                                <li><strong>Email: </strong><span id="email"></span></li>
-                                <li><strong>Telefono: </strong><span id="telephone"></span></li>
-                                <br>
-                                <li><strong>Quale giorno: </strong><span id="day"></span></li>
-                                <li><strong>Orario arrivo: </strong><span id="time1"></span></li>
-                                <li><strong>Orario in cui lasciare il tavolo: </strong><span id="time2"></span></li>
-                                <li><strong>Numero persone: </strong><span id="people"></span></li>
-                                <br>
-                                <li><strong>Note: </strong><span id="note"></span></li>
-                                <li><strong>Seggioloni aggiunti: </strong><span id="segg"></span></li>
-                                <li><strong>Ho un cane o più: </strong><span id="dog"></span></li>
-                            </ul>
-                    </fieldset>
-                </div>
-            </div>
-            <div class="grid-x  grid-margin-x extra-space-hero" style="margin-bottom:1.5rem;">
-                <div class="small-12 medium-6  cell" >
-                    <a role="button" id="cancel" class="button float-left">Cancella</a>
-                    <a role="button" id="modify" class="button float-right">Modifica</a>
-                    <a role="button" id="new" class="button float-right" href="./">Fai una nuova prenotazione</a>
-                </div>
+    <!-- inizio form -->
+        <div class="grid-x grid-margin-x">
+            <div class="small-12 cell">
+                <h2>I miei dati</h2>
             </div>
         </div>
-    </div>
-    <!-- inizio modale messaggio vuoi cancellare la prenotazione -->
-        <div id="myModal" class="reveal " data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-            <p id="modalText"></p>
-                <div class="grid-x grid-margin-x grid-margin-y">
-                    <div class="small-12 medium-12 large-12 cell extra-space" style="margin-bottom:4rem;">
-                        <p class="lead" id="modalLead">Vuoi cancellare la prenotazione?</p>
-                        <a role="button" id="no" class="button small right" style="margin-top: 5px;">No, non cancellare</a>
-                        <a role="button" id="yes" class="button small left" style="margin-top: 5px;">Sì, cancella</a>
-                    </div>
-                </div>
-            <button class="close-button" data-close aria-label="Close reveal" type="button" id="close-modal">
-                <span aria-hidden="true">&#215;</span>
-            </button>
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="small-6 medium-4 large-4 cell">
+                <label><strong>Nome*</strong>
+                    <input type="text" class="required error" id="name" placeholder="Andrea" maxlength="20"/>
+                </label>
+            </div>
+            <div class="small-6 medium-4 large-4 cell">
+                <label><strong>Cognome*</strong>
+                    <input type="text" class="required error" id="surname" placeholder="Tagliazucchi" maxlength="20"/>
+                </label>
+            </div>
         </div>
-    <!-- fine modale messaggio vuoi cancellare la prenotazione -->
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="small-10  medium-5 large-5 cell">
+                <label><strong>Email (la tua username) non modificabile*</strong>
+                    <input type="email" class="required error email" id="disabled" placeholder="esempio@esempio.it" maxlength="200"/>
+                  </label>
+            </div>
+            <div class="small-6  medium-3 large-3 cell">
+                <label><strong>Telefono*</strong>
+                    <input type="tel" class="required error" id="telephone" placeholder="3332221111" maxlength="35" />
+                </label>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="small-12 cell">
+                <a id="" role="button" class="button">Modifica dati</a>
+            </div>
+        </div>
+        <hr>
+        <div class="grid-x grid-margin-x">
+            <div class="small-12 cell">
+                <h2>Cambia password</h2>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="small-6  medium-5 large-5 cell">
+                <label><strong>Vecchia password</strong>
+                    <input type="email" class="required error password" id="" placeholder=""/>
+                </label>
+            </div>
+            <div class="small-6  medium-5 large-5 cell">
+                <label><strong>Nuova password</strong>
+                    <input type="email" class="required error password" id="" placeholder=""/>
+                </label>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="small-12 cell">
+                <a id="" role="button" class="button">Modifica password</a>
+            </div>
+        </div>
+    <!-- fine form -->
+    </div>
 
     <footer class="panel-footer">
     	<div class="grid-container">
