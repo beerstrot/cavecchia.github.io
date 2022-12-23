@@ -65,4 +65,10 @@
 @include motion-ui-animations;
 
 // Custom import
+@import "global/typography";
+@import "components/navbar";
+@import "components/splide";
+@import "components/menu-asporto";
+@import "components/prenota";
 @import "custom";
+

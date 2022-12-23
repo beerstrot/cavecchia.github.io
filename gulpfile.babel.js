@@ -94,7 +94,7 @@ function sassBuild() {
     // Autoprefixer
     autoprefixer(),
     // UnCSS - Uncomment to remove unused styles in production
-    // PRODUCTION && uncss(UNCSS_OPTIONS),
+    PRODUCTION && uncss(UNCSS_OPTIONS),
   ].filter(Boolean);
 
   return gulp.src('src/assets/scss/app.scss')

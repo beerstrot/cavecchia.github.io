@@ -2,9 +2,11 @@
 /*===================================================================
 bordo per debugging
 ===================================================================*/
-
-// .cell {
+// .grid-x {
 //     border: 1px solid green;
+// }
+// .cell {
+//     border: 1px solid red;
 // }
 // .grid-margin-x {
 //     border: 1px solid red;
@@ -34,17 +36,17 @@ logo - cards
     }
 }
 
-.img-cards {
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-}
+// .img-cards {
+//     margin-top: 0.5rem;
+//     margin-right: 1rem;
+// }
 
 
 $panel-2n-bg: gray;
 $footer-background-color: gray;
 
 /*===================================================================
-margini per allineare le aside e i button
+margini
 ===================================================================*/
 
 .extra-space-hero {
@@ -62,13 +64,7 @@ margini per allineare le aside e i button
 .extra-space-footer {
     margin-top: 4rem;
 }
-.extra-space-image-tab-home {
-    margin-top: 0.5rem;
-    @include breakpoint (small only) {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-}
+
 .extra-space-image-tab-contatti {
     margin-top: 3.9rem;
     @include breakpoint (small only) {
@@ -81,12 +77,7 @@ margini per allineare le aside e i button
         margin-top: 1rem;
     }
 }
-.extra-space-video {
-    margin-top: 0.35rem;
-    @include breakpoint (small only) {
-        margin-top: 1rem;
-    }
-}
+
 .extra-space-aside-tab-immagini {
     margin-top: 1.25rem;
 }
@@ -150,12 +141,12 @@ homepage
 
 .panel-home-n {
     margin-bottom: 0;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
     background-color: $white;
     @include breakpoint (small only) {
         margin-bottom: 0;
-        padding-top: 2rem;
+        padding-top: 0rem;
         padding-bottom: 3rem;
     }
 }
@@ -163,8 +154,9 @@ homepage
 .panel-home-2n {
     margin-bottom: 0;
     padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     background-color: $very-light-gray;
+    //background-color: white;
     @include breakpoint (small only) {
         margin-bottom: 0;
         padding-top: 2rem;
@@ -176,17 +168,17 @@ homepage
     margin-top: 1rem;
 }
 
-.panel-asporto{
-    margin-bottom: 0;
-    padding-top: 3rem;
-    padding-bottom: 0rem;
-    background-color: $white;
-    @include breakpoint (small only) {
-        margin-bottom: 0;
-        padding-top: 2rem;
-        padding-bottom: 0rem;
-    }
-}
+// .panel-asporto{
+//     margin-bottom: 0;
+//     padding-top: 3rem;
+//     padding-bottom: 0rem;
+//     background-color: $white;
+//     @include breakpoint (small only) {
+//         margin-bottom: 0;
+//         padding-top: 2rem;
+//         padding-bottom: 0rem;
+//     }
+// }
 
 .homepage-hero {
     background: url('https://www.beerstrot.it/asset/img/large/background-home.gif') center center;
@@ -198,6 +190,7 @@ homepage
         }
 
     h1 {
+        text-transform: none;
         font-size: 4rem;
         color: white;
         font-weight: 500;
@@ -208,6 +201,7 @@ homepage
             font-size: 2rem;
             line-height: 3rem;
             margin-top: 2rem;
+            padding: 0rem 0.5rem;
         }
         @media #{$medium-only} {
             font-size: 2rem;
@@ -231,10 +225,10 @@ homepage
 .asporto-hero {
     background: url('https://www.beerstrot.it/asset/img/large/asporto-background.jpg') no-repeat center center;
     background-size: cover;
-    height: 90%;
+    height: 40rem;
     overflow: hidden;
     @include breakpoint (small only) {
-            height: 60%;
+            height: 20rem;
         }
     h1 {
         font-size: 4rem;
@@ -271,191 +265,50 @@ Chi Siamo
 //         padding-bottom: 3rem;
 //     }
 // }
-.by-line-chi-siamo {
-    font-style: italic;
-    font-size: 0.8rem;
-    line-height: 0.5rem;
-    padding-bottom: 1rem;
-    line-height: 1.4rem;
-}
-.extra-space-recensione {
-    margin-top: 2.5rem;
-}
+// .by-line-chi-siamo {
+//     font-style: italic;
+//     font-size: 0.8rem;
+//     line-height: 0.5rem;
+//     padding-bottom: 1rem;
+//     line-height: 1.4rem;
+// }
+// .extra-space-recensione {
+//     margin-top: 2.5rem;
+// }
 
-.panel-border {
-    border: 1px solid;
-    border-color: white;
-}
+// .panel-border {
+//     border: 1px solid;
+//     border-color: white;
+// }
 
-/*===================================================================
-menupage text
-===================================================================*/
-#menupage-text {
-    h1 {
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-        margin-top: 0.5rem;
-        text-align: center;
-        &:first-child {
-            margin-top: 1.5rem;
-        }
-        @include breakpoint (small only) {
-            margin-bottom: 1.2rem;
-            margin-top: 1.5rem;
-            text-align: left;
-        }
-    }
-     h2 {
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-        text-align: center;
-        line-height: 1.6rem;
-        font-weight: bold;
-        &:first-child {
-            margin-top: 2.8rem;
-        }
-        @include breakpoint (small only) {
-            font-size: 1.35em;
-            margin-bottom: 1.8rem;
-            margin-top: 1.5rem;
-            text-align: center;
-            font-weight: bold;
-        }
-    }
-    h3 {
-        font-size: 1.25rem;
-        font-weight: 600;
-        margin-bottom: 0;
-        margin-top: 0;
-        @include breakpoint (small only) {
-            font-size: 1.125rem;
-        }
-    }
-    h4 {
-        font-size: 1.125rem;
-        margin-top: 1rem;
-        margin-bottom: 1.25rem;
-    }
-    h5 {
-        font-size: 1.15rem;
-    }
-    h6 {
-        font-size: 1rem;
-    }
-    // li>p {
-    //     font-size: 1.125rem;
-    //     margin-bottom: 0rem;
-    //     @include breakpoint (small only) {
-    //         font-size: 1.1rem;
-    //         //line-height: 1.5rem;
-
-    //     }
-    // }
-    .price {
-        font-size: 1rem;
-        margin-left: 1.2rem;
-        font-weight: normal;
-        @include breakpoint (small only) {
-            margin-left: 0.8rem;
-        }
-   }
-    p small {
-        font-size: 0.85rem;
-        //font-style: italic;
-        line-height: 1.25rem;
-        display: block;
-        margin-top: 0.3rem;
-   }
-   ul li {
-    padding-bottom: 2.7rem;
-   }
-
-   //tabs menu
-    ul.tabs {
-        li {
-            float: none !important;
-            display: inline-block;
-            margin-top: 1rem;
-            margin-bottom: 0rem;
-            padding:0;
-            //tab design
-
-            // background-color: red;
-            // border: 1px $primary-color solid;
-            // color: red;
-        }
-        @include breakpoint (small only) {
-        text-align: center;
-        }
-
-        li.active a {
-            color: $primary-color;
-        }
-    }
-}
-
-.panel-menu-n {
-    margin-bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    background-color: $white;
-    @include breakpoint (small only) {
-        margin-bottom: 0;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-}
-.panel-menu-2n {
-    margin-bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    background-color: $panel-2n-bg;
-    @include breakpoint (small only) {
-        margin-bottom: 0;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-}
-.panel-promotion {
-    margin-bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    background-color: $panel-2n-bg;
-    @include breakpoint (small only) {
-        margin-bottom: 0;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-}
 
 
 /*===================================================================
 team detail page
 ===================================================================*/
 
-#image-background-team {
-    position: relative;
-    margin-bottom: 2rem;
-    width: 100%; /* for IE 6 */
-    @include breakpoint (small only) {
-        margin-bottom: 1.5rem;
-    }
-    .user-image {
-        border: 10px solid white;
-        position: absolute;
-        width: 20%;
-        top: 70%;
-        left: 0%;
-        @include breakpoint (small only) {
-            width: 30%;
-            top: 65%;
-        }
-    }
-}
+// #image-background-team {
+//     position: relative;
+//     margin-bottom: 2rem;
+//     width: 100%; /* for IE 6 */
+//     @include breakpoint (small only) {
+//         margin-bottom: 1.5rem;
+//     }
+//     .user-image {
+//         border: 10px solid white;
+//         position: absolute;
+//         width: 20%;
+//         top: 70%;
+//         left: 0%;
+//         @include breakpoint (small only) {
+//             width: 30%;
+//             top: 65%;
+//         }
+//     }
+// }
 
 /*===================================================================
-footer header style
+footer style
 ===================================================================*/
 
 
@@ -464,36 +317,38 @@ footer header style
     padding-top: 2rem;
     padding-bottom: 0rem;
     background-color: $light-gray;
+    h1 {
+        font-size: 1.25rem;
+        @include breakpoint (small only) {
+        font-size: 1.125rem;
+        }
+    }
     p {
         font-size: 1rem;
         @include breakpoint (small only) {
-        font-size: 0.83rem;
+        font-size: 0.9rem;
         }
     }
 }
-//orari footer
+
+/*===================================================================
+orari footer e home page
+===================================================================*/
 
 .testo-orari {
     font-size: 1rem;
     @include breakpoint (small only) {
-        font-size: 0.83rem;
-        }
+        font-size: 0.9rem;
+    }
 }
-
-
-$topbar-menu-link-color: white;
-
 .orari {
     display: inline-block;
     float: right;
     margin-right: 1rem;
-
     @include breakpoint (large up) {
         margin-right: 4rem;
     }
 }
-
-
 .orari-schedule {
     white-space: nowrap;
 }
@@ -502,15 +357,13 @@ $topbar-menu-link-color: white;
     width: 90px;
     margin-right: 20px;
 }
-
-
 .orari-footer-schedule {
     white-space: nowrap;
 }
-.orari-footer-schedule{
+.orari-footer-schedule {
     font-size: 1rem;
     @include breakpoint (small only) {
-        font-size: 0.83rem;
+        font-size: 0.9rem;
     }
 }
 .orari-footer-schedule li span {
@@ -521,44 +374,42 @@ $topbar-menu-link-color: white;
         width: 60px;
         margin-right: 20px;
     }
-
 }
 
-.panel-hr {
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    background-color: $footer-background-color;
-    hr {
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-        border-color: $white;
-    }
-}
-.navbar-footer-font {
-    font-size: 0.9375rem;
-    line-height: 2.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    a {
-        color: $topbar-menu-link-color;
-    }
-    a:hover {
-        color: scale-color($topbar-menu-link-color, $lightness: 30%);
-    }
-}
-
-ul .icon-font-style {
-    font-size: 1rem;
-}
-$gainsboro: #333;
-$navbar-color: red;
-$jet: #333;
+// .panel-hr {
+//     margin-bottom: 0;
+//     margin-top: 0;
+//     padding-top: 0rem;
+//     padding-bottom: 0rem;
+//     background-color: $footer-background-color;
+//     hr {
+//         margin-bottom: 0;
+//         margin-top: 0;
+//         padding-top: 0rem;
+//         padding-bottom: 0rem;
+//         border-color: $white;
+//     }
+// }
 
 
+$topbar-menu-link-color: white;
+
+// .navbar-footer-font {
+//     font-size: 0.9375rem;
+//     line-height: 2.2rem;
+//     margin-top: 1.5rem;
+//     margin-bottom: 1.5rem;
+//     a {
+//         color: $topbar-menu-link-color;
+//     }
+//     a:hover {
+//         color: scale-color($topbar-menu-link-color, $lightness: 30%);
+//     }
+// }
+
+// ul .icon-font-style {
+//     font-size: 1rem;
+// }
 
 /*===================================================================
 icon style
@@ -592,38 +443,38 @@ i {
 footer
 ===================================================================*/
 
-@mixin vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+// @mixin vertical-align {
+//   position: relative;
+//   top: 50%;
+//   -webkit-transform: translateY(-50%);
+//   -ms-transform: translateY(-50%);
+//   transform: translateY(-50%);
+// }
 
-.footer {
-  text-align: center;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  .links a {
-    list-style: none;
-    color: $topbar-menu-link-color;
-    font-size: 0.9375rem;
-    line-height: 3rem;
-    padding: 0rem 0 0rem;
-    margin: 0;
-    &::after {
-      content: "•";
-      padding: 0 0.4rem 0 0.8rem;
-    }
-    &:last-child::after {
-      content: "";
-      padding: 0 0.4rem 0 0.8rem;
-    }
-    a:hover {
-        color: scale-color($topbar-menu-link-color, $lightness: 30%);
-    }
-  }
-}
+// .footer {
+//   text-align: center;
+//   margin-top: 1.5rem;
+//   margin-bottom: 1.5rem;
+//   .links a {
+//     list-style: none;
+//     color: $topbar-menu-link-color;
+//     font-size: 0.9375rem;
+//     line-height: 3rem;
+//     padding: 0rem 0 0rem;
+//     margin: 0;
+//     &::after {
+//       content: "•";
+//       padding: 0 0.4rem 0 0.8rem;
+//     }
+//     &:last-child::after {
+//       content: "";
+//       padding: 0 0.4rem 0 0.8rem;
+//     }
+//     a:hover {
+//         color: scale-color($topbar-menu-link-color, $lightness: 30%);
+//     }
+//   }
+// }
 
 /*===================================================================
 prenota
@@ -672,20 +523,61 @@ input:not([type])[disabled], input:not([type])[readonly], fieldset[disabled] inp
 }
 
 //Loader
+// #loading {
+//   display: none;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 100;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: rgba(255, 255, 255, 0.9);
+//   background-image: url('https://www.beerstrot.it/asset/img/loading1.gif');
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   text-align: center;
+//   font-size: 24px;
+// }
+
 #loading {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
-  background-image: url('https://www.beerstrot.it/asset/img/loading1.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  font-size: 24px;
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: rgba(255,255,255,0.8);
+    z-index:9999;
+    display:none;
+}
+
+
+@-webkit-keyframes spin {
+    from {-webkit-transform:rotate(0deg);}
+    to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+#loading::after {
+   content:'';
+    display:block;
+    position:absolute;
+    left:44%;
+    top:40%;
+    width:3rem;
+    height:3rem;
+    border-style:solid;
+    border-color:$primary-color;
+    border-top-color:transparent;
+    border-width: .3rem;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
 }
 
 
@@ -703,151 +595,9 @@ accordion domande frequenti
 ===================================================================*/
 
 
-/*===================================================================
-navbar menu
-===================================================================*/
-
-nav {
-    background: white;
-    border-bottom: 2.5px #666666 solid;
-    padding: 0 5px 0 0px;
-}
-
-#hamburger {
-    a {
-        color: $jet;
-        text-decoration: none;
-    }
-
-    .menu1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        list-style-type: none;
-        margin:0px 0px 0px 15px;
-        padding:0.2rem 0rem 0.2rem 0rem;
-    }
-
-    .logo {
-        flex: 2;
-        order: 1;
-        font-size: 1,125rem;
-        padding: 7.5px 20px 7.5px 0;
-    }
-
-    .item {
-        padding: 10px 20px 10px 10px;
-        order: 3;
-        width: 100%;
-        //padding: 10px 0px;
-        text-align: left;
-        display: none;
-        //padding-left: 10px;
-    }
-
-    .button {
-        order: 2;
-    }
-
-    .item.button {
-        margin-top: 16px;
-        margin-bottom: 12px;
-        margin-right: 10px;
-    }
-
-    .active .item {
-        display: block;
-    }
-
-//aumenta area cliccabile del button
-    .button a {
-        position: relative;
-        z-index: 50;
-    }
-
-    .button a:before {
-        position: absolute;
-        content: '';
-        top: -18px;
-        right: -18px;
-        left: -18px;
-        bottom: -18px;
-        //outline: 2px solid yellow;
-        z-index: 40;
-    }
-
-    .item:not(.button) a:hover,
-        .item a:hover::after {
-        color: $primary-color;
-    }
-    .toggle {
-        flex: 1;
-        text-align: right;
-        order: 1;
-        font-size: 1.25rem;
-    }
-
-    .menu1 li a {
-        display: block;
-        padding: 5px 5px;
-    }
-
-    .button a {
-        display:block;
-        color: $white;
-        font-size: 1.25rem;
-    }
-
-    .attuale a {
-        color: $primary-color;
-    }
-
-    li.attuale.button {
-        background-color: rgb(134, 7, 10);
-    }
-    li.attuale.button a {
-        color: white;
-    }
-
-/* Desktop menu */
-    @media all and (min-width: 60em) {
-        .menu1 {
-            align-items: flex-start;
-            justify-content: center;
-            flex-wrap: nowrap;
-            margin:0 15px;
-        }
-
-        .item {
-            position: relative;
-            display: block;
-            width: auto;
-            padding: 20px 20px;
-            margin-top:24px;
-        }
-
-        .item.button {
-            width: auto;
-            display: block;
-            margin-top: 24px;
-            margin-bottom:0px;
-        }
-        .button a {
-            display:block;
-            color: $white;
-            margin-top:1px;
-            font-size: 1.25rem;
-        }
-
-        .toggle {
-            display: none;
-        }
-    }
-}
 
 /*===================================================================
-modal
+modal and cart
 ===================================================================*/
 
 // .reveal {
@@ -875,6 +625,11 @@ modal
     transform:translate(-50%, -50%);
     max-height: calc(100vh - 80px);
     //border-radius: 10px;
+}
+
+.reveal-padding {
+    padding-right: 2rem;
+    padding-right: 2rem;
 }
 
 .close-button.medium, .close-button {
@@ -926,9 +681,39 @@ modal
     padding-bottom: 0.2rem;
     padding-top: 1rem;
 }
+.main-header-nomodal {
+    position:sticky;
+    top:70;
+    margin-top:-1px;
+    background-color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 0.8rem;
+}
+.main-header-carrello-large {
+    position:sticky;
+    top:0;
+    margin-top:0px;
+    margin-bottom:0px;
+    background-color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    overflow: hidden;
+}
 .main-content {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+.main-content-nomodal {
+    padding-left: 0rem;
+    padding-right: 0rem;
     padding-top: 0;
     margin-top: 0;
 }
@@ -969,15 +754,18 @@ modal
 
 .fixed_box {
     position:sticky;
+    position:-webkit-sticky;
     //background-color: yellow;
-    max-height: calc(100vh - 100px);
-    //overflow-x:hidden;
+    height:100%;
+    max-height: calc(100vh - 120px);
     overflow-y:auto;
-    margin: 0;
-    top:60;
-    bottom:0;
-    right:0;
+    margin-top:10rem;
+    top:115px;
+    //bottom:0;
+    //right:0;
+    margin-bottom: 1rem;
 }
+
 
 
 .button.expanded1 {
@@ -991,6 +779,15 @@ modal
     margin-top: 2rem;
     @include breakpoint (small only) {
         margin-top: 1.5rem;
+    }
+}
+
+.extra-space-button-sticky {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    @include breakpoint (small only) {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
     }
 
 }
@@ -1110,81 +907,9 @@ $input-number-size-carrello: 2rem;
     }
 
 }
-/*===================================================================
-sticky e magellan
-===================================================================*/
-// .sticky1 {
-//   position: fixed;
-//   top: 0;
-//   padding-top:10px;
-//   padding-bottom: 10px;
-//   width: 100%;
-//   background-color: white;
-// }
-
-.sticky {
-    width: 100%;
-    background-color: white;
-    padding-top:10px;
-    padding-bottom: 10px;
-    }
-
-a.is-active {
-    background: $primary-color;
-    color: #fefefe;
-    //font-size: 14px;
-}
-
-
-// infinite scroll
-.hs {
-    display: grid;
-    grid-gap: 0.5rem;
-    grid-auto-flow: column;
-    grid-auto-columns: min-content;
-    white-space: nowrap;
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-}
-
-.hs:before,
-.hs:after {
-    content: '';
-    width: 1rem;
-}
-
-.hs > li {
-    scroll-snap-align: start;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    @include breakpoint (small only) {
-        padding-top: 0.8rem;
-        padding-bottom: 1.2rem;
-        //border-bottom: 1px solid $primary-color;
-    }
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.no-scrollbar {
-    scrollbar-width: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-
 
 .shadow-carrello {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
 }
-
-/*===================================================================
-slider
-===================================================================*/
 

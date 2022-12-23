@@ -1,0 +1,185 @@
+---
+title: Menù
+description: Gli Hamburger, di nostra produzione, contengono solo carne di vacca marchigiana di prima scelta e l'arte della perfetta macinatura. Per creare i nostri Hamburger utilizziamo verdure di stagione e prodotti di piccole realtà marchigiane.
+canonical:
+---
+<img class="image-hero" src="https://www.beerstrot.it/asset/img/large/menu.jpg" alt="Ca' Vecchia Beerstrot Hamburger"/>
+<div class="grid-container">
+	<div class="grid-x grid-margin-x" >
+		<div class="small-12 cell">
+			<h1 class="first-paragraph">{{title}} <small>(Coperto 1,5)</small></h1>
+			<button onclick="toggle_text()" class="button" id="showImage">Mostra immagini</button>
+		</div>
+	</div>
+</div>
+<div id="magellanStickyTop" class="grid-container">
+	<div class="grid-x grid-margin-x">
+		<div class="small-12 cell" data-sticky-container data-magellan data-offset="30">
+			<ul class="menu sticky hs no-scrollbar" data-sticky data-anchor="magellanStickyTop" data-options="marginTop:0;" data-sticky-on="small" style="padding:0 0rem; margin-top:0;">
+				<li><a href="#sushi">Sushi</a></li>
+				<li><a href="#stuzzicare">Per Stuzzicare</a></li>
+				<li><a href="#hamburgerNoNavbar">Hamburger</a></li>
+				<li><a href="#carne">Carni</a></li>
+				<li><a href="#dolce">Dolci</a></li>
+				<li><a href="#birra">Birra</a></li>
+				<li><a href="#vino">Vino</a></li>
+				<li><a href="#bevanda">Bevande</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="menupage-text">
+		<section>
+			<div class="grid-x grid-margin-x grid-margin-y" id="sushi" data-magellan-target="sushi" >
+				<div class="small-12 cell">
+					<h2>Sushi</h2>
+					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x">
+						{{#repeat 10}}
+						<div class="cell">
+							<div class="card">
+								<div class="card-section">
+									<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
+									<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+									<p>Il più tipico street food marchigiano e cavoli a merenda
+									<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+								</div>
+							</div>
+						</div>
+						{{/repeat}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="grid-x grid-margin-x grid-margin-y" id="stuzzicare" data-magellan-target="stuzzicare" >
+				<div class="small-12 cell">
+					<h2>Per Stuzzicare</h2>
+					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#repeat 9}}
+						<div class="cell">
+							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
+							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+							<p>Il più tipico street food marchigiano
+							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+						</div>
+						{{/repeat}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="grid-x grid-margin-x grid-margin-y" id="hamburgerNoNavbar" data-magellan-target="hamburgerNoNavbar">
+				<div class="small-12 cell">
+					<h2>Hamburger<small>Serviti con patate fritte e a cottura media</small></h2>
+					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#repeat 18}}
+						<div class="cell">
+							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
+							<h3>Beerstrot<span class="price">11,9 / doppio 15,9</span></h3>
+							<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit <br>
+							<small>Contiene: Glutine, Latte, Uova</small></p>
+						</div>
+						{{/repeat}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="grid-x grid-margin-x grid-margin-y" id="carne" data-magellan-target="carne">
+				<div class="small-12 cell">
+					<h2>Carne</h2>
+					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#repeat 2}}
+						<div class="cell">
+							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
+							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+							<p>Il più tipico street food marchigiano
+							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+						</div>
+						{{/repeat}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="grid-x grid-margin-x grid-margin-y" id="dolce" data-magellan-target="dolce">
+				<div class="small-12 cell">
+					<h2>Dolci<br><small>Fatti in casa</small></h2>
+					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#repeat 4}}
+						<div class="cell">
+							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
+							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+							<p>Il più tipico street food marchigiano
+							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+						</div>
+						{{/repeat}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="grid-x grid-margin-x grid-margin-y" id="birra" data-magellan-target="birra">
+				<div class="small-12 cell">
+					<h2>Birra artigianale alla spina<br><small>Piccola 4 | Media 6 | Caraffa 12</small></h2>
+					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#repeat 6}}
+						<div class="cell">
+							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
+							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+							<p>Il più tipico street food marchigiano
+							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+						</div>
+						{{/repeat}}
+					</div>
+				</div>
+				<div class="small-12 cell">
+					<h2>Birra artigianale in bottiglia</h2>
+					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#repeat 7}}
+						<div class="cell">
+							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
+							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+							<p>Il più tipico street food marchigiano
+							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+						</div>
+						{{/repeat}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="grid-x grid-margin-x grid-margin-y" id="vino" data-magellan-target="vino">
+				<div class="small-12 cell">
+					<h2>Vino</h2>
+					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#repeat 6}}
+						<div class="cell">
+							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
+							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+							<p>Il più tipico street food marchigiano
+							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+						</div>
+						{{/repeat}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="grid-x grid-margin-x grid-margin-y" id="bevanda" data-magellan-target="bevanda">
+				<div class="small-12 cell">
+					<h2>Bevande</h2>
+					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#repeat 6}}
+						<div class="cell">
+							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
+							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+							<p>Il più tipico street food marchigiano
+							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+						</div>
+						{{/repeat}}
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

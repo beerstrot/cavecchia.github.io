@@ -1,0 +1,580 @@
+---
+title: Asporto Online
+description: Non hai voglia di cucinare? Stai guardando la partita da solo o con gli amici e hai voglia di mettere qualcosa fra i denti? Ordina l'Asporto online
+canonical:
+---
+<header class="asporto-hero"itemscope itemtype="http://schema.org/Restaurant"></header>
+<div class="grid-container" data-sticky-container>
+	<div class="grid-x grid-margin-x">
+		<div class="medium-12 large-12 cell">
+			<h1 class="first-paragraph">{{title}}</h1>
+			<p>Dal <strong>Giovedì</strong> alla <strong>Domenica</strong>.<br>Dalle <strong>19:00</strong> alle <strong>21:30</strong>.</p>
+		</div>
+	</div>
+</div>
+<div id="magellanStickyTop" class="grid-container">
+	<div class="grid-x grid-margin-x">
+		<div class="small-12 cell" data-sticky-container data-magellan data-offset="30">
+			<ul class="menu sticky hs no-scrollbar" data-sticky data-anchor="magellanStickyTop" data-options="marginTop:0;" data-sticky-on="small" style="padding:0 0rem; margin-top:0;">
+				<li><a href="#sushi">Sushi</a></li>
+				<li><a href="#stuzzicare">Per Stuzzicare</a></li>
+				<li><a href="#hamburgerNoNavbar">Hamburger</a></li>
+				<li><a href="#carne">Carni</a></li>
+				<li><a href="#dolce">Dolci</a></li>
+				<li><a href="#birra">Birra</a></li>
+				<li><a href="#vino">Vino</a></li>
+				<li><a href="#bevanda">Bevande</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="menupage-text">
+		<div class="grid-x grid-margin-x ">
+			<div class="small-12 large-8 cell">
+				<section>
+					<div class="grid-x grid-margin-x grid-margin-y" id="sushi" data-magellan-target="sushi" >
+						<div class="small-12 cell">
+							<h2>Sushi</h2>
+							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y" id="ecommerce-button-top">
+								{{#repeat 10}}
+								<div class="cell">
+									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+									<div class="card">
+										<div class="card-section">
+											<img src="https://picsum.photos/1920/1080">
+											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+											<p>Il più tipico street food marchigiano
+											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+											<button class="button small" data-open="oliveAscolana">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal" id="oliveAscolana" data-reveal>
+										<button class="close-button close-button1" data-close aria-label="Close reveal" type="button">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="https://www.beerstrot.it/asset/img/large/battuto-vitello.jpg" style="margin-top:-3rem;">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">close-button sempre sopra</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa</p>
+											<p><small>Allergeni: Glutine, Uova, Latte</small></p>
+											<label><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="husker">Molto al sangue</option>
+													<option value="starbuck">Al sangue</option>
+													<option value="apollo">Ben cotta</option>
+												</select>
+											</label>
+											<label><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+										</div>
+										<footer class="main-footer">
+										    <div class="input-group input-number-group">
+											  	<div class="input-group-button">
+											    	<span class="input-number-decrement">&ndash;</span>
+											  	</div>
+											  	<input class="input-number" type="button" value="1" min="0" max="30">
+											  	<div class="input-group-button">
+											    	<span class="input-number-increment">&plus;</span>
+											  	</div>
+											</div>
+											<a href="#" class="button expanded1  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 5,9</span>
+											</a>
+										</footer>
+									</div>
+								</div>
+								{{/repeat}}
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="grid-x grid-margin-x grid-margin-y" id="stuzzicare" data-magellan-target="stuzzicare" >
+						<div class="small-12 cell">
+							<h2>Per Stuzzicare</h2>
+							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+								{{#repeat 9}}
+								<div class="cell">
+									<div class="card">
+										<div class="card-section">
+											<img src="https://picsum.photos/1920/1080">
+											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+											<p>Il più tipico street food marchigiano
+											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+											<button class="button small" data-open="oliveAscolana">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal" id="oliveAscolana" data-reveal>
+										<button class="close-button close-button1" data-close aria-label="Close reveal" type="button">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="https://www.beerstrot.it/asset/img/large/battuto-vitello.jpg" style="margin-top:-3rem;">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">close-button sempre sopra</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa</p>
+											<p><small>Allergeni: Glutine, Uova, Latte</small></p>
+											<label><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="husker">Molto al sangue</option>
+													<option value="starbuck">Al sangue</option>
+													<option value="apollo">Ben cotta</option>
+												</select>
+											</label>
+											<label><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+										</div>
+										<footer class="main-footer">
+										    <div class="input-group input-number-group">
+											  	<div class="input-group-button">
+											    	<span class="input-number-decrement">&ndash;</span>
+											  	</div>
+											  	<input class="input-number" type="button" value="1" min="0" max="30">
+											  	<div class="input-group-button">
+											    	<span class="input-number-increment">&plus;</span>
+											  	</div>
+											</div>
+											<a href="#" class="button expanded1  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 5,9</span>
+											</a>
+										</footer>
+									</div>
+								</div>
+								{{/repeat}}
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="grid-x grid-margin-x grid-margin-y" id="hamburgerNoNavbar" data-magellan-target="hamburgerNoNavbar">
+						<div class="small-12 cell">
+							<h2>Hamburger<br><small>Serviti con patate fritte e a cottura media</small></h2>
+							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+								{{#repeat 18}}
+								<div class="cell">
+									<div class="card">
+										<div class="card-section">
+											<img src="https://picsum.photos/1920/1080">
+											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+											<p>Il più tipico street food marchigiano
+											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+											<button class="button small" data-open="oliveAscolana">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal" id="oliveAscolana" data-reveal>
+										<button class="close-button close-button1" data-close aria-label="Close reveal" type="button">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="https://www.beerstrot.it/asset/img/large/battuto-vitello.jpg" style="margin-top:-3rem;">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">close-button sempre sopra</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa</p>
+											<p><small>Allergeni: Glutine, Uova, Latte</small></p>
+											<label><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="husker">Molto al sangue</option>
+													<option value="starbuck">Al sangue</option>
+													<option value="apollo">Ben cotta</option>
+												</select>
+											</label>
+											<label><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+										</div>
+										<footer class="main-footer">
+										    <div class="input-group input-number-group">
+											  	<div class="input-group-button">
+											    	<span class="input-number-decrement">&ndash;</span>
+											  	</div>
+											  	<input class="input-number" type="button" value="1" min="0" max="30">
+											  	<div class="input-group-button">
+											    	<span class="input-number-increment">&plus;</span>
+											  	</div>
+											</div>
+											<a href="#" class="button expanded1  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 5,9</span>
+											</a>
+										</footer>
+									</div>
+								</div>
+								{{/repeat}}
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="grid-x grid-margin-x grid-margin-y" id="carne" data-magellan-target="carne">
+						<div class="small-12 cell">
+							<h2>Carne</h2>
+							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+								{{#repeat 2}}
+								<div class="cell">
+									<div class="card">
+										<div class="card-section">
+											<img src="https://picsum.photos/1920/1080">
+											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+											<p>Il più tipico street food marchigiano
+											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+											<button class="button small" data-open="oliveAscolana">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal" id="oliveAscolana" data-reveal>
+										<button class="close-button close-button1" data-close aria-label="Close reveal" type="button">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="https://www.beerstrot.it/asset/img/large/battuto-vitello.jpg" style="margin-top:-3rem;">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">close-button sempre sopra</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa</p>
+											<p><small>Allergeni: Glutine, Uova, Latte</small></p>
+											<label><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="husker">Molto al sangue</option>
+													<option value="starbuck">Al sangue</option>
+													<option value="apollo">Ben cotta</option>
+												</select>
+											</label>
+											<label><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+										</div>
+										<footer class="main-footer">
+										    <div class="input-group input-number-group">
+											  	<div class="input-group-button">
+											    	<span class="input-number-decrement">&ndash;</span>
+											  	</div>
+											  	<input class="input-number" type="button" value="1" min="0" max="30">
+											  	<div class="input-group-button">
+											    	<span class="input-number-increment">&plus;</span>
+											  	</div>
+											</div>
+											<a href="#" class="button expanded1  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 5,9</span>
+											</a>
+										</footer>
+									</div>
+								</div>
+								{{/repeat}}
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="grid-x grid-margin-x grid-margin-y" id="dolce" data-magellan-target="dolce">
+						<div class="small-12 cell">
+							<h2>Dolci</h2>
+							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+								{{#repeat 4}}
+								<div class="cell">
+									<div class="card">
+										<div class="card-section">
+											<img src="https://picsum.photos/1920/1080">
+											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+											<p>Il più tipico street food marchigiano
+											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+											<button class="button small" data-open="oliveAscolana">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal" id="oliveAscolana" data-reveal>
+										<button class="close-button close-button1" data-close aria-label="Close reveal" type="button">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="https://www.beerstrot.it/asset/img/large/battuto-vitello.jpg" style="margin-top:-3rem;">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">close-button sempre sopra</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa</p>
+											<p><small>Allergeni: Glutine, Uova, Latte</small></p>
+											<label><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="husker">Molto al sangue</option>
+													<option value="starbuck">Al sangue</option>
+													<option value="apollo">Ben cotta</option>
+												</select>
+											</label>
+											<label><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+										</div>
+										<footer class="main-footer">
+										    <div class="input-group input-number-group">
+											  	<div class="input-group-button">
+											    	<span class="input-number-decrement">&ndash;</span>
+											  	</div>
+											  	<input class="input-number" type="button" value="1" min="0" max="30">
+											  	<div class="input-group-button">
+											    	<span class="input-number-increment">&plus;</span>
+											  	</div>
+											</div>
+											<a href="#" class="button expanded1  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 5,9</span>
+											</a>
+										</footer>
+									</div>
+								</div>
+								{{/repeat}}
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="grid-x grid-margin-x grid-margin-y" id="birra" data-magellan-target="birra">
+						<div class="small-12 cell">
+							<h2>Birra artigianale alla spina<br><small>Piccola 4 | Media 6 | Caraffa 12</small></h2>
+							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+								{{#repeat 6}}
+								<div class="cell">
+									<div class="card">
+										<div class="card-section">
+											<img src="https://picsum.photos/1920/1080">
+											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+											<p>Il più tipico street food marchigiano
+											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+											<button class="button small" data-open="oliveAscolana">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal" id="oliveAscolana" data-reveal>
+										<button class="close-button close-button1" data-close aria-label="Close reveal" type="button">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="https://www.beerstrot.it/asset/img/large/battuto-vitello.jpg" style="margin-top:-3rem;">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">close-button sempre sopra</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa</p>
+											<p><small>Allergeni: Glutine, Uova, Latte</small></p>
+											<label><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="husker">Molto al sangue</option>
+													<option value="starbuck">Al sangue</option>
+													<option value="apollo">Ben cotta</option>
+												</select>
+											</label>
+											<label><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+										</div>
+										<footer class="main-footer">
+										    <div class="input-group input-number-group">
+											  	<div class="input-group-button">
+											    	<span class="input-number-decrement">&ndash;</span>
+											  	</div>
+											  	<input class="input-number" type="button" value="1" min="0" max="30">
+											  	<div class="input-group-button">
+											    	<span class="input-number-increment">&plus;</span>
+											  	</div>
+											</div>
+											<a href="#" class="button expanded1  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 5,9</span>
+											</a>
+										</footer>
+									</div>
+								</div>
+								{{/repeat}}
+							</div>
+						</div>
+						<div class="small-12 cell">
+							<h2>Birra artigianale in bottiglia</h2>
+							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+								{{#repeat 6}}
+								<div class="cell">
+									<div class="card">
+										<div class="card-section">
+											<img src="https://picsum.photos/1920/1080">
+											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+											<p>Il più tipico street food marchigiano
+											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+											<button class="button small" data-open="oliveAscolana">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal" id="oliveAscolana" data-reveal>
+										<button class="close-button close-button1" data-close aria-label="Close reveal" type="button">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="https://www.beerstrot.it/asset/img/large/battuto-vitello.jpg" style="margin-top:-3rem;">
+										<header class="main-header">
+											<h1 class="h1-modal"" id="modalTitle">close-button sempre sopra</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa</p>
+											<p><small>Allergeni: Glutine, Uova, Latte</small></p>
+											<label><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="husker">Molto al sangue</option>
+													<option value="starbuck">Al sangue</option>
+													<option value="apollo">Ben cotta</option>
+												</select>
+											</label>
+											<label><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+										</div>
+										<footer class="main-footer">
+										    <div class="input-group input-number-group">
+											  	<div class="input-group-button">
+											    	<span class="input-number-decrement">&ndash;</span>
+											  	</div>
+											  	<input class="input-number" type="button" value="1" min="0" max="30">
+											  	<div class="input-group-button">
+											    	<span class="input-number-increment">&plus;</span>
+											  	</div>
+											</div>
+											<a href="#" class="button expanded1  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 5,9</span>
+											</a>
+										</footer>
+									</div>
+								</div>
+								{{/repeat}}
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="grid-x grid-margin-x grid-margin-y" id="vino" data-magellan-target="vino">
+						<div class="small-12 cell">
+							<h2>Vino</h2>
+							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+								{{#repeat 6}}
+								<div class="cell">
+									<div class="card">
+										<div class="card-section">
+											<img src="https://picsum.photos/1920/1080">
+											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+											<p>Il più tipico street food marchigiano
+											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+											<button class="button small" data-open="oliveAscolana">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal" id="oliveAscolana" data-reveal>
+										<button class="close-button close-button1" data-close aria-label="Close reveal" type="button">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="https://www.beerstrot.it/asset/img/large/battuto-vitello.jpg" style="margin-top:-3rem;">
+										<header class="main-header">
+											<h1 cclass="h1-modal" id="modalTitle">close-button sempre sopra</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa</p>
+											<p><small>Allergeni: Glutine, Uova, Latte</small></p>
+											<label><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="husker">Molto al sangue</option>
+													<option value="starbuck">Al sangue</option>
+													<option value="apollo">Ben cotta</option>
+												</select>
+											</label>
+											<label><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+										</div>
+										<footer class="main-footer">
+										    <div class="input-group input-number-group">
+											  	<div class="input-group-button">
+											    	<span class="input-number-decrement">&ndash;</span>
+											  	</div>
+											  	<input class="input-number" type="button" value="1" min="0" max="30">
+											  	<div class="input-group-button">
+											    	<span class="input-number-increment">&plus;</span>
+											  	</div>
+											</div>
+											<a href="#" class="button expanded1  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 5,9</span>
+											</a>
+										</footer>
+									</div>
+								</div>
+								{{/repeat}}
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="grid-x grid-margin-x grid-margin-y" id="bevanda" data-magellan-target="bevanda">
+						<div class="small-12 cell">
+							<h2>Bevande</h2>
+							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+								{{#repeat 6}}
+								<div class="cell">
+									<div class="card">
+										<div class="card-section">
+											<img src="https://picsum.photos/1920/1080">
+											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+											<p>Il più tipico street food marchigiano
+											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+											<button class="button small" data-open="bevande">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal" id="bevande" data-reveal>
+										<button class="close-button close-button1" data-close aria-label="Close reveal" type="button">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="https://www.beerstrot.it/asset/img/large/battuto-vitello.jpg" style="margin-top:-3rem;">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa</p>
+											<p><small>Allergeni: Glutine, Uova, Latte</small></p>
+											<label><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="husker">Molto al sangue</option>
+													<option value="starbuck">Al sangue</option>
+													<option value="apollo">Ben cotta</option>
+												</select>
+											</label>
+											<label><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+										</div>
+										<footer class="main-footer">
+										    <div class="input-group input-number-group">
+											  	<div class="input-group-button">
+											    	<span class="input-number-decrement">&ndash;</span>
+											  	</div>
+											  	<input class="input-number" type="button" value="1" min="0" max="30">
+											  	<div class="input-group-button">
+											    	<span class="input-number-increment">&plus;</span>
+											  	</div>
+											</div>
+											<a href="#" class="button expanded1  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 5,9</span>
+											</a>
+										</footer>
+									</div>
+								</div>
+								{{/repeat}}
+							</div>
+						</div>
+					</div>
+				</section>
+				<br>
+				<div class="grid-x hide-for-large" data-sticky data-stick-to="bottom" data-sticky-on="small" data-options="marginBottom:0;" data-top-anchor="ecommerce-button-top" data-btm-anchor="ecommerce-button-bottom">
+					<button class="button expanded extra-space-button-sticky" data-open="carrello">
+						<i class="fas fa-shopping-cart"></i>
+						<span class="price">Prodotti: 5 | Totale: € 190,90</span>
+					</button>
+				</div>
+				<div id="ecommerce-button-bottom"></div>
+				{{> carrello}}
+
+			</div>
+			<div class="large-4 cell show-for-large fixed_box shadow-carrello">
+				{{> carrello-large}}
+
+				<!-- {{> carrello-large-vuoto}} -->
+
+			</div>
+		</div>
+	</div>
+</div>

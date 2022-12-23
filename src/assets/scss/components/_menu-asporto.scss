@@ -1,0 +1,189 @@
+/*===================================================================
+menupage text
+===================================================================*/
+#menupage-text {
+    padding-bottom: 4rem;
+    // h1 {
+    //     text-transform: uppercase;
+    //     margin-bottom: 2rem;
+    //     margin-top: 4rem;
+    //     text-align: center;
+    //     &:first-child {
+    //         margin-top: 1.5rem;
+    //     }
+    //     @include breakpoint (small only) {
+    //         margin-bottom: 1.2rem;
+    //         margin-top: 1.5rem;
+    //         text-align: left;
+    //     }
+    // }
+    h2 {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        font-weight: bold;
+        @include breakpoint (small only) {
+            margin-bottom: 1.8rem;
+            margin-top: 3rem;
+        }
+        small {
+            display: block;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            font-weight: normal;
+            margin-top: 0;
+            color:$black;
+            @include breakpoint (small only) {
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                margin-top: 0rem;
+            }
+        }
+    }
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+        @include breakpoint (small only) {
+            font-size: 1.125rem;
+            margin-top: 0.5rem;
+        }
+    }
+    h4 {
+        margin-top: 1rem;
+        margin-bottom: 1.25rem;
+    }
+    h5 {
+        font-size: 1.15rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+    .price {
+        font-size: 1rem;
+        margin-left: 1.2rem;
+        font-weight: normal;
+        @include breakpoint (small only) {
+            margin-left: 0.8rem;
+        }
+   }
+    p small {
+        font-size: 0.85rem;
+        //font-style: italic;
+        line-height: 1.25rem;
+        display: block;
+        margin-top: 0.3rem;
+   }
+
+//tabs menu
+    ul.tabs {
+        li {
+            float: none !important;
+            display: inline-block;
+            margin-top: 0rem;
+            margin-bottom: 0.5rem;
+            padding:0;
+            //tab design
+            background-color: $primary-color;
+            // border: 1px $primary-color solid;
+            //color: $primary-color;
+        }
+        @include breakpoint (small only) {
+            text-align: center;
+        }
+        li:not(:active) a {
+            color: $white;
+        }
+       .tabs-title > a:hover {
+              background: scale-color($anchor-color, $lightness: +10%);
+              color: $white;
+        }
+        .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+          background: #fff;
+          color: $primary-color;
+        }
+    }
+}
+//sticky menu
+.sticky {
+    width: 100%;
+    background-color: white;
+    padding-top:10px;
+    padding-bottom: 10px;
+    }
+
+a.is-active {
+    background: $primary-color;
+    color: #fefefe;
+    //font-size: 14px;
+}
+
+a.is-active::after {
+    position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+// infinite scroll
+.hs {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.hs:before,
+.hs:after {
+    content: '';
+    width: 1rem;
+}
+
+.hs > li {
+    scroll-snap-align: start;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    @include breakpoint (small only) {
+        padding-top: 0.8rem;
+        padding-bottom: 1.2rem;
+        //border-bottom: 1px solid $primary-color;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+// padding btw items
+.extra-space-item-menu {
+    padding-bottom: 1rem;
+    @include breakpoint (small only) {
+        padding-bottom: 2rem;
+    }
+}
+
+.h1-modal {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: none;
+    margin-top:0;
+    padding-top:0;
+
+    @include breakpoint (small only) {
+        font-size: 1.8rem;
+    }
+}

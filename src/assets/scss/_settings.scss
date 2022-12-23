@@ -66,17 +66,18 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1300);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #00687E,
+  _primary: #1779ba,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6;
 $very-light-gray: #f7f7f7;
+$light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
@@ -109,7 +110,7 @@ $print-hrefs: true;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
+  medium: 740px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
@@ -130,7 +131,7 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 20px,
+  small: 50px,
   medium: 30px,
 );
 $grid-column-align-edge: true;
@@ -173,7 +174,8 @@ $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $enable-code-inline: true;
 $anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+//$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color-hover: scale-color($anchor-color, $lightness: +10%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -300,7 +302,8 @@ $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
+// $button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background-hover: scale-color($button-background, $lightness: +10%);
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
@@ -317,7 +320,7 @@ $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
-$button-responsive-expanded: false;
+$button-responsive-expanded: true;
 
 // 12. Button Group
 // ----------------
@@ -351,7 +354,8 @@ $callout-link-tint: 30%;
 $card-background: $white;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
-$card-border: 1px solid $light-gray;
+//$card-border: 1px solid $light-gray;
+$card-border: none;
 $card-shadow: none;
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
@@ -364,19 +368,21 @@ $closebutton-position: right top;
 $closebutton-z-index: 10;
 $closebutton-default-size: medium;
 $closebutton-offset-horizontal: (
-  small: 0.66rem,
-  medium: 1rem,
+  small: 0rem,
+  medium: 0rem,
 );
 $closebutton-offset-vertical: (
-  small: 0.33em,
-  medium: 0.5rem,
+  small: 0em,
+  medium: 0rem,
 );
 $closebutton-size: (
   small: 1.5em,
   medium: 2em,
 );
-$closebutton-lineheight: 1;
-$closebutton-color: $dark-gray;
+//$closebutton-lineheight: 1;
+$closebutton-lineheight: 0.5;
+//$closebutton-color: $dark-gray;
+$closebutton-color: $primary-color;
 $closebutton-color-hover: $black;
 
 // 16. Drilldown
@@ -758,7 +764,8 @@ $reveal-background: $white;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
-$reveal-border: 1px solid $medium-gray;
+//$reveal-border: 1px solid $medium-gray;
+$reveal-border: 0px;
 $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
 $reveal-overlay-background: rgba($black, 0.45);
@@ -801,6 +808,7 @@ $switch-cursor-disabled: not-allowed;
 $table-background: $white;
 $table-color-scale: 5%;
 $table-border: 1px solid smart-scale($table-background, $table-color-scale);
+//$table-border: none;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
@@ -885,9 +893,13 @@ $topbar-unstack-breakpoint: medium;
 $xy-grid: true;
 $grid-container: $global-width;
 $grid-columns: 12;
+// $grid-margin-gutters: (
+//   small: 20px,
+//   medium: 30px
+// );
 $grid-margin-gutters: (
-  small: 20px,
-  medium: 30px
+   small: 30px,
+   medium: 40px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;

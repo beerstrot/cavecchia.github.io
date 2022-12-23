@@ -1,0 +1,143 @@
+/*===================================================================
+navbar menu
+===================================================================*/
+
+nav {
+    background: white;
+    border-bottom: 2.5px #666666 solid;
+    padding: 0 5px 0 0px;
+}
+
+#hamburger {
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+
+    .menu1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        margin:0px 0px 0px 15px;
+        padding:0.2rem 0rem 0.2rem 0rem;
+    }
+
+    .logo {
+        flex: 2;
+        order: 1;
+        font-size: 1,125rem;
+        padding: 7.5px 20px 7.5px 0;
+    }
+
+    .item {
+        padding: 10px 20px 10px 10px;
+        order: 3;
+        width: 100%;
+        //padding: 10px 0px;
+        text-align: left;
+        display: none;
+        //padding-left: 10px;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .item.button {
+        margin-top: 16px;
+        margin-bottom: 12px;
+        margin-right: 10px;
+    }
+
+    .active .item {
+        display: block;
+    }
+
+//aumenta area cliccabile del button
+    .button a {
+        position: relative;
+        z-index: 50;
+    }
+
+    .button a:before {
+        position: absolute;
+        content: '';
+        top: -18px;
+        right: -18px;
+        left: -18px;
+        bottom: -18px;
+        //outline: 2px solid yellow;
+        z-index: 40;
+    }
+
+    .item:not(.button) a:hover,
+        .item a:hover::after {
+        color: $primary-color;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 1;
+        font-size: 1.25rem;
+    }
+
+    .menu1 li a {
+        display: block;
+        padding: 5px 5px;
+    }
+
+    .button a {
+        display:block;
+        color: $white;
+        font-size: 1.25rem;
+    }
+
+    .attuale a {
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+    li.attuale.button {
+        background-color: rgb(134, 7, 10);
+    }
+    li.attuale.button a {
+        color: white;
+    }
+
+/* Desktop menu */
+    @media all and (min-width: 60em) {
+        .menu1 {
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin:0 15px;
+        }
+
+        .item {
+            position: relative;
+            display: block;
+            width: auto;
+            padding: 20px 20px;
+            margin-top:24px;
+        }
+
+        .item.button {
+            width: auto;
+            display: block;
+            margin-top: 24px;
+            margin-bottom:0px;
+        }
+        .button a {
+            display:block;
+            color: $white;
+            margin-top:1px;
+            font-size: 1.25rem;
+        }
+
+        .toggle {
+            display: none;
+        }
+    }
+}

@@ -7,11 +7,58 @@ import 'what-input';
 // This is why we have to use CommonJS require() here since it doesn't
 // have the hoisting behavior.
 window.jQuery = $;
+
+
+
+
+
+
 require('foundation-sites');
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
-//import './lib/foundation-explicit-pieces';
+// import './lib/foundation-explicit-pieces';
 
 
 $(document).foundation();
+
+
+import('./navbar');
+import('./input-number')
+import('./prenota')
+import Splide from '@splidejs/splide'
+
+
+
+
+// inizialize splide
+new Splide( '#fotoMenu' , {
+    type: 'slide',
+    perPage: 1,
+    arrows: true,
+    pagination: true,
+    drag: true,
+    breakpoints : {
+        '740': {
+            pagination: true,
+            arrows: true,
+        },
+    },
+}).mount();
+
+new Splide( '#fotoLocale' , {
+    type: 'slide',
+    gap: '2rem',
+    arrows: true,
+    pagination: true,
+    drag: true,
+    perPage: 2,
+    breakpoints : {
+        '740': {
+            perPage: 1,
+            arrows: true,
+        },
+    },
+}).mount();
+
+
