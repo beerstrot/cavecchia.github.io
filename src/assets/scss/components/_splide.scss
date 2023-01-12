@@ -188,7 +188,7 @@
 }
 
 .splide__arrow--prev {
-    left: 1em
+    left: 0.5em
 }
 
 .splide__arrow--prev svg {
@@ -196,7 +196,7 @@
 }
 
 .splide__arrow--next {
-    right: 1em
+    right: 0.5em
 }
 
 .splide.is-focus-in .splide__arrow:focus {
@@ -206,6 +206,7 @@
 
 .splide__pagination {
     bottom: -1.8em;
+    //margin-bottom: 1.8em;
     left: 0;
     padding: 0 1em;
     position: absolute;
@@ -365,7 +366,9 @@
     top: 0
 }
 
-
+.splide-offset-pagination {
+    margin-bottom: 1.8rem;
+}
 
 
 

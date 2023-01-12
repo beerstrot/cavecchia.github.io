@@ -24,9 +24,9 @@ $(document).foundation();
 
 
 import('./navbar');
-import('./input-number')
-import('./prenota')
-import Splide from '@splidejs/splide'
+import('./input-number');
+import('./prenota');
+import Splide from '@splidejs/splide';
 
 
 

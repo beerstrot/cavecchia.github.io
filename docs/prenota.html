@@ -114,7 +114,7 @@
     </div>
     <!-- fine dashboard -->
     <!-- inizio form -->
-    <div class="panel-home-n form">
+    <div class="panel-home-n">
         <div class="grid-container">
             <form id="form">
                 <div class="grid-x ">
@@ -142,15 +142,15 @@
                     <div class="small-12 medium-4 cell">
                         <label><strong>Quale turno*</strong>
                             <div id="shiftGridL"></div>
+                            <div class="grid-x small-up-2 required error" id="shiftGrid">
+                                <div class="cell bShift"><a class="button hollow disabled">19.00-21.00</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">19.30-21.30</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">20.00-22.00</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">20.30-22.30</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">21.00-23.00</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">21.30-23.00</a></div>
+                            </div>
                         </label>
-                        <div class="grid-x small-up-2 required error" id="shiftGrid">
-                            <div class="cell bShift"><a class="button disabled">19.00-21.00</a></div>
-                            <div class="cell bShift"><a class="button disabled">19.30-21.30</a></div>
-                            <div class="cell bShift"><a class="button disabled">20.00-22.00</a></div>
-                            <div class="cell bShift"><a class="button disabled">20.30-22.30</a></div>
-                            <div class="cell bShift"><a class="button disabled">21.00-23.00</a></div>
-                            <div class="cell bShift"><a class="button disabled">21.30-23.00</a></div>
-                        </div>
                         <h6>Turno: orario d'arrivo-orario in cui bisogna lasciare il tavolo</h6>
                     </div>
                     <div class="small-12 cell"><hr></div>
@@ -165,7 +165,7 @@
                 <div class="grid-x grid-margin-x">
                     <div class="small-7 medium-4 cell">
                         <label><strong>Ho bisogno di seggioloni</strong>
-                            <select name="MMERGE4" class="" id="seggiolini">
+                            <select name="MMERGE4" id="seggiolini">
                                 <option value="0">No</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -205,12 +205,14 @@
                     </div>
                     <div class="small-12 cell"><hr></div>
                 </div>
-                <div class="grid-x grid-margin-x grid-margin-y">
-                    <div class="small-12 cell" id="privacy3">
-                        <input id="privacy" type="checkbox" checked><label for="checkbox2"> Accetto la<a id="privacy2" class="required error"> privacy</a>*</label>
+                <div class="grid-x grid-margin-x">
+                    <div class="small-12 cell" >
+                        <label id="privacy3">
+                            <input id="privacy" type="checkbox" checked>Accetto la<a id="privacy2"> privacy</a>*
+                        </label>
                     </div>
                 </div>
-                <div class="grid-x">
+                <div class="grid-x grid-margin-x">
                     <div class="small-12 cell">
                         <a id="prenota" role="button" class="button float-right" style="margin-bottom:0.5rem; margin-top:0.3rem;">Riserva il Tavolo</a>
                     </div>
@@ -310,7 +312,6 @@
             $("[id='theImage']").toggle();
             });
        });
-
         function toggle_text() {
             var x = document.getElementById("showImage");
                 if (x.innerHTML === "Mostra immagini") {
@@ -320,7 +321,6 @@
                      x.innerHTML = "Mostra immagini";
                     }
         }
-
     </script>
 </body>
 </html>

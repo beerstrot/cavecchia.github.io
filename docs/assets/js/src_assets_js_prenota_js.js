@@ -497,7 +497,8 @@ function makeInterface(pid, dates) {
   fp.set('dateFormat', 'd/M/Y');
   $('#privacy2').on('click', function () {
     showMessage('I dati vengono utilizzati solo per gestire la prenotazione e contattarti tramite email (assicurati non finisca nella spam) o telefono in caso di problemi o chiusura inaspettata del locale (ad esempio causa maltempo).');
-  });
+  }); //form validation
+
   var validation = new JustValidate('#form').addField('#name', [{
     rule: 'required',
     errorMessage: 'inserisci un nome'
@@ -754,11 +755,10 @@ function validateData(data, validation) {
 
     if (data.telephone === '') {
       ids.push('#telephone1');
-    }
+    } // if (!$('#privacy').prop('checked')) {
+    //   ids.push('#privacy3');
+    // }
 
-    if (!$('#privacy').prop('checked')) {
-      ids.push('#privacy3');
-    }
 
     if (ids.length > 0) {
       ids.forEach(function (i) {

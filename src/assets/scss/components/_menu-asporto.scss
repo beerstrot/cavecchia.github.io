@@ -76,35 +76,38 @@ menupage text
    }
 
 //tabs menu
-    ul.tabs {
-        li {
-            float: none !important;
-            display: inline-block;
-            margin-top: 0rem;
-            margin-bottom: 0.5rem;
-            padding:0;
-            //tab design
-            background-color: $primary-color;
-            // border: 1px $primary-color solid;
-            //color: $primary-color;
-        }
-        @include breakpoint (small only) {
-            text-align: center;
-        }
-        li:not(:active) a {
-            color: $white;
-        }
-       .tabs-title > a:hover {
-              background: scale-color($anchor-color, $lightness: +10%);
-              color: $white;
-        }
-        .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-          background: #fff;
-          color: $primary-color;
-        }
-    }
+//     ul.tabs {
+//         li {
+//             float: none !important;
+//             display: inline-block;
+//             margin-top: 0rem;
+//             margin-bottom: 0.5rem;
+//             padding:0;
+//             //tab design
+//             background-color: $primary-color;
+//             // border: 1px $primary-color solid;
+//             //color: $primary-color;
+//         }
+//         @include breakpoint (small only) {
+//             text-align: center;
+//         }
+//         li:not(:active) a {
+//             color: $white;
+//         }
+//        .tabs-title > a:hover {
+//               background: scale-color($anchor-color, $lightness: +10%);
+//               color: $white;
+//         }
+//         .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+//           background: #fff;
+//           color: $primary-color;
+//         }
+//     }
 }
+
+
 //sticky menu
+
 .sticky {
     width: 100%;
     background-color: white;
@@ -120,8 +123,8 @@ a.is-active {
 
 a.is-active::after {
     position: relative;
-  left: 30px;
-  border: 3px solid #73AD21;
+    left: 30px;
+    border: 3px solid #73AD21;
 }
 
 // infinite scroll
@@ -145,16 +148,17 @@ a.is-active::after {
     scroll-snap-align: start;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    @include breakpoint (small only) {
-        padding-top: 0.8rem;
-        padding-bottom: 1.2rem;
-        //border-bottom: 1px solid $primary-color;
-    }
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include breakpoint (small only) {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    a {
+        font-size: 1rem;
+    }
 }
 
 .no-scrollbar {
@@ -176,6 +180,7 @@ a.is-active::after {
     }
 }
 
+// modal title
 .h1-modal {
     font-size: 2.5rem;
     font-weight: bold;
