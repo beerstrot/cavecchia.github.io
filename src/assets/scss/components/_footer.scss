@@ -2,7 +2,6 @@
 footer style
 ===================================================================*/
 
-
 .panel-footer {
     margin-bottom: 0;
     padding-top: 2rem;
@@ -10,13 +9,13 @@ footer style
     background-color: $light-gray;
     h1 {
         font-size: 1.25rem;
-        @include breakpoint (small only) {
+        @include breakpoint(small only) {
         font-size: 1.125rem;
         }
     }
     p {
         font-size: 1rem;
-        @include breakpoint (small only) {
+        @include breakpoint(small only) {
         font-size: 0.9rem;
         }
     }

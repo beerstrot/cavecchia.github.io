@@ -8,7 +8,7 @@ prenota
 
 .extra-space-turno {
     margin-top: 0.25rem;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         margin-top: 0.2rem;
         margin-bottom: 0rem;
     }
@@ -29,7 +29,7 @@ prenota
   color: #b5b3b3; }
 
 //stop zoom viewport on form selection small screen only
-@include breakpoint (small only) {
+@include breakpoint(small only) {
         input, select, textarea {
         font-size: 16px !important;
     };

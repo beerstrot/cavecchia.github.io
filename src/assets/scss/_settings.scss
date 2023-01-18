@@ -242,14 +242,19 @@ $accordion-background: $white;
 $accordion-plusminus: true;
 $accordion-plus-content: '\002B';
 $accordion-minus-content: '\2013';
-$accordion-title-font-size: rem-calc(12);
+//$accordion-title-font-size: rem-calc(12);
+$accordion-title-font-size: rem-calc(18);
 $accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
-$accordion-item-padding: 1.25rem 1rem;
+//$accordion-item-background-hover: $light-gray;
+$accordion-item-background-hover: none;
+//$accordion-item-padding: 1.25rem 1rem;
+$accordion-item-padding: 1rem 3rem 0.5rem 0rem;
 $accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
+//$accordion-content-border: 1px solid $light-gray;
+$accordion-content-border: none;
 $accordion-content-color: $body-font-color;
-$accordion-content-padding: 1rem;
+//$accordion-content-padding: 1rem;
+$accordion-content-padding: 0rem 3rem 0rem 0rem;
 
 // 8. Accordion Menu
 // -----------------

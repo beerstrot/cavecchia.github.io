@@ -30620,7 +30620,8 @@ __webpack_require__(/*! foundation-sites */ "./node_modules/foundation-sites/dis
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
 __webpack_require__.e(/*! import() */ "src_assets_js_navbar_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./navbar */ "./src/assets/js/navbar.js", 23));
 __webpack_require__.e(/*! import() */ "src_assets_js_input-number_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./input-number */ "./src/assets/js/input-number.js", 23));
-__webpack_require__.e(/*! import() */ "src_assets_js_prenota_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./prenota */ "./src/assets/js/prenota.js", 23));
+__webpack_require__.e(/*! import() */ "src_assets_js_prenota_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./prenota */ "./src/assets/js/prenota.js", 23)); //import('./accordion');
+
 
  // inizialize splide
 

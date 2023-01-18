@@ -4,7 +4,7 @@ orari footer e home page
 
 .testo-orari {
     font-size: 1rem;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         font-size: 0.9rem;
     }
 }
@@ -29,7 +29,7 @@ orari footer e home page
 }
 .orari-footer-schedule {
     font-size: 1rem;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         font-size: 0.9rem;
     }
 }
@@ -37,7 +37,7 @@ orari footer e home page
     display: inline-block;
     width: 80px;
     margin-right: 20px;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         width: 60px;
         margin-right: 20px;
     }

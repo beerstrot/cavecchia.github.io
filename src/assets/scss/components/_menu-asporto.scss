@@ -11,7 +11,7 @@ menupage text
     //     &:first-child {
     //         margin-top: 1.5rem;
     //     }
-    //     @include breakpoint (small only) {
+    //     @include breakpoint(small only) {
     //         margin-bottom: 1.2rem;
     //         margin-top: 1.5rem;
     //         text-align: left;
@@ -22,7 +22,7 @@ menupage text
         margin-bottom: 3rem;
         text-align: center;
         font-weight: bold;
-        @include breakpoint (small only) {
+        @include breakpoint(small only) {
             margin-bottom: 1.8rem;
             margin-top: 3rem;
         }
@@ -33,7 +33,7 @@ menupage text
             font-weight: normal;
             margin-top: 0;
             color:$black;
-            @include breakpoint (small only) {
+            @include breakpoint(small only) {
                 font-size: 1.3rem;
                 line-height: 1.6rem;
                 margin-top: 0rem;
@@ -45,7 +45,7 @@ menupage text
         font-weight: 600;
         margin-bottom: 0;
         margin-top: 0.5rem;
-        @include breakpoint (small only) {
+        @include breakpoint(small only) {
             font-size: 1.125rem;
             margin-top: 0.5rem;
         }
@@ -64,7 +64,7 @@ menupage text
         font-size: 1rem;
         margin-left: 1.2rem;
         font-weight: normal;
-        @include breakpoint (small only) {
+        @include breakpoint(small only) {
             margin-left: 0.8rem;
         }
    }
@@ -89,7 +89,7 @@ menupage text
 //             // border: 1px $primary-color solid;
 //             //color: $primary-color;
 //         }
-//         @include breakpoint (small only) {
+//         @include breakpoint(small only) {
 //             text-align: center;
 //         }
 //         li:not(:active) a {
@@ -113,7 +113,7 @@ menupage text
     background-size: cover;
     height: 40rem;
     overflow: hidden;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
             height: 20rem;
         }
     h1 {
@@ -123,7 +123,7 @@ menupage text
         line-height: 4.8rem;
         text-align: center;
         margin-top: 4rem;
-        @include breakpoint (small only) {
+        @include breakpoint(small only) {
             font-size: 2rem;
             line-height: 3rem;
             margin-top: 2rem;
@@ -182,7 +182,7 @@ a.is-active::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
     }
@@ -205,7 +205,7 @@ a.is-active::after {
 // padding btw items
 .extra-space-item-menu {
     padding-bottom: 1rem;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         padding-bottom: 2rem;
     }
 }
@@ -218,7 +218,7 @@ a.is-active::after {
     margin-top:0;
     padding-top:0;
 
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         font-size: 1.8rem;
     }
 }

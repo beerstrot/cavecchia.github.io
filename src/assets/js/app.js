@@ -26,6 +26,7 @@ $(document).foundation();
 import('./navbar');
 import('./input-number');
 import('./prenota');
+//import('./accordion');
 import { Splide } from '@splidejs/splide';
 import { Video } from '@splidejs/splide-extension-video';
 

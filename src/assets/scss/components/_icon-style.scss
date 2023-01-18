@@ -12,7 +12,7 @@ icon style
 
 .fa-phone {
     font-size: 0.9rem;
-        @media #{$small-only} {
+        @include breakpoint(small only) {
         font-size: 0.9rem;
     }
 }

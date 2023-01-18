@@ -40,7 +40,7 @@ modal and cart
     //margin-top:-10;
     margin-top: 1.2rem;
     font-size: 3rem;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         padding: 1rem;
         margin-top: 0.5rem;
     }
@@ -60,7 +60,7 @@ modal and cart
     // margin-top: 1.2rem;
     // margin-right: 1rem;
     font-size: 3rem;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         top:0.3%;
         padding-top: 0.7rem;
         margin-top:-0.4rem;
@@ -178,7 +178,7 @@ modal and cart
 
 .extra-space-button-modal {
     margin-top: 2rem;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         margin-top: 1.5rem;
     }
 }
@@ -186,7 +186,7 @@ modal and cart
 .extra-space-button-sticky {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    @include breakpoint (small only) {
+    @include breakpoint(small only) {
         margin-top: 0.5rem;
         margin-bottom: 1rem;
     }
