@@ -1,6 +1,15 @@
 /*===================================================================
 navbar menu
 ===================================================================*/
+.img-logo {
+    width: 180px;
+    margin-top: 5px;
+    @include breakpoint (small only) {
+        width:160px;
+        margin-top: 0px;
+        margin-left: -4px;
+    }
+}
 
 nav {
     background: white;

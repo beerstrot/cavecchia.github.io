@@ -1,0 +1,45 @@
+/*===================================================================
+orari footer e home page
+===================================================================*/
+
+.testo-orari {
+    font-size: 1rem;
+    @include breakpoint (small only) {
+        font-size: 0.9rem;
+    }
+}
+.orari {
+    display: inline-block;
+    float: right;
+    margin-right: 1rem;
+    @include breakpoint (large up) {
+        margin-right: 4rem;
+    }
+}
+.orari-schedule {
+    white-space: nowrap;
+}
+.orari-schedule li span {
+    display: inline-block;
+    width: 90px;
+    margin-right: 20px;
+}
+.orari-footer-schedule {
+    white-space: nowrap;
+}
+.orari-footer-schedule {
+    font-size: 1rem;
+    @include breakpoint (small only) {
+        font-size: 0.9rem;
+    }
+}
+.orari-footer-schedule li span {
+    display: inline-block;
+    width: 80px;
+    margin-right: 20px;
+    @include breakpoint (small only) {
+        width: 60px;
+        margin-right: 20px;
+    }
+}
+

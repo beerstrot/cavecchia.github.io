@@ -26,7 +26,8 @@ $(document).foundation();
 import('./navbar');
 import('./input-number');
 import('./prenota');
-import Splide from '@splidejs/splide';
+import { Splide } from '@splidejs/splide';
+import { Video } from '@splidejs/splide-extension-video';
 
 
 
@@ -38,13 +39,27 @@ new Splide( '#fotoMenu' , {
     arrows: true,
     pagination: true,
     drag: true,
-    breakpoints : {
+    breakpoints: {
         '740': {
             pagination: true,
             arrows: true,
         },
     },
-}).mount();
+    video: {
+        loop: false,
+        autoplay     : true,
+        mute         : true,
+        playerOptions: {
+            htmlVideo: {
+                playsInline: true,
+                autoplay: true,
+
+            },
+            youtube: {
+            },
+        },
+    },
+}).mount({ Video });
 
 new Splide( '#fotoLocale' , {
     type: 'slide',
@@ -59,6 +74,19 @@ new Splide( '#fotoLocale' , {
             arrows: true,
         },
     },
-}).mount();
+    video: {
+        loop: false,
+        autoplay     : true,
+        mute         : true,
+        playerOptions: {
+            htmlVideo: {
+                playsInline: true,
+                autoplay: true,
 
+            },
+            youtube: {
+            },
+        },
+    },
+}).mount({ Video });
 

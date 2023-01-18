@@ -58,7 +58,6 @@ input:not([type])[disabled], input:not([type])[readonly], fieldset[disabled] inp
     display:none;
 }
 
-
 @-webkit-keyframes spin {
     from {-webkit-transform:rotate(0deg);}
     to {-webkit-transform:rotate(360deg);}
@@ -85,3 +84,14 @@ input:not([type])[disabled], input:not([type])[readonly], fieldset[disabled] inp
     -webkit-animation: spin .8s linear infinite;
     animation: spin .8s linear infinite;
 }
+
+//validation fixing
+.just-validate-error-field {
+    margin-bottom: 0px;
+}
+
+.just-validate-error-label {
+    font-size: 14px;
+    margin-top:0;
+}
+

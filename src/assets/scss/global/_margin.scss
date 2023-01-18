@@ -1,0 +1,73 @@
+/*===================================================================
+margini
+===================================================================*/
+
+.extra-space-hero {
+    margin-top: 1rem;
+    @include breakpoint (small only) {
+        //margin-top: 0.4rem;
+    }
+}
+
+.extra-space {
+    margin-top: 2rem;
+}
+
+
+.extra-space-h2-chisiamo {
+    margin-top: 4rem;
+}
+
+.extra-space-image-tab-contatti {
+    margin-top: 3.9rem;
+    @include breakpoint (small only) {
+        margin-top: 1rem;
+    }
+}
+
+.extra-space-button {
+    margin-top: 0.5rem;
+}
+
+//spazio fra immagini, video e testo in homepage
+.extra-space-image-tab-home {
+    margin-top: 0.5rem;
+    @include breakpoint (small only) {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+
+.extra-space-video-home {
+    margin-top: 0.35rem;
+    @include breakpoint (small only) {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+
+.extra-space-video-chi-siamo {
+    margin-top: 4.4rem;
+    @include breakpoint (small only) {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

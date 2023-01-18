@@ -10,6 +10,7 @@
   "author": "Foundation Yetinauts <contact@get.foundation> (https://get.foundation)",
   "license": "MIT",
   "dependencies": {
+    "@splidejs/splide-extension-video": "^0.8.0",
     "foundation-sites": "latest",
     "jquery": "^3.6.0",
     "motion-ui": "latest",

@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 0;
     @include breakpoint (small only) {
        font-size: 1.875rem;
@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h4 {
@@ -45,19 +45,3 @@ h4 {
 }
 
 
-//spazio fra immagini, video e testo in homepage
-.extra-space-image-tab-home {
-    margin-top: 0.5rem;
-    @include breakpoint (small only) {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-    }
-}
-
-.extra-space-video-home {
-    margin-top: 0.35rem;
-    @include breakpoint (small only) {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-    }
-}

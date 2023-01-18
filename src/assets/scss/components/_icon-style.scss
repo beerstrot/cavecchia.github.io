@@ -1,0 +1,26 @@
+/*===================================================================
+icon style
+===================================================================*/
+
+.fi-social:hover {
+  fill: scale-color($primary-color, $lightness: -14%);
+}
+
+.fi-social:visited {
+  fill: $primary-color;
+}
+
+.fa-phone {
+    font-size: 0.9rem;
+        @media #{$small-only} {
+        font-size: 0.9rem;
+    }
+}
+.fi-social-facebook {
+    color: #3b5998;
+}
+
+i {
+    font-size: 1.4em;
+    padding-right: .3em;
+}

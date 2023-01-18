@@ -66,9 +66,16 @@
 
 // Custom import
 @import "global/typography";
+@import "global/margin";
 @import "components/navbar";
 @import "components/splide";
+@import 'components/splide-video';
+@import "components/home-page";
 @import "components/menu-asporto";
 @import "components/prenota";
+@import "components/icon-style";
+@import "components/modal-cart";
+@import "components/footer";
+@import "components/orari-home-footer";
 @import "custom";
 
