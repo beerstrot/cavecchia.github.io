@@ -30625,7 +30625,7 @@ __webpack_require__.e(/*! import() */ "src_assets_js_prenota_js").then(__webpack
 
  // inizialize splide
 
-new _splidejs_splide__WEBPACK_IMPORTED_MODULE_2__.Splide('#fotoMenu', {
+new _splidejs_splide__WEBPACK_IMPORTED_MODULE_2__["default"]('#fotoMenu', {
   type: 'slide',
   perPage: 1,
   arrows: true,
@@ -30652,7 +30652,7 @@ new _splidejs_splide__WEBPACK_IMPORTED_MODULE_2__.Splide('#fotoMenu', {
 }).mount({
   Video: _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_3__.Video
 });
-new _splidejs_splide__WEBPACK_IMPORTED_MODULE_2__.Splide('#fotoLocale', {
+new _splidejs_splide__WEBPACK_IMPORTED_MODULE_2__["default"]('#fotoLocale', {
   type: 'slide',
   gap: '2rem',
   arrows: true,

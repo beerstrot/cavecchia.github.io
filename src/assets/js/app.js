@@ -27,7 +27,7 @@ import('./navbar');
 import('./input-number');
 import('./prenota');
 //import('./accordion');
-import { Splide } from '@splidejs/splide';
+import Splide from '@splidejs/splide';
 import { Video } from '@splidejs/splide-extension-video';
 
 
@@ -54,7 +54,6 @@ new Splide( '#fotoMenu' , {
             htmlVideo: {
                 playsInline: true,
                 autoplay: true,
-
             },
             youtube: {
             },
