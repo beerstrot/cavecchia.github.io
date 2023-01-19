@@ -54,9 +54,17 @@ margini
     }
 }
 
-
-
-
+.panel-home-n {
+    margin-bottom: 0;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+    background-color: $white;
+    @include breakpoint(small only) {
+        margin-bottom: 0;
+        padding-top: 0rem;
+        padding-bottom: 3rem;
+    }
+}
 
 
 

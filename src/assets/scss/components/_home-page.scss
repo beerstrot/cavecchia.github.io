@@ -2,17 +2,7 @@
 homepage
 ===================================================================*/
 
-.panel-home-n {
-    margin-bottom: 0;
-    padding-top: 0rem;
-    padding-bottom: 5rem;
-    background-color: $white;
-    @include breakpoint(small only) {
-        margin-bottom: 0;
-        padding-top: 0rem;
-        padding-bottom: 3rem;
-    }
-}
+
 
 // .panel-home-2n {
 //     margin-bottom: 0;
@@ -27,10 +17,7 @@ homepage
 //     }
 // }
 
-.text-highlight {
-    background-color: rgba($black, 0.25);
-    margin-top: 1rem;
-}
+
 
 // .panel-asporto{
 //     margin-bottom: 0;
@@ -45,7 +32,7 @@ homepage
 // }
 
 .homepage-hero {
-    background: url('https://www.beerstrot.it/asset/img/large/background-home.gif') center center;
+    background: url('{{root}}assets/img/cover/home-cover.gif') center center;
     background-size: cover;
     height: 40rem;
     overflow: hidden;
