@@ -36,3 +36,13 @@ homepage
     font-size: 0.875rem;
     line-height: 1.4rem;
 }
+
+
+.orari-schedule {
+    white-space: nowrap;
+}
+.orari-schedule li span {
+    display: inline-block;
+    width: 5.625rem;
+    margin-right: 1.25rem;
+}

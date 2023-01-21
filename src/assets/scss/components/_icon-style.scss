@@ -12,15 +12,13 @@ icon style
 
 .fa-phone {
     font-size: 0.9rem;
-        @include breakpoint(small only) {
+    @include breakpoint(small only) {
         font-size: 0.9rem;
     }
 }
-.fi-social-facebook {
-    color: #3b5998;
-}
+
 
 i {
-    font-size: 1.4em;
-    padding-right: .3em;
+    font-size: 1.4rem;
+    padding-right: .3rem;
 }

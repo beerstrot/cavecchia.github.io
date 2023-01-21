@@ -31,9 +31,7 @@
 </head>
 <body>
     {{> navbar}}
-
     {{> body}}
-
     {{> footer}}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -50,12 +48,12 @@
        });
         function toggle_text() {
             var x = document.getElementById("showImage");
-                if (x.innerHTML === "Mostra immagini") {
+            if (x.innerHTML === "Mostra immagini") {
                     x.innerHTML = "Nascondi immagini";
-                    }
-                    else {
-                     x.innerHTML = "Mostra immagini";
-                    }
+            }
+            else {
+                 x.innerHTML = "Mostra immagini";
+            }
         }
     </script>
 </body>
