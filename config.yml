@@ -4,7 +4,7 @@ PORT: 8000
 # UnCSS will use these settings
 UNCSS_OPTIONS:
   html:
-    - "dist/**/*.html"
+    - "docs/**/*.html"
   timeout: 1000
   ignore:
     - .foundation-mq

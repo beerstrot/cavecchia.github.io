@@ -86,4 +86,3 @@ new Splide( '#fotoLocale' , {
         },
     },
 }).mount({ Video });
-
