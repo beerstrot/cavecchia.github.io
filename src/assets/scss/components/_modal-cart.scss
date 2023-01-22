@@ -2,22 +2,6 @@
 modal and cart
 ===================================================================*/
 
-// .reveal {
-//   z-index: 1006;
-//   -webkit-backface-visibility: hidden;
-//           backface-visibility: hidden;
-//   display: none;
-//   padding: 1rem;
-//   border: 1px solid #cacaca;
-//   border-radius: 0;
-//   background-color: #fefefe;
-//   position: relative;
-//   top: 100px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   overflow-y: auto;
-// }
-
 // centra il modal e fissa altezza relativamente alla viewport
 .reveal{
     position:fixed;
@@ -27,11 +11,6 @@ modal and cart
     transform:translate(-50%, -50%);
     max-height: calc(100vh - 80px);
     //border-radius: 10px;
-}
-
-.reveal-padding {
-    padding-right: 2rem;
-    padding-right: 2rem;
 }
 
 .close-button {
@@ -67,7 +46,6 @@ modal and cart
     }
 }
 
-
 .main-container {
     margin:0 auto;
 }
@@ -79,20 +57,9 @@ modal and cart
     background-color: white;
     padding-left: 1rem;
 //usa classe sotto per titoli lunghi e close button sticky to top
-    padding-right: 2.5rem;
+    padding-right: 3rem;
     padding-bottom: 0.2rem;
     padding-top: 1rem;
-}
-.main-header-nomodal {
-    position:sticky;
-    top:70;
-    margin-top:-1px;
-    background-color: white;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    padding-bottom: 1rem;
-    padding-top: 0.8rem;
 }
 .main-header-carrello-large {
     position:sticky;
@@ -149,7 +116,6 @@ modal and cart
     position:sticky;
     bottom:0;
     padding-bottom: 1px;
-    //margin-bottom: -20;
     background-color: white;
     padding-top:1rem;
 }
@@ -167,7 +133,6 @@ modal and cart
     //right:0;
     margin-bottom: 1rem;
 }
-
 
 .button.expanded1 {
   display: block;
@@ -192,8 +157,6 @@ modal and cart
     }
 
 }
-
-
 
 /*===================================================================
 + - e-commerce buttons
@@ -252,61 +215,6 @@ $input-number-size: 4rem;
         font-size: 1rem;
         vertical-align: middle;
     }
-
-}
-
-
-$input-number-size-carrello: 2rem;
-
-.input-number-group-carrello {
-    display: flex;
-    padding-top: 0.5rem;
-    //justify-content: bottom;
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
-    appearance: none;
-    }
-
-    .input-group-button-carrello {
-        line-height: calc(#{$input-number-size-carrello}/2 - 5px);
-    }
-
-    .input-number-carrello {
-        width: $input-number-size-carrello;
-        padding: 0 0px;
-        vertical-align: center;
-        background-color: white;
-        text-align: center;
-        outline: none;
-        display: block;
-        margin: 0;
-    }
-
-    .input-number-carrello,
-    .input-number-decrement-carrello,
-    .input-number-increment-carrello {
-        border: none;
-        //border: 1px solid $primary-color;
-        background-color: transparent;
-        height: $input-number-size-carrello/2;
-        user-select: none;
-    }
-
-    .input-number-decrement-carrello,
-    .input-number-increment-carrello {
-        touch-action: none;
-        display: inline-block;
-        width: $input-number-size-carrello/2;
-        background: $primary-color;
-        color: white;
-        text-align: center;
-        font-weight: normal;
-        cursor: pointer;
-        font-size: 1.3rem;
-        vertical-align: middle;
-        //font-weight: 400;
-    }
-
 }
 
 .shadow-carrello {
