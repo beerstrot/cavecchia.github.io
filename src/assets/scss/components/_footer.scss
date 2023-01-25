@@ -5,7 +5,7 @@ footer style
 .panel-footer {
     margin-bottom: 0;
     padding-top: 2rem;
-    padding-bottom: 1rem;
+    //padding-bottom: 1rem;
     background-color: $light-gray;
     @include breakpoint(small only) {
         padding-bottom: 1rem;
@@ -19,7 +19,7 @@ footer style
     p {
         font-size: 1rem;
         @include breakpoint(small only) {
-        font-size: 0.9rem;
+        font-size: 0.975rem;
         }
     }
     .attuale a {
@@ -31,7 +31,7 @@ footer style
         line-height: 1.9;
         white-space: nowrap;
         @include breakpoint(small only) {
-            font-size: 0.9rem;
+            font-size: 0.975rem;
         }
     }
     li span {

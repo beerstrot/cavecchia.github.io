@@ -13,7 +13,8 @@ icon style
 .fa-phone {
     font-size: 0.9rem;
     @include breakpoint(small only) {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+
     }
 }
 
@@ -26,3 +27,10 @@ i {
     padding-right: .3em;
 }
 
+
+.fa-shopping-cart.empty {
+    color: rgba($primary-color,0.2);
+}
+p.empty {
+    color: rgba($primary-color,0.4);
+}

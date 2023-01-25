@@ -96,7 +96,7 @@
     <!-- fine modale messaggio vuoi cancellare la prenotazione -->
     <footer class="panel-footer">
     	<div class="grid-container">
-    		<div class="grid-x small-up-2 medium-up-2 large-up-4 grid-margin-x ">
+    		<div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-2 large-up-4 grid-margin-x ">
     			<div class="cell">
     				<h1 class="subheader">Orari</h1>
     				<ul class="orari-footer-schedule no-bullet">
@@ -150,21 +150,5 @@
     <script src="https://npmcdn.com/flatpickr/dist/l10n/it.js"></script>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#showImage').on("click", function(){
-            $("[id='theImage']").toggle();
-            });
-       });
-        function toggle_text() {
-            var x = document.getElementById("showImage");
-            if (x.innerHTML === "Mostra immagini") {
-                    x.innerHTML = "Nascondi immagini";
-            }
-            else {
-                 x.innerHTML = "Mostra immagini";
-            }
-        }
-    </script>
 </body>
 </html>

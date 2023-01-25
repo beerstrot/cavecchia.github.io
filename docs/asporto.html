@@ -2265,7 +2265,7 @@
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal"" id="modalTitle">Landbier 1857 50cl</h1>
+    											<h1 class="h1-modal" id="modalTitle">Landbier 1857 50cl</h1>
     										</header>
     										<div class="main-content">
     											<p id="modalDescription">Helles tedesca non filtrata 5,3% - Bottiglia 50 cl. - Birrificio Bayreuther</p>
@@ -2302,7 +2302,7 @@
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal"" id="modalTitle">Landbier 1857 50cl</h1>
+    											<h1 class="h1-modal" id="modalTitle">Landbier 1857 50cl</h1>
     										</header>
     										<div class="main-content">
     											<p id="modalDescription">Helles tedesca non filtrata 5,3% - Bottiglia 50 cl. - Birrificio Bayreuther</p>
@@ -2339,7 +2339,7 @@
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal"" id="modalTitle">Landbier 1857 50cl</h1>
+    											<h1 class="h1-modal" id="modalTitle">Landbier 1857 50cl</h1>
     										</header>
     										<div class="main-content">
     											<p id="modalDescription">Helles tedesca non filtrata 5,3% - Bottiglia 50 cl. - Birrificio Bayreuther</p>
@@ -2376,7 +2376,7 @@
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal"" id="modalTitle">Landbier 1857 50cl</h1>
+    											<h1 class="h1-modal" id="modalTitle">Landbier 1857 50cl</h1>
     										</header>
     										<div class="main-content">
     											<p id="modalDescription">Helles tedesca non filtrata 5,3% - Bottiglia 50 cl. - Birrificio Bayreuther</p>
@@ -2413,7 +2413,7 @@
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal"" id="modalTitle">Landbier 1857 50cl</h1>
+    											<h1 class="h1-modal" id="modalTitle">Landbier 1857 50cl</h1>
     										</header>
     										<div class="main-content">
     											<p id="modalDescription">Helles tedesca non filtrata 5,3% - Bottiglia 50 cl. - Birrificio Bayreuther</p>
@@ -2450,7 +2450,7 @@
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal"" id="modalTitle">Landbier 1857 50cl</h1>
+    											<h1 class="h1-modal" id="modalTitle">Landbier 1857 50cl</h1>
     										</header>
     										<div class="main-content">
     											<p id="modalDescription">Helles tedesca non filtrata 5,3% - Bottiglia 50 cl. - Birrificio Bayreuther</p>
@@ -2712,6 +2712,10 @@
     						<i class="fas fa-shopping-cart"></i>
     						<span class="price">Prodotti: 5 | Totale: € 190,90</span>
     					</button>
+    					<!-- <button class="button expanded extra-space-button-sticky disabled" data-open="carrello">
+    						<i class="fas fa-shopping-cart"></i>
+    						<span class="price">Prodotti: 0 | Totale: € 0</span>
+    					</button> -->
     				</div>
     				<div id="ecommerce-button-bottom"></div>
     				<div class="reveal reveal-ecommerce grid-x grid-margin-x grid-margin-y main-container" id="carrello" data-reveal>
@@ -2996,8 +3000,13 @@
     				<!-- <header class="main-header-carrello-large">
     	Il tuo Ordine
     </header>
-    <div class="main-content-nomodal">
-    	<p>il carrello è vuoto</p>
+    <div class="grid-container">
+    	<div class="grid-x grid-margin-x grid-margin-y align-center-middle text-center">
+    		<div class="small-12 cell ">
+    			<i class="fas fa-shopping-cart empty fa-4x extra-space"></i>
+    			<p class="extra-space empty">il carrello è vuoto</p>
+    		</div>
+    	</div>
     </div>
     <footer class="main-footer">
     	<a href="#" class="button expanded-with-padding disabled">
@@ -3011,7 +3020,7 @@
     </div>
     <footer class="panel-footer">
     	<div class="grid-container">
-    		<div class="grid-x small-up-2 medium-up-2 large-up-4 grid-margin-x ">
+    		<div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-2 large-up-4 grid-margin-x ">
     			<div class="cell">
     				<h1 class="subheader">Orari</h1>
     				<ul class="orari-footer-schedule no-bullet">
@@ -3060,26 +3069,6 @@
     	</div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://npmcdn.com/flatpickr/dist/l10n/it.js"></script>
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#showImage').on("click", function(){
-            $("[id='theImage']").toggle();
-            });
-       });
-        function toggle_text() {
-            var x = document.getElementById("showImage");
-            if (x.innerHTML === "Mostra immagini") {
-                    x.innerHTML = "Nascondi immagini";
-            }
-            else {
-                 x.innerHTML = "Mostra immagini";
-            }
-        }
-    </script>
 </body>
 </html>
