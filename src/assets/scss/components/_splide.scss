@@ -175,7 +175,8 @@
 }
 
 .splide__arrow:hover:not(:disabled) {
-    opacity: .9
+    opacity: 0.8;
+    background-color: $anchor-color-hover;
 }
 
 .splide__arrow:disabled {

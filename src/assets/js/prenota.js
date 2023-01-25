@@ -516,7 +516,7 @@ function mkShiftButtons (shifts, selected) {
         if (bb.css('pointer-events') !== 'none')
           bb.css('background', bb.bcolor);
       });
-      b.css('background', '#0088a4');
+      b.css('background', 'rgb(0, 152, 184)');
       b.attr('bselected', true);
     });
   });

@@ -31,7 +31,7 @@ import { Video } from '@splidejs/splide-extension-video';
 
 
 // inizialize splide
-new Splide( '#fotoMenu' , {
+new Splide( '#fotoMenu', {
     type: 'slide',
     perPage: 1,
     arrows: true,
@@ -58,7 +58,7 @@ new Splide( '#fotoMenu' , {
     },
 }).mount({ Video });
 
-new Splide( '#fotoLocale' , {
+new Splide( '#fotoLocale', {
     type: 'slide',
     gap: '2rem',
     arrows: true,
