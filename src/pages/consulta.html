@@ -45,13 +45,11 @@ description: Il tavolo è stato riservato. Grazie
     </div>
 </div>
 <!-- inizio modale messaggio vuoi cancellare la prenotazione -->
-<div id="myModal" class="grid-x reveal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-    <p id="modalText"></p>
-            <div class="small-12 cell" style="margin-top: 4rem; margin-bottom:20%;">
-                <p class="lead" id="modalLead">Vuoi cancellare la prenotazione?</p>
-                <a role="button" id="no" class="button float-right" style="margin-top: 5px;">No, non cancellare</a>
-                <a role="button" id="yes" class="button float-left" style="margin-top: 5px;">Sì, cancella</a>
-            </div>
+<div id="myModal" class="reveal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <p class="extra-space-modal-first-paragraph" id="modalText"></p>
+    <p class="lead extra-space-modal-first-paragraph" id="modalLead">Vuoi cancellare la prenotazione?</p>
+    <a role="button" id="no" class="button float-right" style="margin-top: 5px;">No, non cancellare</a>
+    <a role="button" id="yes" class="button float-left" style="margin-top: 5px;">Sì, cancella</a>
     <button class="close-button" data-close aria-label="Close reveal" type="button" id="close-modal">
         <span aria-hidden="true">&#215;</span>
     </button>

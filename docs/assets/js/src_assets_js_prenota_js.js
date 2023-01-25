@@ -561,7 +561,7 @@ function updateShifts(dp, selected, people) {
     var shifts_ = res.shifts.filter(function (s) {
       return s.end_period >= d && s.start_period <= d && s.weekdays_period.includes(wd);
     });
-    if (shifts_.length === 0) return showMessage("Nei mesi da Settembre a Maggio siamo aperti dal Gioved\xEC alla Domenica.<br><br>Per richieste potete contattarci tramite ".concat(messengerString));
+    if (shifts_.length === 0) return showMessage("<p>Nei mesi da Settembre a Maggio siamo aperti dal Gioved\xEC alla Domenica.</p><p>Per richieste puoi inviarci una e-mail a ".concat(messengerString, "</p><p>Grazie</p>"));
     var shifts = mkShiftButtons(shifts_, selected);
     mkQuantityOptions(shifts, people);
   }, function (res) {
@@ -782,13 +782,13 @@ function showMessage(message) {
 }
 
 var telString = '<a href="tel:+390718853384"><span itemprop="telephone"> 071&nbsp;8853384</span></a>';
-var messengerString = '<a target="_blank" href="https://m.me/cavecchiabeerstrot"> Facebook Messenger</a>';
+var messengerString = '<a href="mailto:info@beerstrot.it?subject=Problema  Prenotazione">info@beerstrot.it</a>';
 var message10 = "Per <b>13 o pi\xF9 persone</b>, vi preghiamo di contattarci tramite ".concat(messengerString, " o telefonarci al numero ").concat(telString);
 /*const messageError = `Si prega di riprovare perché abbiamo riscontrato un errore.<br>
 Se il problema persiste, ti consigliamo di 
 entrare nel ${messengerString} o di chiamare ${telString}.<br>`;*/
 
-var messageError = "<h2>Il Server non \xE8 raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><li class=\"no-bullet\">Se il problema persiste:<ul class=\"disc\"><li>Scrivici su ".concat(messengerString, "</li><li>Chiamaci al numero ").concat(telString, "</li></ul></li>");
+var messageError = "<h2>Il Server non \xE8 raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><ul class=\"no-bullet\"><li>Se il problema persiste:</li><ul><li>Invia una email a ".concat(messengerString, "</li><li>Chiamaci al numero ").concat(telString, "</li></ul></li></ul>");
 
 function bookingNotFound() {
   var div = $('#innerInfoDiv');

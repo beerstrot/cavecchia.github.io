@@ -469,7 +469,7 @@ function updateShifts (dp, selected, people) {
       const wd = weekdays[dp.getDay()];
       const shifts_ = res.shifts.filter(s => (s.end_period >= d) && (s.start_period <= d) && (s.weekdays_period.includes(wd)));
       if (shifts_.length === 0)
-        return showMessage(`Nei mesi da Settembre a Maggio siamo aperti dal Giovedì alla Domenica.<br><br>Per richieste potete contattarci tramite ${messengerString}`);
+        return showMessage(`<p>Nei mesi da Settembre a Maggio siamo aperti dal Giovedì alla Domenica.</p><p>Per richieste puoi inviarci una e-mail a ${messengerString}</p><p>Grazie</p>`);
       const shifts = mkShiftButtons(shifts_, selected);
       mkQuantityOptions(shifts, people);
     },
@@ -671,7 +671,7 @@ function showMessage (message) {
 
 const telString = '<a href="tel:+390718853384"><span itemprop="telephone"> 071&nbsp;8853384</span></a>';
 
-const messengerString = '<a target="_blank" href="https://m.me/cavecchiabeerstrot"> Facebook Messenger</a>';
+const messengerString = '<a href="mailto:info@beerstrot.it?subject=Problema  Prenotazione">info@beerstrot.it</a>';
 
 const message10 = `Per <b>13 o più persone</b>, vi preghiamo di contattarci tramite ${messengerString} o telefonarci al numero ${telString}`;
 
@@ -679,7 +679,7 @@ const message10 = `Per <b>13 o più persone</b>, vi preghiamo di contattarci tra
 Se il problema persiste, ti consigliamo di 
 entrare nel ${messengerString} o di chiamare ${telString}.<br>`;*/
 
-const messageError = `<h2>Il Server non è raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><li class="no-bullet">Se il problema persiste:<ul class="disc"><li>Scrivici su ${messengerString}</li><li>Chiamaci al numero ${telString}</li></ul></li>`;
+const messageError = `<h2>Il Server non è raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><ul class="no-bullet"><li>Se il problema persiste:</li><ul><li>Invia una email a ${messengerString}</li><li>Chiamaci al numero ${telString}</li></ul></li></ul>`;
 
 function bookingNotFound () {
   const div = $('#innerInfoDiv');
