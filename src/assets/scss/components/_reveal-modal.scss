@@ -1,0 +1,47 @@
+/*===================================================================
+modal
+===================================================================*/
+
+// centra il modal e fissa altezza relativamente alla viewport
+.reveal-ecommerce {
+    position:fixed;
+    padding: 0rem;
+    top:50%!important; /* override inline style injected from JS */
+    left:50%;
+    transform:translate(-50%, -50%);
+    @include breakpoint(medium) {
+    max-height: calc(100vh - 60px);
+    //border-radius: 10px;
+    }
+}
+
+.close-button {
+    //background-color: white;
+    padding: 1rem;
+    //margin-top:-10;
+    //margin-top: 1.2rem;
+    font-size: 3rem;
+    @include breakpoint(small only) {
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
+// usa la classe sotto per close button sticky to top
+.close-button-sticky {
+    position: sticky;
+    left: 90%;
+    top:0.5%;
+    //background-color: white;
+    //padding: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 1.2rem;
+    margin-top:-4rem;
+    font-size: 3rem;
+    @include breakpoint(small only) {
+        top:0.3%;
+        padding-top: 0.7rem;
+        margin-top:-0.4rem;
+    }
+}
+

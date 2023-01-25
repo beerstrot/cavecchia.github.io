@@ -1,0 +1,59 @@
+---
+title: Tavolo Riservato. Grazie
+description: Il tavolo è stato riservato. Grazie
+---
+<header class="grid-container">
+    <div class="grid-x grid-margin-x">
+        <div class="small-12 cell">
+            <h1 class="first-paragraph-no-hero" id="ttitle">{{title}}</h1>
+        </div>
+    </div>
+</header>
+<!-- inizio loader -->
+<div id="loading" hidden></div>
+<!-- fine loader -->
+<div class="panel-home-n">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="small-12 medium-8 cell">
+                <fieldset class="fieldset">
+                     <legend id="tlegend">Dettaglio prenotazione </legend>
+                        <ul class="no-bullet" id="infoList">
+                            <li><strong>Nome: </strong><span id="name"></span></li>
+                            <li><strong>Email: </strong><span id="email"></span></li>
+                            <li><strong>Telefono: </strong><span id="telephone"></span></li>
+                            <br>
+                            <li><strong>Quale giorno: </strong><span id="day"></span></li>
+                            <li><strong>Orario arrivo: </strong><span id="time1"></span></li>
+                            <li><strong>Orario in cui lasciare il tavolo: </strong><span id="time2"></span></li>
+                            <li><strong>Numero persone: </strong><span id="people"></span></li>
+                            <br>
+                            <li><strong>Note: </strong><span id="note"></span></li>
+                            <li><strong>Seggioloni aggiunti: </strong><span id="segg"></span></li>
+                            <li><strong>Ho un cane o più: </strong><span id="dog"></span></li>
+                        </ul>
+                </fieldset>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="small-12 medium-8 cell">
+                <a role="button" id="cancel" class="button extra-space-button float-left">Cancella prenotazione</a>
+                <a role="button" id="modify" class="button extra-space-button float-right">Modifica prenotazione</a>
+                <a role="button" id="new" class="button extra-space-button float-right" href="{{root}}riserva-un-tavolo.html">Fai una nuova prenotazione</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- inizio modale messaggio vuoi cancellare la prenotazione -->
+<div id="myModal" class="grid-x reveal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <p id="modalText"></p>
+            <div class="small-12 cell" style="margin-top: 4rem; margin-bottom:20%;">
+                <p class="lead" id="modalLead">Vuoi cancellare la prenotazione?</p>
+                <a role="button" id="no" class="button float-right" style="margin-top: 5px;">No, non cancellare</a>
+                <a role="button" id="yes" class="button float-left" style="margin-top: 5px;">Sì, cancella</a>
+            </div>
+    <button class="close-button" data-close aria-label="Close reveal" type="button" id="close-modal">
+        <span aria-hidden="true">&#215;</span>
+    </button>
+</div>
+<!-- fine modale messaggio vuoi cancellare la prenotazione -->

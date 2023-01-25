@@ -2,31 +2,41 @@
 margini
 ===================================================================*/
 
-.extra-space-hero {
-    margin-top: 1rem;
+.extra-space-button-modal {
+    margin-top: 2rem;
     @include breakpoint(small only) {
-        //margin-top: 0.4rem;
+        margin-top: 1.5rem;
     }
+}
+
+.extra-space-button-sticky {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    @include breakpoint(small only) {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
 }
 
 .extra-space {
     margin-top: 2rem;
 }
 
-
-.extra-space-h2-chisiamo {
-    margin-top: 4rem;
-}
-
-.extra-space-image-tab-contatti {
-    margin-top: 3.9rem;
-    @include breakpoint(small only) {
-        margin-top: 1rem;
-    }
-}
-
 .extra-space-button {
     margin-top: 0.5rem;
+}
+
+.panel-home-n {
+    margin-bottom: 0;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+    background-color: $white;
+    @include breakpoint(small only) {
+        margin-bottom: 0;
+        padding-top: 0rem;
+        padding-bottom: 3rem;
+    }
 }
 
 //spazio fra immagini, video e testo in homepage
@@ -53,29 +63,3 @@ margini
         margin-bottom: 0rem;
     }
 }
-
-.panel-home-n {
-    margin-bottom: 0;
-    padding-top: 0rem;
-    padding-bottom: 5rem;
-    background-color: $white;
-    @include breakpoint(small only) {
-        margin-bottom: 0;
-        padding-top: 0rem;
-        padding-bottom: 3rem;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

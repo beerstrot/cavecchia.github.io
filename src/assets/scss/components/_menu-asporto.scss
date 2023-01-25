@@ -70,40 +70,10 @@ menupage text
    }
     p small {
         font-size: 0.85rem;
-        //font-style: italic;
         line-height: 1.25rem;
         display: block;
         margin-top: 0.3rem;
    }
-
-//tabs menu
-//     ul.tabs {
-//         li {
-//             float: none !important;
-//             display: inline-block;
-//             margin-top: 0rem;
-//             margin-bottom: 0.5rem;
-//             padding:0;
-//             //tab design
-//             background-color: $primary-color;
-//             // border: 1px $primary-color solid;
-//             //color: $primary-color;
-//         }
-//         @include breakpoint(small only) {
-//             text-align: center;
-//         }
-//         li:not(:active) a {
-//             color: $white;
-//         }
-//        .tabs-title > a:hover {
-//               background: scale-color($anchor-color, $lightness: +10%);
-//               color: $white;
-//         }
-//         .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-//           background: #fff;
-//           color: $primary-color;
-//         }
-//     }
 }
 
 
@@ -137,7 +107,6 @@ menupage text
 }
 
 //sticky menu
-
 .sticky {
     width: 100%;
     background-color: white;
@@ -210,15 +179,24 @@ a.is-active::after {
     }
 }
 
-// modal title
+// modal title for asporto
 .h1-modal {
     font-size: 2.5rem;
     font-weight: bold;
     text-transform: none;
     margin-top:0;
     padding-top:0;
-
+    line-height: 2.5rem;
     @include breakpoint(small only) {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
+    }
+}
+.allergeni {
+    //font-size: 0.9rem;
+    line-height: 1rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    @include breakpoint(small only) {
+        margin-bottom: 3rem;
     }
 }

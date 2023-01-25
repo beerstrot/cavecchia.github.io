@@ -1,68 +1,25 @@
 /*===================================================================
-modal and cart
+cart
 ===================================================================*/
-
-// centra il modal e fissa altezza relativamente alla viewport
-.reveal{
-    position:fixed;
-    padding: 0rem;
-    top:50%!important; /* override inline style injected from JS */
-    left:50%;
-    transform:translate(-50%, -50%);
-    max-height: calc(100vh - 80px);
-    //border-radius: 10px;
-}
-
-.close-button {
-    //background-color: white;
-    padding: 1rem;
-    //margin-top:-10;
-    margin-top: 1.2rem;
-    font-size: 3rem;
-    @include breakpoint(small only) {
-        padding: 1rem;
-        margin-top: 0.5rem;
-    }
-}
-
-// usa la classe sotto per close button sticky to top
-
-.close-button1 {
-    position: sticky;
-    left: 90%;
-    top:3%;
-    //background-color: white;
-    padding: 1rem;
-    padding-top: 0.6rem;
-    padding-bottom: 1.2rem;
-    margin-top:-4rem;
-    // margin-top: 1.2rem;
-    // margin-right: 1rem;
-    font-size: 3rem;
-    @include breakpoint(small only) {
-        top:0.3%;
-        padding-top: 0.7rem;
-        margin-top:-0.4rem;
-    }
-}
 
 .main-container {
     margin:0 auto;
 }
 
 .main-header{
-    //font-weight: bold;
     position:sticky;
+    position:-webkit-sticky;
     top:0;
     background-color: white;
     padding-left: 1rem;
 //usa classe sotto per titoli lunghi e close button sticky to top
-    padding-right: 3rem;
+    padding-right: 3.5rem;
     padding-bottom: 0.2rem;
     padding-top: 1rem;
 }
 .main-header-carrello-large {
     position:sticky;
+    position:-webkit-sticky;
     top:0;
     margin-top:0px;
     margin-bottom:0px;
@@ -134,28 +91,19 @@ modal and cart
     margin-bottom: 1rem;
 }
 
-.button.expanded1 {
+.button.expanded-with-padding {
   display: block;
   width: 94%;
   margin-right: auto;
   margin-left: auto;
 }
 
-.extra-space-button-modal {
-    margin-top: 2rem;
+// usa la classe per close button carrello small
+.close-button-carrello {
+    top:10%;
     @include breakpoint(small only) {
-        margin-top: 1.5rem;
+        top:0.1%;
     }
-}
-
-.extra-space-button-sticky {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    @include breakpoint(small only) {
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
-    }
-
 }
 
 /*===================================================================

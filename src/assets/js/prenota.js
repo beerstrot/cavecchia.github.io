@@ -126,10 +126,10 @@ function testeLambda () {
 }
 
 function showDays (datetime) {
-  $('.form').hide();
+  $('#form').hide();
   $('#notesTable').hide();
-  $('#notesDiv').show().css('margin-bottom', '50%');
-  $('#innerNotesDiv').css('margin-top', '30%');
+  $('#notesDiv').show().css('margin-bottom', '10%');
+  $('#innerNotesDiv').css('margin-top', '0%');
   $('#ttitle').text('Giorni di Chiusura');
   $('#yes').text('Aggiungi/rimuovi');
   $('#no').text('Non aggiungere/rimuovere');
@@ -139,7 +139,8 @@ function showDays (datetime) {
     res => {
       const r = res;
       $('#innerNotesDiv').html('<b>Giorni di chiusura:</b><br>' + r.dates.join('<br>'));
-      jQuery('#from2').flatpickr({
+      //jQuery('#from2').flatpickr({
+      const fp = $('#from2').flatpickr({
         minDate: 'today',
         locale: 'it',
         dateFormat:'d/M/Y',
@@ -174,7 +175,7 @@ function toggleDate (dp) {
 function showNotes (datetime) {
   $('#ttitle').text('Dashboard');
   $('#loading').show();
-  $('.form').hide();
+  $('#form').hide();
   $('#notesDiv').show();
   $('#innerNotesDiv').show();
   $('.clearme').remove();
@@ -198,7 +199,8 @@ function showNotes (datetime) {
         return a;
       }, {});
       shifts.anon = { name: 'anon', bookings: [] };
-      jQuery('#from2').flatpickr({
+      //jQuery('#from2').flatpickr({
+      const fp = $('#from2').flatpickr({
         locale: 'it',
         dateFormat:'d/M/Y',
         disableMobile: true,
@@ -294,7 +296,7 @@ function showNotes (datetime) {
       const summary = `<ul class="no-bullet"><b>${date}</b> ci sono:<li><b>${nbookings}</b> prenotazioni (<b>${notes.length}</b> online)</li><li><b>${total_}</b> persone prenotate</li><li><b>${ncani}</b> prenotazioni con cani</li><li><b>${nseggiolini}</b> seggioloni richiesti</li></ul>`;
       $('<p/>', { class: 'clearme', css: { padding: '' } }).html(summary).prependTo('#innerNotesDiv1');
       if (notes.length > 0) {
-        $('<button/>', { class: 'clearme button small', css: { marginBottom: '0rem', marginTop: '-2rem' } })
+        $('<button/>', { class: 'clearme button small', css: { marginBottom: '3rem', marginTop: '0rem' } })
           .prependTo('#innerNotesDiv2')
           .text('Invia email di promemoria a clienti')
           .off('click')
@@ -467,7 +469,7 @@ function updateShifts (dp, selected, people) {
       const wd = weekdays[dp.getDay()];
       const shifts_ = res.shifts.filter(s => (s.end_period >= d) && (s.start_period <= d) && (s.weekdays_period.includes(wd)));
       if (shifts_.length === 0)
-        return showMessage(`Nei mesi da Settembre a Maggio siamo aperti dal Giovedì alla Domenica.<br>Per richieste potete contattarci tramite ${messengerString}`);
+        return showMessage(`Nei mesi da Settembre a Maggio siamo aperti dal Giovedì alla Domenica.<br><br>Per richieste potete contattarci tramite ${messengerString}`);
       const shifts = mkShiftButtons(shifts_, selected);
       mkQuantityOptions(shifts, people);
     },
@@ -579,7 +581,7 @@ function presentReservation (r) {
   h('dog', extra.cani ? 'Sì' : 'No');
   $('#modify').click(() => {
     const pid = new URL(window.location.href).searchParams.get('id').split('_modificata')[0] + '_modifica';
-    window.location.href = window.location.href.split('/').reverse().slice(1).reverse().join('/') + '/index.html?id=' + pid;
+    window.location.href = window.location.href.split('/').reverse().slice(1).reverse().join('/') + '/riserva-un-tavolo.html?id=' + pid;
   });
   const pid = r.id;
   $('#cancel').click(() => {

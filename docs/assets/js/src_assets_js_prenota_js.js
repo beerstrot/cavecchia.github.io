@@ -157,10 +157,10 @@ function testeLambda() {
 }
 
 function showDays(datetime) {
-  $('.form').hide();
+  $('#form').hide();
   $('#notesTable').hide();
-  $('#notesDiv').show().css('margin-bottom', '50%');
-  $('#innerNotesDiv').css('margin-top', '30%');
+  $('#notesDiv').show().css('margin-bottom', '10%');
+  $('#innerNotesDiv').css('margin-top', '0%');
   $('#ttitle').text('Giorni di Chiusura');
   $('#yes').text('Aggiungi/rimuovi');
   $('#no').text('Non aggiungere/rimuovere');
@@ -169,8 +169,9 @@ function showDays(datetime) {
     data: datetime || '--'
   }, function (res) {
     var r = res;
-    $('#innerNotesDiv').html('<b>Giorni di chiusura:</b><br>' + r.dates.join('<br>'));
-    jQuery('#from2').flatpickr({
+    $('#innerNotesDiv').html('<b>Giorni di chiusura:</b><br>' + r.dates.join('<br>')); //jQuery('#from2').flatpickr({
+
+    var fp = $('#from2').flatpickr({
       minDate: 'today',
       locale: 'it',
       dateFormat: 'd/M/Y',
@@ -204,7 +205,7 @@ function toggleDate(dp) {
 function showNotes(datetime) {
   $('#ttitle').text('Dashboard');
   $('#loading').show();
-  $('.form').hide();
+  $('#form').hide();
   $('#notesDiv').show();
   $('#innerNotesDiv').show();
   $('.clearme').remove();
@@ -235,8 +236,9 @@ function showNotes(datetime) {
     shifts.anon = {
       name: 'anon',
       bookings: []
-    };
-    jQuery('#from2').flatpickr({
+    }; //jQuery('#from2').flatpickr({
+
+    var fp = $('#from2').flatpickr({
       locale: 'it',
       dateFormat: 'd/M/Y',
       disableMobile: true,
@@ -415,8 +417,8 @@ function showNotes(datetime) {
       $('<button/>', {
         class: 'clearme button small',
         css: {
-          marginBottom: '0rem',
-          marginTop: '-2rem'
+          marginBottom: '3rem',
+          marginTop: '0rem'
         }
       }).prependTo('#innerNotesDiv2').text('Invia email di promemoria a clienti').off('click').on('click', function () {
         showConsultaMessage('<p>Vuoi inviare email di promemoria della prenotazione ai clienti?</p>', 'giorno: ' + date, function () {
@@ -559,7 +561,7 @@ function updateShifts(dp, selected, people) {
     var shifts_ = res.shifts.filter(function (s) {
       return s.end_period >= d && s.start_period <= d && s.weekdays_period.includes(wd);
     });
-    if (shifts_.length === 0) return showMessage("Nei mesi da Settembre a Maggio siamo aperti dal Gioved\xEC alla Domenica.<br>Per richieste potete contattarci tramite ".concat(messengerString));
+    if (shifts_.length === 0) return showMessage("Nei mesi da Settembre a Maggio siamo aperti dal Gioved\xEC alla Domenica.<br><br>Per richieste potete contattarci tramite ".concat(messengerString));
     var shifts = mkShiftButtons(shifts_, selected);
     mkQuantityOptions(shifts, people);
   }, function (res) {
@@ -687,7 +689,7 @@ function presentReservation(r) {
   h('dog', extra.cani ? 'Sì' : 'No');
   $('#modify').click(function () {
     var pid = new URL(window.location.href).searchParams.get('id').split('_modificata')[0] + '_modifica';
-    window.location.href = window.location.href.split('/').reverse().slice(1).reverse().join('/') + '/index.html?id=' + pid;
+    window.location.href = window.location.href.split('/').reverse().slice(1).reverse().join('/') + '/riserva-un-tavolo.html?id=' + pid;
   });
   var pid = r.id;
   $('#cancel').click(function () {
