@@ -426,7 +426,7 @@ function showNotes(datetime) {
             action: 'promemoria',
             data: datetime
           }, function (res) {
-            showMessage('Email inviate');
+            showMessage('Email di promemoria inviate ai clienti');
           }, function (res) {
             showMessage(messageError);
           });
@@ -531,10 +531,10 @@ function makeInterface(pid, dates) {
     }
   }]).addField('#email', [{
     rule: 'required',
-    errorMessage: 'inserisci un\'e-mail'
+    errorMessage: 'inserisci un\'email'
   }, {
     rule: 'email',
-    errorMessage: 'L\'e-mail non è valida!'
+    errorMessage: 'L\'email non è valida!'
   }]);
   return fp;
 }
@@ -561,7 +561,7 @@ function updateShifts(dp, selected, people) {
     var shifts_ = res.shifts.filter(function (s) {
       return s.end_period >= d && s.start_period <= d && s.weekdays_period.includes(wd);
     });
-    if (shifts_.length === 0) return showMessage("<p>Nei mesi da Settembre a Maggio siamo aperti dal Gioved\xEC alla Domenica.</p><p>Per richieste puoi inviarci una e-mail a ".concat(messengerString, "</p><p>Grazie</p>"));
+    if (shifts_.length === 0) return showMessage("<p>Nei mesi da Settembre a Maggio siamo aperti dal Gioved\xEC alla Domenica.</p><p>Per richieste puoi inviarci una email a ".concat(emailString, "</p><p>Grazie</p>"));
     var shifts = mkShiftButtons(shifts_, selected);
     mkQuantityOptions(shifts, people);
   }, function (res) {
@@ -646,13 +646,13 @@ function showReservation(pid) {
     if (res.booking === null) {
       $('#yes').hide();
       $('#no').hide();
-      return showConsultaMessage('Prenotazione non trovata.', "Se non hai cancellato la prenotazione in precedenza, puoi scriverci tramite ".concat(messengerString, " o chiamarci al numero ").concat(telString, " per chiarimenti."));
+      return showConsultaMessage('Prenotazione non trovata.', "Se non hai cancellato la prenotazione in precedenza, puoi scriverci una email a ".concat(emailString, " o chiamarci al numero ").concat(telString, " per chiarimenti."));
     }
 
     presentReservation(res.booking);
   }, //se ti serve tienilo, ma nascondilo a tutti gli altri. non è user friendly e se un cliente ci chiama e ci da il pid noi non sappiamo cosa rispondere...
   function (res) {
-    showMessage("".concat(messageError, "\n        La ID della prenotazione \xE8: ").concat(pid, "."));
+    showMessage("".concat(messageErrorAlreadyCancelled, "\n        La ID della prenotazione \xE8: ").concat(pid, "."));
   });
 }
 
@@ -782,13 +782,13 @@ function showMessage(message) {
 }
 
 var telString = '<a href="tel:+390718853384"><span itemprop="telephone"> 071&nbsp;8853384</span></a>';
-var messengerString = '<a href="mailto:info@beerstrot.it?subject=Problema  Prenotazione">info@beerstrot.it</a>';
-var message10 = "Per <b>13 o pi\xF9 persone</b>, vi preghiamo di contattarci tramite ".concat(messengerString, " o telefonarci al numero ").concat(telString);
+var emailString = '<a href="mailto:info@beerstrot.it?subject=Problema  Prenotazione">info@beerstrot.it</a>';
+var message10 = "Per <b>13 o pi\xF9 persone</b>, vi preghiamo di contattarci tramite ".concat(emailString, " o telefonarci al numero ").concat(telString);
 /*const messageError = `Si prega di riprovare perché abbiamo riscontrato un errore.<br>
 Se il problema persiste, ti consigliamo di 
-entrare nel ${messengerString} o di chiamare ${telString}.<br>`;*/
+entrare nel ${emailString} o di chiamare ${telString}.<br>`;*/
 
-var messageError = "<h2>Il Server non \xE8 raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><ul class=\"no-bullet\"><li>Se il problema persiste:</li><ul><li>Invia una email a ".concat(messengerString, "</li><li>Chiamaci al numero ").concat(telString, "</li></ul></li></ul>");
+var messageError = "<h2>Il Server non \xE8 raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><ul class=\"no-bullet\"><li>Se il problema persiste:</li><ul><li>Invia una email a ".concat(emailString, "</li><li>Chiamaci al numero ").concat(telString, "</li></ul></li></ul>"); //const messageErrorAlreadyCancelled = `<h2>Prenotazione non trovata</h2><ul class="no-bullet"><li>Se non hai cancellato la prenotazione in precedenza, per chiarimenti puoi:</li><ul><li>Scriverci una email a ${emailString}</li><li>Chiamarci al numero ${telString}</li></ul></li></ul><p>Grazie</p>`;
 
 function bookingNotFound() {
   var div = $('#innerInfoDiv');
@@ -796,7 +796,7 @@ function bookingNotFound() {
   $('<legend/>').text('Prenotazione non trovata').appendTo(fs);
   $('<div/>').html("<p>Ti chiediamo gentilmente di contattarci.</p>").appendTo(fs);
   $('<div/>').html(telString).appendTo(fs);
-  $('<div/>').html(messengerString).appendTo(fs);
+  $('<div/>').html(emailString).appendTo(fs);
   $('#buttonInfoDiv').hide();
 }
 
