@@ -11,7 +11,7 @@ icon style
 }
 
 
-// .la-phone {
+// .la-phone, .la-envelope {
 //     font-size: 1rem;
 //     @include breakpoint(small only) {
 //         //font-size: 1.1rem;
@@ -27,6 +27,7 @@ icon style
 .la-shopping-basket.empty {
     color: rgba($primary-color,0.2);
 }
+
 p.empty {
     color: rgba($primary-color,0.4);
 }
@@ -37,3 +38,18 @@ p.empty {
         font-size: 1.6rem;
     }
 }
+
+.las.la-user-circle {
+    //margin-top: -0.8rem;
+    line-height: 1.6rem;
+    padding-left: -1.6rem;
+    @include breakpoint(small only) {
+        margin-left: -0.25rem;
+    }
+
+}
+
+// .la-user-circle {
+//     //margin-top: -0.8rem;
+//     padding-left: -1.6rem;
+// }
