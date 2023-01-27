@@ -15,10 +15,10 @@ var items = document.querySelectorAll(".item");
 function toggleMenu() {
   if (menu.classList.contains("active")) {
     menu.classList.remove("active");
-    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+    toggle.querySelector("a").innerHTML = "<i class='las la-bars la-2x'></i>";
   } else {
     menu.classList.add("active");
-    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+    toggle.querySelector("a").innerHTML = "<i class='las la-times la-2x'></i>";
   }
 }
 /* Event Listeners */
