@@ -12,11 +12,11 @@ canonical:
 		</div>
 	</div>
 	<div class="grid-x grid-margin-x">
-		{{>orari-asporto}}
+		{{> orari-asporto}}
 
 	</div>
 </div>
-<div id="magellanStickyTop" class="grid-container full extra-space" style="overflow-x: hidden;">
+<div id="magellanStickyTop" class="grid-container full" style="overflow-x: hidden;">
 	<div class="grid-x grid-margin-x">
 		<div class="small-12 cell" data-sticky-container data-magellan data-offset="30">
 			<ul class="menu sticky hs no-scrollbar" data-sticky data-top-anchor="magellanStickyTop" data-options="marginTop:0;" data-sticky-on="small" style="padding:0 0rem; margin-top:0;">
@@ -79,7 +79,7 @@ canonical:
 											    	<span class="input-number-increment">&plus;</span>
 											  	</div>
 											</div>
-											<a href="#" class="button expanded-with-padding  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 13</span>
+											<a href="#" data-open="sushiReveal" class="button expanded-with-padding  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 13</span>
 											</a>
 										</footer>
 									</div>
@@ -466,6 +466,7 @@ canonical:
 				</div>
 				<div id="ecommerce-button-bottom"></div>
 				{{> carrello}}
+				{{> checkout}}
 
 			</div>
 			<div class="large-4 cell show-for-large fixed_box shadow-carrello">

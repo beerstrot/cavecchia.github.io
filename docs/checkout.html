@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceckout | Ca' Vecchia Beerstrot </title>
-    <meta name="description" content="Finalizza l&#x27;acquisto">
+    <title> | Ca' Vecchia Beerstrot </title>
+    <meta name="description" content="">
     <meta name="author" content="Ca' Vecchia Beerstrot">
     <meta name="copyright" content="Beerstrot Copyright (c) 2023">
     <link rel="canonical" href="">
@@ -41,69 +41,33 @@
     		<li class="item "><a href="user-account.html"><i class="las la-user-circle la-3x"></i></a></li>
     		<li class="toggle"><a href="javascript:void(0)"><i class="las la-bars la-2x"></i></a></li>
     	</ul>
-    </nav>    <header class="asporto-hero"></header>
-    <div class="grid-container" data-sticky-container>
-        <div class="grid-x grid-margin-x">
-            <div class="medium-12 large-12 cell">
-                <h1 class="first-paragraph">Ceckout</h1>
-    
-                <div class="small-12 medium-6 large-4 cell">
-                    <div class="main-header-orari-ritiro">
-                        Scegli l'orario per il ritiro
-                    </div>
-                    <div class="grid-x grid-margin-x small-up-4">
-                        <div class="cell">
-                            <a href="#" class="button">19:00</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">19:15</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">19:30</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">19:45</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">20:00</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">20:15</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">20:30</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">20:45</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">21:00</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">21:15</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">21:30</a>
-                        </div>
-                        <div class="cell">
-                            <a href="#" class="button">21:45</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="small-12 medium-6 large-4 cell">
-                    <div class="main-header-carrello-large">
-                        Accedi o Registrati
-                    </div>
-                    <div class="grid-x grid-padding-x align-spaced">
-                        <div class="cell small-3">
-                            <a href="#" class="button small self-align-spaced">Accedi</a>
-                        </div>
-                        <div class="cell small-3">
-                            <a href="#" class="button small hollow self-align-spaced">Registrati</a>
-                        </div>
-                    </div>
-                </div> -->        </div>
+    </nav>    <div class="reveal reveal-ecommerce" id="checkout" data-reveal>
+        <button class="close-button close-button-sticky" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+        </button>
+        <header class="main-header">
+            <h1 class="h1-modal" id="modalTitle">Finalizza l'ordine</h1>
+        </header>
+        <div class="main-content">
+            <p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
+            <p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+            <label><strong>Note</strong>
+                <textarea maxlength="" id="" placeholder=".........."></textarea>
+            </label>
         </div>
+        <footer class="main-footer">
+            <div class="input-group input-number-group">
+                <div class="input-group-button">
+                    <span class="input-number-decrement">&ndash;</span>
+                </div>
+                <input class="input-number" type="button" value="1" min="0" max="30">
+                <div class="input-group-button">
+                    <span class="input-number-increment">&plus;</span>
+                </div>
+            </div>
+            <a href="#" class="button expanded-with-padding  extra-space-button-modal">Aggiungi al carrello<span class="price"> € 13</span>
+            </a>
+        </footer>
     </div>
     <footer class="panel-footer">
     	<div class="grid-container">
