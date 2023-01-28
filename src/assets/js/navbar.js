@@ -1,6 +1,6 @@
 //hamburger menu
 const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu1");
+const menu = document.querySelector(".menu-hamburger");
 const items = document.querySelectorAll(".item");
 
 /* Toggle mobile menu */

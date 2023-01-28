@@ -10,20 +10,19 @@ icon style
   fill: $primary-color;
 }
 
-
-// .la-phone, .la-envelope {
-//     font-size: 1rem;
-//     @include breakpoint(small only) {
-//         //font-size: 1.1rem;
-
-//     }
-// }
-
+//footer
+.la-phone, .la-envelope {
+    font-size: 1rem;
+    @include breakpoint(small only) {
+        //font-size: 1.1rem;
+    }
+}
 //hamburger menu padding
 .la-bars,  .la-times {
     padding-right: .3rem;
 }
 
+//carrello
 .la-shopping-basket.empty {
     color: rgba($primary-color,0.2);
 }
@@ -32,24 +31,18 @@ p.empty {
     color: rgba($primary-color,0.4);
 }
 
-
 .la-shopping-basket {
-    @include breakpoint(small only) {
-        font-size: 1.6rem;
+    @include breakpoint(medium down) {
+        font-size: 1.2rem;
+        //line-height: 2.4rem;
     }
 }
 
 .las.la-user-circle {
-    //margin-top: -0.8rem;
     line-height: 1.6rem;
     padding-left: -1.6rem;
     @include breakpoint(small only) {
         margin-left: -0.25rem;
+        line-height: 1;
     }
-
 }
-
-// .la-user-circle {
-//     //margin-top: -0.8rem;
-//     padding-left: -1.6rem;
-// }

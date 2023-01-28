@@ -62,7 +62,7 @@ menupage text
     }
     .price {
         font-size: 1rem;
-        margin-left: 1.2rem;
+        margin-left: 1rem;
         font-weight: normal;
         @include breakpoint(small only) {
             margin-left: 0.8rem;
