@@ -33,3 +33,37 @@ bordo per debugging
     max-height: calc(100vh - 0px);
     }
 }
+
+
+
+ //tabs menu
+    // ul.tabs {
+    //     li {
+    //         float: none !important;
+    //         display: inline-block;
+    //         margin-top: 0rem;
+    //         margin-bottom: 0.5rem;
+    //         padding:0;
+    //         //tab design
+
+    //         background-color: $white;
+    //         // border: 1px $primary-color solid;
+    //         //color: $primary-color;
+    //     }
+    //     @include breakpoint (small only) {
+    //         text-align: center;
+    //     }
+
+    //     li:not(:active) a {
+    //         color: $primary-color;
+    //     }
+    //    .tabs-title > a:hover {
+    //           background: scale-color($anchor-color, $lightness: +10%);
+    //           color: $white;
+    //     }
+
+    //     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    //       background: $primary-color;
+    //       color: $white;
+    //     }
+    // }
