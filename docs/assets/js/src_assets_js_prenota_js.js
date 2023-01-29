@@ -518,10 +518,10 @@ function makeInterface(pid, dates) {
     errorMessage: 'scegli il numero di persone'
   }]).addField('#privacy', [{
     rule: 'required',
-    errorMessage: 'è necessario accettare la privacy'
+    errorMessage: 'è necessario accettare l\'informativa sulla privacy'
   }]).addField('#shiftGridL', [{
     rule: 'required',
-    errorMessage: 'seleziona il turno.',
+    errorMessage: 'seleziona il turno',
     validator: function validator() {
       var shiftId = $($('.aShift').filter(function (i, ii) {
         return $(ii).attr('bselected') == 'true';
