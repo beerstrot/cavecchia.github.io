@@ -425,13 +425,13 @@ function makeInterface (pid, dates) {
     .addField('#privacy', [
       {
         rule: 'required',
-        errorMessage: 'è necessario accettare la privacy'
+        errorMessage: 'è necessario accettare l\'informativa sulla privacy'
       }
     ])
     .addField('#shiftGridL', [
       {
         rule: 'required',
-        errorMessage: 'seleziona il turno.',
+        errorMessage: 'seleziona il turno',
         validator: () => {
           const shiftId = $($('.aShift').filter((i, ii) => $(ii).attr('bselected') == 'true')[0]).attr('bindex');
           const res = shiftId !== undefined;
