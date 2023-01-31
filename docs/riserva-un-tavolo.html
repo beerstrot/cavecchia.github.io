@@ -1,0 +1,298 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riserva un Tavolo | Ca' Vecchia Beerstrot </title>
+    <meta name="description" content="Riserva un Tavolo a Ca&#x27; Vecchia Beerstrot direttamente dal nostro sitoweb">
+    <meta name="author" content="Ca' Vecchia Beerstrot">
+    <meta name="copyright" content="Beerstrot Copyright (c) 2023">
+    <link rel="canonical" href="">
+    <link rel="icon" href="assets/img/thumbs/favicon.png">
+    <meta name="p:domain_verify" content="ca68ebe696c4699798a5a243ca187b2d">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','//connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '770709373057085');
+        fbq('track', "PageView");
+        fbq('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=770709373057085&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+<body>
+    <nav id="hamburgerNav">
+    	<ul class="menu-hamburger">
+    		<li class="logo"><a href="index.html"><img class="img-logo" src="assets/img/svgs/logo-completo.svg" alt="Ca' Vecchia Beerstrot"><meta itemprop="name" content="Ca' Vecchia Beerstrot"></a>
+    		</li>
+    		<li class="item  attuale "><a href="riserva-un-tavolo.html">Riserva un Tavolo</a></li>
+    		<li class="item "><a href="menu.html">Menù</a></li>
+    		<li class="item "><a href="asporto.html">Ordina da Asporto</a></li>
+    		<li class="item "><a href="chi-siamo.html">Chi Siamo</a></li>
+    		<li class="item "><a href="user-account.html"><i class="las la-user-circle la-3x"></i></a></li>
+    		<li class="toggle"><a href="javascript:void(0)"><i class="las la-bars la-2x"></i></a></li>
+    	</ul>
+    </nav>    <header class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="small-12 cell">
+                <h1 class="first-paragraph-no-hero" id="ttitle">Riserva un Tavolo</h1>
+            </div>
+        </div>
+    </header>
+    <!-- inizio loader -->
+    <div id="loading" hidden></div>
+    <!-- fine loader -->
+    <!-- inizio dashboard -->
+    <div class="grid-container" id="notesDiv" hidden>
+        <div class="grid-x grid-margin-x" >
+            <div class="small-6 medium-4 cell" id="innerNotesDiv_" >
+                <label>Seleziona giorno
+                    <input tabindex="5" id="from2" type="text">
+                </label>
+            </div>
+            <div class="small-12 cell" id="notesDiv3">
+            </div>
+            <div class="small-12 cell" id="innerNotesDiv1">
+            </div>
+            <div class="small-12 cell" id="innerNotesDiv2">
+            </div>
+            <div class="small-12 cell table-scroll" id="innerNotesDiv">
+                <table id="shiftsTable" style="table-layout: auto; width:auto; font-size: 0.875rem;">
+                    <caption class="text-left" style="font-size: 1rem;padding-left:0rem;">Numero persone per turno</caption>
+                    <thead>
+                        <tr>
+                            <th>Turno</th>
+                            <th>Nr. Persone Totali</th>
+                            <th>Nr. Persone Prenotate online</th>
+                            <th>Nr. Persone Prenotate da Scloby</th>
+                        </tr>
+                    </thead>
+                    <tbody id="shiftsTableBody" style="text-align:center;"></tbody>
+                </table>
+                <table id="notesTable" class="extra-space" style="table-layout: auto; width:auto; font-size: 0.875rem;">
+                    <caption class="text-left" style="font-size: 1rem; padding-left:0rem;">Prenotazioni online</caption>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Nr. Persone</th>
+                            <th>Tavolo</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                            <th>Orario</th>
+                            <th>Cani</th>
+                            <th>Seggioloni</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody id="notesTableBody" style="text-align:center;"></tbody>
+                </table>
+                <table id="anonTable" class="extra-space" style="table-layout: auto; width:auto; font-size: 0.875rem;">
+                    <caption class="text-left" style="font-size: 1rem;padding-left:0rem;">Prenotazioni da Scloby senza turno</caption>
+                    <thead>
+                        <tr>
+                            <th>Inizio</th>
+                            <th>Fine</th>
+                            <th>Nr. Persone</th>
+                            <th>Tavolo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="anonTableBody" style="text-align:left;"></tbody>
+                </table>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <!-- fine dashboard -->
+    <!-- inizio form -->
+    <div class="panel-home-n">
+        <div class="grid-container">
+            <form id="form">
+                <div class="grid-x ">
+                    <div class="small-12 cell">
+                         <p>Includi in <strong>Quante persone*</strong> anche eventuali seggioloni. Esempio: 4 persone e 2 seggioloni seleziona 6.</p>
+                         <p><strong>* </strong> Indica un campo obbligatorio.</p>
+                    </div>
+                    <div class="small-12 cell"><hr></div>
+                </div>
+                <div class="grid-x grid-margin-x grid-margin-y">
+                    <div class="small-6 medium-3 cell ">
+                        <label><strong>Quale giorno*</strong>
+                            <input tabindex="5" id="from" type="text" name="LNAME" class="required error" placeholder="Seleziona Giorno" readonly/>
+                        </label>
+                    </div>
+                    <div class="small-6 medium-3 cell">
+                        <label><strong>Quante persone*</strong>
+                            <select name="MMERGE4" class="required error" id="quantity" disabled>
+                                <option value="">Seleziona Numero</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="small-12 medium-4 cell">
+                        <label><strong>Quale turno*</strong>
+                            <div id="shiftGridL"></div>
+                            <div class="grid-x small-up-2 required error" id="shiftGrid">
+                                <div class="cell bShift"><a class="button hollow disabled">19.00-21.00</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">19.30-21.30</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">20.00-22.00</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">20.30-22.30</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">21.00-23.00</a></div>
+                                <div class="cell bShift"><a class="button hollow disabled">21.30-23.00</a></div>
+                            </div>
+                        </label>
+                        <h6>Turno: orario d'arrivo-orario in cui bisogna lasciare il tavolo</h6>
+                    </div>
+                    <div class="small-12 cell"><hr></div>
+                </div>
+                <div class="grid-x grid-margin-x grid-margin-y">
+                    <div class="small-12 medium-6 cell">
+                        <label><strong>Note</strong>
+                            <textarea maxlength="200" id="obs" placeholder="Accesso con sedia a rotelle, ..."></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="small-7 medium-4 cell">
+                        <label><strong>Ho bisogno di seggioloni</strong>
+                            <select name="MMERGE4" id="seggiolini">
+                                <option value="0">No</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="small-9 medium-6 cell" >
+                        <input id="cani" type="checkbox"><label for="checkbox1">Ho uno o più cani</label>
+                    </div>
+                    <div class="small-12 cell"><hr></div>
+                </div>
+                <div class="grid-x grid-margin-x grid-margin-y">
+                    <div class="small-6 medium-4 cell">
+                        <label><strong>Nome*</strong>
+                            <input type="text" class="required error" id="name" placeholder="Nome" maxlength="20"/>
+                        </label>
+                    </div>
+                    <div class="small-6 medium-4 cell">
+                        <label><strong>Cognome*</strong>
+                            <input type="text" class="required error" id="surname" placeholder="Cognome" maxlength="20"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="small-12 medium-5 cell">
+                        <label><strong>Email*</strong>
+                            <input type="email" class="required error email" id="email" placeholder="esempio@esempio.it" maxlength="200"/>
+                          </label>
+                    </div>
+                    <div class="small-6 medium-3 cell">
+                        <label><strong>Telefono*</strong>
+                            <input type="tel" class="required error" id="telephone" placeholder="3332221111" maxlength="35" />
+                        </label>
+                    </div>
+                    <div class="small-12 cell"><hr></div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="small-12 cell">
+                        <label id="privacy3">
+                            <input id="privacy" type="checkbox" checked>Accetto la <a href="informazioni-legali.html#privacy" target="_blank">Informativa sulla privacy</a>*
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="small-12 cell">
+                        <a id="prenota" role="button" class="button float-right" style="margin-bottom:0.5rem; margin-top:1rem;">Riserva il Tavolo</a>
+                    </div>
+                    <br>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- fine form -->
+    <!-- inizio modale messaggio locale completo & chiusura giorni mesi invernali-->
+    <div id="myModal" class="reveal reveal-ios-bug" data-reveal aria-labelledby="modalTitle" aria-hidden="true">
+        <p class="lead extra-space-modal-first-paragraph" id="modalLead">In questa data siamo al completo.</p>
+        <button class="close-button" data-close aria-label="Close reveal" type="button" id="close-modal">
+            <span aria-hidden="true">&#215;</span>
+        </button>
+    </div>
+    <!-- fine modale messaggio locale completo -->
+    <!-- inizio modale invio promemoria ai clienti e aggiungere/rimuovere giorni chiusura-->
+    <div id="myModal2" class="reveal reveal-ios-bug" data-reveal aria-labelledby="modalTitle" aria-hidden="true">
+        <p class="extra-space-modal-first-paragraph" id="modalLead2">Vuoi inviare il promemoria della prenotazione ai clienti?</p>
+        <a role="button" id="no" class="button small float-right" style="margin-top: 5px;">No, non inviare</a>
+        <a role="button" id="yes" class="button small float-left" style="margin-top: 5px;">Sì, Invia</a>
+        <button class="close-button" data-close aria-label="Close reveal" type="button" id="close-modal">
+            <span aria-hidden="true">&#215;</span>
+        </button>
+    </div>
+    <!-- fine modale invio promemoria ai clienti e aggiungere/rimuovere giorni chiusura-->
+    <footer class="panel-footer">
+    	<div class="grid-container">
+    		<div class="grid-x grid-margin-x grid-margin-y small-up-2 large-up-4 grid-margin-x ">
+    			<div class="cell">
+    				<h1 class="subheader">Orari</h1>
+    				<ul class="orari-footer-schedule no-bullet">
+    					<li><span>Lunedì:</span>chiuso</li>
+    					<li><span>Martedì:</span>chiuso</li>
+    					<li><span>Mercoledì:</span>chiuso</li>
+    					<li><span>Giovedì:</span>19 - 22</li>
+    					<li><span>Venerdì:</span>19 - 22</li>
+    					<li><span>Sabato:</span>19 - 23</li>
+    					<li><span>Domenica:</span>19 - 22</li>
+    				 </ul>
+    			</div>
+    			<div class="cell">
+    				<h1 class="subheader">Mappa del Sito</h1>
+    				<ul class="orari-footer-schedule no-bullet">
+    					<li class="item "><a href="index.html">Home</a></li>
+    					<li class=" attuale "><a href="riserva-un-tavolo.html">Riserva un Tavolo</a></li>
+    					<li class=""><a href="menu.html">Menù</a></li>
+    					<li class=""><a href="asporto.html">Ordina da Asporto</a></li>
+    					<li class=""><a href="chi-siamo.html">Chi Siamo</a></li>
+    					<li class=""><a href="user-account.html">Il Mio Account</a></li>
+    					<li class=""><a href="informazioni-legali.html">Informazioni Legali</a></li>
+    				 </ul>
+    			</div>
+    			<div class="cell">
+    				<h1 class="subheader">Contatti</h1>
+    				<ul class="orari-footer-schedule no-bullet">
+    					<li><a href="mailto:info@beerstrot.it"><i class="las la-envelope">&nbsp; </i>info@beerstrot.it</a></li>
+    					<li><a href="tel:+390718853384"><i class="las la-phone">&nbsp; </i>071&nbsp;8853&nbsp;384</a></li>
+    				</ul>
+    			</div>
+    			<div class="cell">
+    				<h1 class="subheader">Dove Siamo</h1>
+    				<p>
+    					<a href="http://maps.apple.com/?lsp=9902&auid=2172393922260918433&sll=43.435636,13.377735&q=Ca%27%20Vecchia%20Beerstrot&hnear=Via%20Centofinestre%2020%2C%2060024%20Filottrano%2C%20Ancona%2C%20Italia" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    						<span itemprop="streetAddress">Via Centofinestre, 20</span>
+    						<br>
+    						<span itemprop="postalCode">60024</span>
+    						<span itemprop="addressLocality">Filottrano</span>
+    						<span itemprop="addressRegion">AN</span>
+    					</a>
+    				</p>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/it.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
