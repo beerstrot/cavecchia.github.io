@@ -1,6 +1,15 @@
 <!doctype html>
 <html class="no-js" lang="it">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-YVPH2DD4R7"></script>
+    <script type="text/plain" data-cookiecategory="analytics">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YVPH2DD4R7');
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +22,9 @@
     <meta name="p:domain_verify" content="ca68ebe696c4699798a5a243ca187b2d">
     <link rel="stylesheet" href="../assets/css/app.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css">
     <!-- Facebook Pixel Code -->
-    <script>
+    <script type="text/plain" data-cookiecategory="targeting" >
         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
         n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
@@ -297,5 +307,142 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js"></script>
+    <script>
+        window.addEventListener('load', function(){
+
+            // obtain plugin
+            var cc = initCookieConsent();
+
+            // run plugin with your configuration
+            cc.run({
+                current_lang: 'it',
+                autoclear_cookies: true,                   // default: false
+                page_scripts: true,                        // default: false
+
+                // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
+                 delay: 1000,                               // default: 0
+                // auto_language: '',                      // default: null; could also be 'browser' or 'document'
+                // autorun: true,                          // default: true
+                // force_consent: false,                   // default: false
+                // hide_from_bots: true,                   // default: true
+                // remove_cookie_tables: false             // default: false
+                // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
+                // cookie_expiration: 182,                 // default: 182 (days)
+                // cookie_necessary_only_expiration: 182   // default: disabled
+                // cookie_domain: location.hostname,       // default: current domain
+                // cookie_path: '/',                       // default: root
+                // cookie_same_site: 'Lax',                // default: 'Lax'
+                // use_rfc_cookie: false,                  // default: false
+                // revision: 0,                            // default: 0
+
+                onFirstAction: function(user_preferences, cookie){
+                    // callback triggered only once on the first accept/reject action
+                },
+
+                onAccept: function (cookie) {
+                    // callback triggered on the first accept/reject action, and after each page load
+                },
+
+                onChange: function (cookie, changed_categories) {
+                    // callback triggered when user changes preferences after consent has already been given
+                },
+
+                languages: {
+                    'it': {
+                        consent_modal: {
+                            title: 'Utilizziamo cookie!',
+                            description: 'Questo sito web utilizza cookies <button type="button" data-cc="c-settings" class="cc-link">Preferenze cookie</button>',
+                           // Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
+                            primary_btn: {
+                                text: 'Accetta tutti',
+                                role: 'accept_all'              // 'accept_selected' or 'accept_all'
+                            },
+                            secondary_btn: {
+                                text: 'Rifiuta tutti',
+                                role: 'accept_necessary'        // 'settings' or 'accept_necessary'
+                            }
+                        },
+                        settings_modal: {
+                            title: 'Preferenze dei cookie',
+                            save_settings_btn: 'Salva preferenze',
+                            accept_all_btn: 'Accetta tutti',
+                            reject_all_btn: 'Rifiuta tutti',
+                            close_btn_label: 'Chiudi',
+                            cookie_table_headers: [
+                                {col1: 'Nome'},
+                                {col2: 'Dominio'},
+                                {col3: 'Scadenza'},
+                                {col4: 'Descrizione'}
+                            ],
+                            blocks: [
+                                {
+                                    title: 'Utilizzo dei cookie',
+                                    description: 'Utilizziamo i cookie per assicurare le funzionalità di base del sito e per rendere più gradevole la tua esperienza. Puoi scegliere di disabilitare i cookie per ciascuna categoria quando vuoi. Per maggiori dettagli sui cookie e sulla privacy, ti preghiamo di leggere le nostre informazioni legali a questo <a class="cc-link" href="../informazioni-legali.html">link</a>.'
+                                }, {
+                                    title: 'Cookie strettamente necessari',
+                                    description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
+                                    toggle: {
+                                        value: 'necessary',
+                                        enabled: true,
+                                        readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                                    }
+                                }, {
+                                    title: 'Performance and Analytics cookies',
+                                    description: 'These cookies allow the website to remember the choices you have made in the past',
+                                    toggle: {
+                                        value: 'analytics',     // your cookie category
+                                        enabled: true,
+                                        readonly: false
+                                    },
+                                    cookie_table: [             // list of all expected cookies
+                                        {
+                                            col1: '^_ga',       // match all cookies starting with "_ga"
+                                            col2: 'google.com',
+                                            col3: '2 years',
+                                            col4: 'description ...',
+                                            is_regex: true
+                                        },
+                                        {
+                                            col1: '_gid',
+                                            col2: 'google.com',
+                                            col3: '1 day',
+                                            col4: 'description ...',
+                                        }
+                                    ]
+                                }, {
+                                    title: 'Advertisement and Targeting cookies',
+                                    description: 'These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you',
+                                    toggle: {
+                                        value: 'targeting',
+                                        enabled: true,
+                                        readonly: false
+                                    },
+                                    cookie_table: [             // list of all expected cookies
+                                        {
+                                            col1: 'fbp',       // match all cookies starting with "_ga"
+                                            col2: 'facebook.com',
+                                            col3: '7 giorni',
+                                            col4: 'facebook pixel',
+                                            is_regex: true
+                                        },
+                                        {
+                                            col1: '_gid',
+                                            col2: 'google.com',
+                                            col3: '1 day',
+                                            col4: 'description ...',
+                                        }
+                                    ]
+                                }, //{
+                                //     title: 'More information',
+                                //     description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.',
+                                // }
+                            ]
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
