@@ -4,11 +4,10 @@
     <!-- Google tag (gtag.js) -->
     <script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-YVPH2DD4R7"></script>
     <script type="text/plain" data-cookiecategory="analytics">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-YVPH2DD4R7');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YVPH2DD4R7');
     </script>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -34,7 +33,7 @@
         fbq('track', "PageView");
         fbq('track', 'ViewContent');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
+    <noscript type="text/plain"><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=770709373057085&ev=PageView&noscript=1"/>
     </noscript>
     <!-- End Facebook Pixel Code -->
@@ -937,23 +936,23 @@
             }
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js"></script>
     <script>
         window.addEventListener('load', function(){
 
             // obtain plugin
-            var cc = initCookieConsent();
+            var cookieconsent = initCookieConsent();
 
             // run plugin with your configuration
-            cc.run({
-                current_lang: 'it',
+            cookieconsent.run({
+
                 // autoclear_cookies: false,                   // default: false
                 // page_scripts: false,                        // default: false
-
+                current_lang: 'it',
                 // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
                 // delay: 0,                               // default: 0
                 // auto_language: '',                      // default: null; could also be 'browser' or 'document'
-                 autorun: true,                          // default: true
+                // autorun: true,                          // default: true
                 // force_consent: false,                   // default: false
                 // hide_from_bots: true,                   // default: true
                 // remove_cookie_tables: false             // default: false
@@ -964,7 +963,9 @@
                 // cookie_path: '/',                       // default: root
                 // cookie_same_site: 'Lax',                // default: 'Lax'
                 // use_rfc_cookie: false,                  // default: false
-                // revision: 0,                            // default: 0
+                revision: 0.15,                          // default: 0
+                page_scripts: true,
+                autoclear_cookies: true,
 
                 onFirstAction: function(user_preferences, cookie){
                     // callback triggered only once on the first accept/reject action
@@ -997,7 +998,6 @@
                         consent_modal: {
                             title: 'Utilizziamo cookie!',
                             description: 'Questo sito web utilizza cookies strettamente necessari e altri non necessari per offrirti maggiori servizi e una migliore esperienza nell\'uso del sito. <button type="button" data-cc="c-settings" class="cc-link">Preferenze cookie</button>',
-                           // Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
                             primary_btn: {
                                 text: 'Accetta tutti',
                                 role: 'accept_all'              // 'accept_selected' or 'accept_all'
@@ -1045,7 +1045,7 @@
                                     description: 'Questi cookie ci permettono di contare le visite e le sorgenti di traffico; in questo modo possiamo valutare e migliorare la performance del nostro sito e dei nostri servizi digitali.',
                                     toggle: {
                                         value: 'analytics',     // your cookie category
-                                        enabled: true,
+                                        enabled: false,
                                         readonly: false
                                     },
                                     cookie_table: [             // list of all expected cookies
@@ -1067,8 +1067,8 @@
                                     title: 'Cookie funzionali',
                                     description: 'Questi cookie consentono al sito web o al servizio di offrire personalizzazione e funzionalità avanzate: ad esempio riprendere un ordine di asporto salvato e utilizzarlo per un nuovo ordine. Se non accetti questi cookie, i servizi (o una parte di essi) non funzioneranno correttamente.',
                                     toggle: {
-                                        value: 'analytics',     // your cookie category
-                                        enabled: true,
+                                        value: 'functional',     // your cookie category
+                                        enabled: false,
                                         readonly: false
                                     },
                                     cookie_table: [             // list of all expected cookies
@@ -1091,7 +1091,7 @@
                                     description: 'Questi cookie consentono di analizzare le preferenze manifestate dall\'utente nell\'ambito della navigazione in rete. Grazie a questa analisi è possibile inviare messaggi pubblicitari specifici in linea con le preferenze stesse degli utenti.',
                                     toggle: {
                                         value: 'targeting',
-                                        enabled: true,
+                                        enabled: false,
                                         readonly: false
                                     },
                                     cookie_table: [             // list of all expected cookies
