@@ -16,6 +16,14 @@ cart
     padding-right: 3.5rem;
     padding-bottom: 0.2rem;
     padding-top: 1rem;
+
+}
+.border-bottom {
+    border-bottom:1px solid $light-gray;
+}
+.border-top {
+   border-top:1px solid $light-gray;
+
 }
 .main-header-carrello-large {
     position:sticky;

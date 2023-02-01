@@ -13,7 +13,7 @@ navbar menu
 
 nav {
     background: white;
-    border-bottom: 2.5px #666666 solid;
+    border-bottom: 2px solid $light-gray;
     padding: 0 5px 0 0px;
 }
 
@@ -62,7 +62,9 @@ nav {
 
     .active .item {
         display: block;
+
     }
+
 
 //aumenta area cliccabile del button
     .button a {

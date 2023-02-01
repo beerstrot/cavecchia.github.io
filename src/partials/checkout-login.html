@@ -1,5 +1,5 @@
 <div class="reveal reveal-ecommerce grid-x grid-margin-x grid-margin-y main-container" id="checkout" data-reveal>
-    <header class="main-header">
+    <header class="main-header border-bottom">
         <h2 class="h2-titolo-carrello">Chiudi per continuare la spesa</h2>
         <button class="close-button close-button-carrello" data-close aria-label="Close reveal" type="button">
             <span aria-hidden="true">&times;</span>
@@ -26,7 +26,7 @@
         </div>
         <div class="grid-x grid-padding-x grid-margin-y">
             <div class="small-12 cell">
-                <h3 class="text-center">oppure</h3>
+                <h5 class="text-center subheader">oppure</h5>
             </div>
         </div>
         <div class="grid-x grid-padding-x grid-padding-y">
@@ -42,22 +42,22 @@
             <div class="small-12 cell">
                 <h2 class="h2-carrello">Registrati</h2>
             </div>
-            <div class="small-6 medium-4 large-4 cell">
+            <div class="small-6 medium-6 cell">
                 <label><strong>Nome*</strong>
                     <input type="text" class="required error" id="name" placeholder="" maxlength="20"/>
                 </label>
             </div>
-            <div class="small-6 medium-6 large-4 cell">
+            <div class="small-6 medium-6 cell">
                 <label><strong>Cognome*</strong>
                     <input type="text" class="required error" id="surname" placeholder="" maxlength="20"/>
                 </label>
             </div>
-            <div class="small-4  medium-4 large-3 cell">
+            <div class="small-6 medium-4  cell">
                 <label><strong>Telefono*</strong>
                     <input type="tel" class="required error" id="telephone" placeholder="3332221111" maxlength="35" />
                 </label>
             </div>
-            <div class="small-10  medium-6 large-5 cell">
+            <div class="small-10  medium-8 cell">
                 <label><strong>Email (la tua username) non modificabile*</strong>
                     <input type="email" class="required error email" id="email" placeholder="esempio@esempio.it" maxlength="200"/>
                   </label>
@@ -67,15 +67,16 @@
                      <input id="new-password-text-field" type="password" class="required error password" autocomplete="new-password"/>
                 </label>
             </div>
-            <div class="small-12 cell">
+            <div class="small-12 cell extra-space-button">
                 <a href="#" class="button">Registrati</a>
             </div>
         </div>
     </div>
-    <footer class="main-footer">
-        <ul class="menu align-center">
-            <li><a href="{{root}}informazioni-legali.html#privacy">Privacy</a></li>
-            <li><a href="{{root}}informazioni-legali.html#terminiCondizioni">Termini e Condizioni</a></li>
-        </ul>
+    <footer class="main-footer border-top" >
+        <div class="grid-x grid-padding-x">
+            <div class="small-12 cell">
+                <p class="text-center">Procedendo acconsenti ai nostri<br><a href="{{root}}informazioni-legali.html#terminiCondizioni" target="_blank">Termini e Condizioni</a> e <a href="{{root}}informazioni-legali.html#privacy target="_blank>Privacy</a></p>
+            </div>
+        </div>
     </footer>
 </div>
