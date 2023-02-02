@@ -1,20 +1,25 @@
+SITO WEB
+- aggiungere sitemap.xml (alla fine quando tutto sistemato)
+
+
+
+
 RISERVA UN TAVOLO
 Importanti:
-
 - Pulizia database clienti tildi: scaricare, ripulire doppioni, ricaricare !importante
 - algoritmo assegnazione tavolo: nr. Persone x 1,5
 - timer: i turni non sono disponibili dopo l'orario. es. sono le 21: i turni precedenti alle 21 non sono selezionabili
 
 
 Media priorità:
-
 - Nr max seggioloni per turno limitato a 6
 
 
 Bassa priorità:
-
 - Quando link non è più valido-> dovrei atterrare in pagina con: "Link non più valido. Se non hai cancellato la prenotazione in precedenza: puoi scriverci tramite ${messengerString} o chiamarci al numero ${telString} per chiarimenti. <br> Se hai cancellato la prenotazione: puoi farne una nuova da qui <a href="https://www.beerstrot.it/prenota/">Prenota</a>"
 (ora mi manda a pagina consulta.html senza dati)
+
+
 
 
 E-COMMERCE
