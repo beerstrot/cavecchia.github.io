@@ -783,7 +783,7 @@ function showMessage(message) {
 }
 
 var telString = '<a href="tel:+390718853384"><span itemprop="telephone"> 071&nbsp;8853384</span></a>';
-var emailString = '<a href="mailto:info@beerstrot.it?subject=Problema  Prenotazione">info@beerstrot.it</a>';
+var emailString = '<a href="mailto:info@beerstrot.it?subject=Problema&nbsp;Prenotazione">info@beerstrot.it</a>';
 var message10 = "Per <b>13 o pi\xF9 persone</b>, vi preghiamo di contattarci tramite ".concat(emailString, " o telefonarci al numero ").concat(telString);
 /*const messageError = `Si prega di riprovare perché abbiamo riscontrato un errore.<br>
 Se il problema persiste, ti consigliamo di 

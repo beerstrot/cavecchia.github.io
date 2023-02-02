@@ -671,7 +671,7 @@ function showMessage (message) {
 
 const telString = '<a href="tel:+390718853384"><span itemprop="telephone"> 071&nbsp;8853384</span></a>';
 
-const emailString = '<a href="mailto:info@beerstrot.it?subject=Problema  Prenotazione">info@beerstrot.it</a>';
+const emailString = '<a href="mailto:info@beerstrot.it?subject=Problema&nbsp;Prenotazione">info@beerstrot.it</a>';
 
 const message10 = `Per <b>13 o più persone</b>, vi preghiamo di contattarci tramite ${emailString} o telefonarci al numero ${telString}`;
 
