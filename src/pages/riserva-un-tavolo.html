@@ -104,12 +104,12 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
                     <label><strong>Quale turno*</strong>
                         <div id="shiftGridL"></div>
                         <div class="grid-x small-up-2 required error" id="shiftGrid">
-                            <div class="cell bShift"><a class="button disabled">19.00-21.00</a></div>
-                            <div class="cell bShift"><a class="button disabled">19.30-21.30</a></div>
-                            <div class="cell bShift"><a class="button disabled">20.00-22.00</a></div>
-                            <div class="cell bShift"><a class="button disabled">20.30-22.30</a></div>
-                            <div class="cell bShift"><a class="button disabled">21.00-23.00</a></div>
-                            <div class="cell bShift"><a class="button disabled">21.30-23.00</a></div>
+                            <div class="cell bShift"><button type="button" class="button" disabled>19.00-21.00</button></div>
+                            <div class="cell bShift"><button type="button" class="button" disabled>19.30-21.30</button></div>
+                            <div class="cell bShift"><button type="button" class="button" disabled>20.00-22.00</button></div>
+                            <div class="cell bShift"><button type="button" class="button" disabled>20.30-22.30</button></div>
+                            <div class="cell bShift"><button type="button" class="button" disabled>21.00-23.00</button></div>
+                            <div class="cell bShift"><button type="button" class="button" disabled>21.30-23.00</button></div>
                         </div>
                     </label>
                     <h6>Turno: orario d'arrivo-orario in cui bisogna lasciare il tavolo</h6>
@@ -175,7 +175,7 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
             </div>
             <div class="grid-x grid-margin-x">
                 <div class="small-12 cell">
-                    <a id="prenota" role="button" class="button float-right" style="margin-bottom:0.5rem; margin-top:1rem;">Riserva il Tavolo</a>
+                    <button id="prenota" class="button submit float-right" style="margin-bottom:0.5rem; margin-top:1rem;">Riserva il Tavolo</button>
                 </div>
                 <br>
             </div>
@@ -186,7 +186,7 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
 <!-- inizio modale messaggio locale completo & chiusura giorni mesi invernali-->
 <div id="myModal" class="reveal reveal-ios-bug" data-reveal aria-labelledby="modalTitle" aria-hidden="true">
     <p class="lead extra-space-modal-first-paragraph" id="modalLead">In questa data siamo al completo.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button" id="close-modal">
+    <button type="button" id="close-modal" class="close-button" data-close aria-label="Close reveal">
         <span aria-hidden="true">&#215;</span>
     </button>
 </div>
@@ -194,9 +194,9 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
 <!-- inizio modale invio promemoria ai clienti e aggiungere/rimuovere giorni chiusura-->
 <div id="myModal2" class="reveal reveal-ios-bug" data-reveal aria-labelledby="modalTitle" aria-hidden="true">
     <p class="extra-space-modal-first-paragraph" id="modalLead2">Vuoi inviare il promemoria della prenotazione ai clienti?</p>
-    <a role="button" id="no" class="button small float-right" style="margin-top: 5px;">No, non inviare</a>
-    <a role="button" id="yes" class="button small float-left" style="margin-top: 5px;">Sì, Invia</a>
-    <button class="close-button" data-close aria-label="Close reveal" type="button" id="close-modal">
+    <button type="button" id="no" class="button small float-right" style="margin-top: 5px;">No, non inviare</button>
+    <button type="button" id="yes" class="button small float-left" style="margin-top: 5px;">Sì, Invia</button>
+    <button type="button" id="close-modal" class="close-button" data-close aria-label="Close reveal">
         <span aria-hidden="true">&#215;</span>
     </button>
 </div>
