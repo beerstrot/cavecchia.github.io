@@ -73,7 +73,8 @@ $foundation-palette: (
   primary: #00687E,
   _primary: #1779ba,
   secondary: #767676,
-  success: #3adb76,
+  _success: #3adb76,
+  success:#34a853,
   warning: #ffae00,
   alert: #cc4b37,
 );
@@ -174,7 +175,8 @@ $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $enable-code-inline: true;
-$anchor-color: $primary-color;
+//$anchor-color: $primary-color;
+$anchor-color: scale-color($primary-color, $lightness: +5%);
 //$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-color-hover: scale-color($anchor-color, $lightness: +15%);
 $anchor-text-decoration: none;
