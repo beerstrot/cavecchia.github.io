@@ -50,3 +50,10 @@ h3 {
 h4 {
     font-size: 1.2rem;
 }
+a.highlight{
+    box-shadow: inset 0 -1px 0 rgba($anchor-color,0.5), 0 1px 0 rgba($anchor-color,0.5);
+}
+
+a.highlight:hover {
+    box-shadow: inset 0 -1px 0 rgba($anchor-color-hover,0.5), 0 1px 0 rgba($anchor-color-hover,0.5);
+}
