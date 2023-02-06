@@ -1,43 +1,47 @@
 <div class="grid-x grid-margin-x grid-margin-y">
 	<div class="small-12 cell">
-		<table class="unstriped hover">
-		  	<tbody>
-		  		<thead>
-                    <tr>
-                        <th>Prodotto</th>
-                        <th>Quantità</th>
-                        <th>Prezzo</th>
-                        <th>Totale</th>
-
-                    </tr>
-                </thead>
-				{{#repeat 5}}
-		    	<tr>
-			      	<td>
-				      	<span class="titolo-item">Beerstrot</span>
-						<span class="note-item">no fegato più vegan mi raccomando senza olive fritte allegate come contorno</span>
-						<span class="cottura-item">Ben cotto</span>
-					</td>
-				    <td style="text-align:right;">
-						<span class="prezzo-item">2</span>
-					</td>
-					<td style="text-align:right;">
-						<span class="prezzo-item">€75,00</span>
-					</td>
-			      	<td style="text-align:right;">
-			      		<span class="prezzo-item">€150,00</span>
-			      	</td>
-			    </tr>
-				{{/repeat}}
-		  	</tbody>
-		  	<tfoot class="extra-space">
-		  		<tr>
-					<td><strong>TOTALE</strong></td>
-					<td></td>
-					<td></td>
-					<td><strong>€190,90</strong></td>
-				</tr>
-		  	</tfoot>
-		</table>
+		{{#repeat 2}}
+	  	<div class="checkout-summary-item align-middle">
+			<div class="item-name">
+		  		<h1 class="titolo-item">Beerstrot</h1>
+		  		<p class="note-item no-inline">no fegato più vegan mi raccomando senza olive fritte allegate come contorno</p>
+		  		<p class="cottura-item">Ben Cotto</p>
+		  		<p class="note-item no-inline">Quantità: 2</p>
+			</div>
+			<div>
+			  	<p class="prezzo-item ">€23,80</p>
+			</div>
+	  	</div>
+	  	<div class="checkout-summary-item align-middle">
+			<div class="item-name">
+		  		<h1 class="titolo-item">Bocconcini di pollo</h1>
+		  		<p class="note-item no-inline hide"></p>
+		  		<p class="cottura-item hide"></p>
+		  		<p class="note-item no-inline">Quantità: 4</p>
+			</div>
+			<div>
+			  	<p class="prezzo-item ">€22,00</p>
+			</div>
+	  	</div>
+	  	<div class="checkout-summary-item align-middle">
+			<div class="item-name">
+		  		<h1 class="titolo-item">Coca Cola 33cl.</h1>
+		  		<p class="note-item no-inline hide"></p>
+		  		<p class="cottura-item hide"></p>
+		  		<p class="note-item no-inline">Quantità: 5</p>
+			</div>
+			<div>
+			  	<p class="prezzo-item ">€15,00</p>
+			</div>
+	  	</div>
+	  	{{/repeat}}
+	  	<div class="checkout-summary-details">
+		    <div>
+		      	<h1 class="titolo-item">TOTALE:</h1>
+		    </div>
+		    <div>
+		      	<h1 class="titolo-item">€60,80</h1>
+		    </div>
+		 </div>
 	</div>
 </div>
