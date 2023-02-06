@@ -10,7 +10,7 @@ modal
     left:50%;
     transform:translate(-50%, -50%);
     @include breakpoint(medium) {
-    max-height: calc(100vh - 60px);
+    max-height: calc(100vh - 80px);
     //border-radius: 10px;
     }
 }
