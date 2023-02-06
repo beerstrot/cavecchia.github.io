@@ -7,21 +7,14 @@
 /***/ (function() {
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
 function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 $(document).ready(function () {
   var url = new URL(window.location.href);
   var pid = url.searchParams.get('id');
-
   if (pid) {
     if (pid === 'notes') {
       return showNotes();
@@ -32,13 +25,10 @@ $(document).ready(function () {
     } else if (pid.endsWith('_modifica')) {
       return makeInterface_(pid);
     }
-
     return showReservation(pid);
   }
-
   makeInterface_();
 });
-
 function makeInterface_(pid) {
   mkCall('POST', {
     action: 'days',
@@ -55,12 +45,10 @@ function makeInterface_(pid) {
     showMessage(messageError);
   });
 }
-
 var loadExtra = function loadExtra(booking) {
   var e = JSON.parse(booking.extra);
   return e;
 };
-
 function modifyReservation(pid, fp) {
   mkCall('POST', {
     action: 'getReservation',
@@ -86,13 +74,12 @@ function modifyReservation(pid, fp) {
   }, function (res) {
     showMessage("".concat(messageError, "\n        La ID della prenotazione \xE8: ").concat(pid, "."));
   });
-} // beerstrot-prod:
+}
 
-
-var url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/'; // const url = 'http://localhost:5001/entry';
-
+// beerstrot-prod:
+var url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
+// const url = 'http://localhost:5001/entry';
 var pCount = 0;
-
 function mkCall(type, data, success, error) {
   if (!['POST', 'GET'].includes(type)) return console.log("this ajax method is not good: ".concat(type));
   var set = {
@@ -110,18 +97,14 @@ function mkCall(type, data, success, error) {
       if (--pCount === 0) $('#loading').hide();
     }
   };
-
   if (type === 'POST') {
     set.data = JSON.stringify(set.data);
-
     if (url.split('/').reverse()[0] === 'entry') {
       set.contentType = 'application/json; charset=utf-8';
     }
   }
-
   $.ajax(set);
 }
-
 function testeLambdaPOST() {
   mkCall('POST', {
     action: 'test',
@@ -139,7 +122,6 @@ function testeLambdaPOST() {
     return console.log('POST error:', res);
   });
 }
-
 function testeLambdaGET() {
   mkCall('GET', {
     action: 'test',
@@ -150,12 +132,10 @@ function testeLambdaGET() {
     return console.log('GET error:', res);
   });
 }
-
 function testeLambda() {
   testeLambdaGET();
   testeLambdaPOST();
 }
-
 function showDays(datetime) {
   $('#form').hide();
   $('#notesTable').hide();
@@ -169,8 +149,8 @@ function showDays(datetime) {
     data: datetime || '--'
   }, function (res) {
     var r = res;
-    $('#innerNotesDiv').html('<b>Giorni di chiusura:</b><br>' + r.dates.join('<br>')); //jQuery('#from2').flatpickr({
-
+    $('#innerNotesDiv').html('<b>Giorni di chiusura:</b><br>' + r.dates.join('<br>'));
+    //jQuery('#from2').flatpickr({
     var fp = $('#from2').flatpickr({
       minDate: 'today',
       locale: 'it',
@@ -185,7 +165,6 @@ function showDays(datetime) {
     showMessage(messageError);
   });
 }
-
 function toggleDate(dp) {
   var date_ = new Date(dp).toLocaleString('it-IT', {
     weekday: 'long',
@@ -201,7 +180,6 @@ function toggleDate(dp) {
     return $('#close-modal').click();
   }, true);
 }
-
 function showNotes(datetime) {
   $('#ttitle').text('Dashboard');
   $('#loading').show();
@@ -236,8 +214,8 @@ function showNotes(datetime) {
     shifts.anon = {
       name: 'anon',
       bookings: []
-    }; //jQuery('#from2').flatpickr({
-
+    };
+    //jQuery('#from2').flatpickr({
     var fp = $('#from2').flatpickr({
       locale: 'it',
       dateFormat: 'd/M/Y',
@@ -334,7 +312,6 @@ function showNotes(datetime) {
     });
     var sentences = [];
     var total_ = 0;
-
     for (k in shifts) {
       var s = shifts[k];
       if (k === 'anon') continue;
@@ -371,12 +348,10 @@ function showNotes(datetime) {
         }
       }).html(s.people_hand).appendTo(tr);
     }
-
     shifts.anon.bookings.forEach(function (b) {
       var _getBookingTimes = getBookingTimes(b, true),
-          t = _getBookingTimes.t,
-          t2 = _getBookingTimes.t2;
-
+        t = _getBookingTimes.t,
+        t2 = _getBookingTimes.t2;
       var tr = $('<tr/>', {
         class: 'clearme'
       }).appendTo('#anonTableBody');
@@ -412,7 +387,6 @@ function showNotes(datetime) {
         padding: ''
       }
     }).html(summary).prependTo('#innerNotesDiv1');
-
     if (notes.length > 0) {
       $('<button/>', {
         class: 'clearme button small',
@@ -439,7 +413,6 @@ function showNotes(datetime) {
     showMessage(messageError);
   });
 }
-
 function makeInterface(pid, dates) {
   $('#infoDiv').hide();
   $('#prenota').off('click').on('click', function () {
@@ -459,12 +432,10 @@ function makeInterface(pid, dates) {
     });
     validateData(data, validation).then(function (r) {
       if (!r) return;
-
       if (pid) {
         // user is modifying, cancel previous reservation:
         data.oldID = pid.split('_')[0];
       }
-
       mkCall('POST', {
         action: 'mkReservation',
         data: data
@@ -472,7 +443,6 @@ function makeInterface(pid, dates) {
         if (res.reservationID2 === 'noPlacesLeft') {
           return showMessage("In questo turno siamo al completo.");
         }
-
         var u = window.location.href;
         u = u[u.length - 1] == '/' ? u : u.split('/').reverse().slice(1).reverse().join('/') + '/';
         var url = u + 'consulta.html?id=' + res.reservationID2;
@@ -481,8 +451,9 @@ function makeInterface(pid, dates) {
         showMessage(messageError);
       });
     });
-  }); // https://flatpickr.js.org/
+  });
 
+  // https://flatpickr.js.org/
   var fp = $('#from').flatpickr({
     locale: 'it',
     minDate: 'today',
@@ -496,11 +467,12 @@ function makeInterface(pid, dates) {
       updateShifts(dp[0]);
     }
   });
-  fp.set('dateFormat', 'd/M/Y'); // $('#privacy2').on('click', () => {
+  fp.set('dateFormat', 'd/M/Y');
+  // $('#privacy2').on('click', () => {
   //   showMessage();
   // });
-  //form validation
 
+  //form validation
   var validation = new JustValidate('#form').addField('#name', [{
     rule: 'required',
     errorMessage: 'inserisci un nome'
@@ -538,9 +510,7 @@ function makeInterface(pid, dates) {
   }]);
   return fp;
 }
-
 var weekdays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
-
 function updateShifts(dp, selected, people) {
   $('.bShift').remove();
   var data = {
@@ -555,7 +525,6 @@ function updateShifts(dp, selected, people) {
     var pad0 = function pad0(i) {
       return String(i).padStart(2, '0');
     };
-
     var d = "".concat(data.year, "-").concat(pad0(data.month + 1), "-").concat(pad0(data.day));
     var wd = weekdays[dp.getDay()];
     var shifts_ = res.shifts.filter(function (s) {
@@ -568,29 +537,23 @@ function updateShifts(dp, selected, people) {
     return showMessage(messageError);
   });
 }
-
 function mkShiftButtons(shifts, selected) {
   var sButtons = [];
   var removeShifts = [];
   shifts.forEach(function (s, i) {
     var max_available = s.online_seats_limit - s.booked_seats_in_shift;
-
     if (max_available <= 0) {
       return removeShifts.push(i);
     }
-
     for (table in s.tables) {
       if (s.tables[table] > max_available) {
         delete s.tables[table];
       }
     }
-
     s.table_sizes = Object.values(s.tables);
-
     if (s.table_sizes.length === 0) {
       return removeShifts.push(i);
     }
-
     var id = 'aShift' + i;
     s.bid = '#' + id;
     var b = $('<a/>', {
@@ -617,28 +580,23 @@ function mkShiftButtons(shifts, selected) {
       b.attr('bselected', true);
     });
   });
-
   if (selected) {
     $($('.aShift').filter(function (i, ii) {
       return $(ii).attr('bindex') == selected;
     })[0]).click();
   }
-
   return shifts;
 }
-
 function showReservation(pid) {
   $('#new').hide();
   $('.form').hide();
   $('#prenotaDiv').show();
   var modified = false;
-
   if (pid.endsWith('_modificata')) {
     $('#ttitle').text('Prenotazione Modificata. Grazie');
     $('#tlegend').text('Dettaglio prenotazione modificata');
     pid = pid.split('_modifica')[0];
   }
-
   mkCall('POST', {
     action: 'getReservation',
     data: pid
@@ -648,29 +606,27 @@ function showReservation(pid) {
       $('#no').hide();
       return showConsultaMessage('Prenotazione non trovata.', "Se non hai cancellato la prenotazione in precedenza, puoi scriverci una email a ".concat(emailString, " o chiamarci al numero ").concat(telString, " per chiarimenti."));
     }
-
     presentReservation(res.booking);
-  }, //se ti serve tienilo, ma nascondilo a tutti gli altri. non è user friendly e se un cliente ci chiama e ci da il pid noi non sappiamo cosa rispondere...
+  },
+  //se ti serve tienilo, ma nascondilo a tutti gli altri. non è user friendly e se un cliente ci chiama e ci da il pid noi non sappiamo cosa rispondere...
   function (res) {
     showMessage("".concat(messageErrorAlreadyCancelled, "\n        La ID della prenotazione \xE8: ").concat(pid, "."));
   });
 }
-
 function presentReservation(r) {
-  if (!r || 'error' in r) return bookingNotFound(); // $('#ttitle').text('La tua Prenotazione :-)');
-
+  if (!r || 'error' in r) return bookingNotFound();
+  // $('#ttitle').text('La tua Prenotazione :-)');
   var bc = r.booking_customer;
-  var extra = loadExtra(r); // const date = new Date(r.booked_for);
+  var extra = loadExtra(r);
+
+  // const date = new Date(r.booked_for);
   // const date2 = new Date(date.getTime() + r.duration * 60000);
-
   var _getBookingTimes2 = getBookingTimes(r),
-      date = _getBookingTimes2.date,
-      date2 = _getBookingTimes2.date2;
-
+    date = _getBookingTimes2.date,
+    date2 = _getBookingTimes2.date2;
   var h = function h(id, info) {
     return $('#' + id).text(info);
   };
-
   h('name', bc.first_name + ' ' + bc.last_name);
   h('telephone', extra.telephone);
   h('email', extra.email);
@@ -712,13 +668,10 @@ function presentReservation(r) {
     });
   });
 }
-
 function validateEmail(email) {
   return email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 }
-
 ;
-
 function validateData(data, validation) {
   return validation.revalidate().then(function () {
     // $('.error').attr('style', 'border: solid 1px #ccc');
@@ -726,70 +679,60 @@ function validateData(data, validation) {
     // $('#notification').hide();
     var messages = [];
     var ids = [];
-
     if (!$('#from').val()) {
       ids.push('#from');
     }
-
     if (data.date === '') {
       ids.push('#from1');
     }
-
     if (data.quantity == 0) {
       ids.push('#quantity1');
     }
-
     if (data.shiftId === undefined) {
       ids.push('#shiftGrid1');
     }
-
     if (data.name === '') {
       ids.push('#name1');
     }
-
     if (data.surname === '') {
       ids.push('#surname1');
     }
-
     if (!validateEmail(data.email)) {
       ids.push('#email1');
     }
-
     if (data.telephone === '') {
       ids.push('#telephone1');
     }
-
     if (!$('#privacy').prop('checked')) {
       ids.push('#privacy3');
     }
-
     if (ids.length > 0) {
       ids.forEach(function (i) {
         return showError(i);
-      }); // asdoiajds = aosidjasid
+      });
+      // asdoiajds = aosidjasid
       // showMessage(messages.join('<br>'));
-
       return false;
     }
-
     return true;
   });
 }
-
 function showMessage(message) {
   $('#modalLead').html(message);
   var popup = new Foundation.Reveal($('#myModal'));
   popup.open();
 }
-
 var telString = '<a href="tel:+390718853384"><span itemprop="telephone"> 071&nbsp;8853384</span></a>';
 var emailString = '<a href="mailto:info@beerstrot.it?subject=Problema&nbsp;Prenotazione">info@beerstrot.it</a>';
 var message10 = "Per <b>13 o pi\xF9 persone</b>, vi preghiamo di contattarci tramite ".concat(emailString, " o telefonarci al numero ").concat(telString);
+
 /*const messageError = `Si prega di riprovare perché abbiamo riscontrato un errore.<br>
 Se il problema persiste, ti consigliamo di 
 entrare nel ${emailString} o di chiamare ${telString}.<br>`;*/
 
-var messageError = "<h2>Il Server non \xE8 raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><ul class=\"no-bullet\"><li>Se il problema persiste:</li><ul><li>Invia una email a ".concat(emailString, "</li><li>Chiamaci al numero ").concat(telString, "</li></ul></li></ul>"); //const messageErrorAlreadyCancelled = `<h2>Prenotazione non trovata</h2><ul class="no-bullet"><li>Se non hai cancellato la prenotazione in precedenza, per chiarimenti puoi:</li><ul><li>Scriverci una email a ${emailString}</li><li>Chiamarci al numero ${telString}</li></ul></li></ul><p>Grazie</p>`;
+var messageError = "<h2>Il Server non \xE8 raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><ul class=\"no-bullet\"><li>Se il problema persiste:</li><ul><li>Invia una email a ".concat(emailString, "</li><li>Chiamaci al numero ").concat(telString, "</li></ul></li></ul>");
+
+//const messageErrorAlreadyCancelled = `<h2>Prenotazione non trovata</h2><ul class="no-bullet"><li>Se non hai cancellato la prenotazione in precedenza, per chiarimenti puoi:</li><ul><li>Scriverci una email a ${emailString}</li><li>Chiamarci al numero ${telString}</li></ul></li></ul><p>Grazie</p>`;
 
 function bookingNotFound() {
   var div = $('#innerInfoDiv');
@@ -800,7 +743,6 @@ function bookingNotFound() {
   $('<div/>').html(emailString).appendTo(fs);
   $('#buttonInfoDiv').hide();
 }
-
 function showNotesMessage(msg) {
   $('<p/>', {
     class: 'clearme',
@@ -811,7 +753,6 @@ function showNotesMessage(msg) {
   }).html(msg).appendTo('#notesDiv3');
   $('#innerNotesDiv').hide();
 }
-
 function showConsultaMessage(message, message2, callYes, callNo, index) {
   $('#yes').off('click').on('click', callYes);
   $('#no').off('click').on('click', callNo);
@@ -820,24 +761,21 @@ function showConsultaMessage(message, message2, callYes, callNo, index) {
   var $modal = new Foundation.Reveal($('#myModal' + (index ? '2' : '')));
   $modal.open();
 }
-
 function mkQuantityOptions(shifts, people) {
   // find biggest table
   var biggestTable = shifts.reduce(function (m, s) {
     return Math.max.apply(Math, [m].concat(_toConsumableArray(s.table_sizes)));
-  }, 0); // make options reaching it
-
+  }, 0);
+  // make options reaching it
   $('.aquantity').remove();
-
   _toConsumableArray(Array(biggestTable).keys()).forEach(function (i) {
     $('<option/>', {
       value: i + 1,
       class: 'aquantity'
     }).text(i + 1).appendTo('#quantity');
   });
-
-  $('#quantity').prop('disabled', false); // enable select
-
+  $('#quantity').prop('disabled', false);
+  // enable select
   var cssOn = {
     'pointer-events': '',
     cursor: 'pointer',
@@ -856,9 +794,9 @@ function mkQuantityOptions(shifts, people) {
       });
       var css = tablesOk.length === 0 ? cssOff : cssOn;
       $(s.bid).css(css).attr('bselected', false);
-    }); // should not happen because if a quantity is available
+    });
+    // should not happen because if a quantity is available
     // there is a shift with a table for it:
-
     var totalDisabled = shifts.reduce(function (c, ss) {
       var isDisabled = $(ss.bid).css('pointer-events') === 'none';
       return c + isDisabled;
@@ -866,34 +804,28 @@ function mkQuantityOptions(shifts, people) {
     if (totalDisabled === shifts.length) return showMessage(message10);
     $('#notification').hide();
   });
-
   if (people) {
     $('#quantity').val(people);
   }
 }
-
 function showError(id) {
   $(id.replace('1', '')).attr('style', 'border: 2px solid red !important');
 }
-
 var time = function time(d) {
   return d.toLocaleString('it-IT', {
     hour: '2-digit',
     minute: '2-digit'
   });
 };
-
 function getBookingTimes(b, timed) {
   var date = new Date(b.booked_for);
   var date2 = new Date(date.getTime() + b.duration * 60000);
-
   if (timed) {
     return {
       t: time(date),
       t2: time(date2)
     };
   }
-
   return {
     date: date,
     date2: date2

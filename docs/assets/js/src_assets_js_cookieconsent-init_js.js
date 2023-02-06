@@ -8,8 +8,9 @@
 
 window.addEventListener('load', function () {
   // obtain plugin
-  var cookieconsent = initCookieConsent(); // run plugin with your configuration
+  var cookieconsent = initCookieConsent();
 
+  // run plugin with your configuration
   cookieconsent.run({
     // autoclear_cookies: false,                   // default: false
     // page_scripts: false,                        // default: false
@@ -32,11 +33,14 @@ window.addEventListener('load', function () {
     // default: 0
     page_scripts: true,
     autoclear_cookies: true,
-    onFirstAction: function onFirstAction(user_preferences, cookie) {// callback triggered only once on the first accept/reject action
+    onFirstAction: function onFirstAction(user_preferences, cookie) {
+      // callback triggered only once on the first accept/reject action
     },
-    onAccept: function onAccept(cookie) {// callback triggered on the first accept/reject action, and after each page load
+    onAccept: function onAccept(cookie) {
+      // callback triggered on the first accept/reject action, and after each page load
     },
-    onChange: function onChange(cookie, changed_categories) {// callback triggered when user changes preferences after consent has already been given
+    onChange: function onChange(cookie, changed_categories) {
+      // callback triggered when user changes preferences after consent has already been given
     },
     // gui_options: {
     //     consent_modal: {
@@ -51,6 +55,7 @@ window.addEventListener('load', function () {
     //         // transition: 'zoom'            // zoom/slide
     //     }
     // },
+
     languages: {
       'it': {
         consent_modal: {
@@ -59,14 +64,14 @@ window.addEventListener('load', function () {
           primary_btn: {
             text: 'Accetta tutti',
             role: 'accept_all' // 'accept_selected' or 'accept_all'
-
           },
+
           secondary_btn: {
             text: 'Rifiuta tutti',
             role: 'accept_necessary' // 'settings' or 'accept_necessary'
-
           }
         },
+
         settings_modal: {
           title: 'Preferenze dei cookie',
           save_settings_btn: 'Salva preferenze',
@@ -92,9 +97,10 @@ window.addEventListener('load', function () {
               value: 'necessary',
               enabled: true,
               readonly: true // cookie categories with readonly=true are all treated as "necessary cookies"
-
             },
-            cookie_table: [// list of all expected cookies
+
+            cookie_table: [
+            // list of all expected cookies
             {
               col1: 'cc_cookie',
               col2: 'beerstrot.it',
@@ -111,7 +117,8 @@ window.addEventListener('load', function () {
               enabled: true,
               readonly: false
             },
-            cookie_table: [// list of all expected cookies
+            cookie_table: [
+            // list of all expected cookies
             {
               col1: '^_ga',
               // match all cookies starting with "_ga"
@@ -157,7 +164,8 @@ window.addEventListener('load', function () {
               enabled: true,
               readonly: false
             },
-            cookie_table: [// list of all expected cookies
+            cookie_table: [
+            // list of all expected cookies
             {
               col1: 'fbp',
               // match all cookies starting with "_ga"

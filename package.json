@@ -10,7 +10,6 @@
   "author": "Foundation Yetinauts <contact@get.foundation> (https://get.foundation)",
   "license": "MIT",
   "dependencies": {
-    "@splidejs/splide-extension-video": "^0.8.0",
     "foundation-sites": "latest",
     "jquery": "^3.6.0",
     "motion-ui": "latest",
@@ -21,6 +20,7 @@
     "@babel/preset-env": "^7.15.6",
     "@babel/register": "^7.15.3",
     "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-video": "^0.8.0",
     "autoprefixer": "^10.3.4",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.27.5",

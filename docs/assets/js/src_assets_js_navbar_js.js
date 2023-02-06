@@ -10,8 +10,8 @@
 var toggle = document.querySelector(".toggle");
 var menu = document.querySelector(".menu-hamburger");
 var items = document.querySelectorAll(".item");
-/* Toggle mobile menu */
 
+/* Toggle mobile menu */
 function toggleMenu() {
   if (menu.classList.contains("active")) {
     menu.classList.remove("active");
@@ -21,9 +21,8 @@ function toggleMenu() {
     toggle.querySelector("a").innerHTML = "<i class='las la-times la-2x'></i>";
   }
 }
+
 /* Event Listeners */
-
-
 toggle.addEventListener("click", toggleMenu, false);
 
 /***/ })
