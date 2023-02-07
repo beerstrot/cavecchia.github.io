@@ -1,0 +1,373 @@
+asporto-sushi-uramaki:
+  -
+    item-name: Uramaki Marchigiano
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 13.9
+    item-description: Roll con riso wakame, salmone, salsa teriaki di pasta filata italiana
+    item-allergeni: Pesce, Uova, Latte, Sedano
+    id-data: 1id
+    class-cottura: hide
+  -
+    item-name: Uramaki neve
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 15.9
+    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
+    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
+    id-data: 2id
+    class-cottura: hide
+  -
+    item-name: Uramaki neve2
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 15.9
+    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio e questa descrizione molto lunga
+    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
+    id-data: 3id
+    class-cottura: hide
+  -
+    item-name: Uramaki neve3
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 15.9
+    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
+    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
+    id-data: 4id
+    class-cottura: hide
+  -
+    item-name: Uramaki neve4
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 15.9
+    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
+    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
+    id-data: 5id
+    class-cottura: hide
+  -
+    item-name: Uramaki neve5
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 15.9
+    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
+    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
+    id-data: 6id
+    class-cottura: hide
+
+asporto-per-stuzzicare:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Bocconcini di Pollo
+    item-description: Serviti con salsa piccante
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 5,9
+    id-data: bocconciniPollo
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Olive all'Ascolana
+    item-description: Il più tipico street food marchigiano
+    item-allergeni: Glutine, Uova, Latte, Sedano
+    item-price: 5,5
+    id-data: oliveAscolana
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Mozzarelle Fritte
+    item-description: Mozzarelle fior di latte artigianali. Servite con salsa aioli fatta in casa
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 5,9
+    id-data: mozzarelleFritte
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Cipolle Rosse
+    item-description: Cipolle rosse in tempura
+    item-allergeni: Glutine, Latte, Crostacei
+    item-price: 4,9
+    id-data: cipolleRosse
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Peperoncini Piccanti
+    item-description: Peperoncini ripieni di robiola avvolti nella pancetta
+    item-allergeni: Anidride Solforosa e Solfiti, Latte
+    item-price: 5,5
+    id-data: peperonciniPiccanti
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Alette di Pollo
+    item-description: Servite con salsa piccante a parte
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 5,5
+    id-data: alettePollo
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Arrosticini
+    item-description: Arrosticini di pecora
+    item-allergeni: nessuno
+    item-price: 5,5
+    id-data: arrosticiniPecora
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Patate Fritte
+    item-description: Il più classico dei fritti
+    item-allergeni: nessuno
+    item-price: 4,5
+    id-data: patateFritte
+    class-cottura: hide
+
+asporto-hamburger-classici:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Beerstrot
+    item-description: Manzo 180 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    id-data: beerstrotSingolo
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Beerstrot Doppio
+    item-description: Manzo 360 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    id-data: beerstrotDoppio
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: New York
+    item-description: Manzo 180 grammi, cheddar, cipolla caramellata, insalata
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 10,5
+    id-data: newyorkSingolo
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: New York Doppio
+    item-description: Manzo 360 grammi, cheddar, cipolla caramellata, insalata
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 14,5
+    id-data: newyorkDoppio
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Diablo
+    item-description: Manzo 180 grammi, cheddar, bacon croccante, rucola, salsa piccante
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    id-data: diabloSingolo
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Diablo Doppio
+    item-description: Manzo 360 grammi, cheddar, bacon croccante, rucola, salsa piccante
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    id-data: diabloDoppio
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Pollo
+    item-description: Pollo 180 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 10,9
+    id-data: polloSingolo
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Pollo Doppio
+    item-description: Pollo 360 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 14,9
+    id-data: polloDoppio
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Pulled Pork
+    item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante
+    item-allergeni: Anidride Solforosa e Solfiti, Glutine, Latte, Senape, Uova
+    item-price: 11,9
+    id-data: pulledPork
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Mini Burger
+    item-description: Manzo (100 grammi), cheddar. Servito ben cotto
+    item-allergeni: Glutine, Latte, Uova
+    item-price: 7,9
+    id-data: miniBurger
+    class-cottura:
+
+asporto-hamburger-stagione:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Cacio e Pepe
+    item-description: Manzo 180 grammi, pecorino vallesina, guanciale, pepe
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    id-data: cacioSingolo
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Cacio e Pepe Doppio
+    item-description: Manzo 360 grammi, pecorino vallesina, guanciale, pepe
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    id-data: cacioDoppio
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Inverno
+    item-description: Manzo 180 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 10,5
+    id-data: invernoSingolo
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Inverno Doppio
+    item-description: Manzo 360 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 14,5
+    id-data: invernoDoppio
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Deciso
+    item-description: Manzo 180 grammi, gorgonzola, guanciale, pomodorini confit
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    id-data: decisoSingolo
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Deciso Doppio
+    item-description: Manzo 360 grammi, gorgonzola, guanciale, pomodorini confit
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    id-data: decisoDoppio
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Carbonara
+    item-description: Pollo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    id-data: carbonaraSingolo
+    class-cottura:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Carbonara Doppio
+    item-description: Pollo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    id-data: carbonaraDoppio
+    class-cottura:
+
+asporto-hamburger-vegetariano:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Vegetariano Fagioli
+    item-description: Hamburger di borlotti, julienne di cipolla fritta, crema di cicoria
+    item-allergeni: Glutine, Latte, Soia, Uova
+    item-price: 9,5
+    id-data: vegetarianoFagioli
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Vegetariano Quinoa
+    item-description: Hamburger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele
+    item-allergeni: Glutine, Latte, Senape, Uova
+    item-price: 9,5
+    id-data: vegetarianoQuinoa
+    class-cottura: hide
+
+asporto-carne:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Costine
+    item-description: Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte
+    item-allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo
+    item-price: 13,9
+    id-data: costine
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Entrecôte
+    item-description: Entrecôte di Manzetta Red Hereford irlandese
+    item-allergeni: nessuno
+    item-price: 19
+    id-data: entrecote
+    class-cottura:
+
+asporto-dolce:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Cheesecake
+    item-description: Cheesecake in stile new york. Squisitamente dolce, morbida e leggermente acidula
+    item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
+    item-price: 5
+    id-data: cheesecake
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Blondie
+    item-description: Brownie con nocciole. Servito con crema al mascarpone e rhum
+    item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
+    item-price: 5
+    id-data: blondie
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Birramisù
+    item-description: Tiramisù con mascarpone artigianale alla birra stout
+    item-allergeni: Glutine, Latte, Uova
+    item-price: 5
+    id-data: birramisu
+    class-cottura: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Whoop
+    item-description: Morbido biscotto al cioccolato ripieno di burro di arachidi
+    item-allergeni: Arachidi, Glutine, Latte, Uova
+    item-price: 5
+    id-data: whoop
+    class-cottura: hide

@@ -153,48 +153,13 @@
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
     											</label>
-    										</div>
-    										<footer class="main-footer">
-    											<div class="input-group input-number-group">
-    												<div class="input-group-button">
-    													<span class="input-number-decrement">&ndash;</span>
-    												</div>
-    												<input class="input-number" type="button" value="1" min="0" max="30">
-    												<div class="input-group-button">
-    													<span class="input-number-increment">&plus;</span>
-    												</div>
-    											</div>
-    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
-    											</button>
-    										</footer>
-    									</div>
-    								</div>
-    								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
-    										</div>
-    									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
-    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    												<span aria-hidden="true">&times;</span>
-    										</button>
-    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
-    										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
-    										</header>
-    										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Note</strong>
-    												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -238,6 +203,65 @@
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
+    											</label>
+    										</div>
+    										<footer class="main-footer">
+    											<div class="input-group input-number-group">
+    												<div class="input-group-button">
+    													<span class="input-number-decrement">&ndash;</span>
+    												</div>
+    												<input class="input-number" type="button" value="1" min="0" max="30">
+    												<div class="input-group-button">
+    													<span class="input-number-increment">&plus;</span>
+    												</div>
+    											</div>
+    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+    												Aggiungi al carrello<span class="price"> € 13</span>
+    											</button>
+    										</footer>
+    									</div>
+    								</div>
+    								<div class="cell">
+    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="card">
+    										<div class="card-section">
+    											<img src="https://picsum.photos/1920/1080">
+    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
+    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
+    											<p>Roll con riso wakame, salmone, salsa teriaki
+    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
+    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    										</div>
+    									</div>
+    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    												<span aria-hidden="true">&times;</span>
+    										</button>
+    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
+    										<header class="main-header">
+    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    										</header>
+    										<div class="main-content">
+    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
+    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<label><strong>Note</strong>
+    												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -260,32 +284,40 @@
     						</div>
     						<div class="small-12 cell">
     							<h2>Sushi Uramaki</h2>
-    							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+    							<div class="grid-x small-up-2 medium-up-2 grid-margin-x grid-margin-y">
     								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Uramaki Marchigiano<span class="price">13.9</span></h3>
+    											<p>Roll con riso wakame, salmone, salsa teriaki di pasta filata italiana
     											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="1id">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="1id" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    											<h1 class="h1-modal" id="modalTitle">Uramaki Marchigiano</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki di pasta filata italiana</p>
+    											<p class="allergeni">Allergeni: Pesce, Uova, Latte, Sedano</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -299,36 +331,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
+    												Aggiungi al carrello <span class="price"> 13.9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Uramaki neve<span class="price">15.9</span></h3>
+    											<p>Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio
+    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</small></p>
+    											<button type="button" class="button small" data-open="2id">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="2id" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    											<h1 class="h1-modal" id="modalTitle">Uramaki neve</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio</p>
+    											<p class="allergeni">Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -342,36 +382,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
+    												Aggiungi al carrello <span class="price"> 15.9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Uramaki neve2<span class="price">15.9</span></h3>
+    											<p>Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio e questa descrizione molto lunga
+    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</small></p>
+    											<button type="button" class="button small" data-open="3id">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="3id" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    											<h1 class="h1-modal" id="modalTitle">Uramaki neve2</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio e questa descrizione molto lunga</p>
+    											<p class="allergeni">Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -385,36 +433,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
+    												Aggiungi al carrello <span class="price"> 15.9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Uramaki neve3<span class="price">15.9</span></h3>
+    											<p>Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio
+    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</small></p>
+    											<button type="button" class="button small" data-open="4id">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="4id" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    											<h1 class="h1-modal" id="modalTitle">Uramaki neve3</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio</p>
+    											<p class="allergeni">Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -428,36 +484,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
+    												Aggiungi al carrello <span class="price"> 15.9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Uramaki neve4<span class="price">15.9</span></h3>
+    											<p>Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio
+    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</small></p>
+    											<button type="button" class="button small" data-open="5id">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="5id" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    											<h1 class="h1-modal" id="modalTitle">Uramaki neve4</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio</p>
+    											<p class="allergeni">Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -471,36 +535,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
+    												Aggiungi al carrello <span class="price"> 15.9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Uramaki neve5<span class="price">15.9</span></h3>
+    											<p>Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio
+    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</small></p>
+    											<button type="button" class="button small" data-open="6id">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="6id" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    											<h1 class="h1-modal" id="modalTitle">Uramaki neve5</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Roll con riso di sesamo, salmone, salsa teriaki e tonno sott&#x27;olio</p>
+    											<p class="allergeni">Allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -514,93 +586,7 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
-    											</button>
-    										</footer>
-    									</div>
-    								</div>
-    								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
-    										</div>
-    									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
-    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    												<span aria-hidden="true">&times;</span>
-    										</button>
-    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
-    										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
-    										</header>
-    										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Note</strong>
-    												<textarea maxlength="" id="" placeholder=".........."></textarea>
-    											</label>
-    										</div>
-    										<footer class="main-footer">
-    											<div class="input-group input-number-group">
-    												<div class="input-group-button">
-    													<span class="input-number-decrement">&ndash;</span>
-    												</div>
-    												<input class="input-number" type="button" value="1" min="0" max="30">
-    												<div class="input-group-button">
-    													<span class="input-number-increment">&plus;</span>
-    												</div>
-    											</div>
-    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
-    											</button>
-    										</footer>
-    									</div>
-    								</div>
-    								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
-    										</div>
-    									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
-    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    												<span aria-hidden="true">&times;</span>
-    										</button>
-    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
-    										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
-    										</header>
-    										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Note</strong>
-    												<textarea maxlength="" id="" placeholder=".........."></textarea>
-    											</label>
-    										</div>
-    										<footer class="main-footer">
-    											<div class="input-group input-number-group">
-    												<div class="input-group-button">
-    													<span class="input-number-decrement">&ndash;</span>
-    												</div>
-    												<input class="input-number" type="button" value="1" min="0" max="30">
-    												<div class="input-group-button">
-    													<span class="input-number-increment">&plus;</span>
-    												</div>
-    											</div>
-    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
+    												Aggiungi al carrello <span class="price"> 15.9</span>
     											</button>
     										</footer>
     									</div>
@@ -636,48 +622,13 @@
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
     											</label>
-    										</div>
-    										<footer class="main-footer">
-    											<div class="input-group input-number-group">
-    												<div class="input-group-button">
-    													<span class="input-number-decrement">&ndash;</span>
-    												</div>
-    												<input class="input-number" type="button" value="1" min="0" max="30">
-    												<div class="input-group-button">
-    													<span class="input-number-increment">&plus;</span>
-    												</div>
-    											</div>
-    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
-    											</button>
-    										</footer>
-    									</div>
-    								</div>
-    								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
-    										</div>
-    									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
-    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    												<span aria-hidden="true">&times;</span>
-    										</button>
-    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
-    										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
-    										</header>
-    										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Note</strong>
-    												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -722,48 +673,13 @@
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
     											</label>
-    										</div>
-    										<footer class="main-footer">
-    											<div class="input-group input-number-group">
-    												<div class="input-group-button">
-    													<span class="input-number-decrement">&ndash;</span>
-    												</div>
-    												<input class="input-number" type="button" value="1" min="0" max="30">
-    												<div class="input-group-button">
-    													<span class="input-number-increment">&plus;</span>
-    												</div>
-    											</div>
-    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
-    											</button>
-    										</footer>
-    									</div>
-    								</div>
-    								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
-    										</div>
-    									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
-    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    												<span aria-hidden="true">&times;</span>
-    										</button>
-    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
-    										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
-    										</header>
-    										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Note</strong>
-    												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -808,48 +724,13 @@
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
     											</label>
-    										</div>
-    										<footer class="main-footer">
-    											<div class="input-group input-number-group">
-    												<div class="input-group-button">
-    													<span class="input-number-decrement">&ndash;</span>
-    												</div>
-    												<input class="input-number" type="button" value="1" min="0" max="30">
-    												<div class="input-group-button">
-    													<span class="input-number-increment">&plus;</span>
-    												</div>
-    											</div>
-    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13</span>
-    											</button>
-    										</footer>
-    									</div>
-    								</div>
-    								<div class="cell">
-    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
-    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
-    											<p>Roll con riso wakame, salmone, salsa teriaki
-    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
-    										</div>
-    									</div>
-    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
-    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    												<span aria-hidden="true">&times;</span>
-    										</button>
-    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
-    										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
-    										</header>
-    										<div class="main-content">
-    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Note</strong>
-    												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -894,6 +775,14 @@
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
     											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
+    											</label>
     										</div>
     										<footer class="main-footer">
     											<div class="input-group input-number-group">
@@ -936,6 +825,167 @@
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
+    											</label>
+    										</div>
+    										<footer class="main-footer">
+    											<div class="input-group input-number-group">
+    												<div class="input-group-button">
+    													<span class="input-number-decrement">&ndash;</span>
+    												</div>
+    												<input class="input-number" type="button" value="1" min="0" max="30">
+    												<div class="input-group-button">
+    													<span class="input-number-increment">&plus;</span>
+    												</div>
+    											</div>
+    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+    												Aggiungi al carrello<span class="price"> € 13</span>
+    											</button>
+    										</footer>
+    									</div>
+    								</div>
+    								<div class="cell">
+    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="card">
+    										<div class="card-section">
+    											<img src="https://picsum.photos/1920/1080">
+    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
+    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
+    											<p>Roll con riso wakame, salmone, salsa teriaki
+    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
+    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    										</div>
+    									</div>
+    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    												<span aria-hidden="true">&times;</span>
+    										</button>
+    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
+    										<header class="main-header">
+    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    										</header>
+    										<div class="main-content">
+    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
+    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<label><strong>Note</strong>
+    												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
+    											</label>
+    										</div>
+    										<footer class="main-footer">
+    											<div class="input-group input-number-group">
+    												<div class="input-group-button">
+    													<span class="input-number-decrement">&ndash;</span>
+    												</div>
+    												<input class="input-number" type="button" value="1" min="0" max="30">
+    												<div class="input-group-button">
+    													<span class="input-number-increment">&plus;</span>
+    												</div>
+    											</div>
+    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+    												Aggiungi al carrello<span class="price"> € 13</span>
+    											</button>
+    										</footer>
+    									</div>
+    								</div>
+    								<div class="cell">
+    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="card">
+    										<div class="card-section">
+    											<img src="https://picsum.photos/1920/1080">
+    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
+    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
+    											<p>Roll con riso wakame, salmone, salsa teriaki
+    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
+    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    										</div>
+    									</div>
+    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    												<span aria-hidden="true">&times;</span>
+    										</button>
+    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
+    										<header class="main-header">
+    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    										</header>
+    										<div class="main-content">
+    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
+    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<label><strong>Note</strong>
+    												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
+    											</label>
+    										</div>
+    										<footer class="main-footer">
+    											<div class="input-group input-number-group">
+    												<div class="input-group-button">
+    													<span class="input-number-decrement">&ndash;</span>
+    												</div>
+    												<input class="input-number" type="button" value="1" min="0" max="30">
+    												<div class="input-group-button">
+    													<span class="input-number-increment">&plus;</span>
+    												</div>
+    											</div>
+    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+    												Aggiungi al carrello<span class="price"> € 13</span>
+    											</button>
+    										</footer>
+    									</div>
+    								</div>
+    								<div class="cell">
+    									<!-- prova con cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="card">
+    										<div class="card-section">
+    											<img src="https://picsum.photos/1920/1080">
+    											<!-- <img class="hide-for-medium"src="https://picsum.photos/1920/1920"> -->
+    											<h3>Uramaki marchigiano<span class="price">13</span></h3>
+    											<p>Roll con riso wakame, salmone, salsa teriaki
+    											<br><small>Allergeni: Pesce, Uova, Latte, Sedano</small></p>
+    											<button type="button" class="button small" data-open="sushiReveal">Aggiungi al Carrello</button>
+    										</div>
+    									</div>
+    									<div class="reveal reveal-ecommerce" id="sushiReveal" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    												<span aria-hidden="true">&times;</span>
+    										</button>
+    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
+    										<header class="main-header">
+    											<h1 class="h1-modal" id="modalTitle">Uramaki marchigiano</h1>
+    										</header>
+    										<div class="main-content">
+    											<p id="modalDescription">Roll con riso wakame, salmone, salsa teriaki</p>
+    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<label><strong>Note</strong>
+    												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -962,30 +1012,40 @@
     					<div class="grid-x grid-margin-x grid-margin-y" id="stuzzicare" data-magellan-target="stuzzicare">
     						<div class="small-12 cell">
     							<h2>Per Stuzzicare</h2>
-    							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+    							<div class="grid-x small-up-2 medium-up-2 grid-margin-x grid-margin-y">
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-    											<p>Il più tipico street food marchigiano
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="stuzzicareReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Bocconcini di Pollo<span class="price">5,9</span></h3>
+    											<p>Serviti con salsa piccante
+    											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
+    											<button type="button" class="button small" data-open="bocconciniPollo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="stuzzicareReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="bocconciniPollo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
+    											<h1 class="h1-modal" id="modalTitle">Bocconcini di Pollo</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Il più tipico street food marchigiano</p>
+    											<p id="modalDescription">Serviti con salsa piccante</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -999,34 +1059,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5,9</span>
+    												Aggiungi al carrello <span class="price"> € 5,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Olive all&#x27;Ascolana<span class="price">5,5</span></h3>
     											<p>Il più tipico street food marchigiano
     											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="stuzzicareReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="oliveAscolana">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="stuzzicareReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="oliveAscolana" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
+    											<h1 class="h1-modal" id="modalTitle">Olive all&#x27;Ascolana</h1>
     										</header>
     										<div class="main-content">
     											<p id="modalDescription">Il più tipico street food marchigiano</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p class="allergeni">Allergeni: Glutine, Uova, Latte, Sedano</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1040,34 +1110,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5,9</span>
+    												Aggiungi al carrello <span class="price"> € 5,5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-    											<p>Il più tipico street food marchigiano
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="stuzzicareReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Mozzarelle Fritte<span class="price">5,9</span></h3>
+    											<p>Mozzarelle fior di latte artigianali. Servite con salsa aioli fatta in casa
+    											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
+    											<button type="button" class="button small" data-open="mozzarelleFritte">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="stuzzicareReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="mozzarelleFritte" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
+    											<h1 class="h1-modal" id="modalTitle">Mozzarelle Fritte</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Il più tipico street food marchigiano</p>
+    											<p id="modalDescription">Mozzarelle fior di latte artigianali. Servite con salsa aioli fatta in casa</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1081,34 +1161,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5,9</span>
+    												Aggiungi al carrello <span class="price"> € 5,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-    											<p>Il più tipico street food marchigiano
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="stuzzicareReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Cipolle Rosse<span class="price">4,9</span></h3>
+    											<p>Cipolle rosse in tempura
+    											<br><small>Allergeni: Glutine, Latte, Crostacei</small></p>
+    											<button type="button" class="button small" data-open="cipolleRosse">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="stuzzicareReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="cipolleRosse" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
+    											<h1 class="h1-modal" id="modalTitle">Cipolle Rosse</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Il più tipico street food marchigiano</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Cipolle rosse in tempura</p>
+    											<p class="allergeni">Allergeni: Glutine, Latte, Crostacei</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1122,34 +1212,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5,9</span>
+    												Aggiungi al carrello <span class="price"> € 4,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-    											<p>Il più tipico street food marchigiano
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="stuzzicareReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Peperoncini Piccanti<span class="price">5,5</span></h3>
+    											<p>Peperoncini ripieni di robiola avvolti nella pancetta
+    											<br><small>Allergeni: Anidride Solforosa e Solfiti, Latte</small></p>
+    											<button type="button" class="button small" data-open="peperonciniPiccanti">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="stuzzicareReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="peperonciniPiccanti" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
+    											<h1 class="h1-modal" id="modalTitle">Peperoncini Piccanti</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Il più tipico street food marchigiano</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Peperoncini ripieni di robiola avvolti nella pancetta</p>
+    											<p class="allergeni">Allergeni: Anidride Solforosa e Solfiti, Latte</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1163,34 +1263,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5,9</span>
+    												Aggiungi al carrello <span class="price"> € 5,5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-    											<p>Il più tipico street food marchigiano
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="stuzzicareReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Alette di Pollo<span class="price">5,5</span></h3>
+    											<p>Servite con salsa piccante a parte
+    											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
+    											<button type="button" class="button small" data-open="alettePollo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="stuzzicareReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="alettePollo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
+    											<h1 class="h1-modal" id="modalTitle">Alette di Pollo</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Il più tipico street food marchigiano</p>
+    											<p id="modalDescription">Servite con salsa piccante a parte</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1204,34 +1314,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5,9</span>
+    												Aggiungi al carrello <span class="price"> € 5,5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-    											<p>Il più tipico street food marchigiano
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="stuzzicareReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Arrosticini<span class="price">5,5</span></h3>
+    											<p>Arrosticini di pecora
+    											<br><small>Allergeni: nessuno</small></p>
+    											<button type="button" class="button small" data-open="arrosticiniPecora">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="stuzzicareReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="arrosticiniPecora" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
+    											<h1 class="h1-modal" id="modalTitle">Arrosticini</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Il più tipico street food marchigiano</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Arrosticini di pecora</p>
+    											<p class="allergeni">Allergeni: nessuno</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1245,34 +1365,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5,9</span>
+    												Aggiungi al carrello <span class="price"> € 5,5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-    											<p>Il più tipico street food marchigiano
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="stuzzicareReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Patate Fritte<span class="price">4,5</span></h3>
+    											<p>Il più classico dei fritti
+    											<br><small>Allergeni: nessuno</small></p>
+    											<button type="button" class="button small" data-open="patateFritte">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="stuzzicareReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="patateFritte" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
+    											<h1 class="h1-modal" id="modalTitle">Patate Fritte</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Il più tipico street food marchigiano</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
+    											<p id="modalDescription">Il più classico dei fritti</p>
+    											<p class="allergeni">Allergeni: nessuno</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1286,48 +1416,7 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5,9</span>
-    											</button>
-    										</footer>
-    									</div>
-    								</div>
-    								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-    											<p>Il più tipico street food marchigiano
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="stuzzicareReveal">Aggiungi al Carrello</button>
-    										</div>
-    									</div>
-    									<div class="reveal reveal-ecommerce" id="stuzzicareReveal" data-reveal>
-    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
-    										</button>
-    										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
-    										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Olive all'ascolana</h1>
-    										</header>
-    										<div class="main-content">
-    											<p id="modalDescription">Il più tipico street food marchigiano</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Note</strong>
-    												<textarea maxlength="" id="" placeholder=".........."></textarea>
-    											</label>
-    										</div>
-    										<footer class="main-footer">
-    											<div class="input-group input-number-group">
-    												<div class="input-group-button">
-    													<span class="input-number-decrement">&ndash;</span>
-    												</div>
-    												<input class="input-number" type="button" value="1" min="0" max="30">
-    												<div class="input-group-button">
-    													<span class="input-number-increment">&plus;</span>
-    												</div>
-    											</div>
-    											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5,9</span>
+    												Aggiungi al carrello <span class="price"> € 4,5</span>
     											</button>
     										</footer>
     									</div>
@@ -1340,38 +1429,40 @@
     					<div class="grid-x grid-margin-x grid-margin-y" id="hamburgerNoNavbar" data-magellan-target="hamburgerNoNavbar">
     						<div class="small-12 cell">
     							<h2>Hamburger Classici<small>Serviti con patate fritte e a cottura media</small></h2>
-    							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+    							<div class="grid-x small-up-2 medium-up-2 grid-margin-x grid-margin-y">
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
     											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    											<p>Manzo 180 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="beerstrotSingolo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="beerstrotSingolo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
     											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 180 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1385,42 +1476,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 11,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Beerstrot Doppio<span class="price">15,9</span></h3>
+    											<p>Manzo 360 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="beerstrotDoppio">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="beerstrotDoppio" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Beerstrot Doppio</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 360 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1434,42 +1527,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 15,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>New York<span class="price">10,5</span></h3>
+    											<p>Manzo 180 grammi, cheddar, cipolla caramellata, insalata
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="newyorkSingolo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="newyorkSingolo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">New York</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 180 grammi, cheddar, cipolla caramellata, insalata</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1483,42 +1578,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 10,5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>New York Doppio<span class="price">14,5</span></h3>
+    											<p>Manzo 360 grammi, cheddar, cipolla caramellata, insalata
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="newyorkDoppio">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="newyorkDoppio" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">New York Doppio</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 360 grammi, cheddar, cipolla caramellata, insalata</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1532,42 +1629,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 14,5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Diablo<span class="price">11,9</span></h3>
+    											<p>Manzo 180 grammi, cheddar, bacon croccante, rucola, salsa piccante
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="diabloSingolo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="diabloSingolo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Diablo</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 180 grammi, cheddar, bacon croccante, rucola, salsa piccante</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1581,42 +1680,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 11,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Diablo Doppio<span class="price">15,9</span></h3>
+    											<p>Manzo 360 grammi, cheddar, bacon croccante, rucola, salsa piccante
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="diabloDoppio">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="diabloDoppio" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Diablo Doppio</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 360 grammi, cheddar, bacon croccante, rucola, salsa piccante</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1630,42 +1731,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 15,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Pollo<span class="price">10,9</span></h3>
+    											<p>Pollo 180 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="polloSingolo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="polloSingolo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Pollo</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Pollo 180 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1679,42 +1782,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 10,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Pollo Doppio<span class="price">14,9</span></h3>
+    											<p>Pollo 360 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="polloDoppio">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="polloDoppio" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Pollo Doppio</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Pollo 360 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1728,42 +1833,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 14,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
-    											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Pulled Pork<span class="price">11,9</span></h3>
+    											<p>Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante
+    											<br><small>Allergeni: Anidride Solforosa e Solfiti, Glutine, Latte, Senape, Uova</small></p>
+    											<button type="button" class="button small" data-open="pulledPork">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="pulledPork" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Pulled Pork</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
+    											<p id="modalDescription">Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante</p>
+    											<p class="allergeni">Allergeni: Anidride Solforosa e Solfiti, Glutine, Latte, Senape, Uova</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1777,42 +1884,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 11,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
-    											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<img class="show-for-small-only" src="https://picsum.photos/1920/1920">
+    											<img class="show-for-medium"src="https://picsum.photos/1920/1080">
+    											<h3>Mini Burger<span class="price">7,9</span></h3>
+    											<p>Manzo (100 grammi), cheddar. Servito ben cotto
+    											<br><small>Allergeni: Glutine, Latte, Uova</small></p>
+    											<button type="button" class="button small" data-open="miniBurger">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="miniBurger" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Mini Burger</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
+    											<p id="modalDescription">Manzo (100 grammi), cheddar. Servito ben cotto</p>
+    											<p class="allergeni">Allergeni: Glutine, Latte, Uova</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1826,7 +1935,7 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 7,9</span>
     											</button>
     										</footer>
     									</div>
@@ -1837,36 +1946,38 @@
     							<h2>Hamburger di Stagione<small>Serviti con patate fritte e a cottura media</small></h2>
     							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Cacio e Pepe<span class="price">11,9</span></h3>
+    											<p>Manzo 180 grammi, pecorino vallesina, guanciale, pepe
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="cacioSingolo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="cacioSingolo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Cacio e Pepe</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 180 grammi, pecorino vallesina, guanciale, pepe</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1880,42 +1991,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 11,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Cacio e Pepe Doppio<span class="price">15,9</span></h3>
+    											<p>Manzo 360 grammi, pecorino vallesina, guanciale, pepe
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="cacioDoppio">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="cacioDoppio" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Cacio e Pepe Doppio</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 360 grammi, pecorino vallesina, guanciale, pepe</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1929,42 +2042,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 15,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Inverno<span class="price">10,5</span></h3>
+    											<p>Manzo 180 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="invernoSingolo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="invernoSingolo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Inverno</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 180 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -1978,42 +2093,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 10,5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Inverno Doppio<span class="price">14,5</span></h3>
+    											<p>Manzo 360 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="invernoDoppio">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="invernoDoppio" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Inverno Doppio</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 360 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2027,42 +2144,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 14,5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Deciso<span class="price">11,9</span></h3>
+    											<p>Manzo 180 grammi, gorgonzola, guanciale, pomodorini confit
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="decisoSingolo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="decisoSingolo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Deciso</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 180 grammi, gorgonzola, guanciale, pomodorini confit</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2076,42 +2195,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 11,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Deciso Doppio<span class="price">15,9</span></h3>
+    											<p>Manzo 360 grammi, gorgonzola, guanciale, pomodorini confit
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="decisoDoppio">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="decisoDoppio" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Deciso Doppio</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Manzo 360 grammi, gorgonzola, guanciale, pomodorini confit</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2125,42 +2246,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 15,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Carbonara<span class="price">11,9</span></h3>
+    											<p>Pollo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="carbonaraSingolo">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="carbonaraSingolo" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Carbonara</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Pollo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2174,42 +2297,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 11,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Carbonara Doppio<span class="price">15,9</span></h3>
+    											<p>Pollo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe
     											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    											<button type="button" class="button small" data-open="carbonaraDoppio">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="carbonaraDoppio" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Carbonara Doppio</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
+    											<p id="modalDescription">Pollo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe</p>
     											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2223,7 +2348,7 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 15,9</span>
     											</button>
     										</footer>
     									</div>
@@ -2234,36 +2359,38 @@
     							<h2>Hamburger Vegetariani<small>Serviti con patate fritte</small></h2>
     							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
-    											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Vegetariano Fagioli<span class="price">9,5</span></h3>
+    											<p>Hamburger di borlotti, julienne di cipolla fritta, crema di cicoria
+    											<br><small>Allergeni: Glutine, Latte, Soia, Uova</small></p>
+    											<button type="button" class="button small" data-open="vegetarianoFagioli">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="vegetarianoFagioli" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Vegetariano Fagioli</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
+    											<p id="modalDescription">Hamburger di borlotti, julienne di cipolla fritta, crema di cicoria</p>
+    											<p class="allergeni">Allergeni: Glutine, Latte, Soia, Uova</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2277,42 +2404,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 9,5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Beerstrot<span class="price">11,9</span></h3>
-    											<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
-    											<br><small>Allergeni: Glutine, Uova, Latte</small></p>
-    											<button type="button" class="button small" data-open="hamburgerReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Vegetariano Quinoa<span class="price">9,5</span></h3>
+    											<p>Hamburger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele
+    											<br><small>Allergeni: Glutine, Latte, Senape, Uova</small></p>
+    											<button type="button" class="button small" data-open="vegetarianoQuinoa">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="hamburgerReveal" data-reveal>
+    									<div class="reveal reveal-ecommerce" id="vegetarianoQuinoa" data-reveal>
     										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-    											<span aria-hidden="true">&times;</span>
+    												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Beerstrot</h1>
+    											<h1 class="h1-modal" id="modalTitle">Vegetariano Quinoa</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit</p>
-    											<p class="allergeni">Allergeni: Glutine, Uova, Latte</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
+    											<p id="modalDescription">Hamburger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele</p>
+    											<p class="allergeni">Allergeni: Glutine, Latte, Senape, Uova</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2326,7 +2455,7 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 11,9</span>
+    												Aggiungi al carrello <span class="price"> € 9,5</span>
     											</button>
     										</footer>
     									</div>
@@ -2341,17 +2470,19 @@
     							<h2>Carne</h2>
     							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
     											<h3>Costine<span class="price">13,9</span></h3>
     											<p>Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="carneReveal">Aggiungi al Carrello</button>
+    											<br><small>Allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo</small></p>
+    											<button type="button" class="button small" data-open="costine">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="carneReveal" data-reveal>
-    										<button type="button" id="close-modal" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    									<div class="reveal reveal-ecommerce" id="costine" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
@@ -2361,16 +2492,16 @@
     										<div class="main-content">
     											<p id="modalDescription">Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte</p>
     											<p class="allergeni">Allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2384,42 +2515,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13,9</span>
+    												Aggiungi al carrello <span class="price"> € 13,9</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Costine<span class="price">13,9</span></h3>
-    											<p>Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte
-    											<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
-    											<button type="button" class="button small" data-open="carneReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Entrecôte<span class="price">19</span></h3>
+    											<p>Entrecôte di Manzetta Red Hereford irlandese
+    											<br><small>Allergeni: nessuno</small></p>
+    											<button type="button" class="button small" data-open="entrecote">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="carneReveal" data-reveal>
-    										<button type="button" id="close-modal" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    									<div class="reveal reveal-ecommerce" id="entrecote" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Costine</h1>
+    											<h1 class="h1-modal" id="modalTitle">Entrecôte</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte</p>
-    											<p class="allergeni">Allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo</p>
-    											<label><strong>Cottura</strong>
-    												<select>
-    													<option value="medio">Media</option>
-    													<option value="husker">Molto al sangue</option>
-    													<option value="starbuck">Al sangue</option>
-    													<option value="apollo">Ben cotta</option>
-    												</select>
-    											</label>
+    											<p id="modalDescription">Entrecôte di Manzetta Red Hereford irlandese</p>
+    											<p class="allergeni">Allergeni: nessuno</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class=""><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2433,7 +2566,7 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 13,9</span>
+    												Aggiungi al carrello <span class="price"> € 19</span>
     											</button>
     										</footer>
     									</div>
@@ -2448,17 +2581,19 @@
     							<h2>Dolci<small>Fatti in casa</small></h2>
     							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
     											<h3>Cheesecake<span class="price">5</span></h3>
-    											<p>Cheescake in stile new york. Squisitamente dolce, morbida e leggermente acidula
-    											<br><small>Contiene: Frutta a Guscio, Glutine, Latte, Uova</small></p>
-    											<button type="button" class="button small" data-open="dolciReveal">Aggiungi al Carrello</button>
+    											<p>Cheesecake in stile new york. Squisitamente dolce, morbida e leggermente acidula
+    											<br><small>Allergeni: Frutta a Guscio, Glutine, Latte, Uova</small></p>
+    											<button type="button" class="button small" data-open="cheesecake">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="dolciReveal" data-reveal>
-    										<button type="button" id="close-modal" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    									<div class="reveal reveal-ecommerce" id="cheesecake" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
@@ -2466,10 +2601,18 @@
     											<h1 class="h1-modal" id="modalTitle">Cheesecake</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Cheescake in stile new york. Squisitamente dolce, morbida e leggermente acidula</p>
+    											<p id="modalDescription">Cheesecake in stile new york. Squisitamente dolce, morbida e leggermente acidula</p>
     											<p class="allergeni">Allergeni: Frutta a Guscio, Glutine, Latte, Uova</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2483,34 +2626,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5</span>
+    												Aggiungi al carrello <span class="price"> € 5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Cheesecake<span class="price">5</span></h3>
-    											<p>Cheescake in stile new york. Squisitamente dolce, morbida e leggermente acidula
-    											<br><small>Contiene: Frutta a Guscio, Glutine, Latte, Uova</small></p>
-    											<button type="button" class="button small" data-open="dolciReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Blondie<span class="price">5</span></h3>
+    											<p>Brownie con nocciole. Servito con crema al mascarpone e rhum
+    											<br><small>Allergeni: Frutta a Guscio, Glutine, Latte, Uova</small></p>
+    											<button type="button" class="button small" data-open="blondie">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="dolciReveal" data-reveal>
-    										<button type="button" id="close-modal" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    									<div class="reveal reveal-ecommerce" id="blondie" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Cheesecake</h1>
+    											<h1 class="h1-modal" id="modalTitle">Blondie</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Cheescake in stile new york. Squisitamente dolce, morbida e leggermente acidula</p>
+    											<p id="modalDescription">Brownie con nocciole. Servito con crema al mascarpone e rhum</p>
     											<p class="allergeni">Allergeni: Frutta a Guscio, Glutine, Latte, Uova</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2524,34 +2677,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5</span>
+    												Aggiungi al carrello <span class="price"> € 5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Cheesecake<span class="price">5</span></h3>
-    											<p>Cheescake in stile new york. Squisitamente dolce, morbida e leggermente acidula
-    											<br><small>Contiene: Frutta a Guscio, Glutine, Latte, Uova</small></p>
-    											<button type="button" class="button small" data-open="dolciReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Birramisù<span class="price">5</span></h3>
+    											<p>Tiramisù con mascarpone artigianale alla birra stout
+    											<br><small>Allergeni: Glutine, Latte, Uova</small></p>
+    											<button type="button" class="button small" data-open="birramisu">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="dolciReveal" data-reveal>
-    										<button type="button" id="close-modal" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    									<div class="reveal reveal-ecommerce" id="birramisu" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Cheesecake</h1>
+    											<h1 class="h1-modal" id="modalTitle">Birramisù</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Cheescake in stile new york. Squisitamente dolce, morbida e leggermente acidula</p>
-    											<p class="allergeni">Allergeni: Frutta a Guscio, Glutine, Latte, Uova</p>
+    											<p id="modalDescription">Tiramisù con mascarpone artigianale alla birra stout</p>
+    											<p class="allergeni">Allergeni: Glutine, Latte, Uova</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2565,34 +2728,44 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5</span>
+    												Aggiungi al carrello <span class="price"> € 5</span>
     											</button>
     										</footer>
     									</div>
     								</div>
     								<div class="cell">
-    									<div class="card">
-    										<div class="card-section">
-    											<img src="https://picsum.photos/1920/1080">
-    											<h3>Cheesecake<span class="price">5</span></h3>
-    											<p>Cheescake in stile new york. Squisitamente dolce, morbida e leggermente acidula
-    											<br><small>Contiene: Frutta a Guscio, Glutine, Latte, Uova</small></p>
-    											<button type="button" class="button small" data-open="dolciReveal">Aggiungi al Carrello</button>
+    									<!-- prova senza cards. più arioso. ho rimosso classe extra-space-item-menu in cell-->
+    									<div class="">
+    										<div class="">
+    											<!-- <img class="show-for-small-only" src="https://picsum.photos/1920/1920"> -->
+    											<img class=""src="https://picsum.photos/1920/1080">
+    											<h3>Whoop<span class="price">5</span></h3>
+    											<p>Morbido biscotto al cioccolato ripieno di burro di arachidi
+    											<br><small>Allergeni: Arachidi, Glutine, Latte, Uova</small></p>
+    											<button type="button" class="button small" data-open="whoop">Aggiungi al Carrello</button>
     										</div>
     									</div>
-    									<div class="reveal reveal-ecommerce" id="dolciReveal" data-reveal>
-    										<button type="button" id="close-modal" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    									<div class="reveal reveal-ecommerce" id="whoop" data-reveal>
+    										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
     												<span aria-hidden="true">&times;</span>
     										</button>
     										<img src="https://picsum.photos/1920/1080" style="margin-top:-3rem;">
     										<header class="main-header">
-    											<h1 class="h1-modal" id="modalTitle">Cheesecake</h1>
+    											<h1 class="h1-modal" id="modalTitle">Whoop</h1>
     										</header>
     										<div class="main-content">
-    											<p id="modalDescription">Cheescake in stile new york. Squisitamente dolce, morbida e leggermente acidula</p>
-    											<p class="allergeni">Allergeni: Frutta a Guscio, Glutine, Latte, Uova</p>
+    											<p id="modalDescription">Morbido biscotto al cioccolato ripieno di burro di arachidi</p>
+    											<p class="allergeni">Allergeni: Arachidi, Glutine, Latte, Uova</p>
     											<label><strong>Note</strong>
     												<textarea maxlength="" id="" placeholder=".........."></textarea>
+    											</label>
+    											<label class="hide"><strong>Cottura</strong>
+    												<select>
+    													<option value="medio">Media</option>
+    													<option value="moltoalsangue">Molto al sangue</option>
+    													<option value="alsangue">Al sangue</option>
+    													<option value="bencotta">Ben cotta</option>
+    												</select>
     											</label>
     										</div>
     										<footer class="main-footer">
@@ -2606,7 +2779,7 @@
     												</div>
     											</div>
     											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-    												Aggiungi al carrello<span class="price"> € 5</span>
+    												Aggiungi al carrello <span class="price"> € 5</span>
     											</button>
     										</footer>
     									</div>
