@@ -14,11 +14,11 @@ canonical: https://www.beerstrot.it/menu.html
 </div>
 <div id="magellanStickyTop" class="grid-container full" style="overflow-x: hidden;">
 	<div class="grid-x grid-margin-x">
-		<div class="small-12 cell" data-sticky-container data-magellan data-offset="30">
+		<div class="small-12 cell" data-sticky-container data-magellan data-deep-linking="true" data-offset="30">
 			<ul class="menu sticky hs no-scrollbar" data-sticky data-top-anchor="magellanStickyTop" data-options="marginTop:0;" data-sticky-on="small" style="padding:0 0rem; margin-top:0;">
 				<li><a href="#sushi">Sushi</a></li>
 				<li><a href="#stuzzicare">Per Stuzzicare</a></li>
-				<li><a href="#hamburgerNoNavbar">Hamburger</a></li>
+				<li><a href="#hamburger">Hamburger</a></li>
 				<li><a href="#carne">Carni</a></li>
 				<li><a href="#dolce">Dolci</a></li>
 				<li><a href="#bevanda">Bevande</a></li>
@@ -38,18 +38,19 @@ canonical: https://www.beerstrot.it/menu.html
 				<div class="small-12 cell">
 					<h2>Sushi</h2>
 					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 10}}
+						{{#each global.menu-sushi-classici}}
 						<div class="cell">
 							<div class="card">
 								<div class="card-section">
-									<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
-									<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-									<p>Il più tipico street food marchigiano e cavoli a merenda
-									<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+									<img id="theImage" style="display:none" class="{{class-image}}" src="{{item-image-16-9}}">
+									<!-- <img class="show-for-small-only {{class-image}}" src="{{item-image-1-1}}"> -->
+									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
 								</div>
 							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
@@ -59,31 +60,41 @@ canonical: https://www.beerstrot.it/menu.html
 				<div class="small-12 cell">
 					<h2>Per Stuzzicare</h2>
 					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 9}}
+						{{#each global.menu-per-stuzzicare}}
 						<div class="cell">
-							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
-							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-							<p>Il più tipico street food marchigiano
-							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+							<div class="card">
+								<div class="card-section">
+									<img id="theImage" style="display:none" class="{{class-image}}" src="{{item-image-16-9}}">
+									<!-- <img class="show-for-small-only {{class-image}}" src="{{item-image-1-1}}"> -->
+									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
 		</section>
 		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="hamburgerNoNavbar" data-magellan-target="hamburgerNoNavbar">
+			<div class="grid-x grid-margin-x grid-margin-y" id="hamburger" data-magellan-target="hamburger">
 				<div class="small-12 cell">
-					<h2>Hamburger<small>Serviti con patate fritte e a cottura media</small></h2>
+					<h2>Hamburger Classici<small>Serviti con patate fritte e a cottura media</small></h2>
 					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 18}}
+						{{#each global.menu-hamburger-classici}}
 						<div class="cell">
-							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
-							<h3>Beerstrot<span class="price">11,9 / doppio 15,9</span></h3>
-							<p>Manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit <br>
-							<small>Contiene: Glutine, Latte, Uova</small></p>
+							<div class="card">
+								<div class="card-section">
+									<img id="theImage" style="display:none" class="{{class-image}}" src="{{item-image-16-9}}">
+									<!-- <img class="show-for-small-only {{class-image}}" src="{{item-image-1-1}}"> -->
+									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
@@ -93,14 +104,19 @@ canonical: https://www.beerstrot.it/menu.html
 				<div class="small-12 cell">
 					<h2>Carne</h2>
 					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 2}}
+						{{#each global.menu-carne}}
 						<div class="cell">
-							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
-							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-							<p>Il più tipico street food marchigiano
-							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+							<div class="card">
+								<div class="card-section">
+									<img id="theImage" style="display:none" class="{{class-image}}" src="{{item-image-16-9}}">
+									<!-- <img class="show-for-small-only {{class-image}}" src="{{item-image-1-1}}"> -->
+									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
@@ -110,14 +126,19 @@ canonical: https://www.beerstrot.it/menu.html
 				<div class="small-12 cell">
 					<h2>Dolci<small>Fatti in casa</small></h2>
 					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 4}}
+						{{#each global.menu-dolce}}
 						<div class="cell">
-							<img id="theImage" style="display:none" src="https://picsum.photos/1920/1080">
-							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-							<p>Il più tipico street food marchigiano
-							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+							<div class="card">
+								<div class="card-section">
+									<img id="theImage" style="display:none" class="{{class-image}}" src="{{item-image-16-9}}">
+									<!-- <img class="show-for-small-only {{class-image}}" src="{{item-image-1-1}}"> -->
+									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
@@ -126,14 +147,18 @@ canonical: https://www.beerstrot.it/menu.html
 			<div class="grid-x grid-margin-x grid-margin-y" id="bevanda" data-magellan-target="bevanda">
 				<div class="small-12 cell">
 					<h2>Bevande</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 6}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#each global.menu-bevanda}}
 						<div class="cell">
-							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-							<p>Il più tipico street food marchigiano
-							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+							<div class="card">
+								<div class="card-section">
+									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
@@ -142,18 +167,18 @@ canonical: https://www.beerstrot.it/menu.html
 			<div class="grid-x grid-margin-x grid-margin-y" id="caffe" data-magellan-target="caffe" >
 				<div class="small-12 cell">
 					<h2>Caffè</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x">
-						{{#repeat 5}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x">
+						{{#each global.menu-caffe}}
 						<div class="cell">
 							<div class="card">
 								<div class="card-section">
-									<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-									<p>Il più tipico street food marchigiano e cavoli a merenda
-									<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
 								</div>
 							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
@@ -162,26 +187,34 @@ canonical: https://www.beerstrot.it/menu.html
 			<div class="grid-x grid-margin-x grid-margin-y" id="birra" data-magellan-target="birra">
 				<div class="small-12 cell">
 					<h2>Birra artigianale alla spina<small>Piccola 4 | Media 6 | Caraffa 12</small></h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 6}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#each global.menu-birra-spina}}
 						<div class="cell">
-							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-							<p>Il più tipico street food marchigiano
-							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+							<div class="card">
+								<div class="card-section">
+									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 				<div class="small-12 cell">
 					<h2>Birra artigianale in bottiglia</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 7}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#each global.menu-birra-bottiglia}}
 						<div class="cell">
-							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-							<p>Il più tipico street food marchigiano
-							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+							<div class="card">
+								<div class="card-section">
+									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
@@ -190,26 +223,34 @@ canonical: https://www.beerstrot.it/menu.html
 			<div class="grid-x grid-margin-x grid-margin-y" id="vino" data-magellan-target="vino">
 				<div class="small-12 cell">
 					<h2>Vino in Caraffa</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 3}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#each global.menu-vino-caraffa}}
 						<div class="cell">
-							<h3>Olive all'ascolana<span class="price">Quarto 3 | Litro 9</span></h3>
-							<p>Il più tipico street food marchigiano
-							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+							<div class="card">
+								<div class="card-section">
+									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 				<div class="small-12 cell">
 					<h2>Vino<small>Bottigia | Calice</small></h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 7}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#each global.menu-vino}}
 						<div class="cell">
-							<h3>Olive all'ascolana<span class="price">5,5 | 2</span></h3>
-							<p>Il più tipico street food marchigiano
-							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+							<div class="card">
+								<div class="card-section">
+									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+									<p>{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
@@ -218,50 +259,50 @@ canonical: https://www.beerstrot.it/menu.html
 			<div class="grid-x grid-margin-x grid-margin-y" id="liquore" data-magellan-target="liquore" >
 				<div class="small-12 cell">
 					<h2>Amari</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x">
-						{{#repeat 5}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x">
+						{{#each global.menu-amaro}}
 						<div class="cell">
 							<div class="card">
 								<div class="card-section">
-									<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-									<p>Il più tipico street food marchigiano e cavoli a merenda
-									<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+									<p class="{{class-description}}">{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
 								</div>
 							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 				<div class="small-12 cell">
 					<h2>Rhum</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x">
-						{{#repeat 3}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x">
+						{{#each global.menu-rhum}}
 						<div class="cell">
 							<div class="card">
 								<div class="card-section">
-									<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-									<p>Il più tipico street food marchigiano e cavoli a merenda
-									<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+									<p class="{{class-description}}">{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
 								</div>
 							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 				<div class="small-12 cell">
 					<h2>Wiskey</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x">
-						{{#repeat 3}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x">
+						{{#each global.menu-wiskey}}
 						<div class="cell">
 							<div class="card">
 								<div class="card-section">
-									<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-									<p>Il più tipico street food marchigiano e cavoli a merenda
-									<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+									<p class="{{class-description}}">{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
 								</div>
 							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
@@ -270,14 +311,18 @@ canonical: https://www.beerstrot.it/menu.html
 			<div class="grid-x grid-margin-x grid-margin-y" id="drink" data-magellan-target="drink">
 				<div class="small-12 cell">
 					<h2>Drinks</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#repeat 6}}
+					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+						{{#each global.menu-drinks}}
 						<div class="cell">
-							<h3>Olive all'ascolana<span class="price">5,5</span></h3>
-							<p>Il più tipico street food marchigiano
-							<br><small>Allergeni: Glutine, Uova, Latte, Sedano</small></p>
+							<div class="card">
+								<div class="card-section">
+									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+									<p class="{{class-description}}">{{item-description}}
+									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></p></span>
+								</div>
+							</div>
 						</div>
-						{{/repeat}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
