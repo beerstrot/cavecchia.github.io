@@ -8,6 +8,7 @@ asporto-sushi-uramaki:
     item-allergeni: Pesce, Uova, Latte, Sedano
     id-data: 1id
     class-cottura: hide
+    class-allergeni:
   -
     item-name: Uramaki neve
     item-image-16-9: https://picsum.photos/1920/1080
@@ -17,6 +18,7 @@ asporto-sushi-uramaki:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 2id
     class-cottura: hide
+    class-allergeni:
   -
     item-name: Uramaki neve2
     item-image-16-9: https://picsum.photos/1920/1080
@@ -26,6 +28,7 @@ asporto-sushi-uramaki:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 3id
     class-cottura: hide
+    class-allergeni:
   -
     item-name: Uramaki neve3
     item-image-16-9: https://picsum.photos/1920/1080
@@ -35,6 +38,7 @@ asporto-sushi-uramaki:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 4id
     class-cottura: hide
+    class-allergeni:
   -
     item-name: Uramaki neve4
     item-image-16-9: https://picsum.photos/1920/1080
@@ -44,6 +48,7 @@ asporto-sushi-uramaki:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 5id
     class-cottura: hide
+    class-allergeni:
   -
     item-name: Uramaki neve5
     item-image-16-9: https://picsum.photos/1920/1080
@@ -53,6 +58,7 @@ asporto-sushi-uramaki:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 6id
     class-cottura: hide
+    class-allergeni:
 
 asporto-per-stuzzicare:
   -
@@ -64,6 +70,7 @@ asporto-per-stuzzicare:
     item-price: 5,9
     id-data: bocconciniPollo
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -73,6 +80,7 @@ asporto-per-stuzzicare:
     item-price: 5,5
     id-data: oliveAscolana
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -82,6 +90,7 @@ asporto-per-stuzzicare:
     item-price: 5,9
     id-data: mozzarelleFritte
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -91,6 +100,7 @@ asporto-per-stuzzicare:
     item-price: 4,9
     id-data: cipolleRosse
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -100,6 +110,7 @@ asporto-per-stuzzicare:
     item-price: 5,5
     id-data: peperonciniPiccanti
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -109,6 +120,7 @@ asporto-per-stuzzicare:
     item-price: 5,5
     id-data: alettePollo
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -118,6 +130,7 @@ asporto-per-stuzzicare:
     item-price: 5,5
     id-data: arrosticiniPecora
     class-cottura: hide
+    class-allergeni: hide
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -127,6 +140,7 @@ asporto-per-stuzzicare:
     item-price: 4,5
     id-data: patateFritte
     class-cottura: hide
+    class-allergeni: hide
 
 asporto-hamburger-classici:
   -
@@ -138,6 +152,7 @@ asporto-hamburger-classici:
     item-price: 11,9
     id-data: beerstrotSingolo
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -147,6 +162,7 @@ asporto-hamburger-classici:
     item-price: 15,9
     id-data: beerstrotDoppio
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -156,6 +172,7 @@ asporto-hamburger-classici:
     item-price: 10,5
     id-data: newyorkSingolo
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -165,6 +182,7 @@ asporto-hamburger-classici:
     item-price: 14,5
     id-data: newyorkDoppio
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -174,6 +192,7 @@ asporto-hamburger-classici:
     item-price: 11,9
     id-data: diabloSingolo
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -183,6 +202,7 @@ asporto-hamburger-classici:
     item-price: 15,9
     id-data: diabloDoppio
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -192,6 +212,7 @@ asporto-hamburger-classici:
     item-price: 10,9
     id-data: polloSingolo
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -201,6 +222,7 @@ asporto-hamburger-classici:
     item-price: 14,9
     id-data: polloDoppio
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -210,6 +232,7 @@ asporto-hamburger-classici:
     item-price: 11,9
     id-data: pulledPork
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -219,6 +242,7 @@ asporto-hamburger-classici:
     item-price: 7,9
     id-data: miniBurger
     class-cottura:
+    class-allergeni:
 
 asporto-hamburger-stagione:
   -
@@ -230,6 +254,7 @@ asporto-hamburger-stagione:
     item-price: 11,9
     id-data: cacioSingolo
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -239,6 +264,7 @@ asporto-hamburger-stagione:
     item-price: 15,9
     id-data: cacioDoppio
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -248,6 +274,7 @@ asporto-hamburger-stagione:
     item-price: 10,5
     id-data: invernoSingolo
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -257,6 +284,7 @@ asporto-hamburger-stagione:
     item-price: 14,5
     id-data: invernoDoppio
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -266,6 +294,7 @@ asporto-hamburger-stagione:
     item-price: 11,9
     id-data: decisoSingolo
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -275,6 +304,7 @@ asporto-hamburger-stagione:
     item-price: 15,9
     id-data: decisoDoppio
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -284,6 +314,7 @@ asporto-hamburger-stagione:
     item-price: 11,9
     id-data: carbonaraSingolo
     class-cottura:
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -293,6 +324,7 @@ asporto-hamburger-stagione:
     item-price: 15,9
     id-data: carbonaraDoppio
     class-cottura:
+    class-allergeni:
 
 asporto-hamburger-vegetariano:
   -
@@ -304,6 +336,7 @@ asporto-hamburger-vegetariano:
     item-price: 9,5
     id-data: vegetarianoFagioli
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -313,6 +346,7 @@ asporto-hamburger-vegetariano:
     item-price: 9,5
     id-data: vegetarianoQuinoa
     class-cottura: hide
+    class-allergeni:
 
 asporto-carne:
   -
@@ -324,6 +358,7 @@ asporto-carne:
     item-price: 13,9
     id-data: costine
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -333,6 +368,7 @@ asporto-carne:
     item-price: 19
     id-data: entrecote
     class-cottura:
+    class-allergeni: hide
 
 asporto-dolce:
   -
@@ -344,6 +380,7 @@ asporto-dolce:
     item-price: 5
     id-data: cheesecake
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -353,6 +390,7 @@ asporto-dolce:
     item-price: 5
     id-data: blondie
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -362,6 +400,7 @@ asporto-dolce:
     item-price: 5
     id-data: birramisu
     class-cottura: hide
+    class-allergeni:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -371,3 +410,208 @@ asporto-dolce:
     item-price: 5
     id-data: whoop
     class-cottura: hide
+    class-allergeni:
+
+asporto-bevanda:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Coca Cola
+    item-description: Lattina 33cl
+    item-allergeni: nessuno
+    item-price: 3
+    id-data: cocaCola
+    class-note: hide
+    class-cottura: hide
+    class-allergeni: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Coca Cola Zero
+    item-description: Lattina 33cl
+    item-allergeni: nessuno
+    item-price: 3
+    id-data: cocaColaZero
+    class-note: hide
+    class-cottura: hide
+    class-allergeni: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Fanta
+    item-description: Lattina 33cl
+    item-allergeni: nessuno
+    item-price: 3
+    id-data: fanta
+    class-note: hide
+    class-cottura: hide
+    class-allergeni: hide
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Acqua tonica
+    item-description: J.Gasco 20cl
+    item-allergeni: nessuno
+    item-price: 5
+    id-data: acquaTonica
+    class-note: hide
+    class-cottura: hide
+    class-allergeni: hide
+
+asporto-birra-bottiglia:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Landbier 1857 50cl
+    item-description: Helles tedesca non filtrata 5,3%. Birrificio Bayreuther
+    item-allergeni: glutine
+    item-price: 6
+    id-data: landbier
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Landbier Dunkel 50cl
+    item-description: Rossa tedesca 5,3%. Birrificio Bayreuther
+    item-allergeni: glutine
+    item-price: 6
+    id-data: landbierDunkel
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Weisse 50cl
+    item-description: Weisse tedesca 5,1%. Birrificio Maisel
+    item-allergeni: glutine
+    item-price: 6
+    id-data: weisse
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Poculator 50cl
+    item-description: Rossa tedesca 7,6%. Birrificio Scheyern
+    item-allergeni: glutine
+    item-price: 6
+    id-data: poculator
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Mazzu de Fiuri 50cl
+    item-description: IPA 6%. Birrificio Mukkeller
+    item-allergeni: glutine
+    item-price: 6
+    id-data: mazzuFiuri
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Space Pigs 50cl
+    item-description: Doppia IPA 8%. Birrificio Mukkeller
+    item-allergeni: glutine
+    item-price: 6
+    id-data: spacePigs
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Calix Niger 33cl
+    item-description: Chocolate Stout 6,7%. Birrificio dei Castelli
+    item-allergeni: glutine
+    item-price: 6
+    id-data: calixNiger
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+
+asporto-vino:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Serrano DOC
+    item-description: Rosso Conero. Cantina Umani Ronchi
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 14,5
+    id-data: serranoDoc
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Rubico Doc
+    item-description: Lacrima di Morro D'Alba. Cantina Marotti Campi
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 15,5
+    id-data: rubicoDoc
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Villa Bianchi Doc
+    item-description: Verdicchio dei Castelli di Jesi Classico. Cantina Umani Ronchi
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 14,5
+    id-data: villaBianchi
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Casal di Serra Doc
+    item-description: Verdicchio dei Castelli di Jesi Classico Superiore Biologico. Cantina Umani Ronchi
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 18
+    id-data: casalSerra
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Gewurztraminer Doc
+    item-description: Cantina H.Lun
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 18
+    id-data: gewurztraminerDoc
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Ribolla Gialla Igt
+    item-description: Cantina Branko
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 18
+    id-data: ribollaGialla
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+  -
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-name: Prosecco Lovre Docg
+    item-description: Extra dry. Cantina Serre di Pederiva
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 16
+    id-data: proseccoLovre
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
