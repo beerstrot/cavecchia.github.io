@@ -15,19 +15,19 @@ asporto-sushi-signature:
     class-price:
     alt-image: Roll Ca' Vecchia Beerstrot
   -
-    item-name: Roll Ca' Vecchia Beerstrot
+    item-name: Roll Special Tuna
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
     item-description: Tonno e Mango avvolti da stracciatella, pesto e granella di pistacchio
     item-description-short: Tonno e Mango avvolti da stracciatella, pesto e granella di pistacchio
     item-allergeni: Pesce, Uova, Latte, Sedano, Senape
-    id-data: rollTuna
+    id-data: rollSpecialTuna
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
     class-price:
-    alt-image: Roll Ca' Vecchia Beerstrot
+    alt-image: Roll Special Tuna
   -
     item-name: Special Nigiri
     item-image-16-9: https://picsum.photos/1920/1080
