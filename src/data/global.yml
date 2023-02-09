@@ -13,8 +13,9 @@ asporto-sushi-signature:
     class-cottura: hide
     class-allergeni: hide
     class-price:
+    alt-image: Roll Ca' Vecchia Beerstrot
   -
-    item-name: Roll Tuna's
+    item-name: Roll Ca' Vecchia Beerstrot
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
@@ -26,6 +27,7 @@ asporto-sushi-signature:
     class-cottura: hide
     class-allergeni: hide
     class-price:
+    alt-image: Roll Ca' Vecchia Beerstrot
   -
     item-name: Special Nigiri
     item-image-16-9: https://picsum.photos/1920/1080
@@ -39,6 +41,7 @@ asporto-sushi-signature:
     class-cottura: hide
     class-allergeni: hide
     class-price:
+    alt-image: Special Nigiri
   -
     item-name: Special Gunkan
     item-image-16-9: https://picsum.photos/1920/1080
@@ -52,6 +55,7 @@ asporto-sushi-signature:
     class-cottura: hide
     class-allergeni: pesce
     class-price:
+    alt-image: Special Gunkan
 
 
 asporto-sushi-special-mix:
@@ -68,6 +72,7 @@ asporto-sushi-special-mix:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Extraordinary Sushi
   -
     item-name: Ordinary Only Me
     item-image-16-9: https://picsum.photos/1920/1080
@@ -81,6 +86,7 @@ asporto-sushi-special-mix:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Ordinary Only Me
   -
     item-name: Ordinary Me & You
     item-image-16-9: https://picsum.photos/1920/1080
@@ -94,6 +100,7 @@ asporto-sushi-special-mix:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Ordinary Me & You
   -
     item-name: Ordinary Green
     item-image-16-9: https://picsum.photos/1920/1080
@@ -107,6 +114,7 @@ asporto-sushi-special-mix:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Ordinary Green
 
 
 asporto-sushi-entree:
@@ -123,6 +131,7 @@ asporto-sushi-entree:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Edamame
   -
     item-name: Edamame Piccanti
     item-image-16-9: https://picsum.photos/1920/1080
@@ -136,6 +145,7 @@ asporto-sushi-entree:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Edamame Piccanti
   -
     item-name: Alghe Goma Wakame
     item-image-16-9: https://picsum.photos/1920/1080
@@ -149,6 +159,7 @@ asporto-sushi-entree:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Alghe Goma Wakame
   -
     item-name: Tartare Ca' Vecchia Tonno
     item-image-16-9: https://picsum.photos/1920/1080
@@ -162,6 +173,7 @@ asporto-sushi-entree:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Tartare Ca' Vecchia Tonno
   -
     item-name: Tartare Ca' Vecchia Salmone
     item-image-16-9: https://picsum.photos/1920/1080
@@ -175,6 +187,7 @@ asporto-sushi-entree:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Tartare Ca' Vecchia Salmone
   -
     item-name: Kimuchi di Salmone
     item-image-16-9: https://picsum.photos/1920/1080
@@ -188,6 +201,7 @@ asporto-sushi-entree:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Kimuchi di Salmone
   -
     item-name: Little Sashimi
     item-image-16-9: https://picsum.photos/1920/1080
@@ -201,6 +215,7 @@ asporto-sushi-entree:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Little Sashimi
 
 asporto-sushi-roll-selection:
   -
@@ -216,6 +231,7 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Ebi Salmon Roll
   -
     item-name: Almond Roll
     item-image-16-9: https://picsum.photos/1920/1080
@@ -229,6 +245,7 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Almond Roll
   -
     item-name: Shrimp Roll
     item-image-16-9: https://picsum.photos/1920/1080
@@ -242,6 +259,7 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Shrimp Roll
   -
     item-name: Tuna Roll
     item-image-16-9: https://picsum.photos/1920/1080
@@ -255,6 +273,7 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Tuna Roll
   -
     item-name: Mexico Roll
     item-image-16-9: https://picsum.photos/1920/1080
@@ -268,6 +287,7 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Mexico Roll
   -
     item-name: Seabass Rock
     item-image-16-9: https://picsum.photos/1920/1080
@@ -281,6 +301,7 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Seabass Rock
   -
     item-name: Mediterraneo Style
     item-image-16-9: https://picsum.photos/1920/1080
@@ -294,6 +315,7 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Mediterraneo Style
   -
     item-name: Special Yellow Veggie
     item-image-16-9: https://picsum.photos/1920/1080
@@ -307,73 +329,79 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Special Yellow Veggie
 
 asporto-sushi-hot-roll:
   -
-    item-name: Ebi Salmon Roll
+    item-name: Ebi Salmon Hot Roll
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
     item-description: Gambero in tempura e filetto di salmone avvolti da tartare di salmone, maionese e lime
     item-description-short: Gambero in tempura e filetto di salmone avvolti da tartare di salmone, maionese e lime
     item-allergeni: Pesce, Uova
-    id-data: ebiSalmonRoll
+    id-data: ebiSalmonHotRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: EEbi Salmon Hot Roll
   -
-    item-name: Almond Roll
+    item-name: Almond Hot Roll
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
     item-description: Salmone e philadelphi avvolti da tobiko red, mandorle e maionese piccante
     item-description-short: Salmone e philadelphi avvolti da tobiko red, mandorle e maionese piccante
     item-allergeni: Pesce, Uova
-    id-data: almondRoll
+    id-data: almondHotRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Almond Hot Roll
   -
-    item-name: Shrimp Roll
+    item-name: Shrimp Hot Roll
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
     item-description: Salmone e avocado avvolti in stracciatella, gamberi rossi e granella di pistacchio
     item-description-short: Salmone e avocado avvolti in stracciatella, gamberi rossi e granella di pistacchio
     item-allergeni: Pesce, frutta a guscio
-    id-data: shrimpRoll
+    id-data: shrimpHotRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Shrimp Hot Roll
   -
-    item-name: Tuna Roll
+    item-name: Tuna Hot Roll
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
     item-description: Tonno, avocado avvolti da tobiko red
     item-description-short: Tonno, avocado avvolti da tobiko red
     item-allergeni: pesce
-    id-data: tunaRoll
+    id-data: tunaHotRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Tuna Hot Roll
   -
-    item-name: Mexico Roll
+    item-name: Mexico Hot Roll
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
     item-description: Gambero in tempura e maionese avvolti da carpaccio di salmone scottato e salsa sweet chily
     item-description-short: Gambero in tempura e maionese avvolti da carpaccio di salmone scottato e salsa sweet chily
     item-allergeni: pesce, uovo
-    id-data: mexicoRoll
+    id-data: mexicoHotRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Tuna Hot Roll
 
 
 asporto-sushi-maki-ordinary-style:
@@ -390,6 +418,7 @@ asporto-sushi-maki-ordinary-style:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Uramaki Philadelphia
   -
     item-name: Uramaki Salmone e Avocado
     item-image-16-9: https://picsum.photos/1920/1080
@@ -403,6 +432,7 @@ asporto-sushi-maki-ordinary-style:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Uramaki Salmone e Avocado
   -
     item-name: Uramaki Tonno
     item-image-16-9: https://picsum.photos/1920/1080
@@ -411,11 +441,12 @@ asporto-sushi-maki-ordinary-style:
     item-description: Tonno, avocado e maionese avvolti da tobiko red
     item-description-short: Tonno, avocado e maionese avvolti da tobiko red
     item-allergeni: Pesce, Uova
-    id-data: uramakiSTonnoOrdinary
+    id-data: uramakiTonnoOrdinary
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Uramaki Tonno
   -
     item-name: Uramaki Ebi Ten
     item-image-16-9: https://picsum.photos/1920/1080
@@ -429,6 +460,7 @@ asporto-sushi-maki-ordinary-style:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Uramaki Ebi Ten
 
 
 asporto-sushi-temaki:
@@ -445,6 +477,7 @@ asporto-sushi-temaki:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Temaki Salmone e Avocado
   -
     item-name: Temaki Tonno e Avocado
     item-image-16-9: https://picsum.photos/1920/1080
@@ -458,6 +491,7 @@ asporto-sushi-temaki:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Temaki Tonno e Avocado
   -
     item-name: Temaki Crunch
     item-image-16-9: https://picsum.photos/1920/1080
@@ -471,6 +505,7 @@ asporto-sushi-temaki:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Temaki Crunch
   -
     item-name: Temaki Gambero
     item-image-16-9: https://picsum.photos/1920/1080
@@ -484,6 +519,7 @@ asporto-sushi-temaki:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Temaki Gambero
   -
     item-name: Temaki Veggie
     item-image-16-9: https://picsum.photos/1920/1080
@@ -497,6 +533,7 @@ asporto-sushi-temaki:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Temaki Veggie
 
 
 asporto-sushi-nigiri:
@@ -513,6 +550,7 @@ asporto-sushi-nigiri:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Nigiri Salmone
   -
     item-name: Nigiri Tonno
     item-image-16-9: https://picsum.photos/1920/1080
@@ -526,6 +564,7 @@ asporto-sushi-nigiri:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Nigiri Tonno
   -
     item-name: Nigiri Branzino
     item-image-16-9: https://picsum.photos/1920/1080
@@ -539,6 +578,7 @@ asporto-sushi-nigiri:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Nigiri Branzino
   -
     item-name: Ebi Ten Nigiri
     item-image-16-9: https://picsum.photos/1920/1080
@@ -552,6 +592,7 @@ asporto-sushi-nigiri:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Ebi Ten Nigiri
   -
     item-name: Gambero Rosso Nigiri
     item-image-16-9: https://picsum.photos/1920/1080
@@ -565,6 +606,7 @@ asporto-sushi-nigiri:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Gambero Rosso Nigiri
   -
     item-name: Calamaro Nigiri
     item-image-16-9: https://picsum.photos/1920/1080
@@ -578,6 +620,7 @@ asporto-sushi-nigiri:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Calamaro Nigiri
 
 
 asporto-per-stuzzicare:
@@ -594,6 +637,7 @@ asporto-per-stuzzicare:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -607,6 +651,7 @@ asporto-per-stuzzicare:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Bocconcini di Pollo
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -620,6 +665,7 @@ asporto-per-stuzzicare:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Mozzarelle Fritte
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -633,6 +679,7 @@ asporto-per-stuzzicare:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Cipolle Rosse
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -646,6 +693,7 @@ asporto-per-stuzzicare:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image: Peperoncini Piccanti
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -659,6 +707,7 @@ asporto-per-stuzzicare:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -672,6 +721,7 @@ asporto-per-stuzzicare:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -685,6 +735,7 @@ asporto-per-stuzzicare:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
 
 asporto-hamburger-classici:
   -
@@ -700,6 +751,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -709,8 +761,11 @@ asporto-hamburger-classici:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: beerstrotDoppio
+    class-note:
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -724,6 +779,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -737,6 +793,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -746,8 +803,11 @@ asporto-hamburger-classici:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: diabloSingolo
+    class-note:
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -761,6 +821,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -774,6 +835,7 @@ asporto-hamburger-classici:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -787,6 +849,7 @@ asporto-hamburger-classici:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -800,6 +863,7 @@ asporto-hamburger-classici:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -813,6 +877,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
 
 asporto-hamburger-stagione:
   -
@@ -828,6 +893,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -841,6 +907,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -854,6 +921,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -867,6 +935,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -880,6 +949,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -893,6 +963,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -906,6 +977,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -919,6 +991,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
 
 asporto-hamburger-vegetariano:
   -
@@ -934,6 +1007,7 @@ asporto-hamburger-vegetariano:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -947,6 +1021,7 @@ asporto-hamburger-vegetariano:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
 
 asporto-carne:
   -
@@ -962,6 +1037,7 @@ asporto-carne:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -975,6 +1051,7 @@ asporto-carne:
     class-cottura:
     class-allergeni:
     class-price:
+    alt-image:
 
 asporto-dolce:
   -
@@ -990,6 +1067,7 @@ asporto-dolce:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1003,6 +1081,7 @@ asporto-dolce:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1016,6 +1095,7 @@ asporto-dolce:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1029,6 +1109,7 @@ asporto-dolce:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
 
 asporto-bevanda:
   -
