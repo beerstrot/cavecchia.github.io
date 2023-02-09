@@ -33,3 +33,24 @@ bordo per debugging
     max-height: calc(100vh - 0px);
     }
 }
+
+// asporto immagine e testo allineati  schermo piccolo
+.immagine-testo-small-grid {
+    display: grid;
+    grid-template-columns: minmax(120px, 25%) 1fr;
+    padding: 0rem;
+    margin: 0;
+}
+
+.immagine-small-container {
+
+    //background: rgba(lightpink, 0.2);
+
+    text-align: left;
+    padding-top: 0.8rem;
+}
+
+.testo-small-container {
+    padding-left: 1.2rem;
+    //background: rgba(orange, 0.1);
+}

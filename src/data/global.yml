@@ -1,64 +1,584 @@
-asporto-sushi-uramaki:
+asporto-sushi-signature:
   -
-    item-name: Uramaki Marchigiano
+    item-name: Roll Ca' Vecchia Beerstrot
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 13,9
-    item-description: Roll con riso wakame, salmone, salsa teriaki di pasta filata italiana
-    item-allergeni: Pesce, Uova, Latte, Sedano
-    id-data: 1id
+    item-price: 15
+    item-description: Gambero in tempura e avocado avvolti da battuta di carne marchigiana, tartufo nero e maionese alla senape
+    item-description-short: Gambero in tempura e avocado avvolti da battuta ...
+    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    id-data: rollCaVecchiaBeerstrot
+    class-image-1-1:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
   -
-    item-name: Uramaki fatto in casa
+    item-name: Roll Tuna's
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 15,9
-    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
-    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
-    id-data: 2id
+    item-price: 14
+    item-description: Tonno e Mango avvolti da stracciatella, pesto e granella di pistacchio
+    item-description-short: Tonno e Mango avvolti da stracciatella, pesto e granella di pistacchio
+    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    id-data: rollTuna
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
   -
-    item-name: Uramaki neve2
+    item-name: Special Nigiri
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 15,9
-    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio e questa descrizione molto lunga
-    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
-    id-data: 3id
+    item-price: 14
+    item-description: 6 nigiri speciali dello chef
+    item-description-short: 6 nigiri speciali dello chef
+    item-allergeni: pesce
+    id-data: specialNigiri
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
   -
-    item-name: Uramaki neve3
+    item-name: Special Gunkan
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 15,9
-    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
-    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
-    id-data: 4id
+    item-price: 14
+    item-description: 6 gunkan speciali dello chef
+    item-description-short: 6 gunkan speciali dello chef
+    item-allergeni: pesce
+    id-data: specialGunkan
+    class-note: hide
     class-cottura: hide
-    class-allergeni:
+    class-allergeni: pesce
+    class-price:
+
+
+asporto-sushi-special-mix:
   -
-    item-name: Uramaki neve4
+    item-name: Extraordinary Sushi
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 15,9
-    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
-    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
-    id-data: 5id
+    item-price: 62
+    item-description: 48 creazioni speciali dello chef con uramaki, hosomaki, gunkan, sashimi
+    item-description-short:
+    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    id-data: extroordinarySushi
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
   -
-    item-name: Uramaki neve5
+    item-name: Ordinary Only Me
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 15,9
-    item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
-    item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
-    id-data: 6id
+    item-price: 15
+    item-description: 13 pezzi di sushi e sashimi selezionati dallo chef
+    item-description-short:
+    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    id-data: ordinaryOnlyMe
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+  -
+    item-name: Ordinary Me & You
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 42
+    item-description: 40 pezzi di uramaki selezionati dallo chef
+    item-description-short:
+    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    id-data: ordinaryMeYou
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Ordinary Green
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: 13 pezzi di sushi vegetariano
+    item-description-short:
+    item-allergeni: Soia
+    id-data: ordinaryGreen
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+
+
+asporto-sushi-entree:
+  -
+    item-name: Edamame
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: Fagiolini di soia bolliti con sale grosso
+    item-description-short:
+    item-allergeni: Soia
+    id-data: edamameEntree
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Edamame Piccanti
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 4
+    item-description: Fagiolini di soia bolliti con 7 spezie
+    item-description-short:
+    item-allergeni: Soia
+    id-data: edamameEntree
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Alghe Goma Wakame
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 3,5
+    item-description: alghe croccanti
+    item-description-short:
+    item-allergeni:
+    id-data: algheGoma
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Tartare Ca' Vecchia Tonno
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: Tonno, avocado, tartare di tonno, tobiko red, semi di sesamo, maionese, salsa ponzu
+    item-description-short:
+    item-allergeni: pesce
+    id-data: tartareCaVecchiaTonno
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Tartare Ca' Vecchia Salmone
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: Salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu
+    item-description-short:
+    item-allergeni: pesce
+    id-data: tartareCaVecchiaSalmone
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Kimuchi di Salmone
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: Salmone marinato con lime e salsa kimuchi, semi di sesamo
+    item-description-short:
+    item-allergeni: pesce
+    id-data: kimuchiSalmone
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Little Sashimi
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 9
+    item-description: Due pezzi di salmone, due di tonno, due di branzino
+    item-description-short:
+    item-allergeni: pesce
+    id-data: littleSashimi
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+
+asporto-sushi-roll-selection:
+  -
+    item-name: Ebi Salmon Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: Gambero in tempura e filetto di salmone avvolti da tartare di salmone, maionese e lime
+    item-description-short:
+    item-allergeni: Pesce, Uova
+    id-data: ebiSalmonRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Almond Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 11
+    item-description: Salmone e philadelphi avvolti da tobiko red, mandorle e maionese piccante
+    item-description-short:
+    item-allergeni: Pesce, Uova
+    id-data: almondRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Shrimp Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 14
+    item-description: Salmone e avocado avvolti in stracciatella, gamberi rossi e granella di pistacchio
+    item-description-short:
+    item-allergeni: Pesce, frutta a guscio
+    id-data: shrimpRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Tuna Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: Tonno, avocado avvolti da tobiko red
+    item-description-short:
+    item-allergeni: pesce
+    id-data: tunaRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Mexico Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 13
+    item-description: Gambero in tempura e maionese avvolti da carpaccio di salmone scottato e salsa sweet chily
+    item-description-short:
+    item-allergeni: pesce, uovo
+    id-data: mexicoRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Seabass Rock
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: Branzino fritto in panko avvolto da salmone flambè e maionese alla senape
+    item-description-short:
+    item-allergeni: pesce, uovo, senape
+    id-data: seabassRock
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Mediterraneo Style
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 13
+    item-description: Gambero croccante in panko e maionese avvolti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
+    item-description-short:
+    item-allergeni: pesce, uovo, senape, frutta a guscio
+    id-data: mediterraneoStyle
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Special Yellow Veggie
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 10
+    item-description: carota, cetrioli e cavolo viola sormontati da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
+    item-description-short:
+    item-allergeni: uovo
+    id-data: specialYellowVeggie
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+
+asporto-sushi-hot-roll:
+  -
+    item-name: Ebi Salmon Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: Gambero in tempura e filetto di salmone avvolti da tartare di salmone, maionese e lime
+    item-description-short:
+    item-allergeni: Pesce, Uova
+    id-data: ebiSalmonRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Almond Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 11
+    item-description: Salmone e philadelphi avvolti da tobiko red, mandorle e maionese piccante
+    item-description-short:
+    item-allergeni: Pesce, Uova
+    id-data: almondRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Shrimp Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 14
+    item-description: Salmone e avocado avvolti in stracciatella, gamberi rossi e granella di pistacchio
+    item-description-short:
+    item-allergeni: Pesce, frutta a guscio
+    id-data: shrimpRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Tuna Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 12
+    item-description: Tonno, avocado avvolti da tobiko red
+    item-description-short:
+    item-allergeni: pesce
+    id-data: tunaRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Mexico Roll
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 13
+    item-description: Gambero in tempura e maionese avvolti da carpaccio di salmone scottato e salsa sweet chily
+    item-description-short:
+    item-allergeni: pesce, uovo
+    id-data: mexicoRoll
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+
+
+asporto-sushi-maki-ordinary-style:
+  -
+    item-name: Uramaki Philadelphia
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 9
+    item-description: Salmone in tempura e philadelphia guarnito con salsa teriyaki
+    item-description-short:
+    item-allergeni: Pesce, Uova, Soia
+    id-data: uramakiPhiladelphiaOrdinary
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Uramaki Salmone e Avocado
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 11
+    item-description: Salmone, avocado e maionese
+    item-description-short:
+    item-allergeni: Pesce, Uova
+    id-data: uramakiSalmoneOrdinary
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Uramaki Tonno
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 10
+    item-description: Tonno, avocado e maionese avvolti da tobiko red
+    item-description-short:
+    item-allergeni: Pesce, Uova
+    id-data: uramakiSTonnoOrdinary
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Uramaki Ebi Ten
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 9
+    item-description: Gambero in tempura e maionese guarnito con semi di sesamo e salsa teriyaki
+    item-description-short:
+    item-allergeni: pesce, Uovo
+    id-data: uramakiEbiTenOrdinary
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+
+
+asporto-sushi-temaki:
+  -
+    item-name: Temaki Salmone e Avocado
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 6
+    item-description: Tartare di salmone, avocado, maionese e semi di sesamo
+    item-description-short:
+    item-allergeni: Pesce, Uova, Soia
+    id-data: temakiSalmoneAcocado
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Temaki Tonno e Avocado
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 6
+    item-description: Tartare di salmone, avocado, maionese piccante e semi di sesamo
+    item-description-short:
+    item-allergeni: Pesce, Uova, Soia
+    id-data: temakiTonnoAcocado
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Temaki Crunch
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 7
+    item-description: Gambero croccante in panko, tartare di salmone e erba cipollina
+    item-description-short:
+    item-allergeni: Pesce, Uova, Soia
+    id-data: temakiCrunch
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Temaki Gambero
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 6
+    item-description: Gambero al vapore, avocado, philadelphia e cetriolo
+    item-description-short:
+    item-allergeni: Pesce, Uova, Soia
+    id-data: temakiGambero
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Temaki Veggie
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 5
+    item-description: Philadelphia, cetriolo, carote, avocado e salsa teryiaki
+    item-description-short:
+    item-allergeni: Pesce, Uova, Soia
+    id-data: temakiVeggie
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+
+
+asporto-sushi-nigiri:
+  -
+    item-name: Nigiri Salmone
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 3,5
+    item-description: 2 pezzi di salmone su riso
+    item-description-short:
+    item-allergeni: Pesce, Soia
+    id-data: salmoneNigiri
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Nigiri Tonno
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 4
+    item-description: 2 pezzi di tonno su riso
+    item-description-short:
+    item-allergeni: Pesce, Soia
+    id-data: tonnoNigiri
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Nigiri Branzino
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 5
+    item-description: 2 pezzi di branzino su riso
+    item-description-short:
+    item-allergeni: Pesce, Soia
+    id-data: branzinoNigiri
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Ebi Ten Nigiri
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 3,5
+    item-description: 2 pezzi di gambero su riso
+    item-description-short:
+    item-allergeni: Pesce, Soia
+    id-data: ebiTenNigiri
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Gambero Rosso Nigiri
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 6
+    item-description: 2 pezzi di gambero rosso su riso
+    item-description-short:
+    item-allergeni: Pesce, Soia
+    id-data: gamberoRossoNigiri
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+  -
+    item-name: Calamaro Nigiri
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 3,5
+    item-description: 2 pezzi di calamaro su riso
+    item-description-short:
+    item-allergeni: Pesce, Soia
+    id-data: calamaroNigiri
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+
 
 asporto-per-stuzzicare:
   -
@@ -66,6 +586,7 @@ asporto-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Bocconcini di Pollo
     item-description: Serviti con salsa piccante
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,9
     id-data: bocconciniPollo
@@ -76,6 +597,7 @@ asporto-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Olive all'Ascolana
     item-description: Il più tipico street food marchigiano
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte, Sedano
     item-price: 5,5
     id-data: oliveAscolana
@@ -86,6 +608,7 @@ asporto-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Mozzarelle Fritte
     item-description: Mozzarelle fior di latte artigianali. Servite con salsa aioli fatta in casa
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,9
     id-data: mozzarelleFritte
@@ -96,6 +619,7 @@ asporto-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cipolle Rosse
     item-description: Cipolle rosse in tempura
+    item-description-short:
     item-allergeni: Glutine, Latte, Crostacei
     item-price: 4,9
     id-data: cipolleRosse
@@ -106,6 +630,7 @@ asporto-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Peperoncini Piccanti
     item-description: Peperoncini ripieni di robiola avvolti nella pancetta
+    item-description-short:
     item-allergeni: Anidride Solforosa e Solfiti, Latte
     item-price: 5,5
     id-data: peperonciniPiccanti
@@ -116,6 +641,7 @@ asporto-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Alette di Pollo
     item-description: Servite con salsa piccante a parte
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,5
     id-data: alettePollo
@@ -126,6 +652,7 @@ asporto-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Arrosticini
     item-description: Arrosticini di pecora
+    item-description-short:
     item-allergeni: nessuno
     item-price: 5,5
     id-data: arrosticiniPecora
@@ -136,6 +663,7 @@ asporto-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Patate Fritte
     item-description: Il più classico dei fritti
+    item-description-short:
     item-allergeni: nessuno
     item-price: 4,5
     id-data: patateFritte
@@ -148,6 +676,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Beerstrot
     item-description: Manzo 180 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: beerstrotSingolo
@@ -158,6 +687,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Beerstrot Doppio
     item-description: Manzo 360 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: beerstrotDoppio
@@ -168,6 +698,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: New York
     item-description: Manzo 180 grammi, cheddar, cipolla caramellata, insalata
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,5
     id-data: newyorkSingolo
@@ -178,6 +709,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: New York Doppio
     item-description: Manzo 360 grammi, cheddar, cipolla caramellata, insalata
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,5
     id-data: newyorkDoppio
@@ -188,6 +720,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Diablo
     item-description: Manzo 180 grammi, cheddar, bacon croccante, rucola, salsa piccante
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: diabloSingolo
@@ -198,6 +731,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Diablo Doppio
     item-description: Manzo 360 grammi, cheddar, bacon croccante, rucola, salsa piccante
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: diabloDoppio
@@ -208,6 +742,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Pollo
     item-description: Pollo 180 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,9
     id-data: polloSingolo
@@ -218,6 +753,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Pollo Doppio
     item-description: Pollo 360 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,9
     id-data: polloDoppio
@@ -228,6 +764,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Pulled Pork
     item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante
+    item-description-short:
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Latte, Senape, Uova
     item-price: 11,9
     id-data: pulledPork
@@ -238,6 +775,7 @@ asporto-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Mini Burger
     item-description: Manzo (100 grammi), cheddar. Servito ben cotto
+    item-description-short:
     item-allergeni: Glutine, Latte, Uova
     item-price: 7,9
     id-data: miniBurger
@@ -250,6 +788,7 @@ asporto-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cacio e Pepe
     item-description: Manzo 180 grammi, pecorino vallesina, guanciale, pepe
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: cacioSingolo
@@ -260,6 +799,7 @@ asporto-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cacio e Pepe Doppio
     item-description: Manzo 360 grammi, pecorino vallesina, guanciale, pepe
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: cacioDoppio
@@ -270,6 +810,7 @@ asporto-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Inverno
     item-description: Manzo 180 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,5
     id-data: invernoSingolo
@@ -280,6 +821,7 @@ asporto-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Inverno Doppio
     item-description: Manzo 360 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,5
     id-data: invernoDoppio
@@ -290,6 +832,7 @@ asporto-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Deciso
     item-description: Manzo 180 grammi, gorgonzola, guanciale, pomodorini confit
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: decisoSingolo
@@ -300,6 +843,7 @@ asporto-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Deciso Doppio
     item-description: Manzo 360 grammi, gorgonzola, guanciale, pomodorini confit
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: decisoDoppio
@@ -310,6 +854,7 @@ asporto-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Carbonara
     item-description: Pollo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: carbonaraSingolo
@@ -320,6 +865,7 @@ asporto-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Carbonara Doppio
     item-description: Pollo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: carbonaraDoppio
@@ -332,6 +878,7 @@ asporto-hamburger-vegetariano:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Vegetariano Fagioli
     item-description: Hamburger di borlotti, julienne di cipolla fritta, crema di cicoria
+    item-description-short:
     item-allergeni: Glutine, Latte, Soia, Uova
     item-price: 9,5
     id-data: vegetarianoFagioli
@@ -342,6 +889,7 @@ asporto-hamburger-vegetariano:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Vegetariano Quinoa
     item-description: Hamburger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele
+    item-description-short:
     item-allergeni: Glutine, Latte, Senape, Uova
     item-price: 9,5
     id-data: vegetarianoQuinoa
@@ -354,6 +902,7 @@ asporto-carne:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Costine
     item-description: Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte
+    item-description-short:
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo
     item-price: 13,9
     id-data: costine
@@ -364,6 +913,7 @@ asporto-carne:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Entrecôte
     item-description: Entrecôte di Manzetta Red Hereford irlandese
+    item-description-short:
     item-allergeni: nessuno
     item-price: 19
     id-data: entrecote
@@ -376,6 +926,7 @@ asporto-dolce:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cheesecake
     item-description: Cheesecake in stile new york. Squisitamente dolce, morbida e leggermente acidula
+    item-description-short:
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
     item-price: 5
     id-data: cheesecake
@@ -386,6 +937,7 @@ asporto-dolce:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Blondie
     item-description: Brownie con nocciole. Servito con crema al mascarpone e rhum
+    item-description-short:
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
     item-price: 5
     id-data: blondie
@@ -396,6 +948,7 @@ asporto-dolce:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Birramisù
     item-description: Tiramisù con mascarpone artigianale alla birra stout
+    item-description-short:
     item-allergeni: Glutine, Latte, Uova
     item-price: 5
     id-data: birramisu
@@ -406,6 +959,7 @@ asporto-dolce:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Whoop
     item-description: Morbido biscotto al cioccolato ripieno di burro di arachidi
+    item-description-short:
     item-allergeni: Arachidi, Glutine, Latte, Uova
     item-price: 5
     id-data: whoop
@@ -418,6 +972,7 @@ asporto-bevanda:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Coca Cola
     item-description: Lattina 33cl
+    item-description-short:
     item-allergeni: nessuno
     item-price: 3
     id-data: cocaCola
@@ -429,6 +984,7 @@ asporto-bevanda:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Coca Cola Zero
     item-description: Lattina 33cl
+    item-description-short:
     item-allergeni: nessuno
     item-price: 3
     id-data: cocaColaZero
@@ -440,6 +996,7 @@ asporto-bevanda:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Fanta
     item-description: Lattina 33cl
+    item-description-short:
     item-allergeni: nessuno
     item-price: 3
     id-data: fanta
@@ -451,6 +1008,7 @@ asporto-bevanda:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Acqua tonica
     item-description: J.Gasco 20cl
+    item-description-short:
     item-allergeni: nessuno
     item-price: 5
     id-data: acquaTonica
@@ -464,6 +1022,7 @@ asporto-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Landbier 1857 50cl
     item-description: Helles tedesca non filtrata 5,3%. Birrificio Bayreuther
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: landbier
@@ -475,6 +1034,7 @@ asporto-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Landbier Dunkel 50cl
     item-description: Rossa tedesca 5,3%. Birrificio Bayreuther
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: landbierDunkel
@@ -486,6 +1046,7 @@ asporto-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Weisse 50cl
     item-description: Weisse tedesca 5,1%. Birrificio Maisel
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: weisse
@@ -497,6 +1058,7 @@ asporto-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Poculator 50cl
     item-description: Rossa tedesca 7,6%. Birrificio Scheyern
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: poculator
@@ -508,6 +1070,7 @@ asporto-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Mazzu de Fiuri 50cl
     item-description: IPA 6%. Birrificio Mukkeller
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: mazzuFiuri
@@ -519,6 +1082,7 @@ asporto-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Space Pigs 50cl
     item-description: Doppia IPA 8%. Birrificio Mukkeller
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: spacePigs
@@ -530,6 +1094,7 @@ asporto-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Calix Niger 33cl
     item-description: Chocolate Stout 6,7%. Birrificio dei Castelli
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: calixNiger
@@ -543,6 +1108,7 @@ asporto-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Serrano DOC
     item-description: Rosso Conero. Cantina Umani Ronchi
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 14,5
     id-data: serranoDoc
@@ -554,6 +1120,7 @@ asporto-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Rubico Doc
     item-description: Lacrima di Morro D'Alba. Cantina Marotti Campi
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 15,5
     id-data: rubicoDoc
@@ -565,6 +1132,7 @@ asporto-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Villa Bianchi Doc
     item-description: Verdicchio dei Castelli di Jesi Classico. Cantina Umani Ronchi
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 14,5
     id-data: villaBianchi
@@ -576,6 +1144,7 @@ asporto-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Casal di Serra Doc
     item-description: Verdicchio dei Castelli di Jesi Classico Superiore Biologico. Cantina Umani Ronchi
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 18
     id-data: casalSerra
@@ -587,6 +1156,7 @@ asporto-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Gewurztraminer Doc
     item-description: Cantina H.Lun
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 18
     id-data: gewurztraminerDoc
@@ -598,6 +1168,7 @@ asporto-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Ribolla Gialla Igt
     item-description: Cantina Branko
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 18
     id-data: ribollaGialla
@@ -609,6 +1180,7 @@ asporto-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Prosecco Lovre Docg
     item-description: Extra dry. Cantina Serre di Pederiva
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 16
     id-data: proseccoLovre
@@ -623,6 +1195,7 @@ menu-sushi-uramaki:
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13,9
     item-description: Roll con riso wakame, salmone, salsa teriaki di pasta filata italiana
+    item-description-short:
     item-allergeni: Pesce, Uova, Latte, Sedano
     id-data: 1id
     class-cottura: hide
@@ -633,6 +1206,7 @@ menu-sushi-uramaki:
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 15,9
     item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
+    item-description-short:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 2id
     class-cottura: hide
@@ -643,6 +1217,7 @@ menu-sushi-uramaki:
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 15,9
     item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio e questa descrizione molto lunga
+    item-description-short:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 3id
     class-cottura: hide
@@ -653,6 +1228,7 @@ menu-sushi-uramaki:
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 15,9
     item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
+    item-description-short:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 4id
     class-cottura: hide
@@ -663,6 +1239,7 @@ menu-sushi-uramaki:
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 15,9
     item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
+    item-description-short:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 5id
     class-cottura: hide
@@ -673,6 +1250,7 @@ menu-sushi-uramaki:
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 15,9
     item-description: Roll con riso di sesamo, salmone, salsa teriaki e tonno sott'olio
+    item-description-short:
     item-allergeni: Pesce, Uova, Latte, Sedano, Uramaki Sushi
     id-data: 6id
     class-cottura: hide
@@ -684,6 +1262,7 @@ menu-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Bocconcini di Pollo
     item-description: Serviti con salsa piccante
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,9
     id-data: bocconciniPollo
@@ -694,6 +1273,7 @@ menu-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Olive all'Ascolana
     item-description: Il più tipico street food marchigiano
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte, Sedano
     item-price: 5,5
     id-data: oliveAscolana
@@ -704,6 +1284,7 @@ menu-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Mozzarelle Fritte
     item-description: Mozzarelle fior di latte artigianali. Servite con salsa aioli fatta in casa
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,9
     id-data: mozzarelleFritte
@@ -714,6 +1295,7 @@ menu-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cipolle Rosse
     item-description: Cipolle rosse in tempura
+    item-description-short:
     item-allergeni: Glutine, Latte, Crostacei
     item-price: 4,9
     id-data: cipolleRosse
@@ -724,6 +1306,7 @@ menu-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Peperoncini Piccanti
     item-description: Peperoncini ripieni di robiola avvolti nella pancetta
+    item-description-short:
     item-allergeni: Anidride Solforosa e Solfiti, Latte
     item-price: 5,5
     id-data: peperonciniPiccanti
@@ -734,6 +1317,7 @@ menu-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Alette di Pollo
     item-description: Servite con salsa piccante a parte
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,5
     id-data: alettePollo
@@ -744,6 +1328,7 @@ menu-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Arrosticini
     item-description: Arrosticini di pecora
+    item-description-short:
     item-allergeni: nessuno
     item-price: 5,5
     id-data: arrosticiniPecora
@@ -754,6 +1339,7 @@ menu-per-stuzzicare:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Patate Fritte
     item-description: Il più classico dei fritti
+    item-description-short:
     item-allergeni: nessuno
     item-price: 4,5
     id-data: patateFritte
@@ -767,6 +1353,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Beerstrot
     item-description: Manzo 180 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: beerstrotSingolo
@@ -777,6 +1364,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Beerstrot Doppio
     item-description: Manzo 360 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: beerstrotDoppio
@@ -787,6 +1375,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: New York
     item-description: Manzo 180 grammi, cheddar, cipolla caramellata, insalata
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,5
     id-data: newyorkSingolo
@@ -797,6 +1386,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: New York Doppio
     item-description: Manzo 360 grammi, cheddar, cipolla caramellata, insalata
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,5
     id-data: newyorkDoppio
@@ -807,6 +1397,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Diablo
     item-description: Manzo 180 grammi, cheddar, bacon croccante, rucola, salsa piccante
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: diabloSingolo
@@ -817,6 +1408,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Diablo Doppio
     item-description: Manzo 360 grammi, cheddar, bacon croccante, rucola, salsa piccante
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: diabloDoppio
@@ -827,6 +1419,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Pollo
     item-description: Pollo 180 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,9
     id-data: polloSingolo
@@ -837,6 +1430,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Pollo Doppio
     item-description: Pollo 360 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,9
     id-data: polloDoppio
@@ -847,6 +1441,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Pulled Pork
     item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante
+    item-description-short:
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Latte, Senape, Uova
     item-price: 11,9
     id-data: pulledPork
@@ -857,6 +1452,7 @@ menu-hamburger-classici:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Mini Burger
     item-description: Manzo (100 grammi), cheddar. Servito ben cotto
+    item-description-short:
     item-allergeni: Glutine, Latte, Uova
     item-price: 7,9
     id-data: miniBurger
@@ -869,6 +1465,7 @@ menu-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cacio e Pepe
     item-description: Manzo 180 grammi, pecorino vallesina, guanciale, pepe
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: cacioSingolo
@@ -879,6 +1476,7 @@ menu-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cacio e Pepe Doppio
     item-description: Manzo 360 grammi, pecorino vallesina, guanciale, pepe
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: cacioDoppio
@@ -889,6 +1487,7 @@ menu-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Inverno
     item-description: Manzo 180 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,5
     id-data: invernoSingolo
@@ -899,6 +1498,7 @@ menu-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Inverno Doppio
     item-description: Manzo 360 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,5
     id-data: invernoDoppio
@@ -909,6 +1509,7 @@ menu-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Deciso
     item-description: Manzo 180 grammi, gorgonzola, guanciale, pomodorini confit
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: decisoSingolo
@@ -919,6 +1520,7 @@ menu-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Deciso Doppio
     item-description: Manzo 360 grammi, gorgonzola, guanciale, pomodorini confit
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: decisoDoppio
@@ -929,6 +1531,7 @@ menu-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Carbonara
     item-description: Pollo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     id-data: carbonaraSingolo
@@ -939,6 +1542,7 @@ menu-hamburger-stagione:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Carbonara Doppio
     item-description: Pollo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe
+    item-description-short:
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     id-data: carbonaraDoppio
@@ -951,6 +1555,7 @@ menu-hamburger-vegetariano:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Vegetariano Fagioli
     item-description: Hamburger di borlotti, julienne di cipolla fritta, crema di cicoria
+    item-description-short:
     item-allergeni: Glutine, Latte, Soia, Uova
     item-price: 9,5
     id-data: vegetarianoFagioli
@@ -961,6 +1566,7 @@ menu-hamburger-vegetariano:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Vegetariano Quinoa
     item-description: Hamburger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele
+    item-description-short:
     item-allergeni: Glutine, Latte, Senape, Uova
     item-price: 9,5
     id-data: vegetarianoQuinoa
@@ -973,6 +1579,7 @@ menu-carne:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Costine
     item-description: Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte
+    item-description-short:
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo
     item-price: 13,9
     id-data: costine
@@ -983,6 +1590,7 @@ menu-carne:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Entrecôte
     item-description: Entrecôte di Manzetta Red Hereford irlandese
+    item-description-short:
     item-allergeni: nessuno
     item-price: 19
     id-data: entrecote
@@ -995,6 +1603,7 @@ menu-dolce:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cheesecake
     item-description: Cheesecake in stile new york. Squisitamente dolce, morbida e leggermente acidula
+    item-description-short:
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
     item-price: 5
     id-data: cheesecake
@@ -1005,6 +1614,7 @@ menu-dolce:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Blondie
     item-description: Brownie con nocciole. Servito con crema al mascarpone e rhum
+    item-description-short:
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
     item-price: 5
     id-data: blondie
@@ -1015,6 +1625,7 @@ menu-dolce:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Birramisù
     item-description: Tiramisù con mascarpone artigianale alla birra stout
+    item-description-short:
     item-allergeni: Glutine, Latte, Uova
     item-price: 5
     id-data: birramisu
@@ -1025,6 +1636,7 @@ menu-dolce:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Whoop
     item-description: Morbido biscotto al cioccolato ripieno di burro di arachidi
+    item-description-short:
     item-allergeni: Arachidi, Glutine, Latte, Uova
     item-price: 5
     id-data: whoop
@@ -1037,6 +1649,7 @@ menu-bevanda:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Acqua
     item-description: Mezzo Litro / Litro
+    item-description-short:
     item-allergeni: nessuno
     item-price: 1 | 1,5
     id-data: acquaBevanda
@@ -1048,6 +1661,7 @@ menu-bevanda:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Coca Cola
     item-description: Lattina 33cl
+    item-description-short:
     item-allergeni: nessuno
     item-price: 3
     id-data: cocaCola
@@ -1059,6 +1673,7 @@ menu-bevanda:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Coca Cola Zero
     item-description: Lattina 33cl
+    item-description-short:
     item-allergeni: nessuno
     item-price: 3
     id-data: cocaColaZero
@@ -1070,6 +1685,7 @@ menu-bevanda:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Fanta
     item-description: Lattina 33cl
+    item-description-short:
     item-allergeni: nessuno
     item-price: 3
     id-data: fanta
@@ -1081,6 +1697,7 @@ menu-bevanda:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Acqua tonica
     item-description: J.Gasco 20cl
+    item-description-short:
     item-allergeni: nessuno
     item-price: 5
     id-data: acquaTonica
@@ -1099,6 +1716,7 @@ menu-caffe:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Caffè
     item-description: Normale, Deca
+    item-description-short:
     item-allergeni:
     item-price: 1,5
     id-data: caffeCaffe
@@ -1111,6 +1729,7 @@ menu-caffe:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Caffè
     item-description: Corretto, Macchiato
+    item-description-short:
     item-allergeni:
     item-price: 2
     id-data: correttoCaffe
@@ -1123,6 +1742,7 @@ menu-caffe:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Orzo
     item-description: Tazza piccola, tazza grande
+    item-description-short:
     item-allergeni:
     item-price: 1,5
     id-data: orzoCaffe
@@ -1135,6 +1755,7 @@ menu-caffe:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cappuccino
     item-description: Normale, deca
+    item-description-short:
     item-allergeni:
     item-price: 3
     id-data: cappuccinoCaffe
@@ -1149,6 +1770,7 @@ menu-birra-spina:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Festbier
     item-description: Helles stile tedesca non amara 4,9%. Birrificio Forst
+    item-description-short:
     item-allergeni: glutine
     item-price:
     id-data: festbierSpina
@@ -1161,6 +1783,7 @@ menu-birra-spina:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Bock
     item-description: Rossa stile tedesco dolce 6,5%. Birrificio Forst
+    item-description-short:
     item-allergeni: glutine
     item-price:
     id-data: bockSpina
@@ -1173,6 +1796,7 @@ menu-birra-spina:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Palmares
     item-description: Red Ale 5,6%. Birrificio dei Castelli
+    item-description-short:
     item-allergeni: glutine
     item-price:
     id-data: palmaresSpina
@@ -1185,6 +1809,7 @@ menu-birra-spina:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Ape Regina
     item-description: Blonde Ale al miele 6,9%. Birrificio MC-77
+    item-description-short:
     item-allergeni: glutine
     item-price:
     id-data: apeReginaSpina
@@ -1197,6 +1822,7 @@ menu-birra-spina:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Tutor
     item-description: West Coast Pale Ale 5,9%. Birrificio dei Castelli
+    item-description-short:
     item-allergeni: glutine
     item-price:
     id-data: tutorSpina
@@ -1209,6 +1835,7 @@ menu-birra-spina:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Yakima Trip
     item-description: American IPA 7%. Birrificio MC-77
+    item-description-short:
     item-allergeni: glutine
     item-price:
     id-data: yakimaTripSpina
@@ -1224,6 +1851,7 @@ menu-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Landbier 1857 50cl
     item-description: Helles tedesca non filtrata 5,3%. Birrificio Bayreuther
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: landbier
@@ -1236,6 +1864,7 @@ menu-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Landbier Dunkel 50cl
     item-description: Rossa tedesca 5,3%. Birrificio Bayreuther
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: landbierDunkel
@@ -1248,6 +1877,7 @@ menu-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Weisse 50cl
     item-description: Weisse tedesca 5,1%. Birrificio Maisel
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: weisse
@@ -1260,6 +1890,7 @@ menu-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Poculator 50cl
     item-description: Rossa tedesca 7,6%. Birrificio Scheyern
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: poculator
@@ -1272,6 +1903,7 @@ menu-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Mazzu de Fiuri 50cl
     item-description: IPA 6%. Birrificio Mukkeller
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: mazzuFiuri
@@ -1284,6 +1916,7 @@ menu-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Space Pigs 50cl
     item-description: Doppia IPA 8%. Birrificio Mukkeller
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: spacePigs
@@ -1296,6 +1929,7 @@ menu-birra-bottiglia:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Calix Niger 33cl
     item-description: Chocolate Stout 6,7%. Birrificio dei Castelli
+    item-description-short:
     item-allergeni: glutine
     item-price: 6
     id-data: calixNiger
@@ -1310,6 +1944,7 @@ menu-vino-caraffa:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Rosso Piceno Doc
     item-description: Vino Biologico. Cantina Collevite
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: Quarto 3 | Litro 9
     id-data: rossoPicenoDoc
@@ -1322,6 +1957,7 @@ menu-vino-caraffa:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Passerina Igt
     item-description: Vino Biologico. Cantina Collevite
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: Quarto 3 | Litro 9
     id-data: passerinaIgt
@@ -1334,6 +1970,7 @@ menu-vino-caraffa:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Verdicchio Matelica Doc
     item-description: Cantina Belisario
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: Quarto 3 | Litro 9
     id-data: villaBianchi
@@ -1348,6 +1985,7 @@ menu-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Serrano DOC
     item-description: Rosso Conero. Cantina Umani Ronchi
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 14,5 | 3,5
     id-data: serranoDoc
@@ -1359,6 +1997,7 @@ menu-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Rubico Doc
     item-description: Lacrima di Morro D'Alba. Cantina Marotti Campi
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 15,5 | 3,5
     id-data: rubicoDoc
@@ -1370,6 +2009,7 @@ menu-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Villa Bianchi Doc
     item-description: Verdicchio dei Castelli di Jesi Classico. Cantina Umani Ronchi
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 14,5 | 3,5
     id-data: villaBianchi
@@ -1381,6 +2021,7 @@ menu-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Casal di Serra Doc
     item-description: Verdicchio dei Castelli di Jesi Classico Superiore Biologico. Cantina Umani Ronchi
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 18 | 4
     id-data: casalSerra
@@ -1392,6 +2033,7 @@ menu-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Gewurztraminer Doc
     item-description: Cantina H.Lun
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 18 | 4
     id-data: gewurztraminerDoc
@@ -1403,6 +2045,7 @@ menu-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Ribolla Gialla Igt
     item-description: Cantina Branko
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 18 | 4
     id-data: ribollaGialla
@@ -1414,6 +2057,7 @@ menu-vino:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Prosecco Lovre Docg
     item-description: Extra dry. Cantina Serre di Pederiva
+    item-description-short:
     item-allergeni: anidride solforosa e solfiti
     item-price: 16 | 3,5
     id-data: proseccoLovre
@@ -1427,6 +2071,7 @@ menu-amaro:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Sibilla, Amaro dell'Erborista
     item-description:
+    item-description-short:
     item-allergeni:
     item-price: 4
     id-data: sibillaAmaro
@@ -1439,6 +2084,7 @@ menu-amaro:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Varnelli, Anisetta Meletti
     item-description:
+    item-description-short:
     item-allergeni:
     item-price: 3,5
     id-data: AnisettaAmaro
@@ -1451,6 +2097,7 @@ menu-amaro:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Fernet Branca, Brancamenta, Montenegro, Amaro del Capo
     item-description:
+    item-description-short:
     item-allergeni:
     item-price: 3,5
     id-data: FernetAmaro
@@ -1463,6 +2110,7 @@ menu-amaro:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Grappa Bianca 903
     item-description:
+    item-description-short:
     item-allergeni:
     item-price: 3,5
     id-data: grappaBiancaAmaro
@@ -1475,6 +2123,7 @@ menu-amaro:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Grappa Barricata
     item-description:
+    item-description-short:
     item-allergeni:
     item-price: 4
     id-data: grappaBarricataAmaro
@@ -1489,6 +2138,7 @@ menu-rhum:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Centenario 7 anni
     item-description: Costa Rica 40%. Profumo di vaniglia, cuoio, cioccolato, sciroppo d'acero e menta. Al palato sentori di cioccolato, pelle, miele e menta piperita
+    item-description-short:
     item-allergeni:
     item-price: 6
     id-data: centenarioRhum
@@ -1501,6 +2151,7 @@ menu-rhum:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Don Papa oltre 7 anni
     item-description: Filippine 40%. Profumo di caramello e mou. Al palato ripropone una notevole dolcezza ben bilanciata da un mix di arancia candita e persistente nota citrica
+    item-description-short:
     item-allergeni:
     item-price: 7
     id-data: donPapaRhum
@@ -1513,6 +2164,7 @@ menu-rhum:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Du Perou 10 anni
     item-description: Perù 45%. Profumo di frutta fresca albicocche, pesche e pere, seguito da legno, spezie e tabacco. Al palato è fedele a ciò che il naso ha annunciato
+    item-description-short:
     item-allergeni:
     item-price: 8
     id-data: duPeruRhum
@@ -1527,6 +2179,7 @@ menu-wiskey:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Scallywag
     item-description: Scozzese blend 46%. L'iniziale dolcezza lascia spazio a note piccanti e speziate
+    item-description-short:
     item-allergeni:
     item-price: 8
     id-data: scallywagWiskey
@@ -1539,6 +2192,7 @@ menu-wiskey:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Teeling
     item-description: Irlandese single malt 46%. Note di vaniglia e spezie con dolci sentori di rhum
+    item-description-short:
     item-allergeni:
     item-price: 8
     id-data: teelingWiskey
@@ -1551,6 +2205,7 @@ menu-wiskey:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Big Peat
     item-description: Scozzese blend 46%. Fresco e pulito con aromi di torba piccante con note di cioccolato, caffè e mandorle
+    item-description-short:
     item-allergeni:
     item-price: 8
     id-data: bigPeatWiskey
@@ -1565,6 +2220,7 @@ menu-drinks:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Spritz
     item-description: Aperol. Campari
+    item-description-short:
     item-allergeni:
     item-price: 5,5
     id-data: spritzDrinks
@@ -1577,6 +2233,7 @@ menu-drinks:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Gin Tonic Ginpilz
     item-description: Aromatico. Servito con acqua tonica J. Gasco
+    item-description-short:
     item-allergeni:
     item-price: 8
     id-data: ginpilzDrinks
@@ -1589,6 +2246,7 @@ menu-drinks:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Gin Tonic Silverback
     item-description: London Gin. Servito con acqua tonica J. Gasco
+    item-description-short:
     item-allergeni:
     item-price: 8
     id-data: silverbackDrinks
@@ -1601,6 +2259,7 @@ menu-drinks:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Gin Tonic Puro
     item-description: Morbido. Servito con acqua tonica J. Gasco
+    item-description-short:
     item-allergeni:
     item-price: 8
     id-data: puroDrinks
@@ -1613,6 +2272,7 @@ menu-drinks:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Americano
     item-description: Vermut rosso, bitter Campari, soda
+    item-description-short:
     item-allergeni:
     item-price: 7
     id-data: americanoDrinks
@@ -1625,6 +2285,7 @@ menu-drinks:
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Negroni
     item-description: Vermut rosso, bitter Campari, gin Puro
+    item-description-short:
     item-allergeni:
     item-price: 8.5
     id-data: negroniDrinks
