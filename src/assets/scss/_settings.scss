@@ -367,8 +367,9 @@ $card-border: none;
 $card-shadow: none;
 $card-border-radius: $global-radius;
 //$card-padding: $global-padding;
-$card-padding: 0.5rem;
-$card-margin-bottom: $global-margin;
+$card-padding: 0rem;
+//$card-margin-bottom: $global-margin;
+$card-margin-bottom: 0;
 
 // 15. Close Button
 // ----------------
