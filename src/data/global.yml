@@ -1154,11 +1154,11 @@ asporto-bevanda:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-name: Acqua tonica
+    item-name: Acqua Tonica
     item-description: J.Gasco 20cl
     item-description-short: Lattina 33cl
     item-allergeni: nessuno
-    item-price: 5
+    item-price: 3
     id-data: acquaTonica
     class-note: hide
     class-cottura: hide
@@ -1790,11 +1790,11 @@ menu-bevanda:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-name: Acqua tonica
+    item-name: Acqua Tonica
     item-description: J.Gasco 20cl
     item-description-short:
     item-allergeni: nessuno
-    item-price: 5
+    item-price: 3
     id-data: acquaTonica
     class-note: hide
     class-cottura: hide
