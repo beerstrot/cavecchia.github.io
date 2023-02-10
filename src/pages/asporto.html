@@ -47,16 +47,18 @@ canonical: https://www.beerstrot.it/asporto.html
 								{{#each global.asporto-sushi-signature}}
 								<div class="cell">
 									<div class="hide-for-medium">
-										<div class="immagine-testo-small-grid">
-											<div class="immagine-small-container">
-												<img src="{{item-image-1-1}}" alt="{{alt-image}}">
-											</div>
-											<div class="testo-small-container">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+										<div id="page">
+							                <div class="item-image">
+							                	<img src="{{item-image-1-1}}" alt="{{alt-image}}">
+							                </div>
+							                <div class="item-text">
+							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
 												<p class="{{class-description}}">{{item-description-short}}</p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
+							                </div>
+							                <div class="item-button">
+							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+							                </div>
+							            </div>
 									</div>
 									<div class="show-for-medium">
 										<div class="card">
