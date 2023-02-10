@@ -37,10 +37,12 @@ bordo per debugging
 // asporto immagine e testo allineati  schermo piccolo
 .immagine-testo-small-grid {
     display: grid;
-    grid-template-columns: minmax(120px, 25%) 1fr;
+    grid-template-columns: minmax(120px, 1fr) 3fr;
+    //grid-template-columns: 3fr 6fr;
     padding: 0rem;
     margin: 0;
     margin-bottom: 1rem;
+    background: rgba(orange, 0.1);
 }
 
 .immagine-small-container {
@@ -53,5 +55,63 @@ bordo per debugging
 
 .testo-small-container {
     padding-left: 1.2rem;
-    //background: rgba(orange, 0.1);
+   // background: rgba(orange, 0.1);
+}
+
+
+
+//test item menu
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) 3fr;
+  grid-auto-rows: min-content;
+  gap: 20px;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  background: rgba(lightpink, 0.4);
+
+
+}
+.box {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: rgba(green, 0.2);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+#page {
+    display: grid;
+    grid-template:
+    "item-image  item-text" 3fr
+     "item-image  item-button" auto
+    ;
+    grid-template-columns: minmax(140px, 1fr) 3fr;
+    column-gap: 20px;
+    background: rgba(lightpink, 0.4);
+
+
+
+.item-image {
+  background-color: rgba(lightblue, 0.4);
+  grid-area: item-image;
+
+}
+
+.item-text {
+  background-color: yellow;
+  grid-area: item-text;
+
+}
+
+.item-button {
+  background-color: red;
+  grid-area: item-button;
+  margin:0;
+  padding:0;
+}
 }
