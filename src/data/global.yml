@@ -16,7 +16,7 @@ asporto-sushi-signature:
     alt-image: Roll Ca' Vecchia Beerstrot
   -
     item-name: Roll Special Tonno
-    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-16-9: assets/img/test/test-immagine2-16-9.jpg
     item-image-1-1: assets/img/test/test-immagine2-1-1.jpg
     item-price: 14
     item-description: Tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio
@@ -30,7 +30,7 @@ asporto-sushi-signature:
     alt-image: Roll Special Tonno
   -
     item-name: Nigiri Special
-    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-16-9: assets/img/test/test-immagine3-16-9.jpg
     item-image-1-1: assets/img/test/test-immagine3-1-1.jpg
     item-price: 14
     item-description: 6 nigiri speciali dello chef
@@ -44,8 +44,8 @@ asporto-sushi-signature:
     alt-image: Nigiri Special
   -
     item-name: Gunkan Special
-    item-image-16-9: https://picsum.photos/1920/1080
-    item-image-1-1: https://picsum.photos/1920/1920
+    item-image-16-9: assets/img/test/test-immagine4-16-9.jpg
+    item-image-1-1: assets/img/test/test-immagine4-1-1.jpg
     item-price: 14
     item-description: 6 gunkan speciali dello chef
     item-description-short: 6 gunkan speciali dello chef
