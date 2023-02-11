@@ -4,8 +4,8 @@ asporto-sushi-signature:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 15
-    item-description: Gambero in tempura e avocado avvolti da battuta di carne marchigiana, tartufo nero e maionese alla senape
-    item-description-short: Gambero in tempura e avocado avvolti da battuta di carne marchigiana, tartufo nero e maionese alla senape
+    item-description: Gambero in tempura e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
+    item-description-short: Gambero in tempura e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
     item-allergeni: Pesce, Uova, Latte, Sedano, Senape
     id-data: rollCaVecchiaBeerstrot
     class-image-1-1:
@@ -19,8 +19,8 @@ asporto-sushi-signature:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
-    item-description: Tonno e Mango avvolti da stracciatella, pesto e granella di pistacchio
-    item-description-short: Tonno e Mango avvolti da stracciatella, pesto e granella di pistacchio
+    item-description: Tonno e Mango ricoperti da stracciatella, pesto e granella di pistacchio
+    item-description-short: Tonno e Mango ricoperti da stracciatella, pesto e granella di pistacchio
     item-allergeni: Pesce, Uova, Latte, Sedano, Senape
     id-data: rollSpecialTuna
     class-note: hide
@@ -223,8 +223,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Gambero in tempura e filetto di salmone avvolti da tartare di salmone, maionese e lime
-    item-description-short: Gambero in tempura e filetto di salmone avvolti da tartare di salmone, maionese e lime
+    item-description: Gambero in tempura e filetto di salmone ricoperti da tartare di salmone, maionese e lime
+    item-description-short: Gambero in tempura e filetto di salmone ricoperti da tartare di salmone, maionese e lime
     item-allergeni: Pesce, Uova
     id-data: ebiSalmonRoll
     class-note: hide
@@ -237,8 +237,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
-    item-description: Salmone e philadelphi avvolti da tobiko red, mandorle e maionese piccante
-    item-description-short: Salmone e philadelphi avvolti da tobiko red, mandorle e maionese piccante
+    item-description: Salmone e philadelphi ricoperti da tobiko red, mandorle e maionese piccante
+    item-description-short: Salmone e philadelphi ricoperti da tobiko red, mandorle e maionese piccante
     item-allergeni: Pesce, Uova
     id-data: almondRoll
     class-note: hide
@@ -251,8 +251,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
-    item-description: Salmone e avocado avvolti in stracciatella, gamberi rossi e granella di pistacchio
-    item-description-short: Salmone e avocado avvolti in stracciatella, gamberi rossi e granella di pistacchio
+    item-description: Salmone e avocado ricoperti in stracciatella, gamberi rossi e granella di pistacchio
+    item-description-short: Salmone e avocado ricoperti in stracciatella, gamberi rossi e granella di pistacchio
     item-allergeni: Pesce, frutta a guscio
     id-data: shrimpRoll
     class-note: hide
@@ -265,8 +265,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Tonno, avocado avvolti da tobiko red
-    item-description-short: Tonno, avocado avvolti da tobiko red
+    item-description: Tonno, avocado ricoperti da tobiko red
+    item-description-short: Tonno, avocado ricoperti da tobiko red
     item-allergeni: pesce
     id-data: tunaRoll
     class-note: hide
@@ -279,8 +279,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
-    item-description: Gambero in tempura e maionese avvolti da carpaccio di salmone scottato e salsa sweet chily
-    item-description-short: Gambero in tempura e maionese avvolti da carpaccio di salmone scottato e salsa sweet chily
+    item-description: Gambero in tempura e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
+    item-description-short: Gambero in tempura e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
     item-allergeni: pesce, uovo
     id-data: mexicoRoll
     class-note: hide
@@ -307,8 +307,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
-    item-description: Gambero croccante in panko e maionese avvolti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
-    item-description-short: Gambero croccante in panko e maionese avvolti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
+    item-description: Gambero croccante in panko e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
+    item-description-short: Gambero croccante in panko e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
     item-allergeni: pesce, uovo, senape, frutta a guscio
     id-data: mediterraneoStyle
     class-note: hide
@@ -321,8 +321,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: Carota, cetrioli e cavolo viola sormontati da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
-    item-description-short: Carota, cetrioli e cavolo viola sormontati da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
+    item-description: Carota, cetrioli e cavolo viola ricopeerti di philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
+    item-description-short: Carota, cetrioli e cavolo viola ricopeerti di philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
     item-allergeni: uovo
     id-data: specialYellowVeggie
     class-note: hide
@@ -337,8 +337,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Gambero in tempura e filetto di salmone avvolti da tartare di salmone, maionese e lime
-    item-description-short: Gambero in tempura e filetto di salmone avvolti da tartare di salmone, maionese e lime
+    item-description: Gambero in tempura e filetto di salmone ricoperti da tartare di salmone, maionese e lime
+    item-description-short: Gambero in tempura e filetto di salmone ricoperti da tartare di salmone, maionese e lime
     item-allergeni: Pesce, Uova
     id-data: ebiSalmonHotRoll
     class-note: hide
@@ -351,8 +351,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
-    item-description: Salmone e philadelphi avvolti da tobiko red, mandorle e maionese piccante
-    item-description-short: Salmone e philadelphi avvolti da tobiko red, mandorle e maionese piccante
+    item-description: Salmone e philadelphi ricoperti da tobiko red, mandorle e maionese piccante
+    item-description-short: Salmone e philadelphi ricoperti da tobiko red, mandorle e maionese piccante
     item-allergeni: Pesce, Uova
     id-data: almondHotRoll
     class-note: hide
@@ -365,8 +365,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
-    item-description: Salmone e avocado avvolti in stracciatella, gamberi rossi e granella di pistacchio
-    item-description-short: Salmone e avocado avvolti in stracciatella, gamberi rossi e granella di pistacchio
+    item-description: Salmone e avocado ricoperti in stracciatella, gamberi rossi e granella di pistacchio
+    item-description-short: Salmone e avocado ricoperti in stracciatella, gamberi rossi e granella di pistacchio
     item-allergeni: Pesce, frutta a guscio
     id-data: shrimpHotRoll
     class-note: hide
@@ -379,8 +379,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Tonno, avocado avvolti da tobiko red
-    item-description-short: Tonno, avocado avvolti da tobiko red
+    item-description: Tonno, avocado ricoperti da tobiko red
+    item-description-short: Tonno, avocado ricoperti da tobiko red
     item-allergeni: pesce
     id-data: tunaHotRoll
     class-note: hide
@@ -393,8 +393,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
-    item-description: Gambero in tempura e maionese avvolti da carpaccio di salmone scottato e salsa sweet chily
-    item-description-short: Gambero in tempura e maionese avvolti da carpaccio di salmone scottato e salsa sweet chily
+    item-description: Gambero in tempura e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
+    item-description-short: Gambero in tempura e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
     item-allergeni: pesce, uovo
     id-data: mexicoHotRoll
     class-note: hide
@@ -438,8 +438,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: Tonno, avocado e maionese avvolti da tobiko red
-    item-description-short: Tonno, avocado e maionese avvolti da tobiko red
+    item-description: Tonno, avocado e maionese ricoperti da tobiko red
+    item-description-short: Tonno, avocado e maionese ricoperti da tobiko red
     item-allergeni: Pesce, Uova
     id-data: uramakiTonnoOrdinary
     class-note: hide
@@ -684,8 +684,8 @@ asporto-per-stuzzicare:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Peperoncini Piccanti
-    item-description: Peperoncini ripieni di robiola avvolti nella pancetta
-    item-description-short: Peperoncini ripieni di robiola avvolti nella pancetta
+    item-description: Peperoncini ripieni di robiola ricoperti nella pancetta
+    item-description-short: Peperoncini ripieni di robiola ricoperti nella pancetta
     item-allergeni: Anidride Solforosa e Solfiti, Latte
     item-price: 5,5
     id-data: peperonciniPiccanti
@@ -1400,7 +1400,7 @@ menu-per-stuzzicare:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Peperoncini Piccanti
-    item-description: Peperoncini ripieni di robiola avvolti nella pancetta
+    item-description: Peperoncini ripieni di robiola ricoperti nella pancetta
     item-description-short:
     item-allergeni: Anidride Solforosa e Solfiti, Latte
     item-price: 5,5
