@@ -1,8 +1,8 @@
 asporto-sushi-signature:
   -
     item-name: Roll Ca' Vecchia Beerstrot
-    item-image-16-9: https://picsum.photos/1920/1080
-    item-image-1-1: https://picsum.photos/1920/1920
+    item-image-16-9: assets/img/test/test-immagine-16-9.jpg
+    item-image-1-1: assets/img/test/test-immagine-1-1.jpg
     item-price: 15
     item-description: Gambero in tempura e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
     item-description-short: Gambero in tempura e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
@@ -11,27 +11,27 @@ asporto-sushi-signature:
     class-image-1-1:
     class-note: hide
     class-cottura: hide
-    class-allergeni: hide
+    class-allergeni:
     class-price:
     alt-image: Roll Ca' Vecchia Beerstrot
   -
-    item-name: Roll Special Tuna
+    item-name: Roll Special Tonno
     item-image-16-9: https://picsum.photos/1920/1080
-    item-image-1-1: https://picsum.photos/1920/1920
+    item-image-1-1: assets/img/test/test-immagine2-1-1.jpg
     item-price: 14
-    item-description: Tonno e Mango ricoperti da stracciatella, pesto e granella di pistacchio
-    item-description-short: Tonno e Mango ricoperti da stracciatella, pesto e granella di pistacchio
+    item-description: Tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio
+    item-description-short: Tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio
     item-allergeni: Pesce, Uova, Latte, Sedano, Senape
     id-data: rollSpecialTuna
     class-note: hide
     class-cottura: hide
-    class-allergeni: hide
+    class-allergeni:
     class-price:
-    alt-image: Roll Special Tuna
+    alt-image: Roll Special Tonno
   -
-    item-name: Special Nigiri
+    item-name: Nigiri Special
     item-image-16-9: https://picsum.photos/1920/1080
-    item-image-1-1: https://picsum.photos/1920/1920
+    item-image-1-1: assets/img/test/test-immagine3-1-1.jpg
     item-price: 14
     item-description: 6 nigiri speciali dello chef
     item-description-short: 6 nigiri speciali dello chef
@@ -39,11 +39,11 @@ asporto-sushi-signature:
     id-data: specialNigiri
     class-note: hide
     class-cottura: hide
-    class-allergeni: hide
+    class-allergeni:
     class-price:
-    alt-image: Special Nigiri
+    alt-image: Nigiri Special
   -
-    item-name: Special Gunkan
+    item-name: Gunkan Special
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
@@ -55,12 +55,12 @@ asporto-sushi-signature:
     class-cottura: hide
     class-allergeni: pesce
     class-price:
-    alt-image: Special Gunkan
+    alt-image: Gunkan Special
 
 
 asporto-sushi-special-mix:
   -
-    item-name: Extraordinary Sushi
+    item-name: Sushi Imperiale
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 62
@@ -72,9 +72,9 @@ asporto-sushi-special-mix:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Extraordinary Sushi
+    alt-image: Sushi Imperiale
   -
-    item-name: Ordinary Only Me
+    item-name: Suhi Per Me
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 15
@@ -86,9 +86,9 @@ asporto-sushi-special-mix:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Ordinary Only Me
+    alt-image: Suhi Per Me
   -
-    item-name: Ordinary Me & You
+    item-name: Sushi Io e Te
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 42
@@ -100,9 +100,9 @@ asporto-sushi-special-mix:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Ordinary Me & You
+    alt-image: Sushi Io e Te
   -
-    item-name: Ordinary Green
+    item-name: Sushi Vegetariano
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
@@ -114,7 +114,7 @@ asporto-sushi-special-mix:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Ordinary Green
+    alt-image: Sushi Vegetariano
 
 
 asporto-sushi-entree:
@@ -161,33 +161,33 @@ asporto-sushi-entree:
     class-price:
     alt-image: Alghe Goma Wakame
   -
-    item-name: Tartare Ca' Vecchia Tonno
+    item-name: Tartare di Tonno
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Tonno, avocado, tartare di tonno, tobiko red, semi di sesamo, maionese, salsa ponzu
-    item-description-short: Tonno, avocado, tartare di tonno, tobiko red, semi di sesamo, maionese, salsa ponzu
+    item-description: Tartare di tonno, avocado, tobiko red, semi di sesamo, maionese, salsa ponzu
+    item-description-short: Tartare di tonno, avocado, tobiko red, semi di sesamo, maionese, salsa ponzu
     item-allergeni: pesce
     id-data: tartareCaVecchiaTonno
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Tartare Ca' Vecchia Tonno
+    alt-image: Tartare di Tonno
   -
-    item-name: Tartare Ca' Vecchia Salmone
+    item-name: Tartare di Salmone
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu
-    item-description-short: Salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu
+    item-description: Tartare di salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu
+    item-description-short: Tartare di salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu
     item-allergeni: pesce
     id-data: tartareCaVecchiaSalmone
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Tartare Ca' Vecchia Salmone
+    alt-image: Tartare di Salmone
   -
     item-name: Kimuchi di Salmone
     item-image-16-9: https://picsum.photos/1920/1080
@@ -203,23 +203,23 @@ asporto-sushi-entree:
     class-price:
     alt-image: Kimuchi di Salmone
   -
-    item-name: Little Sashimi
+    item-name: Chicca di Sashimi
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: Due pezzi di salmone, due di tonno, due di branzino
-    item-description-short: Due pezzi di salmone, due di tonno, due di branzino
+    item-description: Due pezzi di salmone, due di tonno e due di branzino
+    item-description-short: Due pezzi di salmone, due di tonno e due di branzino
     item-allergeni: pesce
     id-data: littleSashimi
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Little Sashimi
+    alt-image: Chicca di Sashimi
 
 asporto-sushi-roll-selection:
   -
-    item-name: Ebi Salmon Roll
+    item-name: Roll Gambero e Salmone
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
@@ -231,51 +231,51 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Ebi Salmon Roll
+    alt-image: Roll Gambero e Salmone
   -
-    item-name: Almond Roll
+    item-name: Roll alle Mandorle
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
-    item-description: Salmone e philadelphi ricoperti da tobiko red, mandorle e maionese piccante
-    item-description-short: Salmone e philadelphi ricoperti da tobiko red, mandorle e maionese piccante
+    item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
+    item-description-short: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
     item-allergeni: Pesce, Uova
     id-data: almondRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Almond Roll
+    alt-image: Roll alle Mandorle
   -
-    item-name: Shrimp Roll
+    item-name: Roll Gambero Rosso
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
-    item-description: Salmone e avocado ricoperti in stracciatella, gamberi rossi e granella di pistacchio
-    item-description-short: Salmone e avocado ricoperti in stracciatella, gamberi rossi e granella di pistacchio
+    item-description: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
+    item-description-short: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
     item-allergeni: Pesce, frutta a guscio
     id-data: shrimpRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Shrimp Roll
+    alt-image: Roll Gambero Rosso
   -
-    item-name: Tuna Roll
+    item-name: Roll Tonno
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Tonno, avocado ricoperti da tobiko red
-    item-description-short: Tonno, avocado ricoperti da tobiko red
+    item-description: Tonno e avocado ricoperti da tobiko red
+    item-description-short: Tonno e avocado ricoperti da tobiko red
     item-allergeni: pesce
     id-data: tunaRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Tuna Roll
+    alt-image: Roll Tonno
   -
-    item-name: Mexico Roll
+    item-name: Roll Mexico
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
@@ -287,23 +287,23 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Mexico Roll
+    alt-image: Roll Mexico
   -
-    item-name: Seabass Rock
+    item-name: Roll Branzino
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Branzino fritto in panko avvolto da salmone flambè e maionese alla senape
-    item-description-short: Branzino fritto in panko avvolto da salmone flambè e maionese alla senape
+    item-description: Branzino fritto in panko ricoperto da salmone flambè e maionese alla senape
+    item-description-short: Branzino fritto in panko ricoperto da salmone flambè e maionese alla senape
     item-allergeni: pesce, uovo, senape
     id-data: seabassRock
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Seabass Rock
+    alt-image: Roll Branzino
   -
-    item-name: Mediterraneo Style
+    item-name: Roll Stile Meditarraneo
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
@@ -315,25 +315,25 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Mediterraneo Style
+    alt-image: Roll Stile Meditarraneo
   -
-    item-name: Special Yellow Veggie
+    item-name: Roll Vegetariano
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: Carota, cetrioli e cavolo viola ricopeerti di philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
-    item-description-short: Carota, cetrioli e cavolo viola ricopeerti di philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
+    item-description: Carota, cetrioli e cavolo viola ricoperti da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
+    item-description-short: Carota, cetrioli e cavolo viola ricoperti da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
     item-allergeni: uovo
     id-data: specialYellowVeggie
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Special Yellow Veggie
+    alt-image: Roll Vegetariano
 
 asporto-sushi-hot-roll:
   -
-    item-name: Ebi Salmon Hot Roll
+    item-name: Roll Caldo Gambero e Salmone
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
@@ -345,51 +345,51 @@ asporto-sushi-hot-roll:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: EEbi Salmon Hot Roll
+    alt-image: Roll Caldo Gambero e Salmone
   -
-    item-name: Almond Hot Roll
+    item-name: Roll Caldo alle Mandorle
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
-    item-description: Salmone e philadelphi ricoperti da tobiko red, mandorle e maionese piccante
-    item-description-short: Salmone e philadelphi ricoperti da tobiko red, mandorle e maionese piccante
+    item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
+    item-description-short: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
     item-allergeni: Pesce, Uova
     id-data: almondHotRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Almond Hot Roll
+    alt-image: Roll Caldo alle Mandorle
   -
-    item-name: Shrimp Hot Roll
+    item-name: Roll Cado Gamberi
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
-    item-description: Salmone e avocado ricoperti in stracciatella, gamberi rossi e granella di pistacchio
-    item-description-short: Salmone e avocado ricoperti in stracciatella, gamberi rossi e granella di pistacchio
+    item-description: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
+    item-description-short: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
     item-allergeni: Pesce, frutta a guscio
     id-data: shrimpHotRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Shrimp Hot Roll
+    alt-image: Roll Cado Gamberi
   -
-    item-name: Tuna Hot Roll
+    item-name: Roll Caldo Tonno
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Tonno, avocado ricoperti da tobiko red
-    item-description-short: Tonno, avocado ricoperti da tobiko red
+    item-description: Tonno e avocado ricoperti da tobiko red
+    item-description-short: Tonno e avocado ricoperti da tobiko red
     item-allergeni: pesce
     id-data: tunaHotRoll
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Tuna Hot Roll
+    alt-image: Roll Caldo Tonno
   -
-    item-name: Mexico Hot Roll
+    item-name: Roll Caldo Mexico
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
@@ -401,7 +401,7 @@ asporto-sushi-hot-roll:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Tuna Hot Roll
+    alt-image: Roll Caldo Mexico
 
 
 asporto-sushi-maki-ordinary-style:
@@ -410,8 +410,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: Salmone in tempura e philadelphia guarnito con salsa teriyaki
-    item-description-short: Salmone in tempura e philadelphia guarnito con salsa teriyaki
+    item-description: Salmone in tempura e philadelphia guarniti con salsa teriyaki
+    item-description-short: Salmone in tempura e philadelphia guarniti con salsa teriyaki
     item-allergeni: Pesce, Uova, Soia
     id-data: uramakiPhiladelphiaOrdinary
     class-note: hide
@@ -452,8 +452,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: Gambero in tempura e maionese guarnito con semi di sesamo e salsa teriyaki
-    item-description-short: Gambero in tempura e maionese guarnito con semi di sesamo e salsa teriyaki
+    item-description: Gambero in tempura e maionese guarniti con semi di sesamo e salsa teriyaki
+    item-description-short: Gambero in tempura e maionese guarniti con semi di sesamo e salsa teriyaki
     item-allergeni: pesce, Uovo
     id-data: uramakiEbiTenOrdinary
     class-note: hide
@@ -521,7 +521,7 @@ asporto-sushi-temaki:
     class-price:
     alt-image: Temaki Gambero
   -
-    item-name: Temaki Veggie
+    item-name: Temaki Vegetariano
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 5
@@ -533,7 +533,7 @@ asporto-sushi-temaki:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Temaki Veggie
+    alt-image: Temaki Vegetariano
 
 
 asporto-sushi-nigiri:
@@ -580,7 +580,7 @@ asporto-sushi-nigiri:
     class-price:
     alt-image: Nigiri Branzino
   -
-    item-name: Ebi Ten Nigiri
+    item-name: Nigiri Gambero in Tempura
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
@@ -592,9 +592,9 @@ asporto-sushi-nigiri:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Ebi Ten Nigiri
+    alt-image: Nigiri Gambero in Tempura
   -
-    item-name: Gambero Rosso Nigiri
+    item-name: Nigiri Gambero Rosso
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 6
@@ -606,9 +606,9 @@ asporto-sushi-nigiri:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Gambero Rosso Nigiri
+    alt-image: Nigiri Gambero Rosso
   -
-    item-name: Calamaro Nigiri
+    item-name: Nigiri Calamaro
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
@@ -620,7 +620,7 @@ asporto-sushi-nigiri:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Calamaro Nigiri
+    alt-image: Nigiri Calamaro
 
 
 asporto-per-stuzzicare:
