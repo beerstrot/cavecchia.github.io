@@ -203,7 +203,7 @@ asporto-sushi-entree:
     class-price:
     alt-image: Kimuchi di Salmone
   -
-    item-name: Chicca di Sashimi
+    item-name: Piccolo Sashimi
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
@@ -233,7 +233,7 @@ asporto-sushi-roll-selection:
     class-price:
     alt-image: Roll Gambero e Salmone
   -
-    item-name: Roll alle Mandorle
+    item-name: Roll Mandorle
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
@@ -245,7 +245,7 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Roll alle Mandorle
+    alt-image: Roll Mandorle
   -
     item-name: Roll Gambero Rosso
     item-image-16-9: https://picsum.photos/1920/1080
@@ -303,7 +303,7 @@ asporto-sushi-roll-selection:
     class-price:
     alt-image: Roll Branzino
   -
-    item-name: Roll Stile Meditarraneo
+    item-name: Roll Meditarraneo
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
@@ -315,7 +315,7 @@ asporto-sushi-roll-selection:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Roll Stile Meditarraneo
+    alt-image: Roll Meditarraneo
   -
     item-name: Roll Vegetariano
     item-image-16-9: https://picsum.photos/1920/1080
