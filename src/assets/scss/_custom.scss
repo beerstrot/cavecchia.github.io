@@ -85,22 +85,22 @@ bordo per debugging
 #page {
     display: grid;
     grid-template:  "item-image  item-text" 3fr
-                    "item-image  item-button" auto;
+                    "item-image  item-button" 34.5px;
     grid-template-columns: minmax(110px, 1fr) 3fr;
     column-gap: 20px;
     margin-bottom: 1.6rem;
-    //background: rgba(lightpink, 0.4);
+    background: rgba(lightpink, 0.2);
     .item-image {
         //background-color: rgba(lightblue, 0.4);
         grid-area: item-image;
         padding-top: 0.84rem;
     }
     .item-text {
-        //background-color: rgba(yellow, 0.4);;
+        background-color: rgba(yellow, 0.4);;
         grid-area: item-text;
     }
     .item-button {
-        //background-color: rgba(red, 0.4);
+        //background-color: rgba(red, 0.1);
         grid-area: item-button;
         margin:0;
         padding:0;
