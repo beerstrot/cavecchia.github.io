@@ -135,6 +135,9 @@ a.is-active::after {
     white-space: nowrap;
     overflow-x: scroll;
     scroll-snap-type: x proximity;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-overflow-scrolling: touch;
 }
 
 .hs:before,
@@ -144,13 +147,13 @@ a.is-active::after {
 }
 
 .hs > li {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     @include breakpoint(small only) {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;

@@ -39,1031 +39,32 @@ canonical: https://www.beerstrot.it/asporto.html
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x">
 			<div class="small-12 large-8 cell">
-				<section>
-					<div class="grid-x grid-margin-x grid-margin-y" id="sushi" data-magellan-target="sushi">
-						<div class="small-12 cell">
-							<h2>Sushi i Nostri Signature</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y" id="ecommerce-button-top">
-								{{#each global.asporto-sushi-signature}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
+				<section class="grid-x grid-margin-x grid-margin-y" id="sushi" data-magellan-target="sushi">
+					<div class="small-12 cell">
+						<h2>Sushi i Nostri Signature</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y" id="ecommerce-button-top">
+							{{#each global.asporto-sushi-signature}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
 								</div>
-								{{/each}}
-							</div>
-						</div>
-						<div class="small-12 cell">
-							<h2>Sushi Special Mix</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-sushi-special-mix}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-						<div class="small-12 cell">
-							<h2>Sushi per Iniziare</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-sushi-entree}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-						<div class="small-12 cell">
-							<h2>Sushi Selezione di Roll</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-sushi-roll-selection}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-						<div class="small-12 cell">
-							<h2>Sushi Roll Caldi</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-sushi-hot-roll}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-						<div class="small-12 cell">
-							<h2>Sushi Uramaki Classici</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-sushi-maki-ordinary-style}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-						<div class="small-12 cell">
-							<h2>Sushi Temaki</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-sushi-temaki}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-						<div class="small-12 cell">
-							<h2>Sushi Nigiri</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-sushi-nigiri}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="grid-x grid-margin-x grid-margin-y" id="stuzzicare" data-magellan-target="stuzzicare">
-						<div class="small-12 cell">
-							<h2>Per Stuzzicare</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-per-stuzzicare}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="grid-x grid-margin-x grid-margin-y" id="hamburger" data-magellan-target="hamburger">
-						<div class="small-12 cell">
-							<h2>Hamburger Classici<small>Serviti con patate fritte e a cottura media</small></h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-hamburger-classici}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium"src="{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-						<div class="small-12 cell">
-							<h2>Hamburger di Stagione<small>Serviti con patate fritte e a cottura media</small></h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-hamburger-stagione}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-						<div class="small-12 cell">
-							<h2>Hamburger Vegetariani<small>Serviti con patate fritte</small></h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-hamburger-vegetariano}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="grid-x grid-margin-x grid-margin-y" id="carne" data-magellan-target="carne">
-						<div class="small-12 cell">
-							<h2>Carne</h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-carne}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="grid-x grid-margin-x grid-margin-y" id="dolce" data-magellan-target="dolce">
-						<div class="small-12 cell">
-							<h2>Dolci<small>Fatti in casa</small></h2>
-							<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-dolce}}
-								<div class="cell">
-									<div class="hide-for-medium">
-										<div id="page">
-							                <div class="item-image">
-							                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
-							                </div>
-							                <div class="item-text">
-							                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description-short}}</p>
-							                </div>
-							                <div class="item-button">
-							                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
-							                </div>
-							            </div>
-									</div>
-									<div class="show-for-medium">
-										<div class="card">
-											<div class="card-section">
-												<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
-												<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-												<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
-												<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
-											</div>
-										</div>
-										<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-											<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-													<span aria-hidden="true">&times;</span>
-											</button>
-											<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
-											<header class="main-header">
-												<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-											</header>
-											<div class="main-content">
-												<p id="modalDescription">{{item-description}}</p>
-												<p class="allergeni">Allergeni: {{item-allergeni}}</p>
-												<label class="{{class-note}}"><strong>Note</strong>
-													<textarea maxlength="" id="" placeholder=".........."></textarea>
-												</label>
-												<label class="{{class-cottura}}"><strong>Cottura</strong>
-													<select>
-														<option value="medio">Media</option>
-														<option value="moltoalsangue">Molto al sangue</option>
-														<option value="alsangue">Al sangue</option>
-														<option value="bencotta">Ben cotta</option>
-													</select>
-												</label>
-											</div>
-											<footer class="main-footer">
-												<div class="input-group input-number-group">
-													<div class="input-group-button">
-														<span class="input-number-decrement">&ndash;</span>
-													</div>
-													<input class="input-number" type="button" value="1" min="0" max="30">
-													<div class="input-group-button">
-														<span class="input-number-increment">&plus;</span>
-													</div>
-												</div>
-												<button type="button" class="button expanded-with-padding extra-space-button-modal">
-													Aggiungi al carrello <span class="price"> {{item-price}}</span>
-												</button>
-											</footer>
-										</div>
-									</div>
-								</div>
-								{{/each}}
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="grid-x grid-margin-x grid-margin-y" id="bevanda" data-magellan-target="bevanda">
-						<div class="small-12 cell">
-							<h2>Bevande</h2>
-							<div class="grid-x small-up-2 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-bevanda}}
-								<div class="cell">
+								<div class="show-for-medium">
 									<div class="card">
 										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
 											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-											<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
 											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
 										</div>
 									</div>
@@ -1071,12 +72,13 @@ canonical: https://www.beerstrot.it/asporto.html
 										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
 												<span aria-hidden="true">&times;</span>
 										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
 										<header class="main-header">
 											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
 										</header>
 										<div class="main-content">
 											<p id="modalDescription">{{item-description}}</p>
-											<p class="allergeni {{class-allergeni}}">Allergeni: {{item-allergeni}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
 											<label class="{{class-note}}"><strong>Note</strong>
 												<textarea maxlength="" id="" placeholder=".........."></textarea>
 											</label>
@@ -1100,27 +102,40 @@ canonical: https://www.beerstrot.it/asporto.html
 												</div>
 											</div>
 											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-												Aggiungi al carrello <span class="price"> € {{item-price}}</span>
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
 											</button>
 										</footer>
 									</div>
 								</div>
-								{{/each}}
 							</div>
+							{{/each}}
 						</div>
 					</div>
-				</section>
-				<section>
-					<div class="grid-x grid-margin-x grid-margin-y" id="birra" data-magellan-target="birra">
-						<div class="small-12 cell">
-							<h2>Birra artigianale in bottiglia</h2>
-							<div class="grid-x small-up-2 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-birra-bottiglia}}
-								<div class="cell">
+					<div class="small-12 cell">
+						<h2>Sushi Special Mix</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-sushi-special-mix}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
 									<div class="card">
 										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
 											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-											<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
 											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
 										</div>
 									</div>
@@ -1128,12 +143,13 @@ canonical: https://www.beerstrot.it/asporto.html
 										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
 												<span aria-hidden="true">&times;</span>
 										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
 										<header class="main-header">
 											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
 										</header>
 										<div class="main-content">
 											<p id="modalDescription">{{item-description}}</p>
-											<p class="allergeni {{class-allergeni}}">Allergeni: {{item-allergeni}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
 											<label class="{{class-note}}"><strong>Note</strong>
 												<textarea maxlength="" id="" placeholder=".........."></textarea>
 											</label>
@@ -1157,27 +173,40 @@ canonical: https://www.beerstrot.it/asporto.html
 												</div>
 											</div>
 											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-												Aggiungi al carrello <span class="price"> € {{item-price}}</span>
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
 											</button>
 										</footer>
 									</div>
 								</div>
-								{{/each}}
 							</div>
+							{{/each}}
 						</div>
 					</div>
-				</section>
-				<section>
-					<div class="grid-x grid-margin-x grid-margin-y" id="vino" data-magellan-target="vino">
-						<div class="small-12 cell">
-							<h2>Vino</h2>
-							<div class="grid-x small-up-2 medium-up-2 grid-margin-x grid-margin-y">
-								{{#each global.asporto-vino}}
-								<div class="cell">
+					<div class="small-12 cell">
+						<h2>Sushi per Iniziare</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-sushi-entree}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
 									<div class="card">
 										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
 											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-											<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
 											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
 										</div>
 									</div>
@@ -1185,12 +214,13 @@ canonical: https://www.beerstrot.it/asporto.html
 										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
 												<span aria-hidden="true">&times;</span>
 										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
 										<header class="main-header">
 											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
 										</header>
 										<div class="main-content">
 											<p id="modalDescription">{{item-description}}</p>
-											<p class="allergeni {{class-allergeni}}">Allergeni: {{item-allergeni}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
 											<label class="{{class-note}}"><strong>Note</strong>
 												<textarea maxlength="" id="" placeholder=".........."></textarea>
 											</label>
@@ -1214,13 +244,967 @@ canonical: https://www.beerstrot.it/asporto.html
 												</div>
 											</div>
 											<button type="button" class="button expanded-with-padding extra-space-button-modal">
-												Aggiungi al carrello <span class="price"> € {{item-price}}</span>
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
 											</button>
 										</footer>
 									</div>
 								</div>
-								{{/each}}
 							</div>
+							{{/each}}
+						</div>
+					</div>
+					<div class="small-12 cell">
+						<h2>Sushi Selezione di Roll</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-sushi-roll-selection}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+					<div class="small-12 cell">
+						<h2>Sushi Roll Caldi</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-sushi-hot-roll}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+					<div class="small-12 cell">
+						<h2>Sushi Uramaki Classici</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-sushi-maki-ordinary-style}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+					<div class="small-12 cell">
+						<h2>Sushi Temaki</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-sushi-temaki}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+					<div class="small-12 cell">
+						<h2>Sushi Nigiri</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-sushi-nigiri}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+				</section>
+				<section class="grid-x grid-margin-x grid-margin-y" id="stuzzicare" data-magellan-target="stuzzicare">
+					<div class="small-12 cell">
+						<h2>Per Stuzzicare</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-per-stuzzicare}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+				</section>
+				<section class="grid-x grid-margin-x grid-margin-y" id="hamburger" data-magellan-target="hamburger">
+					<div class="small-12 cell">
+						<h2>Hamburger Classici<small>Serviti con patate fritte e a cottura media</small></h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-hamburger-classici}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium"src="{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+					<div class="small-12 cell">
+						<h2>Hamburger di Stagione<small>Serviti con patate fritte e a cottura media</small></h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-hamburger-stagione}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+					<div class="small-12 cell">
+						<h2>Hamburger Vegetariani<small>Serviti con patate fritte</small></h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-hamburger-vegetariano}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+				</section>
+				<section class="grid-x grid-margin-x grid-margin-y" id="carne" data-magellan-target="carne">
+					<div class="small-12 cell">
+						<h2>Carne</h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-carne}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+				</section>
+				<section class="grid-x grid-margin-x grid-margin-y" id="dolce" data-magellan-target="dolce">
+					<div class="small-12 cell">
+						<h2>Dolci<small>Fatti in casa</small></h2>
+						<div class="grid-x small-up-1 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-dolce}}
+							<div class="cell">
+								<div class="hide-for-medium">
+									<div id="page">
+						                <div class="item-image">
+						                	<img src="{{root}}{{item-image-1-1}}" alt="{{alt-image}}">
+						                </div>
+						                <div class="item-text">
+						                    <h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description-short}}</p>
+						                </div>
+						                <div class="item-button">
+						                   <button type="button" class="button small" style="margin-bottom: 0;" data-open="{{id-data}}">Aggiungi al Carrello</button>
+						                </div>
+						            </div>
+								</div>
+								<div class="show-for-medium">
+									<div class="card">
+										<div class="card-section">
+											<img class="show-for-medium" src="{{root}}{{item-image-16-9}}" alt="{{alt-image}}">
+											<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+											<p class="{{class-description}}">{{item-description}}<br><small>Allergeni: {{item-allergeni}}</small></p>
+											<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+										</div>
+									</div>
+									<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+										<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+												<span aria-hidden="true">&times;</span>
+										</button>
+										<img src="{{item-image-16-9}}" style="margin-top:-3rem;" alt="{{alt-image}}">
+										<header class="main-header">
+											<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+										</header>
+										<div class="main-content">
+											<p id="modalDescription">{{item-description}}</p>
+											<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+											<label class="{{class-note}}"><strong>Note</strong>
+												<textarea maxlength="" id="" placeholder=".........."></textarea>
+											</label>
+											<label class="{{class-cottura}}"><strong>Cottura</strong>
+												<select>
+													<option value="medio">Media</option>
+													<option value="moltoalsangue">Molto al sangue</option>
+													<option value="alsangue">Al sangue</option>
+													<option value="bencotta">Ben cotta</option>
+												</select>
+											</label>
+										</div>
+										<footer class="main-footer">
+											<div class="input-group input-number-group">
+												<div class="input-group-button">
+													<span class="input-number-decrement">&ndash;</span>
+												</div>
+												<input class="input-number" type="button" value="1" min="0" max="30">
+												<div class="input-group-button">
+													<span class="input-number-increment">&plus;</span>
+												</div>
+											</div>
+											<button type="button" class="button expanded-with-padding extra-space-button-modal">
+												Aggiungi al carrello <span class="price"> {{item-price}}</span>
+											</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+				</section>
+				<section class="grid-x grid-margin-x grid-margin-y" id="bevanda" data-magellan-target="bevanda">
+					<div class="small-12 cell">
+						<h2>Bevande</h2>
+						<div class="grid-x small-up-2 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-bevanda}}
+							<div class="cell">
+								<div class="card">
+									<div class="card-section">
+										<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+										<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
+										<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+									</div>
+								</div>
+								<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+									<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+											<span aria-hidden="true">&times;</span>
+									</button>
+									<header class="main-header">
+										<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+									</header>
+									<div class="main-content">
+										<p id="modalDescription">{{item-description}}</p>
+										<p class="allergeni {{class-allergeni}}">Allergeni: {{item-allergeni}}</p>
+										<label class="{{class-note}}"><strong>Note</strong>
+											<textarea maxlength="" id="" placeholder=".........."></textarea>
+										</label>
+										<label class="{{class-cottura}}"><strong>Cottura</strong>
+											<select>
+												<option value="medio">Media</option>
+												<option value="moltoalsangue">Molto al sangue</option>
+												<option value="alsangue">Al sangue</option>
+												<option value="bencotta">Ben cotta</option>
+											</select>
+										</label>
+									</div>
+									<footer class="main-footer">
+										<div class="input-group input-number-group">
+											<div class="input-group-button">
+												<span class="input-number-decrement">&ndash;</span>
+											</div>
+											<input class="input-number" type="button" value="1" min="0" max="30">
+											<div class="input-group-button">
+												<span class="input-number-increment">&plus;</span>
+											</div>
+										</div>
+										<button type="button" class="button expanded-with-padding extra-space-button-modal">
+											Aggiungi al carrello <span class="price"> € {{item-price}}</span>
+										</button>
+									</footer>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+				</section>
+				<section class="grid-x grid-margin-x grid-margin-y" id="birra" data-magellan-target="birra">
+					<div class="small-12 cell">
+						<h2>Birra artigianale in bottiglia</h2>
+						<div class="grid-x small-up-2 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-birra-bottiglia}}
+							<div class="cell">
+								<div class="card">
+									<div class="card-section">
+										<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+										<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
+										<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+									</div>
+								</div>
+								<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+									<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+											<span aria-hidden="true">&times;</span>
+									</button>
+									<header class="main-header">
+										<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+									</header>
+									<div class="main-content">
+										<p id="modalDescription">{{item-description}}</p>
+										<p class="allergeni {{class-allergeni}}">Allergeni: {{item-allergeni}}</p>
+										<label class="{{class-note}}"><strong>Note</strong>
+											<textarea maxlength="" id="" placeholder=".........."></textarea>
+										</label>
+										<label class="{{class-cottura}}"><strong>Cottura</strong>
+											<select>
+												<option value="medio">Media</option>
+												<option value="moltoalsangue">Molto al sangue</option>
+												<option value="alsangue">Al sangue</option>
+												<option value="bencotta">Ben cotta</option>
+											</select>
+										</label>
+									</div>
+									<footer class="main-footer">
+										<div class="input-group input-number-group">
+											<div class="input-group-button">
+												<span class="input-number-decrement">&ndash;</span>
+											</div>
+											<input class="input-number" type="button" value="1" min="0" max="30">
+											<div class="input-group-button">
+												<span class="input-number-increment">&plus;</span>
+											</div>
+										</div>
+										<button type="button" class="button expanded-with-padding extra-space-button-modal">
+											Aggiungi al carrello <span class="price"> € {{item-price}}</span>
+										</button>
+									</footer>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+				</section>
+				<section class="grid-x grid-margin-x grid-margin-y" id="vino" data-magellan-target="vino">
+					<div class="small-12 cell">
+						<h2>Vino</h2>
+						<div class="grid-x small-up-2 medium-up-2 grid-margin-x grid-margin-y">
+							{{#each global.asporto-vino}}
+							<div class="cell">
+								<div class="card">
+									<div class="card-section">
+										<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+										<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
+										<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
+									</div>
+								</div>
+								<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+									<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+											<span aria-hidden="true">&times;</span>
+									</button>
+									<header class="main-header">
+										<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+									</header>
+									<div class="main-content">
+										<p id="modalDescription">{{item-description}}</p>
+										<p class="allergeni {{class-allergeni}}">Allergeni: {{item-allergeni}}</p>
+										<label class="{{class-note}}"><strong>Note</strong>
+											<textarea maxlength="" id="" placeholder=".........."></textarea>
+										</label>
+										<label class="{{class-cottura}}"><strong>Cottura</strong>
+											<select>
+												<option value="medio">Media</option>
+												<option value="moltoalsangue">Molto al sangue</option>
+												<option value="alsangue">Al sangue</option>
+												<option value="bencotta">Ben cotta</option>
+											</select>
+										</label>
+									</div>
+									<footer class="main-footer">
+										<div class="input-group input-number-group">
+											<div class="input-group-button">
+												<span class="input-number-decrement">&ndash;</span>
+											</div>
+											<input class="input-number" type="button" value="1" min="0" max="30">
+											<div class="input-group-button">
+												<span class="input-number-increment">&plus;</span>
+											</div>
+										</div>
+										<button type="button" class="button expanded-with-padding extra-space-button-modal">
+											Aggiungi al carrello <span class="price"> € {{item-price}}</span>
+										</button>
+									</footer>
+								</div>
+							</div>
+							{{/each}}
 						</div>
 					</div>
 				</section>

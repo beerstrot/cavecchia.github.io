@@ -34,345 +34,323 @@ canonical: https://www.beerstrot.it/menu.html
 </div>
 <div id="menupage-text">
 	<div class="grid-container">
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="sushi" data-magellan-target="sushi">
-				<div class="small-12 cell">
-					<h2>Sushi i Nostri Signature</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.asporto-sushi-signature}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p>{{item-description}}
-									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="sushi" data-magellan-target="sushi">
+			<div class="small-12 cell">
+				<h2>Sushi i Nostri Signature</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.asporto-sushi-signature}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p>{{item-description}}
+								<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
-				<div class="small-12 cell">
-					<h2>Sushi Selezione di Roll</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.asporto-sushi-roll-selection}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p>{{item-description}}
-									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+			</div>
+			<div class="small-12 cell">
+				<h2>Sushi Selezione di Roll</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.asporto-sushi-roll-selection}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p>{{item-description}}
+								<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
-				<div class="small-12 cell">
-					<h2>Sushi Roll Caldi</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.asporto-sushi-hot-roll}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p>{{item-description}}
-									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+			</div>
+			<div class="small-12 cell">
+				<h2>Sushi Roll Caldi</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.asporto-sushi-hot-roll}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p>{{item-description}}
+								<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="stuzzicare" data-magellan-target="stuzzicare">
-				<div class="small-12 cell">
-					<h2>Per Stuzzicare</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-per-stuzzicare}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="stuzzicare" data-magellan-target="stuzzicare">
+			<div class="small-12 cell">
+				<h2>Per Stuzzicare</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-per-stuzzicare}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="hamburger" data-magellan-target="hamburger">
-				<div class="small-12 cell">
-					<h2>Hamburger Classici<small>Serviti con patate fritte e a cottura media</small></h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-hamburger-classici}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p>{{item-description}}
-									<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="hamburger" data-magellan-target="hamburger">
+			<div class="small-12 cell">
+				<h2>Hamburger Classici<small>Serviti con patate fritte e a cottura media</small></h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-hamburger-classici}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p>{{item-description}}
+								<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
-				<div class="small-12 cell">
-					<h2>Hamburger di Stagione<small>Serviti con patate fritte e a cottura media</small></h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-hamburger-stagione}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+			</div>
+			<div class="small-12 cell">
+				<h2>Hamburger di Stagione<small>Serviti con patate fritte e a cottura media</small></h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-hamburger-stagione}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
-				<div class="small-12 cell">
-					<h2>Hamburger Vegetariani<small>Serviti con patate fritte e a cottura media</small></h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-hamburger-vegetariano}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+			</div>
+			<div class="small-12 cell">
+				<h2>Hamburger Vegetariani<small>Serviti con patate fritte e a cottura media</small></h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-hamburger-vegetariano}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="carne" data-magellan-target="carne">
-				<div class="small-12 cell">
-					<h2>Carne</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-carne}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="carne" data-magellan-target="carne">
+			<div class="small-12 cell">
+				<h2>Carne</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-carne}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="dolce" data-magellan-target="dolce">
-				<div class="small-12 cell">
-					<h2>Dolci<small>Fatti in casa</small></h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-dolce}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="dolce" data-magellan-target="dolce">
+			<div class="small-12 cell">
+				<h2>Dolci<small>Fatti in casa</small></h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-dolce}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="bevanda" data-magellan-target="bevanda">
-				<div class="small-12 cell">
-					<h2>Bevande</h2>
-					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-bevanda}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="bevanda" data-magellan-target="bevanda">
+			<div class="small-12 cell">
+				<h2>Bevande</h2>
+				<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-bevanda}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="caffe" data-magellan-target="caffe">
-				<div class="small-12 cell">
-					<h2>Caffè</h2>
-					<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-caffe}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="caffe" data-magellan-target="caffe">
+			<div class="small-12 cell">
+				<h2>Caffè</h2>
+				<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-caffe}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="birra" data-magellan-target="birra">
-				<div class="small-12 cell">
-					<h2>Birra artigianale alla spina<small>Piccola 4 | Media 6 | Caraffa 12</small></h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-birra-spina}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="birra" data-magellan-target="birra">
+			<div class="small-12 cell">
+				<h2>Birra artigianale alla spina<small>Piccola 4 | Media 6 | Caraffa 12</small></h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-birra-spina}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
-				<div class="small-12 cell">
-					<h2>Birra artigianale in bottiglia</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-birra-bottiglia}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+			</div>
+			<div class="small-12 cell">
+				<h2>Birra artigianale in bottiglia</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-birra-bottiglia}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="vino" data-magellan-target="vino">
-				<div class="small-12 cell">
-					<h2>Vino in Caraffa</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-vino-caraffa}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="vino" data-magellan-target="vino">
+			<div class="small-12 cell">
+				<h2>Vino in Caraffa</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-vino-caraffa}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
-				<div class="small-12 cell">
-					<h2>Vino<small>Bottigia | Calice</small></h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-vino}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+			</div>
+			<div class="small-12 cell">
+				<h2>Vino<small>Bottigia | Calice</small></h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-vino}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="liquore" data-magellan-target="liquore">
-				<div class="small-12 cell">
-					<h2>Amari</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-amaro}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="liquore" data-magellan-target="liquore">
+			<div class="small-12 cell">
+				<h2>Amari</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-amaro}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
-				<div class="small-12 cell">
-					<h2>Rhum</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-rhum}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+			</div>
+			<div class="small-12 cell">
+				<h2>Rhum</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-rhum}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
-				<div class="small-12 cell">
-					<h2>Wiskey</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-wiskey}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+			</div>
+			<div class="small-12 cell">
+				<h2>Wiskey</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-wiskey}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="grid-x grid-margin-x grid-margin-y" id="drink" data-magellan-target="drink">
-				<div class="small-12 cell">
-					<h2>Drinks</h2>
-					<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
-						{{#each global.menu-drinks}}
-						<div class="cell">
-							<div class="card">
-								<div class="card-section">
-									<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-									<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-								</div>
+		<section class="grid-x grid-margin-x grid-margin-y" id="drink" data-magellan-target="drink">
+			<div class="small-12 cell">
+				<h2>Drinks</h2>
+				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
+					{{#each global.menu-drinks}}
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
+								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
 							</div>
 						</div>
-						{{/each}}
 					</div>
+					{{/each}}
 				</div>
 			</div>
 		</section>
