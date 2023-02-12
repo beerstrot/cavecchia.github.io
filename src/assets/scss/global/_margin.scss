@@ -50,6 +50,14 @@ margini
     }
 }
 
+.extra-space-image-tab-menu {
+    margin-top: 0.5rem;
+    @include breakpoint(small only) {
+        margin-top: 1.5rem;
+        margin-bottom: 0rem;
+    }
+}
+
 .extra-space-video-home {
     margin-top: 0.35rem;
     @include breakpoint(small only) {
