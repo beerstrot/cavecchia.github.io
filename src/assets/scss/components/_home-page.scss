@@ -2,12 +2,15 @@
 homepage
 ===================================================================*/
 .homepage-hero {
-    background: url('../../assets/img/cover/home-cover.gif') center center;
+    background: url('../../assets/img/cover/cover-home.gif') center center;
     background-size: cover;
     height: 40rem;
     overflow: hidden;
     @include breakpoint(small only) {
             height: 27rem;
+    }
+    @include breakpoint(xxlarge) {
+            height: 60rem;
     }
     h1 {
         text-transform: none;
