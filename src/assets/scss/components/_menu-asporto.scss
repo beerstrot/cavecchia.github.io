@@ -138,6 +138,8 @@ a.is-active::after {
     justify-content: flex-start;
     align-items: center;
     -webkit-overflow-scrolling: touch;
+    border-top:1px solid $light-gray;
+    border-bottom:1px solid $light-gray;
 }
 
 .hs:before,

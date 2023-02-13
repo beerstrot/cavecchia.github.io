@@ -347,7 +347,7 @@ asporto-sushi-hot-roll:
     class-price:
     alt-image: Roll Caldo Gambero e Salmone
   -
-    item-name: Roll Caldo alle Mandorle
+    item-name: Roll Caldo Mandorle
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
@@ -359,7 +359,7 @@ asporto-sushi-hot-roll:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Roll Caldo alle Mandorle
+    alt-image: Roll Caldo Mandorle
   -
     item-name: Roll Cado Gamberi
     item-image-16-9: https://picsum.photos/1920/1080
