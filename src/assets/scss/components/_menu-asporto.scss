@@ -126,7 +126,7 @@ a.is-active::after {
     border: 3px solid #73AD21;
 }
 
-// infinite scroll
+// infinite horizontal scroll
 .hs {
     display: grid;
     grid-gap: 0rem;
@@ -152,6 +152,8 @@ a.is-active::after {
     scroll-snap-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,7 +165,25 @@ a.is-active::after {
     a {
         font-size: 0.875rem;
     }
+
 }
+
+.hs> li:first-child {
+    padding-left: 0.7rem;
+    @include breakpoint(medium only) {
+        padding-left: 1.3rem;
+    }
+     @include breakpoint(large only) {
+        padding-left: 1.3rem;
+    }
+    @include breakpoint(xlarge only) {
+        padding-left: 1.4rem;
+    }
+    @include breakpoint(xxlarge only) {
+        padding-left: 1.8rem;
+    }
+}
+
 
 .no-scrollbar {
     scrollbar-width: none;
