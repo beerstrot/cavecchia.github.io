@@ -4,8 +4,8 @@ asporto-sushi-signature:
     item-image-16-9: assets/img/test/test-immagine-16-9.jpg
     item-image-1-1: assets/img/test/test-immagine-1-1.jpg
     item-price: 15
-    item-description: Gambero in tempura e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
-    item-description-short: Gambero in tempura e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
+    item-description: Gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
+    item-description-short: Gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
     item-allergeni: Pesce, Uova, Latte, Sedano, Senape
     id-data: rollCaVecchiaBeerstrot
     class-image-1-1:
@@ -223,8 +223,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Gambero in tempura e filetto di salmone ricoperti da tartare di salmone, maionese e lime
-    item-description-short: Gambero in tempura e filetto di salmone ricoperti da tartare di salmone, maionese e lime
+    item-description: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime
+    item-description-short: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime
     item-allergeni: Pesce, Uova
     id-data: ebiSalmonRoll
     class-note: hide
@@ -279,8 +279,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
-    item-description: Gambero in tempura e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
-    item-description-short: Gambero in tempura e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
+    item-description: Gambero in panko croccante e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
+    item-description-short: Gambero in panko croccante e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
     item-allergeni: pesce, uovo
     id-data: mexicoRoll
     class-note: hide
@@ -293,8 +293,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Branzino fritto in panko ricoperto da salmone flambè e maionese alla senape
-    item-description-short: Branzino fritto in panko ricoperto da salmone flambè e maionese alla senape
+    item-description: Branzino in panko croccante ricoperto da salmone flambè e maionese alla senape
+    item-description-short: Branzino in panko croccante ricoperto da salmone flambè e maionese alla senape
     item-allergeni: pesce, uovo, senape
     id-data: seabassRock
     class-note: hide
@@ -307,8 +307,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
-    item-description: Gambero croccante in panko e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
-    item-description-short: Gambero croccante in panko e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
+    item-description: Gambero in panko croccante e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
+    item-description-short: Gambero in panko croccante e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
     item-allergeni: pesce, uovo, senape, frutta a guscio
     id-data: mediterraneoStyle
     class-note: hide
@@ -333,75 +333,74 @@ asporto-sushi-roll-selection:
 
 asporto-sushi-hot-roll:
   -
-    item-name: Roll Caldo Gambero e Salmone
-    item-image-16-9: https://picsum.photos/1920/1080
-    item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 12
-    item-description: Gambero in tempura e filetto di salmone ricoperti da tartare di salmone, maionese e lime
-    item-description-short: Gambero in tempura e filetto di salmone ricoperti da tartare di salmone, maionese e lime
-    item-allergeni: Pesce, Uova
-    id-data: ebiSalmonHotRoll
-    class-note: hide
-    class-cottura: hide
-    class-allergeni:
-    class-price:
-    alt-image: Roll Caldo Gambero e Salmone
-  -
-    item-name: Roll Caldo Mandorle
+    item-name: Hot Roll Salmone
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
-    item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
-    item-description-short: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
+    item-description: Hosomaki di salmone in panko croccante ricoperto da philadelphia, fragole e salsa teriyaki
+    item-description-short: Hosomaki di salmone in panko croccante ricoperto da philadelphia, fragole e salsa teriyaki
     item-allergeni: Pesce, Uova
-    id-data: almondHotRoll
+    id-data: hotRollSalmone
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Roll Caldo Mandorle
+    alt-image: Hot Roll Salmone
   -
-    item-name: Roll Cado Gamberi
+    item-name: Hot Roll Tonno
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 14
-    item-description: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
-    item-description-short: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
+    item-price: 10
+    item-description: Hosomaki di avocado in panko croccante ricoperto da tartare di tonno piccante, cipolla fritta e maionese
+    item-description-short: Hosomaki di avocado in panko croccante ricoperto da tartare di tonno piccante, cipolla fritta e maionese
+    item-allergeni: Pesce, Uova
+    id-data: hotRollTuna
+    class-note: hide
+    class-cottura: hide
+    class-allergeni:
+    class-price:
+    alt-image: Hot Roll Tonno
+  -
+    item-name: Hot Roll Mandorle
+    item-image-16-9: https://picsum.photos/1920/1080
+    item-image-1-1: https://picsum.photos/1920/1920
+    item-price: 10
+    item-description: Hosomaki di avocado in panko croccante ricoperto da tartare di salmone piccante, salsa teriyaki e scaglie di mandorle
+    item-description-short: Hosomaki di avocado in panko croccante ricoperto da tartare di salmone piccante, salsa teriyaki e scaglie di mandorle
     item-allergeni: Pesce, frutta a guscio
-    id-data: shrimpHotRoll
+    id-data: hotRollMandorle
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Roll Cado Gamberi
+    alt-image: Hot Roll Mandorle
   -
-    item-name: Roll Caldo Tonno
+    item-name: Hot Roll Salmone e Branzino
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 12
-    item-description: Tonno e avocado ricoperti da tobiko red
-    item-description-short: Tonno e avocado ricoperti da tobiko red
+    item-price: 10
+    item-description: Hosomaki di salmone e avocado in panko croccante ricoperto da tartare di branzino, salsa teriyaki, salsa al tartufo e tobiko nero
+    item-description-short: Hosomaki di salmone e avocado in panko croccante ricoperto da tartare di branzino, salsa teriyaki, salsa al tartufo e tobiko nero
     item-allergeni: pesce
-    id-data: tunaHotRoll
+    id-data: hotRollSalmoneAvocado
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Roll Caldo Tonno
+    alt-image: Hot Roll Salmone e Branzino
   -
-    item-name: Roll Caldo Mexico
+    item-name: Hot Roll Sesamo
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-price: 13
-    item-description: Gambero in tempura e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
-    item-description-short: Gambero in tempura e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
-    item-allergeni: pesce, uovo
-    id-data: mexicoHotRoll
+    item-price: 10
+    item-description: Hosomaki di salmone in panko croccante ricoperto da philadelphia, salsa teriyaki, erba cipollina e sesamo tritato
+    item-description-short: Hosomaki di salmone in panko croccante ricoperto da philadelphia, salsa teriyaki, erba cipollina e sesamo tritato
+    id-data: hotRollSesamo
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Roll Caldo Mexico
+    alt-image: Hot Roll Sesamo
 
 
 asporto-sushi-maki-ordinary-style:
@@ -410,8 +409,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: Salmone in tempura e philadelphia guarniti con salsa teriyaki
-    item-description-short: Salmone in tempura e philadelphia guarniti con salsa teriyaki
+    item-description: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki
+    item-description-short: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki
     item-allergeni: Pesce, Uova, Soia
     id-data: uramakiPhiladelphiaOrdinary
     class-note: hide
@@ -448,12 +447,12 @@ asporto-sushi-maki-ordinary-style:
     class-price:
     alt-image: Uramaki Tonno
   -
-    item-name: Uramaki Ebi Ten
+    item-name: Uramaki Ebi Panko
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: Gambero in tempura e maionese guarniti con semi di sesamo e salsa teriyaki
-    item-description-short: Gambero in tempura e maionese guarniti con semi di sesamo e salsa teriyaki
+    item-description: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki
+    item-description-short: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki
     item-allergeni: pesce, Uovo
     id-data: uramakiEbiTenOrdinary
     class-note: hide
@@ -483,8 +482,8 @@ asporto-sushi-temaki:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 6
-    item-description: Tartare di salmone, avocado, maionese piccante e semi di sesamo
-    item-description-short: Tartare di salmone, avocado, maionese piccante e semi di sesamo
+    item-description: Tartare di tonno, avocado, maionese piccante e semi di sesamo
+    item-description-short: Tartare di tonno, avocado, maionese piccante e semi di sesamo
     item-allergeni: Pesce, Uova, Soia
     id-data: temakiTonnoAcocado
     class-note: hide
@@ -497,8 +496,8 @@ asporto-sushi-temaki:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 7
-    item-description: Gambero croccante in panko, tartare di salmone e erba cipollina
-    item-description-short: Gambero croccante in panko, tartare di salmone e erba cipollina
+    item-description: Gambero in panko croccante, tartare di salmone e erba cipollina
+    item-description-short: Gambero in panko croccante, tartare di salmone e erba cipollina
     item-allergeni: Pesce, Uova, Soia
     id-data: temakiCrunch
     class-note: hide
@@ -525,8 +524,8 @@ asporto-sushi-temaki:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 5
-    item-description: Philadelphia, cetriolo, carote, avocado e salsa teryiaki
-    item-description-short: Philadelphia, cetriolo, carote, avocado e salsa teryiaki
+    item-description: Philadelphia, cetriolo, carote, avocado e salsa teriyaki
+    item-description-short: Philadelphia, cetriolo, carote, avocado e salsa teriyaki
     item-allergeni: Pesce, Uova, Soia
     id-data: temakiVeggie
     class-note: hide
@@ -580,19 +579,19 @@ asporto-sushi-nigiri:
     class-price:
     alt-image: Nigiri Branzino
   -
-    item-name: Nigiri Gambero in Tempura
+    item-name: Nigiri Gambero in Panko
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
-    item-description: 2 pezzi di gambero su riso
-    item-description-short: 2 pezzi di gambero su riso
+    item-description: 2 pezzi di gambero in panko croccante su riso
+    item-description-short: 2 pezzi di gambero in panko croccante su riso
     item-allergeni: Pesce, Soia
     id-data: ebiTenNigiri
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Nigiri Gambero in Tempura
+    alt-image: Nigiri Gambero in Panko Croccante
   -
     item-name: Nigiri Gambero Rosso
     item-image-16-9: https://picsum.photos/1920/1080
@@ -670,8 +669,8 @@ asporto-per-stuzzicare:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cipolle Rosse
-    item-description: Cipolle rosse in tempura
-    item-description-short: Cipolle rosse in tempura
+    item-description: Cipolle rosse in panko croccante
+    item-description-short: Cipolle rosse in panko croccante
     item-allergeni: Glutine, Latte, Crostacei
     item-price: 4,9
     id-data: cipolleRosse
@@ -679,7 +678,7 @@ asporto-per-stuzzicare:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Cipolle Rosse
+    alt-image: Cipolle Rosse in panko croccante
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
