@@ -1,37 +1,46 @@
 ---
-title: Ordine Confermato. Grazie
-description:
+title: Ordine confermato. Grazie
+description: ordine d'asporto inviato correttamente. Questa è una conferma dell'ordine.
 canonical: https://www.beerstrot.it/checkout.html
 ---
-<div class="grid-container panel-home-n">
+<header class="grid-container">
     <div class="grid-x grid-margin-x">
         <div class="small-12 cell">
-            <h1 class="first-paragraph-no-hero">{{title}}</h1>
-
+            <h1 class="first-paragraph-no-hero" id="ttitle">{{title}}</h1>
         </div>
     </div>
-    <div class="grid-x grid-margin-x grid-margin-y">
-        <div class="small-12 medium-6 cell">
-            <div class="grid-x grid-margin-x grid-margin-y">
-                <div class="small-12 medium-12 large-11 xlarge-8 xxlarge-8 cell">
-                    <p>Il tuo ordine è confermato. A breve riceverai una email con i dettagli.</p>
-                    <p>Se non dovessi ricevere l'email, il tuo ordine è comunque confermato. Ti aspettiamo per il ritiro alle ore <strong>19.30</strong></p>
-                    <p>PS: verifica che l'email non finisca nella spam. Se hai dato una email sbagliata comunicacelo al tuo arrivo che la correggiamo per ordini futuri.</p>
-                    <p>Grazie mille</p>
-                </div>
-                <div class="small-12 cell">
-                    <h2>Dove ritirare l'asporto</h2>
-                    <p>Ca' Vecchia Beerstrot
-                        <a href="http://maps.apple.com/?lsp=9902&auid=2172393922260918433&sll=43.435636,13.377735&q=Ca%27%20Vecchia%20Beerstrot&hnear=Via%20Centofinestre%2020%2C%2060024%20Filottrano%2C%20Ancona%2C%20Italia" class="highlight" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="streetAddress">Via Centofinestre, 20</span>
-                        <span itemprop="postalCode">60024</span>
-                        <span itemprop="addressLocality">Filottrano</span>
-                        <span itemprop="addressRegion">AN</span>
-                        </a>
-                    </p>
-                </div>
+</header>
+<div class="panel-home-n">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="small-12 medium-8 cell">
+                <fieldset class="fieldset">
+                     <legend id="tlegend">Dettaglio ordine asporto </legend>
+                        <ul class="no-bullet" id="infoList">
+                            <li><strong>Nome: </strong><span id="name"></span></li>
+                            <li><strong>Email: </strong><span id="email"></span></li>
+                            <li><strong>Telefono: </strong><span id="telephone"></span></li>
+                            <br>
+                            <li><strong>Giorno ritiro: </strong><span id="day"></span></li>
+                            <li><strong>Orario ritiro: </strong><span id="time1"></span></li>
+                            <br>
+                            <li><strong>Dove ritirare: </strong>
+                                <a href="http://maps.apple.com/?lsp=9902&auid=2172393922260918433&sll=43.435636,13.377735&q=Ca%27%20Vecchia%20Beerstrot&hnear=Via%20Centofinestre%2020%2C%2060024%20Filottrano%2C%20Ancona%2C%20Italia" class="highlight" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">Via Centofinestre, 20</span>
+                                <span itemprop="postalCode">- 60024</span>
+                                <span itemprop="addressLocality">Filottrano</span>
+                                <span itemprop="addressRegion">AN</span>
+                                </a>
+                            </li>
+                        </ul>
+                </fieldset>
+            </div>
+            <div class="small-12 medium-8 cell extra-space">
+                <p>Il tuo ordine è confermato. A breve riceverai una email con i dettagli.</p>
+                <p>Se non dovessi ricevere l'email, il tuo ordine è comunque confermato.</p>
+                <p>PS: verifica che l'email non sia finita nella spam. Se hai dato una email sbagliata comunicacelo al tuo arrivo che la correggiamo per ordini futuri.</p>
+                <p>Grazie mille</p>
             </div>
         </div>
-
     </div>
 </div>
