@@ -80,29 +80,3 @@ bordo per debugging
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
-//test grid-templates and it works
-#page {
-    display: grid;
-    grid-template:  "item-image  item-text" 3fr
-                    "item-image  item-button" 34.5px;
-    grid-template-columns: minmax(120px, 1fr) 3fr;
-    column-gap: 16px;
-    margin-bottom: 1.6rem;
-   // background: rgba(lightpink, 0.2);
-    .item-image {
-        //background-color: rgba(lightblue, 0.4);
-        grid-area: item-image;
-        padding-top: 0.84rem;
-    }
-    .item-text {
-      //  background-color: rgba(yellow, 0.4);;
-        grid-area: item-text;
-    }
-    .item-button {
-        //background-color: rgba(red, 0.1);
-        grid-area: item-button;
-        margin:0;
-        padding:0;
-    }
-}
