@@ -750,7 +750,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Beerstrot
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -764,7 +764,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Beerstrot Doppio
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -778,7 +778,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: New York
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -792,7 +792,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: New York Doppio
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -806,7 +806,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Diablo
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -820,7 +820,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Diablo Doppio
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -834,7 +834,7 @@ asporto-hamburger-classici:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Pollo
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -848,7 +848,7 @@ asporto-hamburger-classici:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Pollo Doppio
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -862,7 +862,7 @@ asporto-hamburger-classici:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Pulled Pork
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -876,7 +876,7 @@ asporto-hamburger-classici:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Mini Burger
 
 asporto-hamburger-stagione:
   -
@@ -892,7 +892,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Cacio e Pepe
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -906,11 +906,11 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Cacio e Pepe Doppio
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
-    item-name: Inverno
+    item-name:
     item-description: Manzo 180 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
     item-description-short: Manzo 180 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
     item-allergeni: Glutine, Uova, Latte
@@ -920,7 +920,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Inverno
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -934,7 +934,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Inverno Doppio
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -948,7 +948,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Deciso
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -962,7 +962,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Deciso Doppio
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -976,7 +976,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Carbonara
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -990,7 +990,7 @@ asporto-hamburger-stagione:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Carbonara Doppio
 
 asporto-hamburger-vegetariano:
   -
@@ -1006,7 +1006,7 @@ asporto-hamburger-vegetariano:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Vegetariano Fagioli
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1020,7 +1020,7 @@ asporto-hamburger-vegetariano:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Vegetariano Quinoa
 
 asporto-carne:
   -
@@ -1036,7 +1036,7 @@ asporto-carne:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Costine
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1050,7 +1050,7 @@ asporto-carne:
     class-cottura:
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Entrecôte
 
 asporto-dolce:
   -
@@ -1066,7 +1066,7 @@ asporto-dolce:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Cheesecake
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1080,7 +1080,7 @@ asporto-dolce:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Blondie
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1094,7 +1094,7 @@ asporto-dolce:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Birramisù
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1108,7 +1108,7 @@ asporto-dolce:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image:
+    alt-image: Whoop
 
 asporto-bevanda:
   -
@@ -1124,6 +1124,7 @@ asporto-bevanda:
     class-cottura: hide
     class-allergeni: hide
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1137,6 +1138,7 @@ asporto-bevanda:
     class-cottura: hide
     class-allergeni: hide
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1150,6 +1152,7 @@ asporto-bevanda:
     class-cottura: hide
     class-allergeni: hide
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1163,6 +1166,7 @@ asporto-bevanda:
     class-cottura: hide
     class-allergeni: hide
     class-price:
+    alt-image:
 
 asporto-birra-bottiglia:
   -
@@ -1178,6 +1182,7 @@ asporto-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1191,6 +1196,7 @@ asporto-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1204,6 +1210,7 @@ asporto-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1217,6 +1224,7 @@ asporto-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1230,6 +1238,7 @@ asporto-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1243,6 +1252,7 @@ asporto-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1256,6 +1266,7 @@ asporto-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
 
 asporto-vino:
   -
@@ -1271,6 +1282,7 @@ asporto-vino:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1284,6 +1296,7 @@ asporto-vino:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1297,6 +1310,7 @@ asporto-vino:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1310,6 +1324,7 @@ asporto-vino:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1323,6 +1338,7 @@ asporto-vino:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1336,6 +1352,7 @@ asporto-vino:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1349,6 +1366,7 @@ asporto-vino:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
 
 menu-per-stuzzicare:
   -
@@ -1360,8 +1378,12 @@ menu-per-stuzzicare:
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,9
     id-data: bocconciniPollo
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1371,8 +1393,12 @@ menu-per-stuzzicare:
     item-allergeni: Glutine, Uova, Latte, Sedano
     item-price: 5,5
     id-data: oliveAscolana
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1382,8 +1408,12 @@ menu-per-stuzzicare:
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,9
     id-data: mozzarelleFritte
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1393,6 +1423,8 @@ menu-per-stuzzicare:
     item-allergeni: Glutine, Latte, Crostacei
     item-price: 4,9
     id-data: cipolleRosse
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
   -
@@ -1404,8 +1436,12 @@ menu-per-stuzzicare:
     item-allergeni: Anidride Solforosa e Solfiti, Latte
     item-price: 5,5
     id-data: peperonciniPiccanti
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1415,8 +1451,12 @@ menu-per-stuzzicare:
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,5
     id-data: alettePollo
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1426,8 +1466,12 @@ menu-per-stuzzicare:
     item-allergeni: nessuno
     item-price: 5,5
     id-data: arrosticiniPecora
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1437,8 +1481,12 @@ menu-per-stuzzicare:
     item-allergeni: nessuno
     item-price: 4,5
     id-data: patateFritte
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
 
 
 menu-hamburger-classici:
@@ -1453,6 +1501,8 @@ menu-hamburger-classici:
     id-data: beerstrotSingolo
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1464,6 +1514,8 @@ menu-hamburger-classici:
     id-data: beerstrotDoppio
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1475,6 +1527,8 @@ menu-hamburger-classici:
     id-data: newyorkSingolo
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1486,6 +1540,8 @@ menu-hamburger-classici:
     id-data: newyorkDoppio
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1497,6 +1553,8 @@ menu-hamburger-classici:
     id-data: diabloSingolo
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1508,6 +1566,8 @@ menu-hamburger-classici:
     id-data: diabloDoppio
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1519,6 +1579,8 @@ menu-hamburger-classici:
     id-data: polloSingolo
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1530,6 +1592,8 @@ menu-hamburger-classici:
     id-data: polloDoppio
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1541,6 +1605,8 @@ menu-hamburger-classici:
     id-data: pulledPork
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1552,6 +1618,8 @@ menu-hamburger-classici:
     id-data: miniBurger
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
 
 menu-hamburger-stagione:
   -
@@ -1565,6 +1633,8 @@ menu-hamburger-stagione:
     id-data: cacioSingolo
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1576,6 +1646,8 @@ menu-hamburger-stagione:
     id-data: cacioDoppio
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1587,6 +1659,8 @@ menu-hamburger-stagione:
     id-data: invernoSingolo
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1598,6 +1672,8 @@ menu-hamburger-stagione:
     id-data: invernoDoppio
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1609,6 +1685,8 @@ menu-hamburger-stagione:
     id-data: decisoSingolo
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1620,6 +1698,8 @@ menu-hamburger-stagione:
     id-data: decisoDoppio
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1631,6 +1711,8 @@ menu-hamburger-stagione:
     id-data: carbonaraSingolo
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1642,6 +1724,8 @@ menu-hamburger-stagione:
     id-data: carbonaraDoppio
     class-cottura:
     class-allergeni:
+    class-price:
+    alt-image:
 
 menu-hamburger-vegetariano:
   -
@@ -1655,6 +1739,8 @@ menu-hamburger-vegetariano:
     id-data: vegetarianoFagioli
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1666,6 +1752,8 @@ menu-hamburger-vegetariano:
     id-data: vegetarianoQuinoa
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
 
 menu-carne:
   -
@@ -1677,8 +1765,12 @@ menu-carne:
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo
     item-price: 13,9
     id-data: costine
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1688,8 +1780,12 @@ menu-carne:
     item-allergeni: nessuno
     item-price: 19
     id-data: entrecote
+    class-description:
+    class-note: hide
     class-cottura:
     class-allergeni: hide
+    class-price:
+    alt-image:
 
 menu-dolce:
   -
@@ -1701,8 +1797,12 @@ menu-dolce:
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
     item-price: 5
     id-data: cheesecake
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1712,8 +1812,12 @@ menu-dolce:
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
     item-price: 5
     id-data: blondie
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1723,8 +1827,12 @@ menu-dolce:
     item-allergeni: Glutine, Latte, Uova
     item-price: 5
     id-data: birramisu
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1734,8 +1842,12 @@ menu-dolce:
     item-allergeni: Arachidi, Glutine, Latte, Uova
     item-price: 5
     id-data: whoop
+    class-description:
+    class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
 
 menu-bevanda:
   -
@@ -1747,9 +1859,12 @@ menu-bevanda:
     item-allergeni: nessuno
     item-price: 1 | 1,5
     id-data: acquaBevanda
+    class-description:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1759,9 +1874,12 @@ menu-bevanda:
     item-allergeni: nessuno
     item-price: 3
     id-data: cocaCola
+    class-description:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1771,9 +1889,12 @@ menu-bevanda:
     item-allergeni: nessuno
     item-price: 3
     id-data: cocaColaZero
+    class-description:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1783,9 +1904,12 @@ menu-bevanda:
     item-allergeni: nessuno
     item-price: 3
     id-data: fanta
+    class-description:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1795,9 +1919,12 @@ menu-bevanda:
     item-allergeni: nessuno
     item-price: 3
     id-data: acquaTonica
+    class-description:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
 
 menu-caffe:
   -
@@ -1813,6 +1940,8 @@ menu-caffe:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1826,24 +1955,28 @@ menu-caffe:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Orzo
-    item-description: Tazza piccola, tazza grande
+    item-description: Tazza piccola o tazza grande
     item-description-short:
     item-allergeni:
     item-price: 1,5
     id-data: orzoCaffe
-    class-description: hide
+    class-description:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Cappuccino
-    item-description: Normale, deca
+    item-description: Normale, Deca
     item-description-short:
     item-allergeni:
     item-price: 3
@@ -1852,6 +1985,8 @@ menu-caffe:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
 
 menu-birra-spina:
   -
@@ -1867,6 +2002,7 @@ menu-birra-spina:
     class-cottura: hide
     class-allergeni:
     class-price: hide
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1880,6 +2016,7 @@ menu-birra-spina:
     class-cottura: hide
     class-allergeni:
     class-price: hide
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1893,6 +2030,7 @@ menu-birra-spina:
     class-cottura: hide
     class-allergeni:
     class-price: hide
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1906,6 +2044,7 @@ menu-birra-spina:
     class-cottura: hide
     class-allergeni:
     class-price: hide
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1919,6 +2058,7 @@ menu-birra-spina:
     class-cottura: hide
     class-allergeni:
     class-price: hide
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1932,6 +2072,7 @@ menu-birra-spina:
     class-cottura: hide
     class-allergeni:
     class-price: hide
+    alt-image:
 
 
 menu-birra-bottiglia:
@@ -1948,6 +2089,7 @@ menu-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1961,6 +2103,7 @@ menu-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1974,6 +2117,7 @@ menu-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -1987,6 +2131,7 @@ menu-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2000,6 +2145,7 @@ menu-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2013,6 +2159,7 @@ menu-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2026,6 +2173,7 @@ menu-birra-bottiglia:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
 
 menu-vino-caraffa:
   -
@@ -2041,6 +2189,7 @@ menu-vino-caraffa:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2054,6 +2203,7 @@ menu-vino-caraffa:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2067,6 +2217,7 @@ menu-vino-caraffa:
     class-cottura: hide
     class-allergeni:
     class-price:
+    alt-image:
 
 menu-vino:
   -
@@ -2081,6 +2232,8 @@ menu-vino:
     class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2093,6 +2246,8 @@ menu-vino:
     class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2105,6 +2260,8 @@ menu-vino:
     class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2117,6 +2274,8 @@ menu-vino:
     class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2129,6 +2288,8 @@ menu-vino:
     class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2141,6 +2302,8 @@ menu-vino:
     class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2153,6 +2316,8 @@ menu-vino:
     class-note: hide
     class-cottura: hide
     class-allergeni:
+    class-price:
+    alt-image:
 
 menu-amaro:
   -
@@ -2168,6 +2333,8 @@ menu-amaro:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2181,6 +2348,8 @@ menu-amaro:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2194,6 +2363,8 @@ menu-amaro:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2207,6 +2378,8 @@ menu-amaro:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2220,6 +2393,8 @@ menu-amaro:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
 
 menu-rhum:
   -
@@ -2235,6 +2410,8 @@ menu-rhum:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2248,6 +2425,8 @@ menu-rhum:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2261,6 +2440,8 @@ menu-rhum:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
 
 menu-wiskey:
   -
@@ -2276,6 +2457,8 @@ menu-wiskey:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2289,6 +2472,8 @@ menu-wiskey:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2302,6 +2487,8 @@ menu-wiskey:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
 
 menu-drinks:
   -
@@ -2317,6 +2504,8 @@ menu-drinks:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2330,6 +2519,8 @@ menu-drinks:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2343,6 +2534,8 @@ menu-drinks:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2356,6 +2549,8 @@ menu-drinks:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2369,6 +2564,8 @@ menu-drinks:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
   -
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
@@ -2382,4 +2579,6 @@ menu-drinks:
     class-note: hide
     class-cottura: hide
     class-allergeni: hide
+    class-price:
+    alt-image:
 

@@ -23,16 +23,6 @@ bordo per debugging
 //     border: 1px solid red;
 // }
 
-// fix ios 100vh problem
-.reveal-ios-bug {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    padding-bottom: 1rem;
-    @include breakpoint (small only) {
-    top: 0 !important;
-    max-height: calc(100vh - 0px);
-    }
-}
 
 // asporto immagine e testo allineati  schermo piccolo
 .immagine-testo-small-grid {
