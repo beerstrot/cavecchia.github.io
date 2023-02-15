@@ -6,7 +6,7 @@ canonical: https://www.beerstrot.it/menu.html
 <style>.card{margin-bottom:0.5rem;}</style>
 <header><img src="{{root}}assets/img/cover/cover-menu-hamburgers.jpeg" alt="Ca' Vecchia Beerstrot Menù"/></header>
 <div class="grid-container">
-	<div class="grid-x grid-margin-x" >
+	<div class="grid-x grid-margin-x">
 		<div class="small-12 cell">
 			<h1 class="first-paragraph">{{title}} <small>(Coperto 1,5)</small></h1>
 			<button onclick="toggle_text()" type="button" id="showImage" class="button">Mostra immagini</button>
@@ -18,7 +18,7 @@ canonical: https://www.beerstrot.it/menu.html
 		<div class="small-12 cell" data-sticky-container data-magellan data-deep-linking="true" data-offset="30">
 			<ul class="menu hs no-scrollbar" data-sticky data-top-anchor="magellanStickyTop" data-options="marginTop:0;" data-sticky-on="small" style="padding:0 0rem; margin-top:0;">
 				<li><a href="#sushi">Sushi</a></li>
-				<li><a href="#stuzzicare">Per Stuzzicare</a></li>
+				<li><a href="#perStuzzicare">Per Stuzzicare</a></li>
 				<li><a href="#hamburger">Hamburger</a></li>
 				<li><a href="#carne">Carni</a></li>
 				<li><a href="#dolce">Dolci</a></li>
@@ -39,16 +39,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Sushi i Nostri Signature</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.asporto-sushi-signature}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img data-toggler src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p>{{item-description}}
-								<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-con-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -56,16 +48,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Sushi Selezione di Roll</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.asporto-sushi-roll-selection}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p>{{item-description}}
-								<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-con-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -73,34 +57,19 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Sushi Hosomaki Hot Roll</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.asporto-sushi-hot-roll}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p>{{item-description}}
-								<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-con-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
 		</section>
-		<section class="grid-x grid-margin-x grid-margin-y" id="stuzzicare" data-magellan-target="stuzzicare">
+		<section class="grid-x grid-margin-x grid-margin-y" id="perStuzzicare" data-magellan-target="perStuzzicare">
 			<div class="small-12 cell">
 				<h2>Per Stuzzicare</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-per-stuzzicare}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-con-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -110,16 +79,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Hamburger Classici<small>Serviti con patate fritte e a cottura media</small></h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-hamburger-classici}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p>{{item-description}}
-								<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-con-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -127,15 +88,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Hamburger di Stagione<small>Serviti con patate fritte e a cottura media</small></h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-hamburger-stagione}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-con-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -143,15 +97,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Hamburger Vegetariani<small>Serviti con patate fritte e a cottura media</small></h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-hamburger-vegetariano}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-con-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -161,15 +108,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Carne</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-carne}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-con-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -179,32 +119,20 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Dolci<small>Fatti in casa</small></h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-dolce}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="{{item-image-16-9}}" id="theImage" style="display:none" class="{{class-image}} extra-space-image-tab-menu" alt="{{alt-image}}">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-con-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
 		</section>
+<!-- inizio layout no immagini -->
 		<section class="grid-x grid-margin-x grid-margin-y" id="bevanda" data-magellan-target="bevanda">
 			<div class="small-12 cell">
 				<h2>Bevande</h2>
 				<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-bevanda}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -214,14 +142,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Caffè</h2>
 				<div class="grid-x small-up-2 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-caffe}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -231,14 +153,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Birra artigianale alla spina<small>Piccola 4 | Media 6 | Caraffa 12</small></h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-birra-spina}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -246,14 +162,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Birra artigianale in bottiglia</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-birra-bottiglia}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -263,14 +173,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Vino in Caraffa</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-vino-caraffa}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -278,14 +182,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Vino<small>Bottigia | Calice</small></h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-vino}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -295,14 +193,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Amari</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-amaro}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -310,14 +202,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Rhum</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-rhum}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -325,14 +211,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Wiskey</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-wiskey}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>
@@ -342,14 +222,8 @@ canonical: https://www.beerstrot.it/menu.html
 				<h2>Drinks</h2>
 				<div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x grid-margin-y">
 					{{#each global.menu-drinks}}
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<h3>{{item-name}}<span class="price {{class-price}}">{{item-price}}</span></h3>
-								<p class="{{class-description}}">{{item-description}}<span class="{{class-allergeni}}"><br><small>Allergeni: {{item-allergeni}}</small></span></p>
-							</div>
-						</div>
-					</div>
+					{{> prodotti-menu-senza-immagine}}
+
 					{{/each}}
 				</div>
 			</div>

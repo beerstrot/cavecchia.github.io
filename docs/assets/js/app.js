@@ -9904,222 +9904,6 @@ Tabs.defaults = {
 
 /***/ }),
 
-/***/ "./node_modules/foundation-sites/js/foundation.toggler.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/foundation-sites/js/foundation.toggler.js ***!
-  \****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Toggler": function() { return /* binding */ Toggler; }
-/* harmony export */ });
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _foundation_util_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./foundation.util.motion */ "./node_modules/foundation-sites/js/foundation.util.motion.js");
-/* harmony import */ var _foundation_core_plugin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./foundation.core.plugin */ "./node_modules/foundation-sites/js/foundation.core.plugin.js");
-/* harmony import */ var _foundation_core_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./foundation.core.utils */ "./node_modules/foundation-sites/js/foundation.core.utils.js");
-/* harmony import */ var _foundation_util_triggers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./foundation.util.triggers */ "./node_modules/foundation-sites/js/foundation.util.triggers.js");
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-
-
-
-
-/**
- * Toggler module.
- * @module foundation.toggler
- * @requires foundation.util.motion
- * @requires foundation.util.triggers
- */
-var Toggler = /*#__PURE__*/function (_Plugin) {
-  _inherits(Toggler, _Plugin);
-  var _super = _createSuper(Toggler);
-  function Toggler() {
-    _classCallCheck(this, Toggler);
-    return _super.apply(this, arguments);
-  }
-  _createClass(Toggler, [{
-    key: "_setup",
-    value:
-    /**
-     * Creates a new instance of Toggler.
-     * @class
-     * @name Toggler
-     * @fires Toggler#init
-     * @param {Object} element - jQuery object to add the trigger to.
-     * @param {Object} options - Overrides to the default plugin settings.
-     */
-    function _setup(element, options) {
-      this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Toggler.defaults, element.data(), options);
-      this.className = '';
-      this.className = 'Toggler'; // ie9 back compat
-
-      // Triggers init is idempotent, just need to make sure it is initialized
-      _foundation_util_triggers__WEBPACK_IMPORTED_MODULE_4__.Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
-      this._init();
-      this._events();
-    }
-
-    /**
-     * Initializes the Toggler plugin by parsing the toggle class from data-toggler, or animation classes from data-animate.
-     * @function
-     * @private
-     */
-  }, {
-    key: "_init",
-    value: function _init() {
-      // Collect triggers to set ARIA attributes to
-      var id = this.$element[0].id,
-        $triggers = jquery__WEBPACK_IMPORTED_MODULE_0___default()("[data-open~=\"".concat(id, "\"], [data-close~=\"").concat(id, "\"], [data-toggle~=\"").concat(id, "\"]"));
-      var input;
-      // Parse animation classes if they were set
-      if (this.options.animate) {
-        input = this.options.animate.split(' ');
-        this.animationIn = input[0];
-        this.animationOut = input[1] || null;
-
-        // - aria-expanded: according to the element visibility.
-        $triggers.attr('aria-expanded', !this.$element.is(':hidden'));
-      }
-      // Otherwise, parse toggle class
-      else {
-        input = this.options.toggler;
-        if (typeof input !== 'string' || !input.length) {
-          throw new Error("The 'toggler' option containing the target class is required, got \"".concat(input, "\""));
-        }
-        // Allow for a . at the beginning of the string
-        this.className = input[0] === '.' ? input.slice(1) : input;
-
-        // - aria-expanded: according to the elements class set.
-        $triggers.attr('aria-expanded', this.$element.hasClass(this.className));
-      }
-
-      // - aria-controls: adding the element id to it if not already in it.
-      $triggers.each(function (index, trigger) {
-        var $trigger = jquery__WEBPACK_IMPORTED_MODULE_0___default()(trigger);
-        var controls = $trigger.attr('aria-controls') || '';
-        var containsId = new RegExp("\\b".concat((0,_foundation_core_utils__WEBPACK_IMPORTED_MODULE_3__.RegExpEscape)(id), "\\b")).test(controls);
-        if (!containsId) $trigger.attr('aria-controls', controls ? "".concat(controls, " ").concat(id) : id);
-      });
-    }
-
-    /**
-     * Initializes events for the toggle trigger.
-     * @function
-     * @private
-     */
-  }, {
-    key: "_events",
-    value: function _events() {
-      this.$element.off('toggle.zf.trigger').on('toggle.zf.trigger', this.toggle.bind(this));
-    }
-
-    /**
-     * Toggles the target class on the target element. An event is fired from the original trigger depending on if the resultant state was "on" or "off".
-     * @function
-     * @fires Toggler#on
-     * @fires Toggler#off
-     */
-  }, {
-    key: "toggle",
-    value: function toggle() {
-      this[this.options.animate ? '_toggleAnimate' : '_toggleClass']();
-    }
-  }, {
-    key: "_toggleClass",
-    value: function _toggleClass() {
-      this.$element.toggleClass(this.className);
-      var isOn = this.$element.hasClass(this.className);
-      if (isOn) {
-        /**
-         * Fires if the target element has the class after a toggle.
-         * @event Toggler#on
-         */
-        this.$element.trigger('on.zf.toggler');
-      } else {
-        /**
-         * Fires if the target element does not have the class after a toggle.
-         * @event Toggler#off
-         */
-        this.$element.trigger('off.zf.toggler');
-      }
-      this._updateARIA(isOn);
-      this.$element.find('[data-mutate]').trigger('mutateme.zf.trigger');
-    }
-  }, {
-    key: "_toggleAnimate",
-    value: function _toggleAnimate() {
-      var _this = this;
-      if (this.$element.is(':hidden')) {
-        _foundation_util_motion__WEBPACK_IMPORTED_MODULE_1__.Motion.animateIn(this.$element, this.animationIn, function () {
-          _this._updateARIA(true);
-          this.trigger('on.zf.toggler');
-          this.find('[data-mutate]').trigger('mutateme.zf.trigger');
-        });
-      } else {
-        _foundation_util_motion__WEBPACK_IMPORTED_MODULE_1__.Motion.animateOut(this.$element, this.animationOut, function () {
-          _this._updateARIA(false);
-          this.trigger('off.zf.toggler');
-          this.find('[data-mutate]').trigger('mutateme.zf.trigger');
-        });
-      }
-    }
-  }, {
-    key: "_updateARIA",
-    value: function _updateARIA(isOn) {
-      var id = this.$element[0].id;
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()("[data-open=\"".concat(id, "\"], [data-close=\"").concat(id, "\"], [data-toggle=\"").concat(id, "\"]")).attr({
-        'aria-expanded': isOn ? true : false
-      });
-    }
-
-    /**
-     * Destroys the instance of Toggler on the element.
-     * @function
-     */
-  }, {
-    key: "_destroy",
-    value: function _destroy() {
-      this.$element.off('.zf.toggler');
-    }
-  }]);
-  return Toggler;
-}(_foundation_core_plugin__WEBPACK_IMPORTED_MODULE_2__.Plugin);
-Toggler.defaults = {
-  /**
-   * Class of the element to toggle. It can be provided with or without "."
-   * @option
-   * @type {string}
-   */
-  toggler: undefined,
-  /**
-   * Tells the plugin if the element should animated when toggled.
-   * @option
-   * @type {boolean}
-   * @default false
-   */
-  animate: false
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/foundation-sites/js/foundation.util.box.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/foundation-sites/js/foundation.util.box.js ***!
@@ -21342,7 +21126,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var foundation_sites_js_foundation_smoothScroll__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! foundation-sites/js/foundation.smoothScroll */ "./node_modules/foundation-sites/js/foundation.smoothScroll.js");
 /* harmony import */ var foundation_sites_js_foundation_sticky__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! foundation-sites/js/foundation.sticky */ "./node_modules/foundation-sites/js/foundation.sticky.js");
 /* harmony import */ var foundation_sites_js_foundation_tabs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! foundation-sites/js/foundation.tabs */ "./node_modules/foundation-sites/js/foundation.tabs.js");
-/* harmony import */ var foundation_sites_js_foundation_toggler__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! foundation-sites/js/foundation.toggler */ "./node_modules/foundation-sites/js/foundation.toggler.js");
 
 
 
@@ -21373,7 +21156,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+//import { Toggler } from 'foundation-sites/js/foundation.toggler';
 //import { Tooltip } from 'foundation-sites/js/foundation.tooltip';
 //import { ResponsiveAccordionTabs } from 'foundation-sites/js/foundation.responsiveAccordionTabs';
 
@@ -21419,7 +21202,7 @@ foundation_sites_js_foundation_core__WEBPACK_IMPORTED_MODULE_1__.Foundation.plug
 foundation_sites_js_foundation_core__WEBPACK_IMPORTED_MODULE_1__.Foundation.plugin(foundation_sites_js_foundation_smoothScroll__WEBPACK_IMPORTED_MODULE_15__.SmoothScroll, 'SmoothScroll');
 foundation_sites_js_foundation_core__WEBPACK_IMPORTED_MODULE_1__.Foundation.plugin(foundation_sites_js_foundation_sticky__WEBPACK_IMPORTED_MODULE_16__.Sticky, 'Sticky');
 foundation_sites_js_foundation_core__WEBPACK_IMPORTED_MODULE_1__.Foundation.plugin(foundation_sites_js_foundation_tabs__WEBPACK_IMPORTED_MODULE_17__.Tabs, 'Tabs');
-foundation_sites_js_foundation_core__WEBPACK_IMPORTED_MODULE_1__.Foundation.plugin(foundation_sites_js_foundation_toggler__WEBPACK_IMPORTED_MODULE_18__.Toggler, 'Toggler');
+//Foundation.plugin(Toggler, 'Toggler');
 //Foundation.plugin(Tooltip, 'Tooltip');
 //Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 
