@@ -184,7 +184,12 @@
                 </div>
                 <div class="grid-x">
                     <div class="small-9 medium-6 cell" >
-                        <input id="cani" type="checkbox"><label for="checkbox1">Ho uno o più cani</label>
+                        <div class="">
+                            <label class="checkbox">
+                                <input id="cani" type="checkbox" for="checkbox1"><span class="indicator"></span>Ho uno o più cani
+                            </label>
+                        </div>
+                        <!-- <input id="cani" type="checkbox"><label for="checkbox1">Ho uno o più cani</label> -->
                     </div>
                     <div class="small-12 cell"><hr></div>
                 </div>
@@ -215,14 +220,19 @@
                 </div>
                 <div class="grid-x grid-margin-x">
                     <div class="small-12 cell">
-                        <label id="privacy3">
+                        <div class="checkboxes">
+                            <label id="privacy3" class="checkbox" >
+                                <input id="privacy" type="checkbox" checked><span class="indicator"></span>Accetto la <a href="informazioni-legali.html#privacy" target="_blank" rel="noopener">Informativa sulla privacy</a>*
+                            </label>
+                        </div>
+                       <!--  <label id="privacy3">
                             <input id="privacy" type="checkbox" checked>Accetto la <a href="informazioni-legali.html#privacy" target="_blank" rel="noopener">Informativa sulla privacy</a>*
-                        </label>
+                        </label> -->
                     </div>
                 </div>
                 <div class="grid-x grid-margin-x">
                     <div class="small-12 cell">
-                        <button id="prenota" class="button submit" style="margin-bottom:0.5rem; margin-top:1rem;">Riserva il Tavolo</button>
+                        <button id="prenota" class="button submit" style="margin-bottom:1rem;">Riserva il Tavolo</button>
                     </div>
                     <br>
                 </div>
