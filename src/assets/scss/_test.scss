@@ -24,14 +24,13 @@ bordo per debugging
 // }
 
 
-.ordine-salvato-item {
-  // padding: 0rem 0rem 0rem 0rem;
+.ordine-salvato-title {
+  padding-bottom: 0rem;
 
 }
 
 .ordine-salvato-content {
     padding: 0rem 1rem 1.5rem 1rem;
-    @include breakpoint(large) {
-        padding-right: 12rem;
+
     }
 }
