@@ -56,16 +56,19 @@
                 <h1 class="first-paragraph-no-hero" id="">Il mio account</h1>
             </div>
         </header>
-        <div class="grid-x grid-margin-x grid-margin-y">
-            <div class="small-12 large-7 cell">
-                <h2>Ordini passati</h2>
-                <p>Apri un ordine passato, clicca il pulsante "Metti nel carrello e modifica" (o se vuoi puoi eliminarlo dagli ordini salvati).</p>
+        <div class="grid-x grid-margin-x">
+            <div class="small-12 medium-10 large-8 cell">
+                <h2>Ordini Salvati</h2>
+                <p>Apri un ordine salvato, clicca il pulsante "Metti nel carrello e modifica" (o se vuoi puoi eliminarlo dagli ordini salvati).</p>
                 <p>Una volta nel carrello puoi modificare note, cottura, numero, eliminare alcuni prodotti o aggiungerne di nuovi. Se un prodotto non è disponibile non verrà inserito.</p>
-    
-                <ul class="accordion" data-accordion data-allow-all-closed="true" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500">
-                    <li class="accordion-item" data-accordion-item>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="small-12 medium-8 large-12 cell">
+                <ul class="accordion" data-responsive-accordion-tabs="accordion large-tabs" data-active-collapse="true" data-allow-all-closed="true" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500">
+                    <li class="accordion-item ordine-salvato-item" data-accordion-item>
                         <a href="#ordine5giugno" class="accordion-title">Ordine del 5 giugno 2021</a>
-                        <div class="accordion-content clearfix" data-tab-content id="ordine5giugno">
+                        <div class="accordion-content ordine-salvato-content clearfix" data-tab-content id="ordine5giugno">
                             <div class="grid-x grid-margin-x grid-margin-y">
                             	<div class="small-12 cell">
                             	  	<div class="checkout-summary-item align-middle">
@@ -169,9 +172,9 @@
                             <button type="button" id="" class="button submit float-right">Metti nel carrello e modifica</button>
                         </div>
                     </li>
-                    <li class="accordion-item" data-accordion-item>
+                    <li class="accordion-item ordine-salvato-item" data-accordion-item>
                         <a href="#ordine6giugno" class="accordion-title">Ordine del 6 giugno 2021</a>
-                        <div class="accordion-content clearfix" data-tab-content id="ordine6giugno">
+                        <div class="accordion-content ordine-salvato-content clearfix" data-tab-content id="ordine6giugno">
                             <div class="grid-x grid-margin-x grid-margin-y">
                             	<div class="small-12 cell">
                             	  	<div class="checkout-summary-item align-middle">
@@ -275,9 +278,9 @@
                             <button type="button" id="" class="button submit float-right">Metti nel carrello e modifica</button>
                         </div>
                     </li>
-                    <li class="accordion-item" data-accordion-item>
+                    <li class="accordion-item ordine-salvato-item" data-accordion-item>
                         <a href="#ordine6giugno" class="accordion-title">Ordine del 6 giugno 2021</a>
-                        <div class="accordion-content clearfix" data-tab-content id="ordine6giugno">
+                        <div class="accordion-content ordine-salvato-content clearfix" data-tab-content id="ordine6giugno">
                             <div class="grid-x grid-margin-x grid-margin-y">
                             	<div class="small-12 cell">
                             	  	<div class="checkout-summary-item align-middle">
@@ -381,9 +384,115 @@
                             <button type="button" id="" class="button submit float-right">Metti nel carrello e modifica</button>
                         </div>
                     </li>
-                    <li class="accordion-item" data-accordion-item>
+                    <li class="accordion-item ordine-salvato-item" data-accordion-item>
                         <a href="#ordine7giugno" class="accordion-title">Ordine del 7 giugno 2021</a>
-                        <div class="accordion-content clearfix" data-tab-content id="ordine7giugno">
+                        <div class="accordion-content ordine-salvato-content clearfix" data-tab-content id="ordine7giugno">
+                            <div class="grid-x grid-margin-x grid-margin-y">
+                            	<div class="small-12 cell">
+                            	  	<div class="checkout-summary-item align-middle">
+                            			<div class="item-name">
+                            		  		<h1 class="titolo-item">Beerstrot</h1>
+                            		  		<p class="note-item no-inline">no fegato più vegan mi raccomando senza olive fritte allegate come contorno</p>
+                            		  		<p class="cottura-item no-inline">Ben Cotto</p>
+                            		  		<p class="note-item no-inline">Quantità: 2</p>
+                            			</div>
+                            			<div class="item-price">
+                            			  	<p class="prezzo-item ">€23,80</p>
+                            			</div>
+                            	  	</div>
+                            	  	<div class="checkout-summary-item align-middle">
+                            			<div class="item-name">
+                            		  		<h1 class="titolo-item">Diablo</h1>
+                            		  		<p class="note-item no-inline hide"></p>
+                            		  		<p class="cottura-item no-inline">Al sangue</p>
+                            		  		<p class="note-item no-inline">Quantità: 1</p>
+                            			</div>
+                            			<div class="item-price">
+                            			  	<p class="prezzo-item ">€11,90</p>
+                            			</div>
+                            	  	</div>
+                            	  	<div class="checkout-summary-item align-middle">
+                            			<div class="item-name">
+                            		  		<h1 class="titolo-item">Bocconcini di pollo</h1>
+                            		  		<p class="note-item no-inline hide"></p>
+                            		  		<p class="cottura-item no-inline hide"></p>
+                            		  		<p class="note-item no-inline">Quantità: 4</p>
+                            			</div>
+                            			<div class="item-price">
+                            			  	<p class="prezzo-item ">€22,00</p>
+                            			</div>
+                            	  	</div>
+                            	  	<div class="checkout-summary-item align-middle">
+                            			<div class="item-name">
+                            		  		<h1 class="titolo-item">Coca Cola 33cl.</h1>
+                            		  		<p class="note-item no-inline hide"></p>
+                            		  		<p class="cottura-item no-inline hide"></p>
+                            		  		<p class="note-item no-inline">Quantità: 5</p>
+                            			</div>
+                            			<div class="item-price">
+                            			  	<p class="prezzo-item ">€15,00</p>
+                            			</div>
+                            	  	</div>
+                            	  	<div class="checkout-summary-item align-middle">
+                            			<div class="item-name">
+                            		  		<h1 class="titolo-item">Beerstrot</h1>
+                            		  		<p class="note-item no-inline">no fegato più vegan mi raccomando senza olive fritte allegate come contorno</p>
+                            		  		<p class="cottura-item no-inline">Ben Cotto</p>
+                            		  		<p class="note-item no-inline">Quantità: 2</p>
+                            			</div>
+                            			<div class="item-price">
+                            			  	<p class="prezzo-item ">€23,80</p>
+                            			</div>
+                            	  	</div>
+                            	  	<div class="checkout-summary-item align-middle">
+                            			<div class="item-name">
+                            		  		<h1 class="titolo-item">Diablo</h1>
+                            		  		<p class="note-item no-inline hide"></p>
+                            		  		<p class="cottura-item no-inline">Al sangue</p>
+                            		  		<p class="note-item no-inline">Quantità: 1</p>
+                            			</div>
+                            			<div class="item-price">
+                            			  	<p class="prezzo-item ">€11,90</p>
+                            			</div>
+                            	  	</div>
+                            	  	<div class="checkout-summary-item align-middle">
+                            			<div class="item-name">
+                            		  		<h1 class="titolo-item">Bocconcini di pollo</h1>
+                            		  		<p class="note-item no-inline hide"></p>
+                            		  		<p class="cottura-item no-inline hide"></p>
+                            		  		<p class="note-item no-inline">Quantità: 4</p>
+                            			</div>
+                            			<div class="item-price">
+                            			  	<p class="prezzo-item ">€22,00</p>
+                            			</div>
+                            	  	</div>
+                            	  	<div class="checkout-summary-item align-middle">
+                            			<div class="item-name">
+                            		  		<h1 class="titolo-item">Coca Cola 33cl.</h1>
+                            		  		<p class="note-item no-inline hide"></p>
+                            		  		<p class="cottura-item no-inline hide"></p>
+                            		  		<p class="note-item no-inline">Quantità: 5</p>
+                            			</div>
+                            			<div class="item-price">
+                            			  	<p class="prezzo-item ">€15,00</p>
+                            			</div>
+                            	  	</div>
+                            	  	<div class="checkout-summary-details">
+                            		    <div>
+                            		      	<h1 class="titolo-item">TOTALE:</h1>
+                            		    </div>
+                            		    <div class="item-price">
+                            		      	<h1 class="titolo-item">€145,40</h1>
+                            		    </div>
+                            		</div>
+                            	</div>
+                            </div>                        <button type="button" id="" class="clear button hollow alert float-left">Elimina</button>
+                            <button type="button" id="" class="button submit float-right">Metti nel carrello e modifica</button>
+                        </div>
+                    </li>
+                    <li class="accordion-item ordine-salvato-item" data-accordion-item>
+                        <a href="#ordine15giugno" class="accordion-title">Ordine del 15 giugno 2021</a>
+                        <div class="accordion-content ordine-salvato-content clearfix" data-tab-content id="ordine15giugno">
                             <div class="grid-x grid-margin-x grid-margin-y">
                             	<div class="small-12 cell">
                             	  	<div class="checkout-summary-item align-middle">

@@ -24,49 +24,14 @@ bordo per debugging
 // }
 
 
-// asporto immagine e testo allineati  schermo piccolo
-.immagine-testo-small-grid {
-    display: grid;
-    grid-template-columns: minmax(120px, 1fr) 3fr;
-    //grid-template-columns: 3fr 6fr;
-    padding: 0rem;
-    margin: 0;
-    margin-bottom: 1rem;
-    //background: rgba(orange, 0.1);
+.ordine-salvato-item {
+  // padding: 0rem 0rem 0rem 0rem;
+
 }
 
-.immagine-small-container {
-
-    //background: rgba(lightpink, 0.2);
-
-    text-align: left;
-    padding-top: 0.84rem;
-}
-
-.testo-small-container {
-    padding-left: 1.2rem;
-   // background: rgba(orange, 0.1);
-}
-
-
-
-//test not working
-.wrapper {
-    display: grid;
-    grid-template-columns: minmax(120px, 1fr) 3fr;
-    grid-auto-rows: min-content;
-    gap: 20px;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    padding-bottom: 1rem;
-    background: rgba(lightpink, 0.4);
-}
-.box {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    background-color: rgba(green, 0.2);
-    margin-bottom: 0;
-    padding-bottom: 0;
+.ordine-salvato-content {
+    padding: 0rem 1rem 1.5rem 1rem;
+    @include breakpoint(large) {
+        padding-right: 12rem;
+    }
 }

@@ -184,6 +184,21 @@ a.is-active::after {
     }
 }
 
+.hs> li:last-child {
+    padding-right: 0.7rem;
+    @include breakpoint(medium only) {
+        padding-left: 1.3rem;
+    }
+     @include breakpoint(large only) {
+        padding-right: 1.3rem;
+    }
+    @include breakpoint(xlarge only) {
+        padding-right: 1.4rem;
+    }
+    @include breakpoint(xxlarge only) {
+        padding-right: 1.8rem;
+    }
+}
 .no-scrollbar {
     scrollbar-width: none;
     margin-bottom: 0;
