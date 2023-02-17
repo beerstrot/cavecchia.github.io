@@ -51,7 +51,7 @@
     	</ul>
     </nav>
     <header class="grid-container">
-        <div class="grid-x grid-margin-x">
+        <div class="grid-x grid-margin-x grid-margin-y">
             <div class="small-12 cell">
                 <h1 class="first-paragraph-no-hero" id="ttitle">Riserva un Tavolo</h1>
             </div>
@@ -62,7 +62,7 @@
     <!-- fine loader -->
     <!-- inizio dashboard -->
     <div class="grid-container" id="notesDiv" hidden>
-        <div class="grid-x grid-margin-x" >
+        <div class="grid-x grid-margin-x">
             <div class="small-6 medium-4 cell" id="innerNotesDiv_" >
                 <label>Seleziona giorno
                     <input tabindex="5" id="from2" type="text">
@@ -124,8 +124,8 @@
     <!-- inizio form -->
     <div class="panel-home-n">
         <div class="grid-container">
-            <form id="form">
-                <div class="grid-x ">
+            <form id="form" novalidate="novalidate">
+                <div class="grid-x grid-margin-x">
                     <div class="small-12 cell">
                          <p>Includi in <strong>Quante persone*</strong> anche eventuali seggioloni. Esempio: 4 persone e 2 seggioloni seleziona 6.</p>
                          <p><strong>* </strong> Indica un campo obbligatorio.</p>
@@ -135,18 +135,18 @@
                 <div class="grid-x grid-margin-x grid-margin-y">
                     <div class="small-6 medium-3 cell ">
                         <label><strong>Quale giorno*</strong>
-                            <input tabindex="5" id="from" type="text" name="LNAME" class="required error" placeholder="Seleziona Giorno" readonly/>
+                            <input id="from" type="text" class="required error" placeholder="Seleziona Giorno" readonly/>
                         </label>
                     </div>
                     <div class="small-6 medium-3 cell">
                         <label><strong>Quante persone*</strong>
-                            <select name="MMERGE4" class="required error" id="quantity" disabled>
-                                <option value="">Seleziona Numero</option>
+                            <select class="required error" id="quantity" disabled>
+                                <option>Seleziona Numero</option>
                             </select>
                         </label>
                     </div>
                 </div>
-                <div class="grid-x">
+                <div class="grid-x grid-margin-x">
                     <div class="small-12 medium-4 cell">
                         <label><strong>Quale turno*</strong>
                             <div id="shiftGridL"></div>
@@ -173,7 +173,7 @@
                 <div class="grid-x grid-margin-x">
                     <div class="small-7 medium-4 cell">
                         <label><strong>Ho bisogno di seggioloni</strong>
-                            <select name="MMERGE4" id="seggiolini">
+                            <select id="seggiolini">
                                 <option value="0">No</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -182,11 +182,11 @@
                         </label>
                     </div>
                 </div>
-                <div class="grid-x">
+                <div class="grid-x grid-margin-x">
                     <div class="small-9 medium-6 cell" >
                         <div class="">
                             <label class="checkbox">
-                                <input id="cani" type="checkbox" for="checkbox1"><span class="indicator"></span>Ho uno o più cani
+                                <input id="cani" type="checkbox"><span class="indicator"></span>Ho uno o più cani
                             </label>
                         </div>
                         <!-- <input id="cani" type="checkbox"><label for="checkbox1">Ho uno o più cani</label> -->
@@ -218,23 +218,15 @@
                     </div>
                     <div class="small-12 cell"><hr></div>
                 </div>
-                <div class="grid-x grid-margin-x">
+                <div class="grid-x grid-margin-x grid-margin-y">
                     <div class="small-12 cell">
                         <div class="checkboxes">
                             <label id="privacy3" class="checkbox" >
                                 <input id="privacy" type="checkbox" checked><span class="indicator"></span>Accetto la <a href="informazioni-legali.html#privacy" target="_blank" rel="noopener">Informativa sulla privacy</a>*
                             </label>
                         </div>
-                       <!--  <label id="privacy3">
-                            <input id="privacy" type="checkbox" checked>Accetto la <a href="informazioni-legali.html#privacy" target="_blank" rel="noopener">Informativa sulla privacy</a>*
-                        </label> -->
-                    </div>
-                </div>
-                <div class="grid-x grid-margin-x">
-                    <div class="small-12 cell">
                         <button id="prenota" class="button submit" style="margin-bottom:1rem;">Riserva il Tavolo</button>
                     </div>
-                    <br>
                 </div>
             </form>
         </div>

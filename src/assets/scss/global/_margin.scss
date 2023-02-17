@@ -43,7 +43,7 @@ margini
 
 //spazio fra immagini, video e testo in homepage
 .extra-space-image-tab-home {
-    margin-top: 0.5rem;
+    margin-top: 0.45rem;
     @include breakpoint(small only) {
         margin-top: 0rem;
         margin-bottom: 0rem;

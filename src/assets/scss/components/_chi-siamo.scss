@@ -1,11 +1,11 @@
 .faq {
   @include breakpoint(large) {
-	columns: 2;
+	 columns: 2;
 	}
 }
 
 .accordion-title {
-  line-height: 1.5;
+    line-height: 1.5;
 }
 
 

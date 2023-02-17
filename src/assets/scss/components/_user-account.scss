@@ -1,0 +1,6 @@
+.extra-space-h2 {
+	margin-top: 5rem;
+	@include breakpoint(small only) {
+		margin-top: 4rem;
+	}
+}

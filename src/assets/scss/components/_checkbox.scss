@@ -1,6 +1,6 @@
 /* Checkbox styles */
 .checkboxes {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     @include breakpoint(small only) {
         margin-bottom: 2rem;
     }

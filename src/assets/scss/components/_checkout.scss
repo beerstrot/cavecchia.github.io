@@ -28,11 +28,9 @@
 }
 
 .checkout-summary-details {
-  	//background-color: smart-scale($table-background, $table-color-scale);
   	display: flex;
   	justify-content: space-between;
   	padding: 1rem 0rem;
-  	//border: 1px solid $light-gray;
   	border-top: none;
   	margin-bottom: 1rem;
 }
