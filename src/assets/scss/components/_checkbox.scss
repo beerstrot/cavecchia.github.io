@@ -1,62 +1,73 @@
-/* Checkbox styles */
-.checkboxes {
-    margin-bottom: 2rem;
-    @include breakpoint(small only) {
-        margin-bottom: 2rem;
-    }
-}
-
-$border-radius: 3px;
-
-@mixin checkbox($color) {
-    margin-right: 0rem;
-    margin-top: 0.5rem;
-    padding-left: 1.5rem;
-    @include breakpoint(small only) {
-        padding-left: 2rem;
-    }
+/* The container-checkbox */
+.container-checkbox {
+    display: block;
     position: relative;
+    padding-left: 2.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    //font-size: 22px;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-
-    input[type="checkbox"] {
-        position: absolute;
-        opacity: 0;
-        &:focus ~ span {
-            border: 1px solid $dark-gray;
-        }
-        &:focus:checked ~ span {
-            border: 1px solid $dark-gray;
-        }
-        &:checked ~ span {
-            color: $white;
-            background: $color url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+) 50% 40% no-repeat;
-            border: 2px solid $color;
-        }
-    }
-    span {
-        border-radius: $border-radius;
-        position: absolute;
-        left: 0rem;
-        top: 4px;
-        width:  1rem;
-        height: 1rem;
-        @include breakpoint(small only) {
-            width:  1.4rem;
-            height: 1.4rem;
-            top: 1.5px;
-        }
-        border: 1px solid $dark-gray;
-        pointer-events: none;
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
-    }
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-label.checkbox {
-     @include checkbox($primary-color);
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    height: 1.4rem;
+    width: 1.4rem;
+    background-color: $white;
+    border: 1px solid $dark-gray;
+    border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+    // background-color: scale-color($anchor-color, $lightness: +15%);
+    // border-color: scale-color($anchor-color, $lightness: +15%);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+    //background-color: #2196F3;
+    border: 1px solid $primary-color;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid $primary-color;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }

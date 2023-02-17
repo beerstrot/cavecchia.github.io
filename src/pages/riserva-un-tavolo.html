@@ -86,7 +86,7 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
                 <div class="small-12 cell"><hr></div>
             </div>
             <div class="grid-x grid-margin-x grid-margin-y">
-                <div class="small-6 medium-4 cell ">
+                <div class="small-6 medium-4 cell">
                     <label><strong>Quale giorno*</strong>
                         <input id="from" type="text" class="required error" placeholder="Seleziona Giorno" readonly/>
                     </label>
@@ -100,7 +100,7 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
                 </div>
             </div>
             <div class="grid-x grid-margin-x">
-                <div class="small-12 medium-6 cell">
+                <div class="small-12 medium-6 large-4 xlarge-4 xxlarge-3 cell">
                     <label><strong>Quale turno*</strong>
                         <div id="shiftGridL"></div>
                         <div class="grid-x small-up-2 required error" id="shiftGrid">
@@ -138,8 +138,8 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
             <div class="grid-x grid-margin-x">
                 <div class="small-9 medium-6 cell" >
                     <div class="">
-                        <label class="checkbox">
-                            <input id="cani" type="checkbox"><span class="indicator"></span>Ho uno o più cani
+                        <label class="container-checkbox">
+                            <input id="cani" type="checkbox"><span class="checkmark"></span>Ho uno o più cani
                         </label>
                     </div>
                     <!-- <input id="cani" type="checkbox"><label for="checkbox1">Ho uno o più cani</label> -->
@@ -173,9 +173,9 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
             </div>
             <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="small-12 cell">
-                    <div class="checkboxes">
-                        <label id="privacy3" class="checkbox" >
-                            <input id="privacy" type="checkbox" checked><span class="indicator"></span>Accetto la <a href="{{root}}informazioni-legali.html#privacy" target="_blank" rel="noopener">Informativa sulla privacy</a>*
+                    <div class="container-checkbox">
+                        <label id="privacy3">
+                            <input id="privacy" type="checkbox" checked><span class="checkmark"></span>Accetto la <a href="{{root}}informazioni-legali.html#privacy" target="_blank" rel="noopener">Informativa sulla privacy</a>*
                         </label>
                     </div>
                     <button id="prenota" class="button submit">Riserva il Tavolo</button>
