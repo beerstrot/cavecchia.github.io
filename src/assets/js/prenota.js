@@ -256,12 +256,13 @@ function showNotes (datetime) {
         $('<td/>', { css: { 'text-align': 'left' } }).html(n.name).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'right' } }).html(n.people).appendTo(tr);
         $('<td/>').html(n.table).appendTo(tr);
-        $('<td/>', { css: { 'text-align': 'left' } }).html(n.telephone).appendTo(tr);
-        $('<td/>', { css: { 'text-align': 'left' } }).html(n.email).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'left' } }).html(n.time).appendTo(tr);
         $('<td/>').html(n.cani).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'right' } }).html(n.seg).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'left' } }).html(n.note).appendTo(tr);
+        $('<td/>', { css: { 'text-align': 'left' } }).html(n.telephone).appendTo(tr);
+        $('<td/>', { css: { 'text-align': 'left' } }).html(n.email).appendTo(tr);
+
       });
       const sentences = [];
       let total_ = 0;
