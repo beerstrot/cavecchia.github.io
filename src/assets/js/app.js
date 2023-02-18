@@ -27,8 +27,11 @@ import('./navbar');
 import('./input-number');
 import('./prenota');
 import('./cookieconsent-init');
+//import JustValidate from 'just-validate';
 import Splide from '@splidejs/splide';
 import { Video } from '@splidejs/splide-extension-video';
+
+
 
 
 // inizialize splide

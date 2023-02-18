@@ -809,7 +809,7 @@ function mkQuantityOptions(shifts, people) {
   }
 }
 function showError(id) {
-  $(id.replace('1', '')).attr('style', 'border: 2px solid red !important');
+  $(id.replace('1', '')).attr('style', 'border: 1px solid red !important');
 }
 var time = function time(d) {
   return d.toLocaleString('it-IT', {

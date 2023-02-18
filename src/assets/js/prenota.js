@@ -744,7 +744,7 @@ function mkQuantityOptions (shifts, people) {
 }
 
 function showError (id) {
-  $(id.replace('1', '')).attr('style', 'border: 2px solid red !important');
+  $(id.replace('1', '')).attr('style', 'border: 1px solid red !important');
 }
 
 const time = d => d.toLocaleString('it-IT', { hour: '2-digit', minute:'2-digit' });
