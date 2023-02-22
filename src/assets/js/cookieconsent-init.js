@@ -157,7 +157,7 @@ window.addEventListener('load', function(){
 									col1: 'fbp',       // match all cookies starting with "_ga"
 									col2: 'facebook.com',
 									col3: '7 giorni',
-									col4: 'Installato da Meta pixel: monitorale interazioni degli utenti con le campagne pubblicitarie su Facebook Ads e con il sito web. Nello specifico, si possono seguire le interazioni degli utenti con il sito web dopo che gli stessi utenti hanno visualizzato l’annuncio sul social network',
+									col4: 'Installato da Meta pixel: monitora le interazioni degli utenti con le campagne pubblicitarie su Facebook Ads e con il sito web. Nello specifico, si possono seguire le interazioni degli utenti con il sito web dopo che gli stessi utenti hanno visualizzato l’annuncio sul social network',
 									is_regex: true
 								}
 							]
