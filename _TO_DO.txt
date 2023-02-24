@@ -22,3 +22,11 @@ Bassa priorità:
 E-COMMERCE
 
 - barra categorie: fare un modo che tab con classe is-active sia sempre dentro la viewport
+
+
+================================================================================================================================
+
+
+GENERALE
+
+- risolvere problemi webpack con yarn build
