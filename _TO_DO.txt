@@ -1,0 +1,24 @@
+RISERVA UN TAVOLO
+
+Importanti:
+
+- verificare modali: non si chiudono
+- timer: i turni non sono disponibili dopo l'orario. es. sono le 21: i turni precedenti alle 21 non sono selezionabili
+- algoritmo assegnazione tavolo: nr. Persone x 1,5
+
+
+Media priorità:
+
+- Nr max seggioloni per turno limitato a 6
+- Pulizia database clienti tilby: scaricare, ripulire doppioni, ricaricare !importante
+
+
+Bassa priorità:
+
+
+================================================================================================================================
+
+
+E-COMMERCE
+
+- barra categorie: fare un modo che tab con classe is-active sia sempre dentro la viewport
