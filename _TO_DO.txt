@@ -10,7 +10,7 @@ Importanti:
 Media priorità:
 
 - Nr max seggioloni per turno limitato a 6
-- Pulizia database clienti tilby: scaricare, ripulire doppioni, ricaricare !importante
+- Pulizia database clienti tilby: scaricare, ripulire doppioni, ricaricare
 
 
 Bassa priorità:
