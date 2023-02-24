@@ -1,19 +1,4 @@
-/*===================================================================
-prenota
-===================================================================*/
-
-.privacy {
-    font-size: 0,8rem;
-}
-
-.extra-space-turno {
-    margin-top: 0.25rem;
-    @include breakpoint(small only) {
-        margin-top: 0.2rem;
-        margin-bottom: 0rem;
-    }
-}
-
+//form placeholder
 ::-webkit-input-placeholder {
   color: #b5b3b3; }
 
@@ -40,9 +25,21 @@ input:not([type])[disabled], input:not([type])[readonly], fieldset[disabled] inp
   cursor: default;
 }
 
+//error management
 .error1 {
   display: none!important;
 }
+
+//validation fixing
+.just-validate-error-field {
+    margin-bottom: 0px;
+}
+
+.just-validate-error-label {
+    font-size: 14px;
+    margin-top:0;
+}
+
 
 //Loader
 #loading {
@@ -70,9 +67,10 @@ input:not([type])[disabled], input:not([type])[readonly], fieldset[disabled] inp
 
 #loading::after {
    content:'';
-    display:block;
+    display:inline-block;
     position:absolute;
-    left:44%;
+    left:50%;
+    right:50%;
     top:40%;
     width:3rem;
     height:3rem;
@@ -84,14 +82,3 @@ input:not([type])[disabled], input:not([type])[readonly], fieldset[disabled] inp
     -webkit-animation: spin .8s linear infinite;
     animation: spin .8s linear infinite;
 }
-
-//validation fixing
-.just-validate-error-field {
-    margin-bottom: 0px;
-}
-
-.just-validate-error-label {
-    font-size: 14px;
-    margin-top:0;
-}
-
