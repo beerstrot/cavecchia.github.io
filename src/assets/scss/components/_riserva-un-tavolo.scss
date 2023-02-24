@@ -69,8 +69,10 @@ input:not([type])[disabled], input:not([type])[readonly], fieldset[disabled] inp
    content:'';
     display:inline-block;
     position:absolute;
-    left:50%;
-    right:50%;
+    left:47%;
+    @include breakpoint(small only) {
+        left:45%;
+    };
     top:40%;
     width:3rem;
     height:3rem;
