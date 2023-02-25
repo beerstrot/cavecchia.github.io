@@ -101,6 +101,8 @@ cart
     padding-top:0rem;
 }
 
+
+//sticky for carrello large
 .fixed_box {
     position:sticky;
     position:-webkit-sticky;
@@ -123,6 +125,10 @@ cart
 }
 
 // carrello
+.shadow-carrello {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+}
 .close-button-carrello {
     padding-top:1rem;
     @include breakpoint(small only) {
@@ -209,9 +215,4 @@ $input-number-size: 6rem;
         cursor: pointer;
         font-size: 1.5rem;
     }
-}
-
-.shadow-carrello {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: white;
 }
