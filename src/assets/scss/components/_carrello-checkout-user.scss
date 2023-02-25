@@ -34,3 +34,44 @@
   	border-top: none;
   	margin-bottom: 1rem;
 }
+
+
+
+#carrello {
+	.checkout-summary-item {
+	  	//border-left: 1px solid $light-gray;
+	  	//border-right: 1px solid $light-gray;
+	  	display: flex;
+	  	justify-content: space-between;
+	  	padding: 1rem 0rem;
+	  	border-bottom: 1.5px solid $light-gray;
+	  	.item-name,
+	  	.item-price {
+			padding: 0rem 0.5rem;
+			p {
+				margin: 0.2rem 0;
+		  		padding: 0;
+			}
+	  	}
+
+	  	.item-name {
+			padding-right: 0rem;
+	  	}
+
+	  	.title {
+			//font-weight: bold;
+	  	}
+	}
+
+	.no-inline {
+	  	display: block;
+	}
+
+	.checkout-summary-details {
+	  	display: flex;
+	  	justify-content: left;
+	  	padding: 1rem 0rem;
+	  	border-top: none;
+	  	margin-bottom: 1rem;
+	}
+}

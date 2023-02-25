@@ -1,0 +1,25 @@
+carrello:
+  -
+    item-name: Beerstrot
+    item-note: No bacon più fontina
+    item-cottura: Media
+    item-price-total: 11,90
+    quantita: 3
+  -
+    item-name: Bocconcini di Pollo
+    item-note:
+    item-cottura:
+    item-price-total: 23,60
+    quantita: 4
+  -
+    item-name: Roll Gambero Rosso
+    item-note:
+    item-cottura:
+    item-price-total: 28,00
+    quantita: 2
+  -
+    item-name: Coca cola 33cl
+    item-note:
+    item-cottura:
+    item-price-total: 3,00
+    quantita: 1
