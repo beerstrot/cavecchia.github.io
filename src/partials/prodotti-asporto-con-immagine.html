@@ -31,10 +31,9 @@
 				<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
 			</header>
 			<div class="main-content">
-				<p id="modalDescription">{{item-description}}</p>
-				<p class="allergeni">Allergeni: {{item-allergeni}}</p>
+				<p id="modalDescription">{{item-description}}<br><small class="allergeni">Allergeni: {{item-allergeni}}</small></p>
 				<label class="{{class-note}}"><strong>Note</strong>
-					<textarea maxlength="" id="" placeholder=".........."></textarea>
+					<textarea maxlength="200" id="" placeholder="..." style="min-height: 0.5rem;"></textarea>
 				</label>
 				<label class="{{class-cottura}}"><strong>Cottura</strong>
 					<select>
@@ -45,7 +44,7 @@
 					</select>
 				</label>
 			</div>
-			<footer class="main-footer">
+			<footer class="main-footer-carrello-small">
 				<div class="input-group input-number-group">
                     <div class="input-group input-number-group">
                         <div class="input-group-button">

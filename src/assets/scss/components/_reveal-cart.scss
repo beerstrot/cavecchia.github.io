@@ -14,7 +14,7 @@ cart
     padding-left: 1rem;
 //usa classe sotto per titoli lunghi e close button sticky to top
     padding-right: 3.5rem;
-    padding-bottom: 0.2rem;
+    padding-bottom: 0rem;
     padding-top: 1rem;
 
 }
@@ -82,13 +82,23 @@ cart
     //text-align: right;
 }
 
-.main-footer{
+.main-footer {
     position:-webkit-sticky;
     position:sticky;
     bottom:0;
     padding-bottom: 1px;
     background-color: white;
     padding-top:1rem;
+}
+
+
+.main-footer-carrello-small {
+    position:-webkit-sticky;
+    position:sticky;
+    bottom:0;
+    padding-bottom: 1px;
+    background-color: white;
+    padding-top:0rem;
 }
 
 .fixed_box {

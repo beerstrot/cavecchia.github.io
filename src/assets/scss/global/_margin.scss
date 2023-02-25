@@ -3,9 +3,9 @@ margini
 ===================================================================*/
 
 .extra-space-button-modal {
-    margin-top: 2rem;
+    margin-top: 1rem;
     @include breakpoint(small only) {
-        margin-top: 1.5rem;
+        margin-top: 0.5rem;
     }
 }
 .extra-space-modal-first-paragraph {
