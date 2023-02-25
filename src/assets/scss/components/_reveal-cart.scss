@@ -144,7 +144,7 @@ cart
 + - e-commerce buttons
 ===================================================================*/
 
-$input-number-size: 4rem;
+$input-number-size: 6rem;
 
 .input-number-group {
     display: flex;
@@ -162,16 +162,17 @@ $input-number-size: 4rem;
     }
 
     .input-number {
-        width: $input-number-size;
+        //width: $input-number-size;
         padding: 0 0px;
         vertical-align: middle;
+        justify-content: center;
         background-color: white;
         color: $body-font-color;
         text-align: center;
         outline: none;
         display: inline-block;
-        margin: 2px;
-        margin-top: 6px;
+        margin: 0px;
+        margin-top: 0px;
     }
 
     .input-number,
@@ -180,13 +181,13 @@ $input-number-size: 4rem;
         display: inline-block;
         border: none;
         background-color: transparent;
-        height: $input-number-size/2;
+        //height: $input-number-size;
         user-select: none;
     }
 
     .input-number-decrement,
     .input-number-increment {
-        margin-top: 12px;
+        margin-top: 10px;
         touch-action: none;
         display: inline-block;
         width: $input-number-size/2;
