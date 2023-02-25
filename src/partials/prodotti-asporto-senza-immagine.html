@@ -6,42 +6,41 @@
 			<button type="button" class="button small" data-open="{{id-data}}">Aggiungi al Carrello</button>
 		</div>
 	</div>
-	<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
-		<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
-				<span aria-hidden="true">&times;</span>
-		</button>
-		<header class="main-header">
-			<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
-		</header>
-		<div class="main-content">
-			<p id="modalDescription">{{item-description}}<br><small class="allergeni">Allergeni: {{item-allergeni}}</small></p>
-			<label class="{{class-cottura}}"><strong>Cottura</strong>
-				<select>
-					<option value="medio">Media</option>
-					<option value="moltoalsangue">Molto al sangue</option>
-					<option value="alsangue">Al sangue</option>
-					<option value="bencotta">Ben cotta</option>
-				</select>
-			</label>
-			<label class="{{class-note}}"><strong>Note</strong>
-				<textarea maxlength="" id="" placeholder="..." style="min-height: 0.5rem;"></textarea>
-			</label>
-		</div>
-		<footer class="main-footer-carrello-small">
-			<div class="input-group input-number-group">
-                <div class="input-group input-number-group">
-                    <div class="input-group-button">
-                        <span class="input-number-decrement"><i class="las la-minus-square la-2x"></i></span>
-                    </div>
-                    <input class="input-number" style="width:3rem;" type="button" value="2" min="0" max="30">
-                    <div class="input-group-button">
-                        <span class="input-number-increment"><i class="las la-plus-square la-2x"></i></span>
-                    </div>
-                </div>
-            </div>
-			<button type="button" class="button expanded-with-padding extra-space-button-modal">
-				Aggiungi al carrello <span class="price"> €{{item-price}}</span>
-			</button>
-		</footer>
+</div>
+<!-- modal -->
+<div class="reveal reveal-ecommerce" id="{{id-data}}" data-reveal>
+	<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+			<span aria-hidden="true">&times;</span>
+	</button>
+	<header class="main-header">
+		<h1 class="h1-modal" id="modalTitle">{{item-name}}</h1>
+	</header>
+	<div class="main-content">
+		<p id="modalDescription">{{item-description}}<br><small class="allergeni">Allergeni: {{item-allergeni}}</small></p>
+		<label class="{{class-cottura}}"><strong>Cottura</strong>
+			<select>
+				<option value="medio">Media</option>
+				<option value="moltoalsangue">Molto al sangue</option>
+				<option value="alsangue">Al sangue</option>
+				<option value="bencotta">Ben cotta</option>
+			</select>
+		</label>
+		<label class="{{class-note}}"><strong>Note</strong>
+			<textarea maxlength="" id="" placeholder="..." style="min-height: 0.5rem;"></textarea>
+		</label>
 	</div>
+	<footer class="main-footer-carrello-small">
+        <div class="input-group input-number-group">
+            <div class="input-group-button">
+                <span class="input-number-decrement"><i class="las la-minus-square la-2x"></i></span>
+            </div>
+            <input class="input-number" style="width:3rem;" type="button" value="2" min="0" max="30">
+            <div class="input-group-button">
+                <span class="input-number-increment"><i class="las la-plus-square la-2x"></i></span>
+            </div>
+        </div>
+		<button type="button" class="button expanded-with-padding extra-space-button-modal">
+			Aggiungi al carrello <span class="price"> € {{item-price}}</span>
+		</button>
+	</footer>
 </div>
