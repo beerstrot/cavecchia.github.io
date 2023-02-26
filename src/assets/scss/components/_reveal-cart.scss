@@ -134,6 +134,7 @@ cart
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: white;
 }
+
 .close-button-carrello {
     padding-top:1rem;
     @include breakpoint(small only) {
@@ -195,6 +196,7 @@ $input-number-size: 6rem;
         outline: none;
         margin: 0px;
         margin-top: 0px;
+        //font-size: 0.8rem;
     }
 
     .input-number,
