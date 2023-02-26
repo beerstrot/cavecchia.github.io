@@ -761,7 +761,8 @@ $prototype-text-overflow: ellipsis;
 // 46. Responsive Embed
 // --------------------
 
-$responsive-embed-margin-bottom: rem-calc(16);
+// $responsive-embed-margin-bottom: rem-calc(16);
+$responsive-embed-margin-bottom: rem-calc(0);
 $responsive-embed-ratios: (
   default: 4 by 3,
   widescreen: 16 by 9,
