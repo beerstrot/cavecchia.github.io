@@ -17,14 +17,13 @@
   	.item-name {
 		padding-right: 3rem;
   	}
+  	.item-price {
+	  		justify-self: end;
+	  	}
 
   	.title {
 		//font-weight: bold;
   	}
-}
-
-.no-inline {
-  	display: block;
 }
 
 .checkout-summary-details {
@@ -37,17 +36,22 @@
 
 
 
-#carrello {
+#carrello-flex {
 	.checkout-summary-item {
-	  	//border-left: 1px solid $light-gray;
-	  	//border-right: 1px solid $light-gray;
-	  	display: flex;
+		display: grid;
+		grid-template-columns: 6fr 2fr 2fr;
+		column-gap: 1.5rem;
+		align-items: center;
+		justify-items: start;
 	  	justify-content: space-between;
-	  	padding: 1rem 0rem;
+	  	align-content: start;
+	  	padding: 1rem 1rem;
 	  	border-bottom: 1.5px solid $light-gray;
 	  	.item-name,
-	  	.item-price {
-			padding: 0rem 0.5rem;
+	  	.item-price,
+	  	.item-quantity {
+	  		justify-items: start;
+	  		align-items: center;
 			p {
 				margin: 0.2rem 0;
 		  		padding: 0;
@@ -57,20 +61,21 @@
 	  	.item-name {
 			padding-right: 0rem;
 	  	}
+	  	.item-price {
+	  		justify-self: end;
+	  	}
 
 	  	.title {
 			//font-weight: bold;
 	  	}
 	}
 
-	.no-inline {
-	  	display: block;
-	}
-
 	.checkout-summary-details {
 	  	display: flex;
-	  	justify-content: left;
-	  	padding: 1rem 0rem;
+	  	justify-content: space-between;
+	  	font-size: 1.5rem;
+	  	padding: 1rem 1rem;
+	  	background-color: $light-gray;
 	  	border-top: none;
 	  	margin-bottom: 1rem;
 	}

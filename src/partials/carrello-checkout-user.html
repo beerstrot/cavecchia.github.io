@@ -1,56 +1,23 @@
 <div class="clearfix">
-	{{#repeat 2}}
+	{{#each carrello.carrello}}
   	<div class="checkout-summary-item align-middle">
 		<div class="item-name">
-	  		<h1 class="titolo-item">Beerstrot</h1>
-	  		<p class="note-item no-inline">no fegato più vegan mi raccomando senza olive fritte allegate come contorno</p>
-	  		<p class="cottura-item no-inline">Ben Cotto</p>
-	  		<p class="note-item no-inline">Quantità: 2</p>
+	  		<h1 class="titolo-item">{{item-name}}</h1>
+            <p class="note-item">{{item-note}}</p>
+            <p class="cottura-item">{{item-cottura}}</p>
+	  		<p class="note-item">Quantità: {{quantita}}</p>
 		</div>
         <div class="item-price">
-            <p class="prezzo-item ">€23,80</p>
+            <p class="prezzo-item ">€ {{item-price-total}}</p>
         </div>
   	</div>
-  	<div class="checkout-summary-item align-middle">
-		<div class="item-name">
-	  		<h1 class="titolo-item">Diablo</h1>
-	  		<p class="note-item no-inline hide"></p>
-	  		<p class="cottura-item no-inline">Al sangue</p>
-	  		<p class="note-item no-inline">Quantità: 1</p>
-		</div>
-		<div class="item-price">
-		  	<p class="prezzo-item ">€11,90</p>
-		</div>
-  	</div>
-  	<div class="checkout-summary-item align-middle">
-		<div class="item-name">
-	  		<h1 class="titolo-item">Bocconcini di pollo</h1>
-	  		<p class="note-item no-inline hide"></p>
-	  		<p class="cottura-item no-inline hide"></p>
-	  		<p class="note-item no-inline">Quantità: 4</p>
-		</div>
-		<div class="item-price">
-		  	<p class="prezzo-item ">€22,00</p>
-		</div>
-  	</div>
-  	<div class="checkout-summary-item align-middle">
-		<div class="item-name">
-	  		<h1 class="titolo-item">Coca Cola 33cl.</h1>
-	  		<p class="note-item no-inline hide"></p>
-	  		<p class="cottura-item no-inline hide"></p>
-	  		<p class="note-item no-inline">Quantità: 5</p>
-		</div>
-		<div class="item-price">
-		  	<p class="prezzo-item ">€15,00</p>
-		</div>
-  	</div>
-  	{{/repeat}}
+  	{{/each}}
   	<div class="checkout-summary-details">
 	    <div>
 	      	<h1 class="titolo-item">TOTALE:</h1>
 	    </div>
 	    <div class="item-price">
-	      	<h1 class="titolo-item">€145,40</h1>
+	      	<h1 class="titolo-item">€ 145,40</h1>
 	    </div>
 	</div>
 	{{#ifpage 'account'}}

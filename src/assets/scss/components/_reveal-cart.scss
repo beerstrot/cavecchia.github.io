@@ -35,6 +35,8 @@ cart
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    //border-bottom: 1px solid $light-gray;
     padding-bottom: 1rem;
     padding-top: 1rem;
     overflow: hidden;
@@ -54,7 +56,7 @@ cart
 .titolo-item {
     display: block;
     text-transform: none;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0rem;
     margin-top: 0px;
     font-size: 1rem;
     font-weight: bold;
@@ -73,7 +75,8 @@ cart
 }
 .prezzo-item {
     display: block;
-    text-align: right;
+    //text-align: right;
+    white-space: nowrap;
     font-size: 0.8rem;
     margin-top: 0rem;
 }
@@ -176,12 +179,13 @@ $input-number-size: 6rem;
 
     .input-group-button {
         line-height: calc(#{$input-number-size}/2 - 7px);
-        display: inline-block;
+        //display: inline-block;
     }
 
     .input-number {
         //width: $input-number-size;
-        padding: 0 0px;
+        display: flex;
+        //padding: 0 10px;
         vertical-align: middle;
         justify-content: center;
         background-color: white;
@@ -196,25 +200,37 @@ $input-number-size: 6rem;
     .input-number,
     .input-number-decrement,
     .input-number-increment {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: none;
         background-color: transparent;
         //height: $input-number-size;
+        width:2rem;
         user-select: none;
     }
 
     .input-number-decrement,
     .input-number-increment {
-        margin-top: 10px;
+        //margin-top: 10px;
         touch-action: none;
-        display: inline-block;
-        width: $input-number-size/2;
-        height: $input-number-size/2;
+        display: flex;
+        align-items: center;
+       // width: $input-number-size/2;
+       // height: $input-number-size/2;
         background: none;
         color: $primary-color;
         text-align: center;
         font-weight: normal;
         cursor: pointer;
         font-size: 1.5rem;
+    }
+    .group-margin {
+        margin-bottom: 0rem;
+        margin-top: 0.6rem;
+        @include breakpoint(small only) {
+            margin-bottom: 0.6rem;
+            margin-top: 0.6rem;
+        }
     }
 }

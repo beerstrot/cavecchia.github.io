@@ -1,7 +1,7 @@
 carrello:
   -
     item-name: Beerstrot
-    item-note: No bacon più fontina
+    item-note: No bacon più fontina e se possibile tanta salsa bbq
     item-cottura: Media
     item-price-total: 11,90
     quantita: 3
@@ -23,3 +23,21 @@ carrello:
     item-cottura:
     item-price-total: 3,00
     quantita: 1
+  -
+    item-name: Diablo
+    item-note: lorem  ipsum no verdi
+    item-cottura: Ben Cotto
+    item-price-total: 5,90
+    quantita: 2
+  -
+    item-name: Edamame
+    item-note:
+    item-cottura:
+    item-price-total: 35,90
+    quantita: 12
+  -
+    item-name: Nigiri Gambero in Panko
+    item-note:
+    item-cottura:
+    item-price-total: 6,90
+    quantita: 2
