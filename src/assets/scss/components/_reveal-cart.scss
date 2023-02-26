@@ -54,8 +54,8 @@ cart
     margin-top: 0;
 }
 .titolo-item {
-    display: block;
     text-transform: none;
+    vertical-align: middle!important;
     margin-bottom: 0rem;
     margin-top: 0px;
     font-size: 1rem;
@@ -75,7 +75,7 @@ cart
 }
 .prezzo-item {
     display: block;
-    //text-align: right;
+    text-align: right;
     white-space: nowrap;
     font-size: 0.8rem;
     margin-top: 0rem;
@@ -172,6 +172,7 @@ $input-number-size: 6rem;
     margin: auto;
     vertical-align: middle;
     justify-content: center;
+    justify-items: start;
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {
     appearance: none;
@@ -192,7 +193,6 @@ $input-number-size: 6rem;
         color: $body-font-color;
         text-align: center;
         outline: none;
-        display: inline-block;
         margin: 0px;
         margin-top: 0px;
     }

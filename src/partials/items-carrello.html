@@ -1,35 +1,35 @@
 <div class="main-content-nomodal">
     <table class="unstriped hover">
         <tbody>
-            {{#repeat 5}}
+            {{#each carrello.carrello}}
             <tr>
                 <td>
-                    <span class="titolo-item">Beerstrot</span>
-                    <span class="note-item">no fegato più vegan mi raccomando senza olive fritte allegate come contorno</span>
-                    <span class="cottura-item">Ben cotto</span>
+                    <span class="titolo-item">{{item-name}}</span>
+                    <span class="note-item">{{item-note}}</span>
+                    <span class="cottura-item">{{item-cottura}}</span>
                 </td>
                 <td>
                     <div class="input-group input-number-group">
                         <div class="input-group-button">
                             <span class="input-number-decrement"><i class="las la-minus-square la-lg"></i></span>
                         </div>
-                        <input class="input-number" style="width:1.5rem;" type="button" value="2" min="0" max="30">
+                        <input class="input-number" style="width:1.5rem;" type="button" value="{{quantita}}" min="0" max="30">
                         <div class="input-group-button">
                             <span class="input-number-increment"><i class="las la-plus-square la-lg"></i></span>
                         </div>
                     </div>
                 </td>
                 <td>
-                    <span class="prezzo-item">€150,00</span>
+                    <span class="prezzo-item">€ {{item-price-total}}</span>
                 </td>
             </tr>
-            {{/repeat}}
+            {{/each}}
         </tbody>
         <tfoot class="extra-space">
             <tr>
                 <td><strong>TOTALE</strong></td>
                 <td></td>
-                <td style="text-align: right;"><strong>€190,90</strong></td>
+                <td style="text-align: right; white-space: nowrap;"><strong>€ 190,90</strong></td>
             </tr>
         </tfoot>
     </table>
