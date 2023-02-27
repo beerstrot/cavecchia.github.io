@@ -74,7 +74,7 @@ $foundation-palette: (
   _primary: #1779ba,
   secondary: #767676,
   _success: #3adb76,
-  success:#34a853,
+  success: #1DA063,
   warning: #ffae00,
   alert: #cc4b37,
 );
@@ -313,7 +313,8 @@ $button-background: $primary-color;
 // $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-background-hover: scale-color($button-background, $lightness: +15%);
 $button-color: $white;
-$button-color-alt: $black;
+//$button-color-alt: $black;
+$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-border: 1px solid transparent;
 $button-hollow-border-width: 1px;
