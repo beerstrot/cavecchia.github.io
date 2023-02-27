@@ -6,7 +6,7 @@ asporto-sushi-signature:
     item-price: 15
     item-description: Gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
     item-description-short: Gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape
-    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo
     id-data: rollCaVecchiaBeerstrot
     class-image-1-1:
     class-note: hide
@@ -21,7 +21,7 @@ asporto-sushi-signature:
     item-price: 14
     item-description: Tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio
     item-description-short: Tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio
-    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    item-allergeni: Pesce, Soia, Latte, Frutta a guscio, Senape
     id-data: rollSpecialTuna
     class-note: hide
     class-cottura: hide
@@ -35,7 +35,7 @@ asporto-sushi-signature:
     item-price: 14
     item-description: 6 nigiri speciali dello chef
     item-description-short: 6 nigiri speciali dello chef
-    item-allergeni: pesce
+    item-allergeni: Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     id-data: specialNigiri
     class-note: hide
     class-cottura: hide
@@ -49,11 +49,11 @@ asporto-sushi-signature:
     item-price: 14
     item-description: 6 gunkan speciali dello chef
     item-description-short: 6 gunkan speciali dello chef
-    item-allergeni: pesce
+    item-allergeni: Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     id-data: specialGunkan
     class-note: hide
     class-cottura: hide
-    class-allergeni: pesce
+    class-allergeni:
     class-price:
     alt-image: Gunkan Special
 
@@ -66,7 +66,7 @@ asporto-sushi-special-mix:
     item-price: 62
     item-description: 48 creazioni speciali dello chef con uramaki, hosomaki, gunkan, sashimi
     item-description-short: 48 creazioni speciali dello chef con uramaki, hosomaki, gunkan, sashimi
-    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    item-allergeni: Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     id-data: extroordinarySushi
     class-note: hide
     class-cottura: hide
@@ -80,7 +80,7 @@ asporto-sushi-special-mix:
     item-price: 15
     item-description: 13 pezzi di sushi e sashimi selezionati dallo chef
     item-description-short: 13 pezzi di sushi e sashimi selezionati dallo chef
-    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    item-allergeni: Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     id-data: ordinaryOnlyMe
     class-note: hide
     class-cottura: hide
@@ -94,7 +94,7 @@ asporto-sushi-special-mix:
     item-price: 42
     item-description: 40 pezzi di uramaki selezionati dallo chef
     item-description-short: 40 pezzi di uramaki selezionati dallo chef
-    item-allergeni: Pesce, Uova, Latte, Sedano, Senape
+    item-allergeni: Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     id-data: ordinaryMeYou
     class-note: hide
     class-cottura: hide
@@ -108,7 +108,7 @@ asporto-sushi-special-mix:
     item-price: 12
     item-description: 13 pezzi di sushi vegetariano
     item-description-short: 13 pezzi di sushi vegetariano
-    item-allergeni: Soia
+    item-allergeni: Glutine, Uova, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     id-data: ordinaryGreen
     class-note: hide
     class-cottura: hide
@@ -153,7 +153,7 @@ asporto-sushi-entree:
     item-price: 3,5
     item-description: Alghe croccanti
     item-description-short: Alghe croccanti
-    item-allergeni: Nessuno
+    item-allergeni: Soia, Semi di sesamo
     id-data: algheGoma
     class-note: hide
     class-cottura: hide
@@ -167,7 +167,7 @@ asporto-sushi-entree:
     item-price: 12
     item-description: Tartare di tonno, avocado, tobiko red, semi di sesamo, maionese, salsa ponzu
     item-description-short: Tartare di tonno, avocado, tobiko red, semi di sesamo, maionese, salsa ponzu
-    item-allergeni: pesce
+    item-allergeni: Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
     id-data: tartareCaVecchiaTonno
     class-note: hide
     class-cottura: hide
@@ -181,7 +181,7 @@ asporto-sushi-entree:
     item-price: 12
     item-description: Tartare di salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu
     item-description-short: Tartare di salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu
-    item-allergeni: pesce
+    item-allergeni: Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
     id-data: tartareCaVecchiaSalmone
     class-note: hide
     class-cottura: hide
@@ -195,7 +195,7 @@ asporto-sushi-entree:
     item-price: 12
     item-description: Salmone marinato con lime e salsa kimuchi, semi di sesamo
     item-description-short: Salmone marinato con lime e salsa kimuchi, semi di sesamo
-    item-allergeni: pesce
+    item-allergeni: Pesce, Soia, Semi di sesamo
     id-data: kimuchiSalmone
     class-note: hide
     class-cottura: hide
@@ -209,7 +209,7 @@ asporto-sushi-entree:
     item-price: 9
     item-description: Due pezzi di salmone, due di tonno e due di branzino
     item-description-short: Due pezzi di salmone, due di tonno e due di branzino
-    item-allergeni: pesce
+    item-allergeni: Pesce
     id-data: littleSashimi
     class-note: hide
     class-cottura: hide
@@ -225,7 +225,7 @@ asporto-sushi-roll-selection:
     item-price: 12
     item-description: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime
     item-description-short: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime
-    item-allergeni: Pesce, Uova
+    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo
     id-data: ebiSalmonRoll
     class-note: hide
     class-cottura: hide
@@ -239,7 +239,7 @@ asporto-sushi-roll-selection:
     item-price: 11
     item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
     item-description-short: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
-    item-allergeni: Pesce, Uova
+    item-allergeni: Uova, Pesce, Latte, Frutta a guscio, Senape
     id-data: almondRoll
     class-note: hide
     class-cottura: hide
@@ -253,7 +253,7 @@ asporto-sushi-roll-selection:
     item-price: 14
     item-description: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
     item-description-short: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
-    item-allergeni: Pesce, frutta a guscio
+    item-allergeni: Crostacei, Pesce, Latte, Frutta a guscio
     id-data: shrimpRoll
     class-note: hide
     class-cottura: hide
@@ -267,7 +267,7 @@ asporto-sushi-roll-selection:
     item-price: 12
     item-description: Tonno e avocado ricoperti da tobiko red
     item-description-short: Tonno e avocado ricoperti da tobiko red
-    item-allergeni: pesce
+    item-allergeni: Uova, Pesce, Semi di sesamo
     id-data: tunaRoll
     class-note: hide
     class-cottura: hide
@@ -281,7 +281,7 @@ asporto-sushi-roll-selection:
     item-price: 13
     item-description: Gambero in panko croccante e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
     item-description-short: Gambero in panko croccante e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
-    item-allergeni: pesce, uovo
+    item-allergeni: Glutine, Crostacei, Uova, Pesce, Senape
     id-data: mexicoRoll
     class-note: hide
     class-cottura: hide
@@ -295,7 +295,7 @@ asporto-sushi-roll-selection:
     item-price: 12
     item-description: Branzino in panko croccante ricoperto da salmone flambè e maionese alla senape
     item-description-short: Branzino in panko croccante ricoperto da salmone flambè e maionese alla senape
-    item-allergeni: pesce, uovo, senape
+    item-allergeni: Glutine, Uova, Pesce, Senape
     id-data: seabassRock
     class-note: hide
     class-cottura: hide
@@ -309,7 +309,7 @@ asporto-sushi-roll-selection:
     item-price: 13
     item-description: Gambero in panko croccante e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
     item-description-short: Gambero in panko croccante e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
-    item-allergeni: pesce, uovo, senape, frutta a guscio
+    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
     id-data: mediterraneoStyle
     class-note: hide
     class-cottura: hide
@@ -323,7 +323,7 @@ asporto-sushi-roll-selection:
     item-price: 10
     item-description: Carota, cetrioli e cavolo viola ricoperti da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
     item-description-short: Carota, cetrioli e cavolo viola ricoperti da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
-    item-allergeni: uovo
+    item-allergeni: Uova, Soia, Latte, Senape
     id-data: specialYellowVeggie
     class-note: hide
     class-cottura: hide
@@ -339,7 +339,7 @@ asporto-sushi-hot-roll:
     item-price: 11
     item-description: Hosomaki di salmone in panko croccante ricoperto da philadelphia, fragole e salsa teriyaki
     item-description-short: Hosomaki di salmone in panko croccante ricoperto da philadelphia, fragole e salsa teriyaki
-    item-allergeni: Pesce, Uova
+    item-allergeni: Glutine, Pesce, Soia, Latte
     id-data: hotRollSalmone
     class-note: hide
     class-cottura: hide
@@ -353,7 +353,7 @@ asporto-sushi-hot-roll:
     item-price: 10
     item-description: Hosomaki di avocado in panko croccante ricoperto da tartare di tonno piccante, cipolla fritta e maionese
     item-description-short: Hosomaki di avocado in panko croccante ricoperto da tartare di tonno piccante, cipolla fritta e maionese
-    item-allergeni: Pesce, Uova
+    item-allergeni: Glutine, Uova, Pesce, Soia, Senape
     id-data: hotRollTuna
     class-note: hide
     class-cottura: hide
@@ -367,7 +367,7 @@ asporto-sushi-hot-roll:
     item-price: 10
     item-description: Hosomaki di avocado in panko croccante ricoperto da tartare di salmone piccante, salsa teriyaki e scaglie di mandorle
     item-description-short: Hosomaki di avocado in panko croccante ricoperto da tartare di salmone piccante, salsa teriyaki e scaglie di mandorle
-    item-allergeni: Pesce, frutta a guscio
+    item-allergeni: Glutine, Pesce, Soia, Frutta a guscio, Senape
     id-data: hotRollMandorle
     class-note: hide
     class-cottura: hide
@@ -381,7 +381,7 @@ asporto-sushi-hot-roll:
     item-price: 10
     item-description: Hosomaki di salmone e avocado in panko croccante ricoperto da tartare di branzino, salsa teriyaki, salsa al tartufo e tobiko nero
     item-description-short: Hosomaki di salmone e avocado in panko croccante ricoperto da tartare di branzino, salsa teriyaki, salsa al tartufo e tobiko nero
-    item-allergeni: pesce
+    item-allergeni: Glutine, Pesce, Soia
     id-data: hotRollSalmoneAvocado
     class-note: hide
     class-cottura: hide
@@ -395,6 +395,7 @@ asporto-sushi-hot-roll:
     item-price: 10
     item-description: Hosomaki di salmone in panko croccante ricoperto da philadelphia, salsa teriyaki, erba cipollina e sesamo tritato
     item-description-short: Hosomaki di salmone in panko croccante ricoperto da philadelphia, salsa teriyaki, erba cipollina e sesamo tritato
+    item-allergeni: Glutine, Pesce, Soia, Latte, Semi di sesamo
     id-data: hotRollSesamo
     class-note: hide
     class-cottura: hide
@@ -411,7 +412,7 @@ asporto-sushi-maki-ordinary-style:
     item-price: 9
     item-description: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki
     item-description-short: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki
-    item-allergeni: Pesce, Uova, Soia
+    item-allergeni: Glutine, Pesce, Soia, Latte
     id-data: uramakiPhiladelphiaOrdinary
     class-note: hide
     class-cottura: hide
@@ -425,7 +426,7 @@ asporto-sushi-maki-ordinary-style:
     item-price: 11
     item-description: Salmone, avocado e maionese
     item-description-short: Salmone, avocado e maionese
-    item-allergeni: Pesce, Uova
+    item-allergeni: Uova, Pesce, Senape
     id-data: uramakiSalmoneOrdinary
     class-note: hide
     class-cottura: hide
@@ -439,7 +440,7 @@ asporto-sushi-maki-ordinary-style:
     item-price: 10
     item-description: Tonno, avocado e maionese ricoperti da tobiko red
     item-description-short: Tonno, avocado e maionese ricoperti da tobiko red
-    item-allergeni: Pesce, Uova
+    item-allergeni: Uova, Pesce, Senape
     id-data: uramakiTonnoOrdinary
     class-note: hide
     class-cottura: hide
@@ -447,13 +448,13 @@ asporto-sushi-maki-ordinary-style:
     class-price:
     alt-image: Uramaki Tonno
   -
-    item-name: Uramaki Ebi Panko
+    item-name: Uramaki Gambero in Panko
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
     item-description: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki
     item-description-short: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki
-    item-allergeni: pesce, Uovo
+    item-allergeni: Glutine, Crostacei, Uova, Soia, Senape, Semi di sesamo
     id-data: uramakiEbiTenOrdinary
     class-note: hide
     class-cottura: hide
@@ -470,7 +471,7 @@ asporto-sushi-temaki:
     item-price: 6
     item-description: Tartare di salmone, avocado, maionese e semi di sesamo
     item-description-short: Tartare di salmone, avocado, maionese e semi di sesamo
-    item-allergeni: Pesce, Uova, Soia
+    item-allergeni: Uova, Pesce, Soia, Senape, Semi di sesamo
     id-data: temakiSalmoneAcocado
     class-note: hide
     class-cottura: hide
@@ -484,7 +485,7 @@ asporto-sushi-temaki:
     item-price: 6
     item-description: Tartare di tonno, avocado, maionese piccante e semi di sesamo
     item-description-short: Tartare di tonno, avocado, maionese piccante e semi di sesamo
-    item-allergeni: Pesce, Uova, Soia
+    item-allergeni: Uova, Pesce, Soia, Senape, Semi di sesamo
     id-data: temakiTonnoAcocado
     class-note: hide
     class-cottura: hide
@@ -498,7 +499,7 @@ asporto-sushi-temaki:
     item-price: 7
     item-description: Gambero in panko croccante, tartare di salmone e erba cipollina
     item-description-short: Gambero in panko croccante, tartare di salmone e erba cipollina
-    item-allergeni: Pesce, Uova, Soia
+    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape
     id-data: temakiCrunch
     class-note: hide
     class-cottura: hide
@@ -512,7 +513,7 @@ asporto-sushi-temaki:
     item-price: 6
     item-description: Gambero al vapore, avocado, philadelphia e cetriolo
     item-description-short: Gambero al vapore, avocado, philadelphia e cetriolo
-    item-allergeni: Pesce, Uova, Soia
+    item-allergeni: Crostacei, Latte
     id-data: temakiGambero
     class-note: hide
     class-cottura: hide
@@ -526,7 +527,7 @@ asporto-sushi-temaki:
     item-price: 5
     item-description: Philadelphia, cetriolo, carote, avocado e salsa teriyaki
     item-description-short: Philadelphia, cetriolo, carote, avocado e salsa teriyaki
-    item-allergeni: Pesce, Uova, Soia
+    item-allergeni: Soia, Latte
     id-data: temakiVeggie
     class-note: hide
     class-cottura: hide
@@ -543,7 +544,7 @@ asporto-sushi-nigiri:
     item-price: 3,5
     item-description: 2 pezzi di salmone su riso
     item-description-short: 2 pezzi di salmone su riso
-    item-allergeni: Pesce, Soia
+    item-allergeni: Pesce
     id-data: salmoneNigiri
     class-note: hide
     class-cottura: hide
@@ -557,7 +558,7 @@ asporto-sushi-nigiri:
     item-price: 4
     item-description: 2 pezzi di tonno su riso
     item-description-short: 2 pezzi di tonno su riso
-    item-allergeni: Pesce, Soia
+    item-allergeni: Pesce
     id-data: tonnoNigiri
     class-note: hide
     class-cottura: hide
@@ -571,7 +572,7 @@ asporto-sushi-nigiri:
     item-price: 5
     item-description: 2 pezzi di branzino su riso
     item-description-short: 2 pezzi di branzino su riso
-    item-allergeni: Pesce, Soia
+    item-allergeni: Pesce
     id-data: branzinoNigiri
     class-note: hide
     class-cottura: hide
@@ -585,7 +586,7 @@ asporto-sushi-nigiri:
     item-price: 3,5
     item-description: 2 pezzi di gambero in panko croccante su riso
     item-description-short: 2 pezzi di gambero in panko croccante su riso
-    item-allergeni: Pesce, Soia
+    item-allergeni: Crostacei
     id-data: ebiTenNigiri
     class-note: hide
     class-cottura: hide
@@ -599,7 +600,7 @@ asporto-sushi-nigiri:
     item-price: 6
     item-description: 2 pezzi di gambero rosso su riso
     item-description-short: 2 pezzi di gambero rosso su riso
-    item-allergeni: Pesce, Soia
+    item-allergeni: Crostacei
     id-data: gamberoRossoNigiri
     class-note: hide
     class-cottura: hide
