@@ -5,53 +5,39 @@ carrello:
     item-cottura: Media
     item-price-total: 11,90
     item-quantity: 3
-    class-note:
-    class-cottura:
   -
     item-name: Bocconcini di Pollo
     item-note:
     item-cottura:
     item-price-total: 23,60
     item-quantity: 4
-    class-note: hide
-    class-cottura: hide
   -
     item-name: Roll Gambero Rosso
     item-note:
     item-cottura:
     item-price-total: 28,00
     item-quantity: 2
-    class-note: hide
-    class-cottura: hide
   -
     item-name: Coca cola 33cl
     item-note:
     item-cottura:
     item-price-total: 3,00
     item-quantity: 1
-    class-note: hide
-    class-cottura: hide
   -
     item-name: Diablo
     item-note: lorem  ipsum no verdi
     item-cottura: Ben Cotto
     item-price-total: 5,90
     item-quantity: 2
-    class-note:
-    class-cottura:
   -
     item-name: Edamame
     item-note:
     item-cottura:
     item-price-total: 35,90
     item-quantity: 12
-    class-note: hide
-    class-cottura: hide
   -
     item-name: Nigiri Gambero in Panko
     item-note:
     item-cottura:
     item-price-total: 6,90
     item-quantity: 2
-    class-note: hide
-    class-cottura: hide
