@@ -75,8 +75,8 @@ menupage text
         margin-top: 0.3rem;
    }
    .callout-margin {
-        margin-top:2rem;
-        margin-bottom: 2.5rem;
+        margin-top:4rem;
+        margin-bottom: 3rem;
         @include breakpoint(large) {
             margin-bottom: 0rem;
         }
