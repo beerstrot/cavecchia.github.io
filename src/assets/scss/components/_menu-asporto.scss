@@ -74,7 +74,15 @@ menupage text
         display: block;
         margin-top: 0.3rem;
    }
+   .callout-margin {
+        margin-top:2rem;
+        margin-bottom: 2.5rem;
+        @include breakpoint(large) {
+            margin-bottom: 0rem;
+        }
+    }
 }
+
 
 
 //asporto hero
