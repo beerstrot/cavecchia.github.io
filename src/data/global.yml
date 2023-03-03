@@ -4,8 +4,8 @@ asporto-sushi-signature:
     item-image-16-9: assets/img/test/test-immagine1-16-9.jpg
     item-image-1-1: assets/img/test/test-immagine1-1-1.jpg
     item-price: 15
-    item-description: 8 pezzi di gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape.
-    item-description-short: 8 pezzi di gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape.
+    item-description: Gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape (8 pezzi)
+    item-description-short: Gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape (8 pezzi)
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo
     id-data: rollCaVecchiaBeerstrot
     class-image-1-1:
@@ -19,8 +19,8 @@ asporto-sushi-signature:
     item-image-16-9: assets/img/test/test-immagine2-16-9.jpg
     item-image-1-1: assets/img/test/test-immagine2-1-1.jpg
     item-price: 14
-    item-description: 8 pezzi di tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio
-    item-description-short: 8 pezzi di tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio
+    item-description: Tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio (8 pezzi)
+    item-description-short: Tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio (8 pezzi)
     item-allergeni: Pesce, Soia, Latte, Frutta a guscio, Senape
     id-data: rollSpecialTuna
     class-note: hide
@@ -223,8 +223,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: 8 pezzi di gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime
-    item-description-short: 8 pezzi di gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime
+    item-description: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime (8 pezzi)
+    item-description-short: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime (8 pezzi)
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo
     id-data: ebiSalmonRoll
     class-note: hide
@@ -237,8 +237,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
-    item-description: 8 pezzi di salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
-    item-description-short: 8 pezzi di salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante
+    item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante (8 pezzi)
+    item-description-short: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante (8 pezzi)
     item-allergeni: Uova, Pesce, Latte, Frutta a guscio, Senape
     id-data: almondRoll
     class-note: hide
@@ -251,8 +251,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 14
-    item-description: 8 pezzi di salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
-    item-description-short: 8 pezzi di salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio
+    item-description: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio (8 pezzi)
+    item-description-short: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio (8 pezzi)
     item-allergeni: Crostacei, Pesce, Latte, Frutta a guscio
     id-data: shrimpRoll
     class-note: hide
@@ -265,8 +265,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: 8 pezzi di tonno e avocado ricoperti da tobiko red
-    item-description-short: 8 pezzi di tonno e avocado ricoperti da tobiko red
+    item-description: Tonno e avocado ricoperti da tobiko red (8 pezzi)
+    item-description-short: Tonno e avocado ricoperti da tobiko red (8 pezzi)
     item-allergeni: Uova, Pesce, Semi di sesamo
     id-data: tunaRoll
     class-note: hide
@@ -279,8 +279,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
-    item-description: 8 pezzi di gambero in panko croccante e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
-    item-description-short: 8 pezzi di gambero in panko croccante e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily
+    item-description: Gambero in panko croccante e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily (8 pezzi)
+    item-description-short: Gambero in panko croccante e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily (8 pezzi)
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Senape
     id-data: mexicoRoll
     class-note: hide
@@ -293,8 +293,8 @@ asporto-sushi-roll-selection:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: 8 pezzi di branzino in panko croccante ricoperto da salmone flambè e maionese alla senape
-    item-description-short: 8 pezzi di branzino in panko croccante ricoperto da salmone flambè e maionese alla senape
+    item-description: Branzino in panko croccante ricoperto da salmone flambé e maionese alla senape (8 pezzi)
+    item-description-short: Branzino in panko croccante ricoperto da salmone flambè e maionese alla senape (8 pezzi)
     item-allergeni: Glutine, Uova, Pesce, Senape
     id-data: seabassRock
     class-note: hide
@@ -303,26 +303,26 @@ asporto-sushi-roll-selection:
     class-price:
     alt-image: Roll Branzino
   -
-    item-name: Roll Meditarraneo
+    item-name: Roll Mediterraneo
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 13
-    item-description: 8 pezzi di gambero in panko croccante e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
-    item-description-short: 8 pezzi di gambero in panko croccante e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati
+    item-description: Gambero in panko croccante e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati (8 pezzi)
+    item-description-short: Gambero in panko croccante e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati (8 pezzi)
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
     id-data: mediterraneoStyle
     class-note: hide
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Roll Meditarraneo
+    alt-image: Roll Mediterraneo
   -
     item-name: Roll Vegetariano
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: 8 pezzi di carota, cetrioli e cavolo viola ricoperti da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
-    item-description-short: 8 pezzi di carota, cetrioli e cavolo viola ricoperti da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla
+    item-description: Carota, cetrioli e cavolo viola ricoperti da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla (8 pezzi)
+    item-description-short: Carota, cetrioli e cavolo viola ricoperti da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla (8 pezzi)
     item-allergeni: Uova, Soia, Latte, Senape
     id-data: specialYellowVeggie
     class-note: hide
@@ -337,8 +337,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
-    item-description: 8 pezzi di hosomaki di salmone in panko croccante ricoperto da philadelphia, fragole e salsa teriyaki
-    item-description-short: 8 pezzi di hosomaki di salmone in panko croccante ricoperto da philadelphia, fragole e salsa teriyaki
+    item-description: Hosomaki di salmone in panko croccante ricoperto da philadelphia, fragole e salsa teriyaki (8 pezzi)
+    item-description-short: Hosomaki di salmone in panko croccante ricoperto da philadelphia, fragole e salsa teriyaki (8 pezzi)
     item-allergeni: Glutine, Pesce, Soia, Latte
     id-data: hotRollSalmone
     class-note: hide
@@ -351,8 +351,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: 8 pezzi di hosomaki di avocado in panko croccante ricoperto da tartare di tonno piccante, cipolla fritta e maionese
-    item-description-short: 8 pezzi di hosomaki di avocado in panko croccante ricoperto da tartare di tonno piccante, cipolla fritta e maionese
+    item-description: Hosomaki di avocado in panko croccante ricoperto da tartare di tonno piccante, cipolla fritta e maionese (8 pezzi)
+    item-description-short: Hosomaki di avocado in panko croccante ricoperto da tartare di tonno piccante, cipolla fritta e maionese (8 pezzi)
     item-allergeni: Glutine, Uova, Pesce, Soia, Senape
     id-data: hotRollTuna
     class-note: hide
@@ -365,8 +365,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: 8 pezzi di hosomaki di avocado in panko croccante ricoperto da tartare di salmone piccante, salsa teriyaki e scaglie di mandorle
-    item-description-short: 8 pezzi di hosomaki di avocado in panko croccante ricoperto da tartare di salmone piccante, salsa teriyaki e scaglie di mandorle
+    item-description: Hosomaki di avocado in panko croccante ricoperto da tartare di salmone piccante, salsa teriyaki e scaglie di mandorle (8 pezzi)
+    item-description-short: Hosomaki di avocado in panko croccante ricoperto da tartare di salmone piccante, salsa teriyaki e scaglie di mandorle (8 pezzi)
     item-allergeni: Glutine, Pesce, Soia, Frutta a guscio, Senape
     id-data: hotRollMandorle
     class-note: hide
@@ -379,8 +379,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: 8 pezzi di hosomaki di salmone e avocado in panko croccante ricoperto da tartare di branzino, salsa teriyaki, salsa al tartufo e tobiko nero
-    item-description-short: 8 pezzi di hosomaki di salmone e avocado in panko croccante ricoperto da tartare di branzino, salsa teriyaki, salsa al tartufo e tobiko nero
+    item-description: Hosomaki di salmone e avocado in panko croccante ricoperto da tartare di branzino, salsa teriyaki, salsa al tartufo e tobiko nero (8 pezzi)
+    item-description-short: Hosomaki di salmone e avocado in panko croccante ricoperto da tartare di branzino, salsa teriyaki, salsa al tartufo e tobiko nero (8 pezzi)
     item-allergeni: Glutine, Pesce, Soia
     id-data: hotRollSalmoneAvocado
     class-note: hide
@@ -393,8 +393,8 @@ asporto-sushi-hot-roll:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: 8 pezzi di hosomaki di salmone in panko croccante ricoperto da philadelphia, salsa teriyaki, erba cipollina e sesamo tritato
-    item-description-short: 8 pezzi di hosomaki di salmone in panko croccante ricoperto da philadelphia, salsa teriyaki, erba cipollina e sesamo tritato
+    item-description: Hosomaki di salmone in panko croccante ricoperto da philadelphia, salsa teriyaki, erba cipollina e sesamo tritato (8 pezzi)
+    item-description-short: Hosomaki di salmone in panko croccante ricoperto da philadelphia, salsa teriyaki, erba cipollina e sesamo tritato (8 pezzi)
     item-allergeni: Glutine, Pesce, Soia, Latte, Semi di sesamo
     id-data: hotRollSesamo
     class-note: hide
@@ -410,8 +410,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: 8 pezzi di salmone in panko croccante e philadelphia guarniti con salsa teriyaki
-    item-description-short: 8 pezzi di salmone in panko croccante e philadelphia guarniti con salsa teriyaki
+    item-description: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki (8 pezzi)
+    item-description-short: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki (8 pezzi)
     item-allergeni: Glutine, Pesce, Soia, Latte
     id-data: uramakiPhiladelphiaOrdinary
     class-note: hide
@@ -424,8 +424,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
-    item-description: 8 pezzi di salmone, avocado e maionese
-    item-description-short: 8 pezzi di salmone, avocado e maionese
+    item-description: Salmone, avocado e maionese (8 pezzi)
+    item-description-short: Salmone, avocado e maionese (8 pezzi)
     item-allergeni: Uova, Pesce, Senape
     id-data: uramakiSalmoneOrdinary
     class-note: hide
@@ -438,8 +438,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: 8 pezzi di tonno, avocado e maionese ricoperti da tobiko red
-    item-description-short: 8 pezzi di tonno, avocado e maionese ricoperti da tobiko red
+    item-description: Tonno, avocado e maionese ricoperti da tobiko red (8 pezzi)
+    item-description-short: Tonno, avocado e maionese ricoperti da tobiko red (8 pezzi)
     item-allergeni: Uova, Pesce, Senape
     id-data: uramakiTonnoOrdinary
     class-note: hide
@@ -452,8 +452,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: 8 pezzi di gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki
-    item-description-short: 8 pezzi di gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki
+    item-description: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki (8 pezzi)
+    item-description-short: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki (8 pezzi)
     item-allergeni: Glutine, Crostacei, Uova, Soia, Senape, Semi di sesamo
     id-data: uramakiEbiTenOrdinary
     class-note: hide
@@ -542,8 +542,8 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
-    item-description: 2 pezzi di salmone su riso
-    item-description-short: 2 pezzi di salmone su riso
+    item-description: Salmone su riso (2 pezzi)
+    item-description-short: Salmone su riso (2 pezzi)
     item-allergeni: Pesce
     id-data: salmoneNigiri
     class-note: hide
@@ -556,8 +556,8 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 4
-    item-description: 2 pezzi di tonno su riso
-    item-description-short: 2 pezzi di tonno su riso
+    item-description: Tonno su riso (2 pezzi)
+    item-description-short: Tonno su riso (2 pezzi)
     item-allergeni: Pesce
     id-data: tonnoNigiri
     class-note: hide
@@ -570,8 +570,8 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 5
-    item-description: 2 pezzi di branzino su riso
-    item-description-short: 2 pezzi di branzino su riso
+    item-description: Branzino su riso (2 pezzi)
+    item-description-short: Branzino su riso (2 pezzi)
     item-allergeni: Pesce
     id-data: branzinoNigiri
     class-note: hide
@@ -584,8 +584,8 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
-    item-description: 2 pezzi di gambero in panko croccante su riso
-    item-description-short: 2 pezzi di gambero in panko croccante su riso
+    item-description: Gambero in panko croccante su riso (2 pezzi)
+    item-description-short: Gambero in panko croccante su riso (2 pezzi)
     item-allergeni: Crostacei
     id-data: ebiTenNigiri
     class-note: hide
@@ -598,8 +598,8 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 6
-    item-description: 2 pezzi di gambero rosso su riso
-    item-description-short: 2 pezzi di gambero rosso su riso
+    item-description: Gambero rosso su riso (2 pezzi)
+    item-description-short: Gambero rosso su riso (2 pezzi)
     item-allergeni: Crostacei
     id-data: gamberoRossoNigiri
     class-note: hide
@@ -612,8 +612,8 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
-    item-description: 2 pezzi di calamaro su riso
-    item-description-short: 2 pezzi di calamaro su riso
+    item-description: Calamaro su riso (2 pezzi)
+    item-description-short: Calamaro su riso (2 pezzi)
     item-allergeni: Pesce, Soia
     id-data: calamaroNigiri
     class-note: hide
@@ -628,7 +628,7 @@ asporto-per-stuzzicare:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-name: Bocconcini di Pollo
-    item-description: 10 pezzi serviti con salsa piccante a parte
+    item-description: Serviti con salsa piccante a parte
     item-description-short: Serviti con salsa piccante
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,9
