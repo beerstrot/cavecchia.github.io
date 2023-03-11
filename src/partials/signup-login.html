@@ -1,10 +1,20 @@
-<div id="checkout-login" class="reveal reveal-ecommerce grid-x grid-margin-x grid-margin-y main-container" data-reveal>
+<div id="signup-login" class="reveal reveal-ecommerce grid-x grid-margin-x grid-margin-y main-container" data-reveal>
+    {{#ifpage 'riserva-un-tavolo'}}
+    <header class="main-header">
+        <h2 class="h2-titolo-carrello"></h2>
+        <button type="button" class="close-button close-button-carrello" data-close aria-label="Close reveal">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </header>
+    {{/ifpage}}
+    {{#unlesspage 'riserva-un-tavolo'}}
     <header class="main-header border-bottom">
         <h2 class="h2-titolo-carrello">Chiudi per continuare la spesa</h2>
         <button type="button" class="close-button close-button-carrello" data-close aria-label="Close reveal">
             <span aria-hidden="true">&times;</span>
         </button>
     </header>
+    {{/unlesspage}}
     <div class="grid-x grid-padding-x">
         <div class="small-12 cell">
             <h2 class="h2-carrello">Accedi</h2>
@@ -66,7 +76,7 @@
         <div class="small-12 cell">
             <label class="container-checkbox">
                 <input id="newsletter" type="checkbox">
-                    <span class="checkmark"></span>Vorrei ricevere aggiornamenti sul menù
+                    <span class="checkmark"></span>Vorrei ricevere aggiornamenti e novità
             </label>
         </div>
         <div class="small-12 cell extra-space-button">
