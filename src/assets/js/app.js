@@ -7,6 +7,7 @@ import 'what-input';
 // This is why we have to use CommonJS require() here since it doesn't
 // have the hoisting behavior.
 window.jQuery = $;
+window.$ = $;
 
 
 
@@ -19,50 +20,57 @@ window.jQuery = $;
 // the line below
 import './lib/foundation-explicit-pieces';
 
-
 $(document).foundation();
-
-
-import('./navbar');
-import('./input-number');
-import('./prenota');
-import('./cookieconsent-init');
-//import JustValidate from 'just-validate';
 import Splide from '@splidejs/splide';
 import { Video } from '@splidejs/splide-extension-video';
+import('./cookieconsent-init');
+import('./navbar');
 
+$(document).ready(() => {
+  const pn = window.location.pathname;
+  if (pn === '/riserva-un-tavolo.html') {
+    import('./prenota');
+  } else if (pn === '/asporto.html') {
+    import('./asporto');
+  } else { // index.html:
+    splideInit();
+  }
+  //import JustValidate from 'just-validate';
+  import('./input-number');
+});
 
 
 
 // inizialize splide
-new Splide( '#fotoMenu', {
+function splideInit () {
+  new Splide( '#fotoMenu', {
     type: 'slide',
     perPage: 1,
     arrows: true,
     pagination: true,
     drag: true,
     breakpoints: {
-        '740': {
-            pagination: true,
-            arrows: true,
-        },
+      '740': {
+        pagination: true,
+        arrows: true,
+      },
     },
     video: {
-        loop: false,
-        autoplay     : true,
-        mute         : true,
-        playerOptions: {
-            htmlVideo: {
-                playsInline: true,
-                autoplay: true,
-            },
-            youtube: {
-            },
+      loop: false,
+      autoplay     : true,
+      mute         : true,
+      playerOptions: {
+        htmlVideo: {
+          playsInline: true,
+          autoplay: true,
         },
+        youtube: {
+        },
+      },
     },
-}).mount({ Video });
+  }).mount({ Video });
 
-new Splide( '#fotoLocale', {
+  new Splide( '#fotoLocale', {
     type: 'slide',
     gap: '2rem',
     arrows: true,
@@ -70,23 +78,24 @@ new Splide( '#fotoLocale', {
     drag: true,
     perPage: 2,
     breakpoints : {
-        '740': {
-            perPage: 1,
-            arrows: true,
-        },
+      '740': {
+        perPage: 1,
+        arrows: true,
+      },
     },
     video: {
-        loop: false,
-        autoplay     : true,
-        mute         : true,
-        playerOptions: {
-            htmlVideo: {
-                playsInline: true,
-                autoplay: true,
+      loop: false,
+      autoplay     : true,
+      mute         : true,
+      playerOptions: {
+        htmlVideo: {
+          playsInline: true,
+          autoplay: true,
 
-            },
-            youtube: {
-            },
         },
+        youtube: {
+        },
+      },
     },
-}).mount({ Video });
+  }).mount({ Video });
+}

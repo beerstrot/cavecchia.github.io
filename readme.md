@@ -1,3 +1,14 @@
+# Site cavecchia
+To install and start the site:
+
+```bash
+nvm use 14.19.0
+yarn
+yarn start
+```
+
+The page will open at: `http://localhost:8001/`.
+
 # ZURB Template
 
 **Please open all issues with this template on the main [Foundation for Sites](https://github.com/foundation/foundation-sites/issues) repo.**
@@ -14,6 +25,7 @@ This is the official ZURB Template for use with [Foundation for Sites](https://g
   - Image compression
 
 ## Installation
+(versions used: node 14.19.0; yarn 1.22.19)
 
 To use this template, your computer needs:
 

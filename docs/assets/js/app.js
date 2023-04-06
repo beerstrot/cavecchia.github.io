@@ -21892,6 +21892,7 @@ __webpack_require__.r(__webpack_exports__);
 // This is why we have to use CommonJS require() here since it doesn't
 // have the hoisting behavior.
 window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
+window.$ = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
 
 //require('foundation-sites');
 
@@ -21899,70 +21900,82 @@ window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
 // the line below
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
-__webpack_require__.e(/*! import() */ "src_assets_js_navbar_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./navbar */ "./src/assets/js/navbar.js", 23));
-__webpack_require__.e(/*! import() */ "src_assets_js_input-number_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./input-number */ "./src/assets/js/input-number.js", 23));
-__webpack_require__.e(/*! import() */ "src_assets_js_prenota_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./prenota */ "./src/assets/js/prenota.js", 23));
+
+
 __webpack_require__.e(/*! import() */ "src_assets_js_cookieconsent-init_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./cookieconsent-init */ "./src/assets/js/cookieconsent-init.js", 23));
-//import JustValidate from 'just-validate';
-
-
+__webpack_require__.e(/*! import() */ "src_assets_js_navbar_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./navbar */ "./src/assets/js/navbar.js", 23));
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  var pn = window.location.pathname;
+  if (pn === '/riserva-un-tavolo.html') {
+    __webpack_require__.e(/*! import() */ "src_assets_js_prenota_js").then(__webpack_require__.bind(__webpack_require__, /*! ./prenota */ "./src/assets/js/prenota.js"));
+  } else if (pn === '/asporto.html') {
+    __webpack_require__.e(/*! import() */ "src_assets_js_asporto_js").then(__webpack_require__.bind(__webpack_require__, /*! ./asporto */ "./src/assets/js/asporto.js"));
+  } else {
+    // index.html:
+    splideInit();
+  }
+  //import JustValidate from 'just-validate';
+  __webpack_require__.e(/*! import() */ "src_assets_js_input-number_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./input-number */ "./src/assets/js/input-number.js", 23));
+});
 
 // inizialize splide
-new _splidejs_splide__WEBPACK_IMPORTED_MODULE_3__["default"]('#fotoMenu', {
-  type: 'slide',
-  perPage: 1,
-  arrows: true,
-  pagination: true,
-  drag: true,
-  breakpoints: {
-    '740': {
-      pagination: true,
-      arrows: true
+function splideInit() {
+  new _splidejs_splide__WEBPACK_IMPORTED_MODULE_3__["default"]('#fotoMenu', {
+    type: 'slide',
+    perPage: 1,
+    arrows: true,
+    pagination: true,
+    drag: true,
+    breakpoints: {
+      '740': {
+        pagination: true,
+        arrows: true
+      }
+    },
+    video: {
+      loop: false,
+      autoplay: true,
+      mute: true,
+      playerOptions: {
+        htmlVideo: {
+          playsInline: true,
+          autoplay: true
+        },
+        youtube: {}
+      }
     }
-  },
-  video: {
-    loop: false,
-    autoplay: true,
-    mute: true,
-    playerOptions: {
-      htmlVideo: {
-        playsInline: true,
-        autoplay: true
-      },
-      youtube: {}
+  }).mount({
+    Video: _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_4__.Video
+  });
+  new _splidejs_splide__WEBPACK_IMPORTED_MODULE_3__["default"]('#fotoLocale', {
+    type: 'slide',
+    gap: '2rem',
+    arrows: true,
+    pagination: true,
+    drag: true,
+    perPage: 2,
+    breakpoints: {
+      '740': {
+        perPage: 1,
+        arrows: true
+      }
+    },
+    video: {
+      loop: false,
+      autoplay: true,
+      mute: true,
+      playerOptions: {
+        htmlVideo: {
+          playsInline: true,
+          autoplay: true
+        },
+        youtube: {}
+      }
     }
-  }
-}).mount({
-  Video: _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_4__.Video
-});
-new _splidejs_splide__WEBPACK_IMPORTED_MODULE_3__["default"]('#fotoLocale', {
-  type: 'slide',
-  gap: '2rem',
-  arrows: true,
-  pagination: true,
-  drag: true,
-  perPage: 2,
-  breakpoints: {
-    '740': {
-      perPage: 1,
-      arrows: true
-    }
-  },
-  video: {
-    loop: false,
-    autoplay: true,
-    mute: true,
-    playerOptions: {
-      htmlVideo: {
-        playsInline: true,
-        autoplay: true
-      },
-      youtube: {}
-    }
-  }
-}).mount({
-  Video: _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_4__.Video
-});
+  }).mount({
+    Video: _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_4__.Video
+  });
+}
 }();
 /******/ })()
 ;

@@ -1,17 +1,21 @@
+"use strict";
 (self["webpackChunkfoundation_zurb_template"] = self["webpackChunkfoundation_zurb_template"] || []).push([["src_assets_js_prenota_js"],{
 
 /***/ "./src/assets/js/prenota.js":
 /*!**********************************!*\
   !*** ./src/assets/js/prenota.js ***!
   \**********************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/assets/js/utils.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+
 $(document).ready(function () {
   var url = new URL(window.location.href);
   var pid = url.searchParams.get('id');
@@ -21,7 +25,7 @@ $(document).ready(function () {
     } else if (pid === 'days') {
       return showDays();
     } else if (pid === 'test') {
-      return testeLambda();
+      return (0,_utils__WEBPACK_IMPORTED_MODULE_0__.testeLambda)();
     } else if (pid.endsWith('_modifica')) {
       return makeInterface_(pid);
     }
@@ -30,7 +34,7 @@ $(document).ready(function () {
   makeInterface_();
 });
 function makeInterface_(pid) {
-  mkCall('POST', {
+  (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
     action: 'days',
     data: '--'
   }, function (res) {
@@ -50,7 +54,7 @@ var loadExtra = function loadExtra(booking) {
   return e;
 };
 function modifyReservation(pid, fp) {
-  mkCall('POST', {
+  (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
     action: 'getReservation',
     data: pid
   }, function (res) {
@@ -75,67 +79,6 @@ function modifyReservation(pid, fp) {
     showMessage("".concat(messageError, "\n        La ID della prenotazione \xE8: ").concat(pid, "."));
   });
 }
-
-// beerstrot-prod:
-var url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
-// const url = 'http://localhost:5001/entry';
-var pCount = 0;
-function mkCall(type, data, success, error) {
-  if (!['POST', 'GET'].includes(type)) return console.log("this ajax method is not good: ".concat(type));
-  var set = {
-    crossDomain: true,
-    url: url,
-    type: type,
-    data: data,
-    success: success,
-    error: error,
-    beforeSend: function beforeSend() {
-      pCount++;
-      $('#loading').show();
-    },
-    complete: function complete() {
-      if (--pCount === 0) $('#loading').hide();
-    }
-  };
-  if (type === 'POST') {
-    set.data = JSON.stringify(set.data);
-    if (url.split('/').reverse()[0] === 'entry') {
-      set.contentType = 'application/json; charset=utf-8';
-    }
-  }
-  $.ajax(set);
-}
-function testeLambdaPOST() {
-  mkCall('POST', {
-    action: 'test',
-    data: {
-      hey: 'man',
-      nums: [5, 6, 7],
-      jac: {
-        33: 44,
-        l: ['asd', 'ewq', 66]
-      }
-    }
-  }, function (res) {
-    return console.log('POST success:', res);
-  }, function (res) {
-    return console.log('POST error:', res);
-  });
-}
-function testeLambdaGET() {
-  mkCall('GET', {
-    action: 'test',
-    data: 'a get arg'
-  }, function (res) {
-    return console.log('GET success:', res);
-  }, function (res) {
-    return console.log('GET error:', res);
-  });
-}
-function testeLambda() {
-  testeLambdaGET();
-  testeLambdaPOST();
-}
 function showDays(datetime) {
   $('#form').hide();
   $('#notesTable').hide();
@@ -144,7 +87,7 @@ function showDays(datetime) {
   $('#ttitle').text('Giorni di Chiusura');
   $('#yes').text('Aggiungi/rimuovi');
   $('#no').text('Non aggiungere/rimuovere');
-  mkCall('POST', {
+  (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
     action: 'days',
     data: datetime || '--'
   }, function (res) {
@@ -188,7 +131,7 @@ function showNotes(datetime) {
   $('#innerNotesDiv').show();
   $('.clearme').remove();
   datetime = datetime || new Date().toISOString();
-  mkCall('GET', {
+  (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('GET', {
     action: 'notes',
     data: datetime
   }, function (res) {
@@ -396,7 +339,7 @@ function showNotes(datetime) {
         }
       }).prependTo('#innerNotesDiv2').text('Invia email di promemoria a clienti').off('click').on('click', function () {
         showConsultaMessage('<p>Vuoi inviare email di promemoria della prenotazione ai clienti?</p>', 'giorno: ' + date, function () {
-          return mkCall('POST', {
+          return (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
             action: 'promemoria',
             data: datetime
           }, function (res) {
@@ -436,7 +379,7 @@ function makeInterface(pid, dates) {
         // user is modifying, cancel previous reservation:
         data.oldID = pid.split('_')[0];
       }
-      mkCall('POST', {
+      (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
         action: 'mkReservation',
         data: data
       }, function (res) {
@@ -518,7 +461,7 @@ function updateShifts(dp, selected, people) {
     month: dp.getMonth(),
     year: dp.getYear() + 1900
   };
-  mkCall('POST', {
+  (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
     action: 'getShifts',
     data: data
   }, function (res) {
@@ -545,7 +488,7 @@ function mkShiftButtons(shifts, selected) {
     if (max_available <= 0) {
       return removeShifts.push(i);
     }
-    for (table in s.tables) {
+    for (var table in s.tables) {
       if (s.tables[table] > max_available) {
         delete s.tables[table];
       }
@@ -597,7 +540,7 @@ function showReservation(pid) {
     $('#tlegend').text('Dettaglio prenotazione modificata');
     pid = pid.split('_modifica')[0];
   }
-  mkCall('POST', {
+  (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
     action: 'getReservation',
     data: pid
   }, function (res) {
@@ -651,7 +594,7 @@ function presentReservation(r) {
   $('#cancel').click(function () {
     showConsultaMessage('Vuoi cancellare la prenotazione?', '', function () {
       $('#close-modal').click();
-      mkCall('POST', {
+      (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
         action: 'cancelReservation',
         data: pid
       }, function (res) {
@@ -831,6 +774,85 @@ function getBookingTimes(b, timed) {
     date2: date2
   };
 }
+
+/***/ }),
+
+/***/ "./src/assets/js/utils.js":
+/*!********************************!*\
+  !*** ./src/assets/js/utils.js ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "bana": function() { return /* binding */ bana; },
+/* harmony export */   "mkCall": function() { return /* binding */ mkCall; },
+/* harmony export */   "testeLambda": function() { return /* binding */ testeLambda; },
+/* harmony export */   "testeLambdaGET": function() { return /* binding */ testeLambdaGET; },
+/* harmony export */   "testeLambdaPOST": function() { return /* binding */ testeLambdaPOST; }
+/* harmony export */ });
+// beerstrot-prod:
+// const url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
+var url = 'http://localhost:5002/entry';
+var pCount = 0;
+function mkCall(type, data, success, error) {
+  if (!['POST', 'GET'].includes(type)) return console.log("this ajax method is not good: ".concat(type));
+  var set = {
+    crossDomain: true,
+    url: url,
+    type: type,
+    data: data,
+    success: success,
+    error: error,
+    beforeSend: function beforeSend() {
+      pCount++;
+      $('#loading').show();
+    },
+    complete: function complete() {
+      if (--pCount === 0) $('#loading').hide();
+    }
+  };
+  if (type === 'POST') {
+    set.data = JSON.stringify(set.data);
+    if (url.split('/').reverse()[0] === 'entry') {
+      set.contentType = 'application/json; charset=utf-8';
+    }
+  }
+  $.ajax(set);
+}
+function testeLambdaPOST() {
+  mkCall('POST', {
+    action: 'test',
+    data: {
+      hey: 'man',
+      nums: [5, 6, 7],
+      jac: {
+        33: 44,
+        l: ['asd', 'ewq', 66]
+      }
+    }
+  }, function (res) {
+    return console.log('POST success:', res);
+  }, function (res) {
+    return console.log('POST error:', res);
+  });
+}
+function testeLambdaGET() {
+  mkCall('GET', {
+    action: 'test',
+    data: 'a get arg'
+  }, function (res) {
+    return console.log('GET success:', res);
+  }, function (res) {
+    return console.log('GET error:', res);
+  });
+}
+function testeLambda() {
+  testeLambdaGET();
+  testeLambdaPOST();
+}
+var bana = 55;
+
 
 /***/ })
 

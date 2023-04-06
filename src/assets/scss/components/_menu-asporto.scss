@@ -258,7 +258,7 @@ a.is-active::after {
 }
 
 //test grid-templates and it works
-#product-page {
+.product-page {
     display: grid;
     grid-template:  "item-image  item-text" 3fr
                     "item-image  item-button" 34.5px;
