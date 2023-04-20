@@ -46,14 +46,16 @@
     		<li class="item "><a href="asporto.html">Ordina da Asporto</a></li>
     		<li class="item "><a href="menu.html">Menù</a></li>
     		<li class="item "><a href="chi-siamo.html">Chi Siamo</a></li>
-    		<li class="item  attuale "><a href="account.html"><i class="las la-user-circle la-3x"></i></a></li>
+    		<li class="item  attuale "><a id="user-pg-btn"><i class="las la-user-circle la-3x"></i></a></li>
     		<li class="toggle"><a href="javascript:void(0)"><i class="las la-bars la-2x"></i></a></li>
     	</ul>
     </nav>
+
     <header class="grid-container">
         <div class="grid-x grid-margin-x grid-margin-y">
             <div class="small-12 cell">
-                <h1 class="first-paragraph-no-hero" id="ttitle">Ciao Andrea</h1>
+              <h1 class="first-paragraph-no-hero"><span id="ttitle">Ciao Andrea</span>
+                <button class="button submit extra-space-button" id="logout-btn">Logout</button></h1>
             </div>
         </div>
     </header>
@@ -62,482 +64,7 @@
             <div class="small-12 medium-6 cell">
                 <h2>I Miei Ordini</h2>
                 <p>Apri un ordine, clicca il pulsante "Metti nel carrello e modifica" (o se vuoi puoi eliminarlo dagli ordini salvati).</p>
-                <ul class="accordion" data-accordion data-active-collapse="true" data-allow-all-closed="true" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500">
-                    <li class="accordion-item ordine-salvato-item"  data-accordion-item>
-                        <a href="#ordine5giugno" class="accordion-title">Ordine del 5 giugno 2021</a>
-                        <div class="accordion-content ordine-salvato-content clearfix" data-tab-content id="ordine5giugno">
-                            <div class="clearfix">
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Beerstrot</h1>
-                                        <p class="note-item">No bacon più fontina e se possibile tanta salsa bbq</p>
-                                        <p class="cottura-item">Media</p>
-                            	  		<p class="note-item">Quantità: 3</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 11,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Bocconcini di Pollo</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 4</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 23,60</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Roll Gambero Rosso</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 28,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Coca cola 33cl</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 1</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 3,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Diablo</h1>
-                                        <p class="note-item">lorem  ipsum no verdi</p>
-                                        <p class="cottura-item">Ben Cotto</p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 5,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Edamame</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 12</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 35,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Nigiri Gambero in Panko</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 6,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-details">
-                            	    <div>
-                            	      	<h1 class="titolo-item">TOTALE:</h1>
-                            	    </div>
-                            	    <div class="item-price">
-                            	      	<h1 class="titolo-item">€ 145,40</h1>
-                            	    </div>
-                            	</div>
-                                <button type="button" id="" class="clear button hollow alert float-left">Elimina</button>
-                                <button type="button" id="" class="button submit float-right">Metti nel carrello e modifica</button>
-                            </div>
-    
-                        </div>
-                    </li>
-                    <li class="accordion-item ordine-salvato-item" data-accordion-item>
-                        <a href="#ordine6giugno" class="accordion-title">Ordine del 6 giugno 2021</a>
-                        <div class="accordion-content ordine-salvato-content" data-tab-content id="ordine6giugno">
-                            <div class="clearfix">
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Beerstrot</h1>
-                                        <p class="note-item">No bacon più fontina e se possibile tanta salsa bbq</p>
-                                        <p class="cottura-item">Media</p>
-                            	  		<p class="note-item">Quantità: 3</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 11,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Bocconcini di Pollo</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 4</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 23,60</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Roll Gambero Rosso</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 28,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Coca cola 33cl</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 1</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 3,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Diablo</h1>
-                                        <p class="note-item">lorem  ipsum no verdi</p>
-                                        <p class="cottura-item">Ben Cotto</p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 5,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Edamame</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 12</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 35,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Nigiri Gambero in Panko</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 6,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-details">
-                            	    <div>
-                            	      	<h1 class="titolo-item">TOTALE:</h1>
-                            	    </div>
-                            	    <div class="item-price">
-                            	      	<h1 class="titolo-item">€ 145,40</h1>
-                            	    </div>
-                            	</div>
-                                <button type="button" id="" class="clear button hollow alert float-left">Elimina</button>
-                                <button type="button" id="" class="button submit float-right">Metti nel carrello e modifica</button>
-                            </div>
-    
-                        </div>
-                    </li>
-                    <li class="accordion-item ordine-salvato-item" data-accordion-item>
-                        <a href="#ordine9giugno" class="accordion-title">Ordine del 9 giugno 2021</a>
-                        <div class="accordion-content ordine-salvato-content" data-tab-content id="ordine9giugno">
-                            <div class="clearfix">
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Beerstrot</h1>
-                                        <p class="note-item">No bacon più fontina e se possibile tanta salsa bbq</p>
-                                        <p class="cottura-item">Media</p>
-                            	  		<p class="note-item">Quantità: 3</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 11,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Bocconcini di Pollo</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 4</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 23,60</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Roll Gambero Rosso</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 28,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Coca cola 33cl</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 1</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 3,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Diablo</h1>
-                                        <p class="note-item">lorem  ipsum no verdi</p>
-                                        <p class="cottura-item">Ben Cotto</p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 5,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Edamame</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 12</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 35,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Nigiri Gambero in Panko</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 6,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-details">
-                            	    <div>
-                            	      	<h1 class="titolo-item">TOTALE:</h1>
-                            	    </div>
-                            	    <div class="item-price">
-                            	      	<h1 class="titolo-item">€ 145,40</h1>
-                            	    </div>
-                            	</div>
-                                <button type="button" id="" class="clear button hollow alert float-left">Elimina</button>
-                                <button type="button" id="" class="button submit float-right">Metti nel carrello e modifica</button>
-                            </div>
-    
-                        </div>
-                    </li>
-                    <li class="accordion-item ordine-salvato-item" data-accordion-item>
-                        <a href="#ordine7giugno" class="accordion-title">Ordine del 7 giugno 2021</a>
-                        <div class="accordion-content ordine-salvato-content" data-tab-content id="ordine7giugno">
-                            <div class="clearfix">
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Beerstrot</h1>
-                                        <p class="note-item">No bacon più fontina e se possibile tanta salsa bbq</p>
-                                        <p class="cottura-item">Media</p>
-                            	  		<p class="note-item">Quantità: 3</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 11,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Bocconcini di Pollo</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 4</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 23,60</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Roll Gambero Rosso</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 28,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Coca cola 33cl</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 1</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 3,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Diablo</h1>
-                                        <p class="note-item">lorem  ipsum no verdi</p>
-                                        <p class="cottura-item">Ben Cotto</p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 5,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Edamame</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 12</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 35,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Nigiri Gambero in Panko</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 6,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-details">
-                            	    <div>
-                            	      	<h1 class="titolo-item">TOTALE:</h1>
-                            	    </div>
-                            	    <div class="item-price">
-                            	      	<h1 class="titolo-item">€ 145,40</h1>
-                            	    </div>
-                            	</div>
-                                <button type="button" id="" class="clear button hollow alert float-left">Elimina</button>
-                                <button type="button" id="" class="button submit float-right">Metti nel carrello e modifica</button>
-                            </div>
-    
-                        </div>
-                    </li>
-                    <li class="accordion-item ordine-salvato-item" data-accordion-item>
-                        <a href="#ordine15giugno" class="accordion-title">Ordine del 15 giugno 2021</a>
-                        <div class="accordion-content ordine-salvato-content" data-tab-content id="ordine15giugno">
-                            <div class="clearfix">
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Beerstrot</h1>
-                                        <p class="note-item">No bacon più fontina e se possibile tanta salsa bbq</p>
-                                        <p class="cottura-item">Media</p>
-                            	  		<p class="note-item">Quantità: 3</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 11,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Bocconcini di Pollo</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 4</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 23,60</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Roll Gambero Rosso</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 28,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Coca cola 33cl</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 1</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 3,00</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Diablo</h1>
-                                        <p class="note-item">lorem  ipsum no verdi</p>
-                                        <p class="cottura-item">Ben Cotto</p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 5,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Edamame</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 12</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 35,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-item align-middle">
-                            		<div class="item-name">
-                            	  		<h1 class="titolo-item">Nigiri Gambero in Panko</h1>
-                                        <p class="note-item"></p>
-                                        <p class="cottura-item"></p>
-                            	  		<p class="note-item">Quantità: 2</p>
-                            		</div>
-                                    <div class="item-price">
-                                        <p class="prezzo-item ">€ 6,90</p>
-                                    </div>
-                              	</div>
-                              	<div class="checkout-summary-details">
-                            	    <div>
-                            	      	<h1 class="titolo-item">TOTALE:</h1>
-                            	    </div>
-                            	    <div class="item-price">
-                            	      	<h1 class="titolo-item">€ 145,40</h1>
-                            	    </div>
-                            	</div>
-                                <button type="button" id="" class="clear button hollow alert float-left">Elimina</button>
-                                <button type="button" id="" class="button submit float-right">Metti nel carrello e modifica</button>
-                            </div>
-    
-                        </div>
-                    </li>
+                <ul class="accordion" data-accordion data-active-collapse="true" data-allow-all-closed="true" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" id="carrelli-accordion">
                 </ul>
             </div>
             <div class="small-12 medium-6 cell">
@@ -545,32 +72,32 @@
                 <div class="grid-x grid-margin-x">
                     <div class="small-6 medium-6 cell">
                         <label><strong>Nome*</strong>
-                            <input type="text" class="required error" id="name" placeholder="Andrea" maxlength="20"/>
+                            <input type="text" class="required error" id="name-m" placeholder="Andrea" maxlength="20"/>
                         </label>
                     </div>
                     <div class="small-6 medium-6 cell">
                         <label><strong>Cognome*</strong>
-                            <input type="text" class="required error" id="surname" placeholder="Tagliazucchi" maxlength="20"/>
+                            <input type="text" class="required error" id="surname-m" placeholder="Tagliazucchi" maxlength="20"/>
                         </label>
                     </div>
                     <div class="small-10 medium-12 large-8 cell">
                         <label><strong>Email (la tua username)*</strong>
-                            <input type="email" class="required error email" id="email" placeholder="andrea@beerstrot.it" maxlength="200"/>
+                            <input type="email" class="required error email" id="email-m" placeholder="andrea@beerstrot.it" maxlength="200" style="background:lightgray" disabled/>
                           </label>
                     </div>
                     <div class="small-6  medium-6 large-4 cell">
                         <label><strong>Telefono*</strong>
-                            <input type="tel" class="required error" id="telephone" placeholder="33850719401" maxlength="35" />
+                            <input type="tel" class="required error" id="telephone-m" placeholder="33850719401" maxlength="35" />
                         </label>
                     </div>
                     <div class="small-12 cell">
                 <label class="container-checkbox">
-                    <input id="newsletter" type="checkbox">
+                    <input id="newsletter-m" type="checkbox">
                         <span class="checkmark"></span>Vorrei ricevere aggiornamenti e novità
                 </label>
             </div>
                 </div>
-                <button id="" class="button submit extra-space-button">Modifica dati</button>
+                <button id="update-usr-btn" class="button submit extra-space-button">Modifica dati</button>
                 <h2 class="extra-space-h2">Le Mie Carte</h2>
                 <p>Aggiungi una  <a href="#" class="highlight">carta di credito o bancomat</a>.</p>
                 <p>Puoi modifcare i dati di pagamento direttamente sul sitoweb di Stripe a questo <a href="#" class="highlight">link</a>.</p>
@@ -578,6 +105,91 @@
                 <p><a href="reset-email-landing.html" type="button" class="highlight">Invia link</a> alla mia email per modificare la password.</p>
             </div>
         </div>
+    </div>
+    
+
+    <div id="signup-login" class="reveal reveal-ecommerce grid-x grid-margin-x grid-margin-y main-container" data-reveal-id='signup-login' data-reveal>
+        <header class="main-header border-bottom">
+            <h2 class="h2-titolo-carrello">Accedere</h2>
+            <button type="button" class="close-button close-button-carrello" data-close aria-label="Close reveal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </header>
+        <div class="grid-x grid-padding-x">
+            <div class="small-12 cell">
+                <h2 class="h2-carrello">Accedi</h2>
+            </div>
+            <div class="small-10 cell">
+                <label><strong>Email</strong>
+                    <input id="email-login" type="email" autocomplete="username" class="required error email" placeholder=""/>
+                </label>
+            </div>
+            <div class="small-8 cell">
+                <label><strong>Password</strong>
+                    <input id="password-login" type="password" class="required error password" autocomplete="current-password"/>
+                </label>
+            </div>
+            <div class="small-12 cell extra-space-button">
+                <button class="button submit" id="login-btn">Accedi</button>
+            </div>
+        </div>
+       <!--  <div class="grid-x grid-padding-x grid-margin-y">
+            <div class="small-12 cell">
+                <h5 class="text-center subheader">oppure</h5>
+            </div>
+        </div> -->
+        <!-- <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="small-12 cell">
+                <button type="button" class="button">Accedi con Facebook</button>
+                <button type="button" class="button alert">Accedi con Google</button>
+            </div>
+        </div> -->
+        <div class="grid-x grid-padding-x extra-space">
+            <div class="small-12 cell">
+                <h2 class="h2-carrello">Registrati</h2>
+            </div>
+            <div class="small-6 medium-6 cell">
+                <label><strong>Nome*</strong>
+                    <input type="text" class="required error" id="name" placeholder="" maxlength="20"/>
+                </label>
+            </div>
+            <div class="small-6 medium-6 cell">
+                <label><strong>Cognome*</strong>
+                    <input type="text" class="required error" id="surname" placeholder="" maxlength="20"/>
+                </label>
+            </div>
+            <div class="small-6 medium-4  cell">
+                <label><strong>Telefono*</strong>
+                    <input type="tel" class="required error" id="telephone" placeholder="" maxlength="35" />
+                </label>
+            </div>
+            <div class="small-10  medium-8 cell">
+                <label><strong>Email (la tua username)*</strong>
+                    <input type="email" class="required error email" id="email" placeholder="" maxlength="200"/>
+                  </label>
+            </div>
+            <div class="small-8 cell">
+                <label><strong>Password*</strong>
+                     <input id="password" type="password" class="required error password" autocomplete="new-password"/>
+                </label>
+            </div>
+            <div class="small-12 cell">
+                <label class="container-checkbox">
+                    <input id="newsletter" type="checkbox">
+                        <span class="checkmark"></span>Vorrei ricevere aggiornamenti e novità
+                </label>
+            </div>
+            <div class="small-12 cell extra-space-button">
+                <button class="button submit" style="margin-bottom:3rem" id="register-btn">Registrati</button>
+            </div>
+        </div>
+        <footer class="main-footer border-top" >
+            <div class="grid-x grid-padding-x">
+                <div class="small-12 cell">
+                    <p class="text-center">Procedendo acconsenti integralmente a<br><a href="informazioni-legali.html#terminiCondizioni" target="_blank" rel="noopener">Termini e Condizioni <i class="las la-external-link-alt"></i></a> e <a href="informazioni-legali.html#privacy" target="_blank" rel="noopener">Privacy <i class="las la-external-link-alt"></i></a></p>
+                </div>
+            </div>
+        </footer>
     </div>
     <footer class="panel-footer">
     	<div class="grid-container">

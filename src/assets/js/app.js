@@ -9,11 +9,6 @@ import 'what-input';
 window.jQuery = $;
 window.$ = $;
 
-
-
-
-
-
 //require('foundation-sites');
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
@@ -25,13 +20,27 @@ import Splide from '@splidejs/splide';
 import { Video } from '@splidejs/splide-extension-video';
 import('./cookieconsent-init');
 import('./navbar');
+import {  mkCall } from './utils';
 
 $(document).ready(() => {
   const pn = window.location.pathname;
+  setRegister();
+  setLogin();
+  $('#user-pg-btn').on('click', () => {
+    if (window.localStorage.currentClient) {
+      window.location.href = '/account.html'
+    } else {
+      $('#signup-login').foundation('open');
+    }
+  });
   if (pn === '/riserva-un-tavolo.html') {
     import('./prenota');
   } else if (pn === '/asporto.html') {
     import('./asporto');
+  } else if (pn === '/checkout.html') {
+    import('./checkout');
+  } else if (pn === '/account.html') {
+    import('./account');
   } else { // index.html:
     splideInit();
   }
@@ -98,4 +107,53 @@ function splideInit () {
       },
     },
   }).mount({ Video });
+}
+
+function setRegister () {
+  $('#register-btn').on('click', () => {
+    const data = {};
+    const get = id => {
+      data[id] = $(`#${id}`).val();
+    }
+    ['name', 'surname', 'telephone', 'email', 'password'].forEach(i => get(i));
+    data.newsletter = $('#newsletter').is(":checked");
+    mkCall(
+      'POST',
+      { action: 'registerClient', data },
+      res => {
+        console.log({ res });
+        window.localStorage.currentClient = JSON.stringify(data);
+        window.location.href = '/account.html'
+      },
+      res => {
+        // TODO: add this show message modal
+        showMessage(messageError);
+      }
+    );
+  });
+}
+
+function setLogin () {
+  console.log('loaded login');
+  $('#login-btn').on('click', () => {
+    console.log('making the call');
+    const data = {};
+    const get = id => {
+      data[id] = $(`#${id}-login`).val();
+    }
+    ['email', 'password'].forEach(i => get(i));
+    mkCall(
+      'POST',
+      { action: 'login', data },
+      res => {
+        if (!res.result) return alert(res.details);
+        window.localStorage.currentClient = JSON.stringify(res.details);
+        window.location.href = '/account.html'
+      },
+      res => {
+        // TODO: add this show message modal
+        showMessage(messageError);
+      }
+    );
+  });
 }

@@ -1,4 +1,5 @@
 <div class="clearfix">
+  <div id="itens-carrello-checkout">
 	{{#each carrello.carrello}}
   	<div class="checkout-summary-item align-middle">
 		<div class="item-name">
@@ -12,12 +13,13 @@
         </div>
   	</div>
   	{{/each}}
+  </div>
   	<div class="checkout-summary-details">
 	    <div>
 	      	<h1 class="titolo-item">TOTALE:</h1>
 	    </div>
 	    <div class="item-price">
-	      	<h1 class="titolo-item">€ 145,40</h1>
+	      	<h1 class="titolo-item" id="checkout-total">€ 145,40</h1>
 	    </div>
 	</div>
 	{{#ifpage 'account'}}

@@ -1,4 +1,4 @@
-<div id="signup-login" class="reveal reveal-ecommerce grid-x grid-margin-x grid-margin-y main-container" data-reveal>
+<div id="signup-login" class="reveal reveal-ecommerce grid-x grid-margin-x grid-margin-y main-container" data-reveal-id='signup-login' data-reveal>
     {{#ifpage 'riserva-un-tavolo'}}
     <header class="main-header">
         <h2 class="h2-titolo-carrello"></h2>
@@ -9,7 +9,7 @@
     {{/ifpage}}
     {{#unlesspage 'riserva-un-tavolo'}}
     <header class="main-header border-bottom">
-        <h2 class="h2-titolo-carrello">Chiudi per continuare la spesa</h2>
+        <h2 class="h2-titolo-carrello">Accedere</h2>
         <button type="button" class="close-button close-button-carrello" data-close aria-label="Close reveal">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -21,16 +21,16 @@
         </div>
         <div class="small-10 cell">
             <label><strong>Email</strong>
-                <input id="user-text-field" type="email" autocomplete="username" class="required error email" placeholder=""/>
+                <input id="email-login" type="email" autocomplete="username" class="required error email" placeholder=""/>
             </label>
         </div>
         <div class="small-8 cell">
             <label><strong>Password</strong>
-                <input id="password-text-field" type="password" class="required error password" autocomplete="current-password"/>
+                <input id="password-login" type="password" class="required error password" autocomplete="current-password"/>
             </label>
         </div>
         <div class="small-12 cell extra-space-button">
-            <button class="button submit">Accedi</button>
+            <button class="button submit" id="login-btn">Accedi</button>
         </div>
     </div>
    <!--  <div class="grid-x grid-padding-x grid-margin-y">
@@ -70,7 +70,7 @@
         </div>
         <div class="small-8 cell">
             <label><strong>Password*</strong>
-                 <input id="new-password-text-field" type="password" class="required error password" autocomplete="new-password"/>
+                 <input id="password" type="password" class="required error password" autocomplete="new-password"/>
             </label>
         </div>
         <div class="small-12 cell">
@@ -80,7 +80,7 @@
             </label>
         </div>
         <div class="small-12 cell extra-space-button">
-            <button class="button submit" style="margin-bottom:3rem" >Registrati</button>
+            <button class="button submit" style="margin-bottom:3rem" id="register-btn">Registrati</button>
         </div>
     </div>
     <footer class="main-footer border-top" >

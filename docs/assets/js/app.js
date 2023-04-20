@@ -21562,6 +21562,86 @@ foundation_sites_js_foundation_core__WEBPACK_IMPORTED_MODULE_1__.Foundation.plug
 foundation_sites_js_foundation_core__WEBPACK_IMPORTED_MODULE_1__.Foundation.plugin(foundation_sites_js_foundation_responsiveAccordionTabs__WEBPACK_IMPORTED_MODULE_18__.ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 
 
+/***/ }),
+
+/***/ "./src/assets/js/utils.js":
+/*!********************************!*\
+  !*** ./src/assets/js/utils.js ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "bana": function() { return /* binding */ bana; },
+/* harmony export */   "mkCall": function() { return /* binding */ mkCall; },
+/* harmony export */   "testeLambda": function() { return /* binding */ testeLambda; },
+/* harmony export */   "testeLambdaGET": function() { return /* binding */ testeLambdaGET; },
+/* harmony export */   "testeLambdaPOST": function() { return /* binding */ testeLambdaPOST; }
+/* harmony export */ });
+// beerstrot-prod:
+// const url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
+var url = 'http://localhost:5002/entry';
+var pCount = 0;
+function mkCall(type, data, success, error) {
+  if (!['POST', 'GET'].includes(type)) return console.log("this ajax method is not good: ".concat(type));
+  var set = {
+    crossDomain: true,
+    url: url,
+    type: type,
+    data: data,
+    success: success,
+    error: error,
+    beforeSend: function beforeSend() {
+      pCount++;
+      $('#loading').show();
+    },
+    complete: function complete() {
+      if (--pCount === 0) $('#loading').hide();
+    }
+  };
+  if (type === 'POST') {
+    set.data = JSON.stringify(set.data);
+    if (url.split('/').reverse()[0] === 'entry') {
+      set.contentType = 'application/json; charset=utf-8';
+    }
+  }
+  $.ajax(set);
+}
+function testeLambdaPOST() {
+  mkCall('POST', {
+    action: 'test',
+    data: {
+      hey: 'man',
+      nums: [5, 6, 7],
+      jac: {
+        33: 44,
+        l: ['asd', 'ewq', 66]
+      }
+    }
+  }, function (res) {
+    return console.log('POST success:', res);
+  }, function (res) {
+    return console.log('POST error:', res);
+  });
+}
+function testeLambdaGET() {
+  mkCall('GET', {
+    action: 'test',
+    data: 'a get arg'
+  }, function (res) {
+    return console.log('GET success:', res);
+  }, function (res) {
+    return console.log('GET error:', res);
+  });
+}
+function testeLambda() {
+  testeLambdaGET();
+  testeLambdaPOST();
+}
+var bana = 55;
+
+
 /***/ })
 
 /******/ 	});
@@ -21883,6 +21963,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_foundation_explicit_pieces__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/foundation-explicit-pieces */ "./src/assets/js/lib/foundation-explicit-pieces.js");
 /* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @splidejs/splide */ "./node_modules/@splidejs/splide/dist/js/splide.esm.js");
 /* harmony import */ var _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @splidejs/splide-extension-video */ "./node_modules/@splidejs/splide-extension-video/dist/js/splide-extension-video.esm.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils */ "./src/assets/js/utils.js");
 
 
 
@@ -21904,12 +21985,26 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
 
 __webpack_require__.e(/*! import() */ "src_assets_js_cookieconsent-init_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./cookieconsent-init */ "./src/assets/js/cookieconsent-init.js", 23));
 __webpack_require__.e(/*! import() */ "src_assets_js_navbar_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./navbar */ "./src/assets/js/navbar.js", 23));
+
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   var pn = window.location.pathname;
+  setRegister();
+  setLogin();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#user-pg-btn').on('click', function () {
+    if (window.localStorage.currentClient) {
+      window.location.href = '/account.html';
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#signup-login').foundation('open');
+    }
+  });
   if (pn === '/riserva-un-tavolo.html') {
     __webpack_require__.e(/*! import() */ "src_assets_js_prenota_js").then(__webpack_require__.bind(__webpack_require__, /*! ./prenota */ "./src/assets/js/prenota.js"));
   } else if (pn === '/asporto.html') {
     __webpack_require__.e(/*! import() */ "src_assets_js_asporto_js").then(__webpack_require__.bind(__webpack_require__, /*! ./asporto */ "./src/assets/js/asporto.js"));
+  } else if (pn === '/checkout.html') {
+    __webpack_require__.e(/*! import() */ "src_assets_js_checkout_js").then(__webpack_require__.bind(__webpack_require__, /*! ./checkout */ "./src/assets/js/checkout.js"));
+  } else if (pn === '/account.html') {
+    __webpack_require__.e(/*! import() */ "src_assets_js_account_js").then(__webpack_require__.bind(__webpack_require__, /*! ./account */ "./src/assets/js/account.js"));
   } else {
     // index.html:
     splideInit();
@@ -21974,6 +22069,55 @@ function splideInit() {
     }
   }).mount({
     Video: _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_4__.Video
+  });
+}
+function setRegister() {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#register-btn').on('click', function () {
+    var data = {};
+    var get = function get(id) {
+      data[id] = jquery__WEBPACK_IMPORTED_MODULE_0___default()("#".concat(id)).val();
+    };
+    ['name', 'surname', 'telephone', 'email', 'password'].forEach(function (i) {
+      return get(i);
+    });
+    data.newsletter = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#newsletter').is(":checked");
+    (0,_utils__WEBPACK_IMPORTED_MODULE_5__.mkCall)('POST', {
+      action: 'registerClient',
+      data: data
+    }, function (res) {
+      console.log({
+        res: res
+      });
+      window.localStorage.currentClient = JSON.stringify(data);
+      window.location.href = '/account.html';
+    }, function (res) {
+      // TODO: add this show message modal
+      showMessage(messageError);
+    });
+  });
+}
+function setLogin() {
+  console.log('loaded login');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#login-btn').on('click', function () {
+    console.log('making the call');
+    var data = {};
+    var get = function get(id) {
+      data[id] = jquery__WEBPACK_IMPORTED_MODULE_0___default()("#".concat(id, "-login")).val();
+    };
+    ['email', 'password'].forEach(function (i) {
+      return get(i);
+    });
+    (0,_utils__WEBPACK_IMPORTED_MODULE_5__.mkCall)('POST', {
+      action: 'login',
+      data: data
+    }, function (res) {
+      if (!res.result) return alert(res.details);
+      window.localStorage.currentClient = JSON.stringify(res.details);
+      window.location.href = '/account.html';
+    }, function (res) {
+      // TODO: add this show message modal
+      showMessage(messageError);
+    });
   });
 }
 }();

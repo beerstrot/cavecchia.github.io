@@ -1,4 +1,5 @@
 import { bana, mkCall, testeLambdaPOST } from './utils';
+import { itemsCarrelloTable } from './htmlTemplates';
 
 $(document).ready(() => {
   console.log('happen', bana);
@@ -9,6 +10,7 @@ $(document).ready(() => {
       mkInterface(res);
     },
     res => {
+      // TODO: add this show message modal
       showMessage(messageError);
     }
   );
@@ -16,54 +18,65 @@ $(document).ready(() => {
 });
 
 function mkInterface (r) {
-  window.rrr = r;
   const d = JSON.parse(r);
   const prods = d.items.results.filter(i => i.option1_value);
-  window.ppp = prods;
   mkMenu(prods);
+  $('#vai-checkout-large').off('click').on('click', () => {
+    if (window.localStorage.currentClient) {
+      window.location.href = '/checkout.html'
+    } else {
+      $('#signup-login').foundation('open');
+    }
+  });
+  $('#vai-checkout-small').off('click').on('click', () => {
+    if (window.localStorage.currentClient) {
+      window.location.href = '/checkout.html'
+    } else {
+      $('#signup-login').foundation('open');
+    }
+  });
 }
 
 function mkMenu (prods) {
-  // const menu = $('#menupage-text').html('');
-  // $('<div/>', { class: 'small-12 large-8 cell' })
-  //   .appendTo(
-  //     $('<div/>', { class: 'grid-x grid-margin-x' })
-  //   ).appendTo(
-  //     $('<div/>', { class: 'grid-container' })
-  //   ).appendTo(menu);
-  // const sections = ppp.map(i => i.option1_value)
-  window.sss = [];
+  window.allProducts = prods;
+  $('h2').parent().children('.grid-x').html('');
   prods.forEach(p => {
+    p.quantity = 0;
     const secDiv = $(`h2:contains("${p.option1_value}")`).parent().children('.grid-x');
     if (secDiv.length) {
-      console.log('trovato!:', p.name);
       mkCell(p, secDiv);
       mkModal(p, secDiv);
     } else {
       console.log('non trovato:', p.name);
     }
-    window.sss.push(secDiv);
   });
+  $('#carrelloPieno').hide();
+  checkStoredOrder();
+  setRegister();
+  setOrari();
 }
 
 function getImgRoot () {
-  const imgURL = 'https://www.beerstrot.it/cavecchia.github.io/assets/img/test/test-immagine1-1-1.jpg';
-  const pieces = imgURL.split('/');
-  const imgRoot = pieces.slice(0, pieces.length - 1).join('/');
+  // const imgURL = 'https://www.beerstrot.it/cavecchia.github.io/assets/img/test/test-immagine1-1-1.jpg';
+  // const imgURL = window.location.origin + '/' + 'assets/img/prod/'
+  // const pieces = imgURL.split('/');
+  // const imgRoot = pieces.slice(0, pieces.length - 1).join('/');
+  const imgRoot = window.location.origin + '/' + 'assets/img/prod/'
   return imgRoot;
 }
 const IMG_ROOT = getImgRoot();
 
 function mkCellSmall (p, cell) {
-  const pid = p.name.replaceAll(' ', '');
+  const pid = mkPid(p);
   const pp = mkDiv(
     'product-page',
     mkDiv('hide-for-medium', cell)
   );
-  // const imgName = p.name.replaceAll(' ', '') + '_quadrato.png';
+  // const imgName = pid + '_quadrato.jpg';
   const imgName = 'test-immagine1-1-1.jpg';
   M('img', '', mkDiv('item-image', pp), {
-    src: `${IMG_ROOT}/${imgName}`,
+    src: `${IMG_ROOT}${imgName}`,
+    onerror: "this.style.display='none'",
     alt: p.name
   });
 
@@ -82,7 +95,7 @@ function mkCellSmall (p, cell) {
 }
 
 function mkCellMedium (p, cell) {
-  const pid = mkPid(p.name);
+  const pid = mkPid(p);
   const cs = mkDiv(
     'card-section',
     mkDiv(
@@ -91,9 +104,10 @@ function mkCellMedium (p, cell) {
     )
   );
   const imgName = 'test-immagine1-16-9.jpg';
-  // const imgName = p.name.replaceAll(' ', '') + '_rettangolare.png';
+  // const imgName = pid + '_rettangolare.jpg';
   M('img', 'show-for-medium', cs, {
-    src: `${IMG_ROOT}/${imgName}`,
+    src: `${IMG_ROOT}${imgName}`,
+    onerror: "this.style.display='none'",
     alt: p.name
   });
   M(
@@ -113,13 +127,13 @@ function mkCellMedium (p, cell) {
 }
 
 function mkModal (p, secDiv) {
-  const pid = mkPid(p.name);
+  const pid = mkPid(p);
   const imgName = 'test-immagine1-16-9.jpg';
   // const imgName = pid + '_rettangolare.png';
   const modal = M('div', 'reveal reveal-ecommerce', secDiv, {
     id: pid
   });
-  M('button', 'close-button close-button-sticky', modal, {
+  const closeBtn = M('button', 'close-button close-button-sticky', modal, {
     type: 'button',
     'aria-label': 'Close reveal',
   }).append(
@@ -128,36 +142,43 @@ function mkModal (p, secDiv) {
     modal.foundation('close');
   });
   M('img', '', modal, {
-    src: `${IMG_ROOT}/${imgName}`,
+    src: `${IMG_ROOT}${imgName}`,
+    onerror: "this.style.display='none'",
     alt: p.name
   });
   M('h1', 'h1-modal', M('header', 'main-header', modal)).html(p.name);
 
   const modalDiv = mkDiv('main-content', modal);
   M('small', 'allergeni', M('p', '', modalDiv).html(p.description)).html(p.allergens.map(i => i.name).join(', '));
-  if (hasNote(p)) {
-    M('textarea', '', M('label', '', modalDiv), {
-      maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem' }
-    });
-  }
-  p.variations.forEach(v => {
-    const name = v.name;
-    if (name === 'note') return;
-    const sel = M('select', '', M('label', '', modalDiv).html(`<strong>${name}</strong>`))
-    v.variation_values.forEach(vv => {
-      M('option', '', sel, { value: vv.value })
-    });
+  const noteText = M('textarea', '', M('label', '', modalDiv, { id: pid + '_note' }), {
+    maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem' }
   });
+  if (!hasNote(p)) {
+    $('#' + pid + '_note').hide();
+  }
 
+  const cottura = M('select', '', M('label', '', modalDiv, { id: pid + '_cottura' }).html(`<strong>Cottura</strong>`), { id: pid + 'cottura_', 'data-variation_id': getCotturaId(p) })
+  const v = hasCottura(p);
+  v.forEach(vv => {
+    M('option', '', cottura, { value: vv.id }).html(vv.value);
+  });
+  console.log('cottura', p, v);
+  if (v.length === 0) {
+    $('#' + pid + '_cottura').hide();
+  }
   const footer = M('footer', 'main-footer-carrello-small', modal);
   const footerDiv = mkDiv('input-group input-number-group', footer);
+  let quantity = 2;
+  let price = quantity * p.price1;
   M('i', 'las la-minus-square la-2x',
     M('span', 'input-number-decrement',
       mkDiv('input-group-button group-margin', footerDiv)
     ).click(function() {
       var $input = $(this).parents('.input-number-group').find('.input-number');
       var val = parseInt($input.val(), 10);
-      $input.val(val - 1);
+      quantity = val - 1;
+      $input.val(quantity);
+      placePrice(quantity);
     })
   );
   M('input', 'input-number group-margin', footerDiv, {
@@ -169,12 +190,35 @@ function mkModal (p, secDiv) {
     ).click(function() {
       var $input = $(this).parents('.input-number-group').find('.input-number');
       var val = parseInt($input.val(), 10);
-      $input.val(val + 1);
+      quantity = val + 1;
+      $input.val(quantity);
+      placePrice(quantity);
     })
   );
-  M('span', 'price',
+  const btnPrice = M('span', 'price',
     M('button', 'button expanded-with-padding extra-space-button-modal', footer, { type: 'button' }).html('Aggiungi al carrello')
-  ).html(` € ${p.price}`);
+      .on('click', () => {
+        $(`#carrello-row-${pid}`).remove();
+        p.quantity = quantity;
+        p.noteText = noteText.val();
+        if (quantity) {
+          const cotturaV = $('#' + pid + 'cottura_ option:selected').text();
+          const cotturaI = $('#' + pid + 'cottura_ option:selected').val();
+          p.cotturaV = cotturaV;
+          p.cotturaI = cotturaI;
+          p.cotturaId = $('#' + pid + 'cottura_').data().variation_id;
+          const template = itemsCarrelloTable(p.name, p.noteText, p.cotturaV, p.quantity, price, pid);
+          $('#itens-carrello-table').append(template);
+        }
+        updateTotal();
+        closeBtn.click();
+      })
+  ).html(` € ${price}`);
+
+  function placePrice (quantity) {
+    price = p.price1 * quantity;
+    btnPrice.html(` € ${price}`)
+  }
 
   new Foundation.Reveal(modal.foundation());
 }
@@ -197,10 +241,129 @@ function M (el = 'div', class_ = '', parent_ = null, attrs = {}) {
   return e
 }
 
-function mkPid (name) {
-  return name.replaceAll(' ', '').replaceAll("'", '');
+function mkPid (p) {
+  return p.name.replaceAll(' ', '').replaceAll("'", '');
 }
 
 function hasNote(p) {
   return p.variations.map(p => p.name).includes('note');
+}
+
+function hasCottura(p) {
+  const cot = p.variations.filter(i => i.name === 'Cottura')[0];
+  if (cot) {
+    return cot.variation_values;
+  }
+  return [];
+}
+
+function updateTotal () {
+  const prods = window.allProducts.filter(p => p.quantity);
+  window.localStorage.currentOrder = JSON.stringify(prods);
+  const total = prods.reduce((a, p) => a + p.quantity * p.price1, 0);
+  if (total === 0) {
+    $('#carrelloPieno').hide();
+    $('#carrelloVuoto').show();
+  } else {
+    $('#carrelloPieno').show();
+    $('#carrelloVuoto').hide();
+  }
+  $('#carrello-table-totale').text(`€ ${total.toLocaleString()}`);
+}
+
+function checkStoredOrder () {
+  const storage = window.localStorage.currentOrder;
+  if (!storage) return;
+  const prods = JSON.parse(storage);
+  if (prods) {
+    prods.forEach(p => {
+      const prod = window.allProducts.filter(pp => pp.id === p.id);
+      if (prod.length) {
+        const p_ = prod[0];
+        p_.quantity = p.quantity;
+        p_.noteText = p.noteText;
+        p_.cotturaV = p.cotturaV || '';
+        const price = p.quantity * p.price1;
+        const pid = mkPid(p);
+        const template = itemsCarrelloTable(p.name, p.noteText, p.cotturaV, p.quantity, price, pid);
+        $('#itens-carrello-table').append(template);
+      }
+    });
+  }
+  updateTotal();
+}
+
+function setOrari () {
+  const cells = $('.orario-btn');
+  cells.each(function () {
+    const cell = $(this);
+    cell.on('click', () => {
+      cells.each(function () {
+        $(this).attr('class', 'button orario-btn')
+          .attr('bselected', false);
+      });
+      cell.attr('class', 'button orario-btn success')
+        .attr('bselected', true);
+      window.localStorage.timeSlot = cell.text();
+    });
+  });
+  if (window.localStorage.timeSlot) {
+    $(`button:contains("${window.localStorage.timeSlot}")`).click();
+  }
+}
+
+function getCotturaId (p) {
+  const cot = p.variations.filter(i => i.name === 'Cottura')[0];
+  if (cot) {
+    return cot.id;
+  }
+  return undefined;
+}
+
+function setRegister () {
+  $('#register-btn').off('click').on('click', () => {
+    const data = {};
+    const get = id => {
+      data[id] = $(`#${id}`).val();
+    }
+    ['name', 'surname', 'telephone', 'email', 'password'].forEach(i => get(i));
+    data.newsletter = $('#newsletter').is(":checked");
+    mkCall(
+      'POST',
+      { action: 'registerClient', data },
+      res => {
+        console.log({ res });
+        window.localStorage.currentClient = JSON.stringify(data);
+        window.location.href = '/checkout.html';
+      },
+      res => {
+        // TODO: add this show message modal
+        showMessage(messageError);
+      }
+    );
+  });
+}
+
+function setLogin () {
+  console.log('loaded login');
+  $('#login-btn').off('click').on('click', () => {
+    const data = {};
+    const get = id => {
+      data[id] = $(`#${id}-login`).val();
+    }
+    ['email', 'password'].forEach(i => get(i));
+    mkCall(
+      'POST',
+      { action: 'login', data },
+      res => {
+        if (!res.result) return alert(res.details);
+        window.localStorage.currentClient = JSON.stringify(res.details);
+        window.location.href = '/checkout.html';
+      },
+      res => {
+        // TODO: add this show message modal
+        showMessage(messageError);
+      }
+    );
+  });
 }
