@@ -21580,8 +21580,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "testeLambdaPOST": function() { return /* binding */ testeLambdaPOST; }
 /* harmony export */ });
 // beerstrot-prod:
-// const url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
-var url = 'http://localhost:5002/entry';
+var url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
+// const url = 'http://localhost:5002/entry';
 var pCount = 0;
 function mkCall(type, data, success, error) {
   if (!['POST', 'GET'].includes(type)) return console.log("this ajax method is not good: ".concat(type));
@@ -22005,6 +22005,10 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     __webpack_require__.e(/*! import() */ "src_assets_js_checkout_js").then(__webpack_require__.bind(__webpack_require__, /*! ./checkout */ "./src/assets/js/checkout.js"));
   } else if (pn === '/account.html') {
     __webpack_require__.e(/*! import() */ "src_assets_js_account_js").then(__webpack_require__.bind(__webpack_require__, /*! ./account */ "./src/assets/js/account.js"));
+  } else if (pn === '/orari.html') {
+    __webpack_require__.e(/*! import() */ "src_assets_js_orari_js").then(__webpack_require__.bind(__webpack_require__, /*! ./orari */ "./src/assets/js/orari.js"));
+  } else if (pn === '/checkout-landing.html') {
+    __webpack_require__.e(/*! import() */ "src_assets_js_checkout-landing_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./checkout-landing */ "./src/assets/js/checkout-landing.js", 23));
   } else {
     // index.html:
     splideInit();
@@ -22097,9 +22101,7 @@ function setRegister() {
   });
 }
 function setLogin() {
-  console.log('loaded login');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#login-btn').on('click', function () {
-    console.log('making the call');
     var data = {};
     var get = function get(id) {
       data[id] = jquery__WEBPACK_IMPORTED_MODULE_0___default()("#".concat(id, "-login")).val();

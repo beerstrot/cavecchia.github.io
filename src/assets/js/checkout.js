@@ -3,7 +3,7 @@ import { itemsCarrelloCheckout } from './htmlTemplates';
 
 $(document).ready(() => {
   checkStoredOrder();
-  setOrari();
+  getClosedTimeslots();
   setSendOrder();
 });
 
@@ -29,10 +29,28 @@ function checkStoredOrder () {
   $('#checkout-total').text(`€ ${total.toLocaleString()}`);
 }
 
+function getClosedTimeslots () {
+  mkCall(
+    'POST',
+    { action: 'getClosedTimeslots', data: '--' },
+    res => {
+      window.closedTimeslots = new Set(res);
+      setOrari();
+    },
+    res => {
+      // TODO: add this show message modal
+      showMessage(messageError);
+    }
+  );
+}
+
 function setOrari () {
   const cells = $('.orario-btn');
   cells.each(function () {
     const cell = $(this);
+    const text = cell.text();
+    let isEnabled = !window.closedTimeslots.has(text)
+    cell.attr('disabled', !isEnabled);
     cell.on('click', () => {
       cells.each(function () {
         $(this).attr('class', 'button orario-btn')
@@ -40,7 +58,7 @@ function setOrari () {
       });
       cell.attr('class', 'button orario-btn success')
         .attr('bselected', true);
-      window.localStorage.timeSlot = cell.text();
+      window.localStorage.timeSlot = text;
     });
   });
   if (window.localStorage.timeSlot) {
@@ -48,28 +66,9 @@ function setOrari () {
   }
 }
 
-// item_id=prod['id'],
-// name=prod['name'],
-// uuid=prod['uuid'],
-// net_price=prod['net_price'],
-// vat_perc=prod['vat_perc'],
-// final_price=prod['price1'] * 3,
-// final_net_price=prod['net_price'] * 3,
-// notes='a note in the prod',
-// price=prod['price1'],
-// quantity=3,
-// operator_id=279,
-// operator_name='Andrea Tagliazucchi',
-
-// variations=[dict(
-//   name='Cottura',
-//   value='Ben Cotto',
-//   variation_id=69,
-//   variation_value_id=169
-// )]
-
 function setSendOrder () {
   const client = JSON.parse(window.localStorage.currentClient);
+  window.client = client;
   const ps = window.prods.map(p => {
     const data = {
       item_id: p.id,
@@ -101,7 +100,7 @@ function setSendOrder () {
         email: client.email,
         first_name: client.name,
         last_name: client.surname,
-        mobile: client.telefone
+        mobile: client.telephone
       }
     },
     takeout_time: window.localStorage.timeSlot
@@ -112,10 +111,11 @@ function setSendOrder () {
       'POST',
       { action: 'registerOrder', data },
       res => {
-        console.log({ res });
-        const client = JSON.parse(window.localStorage.currentClient);
-        client.orders = res.Attributes.orders
+        client.orders = JSON.parse(res).Attributes.orders;
         window.localStorage.currentClient = JSON.stringify(client);
+        const order = client.orders[client.orders.length - 1];
+        window.localStorage.lastOrder = JSON.stringify(order);
+        delete window.localStorage.currentOrder;
         window.location.href = '/checkout-landing.html'
       },
       res => {

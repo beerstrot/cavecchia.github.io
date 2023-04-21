@@ -1,6 +1,6 @@
 // beerstrot-prod:
-// const url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
-const url = 'http://localhost:5002/entry';
+const url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
+// const url = 'http://localhost:5002/entry';
 let pCount = 0;
 function mkCall(type, data, success, error) {
   if (!['POST', 'GET'].includes(type)) return console.log(`this ajax method is not good: ${type}`);

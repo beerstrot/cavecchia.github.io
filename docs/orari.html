@@ -12,11 +12,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout | Ca' Vecchia Beerstrot </title>
-    <meta name="description" content="Finalizza il tuo ordine d&#x27;asporto e invialo.">
+    <title>Orari | Ca' Vecchia Beerstrot </title>
+    <meta name="description" content="Sceglie i orari ammessi e non ammessi">
     <meta name="author" content="Ca' Vecchia Beerstrot">
     <meta name="copyright" content="Beerstrot Copyright (c) 2023">
-    <link rel="canonical" href="https://www.beerstrot.it/checkout.html">
+    <link rel="canonical" href="https://www.beerstrot.it/chiusura.html">
     <link rel="icon" href="assets/img/thumbs/favicon.png">
     <meta name="p:domain_verify" content="ca68ebe696c4699798a5a243ca187b2d">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -54,7 +54,7 @@
     <div class="grid-container panel-home-n">
         <div class="grid-x grid-margin-x">
             <div class="small-12 cell">
-                <h1 class="first-paragraph-no-hero">Checkout</h1>
+                <h1 class="first-paragraph-no-hero">Orari</h1>
     
             </div>
         </div>
@@ -62,9 +62,10 @@
             <div class="small-12 medium-6 cell">
                 <div class="grid-x grid-margin-x grid-margin-y">
                     <div class="small-12 xlarge-8 cell ">
-                        <h2>Orario ritiro asporto</h2>
-                        <p>Orario scelto: <strong>19.15</strong></p>
-                        <p>Scegli o modifica l'orario:</p>
+                        <h2>Orari consentiti</h2>
+                        <div id="last-time">
+                          ) ( _o_o_ oOo _o_o_ ) (
+                        </div>
                         <div class="grid-x small-up-4 align-center extra-space">
                             <div class="cell">
                                 <button type="button" class="button orario-btn">19:00</button>
@@ -103,52 +104,14 @@
                                 <button type="button" class="button orario-btn">21:45</button>
                             </div>
                         </div>
-    
-                    </div>
-                    <div class="small-12 cell">
-                        <h2>Dove ritirare l'asporto</h2>
-                        <p>Ca' Vecchia Beerstrot
-                            <a href="http://maps.apple.com/?lsp=9902&auid=2172393922260918433&sll=43.435636,13.377735&q=Ca%27%20Vecchia%20Beerstrot&hnear=Via%20Centofinestre%2020%2C%2060024%20Filottrano%2C%20Ancona%2C%20Italia" class="highlight" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <span itemprop="streetAddress">Via Centofinestre, 20</span>
-                            <span itemprop="postalCode">60024</span>
-                            <span itemprop="addressLocality">Filottrano</span>
-                            <span itemprop="addressRegion">AN</span>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="small-12 cell">
-                        <h2>Pagamento</h2>
-                        <p>Puoi pagare al momento del ritiro con carta, bancomat o contanti</p>
+                        <div id='consolidate'>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="small-12 medium-6 cell">
-                <h2>Riepilogo ordine</h2>
-                <div class="clearfix">
-                  <div id="itens-carrello-checkout">
-                  </div>
-                  	<div class="checkout-summary-details">
-                	    <div>
-                	      	<h1 class="titolo-item">TOTALE:</h1>
-                	    </div>
-                	    <div class="item-price">
-                	      	<h1 class="titolo-item" id="checkout-total">€ 0,00</h1>
-                	    </div>
-                	</div>
-                </div>
-    
-            </div>
-        </div>
-        <div class="grid-x grid-margin-x grid-margin-y">
-            <div class="small-12 cell">
-                <button type="button" id="" class="button hollow secondary" onclick="location.href='asporto.html';">Ritorna alla spesa</button>
-                <button id="send-order" class="button submit" style="margin-inline: 15px;">Invia ordine asporto</button>
-                <p><small>Inviando l'ordine da asporto acconsenti integralmente a<br>
-                    <a href="informazioni-legali.html#terminiCondizioni" target="_blank" rel="noopener">Termini e Condizioni <i class="las la-external-link-alt"></i></a> e <a href="informazioni-legali.html#privacy" target="_blank" rel="noopener">Informativa sulla Privacy<i class="las la-external-link-alt"></i></a>.
-                </small></p>
             </div>
         </div>
     </div>
+    
     
 
     <div id="signup-login" class="reveal reveal-ecommerce grid-x grid-margin-x grid-margin-y main-container" data-reveal-id='signup-login' data-reveal>

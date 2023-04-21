@@ -53,7 +53,7 @@ function mkMenu (prods) {
   $('#carrelloPieno').hide();
   checkStoredOrder();
   setRegister();
-  setOrari();
+  getClosedTimeslots();
 }
 
 function getImgRoot () {
@@ -293,10 +293,28 @@ function checkStoredOrder () {
   updateTotal();
 }
 
+function getClosedTimeslots () {
+  mkCall(
+    'POST',
+    { action: 'getClosedTimeslots', data: '--' },
+    res => {
+      window.closedTimeslots = new Set(res);
+      setOrari();
+    },
+    res => {
+      // TODO: add this show message modal
+      showMessage(messageError);
+    }
+  );
+}
+
 function setOrari () {
   const cells = $('.orario-btn');
   cells.each(function () {
     const cell = $(this);
+    const text = cell.text();
+    let isEnabled = !window.closedTimeslots.has(text)
+    cell.attr('disabled', !isEnabled);
     cell.on('click', () => {
       cells.each(function () {
         $(this).attr('class', 'button orario-btn')
@@ -304,7 +322,7 @@ function setOrari () {
       });
       cell.attr('class', 'button orario-btn success')
         .attr('bselected', true);
-      window.localStorage.timeSlot = cell.text();
+      window.localStorage.timeSlot = text;
     });
   });
   if (window.localStorage.timeSlot) {

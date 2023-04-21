@@ -41,6 +41,10 @@ $(document).ready(() => {
     import('./checkout');
   } else if (pn === '/account.html') {
     import('./account');
+  } else if (pn === '/orari.html') {
+    import('./orari');
+  } else if (pn === '/checkout-landing.html') {
+    import('./checkout-landing');
   } else { // index.html:
     splideInit();
   }
@@ -134,9 +138,7 @@ function setRegister () {
 }
 
 function setLogin () {
-  console.log('loaded login');
   $('#login-btn').on('click', () => {
-    console.log('making the call');
     const data = {};
     const get = id => {
       data[id] = $(`#${id}-login`).val();

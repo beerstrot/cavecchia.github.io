@@ -69,7 +69,7 @@ function mkMenu(prods) {
   $('#carrelloPieno').hide();
   checkStoredOrder();
   setRegister();
-  setOrari();
+  getClosedTimeslots();
 }
 function getImgRoot() {
   // const imgURL = 'https://www.beerstrot.it/cavecchia.github.io/assets/img/test/test-immagine1-1-1.jpg';
@@ -302,16 +302,31 @@ function checkStoredOrder() {
   }
   updateTotal();
 }
+function getClosedTimeslots() {
+  (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
+    action: 'getClosedTimeslots',
+    data: '--'
+  }, function (res) {
+    window.closedTimeslots = new Set(res);
+    setOrari();
+  }, function (res) {
+    // TODO: add this show message modal
+    showMessage(messageError);
+  });
+}
 function setOrari() {
   var cells = $('.orario-btn');
   cells.each(function () {
     var cell = $(this);
+    var text = cell.text();
+    var isEnabled = !window.closedTimeslots.has(text);
+    cell.attr('disabled', !isEnabled);
     cell.on('click', function () {
       cells.each(function () {
         $(this).attr('class', 'button orario-btn').attr('bselected', false);
       });
       cell.attr('class', 'button orario-btn success').attr('bselected', true);
-      window.localStorage.timeSlot = cell.text();
+      window.localStorage.timeSlot = text;
     });
   });
   if (window.localStorage.timeSlot) {

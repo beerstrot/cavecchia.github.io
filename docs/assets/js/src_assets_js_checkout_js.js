@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 
 $(document).ready(function () {
   checkStoredOrder();
-  setOrari();
+  getClosedTimeslots();
   setSendOrder();
 });
 function checkStoredOrder() {
@@ -40,45 +40,40 @@ function checkStoredOrder() {
   }, 0);
   $('#checkout-total').text("\u20AC ".concat(total.toLocaleString()));
 }
+function getClosedTimeslots() {
+  (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
+    action: 'getClosedTimeslots',
+    data: '--'
+  }, function (res) {
+    window.closedTimeslots = new Set(res);
+    setOrari();
+  }, function (res) {
+    // TODO: add this show message modal
+    showMessage(messageError);
+  });
+}
 function setOrari() {
   var cells = $('.orario-btn');
   cells.each(function () {
     var cell = $(this);
+    var text = cell.text();
+    var isEnabled = !window.closedTimeslots.has(text);
+    cell.attr('disabled', !isEnabled);
     cell.on('click', function () {
       cells.each(function () {
         $(this).attr('class', 'button orario-btn').attr('bselected', false);
       });
       cell.attr('class', 'button orario-btn success').attr('bselected', true);
-      window.localStorage.timeSlot = cell.text();
+      window.localStorage.timeSlot = text;
     });
   });
   if (window.localStorage.timeSlot) {
     $("button:contains(\"".concat(window.localStorage.timeSlot, "\")")).click();
   }
 }
-
-// item_id=prod['id'],
-// name=prod['name'],
-// uuid=prod['uuid'],
-// net_price=prod['net_price'],
-// vat_perc=prod['vat_perc'],
-// final_price=prod['price1'] * 3,
-// final_net_price=prod['net_price'] * 3,
-// notes='a note in the prod',
-// price=prod['price1'],
-// quantity=3,
-// operator_id=279,
-// operator_name='Andrea Tagliazucchi',
-
-// variations=[dict(
-//   name='Cottura',
-//   value='Ben Cotto',
-//   variation_id=69,
-//   variation_value_id=169
-// )]
-
 function setSendOrder() {
   var client = JSON.parse(window.localStorage.currentClient);
+  window.client = client;
   var ps = window.prods.map(function (p) {
     var data = {
       item_id: p.id,
@@ -110,7 +105,7 @@ function setSendOrder() {
         email: client.email,
         first_name: client.name,
         last_name: client.surname,
-        mobile: client.telefone
+        mobile: client.telephone
       }
     },
     takeout_time: window.localStorage.timeSlot
@@ -123,12 +118,11 @@ function setSendOrder() {
       action: 'registerOrder',
       data: data
     }, function (res) {
-      console.log({
-        res: res
-      });
-      var client = JSON.parse(window.localStorage.currentClient);
-      client.orders = res.Attributes.orders;
+      client.orders = JSON.parse(res).Attributes.orders;
       window.localStorage.currentClient = JSON.stringify(client);
+      var order = client.orders[client.orders.length - 1];
+      window.localStorage.lastOrder = JSON.stringify(order);
+      delete window.localStorage.currentOrder;
       window.location.href = '/checkout-landing.html';
     }, function (res) {
       // TODO: add this show message modal
