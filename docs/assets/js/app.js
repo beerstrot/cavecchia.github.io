@@ -21989,6 +21989,9 @@ __webpack_require__.e(/*! import() */ "src_assets_js_navbar_js").then(__webpack_
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#loading').show();
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   var pn = window.location.pathname;
+  var en = function en(s) {
+    return pn.endsWith(s);
+  };
   setRegister();
   setLogin();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#user-pg-btn').on('click', function () {
@@ -21998,19 +22001,19 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('#signup-login').foundation('open');
     }
   });
-  if (pn === '/riserva-un-tavolo.html') {
+  if (en('riserva-un-tavolo.html')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_prenota_js").then(__webpack_require__.bind(__webpack_require__, /*! ./prenota */ "./src/assets/js/prenota.js"));
-  } else if (pn === '/asporto.html') {
+  } else if (en('asporto.html')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_asporto_js").then(__webpack_require__.bind(__webpack_require__, /*! ./asporto */ "./src/assets/js/asporto.js"));
-  } else if (pn === '/checkout.html') {
+  } else if (en('checkout.html')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_checkout_js").then(__webpack_require__.bind(__webpack_require__, /*! ./checkout */ "./src/assets/js/checkout.js"));
-  } else if (pn === '/account.html') {
+  } else if (en('account.html')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_account_js").then(__webpack_require__.bind(__webpack_require__, /*! ./account */ "./src/assets/js/account.js"));
-  } else if (pn === '/orari.html') {
+  } else if (en('orari.html')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_orari_js").then(__webpack_require__.bind(__webpack_require__, /*! ./orari */ "./src/assets/js/orari.js"));
-  } else if (pn === '/checkout-landing.html') {
+  } else if (en('checkout-landing.html')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_checkout-landing_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./checkout-landing */ "./src/assets/js/checkout-landing.js", 23));
-  } else {
+  } else if (en('menu.html')) {} else if (en('chi-siamo.html')) {} else if (en('informazioni-legali.html')) {} else {
     // index.html:
     splideInit();
   }

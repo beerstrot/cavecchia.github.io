@@ -82,8 +82,8 @@ var IMG_ROOT = getImgRoot();
 function mkCellSmall(p, cell) {
   var pid = mkPid(p);
   var pp = mkDiv('product-page', mkDiv('hide-for-medium', cell));
-  // const imgName = pid + '_quadrato.jpg';
-  var imgName = 'test-immagine1-1-1.jpg';
+  var imgName = pid + '_quadrato.jpg';
+  // const imgName = 'test-immagine1-1-1.jpg';
   M('img', '', mkDiv('item-image', pp), {
     src: "".concat(IMG_ROOT).concat(imgName),
     onerror: "this.style.display='none'",
@@ -103,8 +103,8 @@ function mkCellSmall(p, cell) {
 function mkCellMedium(p, cell) {
   var pid = mkPid(p);
   var cs = mkDiv('card-section', mkDiv('card', mkDiv('show-for-medium', cell)));
-  var imgName = 'test-immagine1-16-9.jpg';
-  // const imgName = pid + '_rettangolare.jpg';
+  // const imgName = 'test-immagine1-16-9.jpg';
+  var imgName = pid + '_rettangolare.jpg';
   M('img', 'show-for-medium', cs, {
     src: "".concat(IMG_ROOT).concat(imgName),
     onerror: "this.style.display='none'",
@@ -121,8 +121,8 @@ function mkCellMedium(p, cell) {
 }
 function mkModal(p, secDiv) {
   var pid = mkPid(p);
-  var imgName = 'test-immagine1-16-9.jpg';
-  // const imgName = pid + '_rettangolare.png';
+  // const imgName = 'test-immagine1-16-9.jpg';
+  var imgName = pid + '_rettangolare.png';
   var modal = M('div', 'reveal reveal-ecommerce', secDiv, {
     id: pid
   });

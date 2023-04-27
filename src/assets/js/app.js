@@ -25,6 +25,7 @@ $('#loading').show();
 
 $(document).ready(() => {
   const pn = window.location.pathname;
+  const en = s => pn.endsWith(s);
   setRegister();
   setLogin();
   $('#user-pg-btn').on('click', () => {
@@ -34,18 +35,21 @@ $(document).ready(() => {
       $('#signup-login').foundation('open');
     }
   });
-  if (pn === '/riserva-un-tavolo.html') {
+  if (en('riserva-un-tavolo.html')) {
     import('./prenota');
-  } else if (pn === '/asporto.html') {
+  } else if (en('asporto.html')) {
     import('./asporto');
-  } else if (pn === '/checkout.html') {
+  } else if (en('checkout.html')) {
     import('./checkout');
-  } else if (pn === '/account.html') {
+  } else if (en('account.html')) {
     import('./account');
-  } else if (pn === '/orari.html') {
+  } else if (en('orari.html')) {
     import('./orari');
-  } else if (pn === '/checkout-landing.html') {
+  } else if (en('checkout-landing.html')) {
     import('./checkout-landing');
+  } else if (en('menu.html')) {
+  } else if (en('chi-siamo.html')) {
+  } else if (en('informazioni-legali.html')) {
   } else { // index.html:
     splideInit();
   }
@@ -58,7 +62,7 @@ $(document).ready(() => {
 
 // inizialize splide
 function splideInit () {
-  new Splide( '#fotoMenu', {
+  new Splide('#fotoMenu', {
     type: 'slide',
     perPage: 1,
     arrows: true,
@@ -85,7 +89,7 @@ function splideInit () {
     },
   }).mount({ Video });
 
-  new Splide( '#fotoLocale', {
+  new Splide('#fotoLocale', {
     type: 'slide',
     gap: '2rem',
     arrows: true,
