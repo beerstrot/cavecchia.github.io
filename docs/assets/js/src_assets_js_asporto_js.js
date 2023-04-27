@@ -75,7 +75,11 @@ function getImgRoot() {
   // const imgURL = window.location.origin + '/' + 'assets/img/prod/'
   // const pieces = imgURL.split('/');
   // const imgRoot = pieces.slice(0, pieces.length - 1).join('/');
-  var imgRoot = window.location.origin + '/' + 'assets/img/prod/';
+
+  var r = window.location.href.split('/');
+  var origin = r.slice(0, r.length - 1).join('/');
+  var imgRoot = origin + '/' + 'assets/img/prod/';
+  // const imgRoot = window.location.origin + '/' + 'assets/img/prod/';
   return imgRoot;
 }
 var IMG_ROOT = getImgRoot();
