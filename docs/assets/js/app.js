@@ -21573,6 +21573,7 @@ foundation_sites_js_foundation_core__WEBPACK_IMPORTED_MODULE_1__.Foundation.plug
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ORIGIN": function() { return /* binding */ ORIGIN; },
 /* harmony export */   "bana": function() { return /* binding */ bana; },
 /* harmony export */   "mkCall": function() { return /* binding */ mkCall; },
 /* harmony export */   "testeLambda": function() { return /* binding */ testeLambda; },
@@ -21639,6 +21640,8 @@ function testeLambda() {
   testeLambdaGET();
   testeLambdaPOST();
 }
+var foo = window.location.href.split('/');
+var ORIGIN = foo.slice(0, foo.length - 1).join('/');
 var bana = 55;
 
 
@@ -21996,7 +21999,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   setLogin();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#user-pg-btn').on('click', function () {
     if (window.localStorage.currentClient) {
-      window.location.href = '/account.html';
+      window.location.href = _utils__WEBPACK_IMPORTED_MODULE_5__.ORIGIN + '/account.html';
     } else {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('#signup-login').foundation('open');
     }
@@ -22098,7 +22101,7 @@ function setRegister() {
         res: res
       });
       window.localStorage.currentClient = JSON.stringify(data);
-      window.location.href = '/account.html';
+      window.location.href = _utils__WEBPACK_IMPORTED_MODULE_5__.ORIGIN + '/account.html';
     }, function (res) {
       // TODO: add this show message modal
       showMessage(messageError);
@@ -22120,7 +22123,7 @@ function setLogin() {
     }, function (res) {
       if (!res.result) return alert(res.details);
       window.localStorage.currentClient = JSON.stringify(res.details);
-      window.location.href = '/account.html';
+      window.location.href = _utils__WEBPACK_IMPORTED_MODULE_5__.ORIGIN + '/account.html';
     }, function (res) {
       // TODO: add this show message modal
       showMessage(messageError);

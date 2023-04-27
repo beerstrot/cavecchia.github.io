@@ -1,4 +1,4 @@
-import { bana, mkCall, testeLambdaPOST } from './utils';
+import { bana, mkCall, testeLambdaPOST, ORIGIN } from './utils';
 import { itemsCarrelloTable } from './htmlTemplates';
 
 $(document).ready(() => {
@@ -22,14 +22,14 @@ function mkInterface (r) {
   mkMenu(prods);
   $('#vai-checkout-large').off('click').on('click', () => {
     if (window.localStorage.currentClient) {
-      window.location.href = '/checkout.html'
+      window.location.href = ORIGIN + '/checkout.html'
     } else {
       $('#signup-login').foundation('open');
     }
   });
   $('#vai-checkout-small').off('click').on('click', () => {
     if (window.localStorage.currentClient) {
-      window.location.href = '/checkout.html'
+      window.location.href = ORIGIN + '/checkout.html'
     } else {
       $('#signup-login').foundation('open');
     }
@@ -61,9 +61,7 @@ function getImgRoot () {
   // const pieces = imgURL.split('/');
   // const imgRoot = pieces.slice(0, pieces.length - 1).join('/');
 
-  const r = window.location.href.split('/');
-  const origin = r.slice(0, r.length - 1).join('/');
-  const imgRoot = origin + '/' + 'assets/img/prod/';
+  const imgRoot = ORIGIN + '/assets/img/prod/';
   // const imgRoot = window.location.origin + '/' + 'assets/img/prod/';
   return imgRoot;
 }
@@ -399,7 +397,7 @@ function setRegister () {
       { action: 'registerClient', data },
       res => {
         window.localStorage.currentClient = JSON.stringify(data);
-        window.location.href = '/checkout.html';
+        window.location.href = ORIGIN + '/checkout.html';
       },
       res => {
         // TODO: add this show message modal
@@ -422,7 +420,7 @@ function setLogin () {
       res => {
         if (!res.result) return alert(res.details);
         window.localStorage.currentClient = JSON.stringify(res.details);
-        window.location.href = '/checkout.html';
+        window.location.href = ORIGIN + '/checkout.html';
       },
       res => {
         // TODO: add this show message modal

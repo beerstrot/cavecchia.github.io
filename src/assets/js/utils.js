@@ -52,5 +52,8 @@ function testeLambda () {
   testeLambdaPOST();
 }
 
+const foo = window.location.href.split('/');
+const ORIGIN = foo.slice(0, foo.length - 1).join('/');
+
 const bana = 55;
-export { bana, mkCall, testeLambdaPOST, testeLambdaGET, testeLambda };
+export { bana, mkCall, testeLambdaPOST, testeLambdaGET, testeLambda, ORIGIN };

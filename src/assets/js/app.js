@@ -20,7 +20,7 @@ import Splide from '@splidejs/splide';
 import { Video } from '@splidejs/splide-extension-video';
 import('./cookieconsent-init');
 import('./navbar');
-import {  mkCall } from './utils';
+import {  mkCall, ORIGIN } from './utils';
 $('#loading').show();
 
 $(document).ready(() => {
@@ -30,7 +30,7 @@ $(document).ready(() => {
   setLogin();
   $('#user-pg-btn').on('click', () => {
     if (window.localStorage.currentClient) {
-      window.location.href = '/account.html'
+      window.location.href = ORIGIN + '/account.html'
     } else {
       $('#signup-login').foundation('open');
     }
@@ -133,7 +133,7 @@ function setRegister () {
       res => {
         console.log({ res });
         window.localStorage.currentClient = JSON.stringify(data);
-        window.location.href = '/account.html'
+        window.location.href = ORIGIN +  '/account.html'
       },
       res => {
         // TODO: add this show message modal
@@ -156,7 +156,7 @@ function setLogin () {
       res => {
         if (!res.result) return alert(res.details);
         window.localStorage.currentClient = JSON.stringify(res.details);
-        window.location.href = '/account.html'
+        window.location.href = ORIGIN + '/account.html'
       },
       res => {
         // TODO: add this show message modal

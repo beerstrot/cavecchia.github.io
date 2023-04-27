@@ -20,7 +20,7 @@ $(document).ready(function () {
 function checkStoredOrder() {
   var storage = window.localStorage.currentOrder;
   if (!storage) {
-    window.location.href = '/asporto.html';
+    window.location.href = ORIGIN + '/asporto.html';
     return;
   }
   var prods = JSON.parse(storage);
@@ -131,7 +131,7 @@ function setSendOrder() {
       var order = client.orders[client.orders.length - 1];
       window.localStorage.lastOrder = JSON.stringify(order);
       delete window.localStorage.currentOrder;
-      window.location.href = '/checkout-landing.html';
+      window.location.href = ORIGIN + '/checkout-landing.html';
     }, function (res) {
       // TODO: add this show message modal
       showMessage(messageError);
