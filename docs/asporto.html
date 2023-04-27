@@ -39,6 +39,7 @@
     <!-- End Facebook Pixel Code -->
 </head>
 <body>
+<div id="loading" hidden></div>
     <nav id="hamburgerNav">
     	<ul class="menu-hamburger">
     		<li class="logo"><a href="index.html"><img class="img-logo" src="assets/img/svgs/logo.svg" alt="Logo Ca' Vecchia Beerstrot"><meta itemprop="name" content="Ca' Vecchia Beerstrot"></a></li>
@@ -66,10 +67,10 @@
     			        <button type="button" class="button orario-btn">19:00</button>
     			    </div>
     			    <div class="cell">
-    			        <button type="button" class="button orario-btn success">19:15</button>
+    			        <button type="button" class="button orario-btn">19:15</button>
     			    </div>
     			    <div class="cell">
-    			        <button type="button" class="button orario-btn" disabled>19:30</button>
+    			        <button type="button" class="button orario-btn">19:30</button>
     			    </div>
     			    <div class="cell">
     			        <button type="button" class="button orario-btn">19:45</button>
@@ -78,7 +79,7 @@
     			        <button type="button" class="button orario-btn">20:00</button>
     			    </div>
     			    <div class="cell">
-    			        <button type="button" class="button orario-btn" disabled>20:15</button>
+    			        <button type="button" class="button orario-btn">20:15</button>
     			    </div>
     			    <div class="cell">
     			        <button type="button" class="button orario-btn">20:30</button>
@@ -6068,7 +6069,7 @@
     				</section>
     				<div class="grid-x hide-for-large" data-sticky data-stick-to="bottom" data-sticky-on="small" data-options="marginBottom:0;" data-top-anchor="ecommerce-button-top" data-btm-anchor="ecommerce-button-bottom">
     					<button type="button" class="button expanded extra-space-button-sticky" data-open="carrello-small">
-    						<i class="las la-shopping-basket"></i><span class="price">Prodotti: 5 &nbsp;&nbsp; | &nbsp;&nbsp; Totale: € 190,90</span>
+                                              <i class="las la-shopping-basket"></i><span class="price">Prodotti: <span class="prod-quantity">5</span> &nbsp;&nbsp; | &nbsp;&nbsp; Totale: <span class="carrello-table-totale">€ 190,90</span></span>
     					</button>
     <!-- carrello-small-screen-vuoto -->
     					<button type="button" class="button expanded extra-space-button-sticky" disabled data-open="carrello-small">
@@ -6259,13 +6260,13 @@
     				</div> -->
     					<div class="main-content-nomodal">
     					    <table class="unstriped hover">
-    					        <tbody id="itens-carrello-table">
+    					        <tbody id="itens-carrello-table" class="itens-carrello-table">
     					        </tbody>
     					        <tfoot class="extra-space">
     					            <tr>
     					                <td><strong>TOTALE</strong></td>
     					                <td></td>
-    					                <td style="text-align: right; white-space: nowrap;" id="carrello-table-totale"><strong>€ 0,00</strong></td>
+    					                <td style="text-align: right; white-space: nowrap;" id="carrello-table-totale"><strong class="carrello-table-totale">€ 0,00</strong></td>
     					            </tr>
     					        </tfoot>
     					    </table>
@@ -6273,7 +6274,7 @@
     				
     					<footer class="main-footer">
     						<button type="button" class="button expanded-with-padding" id="vai-checkout-small">
-    							Vai al Checkout <span class="price">&nbsp;€ 190,90</span>
+    							Vai al Checkout &nbsp;<span id="price-cart-mobile" class="price carrello-table-totale">€ 190,90</span>
     						</button>
     					</footer>
     				</div>
@@ -6459,13 +6460,13 @@
     				</div> -->
     					<div class="main-content-nomodal">
     					    <table class="unstriped hover">
-    					        <tbody id="itens-carrello-table">
+    					        <tbody id="itens-carrello-table" class="itens-carrello-table">
     					        </tbody>
     					        <tfoot class="extra-space">
     					            <tr>
     					                <td><strong>TOTALE</strong></td>
     					                <td></td>
-    					                <td style="text-align: right; white-space: nowrap;" id="carrello-table-totale"><strong>€ 0,00</strong></td>
+    					                <td style="text-align: right; white-space: nowrap;" id="carrello-table-totale"><strong class="carrello-table-totale">€ 0,00</strong></td>
     					            </tr>
     					        </tfoot>
     					    </table>

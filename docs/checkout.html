@@ -39,6 +39,7 @@
     <!-- End Facebook Pixel Code -->
 </head>
 <body>
+<div id="loading" hidden></div>
     <nav id="hamburgerNav">
     	<ul class="menu-hamburger">
     		<li class="logo"><a href="index.html"><img class="img-logo" src="assets/img/svgs/logo.svg" alt="Logo Ca' Vecchia Beerstrot"><meta itemprop="name" content="Ca' Vecchia Beerstrot"></a></li>
@@ -63,17 +64,17 @@
                 <div class="grid-x grid-margin-x grid-margin-y">
                     <div class="small-12 xlarge-8 cell ">
                         <h2>Orario ritiro asporto</h2>
-                        <p>Orario scelto: <strong>19.15</strong></p>
+                        <p>Orario scelto: <strong id="chosen-time">19.15</strong></p>
                         <p>Scegli o modifica l'orario:</p>
                         <div class="grid-x small-up-4 align-center extra-space">
                             <div class="cell">
                                 <button type="button" class="button orario-btn">19:00</button>
                             </div>
                             <div class="cell">
-                                <button type="button" class="button orario-btn success">19:15</button>
+                                <button type="button" class="button orario-btn">19:15</button>
                             </div>
                             <div class="cell">
-                                <button type="button" class="button orario-btn" disabled>19:30</button>
+                                <button type="button" class="button orario-btn">19:30</button>
                             </div>
                             <div class="cell">
                                 <button type="button" class="button orario-btn">19:45</button>
@@ -82,7 +83,7 @@
                                 <button type="button" class="button orario-btn">20:00</button>
                             </div>
                             <div class="cell">
-                                <button type="button" class="button orario-btn" disabled>20:15</button>
+                                <button type="button" class="button orario-btn">20:15</button>
                             </div>
                             <div class="cell">
                                 <button type="button" class="button orario-btn">20:30</button>

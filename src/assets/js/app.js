@@ -21,6 +21,7 @@ import { Video } from '@splidejs/splide-extension-video';
 import('./cookieconsent-init');
 import('./navbar');
 import {  mkCall } from './utils';
+$('#loading').show();
 
 $(document).ready(() => {
   const pn = window.location.pathname;
@@ -50,6 +51,7 @@ $(document).ready(() => {
   }
   //import JustValidate from 'just-validate';
   import('./input-number');
+  $('#loading').hide();
 });
 
 

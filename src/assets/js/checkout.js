@@ -59,6 +59,7 @@ function setOrari () {
       cell.attr('class', 'button orario-btn success')
         .attr('bselected', true);
       window.localStorage.timeSlot = text;
+      $('#chosen-time').html(text);
     });
   });
   if (window.localStorage.timeSlot) {
@@ -70,6 +71,7 @@ function setSendOrder () {
   const client = JSON.parse(window.localStorage.currentClient);
   window.client = client;
   const ps = window.prods.map(p => {
+    console.log({ p })
     const data = {
       item_id: p.id,
       name: p.name,
@@ -89,6 +91,10 @@ function setSendOrder () {
         variation_id: p.cotturaId,
         variation_value_id: p.cotturaI
       }]
+    }
+    if (p.category) {
+      data.category_id = p.category.id
+      data.category_name = p.category.name
     }
     return data;
   });

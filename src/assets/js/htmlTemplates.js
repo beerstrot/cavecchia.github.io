@@ -1,6 +1,6 @@
 const itemsCarrelloTable = (name, note, cottura, quantity, price, pid) => {
   return `
-            <tr id="carrello-row-${pid}">
+            <tr class="carrello-row-${pid}">
                 <td>
                     <span class="titolo-item">${name}</span>
                     <span class="note-item">${note}</span>
@@ -8,17 +8,17 @@ const itemsCarrelloTable = (name, note, cottura, quantity, price, pid) => {
                 </td>
                 <td>
                     <div class="input-group input-number-group">
-                        <div class="input-group-button hide">
-                            <span class="input-number-decrement"><i class="las la-minus-square la-lg"></i></span>
+                        <div class="input-group-button">
+                            <span id="input-number-decrement-${pid}" class="input-number-decrement input-number-decrement-${pid}"><i class="las la-minus-square la-lg"></i></span>
                         </div>
                         <input class="input-number" style="width:1.5rem; font-size: 0.8rem!important;" type="button" value="${quantity}" min="0" max="30">
-                        <div class="input-group-button hide">
-                            <span class="input-number-increment"><i class="las la-plus-square la-lg"></i></span>
+                        <div class="input-group-button">
+                            <span id="input-number-increment-${pid}" class="input-number-increment input-number-increment-${pid}"><i class="las la-plus-square la-lg"></i></span>
                         </div>
                     </div>
                 </td>
                 <td>
-                    <span class="prezzo-item">€ ${price}</span>
+                    <span class="prezzo-item">€ <span class="prezzo-item-${pid}">${price}</span></span>
                 </td>
             </tr>
 `;

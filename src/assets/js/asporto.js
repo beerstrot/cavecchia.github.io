@@ -2,7 +2,6 @@ import { bana, mkCall, testeLambdaPOST } from './utils';
 import { itemsCarrelloTable } from './htmlTemplates';
 
 $(document).ready(() => {
-  console.log('happen', bana);
   mkCall(
     'POST',
     { action: 'getItems', data: '--' },
@@ -47,7 +46,7 @@ function mkMenu (prods) {
       mkCell(p, secDiv);
       mkModal(p, secDiv);
     } else {
-      console.log('non trovato:', p.name);
+      console.log('sezione non trovata per il prodotto:', p.name);
     }
   });
   $('#carrelloPieno').hide();
@@ -72,8 +71,8 @@ function mkCellSmall (p, cell) {
     'product-page',
     mkDiv('hide-for-medium', cell)
   );
-  const imgName = pid + '_quadrato.jpg';
-  // const imgName = 'test-immagine1-1-1.jpg';
+  // const imgName = pid + '_quadrato.jpg';
+  const imgName = 'test-immagine1-1-1.jpg';
   M('img', '', mkDiv('item-image', pp), {
     src: `${IMG_ROOT}${imgName}`,
     onerror: "this.style.display='none'",
@@ -103,8 +102,8 @@ function mkCellMedium (p, cell) {
       mkDiv('show-for-medium', cell)
     )
   );
-  // const imgName = 'test-immagine1-16-9.jpg';
-  const imgName = pid + '_rettangolare.jpg';
+  const imgName = 'test-immagine1-16-9.jpg';
+  // const imgName = pid + '_rettangolare.jpg';
   M('img', 'show-for-medium', cs, {
     src: `${IMG_ROOT}${imgName}`,
     onerror: "this.style.display='none'",
@@ -128,8 +127,8 @@ function mkCellMedium (p, cell) {
 
 function mkModal (p, secDiv) {
   const pid = mkPid(p);
-  // const imgName = 'test-immagine1-16-9.jpg';
-  const imgName = pid + '_rettangolare.png';
+  const imgName = 'test-immagine1-16-9.jpg';
+  // const imgName = pid + '_rettangolare.png';
   const modal = M('div', 'reveal reveal-ecommerce', secDiv, {
     id: pid
   });
@@ -162,7 +161,6 @@ function mkModal (p, secDiv) {
   v.forEach(vv => {
     M('option', '', cottura, { value: vv.id }).html(vv.value);
   });
-  console.log('cottura', p, v);
   if (v.length === 0) {
     $('#' + pid + '_cottura').hide();
   }
@@ -177,6 +175,9 @@ function mkModal (p, secDiv) {
       var $input = $(this).parents('.input-number-group').find('.input-number');
       var val = parseInt($input.val(), 10);
       quantity = val - 1;
+      if (quantity < 0) {
+        quantity = 0;
+      }
       $input.val(quantity);
       placePrice(quantity);
     })
@@ -198,7 +199,7 @@ function mkModal (p, secDiv) {
   const btnPrice = M('span', 'price',
     M('button', 'button expanded-with-padding extra-space-button-modal', footer, { type: 'button' }).html('Aggiungi al carrello')
       .on('click', () => {
-        $(`#carrello-row-${pid}`).remove();
+        $(`.carrello-row-${pid}`).remove();
         p.quantity = quantity;
         p.noteText = noteText.val();
         if (quantity) {
@@ -208,9 +209,29 @@ function mkModal (p, secDiv) {
           p.cotturaI = cotturaI;
           p.cotturaId = $('#' + pid + 'cottura_').data().variation_id;
           const template = itemsCarrelloTable(p.name, p.noteText, p.cotturaV, p.quantity, price, pid);
-          $('#itens-carrello-table').append(template);
+          $('.itens-carrello-table').append(template);
         }
         updateTotal();
+        $('.input-number-increment-' + pid).click(function() {
+          const $input = $(this).parents('.input-number-group').find('.input-number');
+          const val = parseInt($input.val(), 10);
+          $input.val(val + 1);
+          p.quantity = val + 1;
+          $('.prezzo-item-' + pid).html((val + 1) * p.price1);
+          updateTotal();
+        });
+        $('.input-number-decrement-' + pid).click(function() {
+          const $input = $(this).parents('.input-number-group').find('.input-number');
+          const val = parseInt($input.val(), 10);
+          let v = val - 1;
+          if (v < 0) {
+            v = 0;
+          }
+          $input.val(v);
+          p.quantity = v;
+          $('.prezzo-item-' + pid).html(v * p.price1);
+          updateTotal();
+        })
         closeBtn.click();
       })
   ).html(` € ${price}`);
@@ -268,7 +289,9 @@ function updateTotal () {
     $('#carrelloPieno').show();
     $('#carrelloVuoto').hide();
   }
-  $('#carrello-table-totale').text(`€ ${total.toLocaleString()}`);
+  $('.carrello-table-totale').text(`€ ${total.toLocaleString()}`);
+  const quantity = prods.reduce((a, p) => a + p.quantity, 0);
+  $('.prod-quantity').text(`€ ${quantity}`);
 }
 
 function checkStoredOrder () {
@@ -286,7 +309,28 @@ function checkStoredOrder () {
         const price = p.quantity * p.price1;
         const pid = mkPid(p);
         const template = itemsCarrelloTable(p.name, p.noteText, p.cotturaV, p.quantity, price, pid);
-        $('#itens-carrello-table').append(template);
+        $('.itens-carrello-table').append(template);
+        // $('#carrello-small-items').append(template);
+        $('.input-number-increment-' + pid).click(function() {
+          const $input = $(this).parents('.input-number-group').find('.input-number');
+          const val = parseInt($input.val(), 10);
+          $input.val(val + 1);
+          p_.quantity = val + 1;
+          $('.prezzo-item-' + pid).html((val  + 1) * p.price1);
+          updateTotal();
+        });
+        $('.input-number-decrement-' + pid).click(function() {
+          const $input = $(this).parents('.input-number-group').find('.input-number');
+          const val = parseInt($input.val(), 10);
+          let v = val - 1;
+          if (v < 0) {
+            v = 0;
+          }
+          $input.val(v);
+          p_.quantity = v;
+          $('.prezzo-item-' + pid).html(v * p.price1);
+          updateTotal();
+        })
       }
     });
   }
@@ -350,7 +394,6 @@ function setRegister () {
       'POST',
       { action: 'registerClient', data },
       res => {
-        console.log({ res });
         window.localStorage.currentClient = JSON.stringify(data);
         window.location.href = '/checkout.html';
       },
@@ -363,7 +406,6 @@ function setRegister () {
 }
 
 function setLogin () {
-  console.log('loaded login');
   $('#login-btn').off('click').on('click', () => {
     const data = {};
     const get = id => {

@@ -21986,6 +21986,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
 __webpack_require__.e(/*! import() */ "src_assets_js_cookieconsent-init_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./cookieconsent-init */ "./src/assets/js/cookieconsent-init.js", 23));
 __webpack_require__.e(/*! import() */ "src_assets_js_navbar_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./navbar */ "./src/assets/js/navbar.js", 23));
 
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#loading').show();
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   var pn = window.location.pathname;
   setRegister();
@@ -22015,6 +22016,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   }
   //import JustValidate from 'just-validate';
   __webpack_require__.e(/*! import() */ "src_assets_js_input-number_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./input-number */ "./src/assets/js/input-number.js", 23));
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#loading').hide();
 });
 
 // inizialize splide

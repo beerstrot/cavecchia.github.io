@@ -19,7 +19,6 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 
 
 $(document).ready(function () {
-  console.log('happen', _utils__WEBPACK_IMPORTED_MODULE_0__.bana);
   (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
     action: 'getItems',
     data: '--'
@@ -63,7 +62,7 @@ function mkMenu(prods) {
       mkCell(p, secDiv);
       mkModal(p, secDiv);
     } else {
-      console.log('non trovato:', p.name);
+      console.log('sezione non trovata per il prodotto:', p.name);
     }
   });
   $('#carrelloPieno').hide();
@@ -83,8 +82,8 @@ var IMG_ROOT = getImgRoot();
 function mkCellSmall(p, cell) {
   var pid = mkPid(p);
   var pp = mkDiv('product-page', mkDiv('hide-for-medium', cell));
-  var imgName = pid + '_quadrato.jpg';
-  // const imgName = 'test-immagine1-1-1.jpg';
+  // const imgName = pid + '_quadrato.jpg';
+  var imgName = 'test-immagine1-1-1.jpg';
   M('img', '', mkDiv('item-image', pp), {
     src: "".concat(IMG_ROOT).concat(imgName),
     onerror: "this.style.display='none'",
@@ -104,8 +103,8 @@ function mkCellSmall(p, cell) {
 function mkCellMedium(p, cell) {
   var pid = mkPid(p);
   var cs = mkDiv('card-section', mkDiv('card', mkDiv('show-for-medium', cell)));
-  // const imgName = 'test-immagine1-16-9.jpg';
-  var imgName = pid + '_rettangolare.jpg';
+  var imgName = 'test-immagine1-16-9.jpg';
+  // const imgName = pid + '_rettangolare.jpg';
   M('img', 'show-for-medium', cs, {
     src: "".concat(IMG_ROOT).concat(imgName),
     onerror: "this.style.display='none'",
@@ -122,8 +121,8 @@ function mkCellMedium(p, cell) {
 }
 function mkModal(p, secDiv) {
   var pid = mkPid(p);
-  // const imgName = 'test-immagine1-16-9.jpg';
-  var imgName = pid + '_rettangolare.png';
+  var imgName = 'test-immagine1-16-9.jpg';
+  // const imgName = pid + '_rettangolare.png';
   var modal = M('div', 'reveal reveal-ecommerce', secDiv, {
     id: pid
   });
@@ -169,7 +168,6 @@ function mkModal(p, secDiv) {
       value: vv.id
     }).html(vv.value);
   });
-  console.log('cottura', p, v);
   if (v.length === 0) {
     $('#' + pid + '_cottura').hide();
   }
@@ -181,6 +179,9 @@ function mkModal(p, secDiv) {
     var $input = $(this).parents('.input-number-group').find('.input-number');
     var val = parseInt($input.val(), 10);
     quantity = val - 1;
+    if (quantity < 0) {
+      quantity = 0;
+    }
     $input.val(quantity);
     placePrice(quantity);
   }));
@@ -203,7 +204,7 @@ function mkModal(p, secDiv) {
   var btnPrice = M('span', 'price', M('button', 'button expanded-with-padding extra-space-button-modal', footer, {
     type: 'button'
   }).html('Aggiungi al carrello').on('click', function () {
-    $("#carrello-row-".concat(pid)).remove();
+    $(".carrello-row-".concat(pid)).remove();
     p.quantity = quantity;
     p.noteText = noteText.val();
     if (quantity) {
@@ -213,9 +214,29 @@ function mkModal(p, secDiv) {
       p.cotturaI = cotturaI;
       p.cotturaId = $('#' + pid + 'cottura_').data().variation_id;
       var template = (0,_htmlTemplates__WEBPACK_IMPORTED_MODULE_1__.itemsCarrelloTable)(p.name, p.noteText, p.cotturaV, p.quantity, price, pid);
-      $('#itens-carrello-table').append(template);
+      $('.itens-carrello-table').append(template);
     }
     updateTotal();
+    $('.input-number-increment-' + pid).click(function () {
+      var $input = $(this).parents('.input-number-group').find('.input-number');
+      var val = parseInt($input.val(), 10);
+      $input.val(val + 1);
+      p.quantity = val + 1;
+      $('.prezzo-item-' + pid).html((val + 1) * p.price1);
+      updateTotal();
+    });
+    $('.input-number-decrement-' + pid).click(function () {
+      var $input = $(this).parents('.input-number-group').find('.input-number');
+      var val = parseInt($input.val(), 10);
+      var v = val - 1;
+      if (v < 0) {
+        v = 0;
+      }
+      $input.val(v);
+      p.quantity = v;
+      $('.prezzo-item-' + pid).html(v * p.price1);
+      updateTotal();
+    });
     closeBtn.click();
   })).html(" \u20AC ".concat(price));
   function placePrice(quantity) {
@@ -277,7 +298,11 @@ function updateTotal() {
     $('#carrelloPieno').show();
     $('#carrelloVuoto').hide();
   }
-  $('#carrello-table-totale').text("\u20AC ".concat(total.toLocaleString()));
+  $('.carrello-table-totale').text("\u20AC ".concat(total.toLocaleString()));
+  var quantity = prods.reduce(function (a, p) {
+    return a + p.quantity;
+  }, 0);
+  $('.prod-quantity').text("\u20AC ".concat(quantity));
 }
 function checkStoredOrder() {
   var storage = window.localStorage.currentOrder;
@@ -296,7 +321,28 @@ function checkStoredOrder() {
         var price = p.quantity * p.price1;
         var pid = mkPid(p);
         var template = (0,_htmlTemplates__WEBPACK_IMPORTED_MODULE_1__.itemsCarrelloTable)(p.name, p.noteText, p.cotturaV, p.quantity, price, pid);
-        $('#itens-carrello-table').append(template);
+        $('.itens-carrello-table').append(template);
+        // $('#carrello-small-items').append(template);
+        $('.input-number-increment-' + pid).click(function () {
+          var $input = $(this).parents('.input-number-group').find('.input-number');
+          var val = parseInt($input.val(), 10);
+          $input.val(val + 1);
+          p_.quantity = val + 1;
+          $('.prezzo-item-' + pid).html((val + 1) * p.price1);
+          updateTotal();
+        });
+        $('.input-number-decrement-' + pid).click(function () {
+          var $input = $(this).parents('.input-number-group').find('.input-number');
+          var val = parseInt($input.val(), 10);
+          var v = val - 1;
+          if (v < 0) {
+            v = 0;
+          }
+          $input.val(v);
+          p_.quantity = v;
+          $('.prezzo-item-' + pid).html(v * p.price1);
+          updateTotal();
+        });
       }
     });
   }
@@ -356,9 +402,6 @@ function setRegister() {
       action: 'registerClient',
       data: data
     }, function (res) {
-      console.log({
-        res: res
-      });
       window.localStorage.currentClient = JSON.stringify(data);
       window.location.href = '/checkout.html';
     }, function (res) {
@@ -368,7 +411,6 @@ function setRegister() {
   });
 }
 function setLogin() {
-  console.log('loaded login');
   $('#login-btn').off('click').on('click', function () {
     var data = {};
     var get = function get(id) {
@@ -406,7 +448,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "itemsCarrelloTable": function() { return /* binding */ itemsCarrelloTable; }
 /* harmony export */ });
 var itemsCarrelloTable = function itemsCarrelloTable(name, note, cottura, quantity, price, pid) {
-  return "\n            <tr id=\"carrello-row-".concat(pid, "\">\n                <td>\n                    <span class=\"titolo-item\">").concat(name, "</span>\n                    <span class=\"note-item\">").concat(note, "</span>\n                    <span class=\"cottura-item\">").concat(cottura, "</span>\n                </td>\n                <td>\n                    <div class=\"input-group input-number-group\">\n                        <div class=\"input-group-button hide\">\n                            <span class=\"input-number-decrement\"><i class=\"las la-minus-square la-lg\"></i></span>\n                        </div>\n                        <input class=\"input-number\" style=\"width:1.5rem; font-size: 0.8rem!important;\" type=\"button\" value=\"").concat(quantity, "\" min=\"0\" max=\"30\">\n                        <div class=\"input-group-button hide\">\n                            <span class=\"input-number-increment\"><i class=\"las la-plus-square la-lg\"></i></span>\n                        </div>\n                    </div>\n                </td>\n                <td>\n                    <span class=\"prezzo-item\">\u20AC ").concat(price, "</span>\n                </td>\n            </tr>\n");
+  return "\n            <tr class=\"carrello-row-".concat(pid, "\">\n                <td>\n                    <span class=\"titolo-item\">").concat(name, "</span>\n                    <span class=\"note-item\">").concat(note, "</span>\n                    <span class=\"cottura-item\">").concat(cottura, "</span>\n                </td>\n                <td>\n                    <div class=\"input-group input-number-group\">\n                        <div class=\"input-group-button\">\n                            <span id=\"input-number-decrement-").concat(pid, "\" class=\"input-number-decrement input-number-decrement-").concat(pid, "\"><i class=\"las la-minus-square la-lg\"></i></span>\n                        </div>\n                        <input class=\"input-number\" style=\"width:1.5rem; font-size: 0.8rem!important;\" type=\"button\" value=\"").concat(quantity, "\" min=\"0\" max=\"30\">\n                        <div class=\"input-group-button\">\n                            <span id=\"input-number-increment-").concat(pid, "\" class=\"input-number-increment input-number-increment-").concat(pid, "\"><i class=\"las la-plus-square la-lg\"></i></span>\n                        </div>\n                    </div>\n                </td>\n                <td>\n                    <span class=\"prezzo-item\">\u20AC <span class=\"prezzo-item-").concat(pid, "\">").concat(price, "</span></span>\n                </td>\n            </tr>\n");
 };
 var itemsCarrelloCheckout = function itemsCarrelloCheckout(name, note, cottura, quantity, price) {
   return "\n  \t<div class=\"checkout-summary-item align-middle\">\n\t\t<div class=\"item-name\">\n\t  \t\t<h1 class=\"titolo-item\">".concat(name, "</h1>\n            <p class=\"note-item\">").concat(note, "</p>\n            <p class=\"cottura-item\">").concat(cottura, "</p>\n\t  \t\t<p class=\"note-item\">Quantit\xE0: ").concat(quantity, "</p>\n\t\t</div>\n        <div class=\"item-price\">\n            <p class=\"prezzo-item \">\u20AC ").concat(price, "</p>\n        </div>\n  \t</div>\n");

@@ -65,6 +65,7 @@ function setOrari() {
       });
       cell.attr('class', 'button orario-btn success').attr('bselected', true);
       window.localStorage.timeSlot = text;
+      $('#chosen-time').html(text);
     });
   });
   if (window.localStorage.timeSlot) {
@@ -75,6 +76,9 @@ function setSendOrder() {
   var client = JSON.parse(window.localStorage.currentClient);
   window.client = client;
   var ps = window.prods.map(function (p) {
+    console.log({
+      p: p
+    });
     var data = {
       item_id: p.id,
       name: p.name,
@@ -94,6 +98,10 @@ function setSendOrder() {
         variation_id: p.cotturaId,
         variation_value_id: p.cotturaI
       }];
+    }
+    if (p.category) {
+      data.category_id = p.category.id;
+      data.category_name = p.category.name;
     }
     return data;
   });
@@ -146,7 +154,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "itemsCarrelloTable": function() { return /* binding */ itemsCarrelloTable; }
 /* harmony export */ });
 var itemsCarrelloTable = function itemsCarrelloTable(name, note, cottura, quantity, price, pid) {
-  return "\n            <tr id=\"carrello-row-".concat(pid, "\">\n                <td>\n                    <span class=\"titolo-item\">").concat(name, "</span>\n                    <span class=\"note-item\">").concat(note, "</span>\n                    <span class=\"cottura-item\">").concat(cottura, "</span>\n                </td>\n                <td>\n                    <div class=\"input-group input-number-group\">\n                        <div class=\"input-group-button hide\">\n                            <span class=\"input-number-decrement\"><i class=\"las la-minus-square la-lg\"></i></span>\n                        </div>\n                        <input class=\"input-number\" style=\"width:1.5rem; font-size: 0.8rem!important;\" type=\"button\" value=\"").concat(quantity, "\" min=\"0\" max=\"30\">\n                        <div class=\"input-group-button hide\">\n                            <span class=\"input-number-increment\"><i class=\"las la-plus-square la-lg\"></i></span>\n                        </div>\n                    </div>\n                </td>\n                <td>\n                    <span class=\"prezzo-item\">\u20AC ").concat(price, "</span>\n                </td>\n            </tr>\n");
+  return "\n            <tr class=\"carrello-row-".concat(pid, "\">\n                <td>\n                    <span class=\"titolo-item\">").concat(name, "</span>\n                    <span class=\"note-item\">").concat(note, "</span>\n                    <span class=\"cottura-item\">").concat(cottura, "</span>\n                </td>\n                <td>\n                    <div class=\"input-group input-number-group\">\n                        <div class=\"input-group-button\">\n                            <span id=\"input-number-decrement-").concat(pid, "\" class=\"input-number-decrement input-number-decrement-").concat(pid, "\"><i class=\"las la-minus-square la-lg\"></i></span>\n                        </div>\n                        <input class=\"input-number\" style=\"width:1.5rem; font-size: 0.8rem!important;\" type=\"button\" value=\"").concat(quantity, "\" min=\"0\" max=\"30\">\n                        <div class=\"input-group-button\">\n                            <span id=\"input-number-increment-").concat(pid, "\" class=\"input-number-increment input-number-increment-").concat(pid, "\"><i class=\"las la-plus-square la-lg\"></i></span>\n                        </div>\n                    </div>\n                </td>\n                <td>\n                    <span class=\"prezzo-item\">\u20AC <span class=\"prezzo-item-").concat(pid, "\">").concat(price, "</span></span>\n                </td>\n            </tr>\n");
 };
 var itemsCarrelloCheckout = function itemsCarrelloCheckout(name, note, cottura, quantity, price) {
   return "\n  \t<div class=\"checkout-summary-item align-middle\">\n\t\t<div class=\"item-name\">\n\t  \t\t<h1 class=\"titolo-item\">".concat(name, "</h1>\n            <p class=\"note-item\">").concat(note, "</p>\n            <p class=\"cottura-item\">").concat(cottura, "</p>\n\t  \t\t<p class=\"note-item\">Quantit\xE0: ").concat(quantity, "</p>\n\t\t</div>\n        <div class=\"item-price\">\n            <p class=\"prezzo-item \">\u20AC ").concat(price, "</p>\n        </div>\n  \t</div>\n");
