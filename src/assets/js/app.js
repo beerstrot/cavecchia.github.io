@@ -143,6 +143,7 @@ function setRegister () {
   });
 }
 
+
 function setLogin () {
   $('#login-btn').on('click', () => {
     const data = {};
