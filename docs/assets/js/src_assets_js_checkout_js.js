@@ -132,7 +132,7 @@ function setSendOrder() {
   });
   $('#send-order').on('click', function () {
     if (!window.localStorage.timeSlot) {
-      return window.alert('selezione un orario di ritiro');
+      return window.alert('selezioni un orario di ritiro');
     }
     data.takeout_time = window.localStorage.timeSlot;
     (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {

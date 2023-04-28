@@ -18,7 +18,11 @@ $(document).ready(() => {
 
 function mkInterface (r) {
   const d = JSON.parse(r);
-  const prods = d.items.results.filter(i => i.option1_value);
+
+  const prods = d.items.results
+    .filter(i => i.option1_value) // if has subcategory
+    .filter(i => i.channels.map(j => j.channel_id).includes('sitoWebAsporto')) // if has channel asporto
+    .filter(i => i.on_sale);  // if is on sale
   mkMenu(prods);
   $('#vai-checkout-large').off('click').on('click', () => {
     if (window.localStorage.currentClient) {
@@ -50,6 +54,7 @@ function mkMenu (prods) {
     }
   });
   $('#carrelloPieno').hide();
+  $('#carrelloPiccoloPieno').hide();
   checkStoredOrder();
   setRegister();
   getClosedTimeslots();
@@ -120,7 +125,7 @@ function mkCellMedium (p, cell) {
     'small',
     '',
     M('p', '', cs).html(p.description)
-  ).html(p.allergens.map(i => i.name).join(', '));
+  ).html('Allergeni: ' + p.allergens.map(i => i.name).join(', '));
   M('button', 'button small', cs, {
     type: 'button',
     'data-open': pid
@@ -130,7 +135,7 @@ function mkCellMedium (p, cell) {
 function mkModal (p, secDiv) {
   const pid = mkPid(p);
   // const imgName = 'test-immagine1-16-9.jpg';
-  const imgName = pid + '_rettangolare.png';
+  const imgName = pid + '_rettangolare.jpg';
   const modal = M('div', 'reveal reveal-ecommerce', secDiv, {
     id: pid
   });
@@ -144,13 +149,13 @@ function mkModal (p, secDiv) {
   });
   M('img', '', modal, {
     src: `${IMG_ROOT}${imgName}`,
-    onerror: "this.style.display='none'",
+    // onerror: "this.style.display='none'",
     alt: p.name
   });
   M('h1', 'h1-modal', M('header', 'main-header', modal)).html(p.name);
 
   const modalDiv = mkDiv('main-content', modal);
-  M('small', 'allergeni', M('p', '', modalDiv).html(p.description)).html(p.allergens.map(i => i.name).join(', '));
+  M('p', 'allergeni', M('small', '', modalDiv).html(p.description)).html('Allergeni: ' + p.allergens.map(i => i.name).join(', '));
   const noteText = M('textarea', '', M('label', '', modalDiv, { id: pid + '_note' }), {
     maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem' }
   });
@@ -287,9 +292,13 @@ function updateTotal () {
   if (total === 0) {
     $('#carrelloPieno').hide();
     $('#carrelloVuoto').show();
+    $('#carrelloPiccoloPieno').hide();
+    $('#carrelloPiccoloVuoto').show();
   } else {
     $('#carrelloPieno').show();
     $('#carrelloVuoto').hide();
+    $('#carrelloPiccoloPieno').show();
+    $('#carrelloPiccoloVuoto').hide();
   }
   $('.carrello-table-totale').text(`€ ${total.toLocaleString()}`);
   const quantity = prods.reduce((a, p) => a + p.quantity, 0);
@@ -404,6 +413,7 @@ function setRegister () {
       'POST',
       { action: 'registerClient', data },
       res => {
+        window.alert('Il tuo registro è andato a buon fine.');
         window.localStorage.currentClient = JSON.stringify(data);
         window.location.href = ORIGIN + '/checkout.html';
       },

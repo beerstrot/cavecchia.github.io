@@ -30,7 +30,7 @@ $(document).ready(() => {
   setLogin();
   $('#user-pg-btn').on('click', () => {
     if (window.localStorage.currentClient) {
-      window.location.href = ORIGIN + '/account.html'
+      window.location.href = ORIGIN + '/account.html';
     } else {
       $('#signup-login').foundation('open');
     }

@@ -123,7 +123,7 @@ function setSendOrder () {
   console.log({ data });
   $('#send-order').on('click', () => {
     if (!window.localStorage.timeSlot) {
-      return window.alert('selezione un orario di ritiro');
+      return window.alert('selezioni un orario di ritiro');
     }
     data.takeout_time = window.localStorage.timeSlot;
     mkCall(

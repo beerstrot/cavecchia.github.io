@@ -35,7 +35,15 @@ function mkInterface(r) {
   var d = JSON.parse(r);
   var prods = d.items.results.filter(function (i) {
     return i.option1_value;
-  });
+  }) // if has subcategory
+  .filter(function (i) {
+    return i.channels.map(function (j) {
+      return j.channel_id;
+    }).includes('sitoWebAsporto');
+  }) // if has channel asporto
+  .filter(function (i) {
+    return i.on_sale;
+  }); // if is on sale
   mkMenu(prods);
   $('#vai-checkout-large').off('click').on('click', function () {
     if (window.localStorage.currentClient) {
@@ -66,6 +74,7 @@ function mkMenu(prods) {
     }
   });
   $('#carrelloPieno').hide();
+  $('#carrelloPiccoloPieno').hide();
   checkStoredOrder();
   setRegister();
   getClosedTimeslots();
@@ -113,7 +122,7 @@ function mkCellMedium(p, cell) {
     alt: p.name
   });
   M('span', 'price', M('h3', '', cs).html(p.name)).html(p.price1);
-  M('small', '', M('p', '', cs).html(p.description)).html(p.allergens.map(function (i) {
+  M('small', '', M('p', '', cs).html(p.description)).html('Allergeni: ' + p.allergens.map(function (i) {
     return i.name;
   }).join(', '));
   M('button', 'button small', cs, {
@@ -124,7 +133,7 @@ function mkCellMedium(p, cell) {
 function mkModal(p, secDiv) {
   var pid = mkPid(p);
   // const imgName = 'test-immagine1-16-9.jpg';
-  var imgName = pid + '_rettangolare.png';
+  var imgName = pid + '_rettangolare.jpg';
   var modal = M('div', 'reveal reveal-ecommerce', secDiv, {
     id: pid
   });
@@ -138,12 +147,12 @@ function mkModal(p, secDiv) {
   });
   M('img', '', modal, {
     src: "".concat(IMG_ROOT).concat(imgName),
-    onerror: "this.style.display='none'",
+    // onerror: "this.style.display='none'",
     alt: p.name
   });
   M('h1', 'h1-modal', M('header', 'main-header', modal)).html(p.name);
   var modalDiv = mkDiv('main-content', modal);
-  M('small', 'allergeni', M('p', '', modalDiv).html(p.description)).html(p.allergens.map(function (i) {
+  M('p', 'allergeni', M('small', '', modalDiv).html(p.description)).html('Allergeni: ' + p.allergens.map(function (i) {
     return i.name;
   }).join(', '));
   var noteText = M('textarea', '', M('label', '', modalDiv, {
@@ -296,9 +305,13 @@ function updateTotal() {
   if (total === 0) {
     $('#carrelloPieno').hide();
     $('#carrelloVuoto').show();
+    $('#carrelloPiccoloPieno').hide();
+    $('#carrelloPiccoloVuoto').show();
   } else {
     $('#carrelloPieno').show();
     $('#carrelloVuoto').hide();
+    $('#carrelloPiccoloPieno').show();
+    $('#carrelloPiccoloVuoto').hide();
   }
   $('.carrello-table-totale').text("\u20AC ".concat(total.toLocaleString()));
   var quantity = prods.reduce(function (a, p) {
@@ -412,6 +425,7 @@ function setRegister() {
       action: 'registerClient',
       data: data
     }, function (res) {
+      window.alert('Il tuo registro è andato a buon fine.');
       window.localStorage.currentClient = JSON.stringify(data);
       window.location.href = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/checkout.html';
     }, function (res) {
