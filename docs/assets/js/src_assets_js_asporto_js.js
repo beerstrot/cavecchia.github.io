@@ -175,7 +175,7 @@ function mkModal(p, secDiv) {
   }
   var footer = M('footer', 'main-footer-carrello-small', modal);
   var footerDiv = mkDiv('input-group input-number-group', footer);
-  var quantity = 2;
+  var quantity = 1;
   var price = quantity * p.price1;
   M('i', 'las la-minus-square la-2x', M('span', 'input-number-decrement', mkDiv('input-group-button group-margin', footerDiv)).click(function () {
     var $input = $(this).parents('.input-number-group').find('.input-number');
@@ -192,9 +192,9 @@ function mkModal(p, secDiv) {
       width: '3rem'
     },
     type: 'button',
-    value: '2',
+    value: '1',
     min: '0',
-    max: '30'
+    max: '20'
   });
   M('i', 'las la-plus-square la-2x', M('span', 'input-number-increment', mkDiv('input-group-button group-margin', footerDiv)).click(function () {
     var $input = $(this).parents('.input-number-group').find('.input-number');
