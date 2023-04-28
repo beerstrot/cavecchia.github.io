@@ -21581,8 +21581,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "testeLambdaPOST": function() { return /* binding */ testeLambdaPOST; }
 /* harmony export */ });
 // beerstrot-prod:
-// const url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
-var url = 'http://localhost:5002/entry';
+var url = 'https://6nw3zi6sbkph6dledhd4op3mvq0aaduw.lambda-url.eu-central-1.on.aws/';
+// const url = 'http://localhost:5002/entry';
 var pCount = 0;
 function mkCall(type, data, success, error) {
   if (!['POST', 'GET'].includes(type)) return console.log("this ajax method is not good: ".concat(type));
