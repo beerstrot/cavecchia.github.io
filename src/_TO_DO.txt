@@ -17,7 +17,7 @@ Media priorità:
 
 
 E-COMMERCE
--  'Authorization': f'Bearer {key}'   f è un typo?
+- Da devteam Tilby: 'Authorization': f'Bearer {key}'   f è un typo?
 - invia ordine non funziona, rotella gira in modo permanente
 - orario se non selezionato in fase di checkout non fa proseguire. Ora è selezionato di default 19.15 (non nei pills ma in 'Orario scelto: 19.15')
 - orari passati o inferiori a 15 minuti di distanza non possono essere selezionati (es alle 19.01 non posso selezionare 19.15, ma da 19.30 in avanti
