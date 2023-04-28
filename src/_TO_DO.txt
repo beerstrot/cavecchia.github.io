@@ -30,8 +30,9 @@ E-COMMERCE
 - orari passati o inferiori a 15 minuti di distanza non possono essere selezionati (es alle 19.01 non posso selezionare 19.15, ma da 19.30 in avanti
 - orari.html non funziona
 - quando invio ordine non funziona, la rotella gira sempre
-- carrello + e - default number = 1 | ora è = 2 (messo a posto devo fare push)
+- carrello + e - default number = 1 | ora è = 2
 - account ordini passati: se non implementiamo aggiungi al carrello elimina bisogna comment out questa parte e rivedere layout)
 - mobile: carrello vuoto e carrello-small appaiono sempre
 - quando ti registri bisogna avvisare il cliente che è andata a buon fine
 - quando fai login e sbagli password bisogna cambiare la scritta ora è password does not match
+- stamattina venerd' alle 6.30 ho fatto un ordine: ordine arriva a tilby ma: 1) non mi manda alla checkout-landing.html, email arriva con giorno Giovedì
