@@ -6,9 +6,10 @@ SITO WEB
 
 RISERVA UN TAVOLO
 Importanti:
-- Pulizia database clienti tildi: scaricare, ripulire doppioni, ricaricare !importante
+- Pulizia database clienti tilbi: scaricare, ripulire doppioni, ricaricare !importante
 - algoritmo assegnazione tavolo: nr. Persone x 1,5
 - timer: i turni non sono disponibili dopo l'orario. es. sono le 21: i turni precedenti alle 21 non sono selezionabili
+- accedi registrati non compila i campi (se non implementiamo commentare parte accedi registraati)
 
 
 Media priorità:
@@ -23,6 +24,14 @@ Bassa priorità:
 
 
 E-COMMERCE
-- esempio di modal e carrello: https://deliveroo.it
-- prenota.js: non chiude i modali in foundation 6, ho modificato il richiamo ai calendari con jquerry (ora è nuova istanza vanilla js)
-- Barra categorie in menu e asporto.html: dovrebbe essere sempre visibile il TAB con categoria is-active 
+-  'Authorization': f'Bearer {key}'   f è un typo?
+- invia ordine non funziona, rotella gira in modo permanente
+- orario se non selezionato in fase di checkout non fa proseguire. Ora è selezionato di default 19.15 (non nei pills ma in 'Orario scelto: 19.15')
+- orari passati o inferiori a 15 minuti di distanza non possono essere selezionati (es alle 19.01 non posso selezionare 19.15, ma da 19.30 in avanti
+- orari.html non funziona
+- quando invio ordine non funziona, la rotella gira sempre
+- carrello + e - default number = 1 | ora è = 2 (messo a posto devo fare push)
+- account ordini passati: se non implementiamo aggiungi al carrello elimina bisogna comment out questa parte e rivedere layout)
+- mobile: carrello vuoto e carrello-small appaiono sempre
+- quando ti registri bisogna avvisare il cliente che è andata a buon fine
+- quando fai login e sbagli password bisogna cambiare la scritta ora è password does not match
