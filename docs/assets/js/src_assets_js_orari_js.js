@@ -53,11 +53,12 @@ function setOrari() {
     class: 'button warning'
   }).html('consolidare').appendTo($('#consolidate')).on('click', function () {
     console.log('send to server');
-    info.html('orari chiusi sent to server:');
+    info.html('orari chiusi sent to server: ' + _construct(Array, _toConsumableArray(window.closedTimeslots)).join(', '));
     (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
       action: 'consolidateTimeslots',
       data: _construct(Array, _toConsumableArray(window.closedTimeslots))
     }, function (res) {
+      window.alert('orari disponibili aggiornati');
       console.log({
         res: res
       });

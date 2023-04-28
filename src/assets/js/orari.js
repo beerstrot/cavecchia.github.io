@@ -35,11 +35,12 @@ function setOrari () {
     .appendTo($('#consolidate'))
     .on('click', () => {
       console.log('send to server');
-      info.html('orari chiusi sent to server:');
+      info.html('orari chiusi sent to server: ' + new Array(...window.closedTimeslots).join(', '));
       mkCall(
         'POST',
         { action: 'consolidateTimeslots', data: new Array(...window.closedTimeslots) },
         res => {
+          window.alert('orari disponibili aggiornati');
           console.log({ res });
         },
         res => {

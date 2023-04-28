@@ -20,7 +20,7 @@ $(document).ready(function () {
 function checkStoredOrder() {
   var storage = window.localStorage.currentOrder;
   if (!storage) {
-    window.location.href = ORIGIN + '/asporto.html';
+    window.location.href = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/asporto.html';
     return;
   }
   var prods = JSON.parse(storage);
@@ -53,11 +53,19 @@ function getClosedTimeslots() {
   });
 }
 function setOrari() {
+  var d_ = new Date();
+  var diff = 15; // minutes
+  var d = new Date(d_.getTime() + diff * 60000);
+  var h = d.getUTCHours();
+  var m = d.getUTCMinutes();
+  var o = d.getTimezoneOffset();
+  var h_ = h - Math.round(o / 60);
+  var t = "".concat(h_, ":").concat(m);
   var cells = $('.orario-btn');
   cells.each(function () {
     var cell = $(this);
     var text = cell.text();
-    var isEnabled = !window.closedTimeslots.has(text);
+    var isEnabled = !window.closedTimeslots.has(text) && text > t;
     cell.attr('disabled', !isEnabled);
     cell.on('click', function () {
       cells.each(function () {
@@ -70,6 +78,8 @@ function setOrari() {
   });
   if (window.localStorage.timeSlot) {
     $("button:contains(\"".concat(window.localStorage.timeSlot, "\")")).click();
+  } else {
+    $('#chosen-time').html('--');
   }
 }
 function setSendOrder() {
@@ -115,13 +125,16 @@ function setSendOrder() {
         last_name: client.surname,
         mobile: client.telephone
       }
-    },
-    takeout_time: window.localStorage.timeSlot
+    }
   };
   console.log({
     data: data
   });
   $('#send-order').on('click', function () {
+    if (!window.localStorage.timeSlot) {
+      return window.alert('selezione un orario di ritiro');
+    }
+    data.takeout_time = window.localStorage.timeSlot;
     (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
       action: 'registerOrder',
       data: data
@@ -131,7 +144,8 @@ function setSendOrder() {
       var order = client.orders[client.orders.length - 1];
       window.localStorage.lastOrder = JSON.stringify(order);
       delete window.localStorage.currentOrder;
-      window.location.href = ORIGIN + '/checkout-landing.html';
+      delete window.localStorage.timeSlot;
+      window.location.href = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/checkout-landing.html';
     }, function (res) {
       // TODO: add this show message modal
       showMessage(messageError);

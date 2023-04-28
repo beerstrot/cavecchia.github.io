@@ -1,4 +1,4 @@
-import { mkCall } from './utils';
+import { mkCall, ORIGIN } from './utils';
 import { itemsCarrelloCheckout } from './htmlTemplates';
 
 $(document).ready(() => {
@@ -45,11 +45,19 @@ function getClosedTimeslots () {
 }
 
 function setOrari () {
+  const d_ = new Date();
+  const diff = 15; // minutes
+  const d = new Date(d_.getTime() + diff * 60000);
+  const h = d.getUTCHours();
+  const m = d.getUTCMinutes();
+  const o = d.getTimezoneOffset();
+  const h_ = h - Math.round(o / 60);
+  const t = `${h_}:${m}`;
   const cells = $('.orario-btn');
   cells.each(function () {
     const cell = $(this);
     const text = cell.text();
-    let isEnabled = !window.closedTimeslots.has(text)
+    const isEnabled = (!window.closedTimeslots.has(text)) && (text > t);
     cell.attr('disabled', !isEnabled);
     cell.on('click', () => {
       cells.each(function () {
@@ -64,6 +72,8 @@ function setOrari () {
   });
   if (window.localStorage.timeSlot) {
     $(`button:contains("${window.localStorage.timeSlot}")`).click();
+  } else {
+    $('#chosen-time').html('--');
   }
 }
 
@@ -108,11 +118,14 @@ function setSendOrder () {
         last_name: client.surname,
         mobile: client.telephone
       }
-    },
-    takeout_time: window.localStorage.timeSlot
+    }
   };
   console.log({ data });
   $('#send-order').on('click', () => {
+    if (!window.localStorage.timeSlot) {
+      return window.alert('selezione un orario di ritiro');
+    }
+    data.takeout_time = window.localStorage.timeSlot;
     mkCall(
       'POST',
       { action: 'registerOrder', data },
@@ -122,6 +135,7 @@ function setSendOrder () {
         const order = client.orders[client.orders.length - 1];
         window.localStorage.lastOrder = JSON.stringify(order);
         delete window.localStorage.currentOrder;
+        delete window.localStorage.timeSlot;
         window.location.href = ORIGIN + '/checkout-landing.html'
       },
       res => {
