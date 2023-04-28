@@ -39,14 +39,14 @@ function mkInterface(r) {
   mkMenu(prods);
   $('#vai-checkout-large').off('click').on('click', function () {
     if (window.localStorage.currentClient) {
-      window.location.href = '/checkout.html';
+      window.location.href = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/checkout.html';
     } else {
       $('#signup-login').foundation('open');
     }
   });
   $('#vai-checkout-small').off('click').on('click', function () {
     if (window.localStorage.currentClient) {
-      window.location.href = '/checkout.html';
+      window.location.href = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/checkout.html';
     } else {
       $('#signup-login').foundation('open');
     }
@@ -76,9 +76,7 @@ function getImgRoot() {
   // const pieces = imgURL.split('/');
   // const imgRoot = pieces.slice(0, pieces.length - 1).join('/');
 
-  var r = window.location.href.split('/');
-  var origin = r.slice(0, r.length - 1).join('/');
-  var imgRoot = origin + '/' + 'assets/img/prod/';
+  var imgRoot = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/assets/img/prod/';
   // const imgRoot = window.location.origin + '/' + 'assets/img/prod/';
   return imgRoot;
 }
@@ -407,7 +405,7 @@ function setRegister() {
       data: data
     }, function (res) {
       window.localStorage.currentClient = JSON.stringify(data);
-      window.location.href = '/checkout.html';
+      window.location.href = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/checkout.html';
     }, function (res) {
       // TODO: add this show message modal
       showMessage(messageError);
@@ -429,7 +427,7 @@ function setLogin() {
     }, function (res) {
       if (!res.result) return alert(res.details);
       window.localStorage.currentClient = JSON.stringify(res.details);
-      window.location.href = '/checkout.html';
+      window.location.href = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/checkout.html';
     }, function (res) {
       // TODO: add this show message modal
       showMessage(messageError);
