@@ -228,29 +228,31 @@
 
     <div id="signup-login" class="reveal reveal-ecommerce grid-x grid-margin-x grid-margin-y main-container" data-reveal-id='signup-login' data-reveal>
         <header class="main-header border-bottom">
-            <h2 class="h2-titolo-carrello">Accedere</h2>
+            <h2 class="h2-titolo-carrello">Accedi o Registrati</h2>
             <button type="button" class="close-button close-button-carrello" data-close aria-label="Close reveal">
                 <span aria-hidden="true">&times;</span>
             </button>
         </header>
-        <div class="grid-x grid-padding-x">
-            <div class="small-12 cell">
-                <h2 class="h2-carrello">Accedi</h2>
+        <form autocomplete="on">
+            <div class="grid-x grid-padding-x">
+                <div class="small-12 cell">
+                    <h2 class="h2-carrello">Accedi</h2>
+                </div>
+                <div class="small-10 cell">
+                    <label><strong>Email</strong>
+                        <input id="email-login" type="email" autocomplete="username" class="required error email" placeholder=""/>
+                    </label>
+                </div>
+                <div class="small-8 cell">
+                    <label><strong>Password</strong>
+                        <input id="password-login" type="password" class="required error password" autocomplete="current-password"/>
+                    </label>
+                </div>
+                <div class="small-12 cell extra-space-button">
+                    <button class="button submit" id="login-btn">Accedi</button>
+                </div>
             </div>
-            <div class="small-10 cell">
-                <label><strong>Email</strong>
-                    <input id="email-login" type="email" autocomplete="username" class="required error email" placeholder=""/>
-                </label>
-            </div>
-            <div class="small-8 cell">
-                <label><strong>Password</strong>
-                    <input id="password-login" type="password" class="required error password" autocomplete="current-password"/>
-                </label>
-            </div>
-            <div class="small-12 cell extra-space-button">
-                <button class="button submit" id="login-btn">Accedi</button>
-            </div>
-        </div>
+        </form>
        <!--  <div class="grid-x grid-padding-x grid-margin-y">
             <div class="small-12 cell">
                 <h5 class="text-center subheader">oppure</h5>
@@ -262,45 +264,48 @@
                 <button type="button" class="button alert">Accedi con Google</button>
             </div>
         </div> -->
-        <div class="grid-x grid-padding-x extra-space">
-            <div class="small-12 cell">
-                <h2 class="h2-carrello">Registrati</h2>
+        <form autocomplete="on">
+            <div class="grid-x grid-padding-x extra-space">
+                <div class="small-12 cell">
+                    <h2 class="h2-carrello">Registrati</h2>
+                </div>
+    
+                <div class="small-6 medium-6 cell">
+                    <label><strong>Nome*</strong>
+                        <input type="text" autocomplete="given-name" class="required error" id="name" placeholder="" maxlength="20"/>
+                    </label>
+                </div>
+                <div class="small-6 medium-6 cell">
+                    <label><strong>Cognome*</strong>
+                        <input type="text" autocomplete="family-name" class="required error" id="surname" placeholder="" maxlength="20"/>
+                    </label>
+                </div>
+                <div class="small-6 medium-4  cell">
+                    <label><strong>Telefono*</strong>
+                        <input type="tel" autocomplete="tel-local" class="required error" id="telephone" placeholder="" maxlength="35"/>
+                    </label>
+                </div>
+                <div class="small-10  medium-8 cell">
+                    <label><strong>Email (la tua username)*</strong>
+                        <input type="email" autocomplete="email" class="required error email" id="email" placeholder="" maxlength="200"/>
+                      </label>
+                </div>
+                <div class="small-8 cell">
+                    <label><strong>Password*</strong>
+                         <input id="password" autocomplete="new-password" type="password" class="required error password"/>
+                    </label>
+                </div>
+                <div class="small-12 cell">
+                    <label class="container-checkbox">
+                        <input id="newsletter" type="checkbox">
+                            <span class="checkmark"></span>Vorrei ricevere aggiornamenti e novità
+                    </label>
+                </div>
+                <div class="small-12 cell extra-space-button">
+                    <button class="button submit" style="margin-bottom:3rem" id="register-btn">Registrati</button>
+                </div>
             </div>
-            <div class="small-6 medium-6 cell">
-                <label><strong>Nome*</strong>
-                    <input type="text" class="required error" id="name" placeholder="" maxlength="20"/>
-                </label>
-            </div>
-            <div class="small-6 medium-6 cell">
-                <label><strong>Cognome*</strong>
-                    <input type="text" class="required error" id="surname" placeholder="" maxlength="20"/>
-                </label>
-            </div>
-            <div class="small-6 medium-4  cell">
-                <label><strong>Telefono*</strong>
-                    <input type="tel" class="required error" id="telephone" placeholder="" maxlength="35" />
-                </label>
-            </div>
-            <div class="small-10  medium-8 cell">
-                <label><strong>Email (la tua username)*</strong>
-                    <input type="email" class="required error email" id="email" placeholder="" maxlength="200"/>
-                  </label>
-            </div>
-            <div class="small-8 cell">
-                <label><strong>Password*</strong>
-                     <input id="password" type="password" class="required error password" autocomplete="new-password"/>
-                </label>
-            </div>
-            <div class="small-12 cell">
-                <label class="container-checkbox">
-                    <input id="newsletter" type="checkbox">
-                        <span class="checkmark"></span>Vorrei ricevere aggiornamenti e novità
-                </label>
-            </div>
-            <div class="small-12 cell extra-space-button">
-                <button class="button submit" style="margin-bottom:3rem" id="register-btn">Registrati</button>
-            </div>
-        </div>
+        </form>
         <footer class="main-footer border-top" >
             <div class="grid-x grid-padding-x">
                 <div class="small-12 cell">
