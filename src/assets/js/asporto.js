@@ -168,7 +168,7 @@ function mkModal (p, secDiv) {
   }
   const footer = M('footer', 'main-footer-carrello-small', modal);
   const footerDiv = mkDiv('input-group input-number-group', footer);
-  let quantity = 2;
+  let quantity = 1;
   let price = quantity * p.price1;
   M('i', 'las la-minus-square la-2x',
     M('span', 'input-number-decrement',
@@ -185,7 +185,7 @@ function mkModal (p, secDiv) {
     })
   );
   M('input', 'input-number group-margin', footerDiv, {
-    css: { width: '3rem' },  type: 'button', value: '2', min: '0', max: '30'
+    css: { width: '3rem' },  type: 'button', value: '1', min: '0', max: '20'
   });
   M('i', 'las la-plus-square la-2x',
     M('span', 'input-number-increment',
