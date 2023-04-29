@@ -50,15 +50,15 @@ function setOrari() {
   });
   $('<button/>', {
     type: 'button',
-    class: 'button warning'
-  }).html('consolidare').appendTo($('#consolidate')).on('click', function () {
+    class: 'button extra-space'
+  }).html('Chiudi Asporti').appendTo($('#consolidate')).on('click', function () {
     console.log('send to server');
-    info.html('orari chiusi sent to server: ' + _construct(Array, _toConsumableArray(window.closedTimeslots)).join(', '));
+    info.html('orari chiusura asporti attivi: ' + _construct(Array, _toConsumableArray(window.closedTimeslots)).join(', '));
     (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
       action: 'consolidateTimeslots',
       data: _construct(Array, _toConsumableArray(window.closedTimeslots))
     }, function (res) {
-      window.alert('orari disponibili aggiornati');
+      window.alert('Orari Asporti Aggiornati');
       console.log({
         res: res
       });
