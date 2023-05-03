@@ -74,7 +74,7 @@ asporto-sushi-special-mix:
     class-price:
     alt-image: Sushi Imperiale
   -
-    item-name: Suhi Per Me
+    item-name: Sushi Per Me
     item-image-16-9: assets/img/test/test-immagine6-16-9.jpg
     item-image-1-1: assets/img/test/test-immagine6-1-1.jpg
     item-price: 15
@@ -86,7 +86,7 @@ asporto-sushi-special-mix:
     class-cottura: hide
     class-allergeni:
     class-price:
-    alt-image: Suhi Per Me
+    alt-image: Sushi Per Me
   -
     item-name: Sushi Io e Te
     item-image-16-9: assets/img/test/test-immagine7-16-9.jpg
@@ -122,9 +122,9 @@ asporto-sushi-entree:
     item-name: Edamame
     item-image-16-9: assets/img/test/test-immagine9-16-9.jpg
     item-image-1-1: assets/img/test/test-immagine9-1-1.jpg
-    item-price: 12
-    item-description: Fagiolini di soia bolliti con sale grosso
-    item-description-short: Fagiolini di soia bolliti con sale grosso
+    item-price: 4
+    item-description: Fagiolini di soia bolliti con sale grosso.
+    item-description-short: Fagiolini di soia bolliti con sale grosso.
     item-allergeni: Soia
     id-data: edamameEntree
     class-note: hide
@@ -137,8 +137,8 @@ asporto-sushi-entree:
     item-image-16-9: assets/img/test/test-immagine10-16-9.jpg
     item-image-1-1: assets/img/test/test-immagine10-1-1.jpg
     item-price: 4
-    item-description: Fagiolini di soia bolliti con 7 spezie
-    item-description-short: Fagiolini di soia bolliti con 7 spezie
+    item-description: Fagiolini di soia bolliti con 7 spezie.
+    item-description-short: Fagiolini di soia bolliti con 7 spezie.
     item-allergeni: Soia
     id-data: edamamePiccantiEntree
     class-note: hide
@@ -151,8 +151,8 @@ asporto-sushi-entree:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
-    item-description: Alghe croccanti
-    item-description-short: Alghe croccanti
+    item-description: Alghe croccanti.
+    item-description-short: Alghe croccanti.
     item-allergeni: Soia, Semi di sesamo
     id-data: algheGoma
     class-note: hide
@@ -165,8 +165,8 @@ asporto-sushi-entree:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Tartare di tonno, avocado, tobiko red, semi di sesamo, maionese, salsa ponzu
-    item-description-short: Tartare di tonno, avocado, tobiko red, semi di sesamo, maionese, salsa ponzu
+    item-description: Tartare di tonno, avocado, tobiko red, semi di sesamo, maionese, salsa ponzu.
+    item-description-short: Tartare di tonno, avocado, tobiko red, semi di sesamo, maionese, salsa ponzu.
     item-allergeni: Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
     id-data: tartareCaVecchiaTonno
     class-note: hide
@@ -179,8 +179,8 @@ asporto-sushi-entree:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Tartare di salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu
-    item-description-short: Tartare di salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu
+    item-description: Tartare di salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu.
+    item-description-short: Tartare di salmone, avocado, goma wakame, tobiko red, tanuki, maionese, salsa ponzu.
     item-allergeni: Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
     id-data: tartareCaVecchiaSalmone
     class-note: hide
@@ -193,8 +193,8 @@ asporto-sushi-entree:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 12
-    item-description: Salmone marinato con lime e salsa kimuchi, semi di sesamo
-    item-description-short: Salmone marinato con lime e salsa kimuchi, semi di sesamo
+    item-description: Salmone marinato con lime e salsa kimuchi, semi di sesamo.
+    item-description-short: Salmone marinato con lime e salsa kimuchi, semi di sesamo.
     item-allergeni: Pesce, Soia, Semi di sesamo
     id-data: kimuchiSalmone
     class-note: hide
@@ -207,8 +207,8 @@ asporto-sushi-entree:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: 2 pezzi di salmone, 2 di tonno e 2 di branzino
-    item-description-short: 2 pezzi di salmone, 2 di tonno e 2 di branzino
+    item-description: 2 pezzi di salmone, 2 di tonno e 2 di branzino.
+    item-description-short: 2 pezzi di salmone, 2 di tonno e 2 di branzino.
     item-allergeni: Pesce
     id-data: littleSashimi
     class-note: hide
@@ -410,9 +410,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki (8 pezzi)
-    item-description-short: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki (8 pezzi)
-    item-allergeni: Glutine, Pesce, Soia, Latte
+    item-description: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki (8 pezzi).
+    item-description-short: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki (8 pezzi).
     id-data: uramakiPhiladelphiaOrdinary
     class-note: hide
     class-cottura: hide
@@ -424,8 +423,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 11
-    item-description: Salmone, avocado e maionese (8 pezzi)
-    item-description-short: Salmone, avocado e maionese (8 pezzi)
+    item-description: Salmone, avocado e maionese (8 pezzi).
+    item-description-short: Salmone, avocado e maionese (8 pezzi).
     item-allergeni: Uova, Pesce, Senape
     id-data: uramakiSalmoneOrdinary
     class-note: hide
@@ -438,8 +437,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 10
-    item-description: Tonno, avocado e maionese ricoperti da tobiko red (8 pezzi)
-    item-description-short: Tonno, avocado e maionese ricoperti da tobiko red (8 pezzi)
+    item-description: Tonno, avocado e maionese ricoperti da tobiko red (8 pezzi).
+    item-description-short: Tonno, avocado e maionese ricoperti da tobiko red (8 pezzi).
     item-allergeni: Uova, Pesce, Senape
     id-data: uramakiTonnoOrdinary
     class-note: hide
@@ -452,8 +451,8 @@ asporto-sushi-maki-ordinary-style:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 9
-    item-description: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki (8 pezzi)
-    item-description-short: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki (8 pezzi)
+    item-description: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki (8 pezzi).
+    item-description-short: Gambero in panko croccante e maionese guarniti con semi di sesamo e salsa teriyaki (8 pezzi).
     item-allergeni: Glutine, Crostacei, Uova, Soia, Senape, Semi di sesamo
     id-data: uramakiEbiTenOrdinary
     class-note: hide
@@ -469,8 +468,8 @@ asporto-sushi-temaki:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 6
-    item-description: Tartare di salmone, avocado, maionese e semi di sesamo
-    item-description-short: Tartare di salmone, avocado, maionese e semi di sesamo
+    item-description: Tartare di salmone, avocado, maionese e semi di sesamo.
+    item-description-short: Tartare di salmone, avocado, maionese e semi di sesamo.
     item-allergeni: Uova, Pesce, Soia, Senape, Semi di sesamo
     id-data: temakiSalmoneAcocado
     class-note: hide
@@ -483,8 +482,8 @@ asporto-sushi-temaki:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 6
-    item-description: Tartare di tonno, avocado, maionese piccante e semi di sesamo
-    item-description-short: Tartare di tonno, avocado, maionese piccante e semi di sesamo
+    item-description: Tartare di tonno, avocado, maionese piccante e semi di sesamo.
+    item-description-short: Tartare di tonno, avocado, maionese piccante e semi di sesamo.
     item-allergeni: Uova, Pesce, Soia, Senape, Semi di sesamo
     id-data: temakiTonnoAcocado
     class-note: hide
@@ -497,8 +496,8 @@ asporto-sushi-temaki:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 7
-    item-description: Gambero in panko croccante, tartare di salmone e erba cipollina
-    item-description-short: Gambero in panko croccante, tartare di salmone e erba cipollina
+    item-description: Gambero in panko croccante, tartare di salmone e erba cipollina.
+    item-description-short: Gambero in panko croccante, tartare di salmone e erba cipollina.
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape
     id-data: temakiCrunch
     class-note: hide
@@ -511,8 +510,8 @@ asporto-sushi-temaki:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 6
-    item-description: Gambero al vapore, avocado, philadelphia e cetriolo
-    item-description-short: Gambero al vapore, avocado, philadelphia e cetriolo
+    item-description: Gambero al vapore, avocado, philadelphia e cetriolo.
+    item-description-short: Gambero al vapore, avocado, philadelphia e cetriolo.
     item-allergeni: Crostacei, Latte
     id-data: temakiGambero
     class-note: hide
@@ -525,8 +524,8 @@ asporto-sushi-temaki:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 5
-    item-description: Philadelphia, cetriolo, carote, avocado e salsa teriyaki
-    item-description-short: Philadelphia, cetriolo, carote, avocado e salsa teriyaki
+    item-description: Philadelphia, cetriolo, carote, avocado e salsa teriyaki.
+    item-description-short: Philadelphia, cetriolo, carote, avocado e salsa teriyaki.
     item-allergeni: Soia, Latte
     id-data: temakiVeggie
     class-note: hide
@@ -542,7 +541,7 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
-    item-description: Salmone su riso (2 pezzi)
+    item-description: Salmone su riso (2 pezzi).
     item-description-short: Salmone su riso (2 pezzi)
     item-allergeni: Pesce
     id-data: salmoneNigiri
@@ -556,7 +555,7 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 4
-    item-description: Tonno su riso (2 pezzi)
+    item-description: Tonno su riso (2 pezzi).
     item-description-short: Tonno su riso (2 pezzi)
     item-allergeni: Pesce
     id-data: tonnoNigiri
@@ -570,7 +569,7 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 5
-    item-description: Branzino su riso (2 pezzi)
+    item-description: Branzino su riso (2 pezzi).
     item-description-short: Branzino su riso (2 pezzi)
     item-allergeni: Pesce
     id-data: branzinoNigiri
@@ -584,7 +583,7 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
-    item-description: Gambero in panko croccante su riso (2 pezzi)
+    item-description: Gambero in panko croccante su riso (2 pezzi).
     item-description-short: Gambero in panko croccante su riso (2 pezzi)
     item-allergeni: Crostacei
     id-data: ebiTenNigiri
@@ -598,7 +597,7 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 6
-    item-description: Gambero rosso su riso (2 pezzi)
+    item-description: Gambero rosso su riso (2 pezzi).
     item-description-short: Gambero rosso su riso (2 pezzi)
     item-allergeni: Crostacei
     id-data: gamberoRossoNigiri
@@ -612,7 +611,7 @@ asporto-sushi-nigiri:
     item-image-16-9: https://picsum.photos/1920/1080
     item-image-1-1: https://picsum.photos/1920/1920
     item-price: 3,5
-    item-description: Calamaro su riso (2 pezzi)
+    item-description: Calamaro su riso (2 pezzi).
     item-description-short: Calamaro su riso (2 pezzi)
     item-allergeni: Pesce, Soia
     id-data: calamaroNigiri

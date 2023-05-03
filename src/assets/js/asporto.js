@@ -302,7 +302,7 @@ function updateTotal () {
   }
   $('.carrello-table-totale').text(`€ ${total.toLocaleString()}`);
   const quantity = prods.reduce((a, p) => a + p.quantity, 0);
-  $('.prod-quantity').text(`€ ${quantity}`);
+  $('.prod-quantity').text(`${quantity}`);
 }
 
 function checkStoredOrder () {
