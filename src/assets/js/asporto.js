@@ -17,6 +17,8 @@ $(document).ready(() => {
 });
 
 function mkInterface (r) {
+  setLogin();
+  setRegister();
   const d = JSON.parse(r);
 
   const prods = d.items.results
@@ -149,13 +151,15 @@ function mkModal (p, secDiv) {
   });
   M('img', '', modal, {
     src: `${IMG_ROOT}${imgName}`,
-    // onerror: "this.style.display='none'",
+    onerror: "this.style.display='none'",
     alt: p.name
   });
   M('h1', 'h1-modal', M('header', 'main-header', modal)).html(p.name);
 
   const modalDiv = mkDiv('main-content', modal);
-  M('p', 'allergeni', M('small', '', modalDiv).html(p.description)).html('Allergeni: ' + p.allergens.map(i => i.name).join(', '));
+  M('p', 'allergeni', M('small', '', modalDiv).html(p.description)).html('Allergeni: ' + p.allergens.map(i => i.name).join(', '), {
+    maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem' }
+  });
   const noteText = M('textarea', '', M('label', '', modalDiv, { id: pid + '_note' }), {
     maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem' }
   });
@@ -427,6 +431,7 @@ function setRegister () {
 
 function setLogin () {
   $('#login-btn').off('click').on('click', () => {
+    window.alert('comeon man');
     const data = {};
     const get = id => {
       data[id] = $(`#${id}-login`).val();
@@ -436,11 +441,15 @@ function setLogin () {
       'POST',
       { action: 'login', data },
       res => {
+        // window.alert('res ok');
+        // window.alert(res);
+        // console.log({ res });
         if (!res.result) return alert(res.details);
         window.localStorage.currentClient = JSON.stringify(res.details);
         window.location.href = ORIGIN + '/checkout.html';
       },
       res => {
+        window.alert('error');
         // TODO: add this show message modal
         showMessage(messageError);
       }

@@ -25,7 +25,7 @@ $('#loading').show();
 
 $(document).ready(() => {
   const pn = window.location.pathname;
-  const en = s => pn.endsWith(s);
+  const en = s => pn.includes(s);
   setRegister();
   setLogin();
   $('#user-pg-btn').on('click', () => {
@@ -35,7 +35,7 @@ $(document).ready(() => {
       $('#signup-login').foundation('open');
     }
   });
-  if (en('riserva-un-tavolo.html')) {
+  if (en('riserva-un-tavolo.html') || en('consulta.html')) {
     import('./prenota');
   } else if (en('asporto.html')) {
     import('./asporto');

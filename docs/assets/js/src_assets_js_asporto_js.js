@@ -32,6 +32,8 @@ $(document).ready(function () {
 });
 
 function mkInterface(r) {
+  setLogin();
+  setRegister();
   var d = JSON.parse(r);
   var prods = d.items.results.filter(function (i) {
     return i.option1_value;
@@ -147,14 +149,20 @@ function mkModal(p, secDiv) {
   });
   M('img', '', modal, {
     src: "".concat(IMG_ROOT).concat(imgName),
-    // onerror: "this.style.display='none'",
+    onerror: "this.style.display='none'",
     alt: p.name
   });
   M('h1', 'h1-modal', M('header', 'main-header', modal)).html(p.name);
   var modalDiv = mkDiv('main-content', modal);
   M('p', 'allergeni', M('small', '', modalDiv).html(p.description)).html('Allergeni: ' + p.allergens.map(function (i) {
     return i.name;
-  }).join(', '));
+  }).join(', '), {
+    maxlength: '200',
+    placeholder: '...',
+    css: {
+      'min-height': '0.5rem'
+    }
+  });
   var noteText = M('textarea', '', M('label', '', modalDiv, {
     id: pid + '_note'
   }), {
@@ -436,6 +444,7 @@ function setRegister() {
 }
 function setLogin() {
   $('#login-btn').off('click').on('click', function () {
+    window.alert('comeon man');
     var data = {};
     var get = function get(id) {
       data[id] = $("#".concat(id, "-login")).val();
@@ -447,10 +456,14 @@ function setLogin() {
       action: 'login',
       data: data
     }, function (res) {
+      // window.alert('res ok');
+      // window.alert(res);
+      // console.log({ res });
       if (!res.result) return alert(res.details);
       window.localStorage.currentClient = JSON.stringify(res.details);
       window.location.href = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/checkout.html';
     }, function (res) {
+      window.alert('error');
       // TODO: add this show message modal
       showMessage(messageError);
     });

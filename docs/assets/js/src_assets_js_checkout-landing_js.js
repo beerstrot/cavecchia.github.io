@@ -12,9 +12,9 @@ $(document).ready(function () {
   console.log('heay how');
   var _window$localStorage = window.localStorage,
     lastOrder = _window$localStorage.lastOrder,
-    timeSlot = _window$localStorage.timeSlot,
+    timeSlot_ = _window$localStorage.timeSlot_,
     currentClient = _window$localStorage.currentClient;
-  $('#time1').html(timeSlot);
+  $('#time1').html(timeSlot_);
   var client = JSON.parse(currentClient);
   var name = client.name + ' ' + client.surname;
   $('#name').html(name);

@@ -3,8 +3,8 @@ const weekdays = 'Domenica - Lunedì - Martedì - Mercoledì - Giovedì - Venerd
 
 $(document).ready(() => {
   console.log('heay how');
-  const { lastOrder, timeSlot, currentClient } = window.localStorage;
-  $('#time1').html(timeSlot);
+  const { lastOrder, timeSlot_, currentClient } = window.localStorage;
+  $('#time1').html(timeSlot_);
 
   const client = JSON.parse(currentClient);
   const name = client.name + ' ' + client.surname;

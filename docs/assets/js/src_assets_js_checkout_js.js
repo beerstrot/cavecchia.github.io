@@ -144,6 +144,7 @@ function setSendOrder() {
       var order = client.orders[client.orders.length - 1];
       window.localStorage.lastOrder = JSON.stringify(order);
       delete window.localStorage.currentOrder;
+      window.localStorage.timeSlot_ = window.localStorage.timeSlot;
       delete window.localStorage.timeSlot;
       window.location.href = _utils__WEBPACK_IMPORTED_MODULE_0__.ORIGIN + '/checkout-landing.html';
     }, function (res) {

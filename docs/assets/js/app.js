@@ -21993,7 +21993,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#loading').show();
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   var pn = window.location.pathname;
   var en = function en(s) {
-    return pn.endsWith(s);
+    return pn.includes(s);
   };
   setRegister();
   setLogin();
@@ -22004,7 +22004,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('#signup-login').foundation('open');
     }
   });
-  if (en('riserva-un-tavolo.html')) {
+  if (en('riserva-un-tavolo.html') || en('consulta.html')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_prenota_js").then(__webpack_require__.bind(__webpack_require__, /*! ./prenota */ "./src/assets/js/prenota.js"));
   } else if (en('asporto.html')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_asporto_js").then(__webpack_require__.bind(__webpack_require__, /*! ./asporto */ "./src/assets/js/asporto.js"));

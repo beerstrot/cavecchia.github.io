@@ -135,6 +135,7 @@ function setSendOrder () {
         const order = client.orders[client.orders.length - 1];
         window.localStorage.lastOrder = JSON.stringify(order);
         delete window.localStorage.currentOrder;
+        window.localStorage.timeSlot_ = window.localStorage.timeSlot;
         delete window.localStorage.timeSlot;
         window.location.href = ORIGIN + '/checkout-landing.html'
       },
