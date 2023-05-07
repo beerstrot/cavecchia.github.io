@@ -38,7 +38,7 @@ console.log(UNCSS_OPTIONS);
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
-  gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sassBuild, styleGuide)
+  gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sassBuild, emails)
 );
 
 // Build the site, run the server, and watch for file changes
@@ -78,13 +78,12 @@ function resetPages(done) {
   done();
 }
 
-// Generate a style guide from the Markdown content and HTML template in styleguide/
-function styleGuide(done) {
-  sherpa('src/styleguide/index.md', {
-    output: PATHS.dist + '/styleguide.html',
-    template: 'src/styleguide/template.html'
-  }, done);
+// Copy emails into prod email/ folder without panini bothering
+function emails(done) {
+  return gulp.src('src/email/*.{html,hbs,handlebars}')
+    .pipe(gulp.dest(PATHS.dist + '/email'));
 }
+
 
 // Compile Sass into CSS
 // In production, the CSS is compressed
@@ -94,7 +93,7 @@ function sassBuild() {
     // Autoprefixer
     autoprefixer(),
     // UnCSS - Uncomment to remove unused styles in production
-    PRODUCTION && uncss(UNCSS_OPTIONS),
+    // PRODUCTION && uncss(UNCSS_OPTIONS),
   ].filter(Boolean);
 
   return gulp.src('src/assets/scss/app.scss')
@@ -184,5 +183,5 @@ function watch() {
   gulp.watch('src/assets/scss/**/*.scss').on('all', sassBuild);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
-  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
+  gulp.watch('src/email/**').on('all', gulp.series(emails, browser.reload));
 }

@@ -12,11 +12,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orari | Ca' Vecchia Beerstrot </title>
+    <title>Orari asporti | Ca' Vecchia Beerstrot </title>
     <meta name="description" content="Sceglie i orari ammessi e non ammessi">
     <meta name="author" content="Ca' Vecchia Beerstrot">
     <meta name="copyright" content="Beerstrot Copyright (c) 2023">
-    <link rel="canonical" href="https://www.beerstrot.it/chiusura.html">
+    <link rel="canonical" href="https://www.beerstrot.it/orari.html">
     <link rel="icon" href="assets/img/thumbs/favicon.png">
     <meta name="p:domain_verify" content="ca68ebe696c4699798a5a243ca187b2d">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -51,11 +51,10 @@
     		<li class="toggle"><a href="javascript:void(0)"><i class="las la-bars la-2x"></i></a></li>
     	</ul>
     </nav>
-
     <div class="grid-container panel-home-n">
         <div class="grid-x grid-margin-x">
             <div class="small-12 cell">
-                <h1 class="first-paragraph-no-hero">Orari</h1>
+                <h1 class="first-paragraph-no-hero">Orari asporti</h1>
     
             </div>
         </div>
@@ -63,9 +62,9 @@
             <div class="small-12 medium-6 cell">
                 <div class="grid-x grid-margin-x grid-margin-y">
                     <div class="small-12 xlarge-8 cell ">
-                        <h2>Orari consentiti</h2>
+                        <h2>Orari Giornalieri Per Asporto</h2>
                         <div id="last-time">
-                          ) ( _o_o_ oOo _o_o_ ) (
+                          <p>Clicca l'orario in cui chiudere gli asporti poi clicca il bottone 'Chiudi Asporti'</p>
                         </div>
                         <div class="grid-x small-up-4 align-center extra-space">
                             <div class="cell">
@@ -128,13 +127,13 @@
                     <h2 class="h2-carrello">Accedi</h2>
                 </div>
                 <div class="small-10 cell">
-                    <label><strong>Email</strong>
-                        <input id="email-login" type="email" autocomplete="username" class="required error email" placeholder=""/>
+                    <label for="email-login"><strong>Email</strong>
+                        <input id="email-login" type="email" autocomplete="username" name="email-login" class="required error email" placeholder=""/>
                     </label>
                 </div>
                 <div class="small-8 cell">
-                    <label><strong>Password</strong>
-                        <input id="password-login" type="password" class="required error password" autocomplete="current-password"/>
+                    <label for="password-login"><strong>Password</strong>
+                        <input id="password-login" type="password" name="password-login" class="required error password" autocomplete="current-password"/>
                     </label>
                 </div>
                 <div class="small-12 cell extra-space-button">
@@ -160,28 +159,28 @@
                 </div>
     
                 <div class="small-6 medium-6 cell">
-                    <label><strong>Nome*</strong>
-                        <input type="text" autocomplete="given-name" class="required error" id="name" placeholder="" maxlength="20"/>
+                    <label for="name"><strong>Nome*</strong>
+                        <input type="text" autocomplete="given-name" class="required error" id="name" name="name" maxlength="20"/>
                     </label>
                 </div>
                 <div class="small-6 medium-6 cell">
-                    <label><strong>Cognome*</strong>
-                        <input type="text" autocomplete="family-name" class="required error" id="surname" placeholder="" maxlength="20"/>
+                    <label for="surname"><strong>Cognome*</strong>
+                        <input type="text" autocomplete="family-name" class="required error" id="surname" name="surname" maxlength="35"/>
                     </label>
                 </div>
-                <div class="small-6 medium-4  cell">
-                    <label><strong>Telefono*</strong>
-                        <input type="tel" autocomplete="tel-local" class="required error" id="telephone" placeholder="" maxlength="35"/>
+                <div class="small-6 medium-4 cell">
+                    <label for="telephone"><strong>Telefono*</strong>
+                        <input type="tel" autocomplete="tel" class="required error" id="telephone" name="telephone" maxlength="35"/>
                     </label>
                 </div>
                 <div class="small-10  medium-8 cell">
-                    <label><strong>Email (la tua username)*</strong>
-                        <input type="email" autocomplete="email" class="required error email" id="email" placeholder="" maxlength="200"/>
+                    <label for="email"><strong>Email (la tua username)*</strong>
+                        <input type="email" autocomplete="email" class="required error" id="email" name="email" maxlength="200"/>
                       </label>
                 </div>
                 <div class="small-8 cell">
-                    <label><strong>Password*</strong>
-                         <input id="password" autocomplete="new-password" type="password" class="required error password"/>
+                    <label for="password"><strong>Password*</strong>
+                         <input id="password" autocomplete="new-password" type="password" name="password" class="required error password"/>
                     </label>
                 </div>
                 <div class="small-12 cell">

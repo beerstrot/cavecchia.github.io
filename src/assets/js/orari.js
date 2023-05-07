@@ -30,17 +30,17 @@ function setOrari () {
       }
     });
   });
-  $('<button/>', { type: 'button', class: 'button warning' })
-    .html('consolidare')
+  $('<button/>', { type: 'button', class: 'button extra-space' })
+    .html('Chiudi Asporti')
     .appendTo($('#consolidate'))
     .on('click', () => {
       console.log('send to server');
-      info.html('orari chiusi sent to server: ' + new Array(...window.closedTimeslots).join(', '));
+      info.html('orari chiusura asporti attivi: ' + new Array(...window.closedTimeslots).join(', '));
       mkCall(
         'POST',
         { action: 'consolidateTimeslots', data: new Array(...window.closedTimeslots) },
         res => {
-          window.alert('orari disponibili aggiornati');
+          window.alert('Orari Asporti Aggiornati');
           console.log({ res });
         },
         res => {

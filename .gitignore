@@ -1,10 +1,11 @@
 .DS_Store
 node_modules
 npm-debug.log
-dist
+#dist
 *.swp
 .cache
 .idea
 src/assets/img/video/cavecchia-beerstrot-spot-2022.mp4
 docs/assets/img/video/cavecchia-beerstrot-spot-2022.mp4
+dist/assets/img/video/cavecchia-beerstrot-spot-2022.mp4
 _archivio

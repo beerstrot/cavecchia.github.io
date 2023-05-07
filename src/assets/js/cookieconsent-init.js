@@ -121,15 +121,15 @@ window.addEventListener('load', function(){
 									col4: 'Installato da Google Analytics: memorizza informazioni su come i visitatori utilizzano un sito web, creando anche un report analitico delle prestazioni del sito web. Alcuni dei dati raccolti includono il numero di visitatori, la loro fonte e le pagine che visitano in modo anonimo.',
 								}
 							]
-						}, {
-							title: 'Cookie funzionali',
-							description: 'Questi cookie consentono al sito web o al servizio di offrire personalizzazione e funzionalità avanzate: ad esempio riprendere un ordine di asporto salvato e utilizzarlo per un nuovo ordine. Se non accetti questi cookie, i servizi (o una parte di essi) non funzioneranno correttamente.',
-							toggle: {
-								value: 'functional',     // your cookie category
-								enabled: true,
-								readonly: false
-							},
-							cookie_table: [             // list of all expected cookies
+						}, //{
+							//title: 'Cookie funzionali',
+							//description: 'Questi cookie consentono al sito web o al servizio di offrire personalizzazione e funzionalità avanzate: ad esempio riprendere un ordine di asporto salvato e utilizzarlo per un nuovo ordine. Se non accetti questi cookie, i servizi (o una parte di essi) non funzioneranno correttamente.',
+							//toggle: {
+							//	value: 'functional',     // your cookie category
+							//	enabled: true,
+							//	readonly: false
+							//},
+							//cookie_table: [             // list of all expected cookies
 								// {
 								//     col1: '^_ga',       // match all cookies starting with "_ga"
 								//     col2: 'google.com',
@@ -143,8 +143,9 @@ window.addEventListener('load', function(){
 								//     col3: '1 giorno',
 								//     col4: 'Installato da Google Analytics: memorizza informazioni su come i visitatori utilizzano un sito web, creando anche un report analitico delle prestazioni del sito web. Alcuni dei dati raccolti includono il numero di visitatori, la loro fonte e le pagine che visitano in modo anonimo.',
 								// }
-							]
-						}, {
+							//]
+						//},
+							{
 							title: 'Cookie di profilazione',
 							description: 'Questi cookie consentono di analizzare le preferenze manifestate dall\'utente nell\'ambito della navigazione in rete. Grazie a questa analisi è possibile inviare messaggi pubblicitari specifici in linea con le preferenze stesse degli utenti.',
 							toggle: {

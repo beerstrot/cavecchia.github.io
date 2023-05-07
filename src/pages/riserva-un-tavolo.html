@@ -76,7 +76,7 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
 <!-- inizio form -->
 <div class="panel-home-n">
     <div class="grid-container">
-        <form id="form" novalidate="novalidate">
+        <form id="form" novalidate="novalidate" autocomplete="on">
             <div class="grid-x grid-margin-x">
                 <div class="small-12 cell">
                      <p>Includi in <strong>Quante persone*</strong> anche eventuali seggioloni. Esempio: 4 persone e 2 seggioloni seleziona 6.</p>
@@ -150,26 +150,26 @@ canonical: https://www.beerstrot.it/riserva-un-tavolo.html
             </div>
             <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="small-6 medium-4 cell">
-                    <label><strong>Nome*</strong>
-                        <input type="text" class="required error" id="name" placeholder="" maxlength="20"/>
+                    <label for="name"><strong>Nome*</strong>
+                        <input type="text" class="required error" id="name" name="name" autocomplete="given-name" placeholder="" maxlength="20"/>
                     </label>
                 </div>
                 <div class="small-6 medium-4 cell">
-                    <label><strong>Cognome*</strong>
-                        <input type="text" class="required error" id="surname" placeholder="" maxlength="20"/>
+                    <label for="surname"><strong>Cognome*</strong>
+                        <input type="text" autocomplete="family-name" class="required error" id="surname" name="surname" maxlength="35"/>
                     </label>
                 </div>
             </div>
             <div class="grid-x grid-margin-x">
-                <div class="small-10 medium-5 cell">
-                    <label><strong>Email*</strong>
-                        <input type="email" class="required error email" id="email" placeholder="" maxlength="200"/>
-                      </label>
-                </div>
                 <div class="small-6 medium-3 cell">
-                    <label><strong>Telefono*</strong>
-                        <input type="tel" class="required error" id="telephone" placeholder="" maxlength="35" />
+                    <label for="telephone"><strong>Telefono*</strong>
+                         <input type="tel" autocomplete="tel" class="required error" id="telephone" name="telephone" maxlength="35"/>
                     </label>
+                </div>
+                <div class="small-10 medium-5 cell">
+                    <label for="email"><strong>Email*</strong>
+                        <input type="email" autocomplete="email" class="required error email" id="email" name="email" maxlength="200"/>
+                      </label>
                 </div>
                 <div class="small-12 cell"><hr></div>
             </div>

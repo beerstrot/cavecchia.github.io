@@ -325,7 +325,7 @@ function updateTotal() {
   var quantity = prods.reduce(function (a, p) {
     return a + p.quantity;
   }, 0);
-  $('.prod-quantity').text("\u20AC ".concat(quantity));
+  $('.prod-quantity').text("".concat(quantity));
 }
 function checkStoredOrder() {
   var storage = window.localStorage.currentOrder;
