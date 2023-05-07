@@ -444,7 +444,6 @@ function setRegister() {
 }
 function setLogin() {
   $('#login-btn').off('click').on('click', function () {
-    window.alert('comeon man');
     var data = {};
     var get = function get(id) {
       data[id] = $("#".concat(id, "-login")).val();

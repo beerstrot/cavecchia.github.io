@@ -431,7 +431,6 @@ function setRegister () {
 
 function setLogin () {
   $('#login-btn').off('click').on('click', () => {
-    window.alert('comeon man');
     const data = {};
     const get = id => {
       data[id] = $(`#${id}-login`).val();
