@@ -151,6 +151,7 @@ function mkModal (p, secDiv) {
   });
   M('img', '', modal, {
     src: `${IMG_ROOT}${imgName}`,
+    style:'margin-top:-3rem',
     onerror: "this.style.display='none'",
     alt: p.name
   });
