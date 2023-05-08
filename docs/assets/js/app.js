@@ -22016,7 +22016,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     __webpack_require__.e(/*! import() */ "src_assets_js_orari_js").then(__webpack_require__.bind(__webpack_require__, /*! ./orari */ "./src/assets/js/orari.js"));
   } else if (en('checkout-landing.html')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_checkout-landing_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./checkout-landing */ "./src/assets/js/checkout-landing.js", 23));
-  } else if (en('menu.html')) {} else if (en('chi-siamo.html')) {} else if (en('informazioni-legali.html')) {} else {
+  } else if (en('menu.html')) {} else if (en('chi-siamo.html')) {} else if (en('informazioni-legali.html')) {} else if (en('404.html')) {} else {
     // index.html:
     splideInit();
   }
