@@ -242,6 +242,7 @@ a.is-active::after {
 .allergeni {
     //font-size: 0.9rem;
     //line-height: 1.4rem;
+    margin-top: 0.6rem;
     margin-bottom: 1.5rem;
     font-style: italic;
     @include breakpoint(small only) {

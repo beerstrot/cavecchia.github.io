@@ -158,11 +158,11 @@ function mkModal (p, secDiv) {
   M('h1', 'h1-modal', M('header', 'main-header', modal)).html(p.name);
 
   const modalDiv = mkDiv('main-content', modal);
-  M('p', 'allergeni', M('small', '', modalDiv).html(p.description)).html('Allergeni: ' + p.allergens.map(i => i.name).join(', '), {
-    maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem' }
+  M('p', 'allergeni' , M('small', '', modalDiv).html(p.description)).html('Allergeni: ' + p.allergens.map(i => i.name).join(', '), {
+    maxlength: '200', css: { 'min-height': '2rem' }
   });
   const noteText = M('textarea', '', M('label', '', modalDiv, { id: pid + '_note' }), {
-    maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem' }
+    maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem', 'margin-top': '2rem' }
   });
   if (!hasNote(p)) {
     $('#' + pid + '_note').hide();

@@ -391,10 +391,10 @@ $closebutton-size: (
   medium: 2em,
 );
 //$closebutton-lineheight: 1;
-$closebutton-lineheight: 0.5;
+$closebutton-lineheight: 0.3;
 //$closebutton-color: $dark-gray;
-$closebutton-color: $primary-color;
-$closebutton-color-hover: $black;
+$closebutton-color: #137b91;
+$closebutton-color-hover: $anchor-color-hover;
 
 // 16. Drilldown
 // -------------
