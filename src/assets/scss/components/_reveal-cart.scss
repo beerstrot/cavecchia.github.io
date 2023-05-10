@@ -136,9 +136,9 @@ cart
 }
 
 .close-button-carrello {
-    padding-top:1rem;
+    padding-top:1.2rem;
     @include breakpoint(small only) {
-        padding-top:0.45rem;
+        padding-top:.7rem;
     }
     @include breakpoint(medium only) {
         padding-top:1.1rem;
