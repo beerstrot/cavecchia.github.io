@@ -50,6 +50,7 @@ $(document).ready(() => {
   } else if (en('menu.html')) {
   } else if (en('chi-siamo.html')) {
   } else if (en('informazioni-legali.html')) {
+  } else if (en('sala-comandi.html')) {
   } else if (en('404.html')) {
   } else { // index.html:
     splideInit();
