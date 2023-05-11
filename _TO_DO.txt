@@ -55,7 +55,7 @@ FASE 2 MISTO
         - riserva-un-tavolo.html non fa selezionare quel giorno (ora c’è pop-up che avverte delle chiusura dopo che selezioni il giorno)
         - asporto.html: gli orari sono grayed out
 
-- Possibilmente avere una dashboard unificata mobile friendly dove vedere questi sottomenu:
+- Possibilmente avere una dashboard unificata mobile friendly dove vedere questi sottomenu (tipo file sala-comandi.html:
     - Prenotazioni (id=notes)
     - Asporti
     - Giorni di chiusura e orari chiusura asporti e possibilità di chiudere e aprire
