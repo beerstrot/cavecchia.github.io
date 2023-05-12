@@ -2,25 +2,25 @@
 
 ASPORTO BUGS:
 
-- Prodotti senza immagine hanno css sbagliato
+-1 Prodotti senza immagine hanno css sbagliato
 
-- Login: mi registro e funziona. Faccio logout poi login: non mi riconosce più (password non corretta)
+-2 Login: mi registro e funziona. Faccio logout poi login: non mi riconosce più (password non corretta)
 
-- Se seleziono lo stesso prodotto 2 volte: uno ben cotto e uno al sangue o con note diverse, il carrello mi tiene solo ultima modifica. Es Beerstrot al sangue, senza cheddar metto nel carrello, Beerstrot Ben cotto, note: nessuna e metto nel carrello -> nel carrello ho 2 Beerstrot Ben cotto e senza note
+-3 Se seleziono lo stesso prodotto 2 volte: uno ben cotto e uno al sangue o con note diverse, il carrello mi tiene solo ultima modifica. Es Beerstrot al sangue, senza cheddar metto nel carrello, Beerstrot Ben cotto, note: nessuna e metto nel carrello -> nel carrello ho 2 Beerstrot Ben cotto e senza note
 
-- Carrello mobile: metto a 0 tutti i prodotti -> vai al checkout è ancora cliccabile (dovrebbe essere grayed out
+-6 Carrello mobile: metto a 0 tutti i prodotti -> vai al checkout è ancora cliccabile (dovrebbe essere grayed out
 
-- Riserva-un-tavolo.html?id=notes se seleziono giorni passati con dentro prenotazioni (prendi un sabato o venerdì) -> rotellina della morte
+-5 Riserva-un-tavolo.html?id=notes se seleziono giorni passati con dentro prenotazioni (prendi un sabato o venerdì) -> rotellina della morte
 
-- Barra filtro categorie: non è sempre visibile nella viewport anche se categoria è is-active (testa su mobile categorie Vino o comunque ultime categorie)
+-9 Barra filtro categorie: non è sempre visibile nella viewport anche se categoria è is-active (testa su mobile categorie Vino o comunque ultime categorie)
 
-- Email template: ho creato folder email con dentro tutti i template minificati. Se possibile rinominiamoli per capire cosa sono: ‘email_template.html’ potrebbe essere ‘email-conferma-riserva-un-tavolo.html’.
+-4 Email template: ho creato folder email con dentro tutti i template minificati. Se possibile rinominiamoli per capire cosa sono: ‘email_template.html’ potrebbe essere ‘email-conferma-riserva-un-tavolo.html’.
 
-- Ordinamento prodotti:
+- 7 Ordinamento prodotti:
     - ordinamento per "indice ordinamento"
     - se indice ordinamento non c'è: ordine alfabetico
 
-- pop up registrazione. scrivere: "Ti sei registrato con successo. Chiudi per continuare."
+-8 pop up registrazione. scrivere: "Ti sei registrato con successo. Chiudi per continuare."
 
 ================================================================================================================================
 
