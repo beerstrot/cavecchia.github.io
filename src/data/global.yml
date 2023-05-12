@@ -4,7 +4,7 @@ menu-sushi-signature:
     item-image-16-9:
     item-price: 15
     item-description: Gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape (8 pezzi)
-    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo
+    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo.
     id-data: rollCaVecchiaBeerstrot
     class-allergeni:
     class-price:
@@ -13,7 +13,7 @@ menu-sushi-signature:
     item-name: Roll Special Tonno
     item-image-16-9:
     item-price: 14
-    item-description: Tonno e mango ricoperti da stracciatella, pesto e granella di pistacchio (8 pezzi)
+    item-description: Tonno e mango ricoperti da tartare di tonno, maionese e granella di pistacchio (8 pezzi).
     item-allergeni: Pesce, Soia, Latte, Frutta a guscio, Senape
     class-allergeni:
     class-price:
@@ -22,7 +22,7 @@ menu-sushi-signature:
     item-name: Nigiri Special
     item-image-16-9:
     item-price: 14
-    item-description: 6 nigiri speciali dello chef
+    item-description: 6 nigiri speciali dello chef.
     item-allergeni: Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     class-allergeni:
     class-price:
@@ -31,7 +31,7 @@ menu-sushi-signature:
     item-name: Gunkan Special
     item-image-16-9:
     item-price: 14
-    item-description: 6 gunkan speciali dello chef
+    item-description: 6 gunkan speciali dello chef.
     item-allergeni: Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     class-allergeni:
     class-price:
@@ -42,7 +42,7 @@ menu-sushi-roll-selection:
     item-name: Roll Gambero e Salmone
     item-image-16-9:
     item-price: 12
-    item-description: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime (8 pezzi)
+    item-description: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime (8 pezzi).
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo
     class-allergeni:
     class-price:
@@ -51,7 +51,7 @@ menu-sushi-roll-selection:
     item-name: Roll Mandorle
     item-image-16-9:
     item-price: 11
-    item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante (8 pezzi)
+    item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante (8 pezzi).
     item-allergeni: Uova, Pesce, Latte, Frutta a guscio, Senape
     class-allergeni:
     class-price:
@@ -60,7 +60,7 @@ menu-sushi-roll-selection:
     item-name: Roll Gambero Rosso
     item-image-16-9:
     item-price: 14
-    item-description: Salmone e avocado ricoperti da stracciatella, gamberi rossi e granella di pistacchio (8 pezzi)
+    item-description: Salmone e avocado ricoperti da gamberi rossi e zeist di lime (8 pezzi).
     item-allergeni: Crostacei, Pesce, Latte, Frutta a guscio
     class-allergeni:
     class-price:
@@ -69,8 +69,8 @@ menu-sushi-roll-selection:
     item-name: Roll Tonno
     item-image-16-9:
     item-price: 12
-    item-description: Tonno e avocado ricoperti da tobiko red (8 pezzi)
-    item-allergeni: Uova, Pesce, Semi di sesamo
+    item-description: Tonno, avocado e pomodoro secco ricoperti da tobiko red e maionese piccante (8 pezzi).
+    item-allergeni: Uova, Pesce
     class-allergeni:
     class-price:
     alt-image: Roll Tonno
@@ -78,7 +78,7 @@ menu-sushi-roll-selection:
     item-name: Roll Mexico
     item-image-16-9:
     item-price: 13
-    item-description: Gambero in panko croccante e maionese ricoperti da carpaccio di salmone scottato e salsa sweet chily (8 pezzi)
+    item-description: Gambero in panko croccante e avocado ricoperti da carpaccio di salmone scottato maionese piccante, teriyaki e pasta kataifi (8 pezzi).
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Senape
     class-allergeni:
     class-price:
@@ -87,7 +87,7 @@ menu-sushi-roll-selection:
     item-name: Roll Branzino
     item-image-16-9: h
     item-price: 12
-    item-description: Branzino in panko croccante ricoperto da salmone flambé e maionese alla senape (8 pezzi)
+    item-description: Branzino ricoperto da salmone scottato e maionese alla senape (8 pezzi).
     item-allergeni: Glutine, Uova, Pesce, Senape
     class-allergeni:
     class-price:
@@ -96,7 +96,7 @@ menu-sushi-roll-selection:
     item-name: Roll Mediterraneo
     item-image-16-9:
     item-price: 13
-    item-description: Gambero in panko croccante e maionese ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche e pinoli tostati (8 pezzi)
+    item-description: Gambero in panko croccante e mango ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche, pinoli tostati e maionese (8 pezzi).
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
     class-allergeni:
     class-price:
@@ -105,64 +105,64 @@ menu-sushi-roll-selection:
     item-name: Roll Vegetariano
     item-image-16-9:
     item-price: 10
-    item-description: Carota, cetrioli e cavolo viola ricoperti da philadelphia, maionese rosa e chips di platano. Il tutto avvolto in carta di soia gialla (8 pezzi)
+    item-description: Carota, cetrioli e avocado ricoperti da philadelphia, maionese rosa e cipolla fritta. Il tutto avvolto in carta di soia gialla (8 pezzi).
     item-allergeni: Uova, Soia, Latte, Senape
     class-allergeni:
     class-price:
     alt-image: Roll Vegetariano
 
-menu-sushi-hot-roll:
+menu-sushi-hosomaki:
   -
-    item-name: Hot Roll Salmone
+    item-name: Hosomaki al Salmone
     item-image-16-9:
-    item-price: 11
-    item-description: Hosomaki di salmone in panko croccante ricoperto da philadelphia, fragole e salsa teriyaki (8 pezzi)
-    item-allergeni: Glutine, Pesce, Soia, Latte
+    item-price: 7
+    item-description: Hosomaki di salmone (8 pezzi).
+    item-allergeni: Pesce, Soia
     class-allergeni:
     class-price:
-    alt-image: Hot Roll Salmone
+    alt-image: Hosomaki al Salmone
   -
-    item-name: Hot Roll Tonno
+    item-name: Hosomaki al Tonno
     item-image-16-9:
-    item-price: 10
-    item-description: Hosomaki di avocado in panko croccante ricoperto da tartare di tonno piccante, cipolla fritta e maionese (8 pezzi)
-    item-allergeni: Glutine, Uova, Pesce, Soia, Senape
+    item-price: 8
+    item-description: Hosomaki di tonno (8 pezzi).
+    item-allergeni: Pesce, Soia
     class-allergeni:
     class-price:
-    alt-image: Hot Roll Tonno
+    alt-image: Hosomaki al Tonno
   -
-    item-name: Hot Roll Mandorle
+    item-name: Hosomaki Special Tonno
     item-image-1-1:
-    item-price: 10
-    item-description: Hosomaki di avocado in panko croccante ricoperto da tartare di salmone piccante, salsa teriyaki e scaglie di mandorle (8 pezzi)
-    item-allergeni: Glutine, Pesce, Soia, Frutta a guscio, Senape
+    item-price: 11
+    item-description: Hosomaki di tonno ricoperto da tartare di tonno, cipolla fritta e maionese (8 pezzi).
+    item-allergeni: Glutine, Pesce, Soia, Uova
     class-allergeni:
     class-price:
-    alt-image: Hot Roll Mandorle
+    alt-image: Hosomaki Special Tonno
   -
-    item-name: Hot Roll Salmone e Branzino
+    item-name: Hosomaki Vegetariano
     item-image-16-9:
     item-price: 10
-    item-description: Hosomaki di salmone e avocado in panko croccante ricoperto da tartare di branzino, salsa teriyaki, salsa al tartufo e tobiko nero (8 pezzi)
-    item-allergeni: Glutine, Pesce, Soia
+    item-description: Hosomaki di avocado, cetriolo e mango (8 pezzi).
+    item-allergeni: Soia
     class-allergeni:
     class-price:
-    alt-image: Hot Roll Salmone e Branzino
+    alt-image: Hosomaki Vegetariano
   -
-    item-name: Hot Roll Sesamo
+    item-name: Hosomoki Special Salmone
     item-image-16-9:
     item-price: 10
-    item-description: Hosomaki di salmone in panko croccante ricoperto da philadelphia, salsa teriyaki, erba cipollina e sesamo tritato (8 pezzi)
-    item-allergeni: Glutine, Pesce, Soia, Latte, Semi di sesamo
+    item-description: Hosomaki di salmone ricoperto da philadelphia, fragole e salsa teriyaki (8 pezzi).
+    item-allergeni: Pesce, Soia, Latte, Senape
     class-allergeni:
     class-price:
-    alt-image: Hot Roll Sesamo
+    alt-image: Hosomoki Special Salmone
 
 menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/BocconcinidiPollo_rettangolare.jpg
     item-name: Bocconcini di Pollo
-    item-description: Serviti con salsa piccante
+    item-description: Serviti con salsa piccante.
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,9
     class-allergeni:
@@ -171,7 +171,7 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/OliveallAscolana_rettangolare.jpg
     item-name: Olive all'Ascolana
-    item-description: Il più tipico street food marchigiano
+    item-description: Il più tipico street food marchigiano.
     item-allergeni: Glutine, Uova, Latte, Sedano
     item-price: 5,5
     class-allergeni:
@@ -195,7 +195,7 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/CipolleRosseinTempura_rettangolare.jpg
     item-name: Cipolle Rosse
-    item-description: Cipolle rosse in tempura
+    item-description: Cipolle rosse in tempura.
     item-allergeni: Glutine, Latte, Crostacei
     item-price: 4,9
     class-allergeni:
@@ -204,7 +204,7 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/PeperonciniPiccanti_rettangolare.jpg
     item-name: Peperoncini Piccanti
-    item-description: Peperoncini ripieni di robiola ricoperti nella pancetta
+    item-description: Peperoncini ripieni di robiola ricoperti nella pancetta.
     item-allergeni: Anidride Solforosa e Solfiti, Latte
     item-price: 5,5
     class-allergeni:
@@ -213,7 +213,7 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/AlettediPollo_rettangolare.jpg
     item-name: Alette di Pollo
-    item-description: Leggermente piccanti
+    item-description: Leggermente piccanti.
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,5
     class-allergeni:
@@ -221,7 +221,7 @@ menu-per-stuzzicare:
     alt-image: Alette di Pollo
   -
     item-image-16-9: assets/img/prod/AlettediPolloPiccanti_rettangolare.jpg
-    item-name: Alette di Pollo Piccanti
+    item-name: Alette di Pollo Piccanti.
     item-description: Piccanti
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,5
@@ -231,7 +231,7 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/Arrosticini_rettangolare.jpg
     item-name: Arrosticini
-    item-description: Arrosticini di pecora
+    item-description: Arrosticini di pecora.
     item-allergeni: nessuno
     item-price: 5,5
     class-allergeni: hide
@@ -240,7 +240,7 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/PatateFritte_rettangolare.jpg
     item-name: Patate Fritte
-    item-description: Il più classico dei fritti
+    item-description: Il più classico dei fritti.
     item-allergeni: nessuno
     item-price: 4,5
     class-allergeni: hide
@@ -252,7 +252,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Beerstrot_rettangolare.jpg
     item-name: Beerstrot
-    item-description: Manzo 180 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    item-description: Manzo 180 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -261,7 +261,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/BeerstrotDOPPIO_rettangolare.jpg
     item-name: Beerstrot Doppio
-    item-description: Manzo 360 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit
+    item-description: Manzo 360 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
@@ -270,7 +270,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/NewYork_rettangolare.jpg
     item-name: New York
-    item-description: Manzo 180 grammi, cheddar, cipolla caramellata, insalata
+    item-description: Manzo 180 grammi, cheddar, cipolla caramellata, insalata.
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,5
     class-allergeni:
@@ -279,7 +279,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/NewYorkDOPPIO_rettangolare.jpg
     item-name: New York Doppio
-    item-description: Manzo 360 grammi, cheddar, cipolla caramellata, insalata
+    item-description: Manzo 360 grammi, cheddar, cipolla caramellata, insalata.
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,5
     class-allergeni:
@@ -288,7 +288,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Diablo_rettangolare.jpg
     item-name: Diablo
-    item-description: Manzo 180 grammi, cheddar, bacon croccante, rucola, salsa piccante
+    item-description: Manzo 180 grammi, cheddar, bacon croccante, rucola, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -297,7 +297,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/DiabloDOPPIO_rettangolare.jpg
     item-name: Diablo Doppio
-    item-description: Manzo 360 grammi, cheddar, bacon croccante, rucola, salsa piccante
+    item-description: Manzo 360 grammi, cheddar, bacon croccante, rucola, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
@@ -306,7 +306,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
     item-name: Pollo
-    item-description: Pollo 180 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
+    item-description: Pollo 180 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt.
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,9
     class-allergeni:
@@ -315,7 +315,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/PolloDOPPIO_rettangolare.jpg
     item-name: Pollo Doppio
-    item-description: Pollo 360 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt
+    item-description: Pollo 360 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt.
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,9
     class-allergeni:
@@ -324,7 +324,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/PulledPork_rettangolare.jpg
     item-name: Pulled Pork
-    item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante
+    item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante.
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Latte, Senape, Uova
     item-price: 11,9
     class-allergeni:
@@ -333,7 +333,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/MiniBurger_rettangolare.jpg
     item-name: Mini Burger
-    item-description: Manzo (100 grammi), cheddar. Servito ben cotto
+    item-description: Manzo (100 grammi), cheddar. Servito ben cotto.
     item-allergeni: Glutine, Latte, Uova
     item-price: 7,9
     class-allergeni:
@@ -344,7 +344,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/CacioePepe_rettangolare.jpg
     item-name: Cacio e Pepe
-    item-description: Manzo 180 grammi, pecorino vallesina, guanciale, pepe
+    item-description: Manzo 180 grammi, pecorino vallesina, guanciale, pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -353,7 +353,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/CacioePepeDOPPIO_rettangolare.jpg
     item-name: Cacio e Pepe Doppio
-    item-description: Manzo 360 grammi, pecorino vallesina, guanciale, pepe
+    item-description: Manzo 360 grammi, pecorino vallesina, guanciale, pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
@@ -380,7 +380,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
     item-name: Primavera
-    item-description: Manzo 180 grammi, composta di feta, pomodorini e timo; insalata riccia
+    item-description: Manzo 180 grammi, composta di feta, pomodorini e timo; insalata riccia.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -389,7 +389,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/PrimaveraDOPPIO_rettangolare.jpg
     item-name: Primavera Doppio
-    item-description: Manzo 360 grammi, omposta di feta, pomodorini e timo; insalata riccia
+    item-description: Manzo 360 grammi, omposta di feta, pomodorini e timo; insalata riccia.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
@@ -434,7 +434,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/FaveePecorino_rettangolare.jpg
     item-name: Fave e Pecorino
-    item-description: Manzo 180 grammi, pecorino vallesina, guanciale, fave in porchetta
+    item-description: Manzo 180 grammi, pecorino vallesina, guanciale, fave in porchetta.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -443,7 +443,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/FaveePecorinoDOPPIO_rettangolare.jpg
     item-name: Fave e Pecorini Doppio
-    item-description: Manzo 360 grammi, pecorino vallesina, guanciale, fave in porchetta
+    item-description: Manzo 360 grammi, pecorino vallesina, guanciale, fave in porchetta.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
@@ -452,7 +452,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/Carbonara_rettangolare.jpg
     item-name: Carbonara
-    item-description: Pollo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe
+    item-description: Pollo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -461,7 +461,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/CarbonaraDOPPIO_rettangolare.jpg
     item-name: Carbonara Doppio
-    item-description: Pollo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe
+    item-description: Pollo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
@@ -472,7 +472,7 @@ menu-hamburger-vegetariano:
   -
     item-image-16-9: assets/img/prod/VegetarianoFagioli_rettangolare.jpg
     item-name: Vegetariano Fagioli
-    item-description: Hamburger di borlotti, julienne di cipolla fritta, crema di cicoria
+    item-description: Hamburger di borlotti, julienne di cipolla fritta, crema di cicoria.
     item-allergeni: Glutine, Latte, Soia, Uova
     item-price: 9,5
     class-allergeni:
@@ -481,7 +481,7 @@ menu-hamburger-vegetariano:
   -
     item-image-16-9: assets/img/prod/VegetarianoQuinoa_rettangolare.jpg
     item-name: Vegetariano Quinoa
-    item-description: Hamburger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele
+    item-description: Hamburger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele.
     item-allergeni: Glutine, Latte, Senape, Uova
     item-price: 9,5
     class-allergeni:
@@ -492,7 +492,7 @@ menu-carne:
   -
     item-image-16-9: assets/img/prod/CostineinSalsaBBQ_rettangolare.jpg
     item-name: Costine in Salsa BBQ
-    item-description: Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte
+    item-description: Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte.
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo
     item-price: 13,9
     class-allergeni:
@@ -501,7 +501,7 @@ menu-carne:
   -
     item-image-16-9: assets/img/prod/Entrecote_rettangolare.jpg
     item-name: Entrecôte
-    item-description: Entrecôte di Manzetta Red Hereford irlandese
+    item-description: Entrecôte di Manzetta Red Hereford irlandese.
     item-allergeni: nessuno
     item-price: 19
     class-allergeni: hide
@@ -512,7 +512,7 @@ menu-dolce:
   -
     item-image-16-9: assets/img/prod/Cheesecake_rettangolare.jpg
     item-name: Cheesecake
-    item-description: Cheesecake in stile new york. Squisitamente dolce, morbida e leggermente acidula
+    item-description: Cheesecake in stile new york. Squisitamente dolce, morbida e leggermente acidula.
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
     item-price: 5
     class-allergeni:
@@ -521,7 +521,7 @@ menu-dolce:
   -
     item-image-16-9: assets/img/prod/Blondie_rettangolare.jpg
     item-name: Blondie
-    item-description: Brownie con nocciole. Servito con crema al mascarpone e rhum
+    item-description: Brownie con nocciole. Servito con crema al mascarpone e rhum.
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
     item-price: 5
     class-allergeni:
@@ -530,7 +530,7 @@ menu-dolce:
   -
     item-image-16-9: assets/img/prod/Birramisu_rettangolare.jpg
     item-name: Birramisù
-    item-description: Tiramisù con mascarpone artigianale alla birra stout
+    item-description: Tiramisù con mascarpone artigianale alla birra stout.
     item-allergeni: Glutine, Latte, Uova
     item-price: 5
     class-allergeni:
@@ -539,7 +539,7 @@ menu-dolce:
   -
     item-image-16-9: assets/img/prod/Crumble_rettangolare.jpg
     item-name: Crumble
-    item-description: Crema chantilly su croccante crumble di farina di mais, cannella e scaglie di cioccolato fondente
+    item-description: Crema chantilly su croccante crumble di farina di mais, cannella e scaglie di cioccolato fondente.
     item-allergeni: Latte, Uova
     item-price: 5
     class-allergeni:
@@ -620,49 +620,38 @@ menu-caffe:
     item-description: Tazza piccola o tazza grande
     item-allergeni:
     item-price: 1,5
-    id-data: orzoCaffe
-    class-description:
-    class-note: hide
-    class-cottura: hide
     class-allergeni: hide
     class-price:
-    alt-image:
   -
     item-name: Cappuccino
     item-description: Normale, Deca
-    item-description-short:
     item-allergeni:
     item-price: 3
-    id-data: cappuccinoCaffe
-    class-description:
-    class-note: hide
-    class-cottura: hide
     class-allergeni: hide
     class-price:
-    alt-image:
 
 menu-birra-spina:
   -
     item-name: Festbier
-    item-description: Helles stile tedesco non amara 4,9%. Birrificio Forst
+    item-description: Helles stile tedesco non amara 4,9%. Birrificio Forst.
     item-description-short:
     item-allergeni: glutine
     item-price:
   -
     item-name: Italicum
-    item-description: Bionda fruttata 5,0%. Birrificio dei Castelli
+    item-description: Bionda fruttata 5,0%. Birrificio dei Castelli.
     item-description-short:
     item-allergeni: glutine
     item-price:
   -
     item-name: Bock
-    item-description: Rossa stile tedesco dolce 6,5%. Birrificio Forst
+    item-description: Rossa stile tedesco dolce 6,5%. Birrificio Forst.
     item-description-short:
     item-allergeni: glutine
     item-price:
   -
     item-name: Palmares
-    item-description: Red Ale 5,6%. Birrificio dei Castelli
+    item-description: Red Ale 5,6%. Birrificio dei Castelli.
     item-description-short:
     item-allergeni: glutine
     item-price:
@@ -674,13 +663,13 @@ menu-birra-spina:
   #   item-price:
   -
     item-name: Billycock
-    item-description: Doppia New England IPA 7,8%. Birrificio MC-77
+    item-description: Doppia New England IPA 7,8%. Birrificio MC-77.
     item-description-short:
     item-allergeni: glutine
     item-price:
   -
     item-name: Velvet Suit
-    item-description: New England IPA 6,5%. Birrificio MC-77
+    item-description: New England IPA 6,5%. Birrificio MC-77.
     item-description-short:
     item-allergeni: glutine
     item-price:
@@ -689,32 +678,32 @@ menu-birra-spina:
 menu-birra-bottiglia:
   -
     item-name: Landbier 1857 50cl
-    item-description: Helles tedesca non filtrata 5,3%. Birrificio Bayreuther
+    item-description: Helles tedesca non filtrata 5,3%. Birrificio Bayreuther.
     item-description-short:
     item-allergeni: glutine
     item-price: 6
   -
     item-name: Landbier Dunkel 50cl
-    item-description: Rossa tedesca 5,3%. Birrificio Bayreuther
+    item-description: Rossa tedesca 5,3%. Birrificio Bayreuther.
     item-description-short:
     item-allergeni: glutine
     item-price: 6
 
   -
     item-name: Weisse 50cl
-    item-description: Weisse tedesca 5,1%. Birrificio Maisel
+    item-description: Weisse tedesca 5,1%. Birrificio Maisel.
     item-description-short:
     item-allergeni: glutine
     item-price: 6
   -
     item-name: Poculator 50cl
-    item-description: Rossa tedesca 7,6%. Birrificio Scheyern
+    item-description: Rossa tedesca 7,6%. Birrificio Scheyern.
     item-description-short:
     item-allergeni: glutine
     item-price: 6
   -
     item-name: Tulio 50cl
-    item-description: Rye IPA 6,5%. Birrificio Mukkeller
+    item-description: Rye IPA 6,5%. Birrificio Mukkeller.
     item-description-short:
     item-allergeni: glutine
     item-price: 6
@@ -730,19 +719,19 @@ menu-birra-bottiglia:
   #   item-price: 6
   -
     item-name: Ridopoco 50cl
-    item-description: American Pale Ale 6,2%. Birrificio Mukkeller
+    item-description: American Pale Ale 6,2%. Birrificio Mukkeller.
     item-description-short:
     item-allergeni: glutine
     item-price: 6
   -
     item-name: Hattori Hanzo 50cl
-    item-description: Doppia IPA 8,3%. Birrificio Mukkeller
+    item-description: Doppia IPA 8,3%. Birrificio Mukkeller.
     item-description-short:
     item-allergeni: glutine
     item-price: 6
   -
     item-name: Calix Niger 33cl
-    item-description: Chocolate Stout 6,7%. Birrificio dei Castelli
+    item-description: Chocolate Stout 6,7%. Birrificio dei Castelli.
     item-description-short:
     item-allergeni: glutine
     item-price: 6
@@ -751,21 +740,21 @@ menu-birra-bottiglia:
 menu-vino-caraffa:
   -
     item-name: Rosso Piceno Doc
-    item-description: Vino Biologico. Cantina Collevite
+    item-description: Vino Biologico. Cantina Collevite.
     item-allergeni: anidride solforosa e solfiti
     item-price: Quarto 3 | Litro 9
     class-allergeni:
     class-price:
   -
     item-name: Passerina Igt
-    item-description: Vino Biologico. Cantina Collevite
+    item-description: Vino Biologico. Cantina Collevite.
     item-allergeni: anidride solforosa e solfiti
     item-price: Quarto 3 | Litro 9
     class-allergeni:
     class-price:
   -
     item-name: Verdicchio Matelica Doc
-    item-description: Cantina Belisario
+    item-description: Cantina Belisario.
     item-allergeni: anidride solforosa e solfiti
     item-price: Quarto 3 | Litro 9
     class-allergeni:
@@ -774,49 +763,49 @@ menu-vino-caraffa:
 menu-vino:
   -
     item-name: Serrano DOC
-    item-description: Rosso Conero. Cantina Umani Ronchi
+    item-description: Rosso Conero. Cantina Umani Ronchi.
     item-allergeni: anidride solforosa e solfiti
     item-price: 14,5 | 3,5
     class-allergeni:
     class-price:
   -
     item-name: Rubico Doc
-    item-description: Lacrima di Morro D'Alba. Cantina Marotti Campi
+    item-description: Lacrima di Morro D'Alba. Cantina Marotti Campi.
     item-allergeni: anidride solforosa e solfiti
     item-price: 15,5 | 3,5
     class-allergeni:
     class-price:
   -
     item-name: Villa Bianchi Doc
-    item-description: Verdicchio dei Castelli di Jesi Classico. Cantina Umani Ronchi
+    item-description: Verdicchio dei Castelli di Jesi Classico. Cantina Umani Ronchi.
     item-allergeni: anidride solforosa e solfiti
     item-price: 14,5 | 3,5
     class-allergeni:
     class-price:
   -
     item-name: Casal di Serra Doc
-    item-description: Verdicchio dei Castelli di Jesi Classico Superiore Biologico. Cantina Umani Ronchi
+    item-description: Verdicchio dei Castelli di Jesi Classico Superiore Biologico. Cantina Umani Ronchi.
     item-allergeni: anidride solforosa e solfiti
     item-price: 18 | 4
     class-allergeni:
     class-price:
   -
     item-name: Gewurztraminer Doc
-    item-description: Cantina H.Lun
+    item-description: Cantina H.Lun.
     item-allergeni: anidride solforosa e solfiti
     item-price: 18 | 4
     class-allergeni:
     class-price:
   -
     item-name: Ribolla Gialla Igt
-    item-description: Cantina Branko
+    item-description: Cantina Branko.
     item-allergeni: anidride solforosa e solfiti
     item-price: 18 | 4
     class-allergeni:
     class-price:
   -
     item-name: Prosecco Lovre Docg
-    item-description: Extra dry. Cantina Serre di Pederiva
+    item-description: Extra dry. Cantina Serre di Pederiva.
     item-allergeni: anidride solforosa e solfiti
     item-price: 16 | 3,5
     class-allergeni:
@@ -863,14 +852,14 @@ menu-amaro:
 menu-rhum:
   -
     item-name: Centenario 7 anni
-    item-description: Costa Rica 40%. Profumo di vaniglia, cuoio, cioccolato, sciroppo d'acero e menta. Al palato sentori di cioccolato, pelle, miele e menta piperita
+    item-description: Costa Rica 40%. Profumo di vaniglia, cuoio, cioccolato, sciroppo d'acero e menta. Al palato sentori di cioccolato, pelle, miele e menta piperita.
     item-allergeni:
     item-price: 6
     class-allergeni: hide
     class-price:
   -
     item-name: Don Papa oltre 7 anni
-    item-description: Filippine 40%. Profumo di caramello e mou. Al palato ripropone una notevole dolcezza ben bilanciata da un mix di arancia candita e persistente nota citrica
+    item-description: Filippine 40%. Profumo di caramello e mou. Al palato ripropone una notevole dolcezza ben bilanciata da un mix di arancia candita e persistente nota citrica.
     item-description-short:
     item-allergeni:
     item-price: 7
@@ -878,7 +867,7 @@ menu-rhum:
     class-price:
   -
     item-name: Du Perou 10 anni
-    item-description: Perù 45%. Profumo di frutta fresca albicocche, pesche e pere, seguito da legno, spezie e tabacco. Al palato è fedele a ciò che il naso ha annunciato
+    item-description: Perù 45%. Profumo di frutta fresca albicocche, pesche e pere, seguito da legno, spezie e tabacco. Al palato è fedele a ciò che il naso ha annunciato.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
@@ -887,21 +876,21 @@ menu-rhum:
 menu-wiskey:
   -
     item-name: Scallywag
-    item-description: Scozzese blend 46%. L'iniziale dolcezza lascia spazio a note piccanti e speziate
+    item-description: Scozzese blend 46%. L'iniziale dolcezza lascia spazio a note piccanti e speziate.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
     class-price:
   -
     item-name: Teeling
-    item-description: Irlandese single malt 46%. Note di vaniglia e spezie con dolci sentori di rhum
+    item-description: Irlandese single malt 46%. Note di vaniglia e spezie con dolci sentori di rhum.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
     class-price:
   -
     item-name: Big Peat
-    item-description: Scozzese blend 46%. Fresco e pulito con aromi di torba piccante con note di cioccolato, caffè e mandorle
+    item-description: Scozzese blend 46%. Fresco e pulito con aromi di torba piccante con note di cioccolato, caffè e mandorle.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
@@ -917,35 +906,35 @@ menu-drinks:
     class-price:
   -
     item-name: Gin Tonic Ginpilz
-    item-description: Aromatico. Servito con acqua tonica J. Gasco
+    item-description: Aromatico. Servito con acqua tonica J. Gasco.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
     class-price:
   -
     item-name: Gin Tonic Silverback
-    item-description: London Gin. Servito con acqua tonica J. Gasco
+    item-description: London Gin. Servito con acqua tonica J. Gasco.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
     class-price:
   -
     item-name: Gin Tonic Puro
-    item-description: Morbido. Servito con acqua tonica J. Gasco
+    item-description: Morbido. Servito con acqua tonica J. Gasco.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
     class-price:
   -
     item-name: Americano
-    item-description: Vermut rosso, bitter Campari, soda
+    item-description: Vermut rosso, bitter Campari, soda.
     item-allergeni:
     item-price: 7
     class-allergeni: hide
     class-price:
   -
     item-name: Negroni
-    item-description: Vermut rosso, bitter Campari, gin Puro
+    item-description: Vermut rosso, bitter Campari, gin Puro.
     item-allergeni:
     item-price: 8.5
     class-allergeni: hide

@@ -14,9 +14,13 @@ ASPORTO BUGS:
 
 - Barra filtro categorie: non è sempre visibile nella viewport anche se categoria è is-active (testa su mobile categorie Vino o comunque ultime categorie)
 
-- Email template: ho creato folder email con dentro tutti i template minificati. Se possibile rinominiamoli per capire cosa sono: ‘email_template.html’ potrebbe essere ‘email-conferma-riserva-un-tavolo.html’
+- Email template: ho creato folder email con dentro tutti i template minificati. Se possibile rinominiamoli per capire cosa sono: ‘email_template.html’ potrebbe essere ‘email-conferma-riserva-un-tavolo.html’.
 
+- Ordinamento prodotti:
+    - ordinamento per "indice ordinamento"
+    - se indice ordinamento non c'è: ordine alfabetico
 
+- pop up registrazione. scrivere: "Ti sei registrato con successo. Chiudi per continuare."
 
 ================================================================================================================================
 
