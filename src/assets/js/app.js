@@ -35,23 +35,23 @@ $(document).ready(() => {
       $('#signup-login').foundation('open');
     }
   });
-  if (en('riserva-un-tavolo.html') || en('consulta.html')){
+  if (en('riserva-un-tavolo.html') || en('consulta.html') || en('riserva-un-tavolo') || en('consulta')){
     import('./prenota');
-  } else if (en('asporto.html')) {
+  } else if (en('asporto.html') || en('asporto')) {
     import('./asporto');
-  } else if (en('checkout.html')) {
+  } else if (en('checkout.html') || en('checkout')) {
     import('./checkout');
-  } else if (en('account.html')) {
+  } else if (en('account.html') || en('account')) {
     import('./account');
-  } else if (en('orari.html')) {
+  } else if (en('orari.html') || en('orari')) {
     import('./orari');
-  } else if (en('checkout-landing.html')) {
+  } else if (en('checkout-landing.html') || en('checkout-landing')) {
     import('./checkout-landing');
-  } else if (en('menu.html')) {
-  } else if (en('chi-siamo.html')) {
-  } else if (en('informazioni-legali.html')) {
-  } else if (en('sala-comandi.html')) {
-  } else if (en('404.html')) {
+  } else if (en('menu.html') || en('menu')) {
+  } else if (en('chi-siamo.html') || en('chi-siamo')) {
+  } else if (en('informazioni-legali.html') || en('informazioni-legali')) {
+  } else if (en('sala-comandi.html') || en('sala-comandi')) {
+  } else if (en('404.html') || en('404')) {
   } else { // index.html:
     splideInit();
   }
