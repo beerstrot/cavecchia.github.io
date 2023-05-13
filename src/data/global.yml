@@ -5,7 +5,6 @@ menu-sushi-signature:
     item-price: 15
     item-description: Gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape (8 pezzi)
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo.
-    id-data: rollCaVecchiaBeerstrot
     class-allergeni:
     class-price:
     alt-image: Roll Ca' Vecchia Beerstrot
@@ -17,7 +16,15 @@ menu-sushi-signature:
     item-allergeni: Pesce, Soia, Latte, Frutta a guscio, Senape
     class-allergeni:
     class-price:
-    alt-image: Roll Special Tonno
+  -
+    item-name: Roll Special Granchio
+    item-image-16-9:
+    item-price: 15
+    item-description: Polpa di granchio giapponese, insalata croccante e maionese piccante ricoperti da carpaccio di branzino scottato e zest di lime (8 pezzi).
+    item-allergeni: Pesce, Soia, Latte, Senape
+    class-allergeni:
+    class-price:
+  -
   -
     item-name: Nigiri Special
     item-image-16-9:
