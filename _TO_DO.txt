@@ -4,6 +4,8 @@ ASPORTO BUGS:
 
 -1 Prodotti senza immagine hanno css sbagliato
 
+-1 dopo invio ordine devo essere indirizzato a checkout-landing.html
+
 -2 Login: mi registro e funziona. Faccio logout poi login: non mi riconosce più (password non corretta)
 
 -3 Se seleziono lo stesso prodotto 2 volte: uno ben cotto e uno al sangue o con note diverse, il carrello mi tiene solo ultima modifica. Es Beerstrot al sangue, senza cheddar metto nel carrello, Beerstrot Ben cotto, note: nessuna e metto nel carrello -> nel carrello ho 2 Beerstrot Ben cotto e senza note
