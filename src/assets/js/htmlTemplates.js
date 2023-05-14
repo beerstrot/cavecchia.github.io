@@ -18,7 +18,7 @@ const itemsCarrelloTable = (name, note, cottura, quantity, price, pid) => {
                     </div>
                 </td>
                 <td>
-                    <span class="prezzo-item">€ <span class="prezzo-item-${pid}">${price}</span></span>
+                    <span class="prezzo-item">€&thinsp;<span class="prezzo-item-${pid}">${price}</span></span>
                 </td>
             </tr>
 `;
@@ -34,7 +34,7 @@ const itemsCarrelloCheckout = (name, note, cottura, quantity, price) => {
 	  		<p class="note-item">Quantità: ${quantity}</p>
 		</div>
         <div class="item-price">
-            <p class="prezzo-item ">€ ${price}</p>
+            <p class="prezzo-item">€&thinsp;${price}</p>
         </div>
   	</div>
 `
@@ -66,7 +66,7 @@ const carrelloCheckoutUser = (carrello, count) => {
 	      	<h1 class="titolo-item">TOTALE:</h1>
 	    </div>
 	    <div class="item-price">
-	      	<h1 class="titolo-item" id="checkout-total">€ ${total.toLocaleString()}</h1>
+	      	<h1 class="titolo-item" id="checkout-total">€&ensp;${total.toLocaleString()}</h1>
 	    </div>
 	</div>
     <button type="button" id="remove-${count}" class="clear button hollow alert float-left">Elimina</button>
@@ -85,7 +85,7 @@ const carrelloProd = (name, notes, cottura, quantity, price) => {
     <p class="note-item">Quantità: ${quantity}</p>
   </div>
   <div class="item-price">
-    <p class="prezzo-item ">€ ${price}</p>
+    <p class="prezzo-item ">&thinsp;${price}</p>
   </div>
 </div>
 `

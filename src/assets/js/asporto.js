@@ -99,7 +99,7 @@ function mkCellSmall (p, cell) {
     type: 'button',
     'data-open': pid,
     css: { 'margin-bottom': 0 }
-  }).html('Aggiungi al Carrello');
+  }).html('Seleziona');
 }
 
 function mkCellMedium (p, cell) {
@@ -131,7 +131,7 @@ function mkCellMedium (p, cell) {
   M('button', 'button small', cs, {
     type: 'button',
     'data-open': pid
-  }).html('Aggiungi al Carrello');
+  }).html('Seleziona');
 }
 
 function mkModal (p, secDiv) {
@@ -246,11 +246,11 @@ function mkModal (p, secDiv) {
         })
         closeBtn.click();
       })
-  ).html(` € ${price}`);
+  ).html(` €&thinsp;${price}`);
 
   function placePrice (quantity) {
     price = p.price1 * quantity;
-    btnPrice.html(` € ${price}`)
+    btnPrice.html(` €&thinsp;${price}`)
   }
 
   new Foundation.Reveal(modal.foundation());
@@ -305,7 +305,7 @@ function updateTotal () {
     $('#carrelloPiccoloPieno').show();
     $('#carrelloPiccoloVuoto').hide();
   }
-  $('.carrello-table-totale').text(`€ ${total.toLocaleString()}`);
+  $('.carrello-table-totale').html(` €&ensp;${total.toLocaleString()}`);
   const quantity = prods.reduce((a, p) => a + p.quantity, 0);
   $('.prod-quantity').text(`${quantity}`);
 }

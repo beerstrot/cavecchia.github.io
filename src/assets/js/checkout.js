@@ -26,7 +26,7 @@ function checkStoredOrder () {
     });
   }
   const total = prods.reduce((a, p) => a + p.quantity * p.price1, 0);
-  $('#checkout-total').text(`€ ${total.toLocaleString()}`);
+  $('#checkout-total').html(` €&ensp;${total.toLocaleString()}`);
 }
 
 function getClosedTimeslots () {

@@ -21,10 +21,9 @@ menu-sushi-signature:
     item-image-16-9:
     item-price: 15
     item-description: Polpa di granchio giapponese, insalata croccante e maionese piccante ricoperti da carpaccio di branzino scottato e zest di lime (8 pezzi).
-    item-allergeni: Pesce, Soia, Latte, Senape
+    item-allergeni: Pesce, Soia, Uova, Senape
     class-allergeni:
     class-price:
-  -
   -
     item-name: Nigiri Special
     item-image-16-9:
