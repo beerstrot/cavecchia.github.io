@@ -13,7 +13,11 @@ ASPORTO BUGS:
 -4 Email template: ho creato folder email con dentro tutti i template minificati. Se possibile rinominiamoli per capire cosa sono: ‘email_template.html’ potrebbe essere ‘email-conferma-riserva-un-tavolo.html’.
 
 -5 Riserva-un-tavolo.html?id=notes se seleziono giorni dove c'è una prenotazione -> rotellina della morte
+
 -6 Baco nei prezzi: se seleziono 9 x Diablo o altri prodotti prezzo è 107.10000000000001
+
+-7 Ordini arrivano da Andrea Tagliazucchi
+-8 A volte non c'è il tipo di cottura
 
 
 Nice to have:
