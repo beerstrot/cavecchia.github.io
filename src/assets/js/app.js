@@ -56,7 +56,7 @@ $(document).ready(() => {
     splideInit();
   }
   //import JustValidate from 'just-validate';
-  import('./input-number');
+  //import('./input-number');
   $('#loading').hide();
 });
 

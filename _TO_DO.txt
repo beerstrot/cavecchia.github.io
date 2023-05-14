@@ -17,6 +17,7 @@ ASPORTO BUGS:
 -6 Baco nei prezzi: se seleziono 9 x Diablo o altri prodotti prezzo è 107.10000000000001
 
 -7 Ordini arrivano da Andrea Tagliazucchi
+
 -8 A volte non c'è il tipo di cottura
 
 

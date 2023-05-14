@@ -5,9 +5,19 @@ To install and start the site:
 nvm use 14.19.0
 yarn
 yarn start
+
 ```
 
-The page will open at: `http://localhost:8001/`.
+# production (minify and concat everything)
+
+```bash
+nvm use 14.19.0
+yarn build
+
+```
+
+
+The page will open at: `http://localhost:800x/`.
 
 # ZURB Template
 
