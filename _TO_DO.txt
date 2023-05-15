@@ -2,41 +2,58 @@
 
 ASPORTO BUGS:
 
--1 Prodotti senza immagine hanno css sbagliato
+- Prodotti senza immagine hanno css sbagliato
 
--1 dopo invio ordine devo essere indirizzato a checkout-landing.html ora va e dopo un secondo passa a asporto.html
+- Dopo invio ordine devo essere indirizzato a checkout-landing.html ora va e dopo un secondo passa a asporto.html
 
--2 Login: mi registro e funziona. Faccio logout poi login: non mi riconosce più (password non corretta)
+- Login: mi registro e funziona. Faccio logout poi login: non mi riconosce più (password non corretta)
 
--3 Se seleziono lo stesso prodotto 2 volte: uno ben cotto e uno al sangue o con note diverse, il carrello mi tiene solo ultima modifica. Es Beerstrot al sangue, senza cheddar metto nel carrello, Beerstrot Ben cotto, note: nessuna e metto nel carrello -> nel carrello ho 2 Beerstrot Ben cotto e senza note
+- Se seleziono lo stesso prodotto 2 volte: uno ben cotto e uno al sangue o con note diverse, il carrello mi tiene solo ultima modifica. Es Beerstrot al sangue, senza cheddar metto nel carrello, Beerstrot Ben cotto, note: nessuna e metto nel carrello -> nel carrello ho 2 Beerstrot Ben cotto e senza note. Qui non ci eravamo capiti bene (si possono accorpare i prodotti con stessi attributi, ma prodotti con attributi diversi tipo note e cottura, non vanno accorpati)
 
--4 Email template: ho creato folder email con dentro tutti i template minificati. Se possibile rinominiamoli per capire cosa sono: ‘email_template.html’ potrebbe essere ‘email-conferma-riserva-un-tavolo.html’.
+- template email asporto da collegare a: ./email/email-riepilogo-ordine-asporto_.html
 
--5 Riserva-un-tavolo.html?id=notes se seleziono giorni dove c'è una prenotazione -> rotellina della morte
+- Riserva-un-tavolo.html?id=notes se seleziono giorni dove c'è una prenotazione -> rotellina della morte (credo dipenda da app.js)
 
--6 Baco nei prezzi: se seleziono 9 x Diablo o altri prodotti prezzo è 107.10000000000001
+- Baco nei prezzi: se seleziono 9 x Diablo prezzo è 107.10000000000001
 
--7 Ordini arrivano da Andrea Tagliazucchi
+- Ordini web arrivano con nome Andrea Tagliazucchi anzichè Asporto Online (o quello che ci eravamo detti, non ricordo)
 
--8 A volte non c'è il tipo di cottura
+- A volte non c'è il tipo di cottura (qui dobbiamo testare più a fondo perché non riesco sempre a riprodurre il bug)
+
+- pop up registrazione. scrivere: "Ti sei registrato con successo. Chiudi per continuare.” Ora c’è frase non comprensibile.Se c’è errore ora appare “error" -> se mi dai lista dei messaggi te li traduco correttamente tutti
+
+- Carrello mobile: metto a 0 tutti i prodotti -> vai al checkout è ancora cliccabile (dovrebbe essere grayed out)
 
 
-Nice to have:
 
--6 Carrello mobile: metto a 0 tutti i prodotti -> vai al checkout è ancora cliccabile (dovrebbe essere grayed out)
+FASE 2 - ASPORTO
 
-- 7 Ordinamento prodotti:
-    - ordinamento per "indice ordinamento"
+- Implementare possibilità di inserire gli ordini passati da account.html direttamente nel carrello con modal se prodotto non presente (come aveva suggerito Renato)
+
+- Sviluppo invio Email (i template sono già nel folder email):
+    - Quando ti registri -> email-welcome.html
+    - Quando richiedi reset password -> email-reset-password.html
+    - Quando resetti la password -> email-conferma-reset-password.html
+
+- Ordinamento prodotti:
+    - ordinamento per "indice ordinamento (tilby)"
     - se indice ordinamento non c'è: ordine alfabetico
 
--8 pop up registrazione. scrivere: "Ti sei registrato con successo. Chiudi per continuare."
-
--9 Barra filtro categorie: non è sempre visibile nella viewport anche se categoria è is-active (testa su mobile categorie Vino o comunque ultime categorie)
-
-================================================================================================================================
+- Barra filtro categorie: non è sempre visibile nella viewport anche se categoria è is-active (testa su mobile categorie Vino o comunque ultime categorie)
 
 
-FASE 2 - RISERVA UN TAVOLO
+===================================================================================================================
+
+
+
+FASE 3
+
+- Login con fb e google
+
+- Implementazione pagamento online con carta di credito Stripe
+
+
+FASE 3 - RISERVA UN TAVOLO
 
 - timer: i turni non sono disponibili dopo l'orario. es. sono le 21: i turni precedenti alle 21 non sono selezionabili
 
@@ -49,23 +66,7 @@ FASE 2 - RISERVA UN TAVOLO
 - Nr max seggioloni per turno limitato a 6
 
 
-
-FASE 2 - ASPORTO
-
-- Implementare possibilità di inserire gli ordini passati da account.html direttamente nel carrello con modal se prodotto non presente (come aveva suggerito Renato)
-
-- Email (i template sono già nel folder email):
-    - Quando ti registri -> email-welcome.html
-    - Quando richiedi reset password -> email-reset-password.html
-    - Quando resetti la password -> email-conferma-reset-password.html
-
-- Login con fb e google (bassa priorità)
-
-- Implementazione pagamento online con carta di credito Stripe (bassa priorità)
-
-
-
-FASE 2 MISTO
+FASE 3 MISTO
 
 - Giorni di chiusura: riserva-un-tavolo.html e asporto.html condividono i giorni di chiusura. I giorni di chiusura ci sono quando non ci sono turni in Tilby + quando aggiungiamo noi un giorno di chiusura. Creazione di un’interfaccia semplice ed intuitiva con possibilità di chiudere più giorni (selezione multipla dei giorni)
     - Se chiuso:
