@@ -34,6 +34,7 @@ FASE 2 - ASPORTO
     - Quando ti registri -> email-welcome.html
     - Quando richiedi reset password -> email-reset-password.html
     - Quando resetti la password -> email-conferma-reset-password.html
+    - Se fattibile: spostare template (./asporto/email_template.html) in -> ./email/email-riserva-un-tavolo.html (mi facilita la vita, quando do comando 'yarn build')
 
 - Ordinamento prodotti:
     - ordinamento per "indice ordinamento (tilby)"
