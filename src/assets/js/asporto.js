@@ -246,7 +246,8 @@ function mkModal (p, secDiv) {
         })
         closeBtn.click();
       })
-  ).html(` €&thinsp;${price}`);
+      //modal price
+  ).html(` &nbsp;&nbsp;&nbsp;€&thinsp;${price}`);
 
   function placePrice (quantity) {
     price = p.price1 * quantity;
@@ -305,9 +306,10 @@ function updateTotal () {
     $('#carrelloPiccoloPieno').show();
     $('#carrelloPiccoloVuoto').hide();
   }
-  $('.carrello-table-totale').html(` €&ensp;${total.toLocaleString()}`);
+  //prezzo carrello e nr prodotti carrello
+  $('.carrello-table-totale').html(` &nbsp;&nbsp;€&ensp;${total.toLocaleString()}`);
   const quantity = prods.reduce((a, p) => a + p.quantity, 0);
-  $('.prod-quantity').text(`${quantity}`);
+  $('.prod-quantity').html(` &nbsp;${quantity}`);
 }
 
 function checkStoredOrder () {
