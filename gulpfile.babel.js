@@ -38,7 +38,7 @@ console.log(UNCSS_OPTIONS);
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
-  gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sassBuild, emails)
+  gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sassBuild, emails, emailsAsporto)
 );
 
 // Build the site, run the server, and watch for file changes
@@ -82,6 +82,12 @@ function resetPages(done) {
 function emails(done) {
   return gulp.src('src/email/*.{html,hbs,handlebars}')
     .pipe(gulp.dest(PATHS.dist + '/email'));
+}
+
+// Copy emails into prod email/ folder without panini bothering
+function emailsAsporto(done) {
+  return gulp.src('src/asporto/*.{html,hbs,handlebars}')
+    .pipe(gulp.dest(PATHS.dist + '/asporto'));
 }
 
 
@@ -184,4 +190,5 @@ function watch() {
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/email/**').on('all', gulp.series(emails, browser.reload));
+  gulp.watch('src/asporto/**').on('all', gulp.series(emailsAsporto, browser.reload));
 }
