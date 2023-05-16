@@ -34,7 +34,7 @@ FASE 2 - ASPORTO
     - Quando ti registri -> email-welcome.html
     - Quando richiedi reset password -> email-reset-password.html
     - Quando resetti la password -> email-conferma-reset-password.html
-    - Se possibile: spostare link tavolo riservato da '/asporto/email_template.html' a -> 'email/email-tavolo-riservato.html'
+    - Se possibile: spostare link tavolo riservato da '/prenota/email_template.html' a -> 'email/email-tavolo-riservato.html'
 
 - Ordinamento prodotti:
     - ordinamento per "indice ordinamento (tilby)"

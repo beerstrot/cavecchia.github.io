@@ -84,10 +84,10 @@ function emails(done) {
     .pipe(gulp.dest(PATHS.dist + '/email'));
 }
 
-// Copy emails into prod email/ folder without panini bothering
+// Copy prenota email into prod prenota/ folder without panini bothering
 function emailsAsporto(done) {
-  return gulp.src('src/asporto/*.{html,hbs,handlebars}')
-    .pipe(gulp.dest(PATHS.dist + '/asporto'));
+  return gulp.src('src/prenota/*.{html,hbs,handlebars}')
+    .pipe(gulp.dest(PATHS.dist + '/prenota'));
 }
 
 
@@ -190,5 +190,5 @@ function watch() {
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/email/**').on('all', gulp.series(emails, browser.reload));
-  gulp.watch('src/asporto/**').on('all', gulp.series(emailsAsporto, browser.reload));
+  gulp.watch('src/prenota/**').on('all', gulp.series(emailsAsporto, browser.reload));
 }
