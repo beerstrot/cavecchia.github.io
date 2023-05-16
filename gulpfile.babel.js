@@ -162,7 +162,9 @@ function images() {
           {cleanupIDs: false}
         ]
       })
-    ])))
+    ], {
+     // verbose: true
+      })))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
