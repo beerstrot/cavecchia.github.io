@@ -134,6 +134,7 @@ function setRegister () {
       { action: 'registerClient', data },
       res => {
         console.log({ res });
+        window.alert('Ti sei registrato con successo. Chiudi per continuare.');
         window.localStorage.currentClient = JSON.stringify(data);
         window.location.href = ORIGIN +  '/account.html'
       },
@@ -162,6 +163,7 @@ function setLogin () {
         window.location.href = ORIGIN + '/account.html'
       },
       res => {
+        console.log({ res })
         // TODO: add this show message modal
         showMessage(messageError);
       }

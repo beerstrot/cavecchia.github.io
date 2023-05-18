@@ -1,4 +1,4 @@
-import { bana, mkCall, testeLambdaPOST, ORIGIN } from './utils';
+import { bana, mkCall, testeLambdaPOST, formatNum, ORIGIN } from './utils';
 import { itemsCarrelloTable } from './htmlTemplates';
 
 $(document).ready(() => {
@@ -229,7 +229,7 @@ function mkModal (p, secDiv) {
           const val = parseInt($input.val(), 10);
           $input.val(val + 1);
           p.quantity = val + 1;
-          $('.prezzo-item-' + pid).html((val + 1) * p.price1);
+          $('.prezzo-item-' + pid).html(formatNum((val + 1) * p.price1));
           updateTotal();
         });
         $('.input-number-decrement-' + pid).click(function() {
@@ -241,7 +241,7 @@ function mkModal (p, secDiv) {
           }
           $input.val(v);
           p.quantity = v;
-          $('.prezzo-item-' + pid).html(v * p.price1);
+          $('.prezzo-item-' + pid).html(formatNum(v * p.price1));
           updateTotal();
         })
         closeBtn.click();
@@ -250,7 +250,7 @@ function mkModal (p, secDiv) {
   ).html(` &nbsp;&nbsp;&nbsp;€&thinsp;${price}`);
 
   function placePrice (quantity) {
-    price = p.price1 * quantity;
+    price = formatNum(p.price1 * quantity);
     btnPrice.html(` €&thinsp;${price}`)
   }
 
@@ -307,7 +307,7 @@ function updateTotal () {
     $('#carrelloPiccoloVuoto').hide();
   }
   //prezzo carrello e nr prodotti carrello
-  $('.carrello-table-totale').html(` &nbsp;&nbsp;€&ensp;${total.toLocaleString()}`);
+  $('.carrello-table-totale').html(` &nbsp;&nbsp;€&ensp;${formatNum(total)}`);
   const quantity = prods.reduce((a, p) => a + p.quantity, 0);
   $('.prod-quantity').html(` &nbsp;${quantity}`);
 }
@@ -334,7 +334,7 @@ function checkStoredOrder () {
           const val = parseInt($input.val(), 10);
           $input.val(val + 1);
           p_.quantity = val + 1;
-          $('.prezzo-item-' + pid).html((val  + 1) * p.price1);
+          $('.prezzo-item-' + pid).html(formatNum((val  + 1) * p.price1));
           updateTotal();
         });
         $('.input-number-decrement-' + pid).click(function() {
@@ -346,7 +346,7 @@ function checkStoredOrder () {
           }
           $input.val(v);
           p_.quantity = v;
-          $('.prezzo-item-' + pid).html(v * p.price1);
+          $('.prezzo-item-' + pid).html(formatNum(v * p.price1));
           updateTotal();
         })
       }
@@ -420,13 +420,14 @@ function setRegister () {
       'POST',
       { action: 'registerClient', data },
       res => {
-        window.alert('Il tuo registro è andato a buon fine.');
+        window.alert('Ti sei registrato con successo. Chiudi per continuare.');
         window.localStorage.currentClient = JSON.stringify(data);
         window.location.href = ORIGIN + '/checkout.html';
       },
       res => {
         // TODO: add this show message modal
-        showMessage(messageError);
+        // showMessage(messageError);
+        alert('Errore. Contattare il personale Beerstrot');
       }
     );
   });
@@ -452,8 +453,10 @@ function setLogin () {
       },
       res => {
         window.alert('error');
+        console.log({ res })
         // TODO: add this show message modal
-        showMessage(messageError);
+        // showMessage(messageError);
+        alert('Errore. Contattare il personale Beerstrot');
       }
     );
   });

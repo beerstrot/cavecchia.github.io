@@ -1,4 +1,4 @@
-import { mkCall, ORIGIN } from './utils';
+import { mkCall, formatNum, ORIGIN } from './utils';
 import { itemsCarrelloCheckout } from './htmlTemplates';
 
 $(document).ready(() => {
@@ -19,14 +19,14 @@ function checkStoredOrder () {
   if (prods) {
     prods.forEach(p => {
       const price = p.quantity * p.price1;
-      const template = itemsCarrelloCheckout(p.name, p.noteText, p.cotturaV, p.quantity, price);
+      const template = itemsCarrelloCheckout(p.name, p.noteText, p.cotturaV, p.quantity, formatNum(price));
       console.log({ template });
 
       $('#itens-carrello-checkout').append(template);
     });
   }
   const total = prods.reduce((a, p) => a + p.quantity * p.price1, 0);
-  $('#checkout-total').html(` €&ensp;${total.toLocaleString()}`);
+  $('#checkout-total').html(` €&ensp;${formatNum(total)}`);
 }
 
 function getClosedTimeslots () {
@@ -141,7 +141,8 @@ function setSendOrder () {
       },
       res => {
         // TODO: add this show message modal
-        showMessage(messageError);
+        // showMessage(messageError);
+        alert('Errore. Contattare il personale Beerstrot');
       }
     );
   });

@@ -52,8 +52,13 @@ function testeLambda () {
   testeLambdaPOST();
 }
 
+function formatNum (num) {
+  // return num.toLocaleString(undefined, { minimumFractionDigits: 2 })
+  return num.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
+
 const foo = window.location.href.split('/');
 const ORIGIN = foo.slice(0, foo.length - 1).join('/');
 
 const bana = 55;
-export { bana, mkCall, testeLambdaPOST, testeLambdaGET, testeLambda, ORIGIN };
+export { bana, mkCall, testeLambdaPOST, testeLambdaGET, testeLambda, formatNum, ORIGIN };

@@ -214,7 +214,7 @@ function showNotes (datetime) {
       });
       const sentences = [];
       let total_ = 0;
-      for (k in shifts) {
+      for (const k in shifts) {
         const s = shifts[k];
         if (k === 'anon') continue;
         s.people_online = s.obookings.reduce((a, ss) => a + ss.people, 0);
