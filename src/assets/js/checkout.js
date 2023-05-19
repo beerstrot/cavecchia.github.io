@@ -123,7 +123,7 @@ function setSendOrder () {
   console.log({ data });
   $('#send-order').on('click', () => {
     if (!window.localStorage.timeSlot) {
-      return window.alert('selezioni un orario di ritiro');
+      return window.alert('Seleziona l\'orario di ritiro dell\'asporto');
     }
     data.takeout_time = window.localStorage.timeSlot;
     mkCall(
@@ -142,7 +142,7 @@ function setSendOrder () {
       res => {
         // TODO: add this show message modal
         // showMessage(messageError);
-        alert('Errore. Contattare il personale Beerstrot');
+        alert('Qualcosa è andato storto. Contattaci al numero  071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
       }
     );
   });
