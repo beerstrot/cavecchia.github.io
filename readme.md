@@ -7,6 +7,7 @@ yarn
 yarn start
 
 ```
+The page will open at: `http://localhost:8000/`
 
 # production (minify and concat everything)
 
@@ -15,9 +16,6 @@ nvm use 14.19.0
 yarn build
 
 ```
-
-
-The page will open at: `http://localhost:800x/`.
 
 # ZURB Template
 
