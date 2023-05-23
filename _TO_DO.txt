@@ -2,6 +2,8 @@
 
 ASPORTO BUGS:
 
+_ I prodotti non hanno associata nessuna IVA ****
+
 - Prodotti senza immagine hanno css sbagliato
 
 - Dopo invio ordine devo essere indirizzato a checkout-landing.html ora va e dopo un secondo passa a asporto.html
