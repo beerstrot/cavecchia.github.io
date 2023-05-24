@@ -2,7 +2,15 @@
 
 ASPORTO BUGS:
 
+    NUOVI:
+
 _ I prodotti non hanno associata nessuna IVA ****
+
+- non riceviamo più le email delle prenotazioni, questo il messaggio che vedo nell’inbox (email inviata a renato)   OK
+
+- link 'Il Mio Account' nel footer non funziona
+
+    GIA' SEGNALATI:
 
 - Prodotti senza immagine hanno css sbagliato
 
