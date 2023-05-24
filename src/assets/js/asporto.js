@@ -176,7 +176,7 @@ function mkModal (p, secDiv) {
   if (v.length === 0) {
     $('#' + pid + '_cottura').hide();
   }
-  const footer = M('footer', 'main-footer-carrello-small', modal);
+  const footer = M('footer', 'main-footer-carrello-small border-shadow', modal);
   const footerDiv = mkDiv('input-group input-number-group', footer);
   let quantity = 1;
   let price = quantity * p.price1;

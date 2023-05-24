@@ -25,6 +25,9 @@ cart
    border-top:1.5px solid $light-gray;
 
 }
+.border-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .main-header-carrello-large {
     position:sticky;
     position:-webkit-sticky;

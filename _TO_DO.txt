@@ -14,7 +14,7 @@ _ I prodotti non hanno associata nessuna IVA ****
 
 - Prodotti senza immagine hanno css sbagliato
 
-- Dopo invio ordine devo essere indirizzato a checkout-landing.html ora va e dopo un secondo passa a asporto.html
+- Dopo invio ordine devo essere indirizzato a checkout-landing.html ora va e dopo un secondo passa a asporto.html OK
 
 - Login: mi registro e funziona. Faccio logout poi login: non mi riconosce più (password non corretta) ** OK
 
