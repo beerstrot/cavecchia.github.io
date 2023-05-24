@@ -142,7 +142,7 @@ function setRegister () {
         // TODO: add this show message modal
         // showMessage(messageError);
         console.log({ res });
-        alert('Errore. Contattare il personale Beerstrot');
+        alert('Qualcosa è andato storto. Contattaci al numero  071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
       }
     );
   });
@@ -168,7 +168,7 @@ function setLogin () {
         console.log({ res })
         // TODO: add this show message modal
         // showMessage(messageError);
-        alert('Errore. Contattare il personale Beerstrot');
+        alert('Qualcosa è andato storto. Contattaci al numero  071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
       }
     );
   });
