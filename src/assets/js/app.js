@@ -39,14 +39,14 @@ $(document).ready(() => {
     import('./prenota');
   } else if (en('asporto.html') || en('asporto')) {
     import('./asporto');
+  } else if (en('checkout-landing.html') || en('checkout-landing')) {
+    import('./checkout-landing');
   } else if (en('checkout.html') || en('checkout')) {
     import('./checkout');
   } else if (en('account.html') || en('account')) {
     import('./account');
   } else if (en('orari.html') || en('orari')) {
     import('./orari');
-  } else if (en('checkout-landing.html') || en('checkout-landing')) {
-    import('./checkout-landing');
   } else if (en('menu.html') || en('menu')) {
   } else if (en('chi-siamo.html') || en('chi-siamo')) {
   } else if (en('informazioni-legali.html') || en('informazioni-legali')) {
@@ -140,7 +140,9 @@ function setRegister () {
       },
       res => {
         // TODO: add this show message modal
-        showMessage(messageError);
+        // showMessage(messageError);
+        console.log({ res });
+        alert('Errore. Contattare il personale Beerstrot');
       }
     );
   });
@@ -165,7 +167,8 @@ function setLogin () {
       res => {
         console.log({ res })
         // TODO: add this show message modal
-        showMessage(messageError);
+        // showMessage(messageError);
+        alert('Errore. Contattare il personale Beerstrot');
       }
     );
   });

@@ -2,7 +2,6 @@ const mesi = 'gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, 
 const weekdays = 'Domenica - Lunedì - Martedì - Mercoledì - Giovedì - Venerdì - Sabato'.split(' - ');
 
 $(document).ready(() => {
-  console.log('heay how');
   const { lastOrder, timeSlot_, currentClient } = window.localStorage;
   $('#time1').html(timeSlot_);
 
@@ -25,5 +24,4 @@ $(document).ready(() => {
 
   const lastOrderTitle = `Ordine del ${d.getDate()} ${mesi[d.getMonth()]} ${d.getFullYear()}`;
   $('#order-title').html(lastOrderTitle);
-
 });
