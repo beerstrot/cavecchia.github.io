@@ -3,7 +3,7 @@ menu-sushi-signature:
     item-name: Roll Ca' Vecchia Beerstrot
     item-image-16-9:
     item-price: 15
-    item-description: Gambero in panko croccante e avocado ricoperti da battuta di carne marchigiana, tartufo nero e maionese alla senape (8 pezzi).
+    item-description: Gambero in panko croccante e avocado ricoperti da carpaccio di carne marchigiana e citronette (8 pezzi).
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo.
     class-allergeni:
     class-price:
@@ -17,10 +17,10 @@ menu-sushi-signature:
     class-allergeni:
     class-price:
   -
-    item-name: Roll Special Granchio
+    item-name: Roll Special Salmone
     item-image-16-9:
     item-price: 15
-    item-description: Polpa di granchio giapponese, insalata croccante e maionese piccante ricoperti da carpaccio di branzino scottato e zest di lime (8 pezzi).
+    item-description: Salmone fritto, insalata croccante e maionese piccante ricoperti da carpaccio di branzino scottato e zest di lime (8 pezzi).
     item-allergeni: Pesce, Soia, Uova, Senape
     class-allergeni:
     class-price:
@@ -66,7 +66,7 @@ menu-sushi-roll-selection:
     item-name: Roll Gambero Rosso
     item-image-16-9:
     item-price: 14
-    item-description: Salmone e avocado ricoperti da gamberi rossi e zeist di lime (8 pezzi).
+    item-description: Salmone e avocado ricoperti da gamberi rossi (8 pezzi).
     item-allergeni: Crostacei, Pesce, Latte, Frutta a guscio
     class-allergeni:
     class-price:
@@ -98,15 +98,15 @@ menu-sushi-roll-selection:
     class-allergeni:
     class-price:
     alt-image: Roll Branzino
-  -
-    item-name: Roll Mediterraneo
-    item-image-16-9:
-    item-price: 13
-    item-description: Gambero in panko croccante e mango ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche, pinoli tostati e maionese (8 pezzi).
-    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
-    class-allergeni:
-    class-price:
-    alt-image: Roll Mediterraneo
+  # -
+  #   item-name: Roll Mediterraneo
+  #   item-image-16-9:
+  #   item-price: 13
+  #   item-description: Gambero in panko croccante e mango ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche, pinoli tostati e maionese (8 pezzi).
+  #   item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Roll Mediterraneo
   -
     item-name: Roll Vegetariano
     item-image-16-9:
