@@ -551,15 +551,15 @@ menu-dolce:
   #   class-allergeni:
   #   class-price:
   #   alt-image: Birramisù
-  # -
-  #   item-image-16-9: assets/img/prod/Crumble_rettangolare.jpg
-  #   item-name: Crumble
-  #   item-description: Crema chantilly su croccante crumble di farina di mais, cannella e scaglie di cioccolato fondente.
-  #   item-allergeni: Latte, Uova
-  #   item-price: 5
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Crumble
+  -
+    item-image-16-9: assets/img/prod/Crumble_rettangolare.jpg
+    item-name: Crumble
+    item-description: Crema chantilly su croccante crumble di farina di mais, cannella e scaglie di cioccolato fondente.
+    item-allergeni: Latte, Uova
+    item-price: 5
+    class-allergeni:
+    class-price:
+    alt-image: Crumble
   # -
   #   item-image-16-9: assets/img/prod/Cioccolatosa_rettangolare.jpg
   #   item-name: Cioccolatosa
