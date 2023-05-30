@@ -1,13 +1,13 @@
 menu-sushi-signature:
-  -
-    item-name: Roll Ca' Vecchia Beerstrot
-    item-image-16-9:
-    item-price: 15
-    item-description: Gambero in panko croccante e avocado ricoperti da carpaccio di carne marchigiana e citronette (8 pezzi).
-    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo.
-    class-allergeni:
-    class-price:
-    alt-image: Roll Ca' Vecchia Beerstrot
+  # -
+  #   item-name: Roll Ca' Vecchia Beerstrot
+  #   item-image-16-9:
+  #   item-price: 15
+  #   item-description: Gambero in panko croccante e avocado ricoperti da carpaccio di carne marchigiana e citronette (8 pezzi).
+  #   item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo.
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Roll Ca' Vecchia Beerstrot
   -
     item-name: Roll Special Tonno
     item-image-16-9:
@@ -17,7 +17,7 @@ menu-sushi-signature:
     class-allergeni:
     class-price:
   -
-    item-name: Roll Special Salmone
+    item-name: Roll Special Salmone Fritto
     item-image-16-9:
     item-price: 15
     item-description: Salmone fritto, insalata croccante e maionese piccante ricoperti da carpaccio di branzino scottato e zest di lime (8 pezzi).
@@ -183,21 +183,15 @@ menu-per-stuzzicare:
     class-allergeni:
     class-price:
     alt-image: Olive all'Ascolana
-  # -
-  #   item-image-16-9: https://picsum.photos/1920/1080
-  #   item-image-1-1: https://picsum.photos/1920/1920
-  #   item-name: Mozzarelle Fritte
-  #   item-description: Mozzarelle fior di latte artigianali. Servite con salsa aioli fatta in casa
-  #   item-description-short:
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 5,9
-  #   id-data: mozzarelleFritte
-  #   class-description:
-  #   class-note: hide
-  #   class-cottura: hide
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image:
+  -
+    item-image-16-9: assets/img/prod/Falafel_rettangolare.jpg
+    item-name: Falafel
+    item-description: Falafel di ceci, mais, cipolle e zucchine. Serviti con salsa tzatziki fatta in casa.
+    item-allergeni: Glutine, Sedano, Senape
+    item-price: 5,5
+    class-allergeni:
+    class-price:
+    alt-image: Falafel
   -
     item-image-16-9: assets/img/prod/CipolleRosseinTempura_rettangolare.jpg
     item-name: Cipolle Rosse
@@ -238,18 +232,18 @@ menu-per-stuzzicare:
     item-image-16-9: assets/img/prod/Arrosticini_rettangolare.jpg
     item-name: Arrosticini
     item-description: Arrosticini di pecora.
-    item-allergeni: nessuno
+    item-allergeni: --
     item-price: 5,5
-    class-allergeni: hide
+    class-allergeni:
     class-price:
     alt-image: Arrosticini
   -
     item-image-16-9: assets/img/prod/PatateFritte_rettangolare.jpg
     item-name: Patate Fritte
     item-description: Il più classico dei fritti.
-    item-allergeni: nessuno
+    item-allergeni: --
     item-price: 4,5
-    class-allergeni: hide
+    class-allergeni:
     class-price:
     alt-image: Patate Fritte
 
@@ -508,9 +502,9 @@ menu-carne:
     item-image-16-9: assets/img/prod/Entrecote_rettangolare.jpg
     item-name: Entrecôte
     item-description: Entrecôte di Manzetta Red Hereford irlandese.
-    item-allergeni: nessuno
+    item-allergeni: --
     item-price: 19
-    class-allergeni: hide
+    class-allergeni:
     class-price:
     alt-image: Entrecôte
 
