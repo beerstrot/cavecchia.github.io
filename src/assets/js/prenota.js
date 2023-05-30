@@ -532,6 +532,9 @@ function presentReservation (r) {
     const pid = new URL(window.location.href).searchParams.get('id').split('_modificata')[0] + '_modifica';
     window.location.href = window.location.href.split('/').reverse().slice(1).reverse().join('/') + '/riserva-un-tavolo.html?id=' + pid;
   });
+  $('#new').click(() => {
+     window.location = 'https://www.beerstrot.it/riserva-un-tavolo.html';
+  });
   const pid = r.id;
   $('#cancel').click(() => {
     showConsultaMessage(
