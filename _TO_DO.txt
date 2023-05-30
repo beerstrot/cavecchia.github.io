@@ -10,6 +10,9 @@ _ I prodotti non hanno associata nessuna IVA ****
 
 - link 'Il Mio Account' nel footer non funziona
 
+- Orari: chiudo orari, ma quando timer scatta (15 min) mi riapre tutti gli orari chiusi
+
+
     GIA' SEGNALATI:
 
 - Prodotti senza immagine hanno css sbagliato
@@ -26,7 +29,7 @@ _ I prodotti non hanno associata nessuna IVA ****
 
 - Baco nei prezzi: se seleziono 9 x Diablo prezzo è 107.10000000000001 OK
 
-- Ordini web arrivano con nome Andrea Tagliazucchi anzichè Asporto Online (o quello che ci eravamo detti, non ricordo)
+- Ordini web arrivano con nome Andrea Tagliazucchi anzichè Asporto Online (o quello che ci eravamo detti, non ricordo) OK
 
 - A volte non c'è il tipo di cottura (qui dobbiamo testare più a fondo perché non riesco sempre a riprodurre il bug)
 

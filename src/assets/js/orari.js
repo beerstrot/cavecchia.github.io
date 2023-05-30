@@ -35,7 +35,7 @@ function setOrari () {
     .appendTo($('#consolidate'))
     .on('click', () => {
       console.log('send to server');
-      info.html('orari chiusura asporti attivi: ' + new Array(...window.closedTimeslots).join(', '));
+      info.html('In questi orari gli asporti non sono disponibili: ' + new Array(...window.closedTimeslots).join(', '));
       mkCall(
         'POST',
         { action: 'consolidateTimeslots', data: new Array(...window.closedTimeslots) },
