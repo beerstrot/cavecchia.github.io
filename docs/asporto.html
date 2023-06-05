@@ -677,8 +677,53 @@
     					</div>
     					<div class="small-12 cell">
     						<h2>Sushi Kit</h2>
-    						<div class="grid-x small-up-1 medium-up-2 xxlarge-up-3 grid-margin-x grid-margin-y">
-    
+    						<div class="grid-x small-up-1 medium-up-2 xxlarge-up-3 grid-margin-x grid-margin-y noimage">
+    							<div class="cell">
+    								<div class="card">
+    									<div class="card-section">
+    										<h3><span class="price"></span></h3>
+    										<p class=""><span class=" show-for-medium"><br><small>Allergeni: </small></span></p>
+    										<button type="button" class="button small" data-open="">Aggiungi al Carrello</button>
+    									</div>
+    								</div>
+    							</div>
+    							<!-- modal -->
+    							<div class="reveal reveal-ecommerce" id="" data-reveal>
+    								<button type="button" class="close-button close-button-sticky" data-close aria-label="Close reveal">
+    										<span aria-hidden="true">&times;</span>
+    								</button>
+    								<header class="main-header">
+    									<h1 class="h1-modal" id="modalTitle"></h1>
+    								</header>
+    								<div class="main-content">
+    									<p id="modalDescription"><br><small class="allergeni">Allergeni: </small></p>
+    									<label class=""><strong>Cottura</strong>
+    										<select>
+    											<option value="medio">Media</option>
+    											<option value="moltoalsangue">Molto al sangue</option>
+    											<option value="alsangue">Al sangue</option>
+    											<option value="bencotta">Ben cotta</option>
+    										</select>
+    									</label>
+    									<label class=""><strong>Note</strong>
+    										<textarea maxlength="" id="" placeholder="..." style="min-height: 0.5rem;"></textarea>
+    									</label>
+    								</div>
+    								<footer class="main-footer-carrello-small">
+    							        <div class="input-group input-number-group">
+    							            <div class="input-group-button group-margin">
+    							                <span class="input-number-decrement"><i class="las la-minus-square la-2x"></i></span>
+    							            </div>
+    							            <input class="input-number group-margin" style="width:3rem;" type="button" value="1" min="0" max="20">
+    							            <div class="input-group-button group-margin">
+    							                <span class="input-number-increment"><i class="las la-plus-square la-2x"></i></span>
+    							            </div>
+    							        </div>
+    									<button type="button" class="button expanded-with-padding extra-space-button-modal">
+    										Aggiungi al carrello<span class="price"> €&ensp;</span>
+    									</button>
+    								</footer>
+    							</div>
     						</div>
     					</div>
     				</section>
