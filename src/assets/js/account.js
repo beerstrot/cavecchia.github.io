@@ -55,8 +55,8 @@ function setPreviousOrders () {
       .html(title).appendTo(li);
     const temp = carrelloCheckoutUser(order.order_items, count);
     $('<div/>', { class: 'accordion-content ordine-salvato-content clearfix', 'data-tab-content': true, id: 'order-' + count }).appendTo(li).html(temp);
-    $('#remove-' + count).hide();
-    $('#load-' + count).hide();
+    $('#remove-' + count).show();
+    $('#load-' + count).show();
   });
   // const li = $('<li/>', { class: 'accordion-item ordine-salvato-item', 'data-accordion-item': true }).appendTo($('#carrelli-accordion'));
   // $('<a/>', { class: 'accordion-title', href: '#dummy' }).html('ordine dummy').appendTo(li);

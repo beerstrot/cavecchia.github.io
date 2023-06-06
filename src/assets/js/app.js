@@ -28,7 +28,7 @@ $(document).ready(() => {
   const en = s => pn.includes(s);
   setRegister();
   setLogin();
-  $('#user-pg-btn').on('click', () => {
+  $('.user-pg-btn').on('click', () => {
     if (window.localStorage.currentClient) {
       window.location.href = ORIGIN + '/account.html';
     } else {
