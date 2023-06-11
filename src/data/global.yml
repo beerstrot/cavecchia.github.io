@@ -454,7 +454,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/Carbonara_rettangolare.jpg
     item-name: Carbonara
-    item-description: Pollo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe.
+    item-description: Manzo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -463,7 +463,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/CarbonaraDOPPIO_rettangolare.jpg
     item-name: Carbonara Doppio
-    item-description: Pollo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe.
+    item-description: Manzo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
