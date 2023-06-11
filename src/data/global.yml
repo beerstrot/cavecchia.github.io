@@ -783,13 +783,13 @@ menu-vino-caraffa:
     class-price:
 
 menu-vino:
-  # -
-  #   item-name: Fichimori Rosso igt Salento
-  #   item-description: Da bere freddo. Colore rosso rubino. Al naso prevalgono le note di frutta rossa, di fragola e lampone, seguite da delicate sensazioni di rosa canina. Al palato è fresco, sapido e scorrevole, caratterizzato da un ingresso morbido e un retrogusto fruttato.
-  #   item-allergeni: anidride solforosa e solfiti
-  #   item-price: 18 | 5
-  #   class-allergeni:
-  #   class-price:
+  -
+    item-name: Fichimori Rosso igt Salento
+    item-description: Da bere freddo. Colore rosso rubino. Al naso prevalgono le note di frutta rossa, di fragola e lampone, seguite da delicate sensazioni di rosa canina. Al palato è fresco, sapido e scorrevole, caratterizzato da un ingresso morbido e un retrogusto fruttato.
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 18 | 5
+    class-allergeni:
+    class-price:
   -
     item-name: Serrano doc
     item-description: Cantina Umani Ronchi. Colore rosso rubino con riflessi violacei. Profumo pulito di visciola matura. Gran polpa e gran rotondità di sapore, uniti ad una buona struttura garantiscono una piacevole bevibilità.
@@ -839,20 +839,20 @@ menu-vino:
     item-price: 18 | 4
     class-allergeni:
     class-price:
-  # -
-  #   item-name: Calafuria Rosato Frizzante igt Salento
-  #   item-description: Al naso spicca per note fruttate e agrumate di pompelmo rosa, fiori di arancio, unite a delicate sensazioni gelsomino e tiglio. Al palato è gradevolmente fresco, contraddistinto da un’ottima persistenza aromatica e da una delicata sapidità.
-  #   item-allergeni: anidride solforosa e solfiti
-  #   item-price: 20
-  #   class-allergeni:
-  #   class-price:
-  # -
-  #   item-name: Cuvée Royale Franciacorta docg
-  #   item-description: Cantina Marchesi Antinori. Colore giallo scarico, spuma cremosa con perlage fine e persistente. A livello aromatico si colgono note di pesca a polpa bianca, crosta di pane e lieviti. Notevole equilibrio e vivacità tipica del Brut.
-  #   item-allergeni: anidride solforosa e solfiti
-  #   item-price: 32
-  #   class-allergeni:
-  #   class-price:
+  -
+    item-name: Calafuria Rosato Frizzante igt Salento
+    item-description: Al naso spicca per note fruttate e agrumate di pompelmo rosa, fiori di arancio, unite a delicate sensazioni gelsomino e tiglio. Al palato è gradevolmente fresco, contraddistinto da un’ottima persistenza aromatica e da una delicata sapidità.
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 20
+    class-allergeni:
+    class-price:
+  -
+    item-name: Cuvée Royale Franciacorta docg
+    item-description: Cantina Marchesi Antinori. Colore giallo scarico, spuma cremosa con perlage fine e persistente. A livello aromatico si colgono note di pesca a polpa bianca, crosta di pane e lieviti. Notevole equilibrio e vivacità tipica del Brut.
+    item-allergeni: anidride solforosa e solfiti
+    item-price: 32
+    class-allergeni:
+    class-price:
 
 menu-amaro:
   -
