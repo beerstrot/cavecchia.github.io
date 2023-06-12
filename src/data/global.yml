@@ -362,7 +362,7 @@ menu-hamburger-stagione:
     class-price:
     alt-image: Cacio e Pepe Doppio
   # -
-  #   item-image-16-9: https://picsum.photos/1920/1080
+  #   item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
   #   item-name: Inverno
   #   item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
   #   item-allergeni: Glutine, Uova, Latte
@@ -371,7 +371,7 @@ menu-hamburger-stagione:
   #   class-price:
   #   alt-image:
   # -
-  #   item-image-16-9: https://picsum.photos/1920/1080
+  #   item-image-16-9: hssets/img/prod/InvernoDOPPIO_rettangolare.jpg
   #   item-name: Inverno Doppio
   #   item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
   #   item-allergeni: Glutine, Uova, Latte
@@ -415,24 +415,24 @@ menu-hamburger-stagione:
     class-allergeni:
     class-price:
     alt-image: Estivo Doppio
-  -
-    item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
-    item-name: Deciso
-    item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
-    class-allergeni:
-    class-price:
-    alt-image:
-  -
-    item-image-16-9: assets/img/prod/DecisoDOPPIO_rettangolare.jpg
-    item-name: Deciso Doppio
-    item-description: Doppio burger di manzo (360 grammi), gorgonzola, guanciale, pomodorini confit
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
-    class-allergeni:
-    class-price:
-    alt-image:
+  # -
+  #   item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
+  #   item-name: Deciso
+  #   item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 11,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image:
+  # -
+  #   item-image-16-9: assets/img/prod/DecisoDOPPIO_rettangolare.jpg
+  #   item-name: Deciso Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), gorgonzola, guanciale, pomodorini confit
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 15,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image:
   # -
   #   item-image-16-9: assets/img/prod/FaveePecorino_rettangolare.jpg
   #   item-name: Fave e Pecorino
