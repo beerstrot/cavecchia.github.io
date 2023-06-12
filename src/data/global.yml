@@ -805,14 +805,14 @@ menu-vino:
     class-allergeni:
     class-price:
   -
-    item-name: Villa Bianchi verdicchio doc
+    item-name: Villa Bianchi Verdicchio doc
     item-description: Cantina Umani Ronchi. Colore giallo paglierino brillante, con riflessi verdognoli. Al gusto esprime una piacevole struttura basata su note sapide e fresche, in cui risalta un finale con tipico sentore di mandorla.
     item-allergeni: anidride solforosa e solfiti
     item-price: 14,5 | 3,5
     class-allergeni:
     class-price:
   -
-    item-name: Casal di Serra verdicchio superiore doc
+    item-name: Casal di Serra Verdicchio Superiore doc
     item-description: Cantina Umani Ronchi. Colore giallo paglierino. Profumi intensi di fiori di campo, aromi di frutta a polpa gialla. Ricco e vellutato, con buona dose di freschezza e sapidità che bilancia l’eccellente morbidezza. Finale asciutto, persistente e fruttato.
     item-allergeni: anidride solforosa e solfiti
     item-price: 18
