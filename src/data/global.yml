@@ -254,7 +254,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Beerstrot_rettangolare.jpg
     item-name: Beerstrot
-    item-description: Manzo 180 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
+    item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -263,7 +263,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/BeerstrotDOPPIO_rettangolare.jpg
     item-name: Beerstrot Doppio
-    item-description: Manzo 360 grammi, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
+    item-description: Doppio burger di manzo (360 grammi), cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
@@ -272,7 +272,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/NewYork_rettangolare.jpg
     item-name: New York
-    item-description: Manzo 180 grammi, cheddar, cipolla caramellata, insalata.
+    item-description: Burger di manzo (180 grammi), cheddar, cipolla caramellata, insalata.
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,5
     class-allergeni:
@@ -281,7 +281,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/NewYorkDOPPIO_rettangolare.jpg
     item-name: New York Doppio
-    item-description: Manzo 360 grammi, cheddar, cipolla caramellata, insalata.
+    item-description: Doppio burger di manzo (360 grammi), cheddar, cipolla caramellata, insalata.
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,5
     class-allergeni:
@@ -290,7 +290,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Diablo_rettangolare.jpg
     item-name: Diablo
-    item-description: Manzo 180 grammi, cheddar, bacon croccante, rucola, salsa piccante.
+    item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, rucola, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -299,7 +299,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/DiabloDOPPIO_rettangolare.jpg
     item-name: Diablo Doppio
-    item-description: Manzo 360 grammi, cheddar, bacon croccante, rucola, salsa piccante.
+    item-description: Doppio burger di manzo (360 grammi), cheddar, bacon croccante, rucola, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
@@ -308,7 +308,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
     item-name: Pollo
-    item-description: Pollo 180 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt.
+    item-description: Burger di pollo (180 grammi), fontina, cipolla caramellata, rucola, salsa allo yogurt.
     item-allergeni: Glutine, Uova, Latte
     item-price: 10,9
     class-allergeni:
@@ -317,7 +317,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/PolloDOPPIO_rettangolare.jpg
     item-name: Pollo Doppio
-    item-description: Pollo 360 grammi, fontina, cipolla caramellata, rucola, salsa allo yogurt.
+    item-description: Doppio burger di pollo (360 grammi), fontina, cipolla caramellata, rucola, salsa allo yogurt.
     item-allergeni: Glutine, Uova, Latte
     item-price: 14,9
     class-allergeni:
@@ -346,7 +346,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/CacioePepe_rettangolare.jpg
     item-name: Cacio e Pepe
-    item-description: Manzo 180 grammi, pecorino vallesina, guanciale, pepe.
+    item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -355,7 +355,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/CacioePepeDOPPIO_rettangolare.jpg
     item-name: Cacio e Pepe Doppio
-    item-description: Manzo 360 grammi, pecorino vallesina, guanciale, pepe.
+    item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, guanciale, pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
@@ -364,7 +364,7 @@ menu-hamburger-stagione:
   # -
   #   item-image-16-9: https://picsum.photos/1920/1080
   #   item-name: Inverno
-  #   item-description: Manzo 180 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
+  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
   #   item-allergeni: Glutine, Uova, Latte
   #   item-price: 10,5
   #   class-allergeni:
@@ -373,7 +373,7 @@ menu-hamburger-stagione:
   # -
   #   item-image-16-9: https://picsum.photos/1920/1080
   #   item-name: Inverno Doppio
-  #   item-description: Manzo 360 grammi, pecorino vallesina, bacon croccante, erbe di campo strascinate
+  #   item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
   #   item-allergeni: Glutine, Uova, Latte
   #   item-price: 14,5
   #   class-allergeni:
@@ -382,7 +382,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
     item-name: Primavera
-    item-description: Manzo 180 grammi, composta di feta, pomodorini e timo; insalata riccia.
+    item-description: Burger di manzo (180 grammi), composta di feta, pomodorini e timo; insalata riccia.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -391,70 +391,70 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/PrimaveraDOPPIO_rettangolare.jpg
     item-name: Primavera Doppio
-    item-description: Manzo 360 grammi, omposta di feta, pomodorini e timo; insalata riccia.
+    item-description: Doppio burger di manzo (360 grammi), omposta di feta, pomodorini e timo; insalata riccia.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
     class-price:
     alt-image: Primavera Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
-  #   item-name: Estivo
-  #   item-description: Manzo 180 grammi, mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 11,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Estivo
-  # -
-  #   item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
-  #   item-name: Estivo Doppio
-  #   item-description: Manzo 360 grammi, mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 15,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Estivo Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
-  #   item-name: Deciso
-  #   item-description: Manzo 180 grammi, gorgonzola, guanciale, pomodorini confit
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 11,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image:
-  # -
-  #   item-image-16-9: assets/img/prod/DecisoDOPPIO_rettangolare.jpg
-  #   item-name: Deciso Doppio
-  #   item-description: Manzo 360 grammi, gorgonzola, guanciale, pomodorini confit
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 15,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image:
   -
-    item-image-16-9: assets/img/prod/FaveePecorino_rettangolare.jpg
-    item-name: Fave e Pecorino
-    item-description: Manzo 180 grammi, pecorino vallesina, guanciale, fave in porchetta.
+    item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
+    item-name: Estivo
+    item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
     class-price:
-    alt-image: Fave e Pecorino
+    alt-image: Estivo
   -
-    item-image-16-9: assets/img/prod/FaveePecorinoDOPPIO_rettangolare.jpg
-    item-name: Fave e Pecorini Doppio
-    item-description: Manzo 360 grammi, pecorino vallesina, guanciale, fave in porchetta.
+    item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
+    item-name: Estivo Doppio
+    item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
     class-price:
-    alt-image: Fave e Pecorino Doppio
+    alt-image: Estivo Doppio
+  -
+    item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
+    item-name: Deciso
+    item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    class-allergeni:
+    class-price:
+    alt-image:
+  -
+    item-image-16-9: assets/img/prod/DecisoDOPPIO_rettangolare.jpg
+    item-name: Deciso Doppio
+    item-description: Doppio burger di manzo (360 grammi), gorgonzola, guanciale, pomodorini confit
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    class-allergeni:
+    class-price:
+    alt-image:
+  # -
+  #   item-image-16-9: assets/img/prod/FaveePecorino_rettangolare.jpg
+  #   item-name: Fave e Pecorino
+  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, fave in porchetta.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 11,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Fave e Pecorino
+  # -
+  #   item-image-16-9: assets/img/prod/FaveePecorinoDOPPIO_rettangolare.jpg
+  #   item-name: Fave e Pecorini Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, guanciale, fave in porchetta.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 15,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Fave e Pecorino Doppio
   -
     item-image-16-9: assets/img/prod/Carbonara_rettangolare.jpg
     item-name: Carbonara
-    item-description: Manzo 180 grammi, guanciale, crema di uovo, pecorino romano e pepe.
+    item-description: Burger di manzo (180 grammi), guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 11,9
     class-allergeni:
@@ -463,7 +463,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/CarbonaraDOPPIO_rettangolare.jpg
     item-name: Carbonara Doppio
-    item-description: Manzo 360 grammi, guanciale, crema di uovo, pecorino romano e pepe.
+    item-description: Doppio burger di manzo (360 grammi), guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 15,9
     class-allergeni:
