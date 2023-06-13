@@ -50,7 +50,7 @@ menu-sushi-roll-selection:
     item-name: Roll Gambero e Salmone
     item-image-16-9: assets/img/prod/RollGamberoeSalmone_rettangolare.jpg
     item-price: 12
-    item-description: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese e lime (8 pezzi).
+    item-description: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese, pasta kataifi e zest di lime (8 pezzi).
     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo
     class-allergeni:
     class-price:
@@ -59,7 +59,7 @@ menu-sushi-roll-selection:
     item-name: Roll Mandorle
     item-image-16-9: assets/img/prod/RollMandorle_rettangolare.jpg
     item-price: 11
-    item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle e maionese piccante (8 pezzi).
+    item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle, maionese piccante e pasta kataifi (8 pezzi).
     item-allergeni: Uova, Pesce, Latte, Frutta a guscio, Senape
     class-allergeni:
     class-price:
@@ -361,24 +361,24 @@ menu-hamburger-stagione:
     class-allergeni:
     class-price:
     alt-image: Cacio e Pepe Doppio
-  -
-    item-image-16-9: assets/img/prod/Greco_rettangolare.jpg
-    item-name: Greco
-    item-description: Burger di manzo (180 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
-    class-allergeni:
-    class-price:
-    alt-image: Cacio e Pepe
-  -
-    item-image-16-9: assets/img/prod/GrecoDOPPIO_rettangolare.jpg
-    item-name: Greco Doppio
-    item-description: Doppio burger di manzo (360 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
-    class-allergeni:
-    class-price:
-    alt-image: Cacio e Pepe Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Greco_rettangolare.jpg
+  #   item-name: Greco
+  #   item-description: Burger di manzo (180 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 11,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Cacio e Pepe
+  # -
+  #   item-image-16-9: assets/img/prod/GrecoDOPPIO_rettangolare.jpg
+  #   item-name: Greco Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 15,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Cacio e Pepe Doppio
   # -
   #   item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
   #   item-name: Inverno
@@ -415,24 +415,24 @@ menu-hamburger-stagione:
     class-allergeni:
     class-price:
     alt-image: Primavera Doppio
-  -
-    item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
-    item-name: Estivo
-    item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
-    class-allergeni:
-    class-price:
-    alt-image: Estivo
-  -
-    item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
-    item-name: Estivo Doppio
-    item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
-    class-allergeni:
-    class-price:
-    alt-image: Estivo Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
+  #   item-name: Estivo
+  #   item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 11,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo
+  # -
+  #   item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
+  #   item-name: Estivo Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 15,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo Doppio
   # -
   #   item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
   #   item-name: Deciso
@@ -858,7 +858,7 @@ menu-vino:
     class-allergeni:
     class-price:
   -
-    item-name: Calafuria Rosato Frizzante igt Salento
+    item-name: Calafuria Rosato igt Salento
     item-description: Al naso spicca per note fruttate e agrumate di pompelmo rosa, fiori di arancio, unite a delicate sensazioni gelsomino e tiglio. Al palato è gradevolmente fresco, contraddistinto da un’ottima persistenza aromatica e da una delicata sapidità.
     item-allergeni: anidride solforosa e solfiti
     item-price: 20
