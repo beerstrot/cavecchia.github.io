@@ -361,6 +361,24 @@ menu-hamburger-stagione:
     class-allergeni:
     class-price:
     alt-image: Cacio e Pepe Doppio
+  -
+    item-image-16-9: assets/img/prod/Greco_rettangolare.jpg
+    item-name: Greco
+    item-description: Burger di manzo (180 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    class-allergeni:
+    class-price:
+    alt-image: Cacio e Pepe
+  -
+    item-image-16-9: assets/img/prod/GrecoDOPPIO_rettangolare.jpg
+    item-name: Greco Doppio
+    item-description: Doppio burger di manzo (360 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    class-allergeni:
+    class-price:
+    alt-image: Cacio e Pepe Doppio
   # -
   #   item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
   #   item-name: Inverno
