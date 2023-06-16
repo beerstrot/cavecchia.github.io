@@ -6,7 +6,7 @@ ASPORTO BUGS:
 
 - Cambiare oggetto email asporto in: 'Ordine d'asporto confermato'
 
-_ I prodotti non hanno associata nessuna IVA ****
+- I prodotti non hanno associata nessuna IVA ****
 
 - Orari: chiudo orari, ma quando timer scatta (15 min) mi riapre tutti gli orari chiusi
 

@@ -361,24 +361,24 @@ menu-hamburger-stagione:
     class-allergeni:
     class-price:
     alt-image: Cacio e Pepe Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/Greco_rettangolare.jpg
-  #   item-name: Greco
-  #   item-description: Burger di manzo (180 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 11,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Cacio e Pepe
-  # -
-  #   item-image-16-9: assets/img/prod/GrecoDOPPIO_rettangolare.jpg
-  #   item-name: Greco Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 15,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Cacio e Pepe Doppio
+  -
+    item-image-16-9: assets/img/prod/Greco_rettangolare.jpg
+    item-name: Greco
+    item-description: Burger di manzo (180 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    class-allergeni:
+    class-price:
+    alt-image: Cacio e Pepe
+  -
+    item-image-16-9: assets/img/prod/GrecoDOPPIO_rettangolare.jpg
+    item-name: Greco Doppio
+    item-description: Doppio burger di manzo (360 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    class-allergeni:
+    class-price:
+    alt-image: Cacio e Pepe Doppio
   # -
   #   item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
   #   item-name: Inverno
@@ -415,24 +415,24 @@ menu-hamburger-stagione:
     class-allergeni:
     class-price:
     alt-image: Primavera Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
-  #   item-name: Estivo
-  #   item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 11,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Estivo
-  # -
-  #   item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
-  #   item-name: Estivo Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, pesto di basilico e pinoli
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 15,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Estivo Doppio
+  -
+    item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
+    item-name: Estivo
+    item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    class-allergeni:
+    class-price:
+    alt-image: Estivo
+  -
+    item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
+    item-name: Estivo Doppio
+    item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    class-allergeni:
+    class-price:
+    alt-image: Estivo Doppio
   # -
   #   item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
   #   item-name: Deciso
@@ -690,21 +690,21 @@ menu-birra-spina:
     item-description: IPA 6,5%. Birrificio Mukkeller.
     item-allergeni: glutine
     item-price:
-  # -
-  #   item-name: Brevis Furor
-  #   item-description: IPA 6,3%. Birrificio dei Castelli.
-  #   item-allergeni: glutine
-  #   item-price:
+  -
+    item-name: Brevis Furor
+    item-description: IPA 6,3%. Birrificio dei Castelli.
+    item-allergeni: glutine
+    item-price:
   # -
   #   item-name: Extrema Ratio
   #   item-description: Doppia IPA 7,4%. Birrificio dei Castelli.
   #   item-allergeni: glutine
   #   item-price:
-  # -
-  #   item-name: Hattori Hanzo
-  #   item-description: oppia IPA 8,3%. Birrificio Mukkeller.
-  #   item-allergeni: glutine
-  #   item-price:
+  -
+    item-name: Hattori Hanzo
+    item-description: oppia IPA 8,3%. Birrificio Mukkeller.
+    item-allergeni: glutine
+    item-price:
   # -
   #   item-name: Breaking Hops
   #   item-description: Doppia IPA 7,2%. Birrificio MC-77.
@@ -715,11 +715,11 @@ menu-birra-spina:
     item-description: Doppia New England IPA 7,8%. Birrificio MC-77.
     item-allergeni: glutine
     item-price:
-  # -
-  #   item-name: Velvet Suit
-  #   item-description: New England IPA 6,5%. Birrificio MC-77.
-  #   item-allergeni: glutine
-  #   item-price:
+  -
+    item-name: Velvet Suit
+    item-description: New England IPA 6,5%. Birrificio MC-77.
+    item-allergeni: glutine
+    item-price:
 
 
 
@@ -785,13 +785,13 @@ menu-vino-caraffa:
     item-price: Quarto 3,5 | Litro 9
     class-allergeni:
     class-price:
-  -
-    item-name: Passerina igt
-    item-description: Vino Biologico. Cantina Collevite.
-    item-allergeni: anidride solforosa e solfiti
-    item-price: Quarto 3,5 | Litro 9
-    class-allergeni:
-    class-price:
+  # -
+  #   item-name: Passerina igt
+  #   item-description: Vino Biologico. Cantina Collevite.
+  #   item-allergeni: anidride solforosa e solfiti
+  #   item-price: Quarto 3,5 | Litro 9
+  #   class-allergeni:
+  #   class-price:
   -
     item-name: Verdicchio Matelica doc
     item-description: Cantina Belisario.
