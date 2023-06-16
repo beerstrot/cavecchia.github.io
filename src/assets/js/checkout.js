@@ -92,6 +92,7 @@ function setSendOrder () {
       final_net_price: p.net_price * p.quantity,
       notes: p.noteText,
       price: p.price1,
+      department_id: p.department_id,
       quantity: p.quantity,
     };
     if (p.cotturaId) {
