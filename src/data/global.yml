@@ -433,6 +433,24 @@ menu-hamburger-stagione:
     class-allergeni:
     class-price:
     alt-image: Estivo Doppio
+  -
+    item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
+    item-name: Norma
+    item-description: Burger di manzo (180 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    class-allergeni:
+    class-price:
+    alt-image: Estivo
+  -
+    item-image-16-9: assets/img/prod/NormaDOPPIO_rettangolare.jpg
+    item-name: Norma Doppio
+    item-description: Doppio burger di manzo (360 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    class-allergeni:
+    class-price:
+    alt-image: Estivo Doppio
   # -
   #   item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
   #   item-name: Deciso
