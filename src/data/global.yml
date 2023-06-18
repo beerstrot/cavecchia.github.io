@@ -366,7 +366,7 @@ menu-hamburger-stagione:
     item-name: Greco
     item-description: Burger di manzo (180 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
+    item-price: 10,5
     class-allergeni:
     class-price:
     alt-image: Cacio e Pepe
@@ -375,7 +375,7 @@ menu-hamburger-stagione:
     item-name: Greco Doppio
     item-description: Doppio burger di manzo (360 grammi), melanzana grigliata, insalata riccia, salsa tzatziki. Servito con patatine e a cottura media.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
+    item-price: 14,5
     class-allergeni:
     class-price:
     alt-image: Cacio e Pepe Doppio
@@ -679,15 +679,15 @@ menu-caffe:
 
 menu-birra-spina:
   -
-    item-name: Festbier
+    item-name: Helles
     item-description: Helles stile tedesco non amara 4,9%. Birrificio Forst.
     item-allergeni: glutine
     item-price:
-  # -
-  #   item-name: Italicum
-  #   item-description: Bionda fruttata 5,0%. Birrificio dei Castelli.
-  #   item-allergeni: glutine
-  #   item-price:
+  -
+    item-name: Italicum
+    item-description: Bionda fruttata senza glutine 5,0%. Birrificio dei Castelli.
+    item-allergeni: --
+    item-price:
   -
     item-name: Bock
     item-description: Rossa stile tedesco dolce 6,5%. Birrificio Forst.
@@ -704,6 +704,11 @@ menu-birra-spina:
     item-allergeni: glutine
     item-price:
   -
+    item-name: Californication
+    item-description: West Coast IPA 6,3%. Birrificio Mukkeller.
+    item-allergeni: glutine
+    item-price:
+  -
     item-name: Mazzu de Fiuri
     item-description: IPA 6,5%. Birrificio Mukkeller.
     item-allergeni: glutine
@@ -713,21 +718,21 @@ menu-birra-spina:
     item-description: IPA 6,3%. Birrificio dei Castelli.
     item-allergeni: glutine
     item-price:
-  # -
-  #   item-name: Extrema Ratio
-  #   item-description: Doppia IPA 7,4%. Birrificio dei Castelli.
-  #   item-allergeni: glutine
-  #   item-price:
   -
-    item-name: Hattori Hanzo
-    item-description: oppia IPA 8,3%. Birrificio Mukkeller.
+    item-name: Extrema Ratio
+    item-description: Doppia IPA 7,4%. Birrificio dei Castelli.
     item-allergeni: glutine
     item-price:
-  # -
-  #   item-name: Breaking Hops
-  #   item-description: Doppia IPA 7,2%. Birrificio MC-77.
-  #   item-allergeni: glutine
-  #   item-price:
+  -
+    item-name: Hattori Hanzo
+    item-description: Doppia IPA 8,3%. Birrificio Mukkeller.
+    item-allergeni: glutine
+    item-price:
+  -
+    item-name: Breaking Hops
+    item-description: Doppia IPA 7,2%. Birrificio MC-77.
+    item-allergeni: glutine
+    item-price:
   -
     item-name: Billycock
     item-description: Doppia New England IPA 7,8%. Birrificio MC-77.
