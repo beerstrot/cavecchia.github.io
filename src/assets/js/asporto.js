@@ -372,7 +372,7 @@ function getClosedTimeslots () {
 
 function setOrari () {
   const d_ = new Date();
-  const diff = 30; // minutes
+  const diff = 15; // minutes
   const d = new Date(d_.getTime() + diff * 60000);
   const h = d.getUTCHours();
   const m = d.getUTCMinutes();
