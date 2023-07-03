@@ -13,7 +13,7 @@ menu-sushi-signature:
     item-image-16-9: assets/img/prod/RollSpecialTonno_rettangolare.jpg
     item-price: 14
     item-description: Tonno e mango ricoperti da tartare di tonno, maionese e granella di pistacchio (8 pezzi).
-    item-allergeni: Pesce, Soia, Latte, Frutta a guscio, Senape
+    item-allergeni: Uova, Pesce, Soia, Frutta a guscio
     class-allergeni:
     class-price:
     alt-image: Roll Special Tonno
@@ -22,7 +22,7 @@ menu-sushi-signature:
     item-image-16-9: assets/img/prod/RollSpecialSalmoneFritto_rettangolare.jpg
     item-price: 15
     item-description: Salmone fritto e insalata croccante ricoperti da carpaccio di branzino scottato e maionese piccante (8 pezzi).
-    item-allergeni: Pesce, Soia, Uova, Senape
+    item-allergeni: Uova, Pesce, Soia, Senape
     class-allergeni:
     class-price:
     alt-image: Roll Special Salmone Fritto
@@ -31,7 +31,7 @@ menu-sushi-signature:
     item-image-16-9: assets/img/prod/NigiriSpecial_rettangolare.jpg
     item-price: 14
     item-description: 6 nigiri speciali dello chef.
-    item-allergeni: Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
+    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     class-allergeni:
     class-price:
     alt-image: Nigiri Special
@@ -40,7 +40,7 @@ menu-sushi-signature:
     item-image-16-9: assets/img/prod/GunkanSpecial_rettangolare.jpg
     item-price: 14
     item-description: 6 gunkan speciali dello chef.
-    item-allergeni: Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
+    item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
     class-allergeni:
     class-price:
     alt-image: Gunkan Special
@@ -60,7 +60,7 @@ menu-sushi-roll-selection:
     item-image-16-9: assets/img/prod/RollMandorle_rettangolare.jpg
     item-price: 11
     item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle, maionese piccante e pasta kataifi (8 pezzi).
-    item-allergeni: Uova, Pesce, Latte, Frutta a guscio, Senape
+    item-allergeni: Glutine, Uova, Pesce, Latte, Frutta a guscio, Senape
     class-allergeni:
     class-price:
     alt-image: Roll Mandorle
@@ -78,7 +78,7 @@ menu-sushi-roll-selection:
     item-image-16-9: assets/img/prod/RollTonno_rettangolare.jpg
     item-price: 12
     item-description: Tonno, avocado e pomodoro secco ricoperti da tobiko red e maionese piccante (8 pezzi).
-    item-allergeni: Uova, Pesce
+    item-allergeni: Uova, Pesce, Senape
     class-allergeni:
     class-price:
     alt-image: Roll Tonno
@@ -114,7 +114,7 @@ menu-sushi-roll-selection:
     item-image-16-9: assets/img/prod/RollVegetariano_rettangolare.jpg
     item-price: 10
     item-description: Carota, cetrioli e avocado ricoperti da philadelphia, maionese rosa e cipolla fritta. Il tutto avvolto in carta di soia gialla (8 pezzi).
-    item-allergeni: Uova, Soia, Latte, Senape
+    item-allergeni: Glutine, Uova, Soia, Latte, Senape
     class-allergeni:
     class-price:
     alt-image: Roll Vegetariano
@@ -161,7 +161,7 @@ menu-sushi-hosomaki:
     item-image-16-9: assets/img/prod/HosomakiSpecialSalmone_rettangolare.jpg
     item-price: 10
     item-description: Hosomaki di salmone ricoperto da philadelphia, fragole e salsa teriyaki (8 pezzi).
-    item-allergeni: Pesce, Soia, Latte, Senape
+    item-allergeni: Glutine, Pesce, Soia, Latte, Senape
     class-allergeni:
     class-price:
     alt-image: Hosomoki Special Salmone
