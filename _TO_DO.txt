@@ -4,13 +4,12 @@ ASPORTO BUGS:
 
     NUOVI:
 
-- Cambiare oggetto email asporto in: 'Ordine d'asporto confermato'
 
 - I prodotti non hanno associata nessuna IVA **** OK
 
-- Orari: chiudo orari, ma quando timer scatta (15 min) mi riapre tutti gli orari chiusi
+- Orari: chiudo orari, ma quando timer scatta (15 min) mi riapre tutti gli orari chiusi   sto testando
 
-- Cambiare oggetto email asporto: "L'ordine da asporto è confermato"
+- Cambiare oggetto email asporto: "Ordine da asporto confermato"
 
 
     GIA' SEGNALATI:
@@ -20,11 +19,11 @@ ASPORTO BUGS:
 
 - Se seleziono lo stesso prodotto 2 volte: uno ben cotto e uno al sangue o con note diverse, il carrello mi tiene solo ultima modifica. Es Beerstrot al sangue, senza cheddar metto nel carrello, Beerstrot Ben cotto, note: nessuna e metto nel carrello -> nel carrello ho 2 Beerstrot Ben cotto e senza note. Qui non ci eravamo capiti bene (si possono accorpare i prodotti con stessi attributi, ma prodotti con attributi diversi tipo note e cottura, non vanno accorpati) **
 
-- template email asporto da collegare a: ./email/email-riepilogo-ordine-asporto_.html OK ANDREA: ho bisogno di avere codice {{_prod-rows}}) e capire se migliorabile, così non si capisce granché
+- template email asporto da collegare a: ./email/email-riepilogo-ordine-asporto_.html OK ANDREA: ho bisogno di avere codice {{_prod-rows}}) e capire se migliorabile, così non si capisce granché  OK
 
 
 
-- A volte non c'è il tipo di cottura (qui dobbiamo testare più a fondo perché non riesco sempre a riprodurre il bug)
+- A volte non c'è il tipo di cottura (qui dobbiamo testare più a fondo perché non riesco sempre a riprodurre il bug)  OK
 
 
 - Carrello mobile: metto a 0 tutti i prodotti -> vai al checkout è ancora cliccabile (dovrebbe essere grayed out)
