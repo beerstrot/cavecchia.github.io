@@ -85,7 +85,7 @@ const carrelloProd = (name, notes, cottura, quantity, price) => {
     <p class="note-item">Quantità: ${quantity}</p>
   </div>
   <div class="item-price">
-    <p class="prezzo-item ">€&thinsp;${price}</p>
+    <p class="prezzo-item ">&thinsp;${price}</p>
   </div>
 </div>
 `
