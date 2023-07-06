@@ -52,7 +52,7 @@ $(document).ready(() => {
   } else if (en('informazioni-legali.html') || en('informazioni-legali')) {
   } else if (en('sala-comandi.html') || en('sala-comandi')) {
   } else if (en('404.html') || en('404')) {
-  } else if (en('reset-password-landing.html') || en('reset-password-landing') || en('reset-password.html') || en('reset-password')) {
+  } else if (en('reset-password-landing.html') || en('reset-password-landing') || en('reset-password.html') || en('reset-password') || en('reset-password-success.html') || en('reset-password-success')) {
   } else { // index.html:
     splideInit();
   }
