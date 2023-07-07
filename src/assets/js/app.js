@@ -123,32 +123,3 @@ function splideInit () {
     },
   }).mount({ Video });
 }
-
-/*
-function setRegister () {
-  $('#register-btn').on('click', () => {
-    const data = {};
-    const get = id => {
-      data[id] = $(`#${id}`).val();
-    }
-    ['name', 'surname', 'telephone', 'email', 'password'].forEach(i => get(i));
-    data.newsletter = $('#newsletter').is(":checked");
-    mkCall(
-      'POST',
-      { action: 'registerClient', data },
-      res => {
-        console.log({ res });
-        window.alert('Ti sei registrato con successo. Chiudi per continuare.');
-        window.localStorage.currentClient = JSON.stringify(data);
-        window.location.href = ORIGIN +  '/account.html'
-      },
-      res => {
-        // TODO: add this show message modal
-        // showMessage(messageError);
-        console.log({ res });
-        alert('Qualcosa è andato storto. Contattaci al numero 071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
-      }
-    );
-  });
-}
-*/
