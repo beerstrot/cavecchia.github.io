@@ -27,7 +27,7 @@ $('#loading').show();
 $(document).ready(() => {
   const pn = window.location.pathname;
   const en = s => pn.includes(s);
-  const accountRedirection = ((en('asporto.html') || en('asporto'))) ? '/checkout.html' : '/account.html';
+  const accountRedirection = en('asporto') ? '/checkout.html' : '/account.html';
   setRegister(accountRedirection);
   setLogin(accountRedirection);
   $('.user-pg-btn').on('click', () => {
@@ -37,24 +37,24 @@ $(document).ready(() => {
       $('#signup-login').foundation('open');
     }
   });
-  if (en('riserva-un-tavolo.html') || en('consulta.html') || en('riserva-un-tavolo') || en('consulta')){
+  if (en('riserva-un-tavolo') || en('consulta')){
     import('./prenota');
-  } else if (en('asporto.html') || en('asporto')) {
+  } else if (en('asporto')) {
     import('./asporto');
-  } else if (en('checkout-landing.html') || en('checkout-landing')) {
+  } else if (en('checkout-landing')) {
     import('./checkout-landing');
-  } else if (en('checkout.html') || en('checkout')) {
+  } else if (en('checkout')) {
     import('./checkout');
-  } else if (en('account.html') || en('account')) {
+  } else if (en('account')) {
     import('./account');
-  } else if (en('orari.html') || en('orari')) {
+  } else if (en('orari')) {
     import('./orari');
-  } else if (en('menu.html') || en('menu')) {
-  } else if (en('chi-siamo.html') || en('chi-siamo')) {
-  } else if (en('informazioni-legali.html') || en('informazioni-legali')) {
-  } else if (en('sala-comandi.html') || en('sala-comandi')) {
-  } else if (en('404.html') || en('404')) {
-  } else if (en('reset-password-landing.html') || en('reset-password-landing') || en('reset-password.html') || en('reset-password') || en('reset-password-success.html') || en('reset-password-success')) {
+  // } else if (en('menu')) {
+  // } else if (en('chi-siamo')) {
+  // } else if (en('informazioni-legali')) {
+  // } else if (en('sala-comandi')) {
+  // } else if (en('404')) {
+  // } else if (en('reset-password-landing') || en('reset-password') || en('reset-password-success')) {
   } else { // index.html:
     splideInit();
   }

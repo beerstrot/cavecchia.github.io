@@ -22065,7 +22065,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   var en = function en(s) {
     return pn.includes(s);
   };
-  var accountRedirection = en('asporto.html') || en('asporto') ? '/checkout.html' : '/account.html';
+  var accountRedirection = en('asporto') ? '/checkout.html' : '/account.html';
   (0,_userAccess__WEBPACK_IMPORTED_MODULE_6__.setRegister)(accountRedirection);
   (0,_userAccess__WEBPACK_IMPORTED_MODULE_6__.setLogin)(accountRedirection);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.user-pg-btn').on('click', function () {
@@ -22075,19 +22075,25 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('#signup-login').foundation('open');
     }
   });
-  if (en('riserva-un-tavolo.html') || en('consulta.html') || en('riserva-un-tavolo') || en('consulta')) {
+  if (en('riserva-un-tavolo') || en('consulta')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_prenota_js").then(__webpack_require__.bind(__webpack_require__, /*! ./prenota */ "./src/assets/js/prenota.js"));
-  } else if (en('asporto.html') || en('asporto')) {
+  } else if (en('asporto')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_asporto_js").then(__webpack_require__.bind(__webpack_require__, /*! ./asporto */ "./src/assets/js/asporto.js"));
-  } else if (en('checkout-landing.html') || en('checkout-landing')) {
+  } else if (en('checkout-landing')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_checkout-landing_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./checkout-landing */ "./src/assets/js/checkout-landing.js", 23));
-  } else if (en('checkout.html') || en('checkout')) {
+  } else if (en('checkout')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_checkout_js").then(__webpack_require__.bind(__webpack_require__, /*! ./checkout */ "./src/assets/js/checkout.js"));
-  } else if (en('account.html') || en('account')) {
+  } else if (en('account')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_account_js").then(__webpack_require__.bind(__webpack_require__, /*! ./account */ "./src/assets/js/account.js"));
-  } else if (en('orari.html') || en('orari')) {
+  } else if (en('orari')) {
     __webpack_require__.e(/*! import() */ "src_assets_js_orari_js").then(__webpack_require__.bind(__webpack_require__, /*! ./orari */ "./src/assets/js/orari.js"));
-  } else if (en('menu.html') || en('menu')) {} else if (en('chi-siamo.html') || en('chi-siamo')) {} else if (en('informazioni-legali.html') || en('informazioni-legali')) {} else if (en('sala-comandi.html') || en('sala-comandi')) {} else if (en('404.html') || en('404')) {} else if (en('reset-password-landing.html') || en('reset-password-landing') || en('reset-password.html') || en('reset-password') || en('reset-password-success.html') || en('reset-password-success')) {} else {
+    // } else if (en('menu')) {
+    // } else if (en('chi-siamo')) {
+    // } else if (en('informazioni-legali')) {
+    // } else if (en('sala-comandi')) {
+    // } else if (en('404')) {
+    // } else if (en('reset-password-landing') || en('reset-password') || en('reset-password-success')) {
+  } else {
     // index.html:
     splideInit();
   }
