@@ -22065,9 +22065,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   var en = function en(s) {
     return pn.includes(s);
   };
-  var loginRedirection = en('asporto.html') || en('asporto') ? '/checkout.html' : '/account.html';
-  (0,_userAccess__WEBPACK_IMPORTED_MODULE_6__.setRegister)(loginRedirection);
-  (0,_userAccess__WEBPACK_IMPORTED_MODULE_6__.setLogin)(loginRedirection);
+  var accountRedirection = en('asporto.html') || en('asporto') ? '/checkout.html' : '/account.html';
+  (0,_userAccess__WEBPACK_IMPORTED_MODULE_6__.setRegister)(accountRedirection);
+  (0,_userAccess__WEBPACK_IMPORTED_MODULE_6__.setLogin)(accountRedirection);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.user-pg-btn').on('click', function () {
     if (window.localStorage.currentClient) {
       window.location.href = _utils__WEBPACK_IMPORTED_MODULE_5__.ORIGIN + '/account.html';
@@ -22154,35 +22154,6 @@ function splideInit() {
     Video: _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_4__.Video
   });
 }
-
-/*
-function setRegister () {
-  $('#register-btn').on('click', () => {
-    const data = {};
-    const get = id => {
-      data[id] = $(`#${id}`).val();
-    }
-    ['name', 'surname', 'telephone', 'email', 'password'].forEach(i => get(i));
-    data.newsletter = $('#newsletter').is(":checked");
-    mkCall(
-      'POST',
-      { action: 'registerClient', data },
-      res => {
-        console.log({ res });
-        window.alert('Ti sei registrato con successo. Chiudi per continuare.');
-        window.localStorage.currentClient = JSON.stringify(data);
-        window.location.href = ORIGIN +  '/account.html'
-      },
-      res => {
-        // TODO: add this show message modal
-        // showMessage(messageError);
-        console.log({ res });
-        alert('Qualcosa è andato storto. Contattaci al numero 071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
-      }
-    );
-  });
-}
-*/
 }();
 /******/ })()
 ;

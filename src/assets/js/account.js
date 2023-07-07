@@ -26,17 +26,15 @@ function setUpdate () {
     const get = id => {
       data[id] = $(`#${id}-m`).val();
     }
-    console.log('click make me');
     ['name', 'surname', 'telephone', 'email'].forEach(i => get(i));
-    data.newsletter = $('#newsletter').is(":checked");
+    data.newsletter = $('#newsletter-m').is(":checked");
     mkCall(
       'POST',
       { action: 'updateClient', data },
       res => {
-        console.log({ res });
-        ['name', 'surname', 'telephone', 'email'].forEach(i => { window.user[i] = $(`#${i}-m`).val() });
+        ['name', 'surname', 'telephone', 'newsletter'].forEach(i => { window.user[i] = res.Attributes[i] });
+        setUserData();
         window.localStorage.currentClient = JSON.stringify(window.user);
-        window.location.href = '/account.html';
       },
       res => {
         // TODO: add this show message modal

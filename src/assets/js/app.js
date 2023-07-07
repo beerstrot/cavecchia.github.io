@@ -27,9 +27,9 @@ $('#loading').show();
 $(document).ready(() => {
   const pn = window.location.pathname;
   const en = s => pn.includes(s);
-  const loginRedirection = ((en('asporto.html') || en('asporto'))) ? '/checkout.html' : '/account.html';
-  setRegister(loginRedirection);
-  setLogin(loginRedirection);
+  const accountRedirection = ((en('asporto.html') || en('asporto'))) ? '/checkout.html' : '/account.html';
+  setRegister(accountRedirection);
+  setLogin(accountRedirection);
   $('.user-pg-btn').on('click', () => {
     if (window.localStorage.currentClient) {
       window.location.href = ORIGIN + '/account.html';

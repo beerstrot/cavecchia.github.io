@@ -35,23 +35,19 @@ function setUpdate() {
     var get = function get(id) {
       data[id] = $("#".concat(id, "-m")).val();
     };
-    console.log('click make me');
     ['name', 'surname', 'telephone', 'email'].forEach(function (i) {
       return get(i);
     });
-    data.newsletter = $('#newsletter').is(":checked");
+    data.newsletter = $('#newsletter-m').is(":checked");
     (0,_utils__WEBPACK_IMPORTED_MODULE_0__.mkCall)('POST', {
       action: 'updateClient',
       data: data
     }, function (res) {
-      console.log({
-        res: res
+      ['name', 'surname', 'telephone', 'newsletter'].forEach(function (i) {
+        window.user[i] = res.Attributes[i];
       });
-      ['name', 'surname', 'telephone', 'email'].forEach(function (i) {
-        window.user[i] = $("#".concat(i, "-m")).val();
-      });
+      setUserData();
       window.localStorage.currentClient = JSON.stringify(window.user);
-      window.location.href = '/account.html';
     }, function (res) {
       // TODO: add this show message modal
       showMessage(messageError);
