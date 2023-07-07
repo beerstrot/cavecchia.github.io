@@ -49,12 +49,12 @@ $(document).ready(() => {
     import('./account');
   } else if (en('orari')) {
     import('./orari');
-  // } else if (en('menu')) {
-  // } else if (en('chi-siamo')) {
-  // } else if (en('informazioni-legali')) {
-  // } else if (en('sala-comandi')) {
-  // } else if (en('404')) {
-  // } else if (en('reset-password-landing') || en('reset-password') || en('reset-password-success')) {
+  } else if (en('menu')) {
+  } else if (en('chi-siamo')) {
+  } else if (en('informazioni-legali')) {
+  } else if (en('sala-comandi')) {
+  } else if (en('404')) {
+  } else if (en('reset-password-landing') || en('reset-password') || en('reset-password-success')) {
   } else { // index.html:
     splideInit();
   }
