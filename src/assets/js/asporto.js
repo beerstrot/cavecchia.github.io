@@ -1,4 +1,4 @@
-import { bana, mkCall, testeLambdaPOST, formatNum, ORIGIN } from './utils';
+import { bana, mkCall, formatNum, ORIGIN } from './utils';
 import { itemsCarrelloTable } from './htmlTemplates';
 
 $(document).ready(() => {
@@ -13,12 +13,9 @@ $(document).ready(() => {
       showMessage(messageError);
     }
   );
-  // testeLambdaPOST();
 });
 
 function mkInterface (r) {
-  setLogin();
-  setRegister();
   const d = JSON.parse(r);
 
   const prods = d.items.results
@@ -58,7 +55,6 @@ function mkMenu (prods) {
   $('#carrelloPieno').hide();
   $('#carrelloPiccoloPieno').hide();
   checkStoredOrder();
-  setRegister();
   getClosedTimeslots();
 }
 
@@ -406,58 +402,4 @@ function getCotturaId (p) {
     return cot.id;
   }
   return undefined;
-}
-
-function setRegister () {
-  $('#register-btn').off('click').on('click', () => {
-    const data = {};
-    const get = id => {
-      data[id] = $(`#${id}`).val();
-    }
-    ['name', 'surname', 'telephone', 'email', 'password'].forEach(i => get(i));
-    data.newsletter = $('#newsletter').is(":checked");
-    mkCall(
-      'POST',
-      { action: 'registerClient', data },
-      res => {
-        window.alert('Ti sei registrato con successo. Chiudi per continuare.');
-        window.localStorage.currentClient = JSON.stringify(data);
-        window.location.href = ORIGIN + '/checkout.html';
-      },
-      res => {
-        // TODO: add this show message modal
-        // showMessage(messageError);
-        alert('Qualcosa è andato storto. Contattaci al numero 071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
-      }
-    );
-  });
-}
-
-function setLogin () {
-  $('#login-btn').off('click').on('click', () => {
-    const data = {};
-    const get = id => {
-      data[id] = $(`#${id}-login`).val();
-    }
-    ['email', 'password'].forEach(i => get(i));
-    mkCall(
-      'POST',
-      { action: 'login', data },
-      res => {
-        // window.alert('res ok');
-        // window.alert(res);
-        // console.log({ res });
-        if (!res.result) return alert(res.details);
-        window.localStorage.currentClient = JSON.stringify(res.details);
-        window.location.href = ORIGIN + '/checkout.html';
-      },
-      res => {
-        window.alert('error');
-        console.log({ res })
-        // TODO: add this show message modal
-        // showMessage(messageError);
-        alert('Qualcosa è andato storto. Contattaci al numero 071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
-      }
-    );
-  });
 }

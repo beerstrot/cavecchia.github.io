@@ -2,7 +2,9 @@ import { mkCall } from './utils';
 import { carrelloCheckoutUser } from './htmlTemplates';
 
 $(document).ready(() => {
-  window.user = JSON.parse(window.localStorage.currentClient);
+  if (window.localStorage.currentClient)
+    window.user = JSON.parse(window.localStorage.currentClient);
+  else window.location.href = '/index.html'
   $('#logout-btn').on('click', () => {
     delete window.localStorage.currentClient;
     window.location.href = '/index.html'

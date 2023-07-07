@@ -21,13 +21,15 @@ import { Video } from '@splidejs/splide-extension-video';
 import('./cookieconsent-init');
 import('./navbar');
 import {  mkCall, ORIGIN } from './utils';
+import { setLogin, setRegister } from './userAccess';
 $('#loading').show();
 
 $(document).ready(() => {
   const pn = window.location.pathname;
   const en = s => pn.includes(s);
-  setRegister();
-  setLogin();
+  const loginRedirection = ((en('asporto.html') || en('asporto'))) ? '/checkout.html' : '/account.html';
+  setRegister(loginRedirection);
+  setLogin(loginRedirection);
   $('.user-pg-btn').on('click', () => {
     if (window.localStorage.currentClient) {
       window.location.href = ORIGIN + '/account.html';
@@ -122,6 +124,7 @@ function splideInit () {
   }).mount({ Video });
 }
 
+/*
 function setRegister () {
   $('#register-btn').on('click', () => {
     const data = {};
@@ -148,29 +151,4 @@ function setRegister () {
     );
   });
 }
-
-
-function setLogin () {
-  $('#login-btn').on('click', () => {
-    const data = {};
-    const get = id => {
-      data[id] = $(`#${id}-login`).val();
-    }
-    ['email', 'password'].forEach(i => get(i));
-    mkCall(
-      'POST',
-      { action: 'login', data },
-      res => {
-        if (!res.result) return alert(res.details);
-        window.localStorage.currentClient = JSON.stringify(res.details);
-        window.location.href = ORIGIN + '/account.html'
-      },
-      res => {
-        console.log({ res })
-        // TODO: add this show message modal
-        // showMessage(messageError);
-        alert('Qualcosa è andato storto. Contattaci al numero 071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
-      }
-    );
-  });
-}
+*/
