@@ -80,7 +80,7 @@ window.addEventListener('load', function(){
 					blocks: [
 						{
 							title: 'Utilizzo dei cookie',
-							description: 'Utilizziamo i cookie per assicurare le funzionalità di base del sito e per rendere più gradevole la tua esperienza. Puoi scegliere di disabilitare i cookie non strettamente necessari quando vuoi. Per maggiori dettagli sui cookie e sulla privacy, ti preghiamo di leggere le nostre informazioni legali a questo <a class="cc-link" href="{{root}}informazioni-legali.html">link</a>.'
+							description: 'Utilizziamo i cookie per assicurare le funzionalità di base del sito e per rendere più gradevole la tua esperienza. Puoi scegliere di disabilitare i cookie non strettamente necessari quando vuoi. Per maggiori dettagli sui cookie e sulla privacy, ti preghiamo di leggere le nostre informazioni legali a questo <a class="cc-link" href="https://www.beerstrot.it/informazioni-legali.html#cookie">link</a>.'
 						}, {
 							title: 'Cookie strettamente necessari',
 							description: 'Sono i cookie necessari per il corretto funzionamento del sito o servizio e non possono essere disattivati nei nostri sistemi.',
