@@ -989,21 +989,21 @@ menu-drinks:
     class-price:
   -
     item-name: Gin Tonic Ginpilz
-    item-description: Aromatico. Servito con acqua tonica J. Gasco.
+    item-description: Gin con chiaro profumo e sapore di ginepro. Servito con acqua tonica J. Gasco.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
     class-price:
   -
     item-name: Gin Tonic Silverback
-    item-description: London Gin. Servito con acqua tonica J. Gasco.
+    item-description: London Dry Gin con profumi agrumati e floreali; speziato, erbaceo con note dolci di arancia, miele e citronella e sentori di ginepro. Servito con acqua tonica J. Gasco.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
     class-price:
   -
     item-name: Gin Tonic Puro
-    item-description: Morbido. Servito con acqua tonica J. Gasco.
+    item-description: Complesso, con un carattere officinale fresco e agrumato, ma sorpendentemente morbido e persistente. Servito con acqua tonica J. Gasco.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
