@@ -4,10 +4,10 @@ import { carrelloCheckoutUser } from './htmlTemplates';
 $(document).ready(() => {
   if (window.localStorage.currentClient)
     window.user = JSON.parse(window.localStorage.currentClient);
-  else window.location.href = '/index.html'
+  else window.location.href = '/'
   $('#logout-btn').on('click', () => {
     delete window.localStorage.currentClient;
-    window.location.href = '/index.html'
+    window.location.href = '/'
   });
   setUserData();
   setUpdate();
