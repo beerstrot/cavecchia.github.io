@@ -225,7 +225,7 @@ function mkModal (p, secDiv) {
           const val = parseInt($input.val(), 10);
           $input.val(val + 1);
           p.quantity = val + 1;
-          $('.prezzo-item-' + pid).html(formatNum((val + 1) * p.price1));
+              $('.prezzo-item-' + pid).html(formatNum((val + 1) * p.price1));
           updateTotal();
         });
         $('.input-number-decrement-' + pid).click(function() {

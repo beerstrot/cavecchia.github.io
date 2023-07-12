@@ -20,8 +20,8 @@ import Splide from '@splidejs/splide';
 import { Video } from '@splidejs/splide-extension-video';
 import('./cookieconsent-init');
 import('./navbar');
-import {  mkCall, ORIGIN } from './utils';
-import { setLogin, setRegister } from './userAccess';
+import { mkCall, ORIGIN } from './utils';
+import { setLogin, setRegister, setPasswordResetRequest, setPasswordReset } from './userAccess';
 $('#loading').show();
 
 $(document).ready(() => {
@@ -30,6 +30,8 @@ $(document).ready(() => {
   const accountRedirection = en('asporto') ? '/checkout.html' : '/account.html';
   setRegister(accountRedirection);
   setLogin(accountRedirection);
+  setPasswordResetRequest();
+  setPasswordReset();
   $('.user-pg-btn').on('click', () => {
     if (window.localStorage.currentClient) {
       window.location.href = ORIGIN + '/account.html';
@@ -49,12 +51,15 @@ $(document).ready(() => {
     import('./account');
   } else if (en('orari')) {
     import('./orari');
+  } else if (en('reset-password-landing')) {
+    import('./password-reset-landing');
+  } else if (en('reset-password') || en('reset-password-success')) {
+    import('./password-reset');
   } else if (en('menu')) {
   } else if (en('chi-siamo')) {
   } else if (en('informazioni-legali')) {
   } else if (en('sala-comandi')) {
   } else if (en('404')) {
-  } else if (en('reset-password-landing') || en('reset-password') || en('reset-password-success')) {
   } else { // index.html:
     splideInit();
   }

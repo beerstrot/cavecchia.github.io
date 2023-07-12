@@ -29,7 +29,7 @@ function mkCall(type, data, success, error) {
   $.ajax(set);
 }
 
-function testeLambdaPOST () {
+function testeLambdaPOST() {
   mkCall(
     'POST',
     { action: 'test', data: { hey: 'man', nums: [5, 6, 7], jac: { 33: 44, l: ['asd', 'ewq', 66] } } },
@@ -38,7 +38,7 @@ function testeLambdaPOST () {
   );
 }
 
-function testeLambdaGET () {
+function testeLambdaGET() {
   mkCall(
     'GET',
     { action: 'test', data: 'a get arg' },
@@ -47,18 +47,25 @@ function testeLambdaGET () {
   );
 }
 
-function testeLambda () {
+function testeLambda() {
   testeLambdaGET();
   testeLambdaPOST();
 }
 
-function formatNum (num) {
-  // return num.toLocaleString(undefined, { minimumFractionDigits: 2 })
+function formatNum(num) {
   return num.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 }
+
+function validateEmail(email) {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
 
 const foo = window.location.href.split('/');
 const ORIGIN = foo.slice(0, foo.length - 1).join('/');
 
 const bana = 55;
-export { bana, mkCall, testeLambdaPOST, testeLambdaGET, testeLambda, formatNum, ORIGIN };
+export { bana, mkCall, testeLambdaPOST, testeLambdaGET, testeLambda, formatNum, validateEmail, ORIGIN };

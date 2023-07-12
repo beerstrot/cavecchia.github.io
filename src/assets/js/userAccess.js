@@ -1,6 +1,6 @@
-import {  mkCall, ORIGIN } from './utils';
+import {  mkCall, ORIGIN, validateEmail } from './utils';
 
-function setLogin (redirectionLink) {
+function setLogin(redirectionLink) {
   $('#login-btn').on('click', () => {
     const data = {};
     const get = id => {
@@ -23,7 +23,7 @@ function setLogin (redirectionLink) {
   });
 }
 
-function setRegister (redirectionLink) {
+function setRegister(redirectionLink) {
   $('#register-btn').on('click', () => {
     const data = {};
     const get = id => {
@@ -47,4 +47,54 @@ function setRegister (redirectionLink) {
   });
 }
 
-export { setLogin, setRegister };
+function setPasswordResetRequest() {
+  $('#password-reset-btn').on('click', () => {
+    let targetEmail = $('#password-reset-email').val();
+    if (validateEmail(targetEmail)) {
+      let data = {
+        'email': targetEmail
+      };
+      mkCall(
+        'POST',
+        { action: 'passwordResetRequest', data },
+        res => {
+          if (!res.result) return alert(res.details);
+          window.location.href = ORIGIN + ('/reset-password-landing.html');
+          window.sessionStorage.setItem("targetEmail", targetEmail);
+        },
+        res => {
+          // TODO: add this show message modal
+          alert('Qualcosa è andato storto. Contattaci al numero 071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
+        }
+      );
+    }
+    else alert("L'indirizzo email non è valido.");
+  });
+}
+
+function setPasswordReset() {
+  $('#new-password-btn').on('click', () => {
+    let newPassword = $('#new-password').val();
+    let currentPageParameters = new URL(window.location.href).searchParams;
+    let data = {
+      'email': currentPageParameters.get('email'),
+      'key': currentPageParameters.get('key'),
+      'new_password': newPassword
+    };
+    mkCall(
+      'POST',
+      { action: 'passwordReset', data },
+      res => {
+        if (!res.result) return alert(res.details);
+        alert(res.details);
+        window.location.href = ORIGIN;
+      },
+      res => {
+        // TODO: add this show message modal
+        alert('Qualcosa è andato storto. Contattaci al numero 071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
+      }
+    );
+  });
+}
+
+export { setLogin, setRegister, setPasswordResetRequest, setPasswordReset };
