@@ -1,1 +1,0 @@
-(self.webpackChunkfoundation_zurb_template=self.webpackChunkfoundation_zurb_template||[]).push([[202],{202:function(){$(document).ready((function(){}))}}]);

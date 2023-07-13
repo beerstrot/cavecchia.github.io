@@ -1,4 +1,4 @@
-import {  mkCall, ORIGIN, validateEmail } from './utils';
+import {  mkCall, validateEmail } from './utils';
 
 function setLogin(redirectionLink) {
   $('#login-btn').on('click', () => {
@@ -13,7 +13,7 @@ function setLogin(redirectionLink) {
       res => {
         if (!res.result) return alert(res.details);
         window.localStorage.currentClient = JSON.stringify(res.details);
-        window.location.href = ORIGIN + (redirectionLink || '/account.html');
+        window.location.href = window.location.origin + (redirectionLink || '/account.html');
       },
       res => {
         // TODO: add this show message modal
@@ -37,7 +37,7 @@ function setRegister(redirectionLink) {
       res => {
         window.alert('Ti sei registrato con successo. Chiudi per continuare.');
         window.localStorage.currentClient = JSON.stringify(data);
-        window.location.href = ORIGIN + (redirectionLink || '/account.html');
+        window.location.href = window.location.origin + (redirectionLink || '/account.html');
       },
       res => {
         // TODO: add this show message modal
@@ -59,7 +59,7 @@ function setPasswordResetRequest() {
         { action: 'passwordResetRequest', data },
         res => {
           if (!res.result) return alert(res.details);
-          window.location.href = ORIGIN + ('/reset-password-landing.html');
+          window.location.href = window.location.origin + ('/reset-password-landing.html');
           window.sessionStorage.setItem("targetEmail", targetEmail);
         },
         res => {
@@ -87,7 +87,7 @@ function setPasswordReset() {
       res => {
         if (!res.result) return alert(res.details);
         alert(res.details);
-        window.location.href = ORIGIN;
+        window.location.href = window.location.origin;
       },
       res => {
         // TODO: add this show message modal
