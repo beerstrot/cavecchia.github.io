@@ -7,7 +7,7 @@ $(document).ready(() => {
   else window.location.href = '/#signup-login'
   $('#logout-btn').on('click', () => {
     delete window.localStorage.currentClient;
-    window.location.href = '/#signup-login'
+    window.location.href = '/'
   });
   setUserData();
   setUpdate();
