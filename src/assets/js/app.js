@@ -53,8 +53,9 @@ $(document).ready(() => {
     import('./orari');
   } else if (en('reset-password-landing')) {
     import('./password-reset-landing');
-  } else if (en('reset-password') || en('reset-password-success')) {
+  } else if (en('reset-password')) {
     import('./password-reset');
+  } else if (en('reset-password-success')) {
   } else if (en('menu')) {
   } else if (en('chi-siamo')) {
   } else if (en('informazioni-legali')) {
