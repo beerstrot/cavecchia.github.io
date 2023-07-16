@@ -47,7 +47,7 @@ function modifyReservation (pid, fp) {
     'POST',
     { action: 'getReservation', data: pid },
     res => {
-      $('#ttitle').text('Modica la Prenotazione');
+      $('#ttitle').text('Modifica la Prenotazione');
       $('<p/>').text('La prenotazione viene modificata solo quando clicchi il pulsante "Modifica Prenotazione"')
         .insertAfter('#ttitle');
       $('#prenota').text('Modifica Prenotazione');
