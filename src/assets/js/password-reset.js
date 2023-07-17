@@ -12,7 +12,7 @@ $(document).ready(() => {
     res => {
       if (!res.result) {
         alert(res.details);
-        window.location.href = window.location.origin;
+        window.location.href = window.location.origin + '/#resetPassword';
       }
     },
     res => {
