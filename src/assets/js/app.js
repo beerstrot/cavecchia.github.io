@@ -59,6 +59,7 @@ $(document).ready(() => {
   } else if (en('menu')) {
   } else if (en('chi-siamo')) {
   } else if (en('informazioni-legali')) {
+  } else if (en('torte-compleanno')) {
   } else if (en('sala-comandi')) {
   } else if (en('404')) {
   } else { // index.html:
