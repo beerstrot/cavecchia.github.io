@@ -34,18 +34,16 @@ function setOrari () {
     .html('Chiudi Asporti')
     .appendTo($('#consolidate'))
     .on('click', () => {
-      console.log('send to server');
       info.html('In questi orari gli asporti non sono disponibili: ' + new Array(...window.closedTimeslots).join(', '));
       mkCall(
         'POST',
         { action: 'consolidateTimeslots', data: new Array(...window.closedTimeslots) },
         res => {
           window.alert('Orari Asporti Aggiornati');
-          console.log({ res });
         },
         res => {
           // TODO: add this show message modal
-          showMessage(messageError);
+          alert('Qualcosa è andato storto. Contattaci al numero  071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
         }
       );
     });
