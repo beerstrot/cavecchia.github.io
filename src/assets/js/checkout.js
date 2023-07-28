@@ -45,6 +45,7 @@ function getClosedTimeslots () {
 }
 
 function setOrari () {
+  /*
   const d_ = new Date();
   const diff = 15; // minutes
   const d = new Date(d_.getTime() + diff * 60000);
@@ -53,11 +54,12 @@ function setOrari () {
   const o = d.getTimezoneOffset();
   const h_ = h - Math.round(o / 60);
   const t = `${h_}:${m}`;
+  */
   const cells = $('.orario-btn');
   cells.each(function () {
     const cell = $(this);
     const text = cell.text();
-    const isEnabled = (!window.closedTimeslots.has(text)) && (text > t);
+    const isEnabled = (!window.closedTimeslots.has(text)); // && (text > t);
     cell.attr('disabled', !isEnabled);
     cell.on('click', () => {
       cells.each(function () {
