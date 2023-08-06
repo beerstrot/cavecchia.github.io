@@ -207,7 +207,7 @@ function showNotes (datetime) {
         $('<td/>', { css: { 'text-align': 'left' } }).html(n.time).appendTo(tr);
         $('<td/>').html(n.cani).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'right' } }).html(n.seg).appendTo(tr);
-        $('<td/>', { css: { 'text-align': 'left' } }).html(n.note).appendTo(tr);
+        $('<td/>', { css: { 'text-align': 'left', 'white-space': 'normal', 'min-width':'200px', } }).html(n.note).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'left' } }).html(n.telephone).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'left' } }).html(n.email).appendTo(tr);
 
