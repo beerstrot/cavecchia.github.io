@@ -203,9 +203,9 @@ function showNotes (datetime) {
         const tr = $('<tr/>', { class: 'clearme' }).appendTo('#notesTableBody');
         $('<td/>', { css: { 'text-align': 'left' } }).html(n.name).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'right' } }).html(n.people).appendTo(tr);
-        $('<td/>').html(n.table).appendTo(tr);
+        $('<td/>', { css: { 'text-align': 'left' } }).html(n.table).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'left' } }).html(n.time).appendTo(tr);
-        $('<td/>').html(n.cani).appendTo(tr);
+        $('<td/>', { css: { 'text-align': 'center' } }).html(n.cani).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'right' } }).html(n.seg).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'left', 'white-space': 'normal', 'min-width':'200px', } }).html(n.note).appendTo(tr);
         $('<td/>', { css: { 'text-align': 'left' } }).html(n.telephone).appendTo(tr);
