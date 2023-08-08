@@ -112,16 +112,15 @@ function setSendOrder () {
     return data;
   });
   const data = {
-    email: JSON.parse(window.localStorage.currentClient).email,
     order: {
       order_items: ps,
-      order_customer: {
-        email: client.email,
-        first_name: client.name,
-        last_name: client.surname,
-        mobile: client.telephone
-      }
-    }
+    },
+    order_customer: {
+      email: client.email,
+      first_name: client.name,
+      last_name: client.surname,
+      mobile: client.telephone
+    },
   };
   console.log({ data });
   $('#send-order').on('click', () => {
@@ -140,7 +139,7 @@ function setSendOrder () {
         delete window.localStorage.currentOrder;
         window.localStorage.timeSlot_ = window.localStorage.timeSlot;
         delete window.localStorage.timeSlot;
-        window.location.href = ORIGIN + '/checkout-landing.html'
+        window.location.href = ORIGIN + '/checkout-landing.html';
       },
       res => {
         // TODO: add this show message modal

@@ -37,7 +37,7 @@ function setOrari () {
       info.html('In questi orari gli asporti non sono disponibili: ' + new Array(...window.closedTimeslots).join(', '));
       mkCall(
         'POST',
-        { action: 'consolidateTimeslots', data: new Array(...window.closedTimeslots) },
+        { action: 'setClosedTimeslots', data: new Array(...window.closedTimeslots) },
         res => {
           window.alert('Orari Asporti Aggiornati');
         },
