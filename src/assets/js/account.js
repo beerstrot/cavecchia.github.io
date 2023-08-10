@@ -1,4 +1,4 @@
-import { mkCall } from './utils';
+import { mkCall, ORIGIN } from './utils';
 import { carrelloCheckoutUser } from './htmlTemplates';
 
 $(document).ready(() => {
@@ -57,8 +57,38 @@ function setPreviousOrders () {
     $('<div/>', { class: 'accordion-content ordine-salvato-content clearfix', 'data-tab-content': true, id: 'order-' + count }).appendTo(li).html(temp);
     $('#remove-' + count).show();
     $('#load-' + count).show();
+    $('#load-' + count).on('click', () => loadPreviousOrder(count));
   });
   // const li = $('<li/>', { class: 'accordion-item ordine-salvato-item', 'data-accordion-item': true }).appendTo($('#carrelli-accordion'));
   // $('<a/>', { class: 'accordion-title', href: '#dummy' }).html('ordine dummy').appendTo(li);
   // $('<div/>', { class: 'accordion-content ordine-salvato-content clearfix', 'data-tab-content': true, id: 'dummy' }).appendTo(li).html('AOSIDJASOISDJ');
+}
+
+function loadPreviousOrder(indexID) {
+  let data = {
+    "email": window.user.email,
+    "order_index": indexID
+  };
+  mkCall(
+    'POST',
+    { action: 'loadPreviousOrder', data },
+    res => {
+      if (res.result) {
+        if (res.details.unavailable_items.length > 0) {
+          let missingProducts = ''
+          for (let unavailableItem of res.details.unavailable_items)
+            missingProducts += unavailableItem + '\n';
+          alert("I seguenti prodotti non sono più disponibili:\n" + missingProducts);
+        }
+        window.localStorage.currentOrder = JSON.stringify(res.details.available_items);
+        window.location.href = ORIGIN + '/checkout.html'
+      }
+      else
+        console.log(res.details);
+    },
+    err => {
+      // TODO: add this show message modal
+      alert('Qualcosa è andato storto. Contattaci al numero  071 8853384 oppure inviaci una email a info@beerstrot.it. Grazie');
+    }
+  );
 }
