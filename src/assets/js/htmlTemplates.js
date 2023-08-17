@@ -52,7 +52,7 @@ const carrelloCheckoutUser = (carrello, count) => {
         prod.notes,
         cottura,
         prod.quantity,
-        prod.final_net_price
+        prod.final_price
       )
     );
   });
