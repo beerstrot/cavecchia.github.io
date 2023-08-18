@@ -29,7 +29,18 @@ function setRegister(redirectionLink) {
     const get = id => {
       data[id] = $(`#${id}`).val();
     }
-    ['name', 'surname', 'telephone', 'email', 'password'].forEach(i => get(i));
+    const dataIDs = ['name', 'surname', 'telephone', 'email', 'password'];
+    dataIDs.forEach(i => get(i));
+    if (!validateEmail(data['email'])) {
+      alert("Indirizzo email non valido, si prega di riprovare.");
+      return;
+    }
+    for (const dataKey in data) {
+      if (data[dataKey] === "") {
+        alert("Prego inserire i dati in tutti i campi.");
+        return;
+      }
+    }
     data.newsletter = $('#newsletter').is(":checked");
     mkCall(
       'POST',
@@ -49,7 +60,7 @@ function setRegister(redirectionLink) {
 
 function setPasswordResetRequest() {
   $('#password-reset-btn').on('click', () => {
-    let targetEmail = $('#password-reset-email').val();
+    let targetEmail = window.user ? window.user.email : $('#password-reset-email').val();
     if (validateEmail(targetEmail)) {
       let data = {
         'email': targetEmail
