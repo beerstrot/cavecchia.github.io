@@ -7,7 +7,6 @@ canonical: https://www.beerstrot.it/checkout.html
     <div class="grid-x grid-margin-x">
         <div class="small-12 cell">
             <h1 class="first-paragraph-no-hero">{{title}}</h1>
-
         </div>
     </div>
     <div class="grid-x grid-margin-x grid-margin-y">
@@ -41,15 +40,15 @@ canonical: https://www.beerstrot.it/checkout.html
             <h2>Riepilogo ordine</h2>
             {{> carrello-checkout-user}}
 
-        </div>
-    </div>
-    <div class="grid-x grid-margin-x grid-margin-y">
-        <div class="small-12 cell">
-            <button type="button" id="" class="button hollow secondary" onclick="location.href='{{root}}asporto.html';">Ritorna alla spesa</button>
-            <button id="send-order" class="button submit" style="margin-inline: 15px;">Invia ordine asporto</button>
-            <p><small>Inviando l'ordine da asporto acconsenti integralmente a<br>
-                <a href="{{root}}informazioni-legali.html#terminiCondizioni" target="_blank" rel="noopener">Termini e Condizioni <i class="las la-external-link-alt"></i></a> e <a href="{{root}}informazioni-legali.html#privacy" target="_blank" rel="noopener">Informativa sulla Privacy<i class="las la-external-link-alt"></i></a>.
-            </small></p>
+            <div class="extra-space-button">
+                <button id="" class="button hollow secondary" onclick="location.href='{{root}}asporto.html';">Ritorna alla spesa</button>
+                <button id="send-order" class="button submit" style="margin-inline: 20px; margin-right: 0px;">Invia ordine asporto</button>
+                <p>
+                    <small>Inviando l'ordine da asporto acconsenti integralmente a<br>
+                    <a href="{{root}}informazioni-legali.html#terminiCondizioni" target="_blank" rel="noopener">Termini e Condizioni <i class="las la-external-link-alt"></i></a> e <a href="{{root}}informazioni-legali.html#privacy" target="_blank" rel="noopener">Informativa sulla Privacy<i class="las la-external-link-alt"></i></a>.
+                    </small>
+                </p>
+            </div>
         </div>
     </div>
 </div>
