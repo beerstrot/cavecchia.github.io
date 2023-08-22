@@ -61,7 +61,7 @@ function setPreviousOrders () {
   user.orders.forEach((order, count) => {
     const d = new Date(order.deliver_at);
     const title = `Ordine del ${d.getDate()} ${mesi[d.getMonth()]} ${d.getFullYear()}`;
-    const li = $('<li/>', { class: 'accordion-item ordine-salvato-item', 'data-accordion-item': true }).appendTo($('#carrelli-accordion'));
+    const li = $('<li/>', { class: 'accordion-item', 'data-accordion-item': true }).appendTo($('#carrelli-accordion'));
     $('<a/>', { class: 'accordion-title', href: '#order-' + count })
       .html(title).appendTo(li);
     const temp = carrelloCheckoutUser(order.order_items, count);

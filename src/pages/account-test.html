@@ -1,0 +1,94 @@
+---
+title: Il mio account
+description: Ordini salvati e i tuoi dati per l'asporto e le prenotazioni
+canonical: https://www.beerstrot.it/account.html
+---
+<header class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+        <div class="small-12 cell">
+            <h1 class="first-paragraph-no-hero" id="ttitle">Ciao Andrea</h1>
+        </div>
+    </div>
+</header>
+<div class="grid-container panel-home-n">
+    <div class="grid-x grid-margin-x grid-margin-y">
+        <div class="small-12 medium-6 cell">
+            <h2>I Miei Ordini</h2>
+            <p>Apri un ordine, clicca il pulsante "Metti nel carrello e modifica" (o se vuoi puoi eliminarlo dagli ordini salvati).</p>
+            <ul class="accordion" data-accordion data-active-collapse="true" data-allow-all-closed="true" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500">
+                <li class="accordion-item"  data-accordion-item>
+                    <a href="#ordine5giugno" class="accordion-title">Ordine del 5 giugno 2021</a>
+                    <div class="accordion-content ordine-salvato-content clearfix" data-tab-content id="ordine5giugno">
+                        {{> carrello-checkout-user}}
+
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#ordine6giugno" class="accordion-title">Ordine del 6 giugno 2021</a>
+                    <div class="accordion-content ordine-salvato-content" data-tab-content id="ordine6giugno">
+                        {{> carrello-checkout-user}}
+
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#ordine9giugno" class="accordion-title">Ordine del 9 giugno 2021</a>
+                    <div class="accordion-content ordine-salvato-content" data-tab-content id="ordine9giugno">
+                        {{> carrello-checkout-user}}
+
+                    </div>
+                </li>
+                <li class="accordion-item ordine-salvato-item" data-accordion-item>
+                    <a href="#ordine7giugno" class="accordion-title">Ordine del 7 giugno 2021</a>
+                    <div class="accordion-content ordine-salvato-content" data-tab-content id="ordine7giugno">
+                        {{> carrello-checkout-user}}
+
+                    </div>
+                </li>
+                <li class="accordion-item ordine-salvato-item" data-accordion-item>
+                    <a href="#ordine15giugno" class="accordion-title">Ordine del 15 giugno 2021</a>
+                    <div class="accordion-content ordine-salvato-content" data-tab-content id="ordine15giugno">
+                        {{> carrello-checkout-user}}
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="small-12 medium-6 cell">
+            <h2>I Miei Dati</h2>
+            <div class="grid-x grid-margin-x">
+                <div class="small-6 medium-6 cell">
+                    <label><strong>Nome*</strong>
+                        <input type="text" class="required error" id="name" placeholder="Andrea" maxlength="20"/>
+                    </label>
+                </div>
+                <div class="small-6 medium-6 cell">
+                    <label><strong>Cognome*</strong>
+                        <input type="text" class="required error" id="surname" placeholder="Tagliazucchi" maxlength="20"/>
+                    </label>
+                </div>
+                <div class="small-10 medium-12 large-8 cell">
+                    <label><strong>Email (la tua username)*</strong>
+                        <input type="email" class="required error email" id="email" placeholder="andrea@beerstrot.it" maxlength="200"/>
+                      </label>
+                </div>
+                <div class="small-6  medium-6 large-4 cell">
+                    <label><strong>Telefono*</strong>
+                        <input type="tel" class="required error" id="telephone" placeholder="33850719401" maxlength="35" />
+                    </label>
+                </div>
+                <div class="small-12 cell">
+            <label class="container-checkbox">
+                <input id="newsletter" type="checkbox">
+                    <span class="checkmark"></span>Vorrei ricevere aggiornamenti e novità
+            </label>
+        </div>
+            </div>
+            <button id="" class="button submit extra-space-button">Modifica dati</button>
+            <h2 class="extra-space-h2">Le Mie Carte</h2>
+            <p>Aggiungi una  <a href="#" class="highlight">carta di credito o bancomat</a>.</p>
+            <p>Puoi modifcare i dati di pagamento direttamente sul sitoweb di Stripe a questo <a href="#" class="highlight">link</a>.</p>
+            <h2 class="extra-space-h2">Modifica la Password</h2>
+            <p><a href="{{root}}reset-email-landing.html" type="button" class="highlight">Invia link</a> alla mia email per modificare la password.</p>
+        </div>
+    </div>
+</div>
