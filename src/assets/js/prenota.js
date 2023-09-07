@@ -418,7 +418,7 @@ function updateShifts (dp, selected, people) {
       const wd = weekdays[dp.getDay()];
       const shifts_ = res.shifts.filter(s => (s.end_period >= d) && (s.start_period <= d) && (s.weekdays_period.includes(wd)));
       if (shifts_.length === 0)
-        return showMessage(`<p>Questo giorno siamo chiusi.</p><p>Per richieste puoi inviarci una email a ${emailString}</p><p>Grazie</p>`);
+        return showMessage(`<p>In questa data siamo chiusi.</p><p>Per richieste puoi inviarci una email a ${emailString}</p><p>Grazie</p>`);
       const shifts = mkShiftButtons(shifts_, selected);
       mkQuantityOptions(shifts, people);
     },
