@@ -418,7 +418,7 @@ function updateShifts (dp, selected, people) {
       const wd = weekdays[dp.getDay()];
       const shifts_ = res.shifts.filter(s => (s.end_period >= d) && (s.start_period <= d) && (s.weekdays_period.includes(wd)));
       if (shifts_.length === 0)
-        return showMessage(`<p>In questa data siamo chiusi.</p><p>Per richieste puoi inviarci una email a ${emailString}</p><p>Grazie</p>`);
+        return showMessage(`<p>In questa data siamo chiusi.</p><p>Per richieste puoi scriverci in chat ${whatsAppString}.</p><p>Grazie</p>`);
       const shifts = mkShiftButtons(shifts_, selected);
       mkQuantityOptions(shifts, people);
     },
@@ -492,7 +492,7 @@ function showReservation (pid) {
       if (res.booking === null) {
         $('#yes').hide();
         $('#no').hide();
-        return showConsultaMessage('Prenotazione non trovata.', `Se non hai cancellato la prenotazione in precedenza, puoi scriverci una email a ${emailString} o chiamarci al numero ${telString} per chiarimenti.`);
+        return showConsultaMessage('Prenotazione non trovata.', `Se non hai cancellato la prenotazione in precedenza, puoi scriverci in chat ${whatsAppString} o chiamarci al numero ${telString} per chiarimenti.`);
       }
       presentReservation(res.booking);
     },
@@ -625,13 +625,15 @@ const telString = '<a href="tel:+390718853384"><span itemprop="telephone"> 071&n
 
 const emailString = '<a href="mailto:info@beerstrot.it?subject=Problema&nbsp;Prenotazione">info@beerstrot.it</a>';
 
-const message10 = `Per <b>13 o più persone</b>, vi preghiamo di contattarci tramite ${emailString} o telefonarci al numero ${telString}`;
+const whatsAppString = '<a href="https://api.whatsapp.com/send?phone=390718853384" class="highlight" target="_blank"><i class="lab la-whatsapp">&thinsp;Whatsapp</i></a>';
+
+const message10 = `Per <b>17 o più persone</b>, ti preghiamo di contattarci tramite ${whatsAppString} o telefonarci al numero ${telString}`;
 
 /*const messageError = `Si prega di riprovare perché abbiamo riscontrato un errore.<br>
 Se il problema persiste, ti consigliamo di 
 entrare nel ${emailString} o di chiamare ${telString}.<br>`;*/
 
-const messageError = `<h2>Il Server non è raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><ul class="no-bullet"><li>Se il problema persiste:</li><ul><li>Invia una email a ${emailString}</li><li>Chiamaci al numero ${telString}</li></ul></li></ul>`;
+const messageError = `<h2>Il Server non è raggiungibile</h2><p>Riprova fra qualche istante e assicurati di avere campo nel cellulare o internet funzionante da computer. Grazie.</p><ul class="no-bullet"><li>Se il problema persiste:</li><ul><li>Scrivici in chat ${whatsAppString}</li><li>Chiamaci al numero ${telString}</li></ul></li></ul>`;
 
 //const messageErrorAlreadyCancelled = `<h2>Prenotazione non trovata</h2><ul class="no-bullet"><li>Se non hai cancellato la prenotazione in precedenza, per chiarimenti puoi:</li><ul><li>Scriverci una email a ${emailString}</li><li>Chiamarci al numero ${telString}</li></ul></li></ul><p>Grazie</p>`;
 
@@ -641,7 +643,7 @@ function bookingNotFound () {
   $('<legend/>').text('Prenotazione non trovata').appendTo(fs);
   $('<div/>').html(`<p>Ti chiediamo gentilmente di contattarci.</p>`).appendTo(fs);
   $('<div/>').html(telString).appendTo(fs);
-  $('<div/>').html(emailString).appendTo(fs);
+  $('<div/>').html(whatsAppString).appendTo(fs);
   $('#buttonInfoDiv').hide();
 }
 
