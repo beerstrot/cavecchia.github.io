@@ -314,7 +314,7 @@ function makeInterface (pid, dates) {
           window.location.href = url + (pid ? '_modificata' : '');
         },
         res => {
-          showMessage(messageError);
+          showMessage(message10);
         }
       );
     });
@@ -627,7 +627,9 @@ const emailString = '<a href="mailto:info@beerstrot.it?subject=Problema&nbsp;Pre
 
 const whatsAppString = '<a href="https://api.whatsapp.com/send?phone=390718853384" class="highlight" target="_blank"><i class="lab la-whatsapp">&thinsp;Whatsapp</i></a>';
 
-const message10 = `Per <b>17 o più persone</b>, ti preghiamo di contattarci tramite ${whatsAppString} o telefonarci al numero ${telString}`;
+const message11 = `Per <b>17 o più persone</b>, ti preghiamo di contattarci tramite ${whatsAppString} o telefonarci al numero ${telString}`;
+
+const message10 = `Seleziona il numero di commensali (Quante persone*)`;
 
 /*const messageError = `Si prega di riprovare perché abbiamo riscontrato un errore.<br>
 Se il problema persiste, ti consigliamo di 
