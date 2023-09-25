@@ -341,6 +341,7 @@ function makeInterface (pid, dates) {
 
   //form validation
   const validation = new JustValidate('#form')
+  validation
     .addField('#name', [
       {
         rule: 'required',
@@ -365,7 +366,7 @@ function makeInterface (pid, dates) {
         errorMessage: 'scegli una data'
       }
     ])
-    .addField('#quantity', [
+    .addField('#quantityError', [
       {
         rule: 'required',
         errorMessage: 'scegli il numero di persone'
@@ -629,7 +630,7 @@ const whatsAppString = '<a href="https://api.whatsapp.com/send?phone=39071885338
 
 const message11 = `Per <b>17 o più persone</b>, ti preghiamo di contattarci tramite ${whatsAppString} o telefonarci al numero ${telString}`;
 
-const message10 = `Seleziona il numero di commensali (Quante persone*)`;
+const message10 = `Seleziona il numero di persone.`;
 
 /*const messageError = `Si prega di riprovare perché abbiamo riscontrato un errore.<br>
 Se il problema persiste, ti consigliamo di 
