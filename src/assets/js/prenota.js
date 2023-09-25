@@ -341,7 +341,6 @@ function makeInterface (pid, dates) {
 
   //form validation
   const validation = new JustValidate('#form')
-  validation
     .addField('#name', [
       {
         rule: 'required',
