@@ -168,50 +168,50 @@ menu-sushi-hosomaki:
 
 menu-sushi-uramaki-classici:
   -
-    item-name: Hosomaki al Salmone
-    item-image-16-9: assets/img/prod/HosomakialSalmone_rettangolare.jpg
-    item-price: 7
-    item-description: Hosomaki di salmone (8 pezzi).
-    item-allergeni: Pesce, Soia
+    item-name: Uramaki California
+    item-image-16-9: assets/img/prod/UramakiCalifornia_rettangolare.jpg
+    item-price: 10
+    item-description: Salmone, avocado e cetriolo ricoperti da tobiko red (8 pezzi).
+    item-allergeni: Pesce
     class-allergeni:
     class-price:
-    alt-image: Hosomaki al Salmone
+    alt-image: Uramaki California
   -
-    item-name: Hosomaki al Tonno
+    item-name: Uramaki Philadelphia
     item-image-16-9: assets/img/prod/HosomakialTonno_rettangolare.jpg
-    item-price: 8
-    item-description: Hosomaki di tonno (8 pezzi).
-    item-allergeni: Pesce, Soia
-    class-allergeni:
-    class-price:
-    alt-image: Hosomaki al Tonno
-  -
-    item-name: Hosomaki Special Tonno
-    item-image-16-9: assets/img/prod/HosomakiSpecialTonno_rettangolare.jpg
-    item-price: 11
-    item-description: Hosomaki di tonno ricoperto da tartare di tonno, cipolla fritta e maionese (8 pezzi).
-    item-allergeni: Glutine, Pesce, Soia, Uova
-    class-allergeni:
-    class-price:
-    alt-image: Hosomaki Special Tonno
-  -
-    item-name: Hosomaki Vegetariano
-    item-image-16-9: assets/img/prod/HosomakiVegetariano_rettangolare.jpg
-    item-price: 10
-    item-description: Hosomaki di avocado, cetriolo e mango (8 pezzi).
-    item-allergeni: Soia
-    class-allergeni:
-    class-price:
-    alt-image: Hosomaki Vegetariano
-  -
-    item-name: Hosomaki Special Salmone
-    item-image-16-9: assets/img/prod/HosomakiSpecialSalmone_rettangolare.jpg
-    item-price: 10
-    item-description: Hosomaki di salmone ricoperto da philadelphia, fragole e salsa teriyaki (8 pezzi).
+    item-price: 9
+    item-description: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki (8 pezzi).
     item-allergeni: Glutine, Pesce, Soia, Latte, Senape
     class-allergeni:
     class-price:
-    alt-image: Hosomoki Special Salmone
+    alt-image: Uramaki Philadelphia
+  -
+    item-name: Uramaki Salmone e Avocado
+    item-image-16-9: assets/img/prod/UramakiSalmoneeAvocado_rettangolare.jpg
+    item-price: 10
+    item-description: Salmone, avocado e maionese (8 pezzi).
+    item-allergeni: Uova, Pesce, Senape
+    class-allergeni:
+    class-price:
+    alt-image: Uramaki Salmone e Avocado
+  -
+    item-name: Uramaki Tonno
+    item-image-16-9: assets/img/prod/UramakiTonno_rettangolare.jpg
+    item-price: 11
+    item-description: Tonno, avocado e maionese ricoperti da semi di sesamo (8 pezzi).
+    item-allergeni: Uova, Pesce, Semi di sesamo
+    class-allergeni:
+    class-price:
+    alt-image: Uramaki Tonno
+  -
+    item-name: Uramaki Gambero in Panko
+    item-image-16-9: assets/img/prod/UramakiGamberoinPanko_rettangolare.jpg
+    item-price: 9
+    item-description: Gambero in panko croccante e insalata guarniti con semi di sesamo, maionese e salsa teriyaki (8 pezzi).
+    item-allergeni: Glutine, Crostacei, Uova, Soia, Senape, Semi di sesamo
+    class-allergeni:
+    class-price:
+    alt-image: Uramaki Gambero in Panko
 
 menu-per-stuzzicare:
   -
