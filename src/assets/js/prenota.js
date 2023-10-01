@@ -314,7 +314,7 @@ function makeInterface (pid, dates) {
           window.location.href = url + (pid ? '_modificata' : '');
         },
         res => {
-          showMessage(message10);
+          showMessage(messageError);
         }
       );
     });
