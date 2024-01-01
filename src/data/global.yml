@@ -44,6 +44,15 @@ menu-sushi-signature:
     class-allergeni:
     class-price:
     alt-image: Gunkan Special
+  -
+    item-name: Sashimi
+    item-image-16-9: assets/img/prod/Sashimi_rettangolare.jpg
+    item-price: 14
+    item-description: 3 pezzi di salmone, 3 pezzi di tonno, 3 pezzi di branzino.
+    item-allergeni: Pesce
+    class-allergeni:
+    class-price:
+    alt-image: Sashimi Special
 
 menu-sushi-roll-selection:
   -
@@ -160,7 +169,7 @@ menu-sushi-hosomaki:
     item-name: Hosomaki Special Salmone
     item-image-16-9: assets/img/prod/HosomakiSpecialSalmone_rettangolare.jpg
     item-price: 10
-    item-description: Hosomaki di salmone ricoperto da philadelphia, fragole e salsa teriyaki (8 pezzi).
+    item-description: Hosomaki di salmone ricoperto da philadelphia, fragole (o salmone a seconda della disponibiità) e salsa teriyaki (8 pezzi).
     item-allergeni: Glutine, Pesce, Soia, Latte, Senape
     class-allergeni:
     class-price:
@@ -213,13 +222,60 @@ menu-sushi-uramaki-classici:
     class-price:
     alt-image: Uramaki Gambero in Panko
 
+menu-sushi-nigiri:
+  -
+    item-name: Nigiri Salmone
+    item-image-16-9: assets/img/prod/NigiriSalmone_rettangolare.jpg
+    item-price: 3,5
+    item-description: Salmone su riso (2 pezzi).
+    item-allergeni: Pesce
+    class-allergeni:
+    class-price:
+    alt-image: Nigiri Salmone
+  -
+    item-name: Nigiri Tonno
+    item-image-16-9: assets/img/prod/NigiriTonno_rettangolare.jpg
+    item-price: 4
+    item-description: Tonno su riso (2 pezzi).
+    item-allergeni: Pesce
+    class-allergeni:
+    class-price:
+    alt-image: Uramaki Philadelphia
+  -
+    item-name: Nigiri Branzino
+    item-image-16-9: assets/img/prod/NigiriBranzino_rettangolare.jpg
+    item-price: 5
+    item-description: Branzino su riso (2 pezzi).
+    item-allergeni: Pesce
+    class-allergeni:
+    class-price:
+    alt-image: Nigiri Branzino
+  -
+    item-name: Nigiri Gambero al Vapore
+    item-image-16-9: assets/img/prod/NigiriGamberoalVapore_rettangolare.jpg
+    item-price: 3,5
+    item-description: Gambero al vapore su riso (2 pezzi).
+    item-allergeni: Crostacei
+    class-allergeni:
+    class-price:
+    alt-image: Nigiri Gambero al Vapore
+  -
+    item-name: Nigiri Gambero Rosso
+    item-image-16-9: assets/img/prod/NigiriGamberoRosso_rettangolare.jpg
+    item-price: 5
+    item-description: Gambero rosso su riso (2 pezzi).
+    item-allergeni: Crostacei
+    class-allergeni:
+    class-price:
+    alt-image: Nigiri Gambero Rosso
+
 menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/BocconcinidiPollo_rettangolare.jpg
     item-name: Bocconcini di Pollo
     item-description: Serviti con salsa piccante.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 5,9
+    item-price: 6,5
     class-allergeni:
     class-price:
     alt-image: Bocconcini di Pollo
@@ -228,7 +284,7 @@ menu-per-stuzzicare:
     item-name: Olive all'Ascolana
     item-description: Il più tipico street food marchigiano.
     item-allergeni: Glutine, Uova, Latte, Sedano
-    item-price: 5,5
+    item-price: 5,9
     class-allergeni:
     class-price:
     alt-image: Olive all'Ascolana
@@ -237,7 +293,7 @@ menu-per-stuzzicare:
     item-name: Falafel
     item-description: Falafel di ceci, mais, cipolle e zucchine. Serviti con salsa tzatziki fatta in casa.
     item-allergeni: Glutine, Sedano, Senape
-    item-price: 5,5
+    item-price: 5,9
     class-allergeni:
     class-price:
     alt-image: Falafel
@@ -246,16 +302,16 @@ menu-per-stuzzicare:
     item-name: Cipolle Rosse
     item-description: Cipolle rosse in tempura.
     item-allergeni: Glutine, Latte, Crostacei
-    item-price: 4,9
+    item-price: 5,5
     class-allergeni:
     class-price:
     alt-image: Cipolle Rosse
   -
     item-image-16-9: assets/img/prod/PeperonciniPiccanti_rettangolare.jpg
     item-name: Peperoncini Piccanti
-    item-description: Peperoncini ripieni di robiola ricoperti nella pancetta.
+    item-description: Peperoncini piccanti ripieni di robiola e avvolti in pancetta.
     item-allergeni: Anidride Solforosa e Solfiti, Latte
-    item-price: 5,5
+    item-price: 6,5
     class-allergeni:
     class-price:
     alt-image: Peperoncini Piccanti
@@ -264,7 +320,7 @@ menu-per-stuzzicare:
     item-name: Alette di Pollo
     item-description: Leggermente piccanti.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 5,5
+    item-price: 5,9
     class-allergeni:
     class-price:
     alt-image: Alette di Pollo
@@ -273,7 +329,7 @@ menu-per-stuzzicare:
     item-name: Alette di Pollo Piccanti
     item-description: Piccanti.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 5,5
+    item-price: 5,9
     class-allergeni:
     class-price:
     alt-image: Alette di Pollo Piccanti
@@ -282,7 +338,7 @@ menu-per-stuzzicare:
     item-name: Arrosticini
     item-description: Arrosticini di pecora.
     item-allergeni: --
-    item-price: 5,5
+    item-price: 5,9
     class-allergeni:
     class-price:
     alt-image: Arrosticini
@@ -296,6 +352,25 @@ menu-per-stuzzicare:
     class-price:
     alt-image: Patate Fritte
 
+menu-hamburger-monster:
+  -
+    item-image-16-9: assets/img/prod/MonsterSucculento_rettangolare.jpg
+    item-name: Monster Succulento
+    item-description: 450 grammi di carne macinata e cotta alla perfezione, cheddar, cipolle rosse in agrodolce, insalata croccante, salsa speciale.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 25,9
+    class-allergeni:
+    class-price:
+    alt-image: Monster Succulento
+  # -
+  #   item-image-16-9: assets/img/prod/MonsterSucculento_rettangolare.jpg
+  #   item-name: Monster Piccante
+  #   item-description: 450 grammi di carne macinata e cotta alla perfezione, cheddar, peperoncini piccanti ripieni di robiola e avvolti in pancetta, insalata croccante, salsa piccante.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 26,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Monster Piccante
 
 menu-hamburger-classici:
   -
@@ -303,7 +378,7 @@ menu-hamburger-classici:
     item-name: Beerstrot
     item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
+    item-price: 12,9
     class-allergeni:
     class-price:
     alt-image: Beerstrot
@@ -312,7 +387,7 @@ menu-hamburger-classici:
     item-name: Beerstrot Doppio
     item-description: Doppio burger di manzo (360 grammi), cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
+    item-price: 16,9
     class-allergeni:
     class-price:
     alt-image: Beerstrot Doppio
@@ -321,7 +396,7 @@ menu-hamburger-classici:
     item-name: New York
     item-description: Burger di manzo (180 grammi), cheddar, cipolla caramellata, insalata.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 10,5
+    item-price: 11,9
     class-allergeni:
     class-price:
     alt-image: New York
@@ -330,7 +405,7 @@ menu-hamburger-classici:
     item-name: New York Doppio
     item-description: Doppio burger di manzo (360 grammi), cheddar, cipolla caramellata, insalata.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 14,5
+    item-price: 15,9
     class-allergeni:
     class-price:
     alt-image: New York Doppio
@@ -339,7 +414,7 @@ menu-hamburger-classici:
     item-name: Diablo
     item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, rucola, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
+    item-price: 12,9
     class-allergeni:
     class-price:
     alt-image: Diablo
@@ -348,7 +423,7 @@ menu-hamburger-classici:
     item-name: Diablo Doppio
     item-description: Doppio burger di manzo (360 grammi), cheddar, bacon croccante, rucola, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
+    item-price: 16,9
     class-allergeni:
     class-price:
     alt-image: Diablo Doppio
@@ -357,7 +432,7 @@ menu-hamburger-classici:
     item-name: Pollo
     item-description: Burger di pollo (180 grammi), fontina, cipolla caramellata, rucola, salsa allo yogurt.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 10,9
+    item-price: 11,9
     class-allergeni:
     class-price:
     alt-image: Pollo
@@ -366,7 +441,7 @@ menu-hamburger-classici:
     item-name: Pollo Doppio
     item-description: Doppio burger di pollo (360 grammi), fontina, cipolla caramellata, rucola, salsa allo yogurt.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 14,9
+    item-price: 15,9
     class-allergeni:
     class-price:
     alt-image: Pollo Doppio
@@ -375,7 +450,7 @@ menu-hamburger-classici:
     item-name: Pulled Pork
     item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante.
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Latte, Senape, Uova
-    item-price: 11,9
+    item-price: 12,9
     class-allergeni:
     class-price:
     alt-image: Pulled Pork
@@ -384,7 +459,7 @@ menu-hamburger-classici:
     item-name: Mini Burger
     item-description: Manzo (100 grammi), cheddar. Servito ben cotto.
     item-allergeni: Glutine, Latte, Uova
-    item-price: 7,9
+    item-price: 8,9
     class-allergeni:
     class-price:
     alt-image: Mini Burger
@@ -395,7 +470,7 @@ menu-hamburger-stagione:
     item-name: Cacio e Pepe
     item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, pepe.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
+    item-price: 12,9
     class-allergeni:
     class-price:
     alt-image: Cacio e Pepe
@@ -404,118 +479,118 @@ menu-hamburger-stagione:
     item-name: Cacio e Pepe Doppio
     item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, guanciale, pepe.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
-    class-allergeni:
-    class-price:
-    alt-image: Cacio e Pepe Doppio
-  -
-    item-image-16-9: assets/img/prod/Greco_rettangolare.jpg
-    item-name: Greco
-    item-description: Burger di manzo (180 grammi), melanzana grigliata, insalata riccia, salsa tzatziki.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 10,5
-    class-allergeni:
-    class-price:
-    alt-image: Cacio e Pepe
-  -
-    item-image-16-9: assets/img/prod/GrecoDOPPIO_rettangolare.jpg
-    item-name: Greco Doppio
-    item-description: Doppio burger di manzo (360 grammi), melanzana grigliata, insalata riccia, salsa tzatziki.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 14,5
+    item-price: 16,9
     class-allergeni:
     class-price:
     alt-image: Cacio e Pepe Doppio
   # -
-  #   item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
-  #   item-name: Inverno
-  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
+  #   item-image-16-9: assets/img/prod/Greco_rettangolare.jpg
+  #   item-name: Greco
+  #   item-description: Burger di manzo (180 grammi), melanzana grigliata, insalata riccia, salsa tzatziki.
   #   item-allergeni: Glutine, Uova, Latte
   #   item-price: 10,5
   #   class-allergeni:
   #   class-price:
-  #   alt-image:
+  #   alt-image: Cacio e Pepe
   # -
-  #   item-image-16-9: hssets/img/prod/InvernoDOPPIO_rettangolare.jpg
-  #   item-name: Inverno Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
+  #   item-image-16-9: assets/img/prod/GrecoDOPPIO_rettangolare.jpg
+  #   item-name: Greco Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), melanzana grigliata, insalata riccia, salsa tzatziki.
   #   item-allergeni: Glutine, Uova, Latte
   #   item-price: 14,5
   #   class-allergeni:
   #   class-price:
-  #   alt-image:
+  #   alt-image: Cacio e Pepe Doppio
   -
-    item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
-    item-name: Primavera
-    item-description: Burger di manzo (180 grammi), composta di feta, pomodorini e timo; insalata riccia.
+    item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
+    item-name: Inverno
+    item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
     item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
+    item-price: 12,9
     class-allergeni:
     class-price:
-    alt-image: Primavera
+    alt-image: Inverno
   -
-    item-image-16-9: assets/img/prod/PrimaveraDOPPIO_rettangolare.jpg
-    item-name: Primavera Doppio
-    item-description: Doppio burger di manzo (360 grammi), omposta di feta, pomodorini e timo; insalata riccia.
+    item-image-16-9: hssets/img/prod/InvernoDOPPIO_rettangolare.jpg
+    item-name: Inverno Doppio
+    item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
     item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
+    item-price: 16,9
     class-allergeni:
     class-price:
-    alt-image: Primavera Doppio
-  -
-    item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
-    item-name: Estivo
-    item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
-    class-allergeni:
-    class-price:
-    alt-image: Estivo
-  -
-    item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
-    item-name: Estivo Doppio
-    item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
-    class-allergeni:
-    class-price:
-    alt-image: Estivo Doppio
-  -
-    item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
-    item-name: Norma
-    item-description: Burger di manzo (180 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
-    class-allergeni:
-    class-price:
-    alt-image: Estivo
-  -
-    item-image-16-9: assets/img/prod/NormaDOPPIO_rettangolare.jpg
-    item-name: Norma Doppio
-    item-description: Doppio burger di manzo (360 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
-    class-allergeni:
-    class-price:
-    alt-image: Estivo Doppio
+    alt-image: Inverno Doppio
   # -
-  #   item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
-  #   item-name: Deciso
-  #   item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
+  #   item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
+  #   item-name: Primavera
+  #   item-description: Burger di manzo (180 grammi), composta di feta, pomodorini e timo; insalata riccia.
   #   item-allergeni: Glutine, Uova, Latte
   #   item-price: 11,9
   #   class-allergeni:
   #   class-price:
-  #   alt-image:
+  #   alt-image: Primavera
   # -
-  #   item-image-16-9: assets/img/prod/DecisoDOPPIO_rettangolare.jpg
-  #   item-name: Deciso Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), gorgonzola, guanciale, pomodorini confit
+  #   item-image-16-9: assets/img/prod/PrimaveraDOPPIO_rettangolare.jpg
+  #   item-name: Primavera Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), omposta di feta, pomodorini e timo; insalata riccia.
   #   item-allergeni: Glutine, Uova, Latte
   #   item-price: 15,9
   #   class-allergeni:
   #   class-price:
-  #   alt-image:
+  #   alt-image: Primavera Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
+  #   item-name: Estivo
+  #   item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 11,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo
+  # -
+  #   item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
+  #   item-name: Estivo Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 15,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
+  #   item-name: Norma
+  #   item-description: Burger di manzo (180 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 11,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo
+  # -
+  #   item-image-16-9: assets/img/prod/NormaDOPPIO_rettangolare.jpg
+  #   item-name: Norma Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 15,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo Doppio
+  -
+    item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
+    item-name: Deciso
+    item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 12,9
+    class-allergeni:
+    class-price:
+    alt-image: deciso
+  -
+    item-image-16-9: assets/img/prod/DecisoDOPPIO_rettangolare.jpg
+    item-name: Deciso Doppio
+    item-description: Doppio burger di manzo (360 grammi), gorgonzola, guanciale, pomodorini confit
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 16,9
+    class-allergeni:
+    class-price:
+    alt-image: Deciso Doppio
   # -
   #   item-image-16-9: assets/img/prod/FaveePecorino_rettangolare.jpg
   #   item-name: Fave e Pecorino
@@ -539,7 +614,7 @@ menu-hamburger-stagione:
     item-name: Carbonara
     item-description: Burger di manzo (180 grammi), guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
+    item-price: 12,9
     class-allergeni:
     class-price:
     alt-image: Carbonara
@@ -548,7 +623,7 @@ menu-hamburger-stagione:
     item-name: Carbonara Doppio
     item-description: Doppio burger di manzo (360 grammi), guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
+    item-price: 16,9
     class-allergeni:
     class-price:
     alt-image: Carbonara Doppio
@@ -559,7 +634,7 @@ menu-hamburger-vegetariano:
     item-name: Vegetariano Fagioli
     item-description: Hamburger di borlotti, julienne di cipolla fritta, crema di cicoria.
     item-allergeni: Glutine, Latte, Soia, Uova
-    item-price: 9,5
+    item-price: 10,5
     class-allergeni:
     class-price:
     alt-image: Vegetariano Fagioli
@@ -568,7 +643,7 @@ menu-hamburger-vegetariano:
     item-name: Vegetariano Quinoa
     item-description: Hamburger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele.
     item-allergeni: Glutine, Latte, Senape, Uova
-    item-price: 9,5
+    item-price: 10,5
     class-allergeni:
     class-price:
     alt-image: Vegetariano Quinoa
@@ -577,9 +652,9 @@ menu-carne:
   -
     item-image-16-9: assets/img/prod/CostineinSalsaBBQ_rettangolare.jpg
     item-name: Costine in Salsa BBQ
-    item-description: Baby ribs di suino allevato allo stato brado in salsa bbq. Servite con patate fritte.
+    item-description: Baby ribs di suino allevato allo stato brado in salsa bbq.
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo
-    item-price: 13,9
+    item-price: 14,9
     class-allergeni:
     class-price:
     alt-image: Costine in Salsa BBQ
@@ -621,24 +696,24 @@ menu-dolce:
     class-allergeni:
     class-price:
     alt-image: Panna Cotta
-  # -
-  #   item-image-16-9: assets/img/prod/Birramisu_rettangolare.jpg
-  #   item-name: Birramisù
-  #   item-description: Tiramisù con mascarpone artigianale alla birra stout.
-  #   item-allergeni: Glutine, Latte, Uova
-  #   item-price: 5
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Birramisù
   -
-    item-image-16-9: assets/img/prod/Crumble_rettangolare.jpg
-    item-name: Crumble
-    item-description: Crema chantilly su croccante crumble di farina di mais, cannella e scaglie di cioccolato fondente.
-    item-allergeni: Latte, Uova
+    item-image-16-9: assets/img/prod/Birramisu_rettangolare.jpg
+    item-name: Birramisù
+    item-description: Tiramisù con mascarpone artigianale alla birra stout.
+    item-allergeni: Glutine, Latte, Uova
     item-price: 5
     class-allergeni:
     class-price:
-    alt-image: Crumble
+    alt-image: Birramisù
+  # -
+  #   item-image-16-9: assets/img/prod/Crumble_rettangolare.jpg
+  #   item-name: Crumble
+  #   item-description: Crema chantilly su croccante crumble di farina di mais, cannella e scaglie di cioccolato fondente.
+  #   item-allergeni: Latte, Uova
+  #   item-price: 5
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Crumble
   # -
   #   item-image-16-9: assets/img/prod/Cioccolatosa_rettangolare.jpg
   #   item-name: Cioccolatosa
@@ -729,85 +804,84 @@ menu-birra-spina:
     item-name: Helles
     item-description: Helles stile tedesco non amara 4,9%. Birrificio Forst.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6 | 12
   -
     item-name: Italicum
     item-description: Bionda fruttata senza glutine 5,0%. Birrificio dei Castelli.
     item-allergeni: --
-    item-price:
+    item-price: 4 | 6 | 12
   -
     item-name: Bock
     item-description: Rossa stile tedesco dolce 6,5%. Birrificio Forst.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6 | 12
   -
     item-name: Palmares
     item-description: Red Ale 5,6%. Birrificio dei Castelli.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6 | 12
   -
     item-name: Ape Regina
     item-description: Blonde Ale al miele 6,9%. Birrificio MC-77.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6,5 | 13
   -
     item-name: Californication
     item-description: West Coast IPA 6,3%. Birrificio Mukkeller.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6,5 | 13
   -
     item-name: Mazzu de Fiuri
     item-description: IPA 6,5%. Birrificio Mukkeller.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6,5 | 13
   -
     item-name: Brevis Furor
     item-description: IPA 6,3%. Birrificio dei Castelli.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6,5 | 13
   -
     item-name: Extrema Ratio
     item-description: Doppia IPA 7,4%. Birrificio dei Castelli.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6,5 | 13
   -
     item-name: Hattori Hanzo
     item-description: Doppia IPA 8,3%. Birrificio Mukkeller.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6,5 | 13
   -
     item-name: Breaking Hops
     item-description: Doppia IPA 7,2%. Birrificio MC-77.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6,5 | 13
   -
     item-name: Billycock
     item-description: Doppia New England IPA 7,8%. Birrificio MC-77.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6,5 | 13
   -
     item-name: Velvet Suit
     item-description: New England IPA 6,5%. Birrificio MC-77.
     item-allergeni: glutine
-    item-price:
+    item-price: 4 | 6,5 | 13
 
 
 
 menu-birra-bottiglia:
   -
     item-name: Landbier 1857 50cl
-    item-description: Helles tedesca non filtrata 5,3%. Birrificio Bayreuther.
+    item-description: Birrificio Bayreuther. Helles export tedesca 5,3%.
     item-allergeni: glutine
     item-price: 6
-  -
-    item-name: Landbier Dunkel 50cl
-    item-description: Rossa tedesca 5,3%. Birrificio Bayreuther.
-    item-allergeni: glutine
-    item-price: 6
-
+  # -
+  #   item-name: Landbier Dunkel 50cl
+  #   item-description: Rossa tedesca 5,3%. Birrificio Bayreuther.
+  #   item-allergeni: glutine
+  #   item-price: 6
   -
     item-name: Weisse 50cl
-    item-description: Weisse tedesca 5,1%. Birrificio Maisel.
+    item-description: Birrificio Maisel. Weisse tedesca 5,1%. Bionda con prevalenti note di banana.
     item-allergeni: glutine
     item-price: 6
   -
@@ -815,16 +889,16 @@ menu-birra-bottiglia:
     item-description: Rossa tedesca 7,6%. Birrificio Scheyern.
     item-allergeni: glutine
     item-price: 6
-  -
-    item-name: Tulio 50cl
-    item-description: Rye IPA 6,5%. Birrificio Mukkeller.
-    item-allergeni: glutine
-    item-price: 6
   # -
-  #   item-name: Mazzu de Fiuri 50cl
-  #   item-description: IPA 6%. Birrificio Mukkeller
+  #   item-name: Tulio 50cl
+  #   item-description: Rye IPA 6,5%. Birrificio Mukkeller.
   #   item-allergeni: glutine
   #   item-price: 6
+  -
+    item-name: Mazzu de Fiuri 50cl
+    item-description: Birrificio Mukkeller. IPA 6%. Birra bionda dall'amaro persistente e speziato.
+    item-allergeni: glutine
+    item-price: 6
   # -
   #   item-name: Space Pigs 50cl
   #   item-description: Doppia IPA 8%. Birrificio Mukkeller
@@ -832,20 +906,29 @@ menu-birra-bottiglia:
   #   item-price: 6
   -
     item-name: Ridopoco 50cl
-    item-description: American Pale Ale 6,2%. Birrificio Mukkeller.
+    item-description: Birrificio Mukkeller. America pale ale 6,2%. Corpo leggero, massiccia luppolatura.
     item-allergeni: glutine
     item-price: 6
   -
     item-name: Hattori Hanzo 50cl
-    item-description: Doppia IPA 8,3%. Birrificio Mukkeller.
+    item-description: Birrificio Mukkeller. Doppia IPA 8,2%. Birra bionda dall'amaro pulito e persistente. Crea dipendenza.
     item-allergeni: glutine
     item-price: 6
   -
     item-name: Calix Niger 33cl
-    item-description: Chocolate Stout 6,7%. Birrificio dei Castelli.
+    item-description: Birrificio dei Castelli. Stout 6,7%. Color ebano scuro, schiuma compatta dai toni nocciola. Al naso elegante sentore di caffè e note di quercia.
     item-allergeni: glutine
     item-price: 6
-
+  -
+    item-name: Guastafeste 33cl
+    item-description: Birrificio Mukkeller. Belgian Strong Ale 10%. Ambrata con malti aromatici che le conferiscono sapori fruttati. Birra pensata per il Natale.
+    item-allergeni: glutine
+    item-price: 6
+  -
+    item-name: Mukkamannara 33cl
+    item-description: Birrificio Mukkeller. Belgian Strong Ale 9,3%. Bruna con aroma e sapore di malto, caramello, uva passa, frutti rossi secchi. Una birra ricca, forte, complessa.
+    item-allergeni: glutine
+    item-price: 6
 
 menu-vino-caraffa:
   -
@@ -855,13 +938,6 @@ menu-vino-caraffa:
     item-price: Quarto 3,5 | Litro 9
     class-allergeni:
     class-price:
-  # -
-  #   item-name: Passerina igt
-  #   item-description: Vino Biologico. Cantina Collevite.
-  #   item-allergeni: anidride solforosa e solfiti
-  #   item-price: Quarto 3,5 | Litro 9
-  #   class-allergeni:
-  #   class-price:
   -
     item-name: Verdicchio Matelica doc
     item-description: Cantina Belisario.
@@ -873,13 +949,13 @@ menu-vino-caraffa:
 menu-vino:
   -
     item-name: Fichimori Rosso igt Salento
-    item-description: Da bere freddo. Colore rosso rubino. Al naso prevalgono le note di frutta rossa, di fragola e lampone, seguite da delicate sensazioni di rosa canina. Al palato è fresco, sapido e scorrevole, caratterizzato da un ingresso morbido e un retrogusto fruttato.
+    item-description: Cantina Tormaresca. Da bere freddo. Colore rosso rubino. Al naso prevalgono le note di frutta rossa, di fragola e lampone, seguite da delicate sensazioni di rosa canina. Al palato è fresco, sapido e scorrevole, caratterizzato da un ingresso morbido e un retrogusto fruttato.
     item-allergeni: anidride solforosa e solfiti
     item-price: 18 | 5
     class-allergeni:
     class-price:
   -
-    item-name: Serrano doc
+    item-name: Serrano Rosso Conero doc
     item-description: Cantina Umani Ronchi. Colore rosso rubino con riflessi violacei. Profumo pulito di visciola matura. Gran polpa e gran rotondità di sapore, uniti ad una buona struttura garantiscono una piacevole bevibilità.
     item-allergeni: anidride solforosa e solfiti
     item-price: 14,5 | 3,5
@@ -889,7 +965,7 @@ menu-vino:
     item-name: Rubico Lacrima Morro Alba doc
     item-description: Cantina Marotti Campi. Rosso vivace con riflessi porpora. Ha un aroma gradevole e fruttato con richiami discreti ai fiori di ciliegio e alla viola. Il gusto è morbido, vellutato e sapido.
     item-allergeni: anidride solforosa e solfiti
-    item-price: 15,5
+    item-price: 15,5 | 3,5
     class-allergeni:
     class-price:
   -
@@ -900,7 +976,7 @@ menu-vino:
     class-allergeni:
     class-price:
   -
-    item-name: Casal di Serra Verdicchio Superiore doc
+    item-name: Casal di Serra Verdicchio Superiore Biologico doc
     item-description: Cantina Umani Ronchi. Colore giallo paglierino. Profumi intensi di fiori di campo, aromi di frutta a polpa gialla. Ricco e vellutato, con buona dose di freschezza e sapidità che bilancia l’eccellente morbidezza. Finale asciutto, persistente e fruttato.
     item-allergeni: anidride solforosa e solfiti
     item-price: 18
@@ -921,8 +997,8 @@ menu-vino:
     class-allergeni:
     class-price:
   -
-    item-name: Prosecco Lovre docg
-    item-description: Cantina Serre di Pederiva. Giallo paglierino spuma brillante, perlage fine e persistente. Soffice e cremoso al gusto, snello e croccante invita al brindisi.
+    item-name: Prosecco Treser docg
+    item-description: Cantina Serre di Pederiva. Brut. All’aspetto è giallo paglierino scarico con riflessi verdognoli, con spuma brillante e perlage fine e persistente. Frutta fresca e fiori estivi ne completano il profumo secco e croccante.
     item-allergeni: anidride solforosa e solfiti
     item-price: 18 | 4
     class-allergeni:
@@ -934,13 +1010,13 @@ menu-vino:
     item-price: 20
     class-allergeni:
     class-price:
-  -
-    item-name: Cuvée Royale Franciacorta docg
-    item-description: Cantina Marchesi Antinori. Colore giallo scarico, spuma cremosa con perlage fine e persistente. A livello aromatico si colgono note di pesca a polpa bianca, crosta di pane e lieviti. Notevole equilibrio e vivacità tipica del Brut.
-    item-allergeni: anidride solforosa e solfiti
-    item-price: 32
-    class-allergeni:
-    class-price:
+  # -
+  #   item-name: Cuvée Royale Franciacorta docg
+  #   item-description: Cantina Marchesi Antinori. Colore giallo scarico, spuma cremosa con perlage fine e persistente. A livello aromatico si colgono note di pesca a polpa bianca, crosta di pane e lieviti. Notevole equilibrio e vivacità tipica del Brut.
+  #   item-allergeni: anidride solforosa e solfiti
+  #   item-price: 32
+  #   class-allergeni:
+  #   class-price:
 
 menu-amaro:
   -
@@ -978,6 +1054,13 @@ menu-amaro:
     item-price: 4
     class-allergeni: hide
     class-price:
+  -
+    item-name: Vodka
+    item-description: Imperial Collection Gold
+    item-allergeni:
+    item-price: 4
+    class-allergeni: hide
+    class-price:
 
 menu-rhum:
   -
@@ -1005,8 +1088,8 @@ menu-rhum:
 
 menu-wiskey:
   -
-    item-name: Scallywag
-    item-description: Scozzese blend 46%. L'iniziale dolcezza lascia spazio a note piccanti e speziate.
+    item-name: Arran
+    item-description: Scotch whisky Single Malt 43%. Invecchiato per circa 7 anni in botti di primo utilizzo ex-bourbon e imbottigliato col suo colore naturale. Aromi dolci e freschi di agrumi e vaniglia. Gusto fresco di mela e agrumi.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
@@ -1020,7 +1103,7 @@ menu-wiskey:
     class-price:
   -
     item-name: Big Peat
-    item-description: Scozzese blend 46%. Fresco e pulito con aromi di torba piccante con note di cioccolato, caffè e mandorle.
+    item-description: Scozzese blend 46%. Fresco, pulito con aromi di torba piccante con note di cioccolato, caffè e mandorle. Sapore semplice e facile da bere con note di fumo pesante, erba tagliata, spezie, spiagge e torba. Persistente con note salate, fumo e cenere di falò.
     item-allergeni:
     item-price: 8
     class-allergeni: hide

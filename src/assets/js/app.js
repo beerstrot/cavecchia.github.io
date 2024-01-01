@@ -57,6 +57,7 @@ $(document).ready(() => {
     import('./password-reset');
   } else if (en('reset-password-success')) {
   } else if (en('menu')) {
+  } else if (en('menu-delle-feste')) {
   } else if (en('chi-siamo')) {
   } else if (en('informazioni-legali')) {
   } else if (en('disiscrizione')) {
