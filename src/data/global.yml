@@ -351,6 +351,15 @@ menu-per-stuzzicare:
     class-allergeni:
     class-price:
     alt-image: Patate Fritte
+  # -
+  #   item-image-16-9: assets/img/prod/edamame_rettangolare.jpg
+  #   item-name: Edamame
+  #   item-description: Fagiolini di soia bolliti.
+  #   item-allergeni: Soia
+  #   item-price: 4
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Edamame
 
 menu-hamburger-monster:
   -
