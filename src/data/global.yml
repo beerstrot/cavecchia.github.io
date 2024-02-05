@@ -690,7 +690,7 @@ menu-dolce:
   -
     item-image-16-9: assets/img/prod/Blondie_rettangolare.jpg
     item-name: Blondie
-    item-description: Brownie con nocciole. Servito con crema al mascarpone e rhum.
+    item-description: Brownie con nocciole. Servito con crema al mascarpone.
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
     item-price: 5
     class-allergeni:
