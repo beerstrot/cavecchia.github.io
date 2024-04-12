@@ -510,24 +510,24 @@ menu-hamburger-stagione:
   #   class-allergeni:
   #   class-price:
   #   alt-image: Cacio e Pepe Doppio
-  -
-    item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
-    item-name: Inverno
-    item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 12,9
-    class-allergeni:
-    class-price:
-    alt-image: Inverno
-  -
-    item-image-16-9: hssets/img/prod/InvernoDOPPIO_rettangolare.jpg
-    item-name: Inverno Doppio
-    item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 16,9
-    class-allergeni:
-    class-price:
-    alt-image: Inverno Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
+  #   item-name: Inverno
+  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 12,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Inverno
+  # -
+  #   item-image-16-9: hssets/img/prod/InvernoDOPPIO_rettangolare.jpg
+  #   item-name: Inverno Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 16,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Inverno Doppio
   # -
   #   item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
   #   item-name: Primavera
@@ -828,7 +828,7 @@ menu-birra-spina:
     item-name: Palmares
     item-description: Red Ale 5,6%. Birrificio dei Castelli.
     item-allergeni: glutine
-    item-price: 4 | 6 | 12
+    item-price: 4 | 6,5 | 13
   -
     item-name: Ape Regina
     item-description: Blonde Ale al miele 6,9%. Birrificio MC-77.
@@ -898,21 +898,21 @@ menu-birra-bottiglia:
     item-description: Rossa tedesca 7,6%. Birrificio Scheyern.
     item-allergeni: glutine
     item-price: 6
-  # -
-  #   item-name: Tulio 50cl
-  #   item-description: Rye IPA 6,5%. Birrificio Mukkeller.
-  #   item-allergeni: glutine
-  #   item-price: 6
+  -
+    item-name: Tulio 50cl
+    item-description: Rye IPA 6,5%. Birrificio Mukkeller.
+    item-allergeni: glutine
+    item-price: 6,5
   -
     item-name: Mazzu de Fiuri 50cl
     item-description: Birrificio Mukkeller. IPA 6%. Birra bionda dall'amaro persistente e speziato.
     item-allergeni: glutine
-    item-price: 6
+    item-price: 6,5
   # -
   #   item-name: Space Pigs 50cl
   #   item-description: Doppia IPA 8%. Birrificio Mukkeller
   #   item-allergeni: glutine
-  #   item-price: 6
+  #   item-price: 6,5
   -
     item-name: Ridopoco 50cl
     item-description: Birrificio Mukkeller. America pale ale 6,2%. Corpo leggero, massiccia luppolatura.
@@ -922,7 +922,7 @@ menu-birra-bottiglia:
     item-name: Hattori Hanzo 50cl
     item-description: Birrificio Mukkeller. Doppia IPA 8,2%. Birra bionda dall'amaro pulito e persistente. Crea dipendenza.
     item-allergeni: glutine
-    item-price: 6
+    item-price: 6,5
   -
     item-name: Calix Niger 33cl
     item-description: Birrificio dei Castelli. Stout 6,7%. Color ebano scuro, schiuma compatta dai toni nocciola. Al naso elegante sentore di caffè e note di quercia.
