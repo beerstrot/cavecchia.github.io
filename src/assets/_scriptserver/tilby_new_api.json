@@ -1,22 +1,4 @@
-
-"auto_print_order": true,  
-  "sale_items": [  
-    {  
-      "category_id": 3,  
-      "exit": 1,  
-      "name": "Product name",  
-      "notes": "Any additional notes",  
-      "item_id": 200,  
-      "price": 5,  
-      "watt_minute": 22,  
-      "final_net_price": 4.1,  
-      "final_price": 5,  
-      "quantity": 1,  
-      "uuid": "864dceaf-7688-445f-982e-e4991368b33d"  
-    }  
-  ],  
-
-  {  
+{  
     "amount": "19",  
     "auto_print_order": true,  
     "currency": "EUR",  
