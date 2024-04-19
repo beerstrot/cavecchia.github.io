@@ -1,5 +1,6 @@
 import { bana, mkCall, formatNum, ORIGIN } from './utils';
 import { itemsCarrelloTable } from './htmlTemplates';
+const { v4: uuidv4 } = require('uuid');
 
 $(document).ready(() => {
   mkCall(
@@ -40,6 +41,7 @@ function mkInterface (r) {
 }
 
 function mkMenu (prods) {
+  /* Costruttore del menù */
   window.allProducts = prods;
   $('h2').parent().children('.grid-x').html('');
   prods.forEach(p => {
@@ -87,7 +89,7 @@ function mkCellSmall (p, cell) {
   const tDiv = mkDiv('item-text', pp)
   M(
     'span',
-    'price', 
+    'price',
     M('h3', '', tDiv).html(p.name)
   ).html(p.price1);
   M('p', '', tDiv).html(p.description);
@@ -116,7 +118,7 @@ function mkCellMedium (p, cell) {
   });
   M(
     'span',
-    'price', 
+    'price',
     M('h3', '', cs).html(p.name)
   ).html(p.price1);
   M(
@@ -130,6 +132,148 @@ function mkCellMedium (p, cell) {
   }).html('Seleziona');
 }
 
+function updateCartTotals () {
+  const productsOrdered = JSON.parse(window.localStorage.currentOrder || '[]');
+
+  let totalPrice = 0;
+  productsOrdered.forEach(product => {
+    totalPrice += product.quantity * product.price1;
+  });
+
+  if (totalPrice === 0) {
+    $('#carrelloPieno').hide();
+    $('#carrelloVuoto').show();
+    $('#carrelloPiccoloPieno').hide();
+    $('#carrelloPiccoloVuoto').show();
+  } else {
+    $('#carrelloPieno').show();
+    $('#carrelloVuoto').hide();
+    $('#carrelloPiccoloPieno').show();
+    $('#carrelloPiccoloVuoto').hide();
+  }
+  //prezzo carrello e nr prodotti carrello
+  $('.carrello-table-totale').html(` &nbsp;&nbsp;€&ensp;${formatNum(totalPrice)}`);
+
+  let totalQuantity = 0;
+  productsOrdered.forEach(product => {
+    totalQuantity += product.quantity;
+  });
+  $('.prod-quantity').html(` &nbsp;${totalQuantity}`);
+}
+
+function addProductIntoCurrentOrder(product_id, product_cotturaV, product_quantity, row_uuid) {
+  let product = {};
+  window.allProducts.forEach(prod => {
+    if (prod.id === product_id){
+        product = prod;
+        return;
+    }
+  });
+
+  product.cotturaV = product_cotturaV;
+  product.quantity = product_quantity;
+  product.rowUuid = row_uuid;
+
+  const existingOrder = JSON.parse(window.localStorage.currentOrder || '[]');
+
+  let newCurrentOrder = [];
+  if (existingOrder.length === 0){
+    newCurrentOrder.push(product)
+    window.localStorage.currentOrder = JSON.stringify(newCurrentOrder);
+    return;
+  }
+
+  let isNewProductPresentIntoOrder = false;
+  for (const productOrdered of existingOrder) {
+      if (productOrdered.rowUuid == product.rowUuid){
+          isNewProductPresentIntoOrder = true;
+          newCurrentOrder.push(product);
+      } else {
+        newCurrentOrder.push(productOrdered);
+      }
+  }
+
+  if (!isNewProductPresentIntoOrder){
+      newCurrentOrder.push(product);
+  }
+
+  window.localStorage.currentOrder = JSON.stringify(newCurrentOrder);
+}
+
+function UpdateProductIntoCurrentOrder(nextQuantity, rowUuid){
+    const productsOrdered = JSON.parse(window.localStorage.currentOrder || '[]');
+
+    // Ciclo inverso per evitare problemi di indicizzazione dopo la rimozione
+    for (let i = productsOrdered.length - 1; i >= 0; i--) {
+        const product = productsOrdered[i];
+        if (product.rowUuid === rowUuid) {
+            if (nextQuantity > 0) {
+                product.quantity = nextQuantity;
+            } else {
+                productsOrdered.splice(i, 1);
+            }
+        }
+    }
+    window.localStorage.currentOrder = JSON.stringify(productsOrdered);
+}
+
+function resetModalsInput(){
+    $('.modal-input-number').val(1);
+    $('.modal-input-note').val('');
+}
+
+const addToCart = (p, quantity, noteText, pid, price, cotturaV, cotturaI) => {
+    p.quantity = quantity;
+    p.noteText = noteText.val();
+    p.rowUuid  = uuidv4();
+
+    if (quantity) {
+        p.cotturaV = cotturaV;
+        p.cotturaI = cotturaI;
+        p.cotturaId = $('#' + pid + 'cottura_').data().variation_id;
+        const template = itemsCarrelloTable(p.name, p.noteText, p.cotturaV, p.quantity, price, p.id, p.rowUuid);
+        $('.itens-carrello-table').append(template);
+    }
+    addProductIntoCurrentOrder(p.id, p.cotturaV, p.quantity, p.rowUuid);
+    updateCartTotals();
+    resetModalsInput();
+
+    $(`.input-number-increment-${p.rowUuid}`).click(function() {
+      const rowUuid = $(this).data('row-uuid');
+      const $input = $(`.input-number-${rowUuid}`);
+      const currentQuantity = parseInt($input.val(), 10);
+
+      $input.val(currentQuantity + 1);
+      let nextQuantity = currentQuantity + 1;
+      $(`.prezzo-item-${rowUuid}`).html(formatNum((nextQuantity) * p.price1));
+
+      UpdateProductIntoCurrentOrder(nextQuantity, rowUuid);
+      updateCartTotals();
+    });
+
+    $(`.input-number-decrement-${p.rowUuid}`).click(function() {
+      const rowUuid = $(this).data('row-uuid');
+      const $input = $(`.input-number-${rowUuid}`);
+      const currentQuantity = parseInt($input.val(), 10);
+
+      let nextQuantity = currentQuantity - 1;
+      if (nextQuantity < 0) {
+        nextQuantity = 0;
+      }
+      $input.val(nextQuantity);
+
+      $(`.prezzo-item-${rowUuid}`).html(formatNum(nextQuantity * p.price1));
+
+      if (nextQuantity === 0) {
+          $(`.carrello-row-${rowUuid}`).remove();
+      }
+
+      UpdateProductIntoCurrentOrder(nextQuantity, rowUuid);
+      updateCartTotals();
+    })
+};
+
+
 function mkModal (p, secDiv) {
   const pid = mkPid(p);
   // const imgName = 'test-immagine1-16-9.jpg';
@@ -137,6 +281,7 @@ function mkModal (p, secDiv) {
   const modal = M('div', 'reveal reveal-ecommerce', secDiv, {
     id: pid
   });
+
   const closeBtn = M('button', 'close-button close-button-sticky', modal, {
     type: 'button',
     'aria-label': 'Close reveal',
@@ -145,6 +290,7 @@ function mkModal (p, secDiv) {
   ).on('click', () => {
     modal.foundation('close');
   });
+
   M('img', '', modal, {
     src: `${IMG_ROOT}${imgName}`,
     style:'margin-top:-3rem',
@@ -157,8 +303,8 @@ function mkModal (p, secDiv) {
   M('p', 'allergeni' , M('small', '', modalDiv).html(p.description)).html('Allergeni: ' + p.allergens.map(i => i.name).join(', '), {
     maxlength: '200', css: { 'min-height': '0.5rem' }
   });
-  const noteText = M('textarea', '', M('label', '', modalDiv, { id: pid + '_note' }).html(`<strong>Note</strong>`), {
-    maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem'}
+  const noteText = M('textarea', 'modal-input-note', M('label', '', modalDiv, { id: pid + '_note' }).html(`<strong>Note</strong>`), {
+      maxlength: '200',  placeholder: '...', css: { 'min-height': '0.5rem'}
   });
   if (!hasNote(p)) {
     $('#' + pid + '_note').hide();
@@ -190,7 +336,7 @@ function mkModal (p, secDiv) {
       placePrice(quantity);
     })
   );
-  M('input', 'input-number group-margin', footerDiv, {
+  M('input', 'input-number group-margin modal-input-number', footerDiv, {
     css: { width: '3rem' },  type: 'button', value: '1', min: '0', max: '20'
   });
   M('i', 'las la-plus-square la-2x',
@@ -207,40 +353,13 @@ function mkModal (p, secDiv) {
   const btnPrice = M('span', 'price',
     M('button', 'button expanded-with-padding extra-space-button-modal', footer, { type: 'button' }).html('Aggiungi al carrello')
       .on('click', () => {
-        $(`.carrello-row-${pid}`).remove();
-        p.quantity = quantity;
-        p.noteText = noteText.val();
-        if (quantity) {
+          const selectedQuantity = parseInt($(`#${pid} .modal-input-number`).val(), 10);
           const cotturaV = $('#' + pid + 'cottura_ option:selected').text();
           const cotturaI = $('#' + pid + 'cottura_ option:selected').val();
-          p.cotturaV = cotturaV;
-          p.cotturaI = cotturaI;
-          p.cotturaId = $('#' + pid + 'cottura_').data().variation_id;
-          const template = itemsCarrelloTable(p.name, p.noteText, p.cotturaV, p.quantity, price, pid);
-          $('.itens-carrello-table').append(template);
-        }
-        updateTotal();
-        $('.input-number-increment-' + pid).click(function() {
-          const $input = $(this).parents('.input-number-group').find('.input-number');
-          const val = parseInt($input.val(), 10);
-          $input.val(val + 1);
-          p.quantity = val + 1;
-              $('.prezzo-item-' + pid).html(formatNum((val + 1) * p.price1));
-          updateTotal();
-        });
-        $('.input-number-decrement-' + pid).click(function() {
-          const $input = $(this).parents('.input-number-group').find('.input-number');
-          const val = parseInt($input.val(), 10);
-          let v = val - 1;
-          if (v < 0) {
-            v = 0;
-          }
-          $input.val(v);
-          p.quantity = v;
-          $('.prezzo-item-' + pid).html(formatNum(v * p.price1));
-          updateTotal();
-        })
-        closeBtn.click();
+          const cottura_id = $('#' + pid + 'cottura_').data().variation_id
+
+          addToCart(p, selectedQuantity, noteText, pid, price, cotturaV, cotturaI);
+          closeBtn.click();
       })
       //modal price
   ).html(` &nbsp;&nbsp;&nbsp;€&thinsp;${price}`);
@@ -287,27 +406,6 @@ function hasCottura(p) {
   return [];
 }
 
-function updateTotal () {
-  const prods = window.allProducts.filter(p => p.quantity);
-  window.localStorage.currentOrder = JSON.stringify(prods);
-  const total = prods.reduce((a, p) => a + p.quantity * p.price1, 0);
-  if (total === 0) {
-    $('#carrelloPieno').hide();
-    $('#carrelloVuoto').show();
-    $('#carrelloPiccoloPieno').hide();
-    $('#carrelloPiccoloVuoto').show();
-  } else {
-    $('#carrelloPieno').show();
-    $('#carrelloVuoto').hide();
-    $('#carrelloPiccoloPieno').show();
-    $('#carrelloPiccoloVuoto').hide();
-  }
-  //prezzo carrello e nr prodotti carrello
-  $('.carrello-table-totale').html(` &nbsp;&nbsp;€&ensp;${formatNum(total)}`);
-  const quantity = prods.reduce((a, p) => a + p.quantity, 0);
-  $('.prod-quantity').html(` &nbsp;${quantity}`);
-}
-
 function checkStoredOrder () {
   const storage = window.localStorage.currentOrder;
   if (!storage) return;
@@ -315,40 +413,56 @@ function checkStoredOrder () {
   if (prods) {
     prods.forEach(p => {
       const prod = window.allProducts.filter(pp => pp.id === p.id);
+
       if (prod.length) {
         const p_ = prod[0];
         p_.quantity = p.quantity;
         p_.noteText = p.noteText;
+        p_.rowUuid = p.rowUuid;
         p_.cotturaV = p.cotturaV || '';
         const price = p.quantity * p.price1;
         const pid = mkPid(p);
-        const template = itemsCarrelloTable(p.name, p.noteText, p.cotturaV, p.quantity, price, pid);
+        const template = itemsCarrelloTable(p.name, p.noteText, p.cotturaV, p.quantity, formatNum(price), p.id, p_.rowUuid);
         $('.itens-carrello-table').append(template);
-        // $('#carrello-small-items').append(template);
-        $('.input-number-increment-' + pid).click(function() {
-          const $input = $(this).parents('.input-number-group').find('.input-number');
-          const val = parseInt($input.val(), 10);
-          $input.val(val + 1);
-          p_.quantity = val + 1;
-          $('.prezzo-item-' + pid).html(formatNum((val  + 1) * p.price1));
-          updateTotal();
+//        $('#carrello-small-items').append(template);
+
+        $(`.input-number-increment-${p_.rowUuid}`).click(function() {
+          const rowUuid = $(this).data('row-uuid');
+          const $input = $(`.input-number-${rowUuid}`);
+          const currentQuantity = parseInt($input.val(), 10);
+
+          $input.val(currentQuantity + 1);
+          let nextQuantity = currentQuantity + 1;
+          p_.quantity = nextQuantity;
+          $(`.prezzo-item-${rowUuid}`).html(formatNum((nextQuantity) * p.price1));
+
+          UpdateProductIntoCurrentOrder(nextQuantity, rowUuid);
+          updateCartTotals();
         });
-        $('.input-number-decrement-' + pid).click(function() {
-          const $input = $(this).parents('.input-number-group').find('.input-number');
-          const val = parseInt($input.val(), 10);
-          let v = val - 1;
-          if (v < 0) {
-            v = 0;
+
+        $(`.input-number-decrement-${p_.rowUuid}`).click(function() {
+          const rowUuid = $(this).data('row-uuid');
+          const $input = $(`.input-number-${rowUuid}`);
+          const currentQuantity = parseInt($input.val(), 10);
+
+          let nextQuantity = currentQuantity - 1;
+          if (nextQuantity < 0) {
+            nextQuantity = 0;
           }
-          $input.val(v);
-          p_.quantity = v;
-          $('.prezzo-item-' + pid).html(formatNum(v * p.price1));
-          updateTotal();
+          $input.val(nextQuantity);
+          $(`.prezzo-item-${rowUuid}`).html(formatNum(nextQuantity * p.price1));
+
+          if (nextQuantity === 0) {
+              $(`.carrello-row-${rowUuid}`).remove();
+          }
+
+          UpdateProductIntoCurrentOrder(nextQuantity, rowUuid);
+          updateCartTotals();
         })
       }
     });
   }
-  updateTotal();
+  updateCartTotals();
 }
 
 function getClosedTimeslots () {
