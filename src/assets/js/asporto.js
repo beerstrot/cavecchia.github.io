@@ -145,11 +145,13 @@ function updateCartTotals () {
     $('#carrelloVuoto').show();
     $('#carrelloPiccoloPieno').hide();
     $('#carrelloPiccoloVuoto').show();
+    $('#vai-checkout-large, #vai-checkout-small').prop('disabled', true);
   } else {
     $('#carrelloPieno').show();
     $('#carrelloVuoto').hide();
     $('#carrelloPiccoloPieno').show();
     $('#carrelloPiccoloVuoto').hide();
+    $('#vai-checkout-large, #vai-checkout-small').prop('disabled', false);
   }
   //prezzo carrello e nr prodotti carrello
   $('.carrello-table-totale').html(` &nbsp;&nbsp;€&ensp;${formatNum(totalPrice)}`);
@@ -224,7 +226,7 @@ function resetModalsInput(){
         const pid = $(this).closest('.reveal').attr('id');
         const p = window.allProducts.find(product => mkPid(product) === pid);
         if (p) {
-            $(this).html(`Aggiungi al carrello €${formatNum(p.price1)}`);
+            $(this).find('.price').html(`&nbsp;&nbsp;&nbsp;€&thinsp;${formatNum(p.price1)}`);
         }
     })
 }
@@ -375,7 +377,7 @@ function mkModal (p, secDiv) {
 
   function placePrice (quantity) {
     price = formatNum(p.price1 * quantity);
-    btnPrice.html(` €&thinsp;${price}`)
+    btnPrice.html(` &nbsp;&nbsp;&nbsp;€&thinsp;${price}`)
   }
 
   new Foundation.Reveal(modal.foundation());
