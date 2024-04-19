@@ -220,6 +220,13 @@ function UpdateProductIntoCurrentOrder(nextQuantity, rowUuid){
 function resetModalsInput(){
     $('.modal-input-number').val(1);
     $('.modal-input-note').val('');
+    $('.extra-space-button-modal').each(function() {
+        const pid = $(this).closest('.reveal').attr('id');
+        const p = window.allProducts.find(product => mkPid(product) === pid);
+        if (p) {
+            $(this).html(`Aggiungi al carrello €${formatNum(p.price1)}`);
+        }
+    })
 }
 
 const addToCart = (p, quantity, noteText, pid, price, cotturaV, cotturaI) => {
@@ -350,15 +357,17 @@ function mkModal (p, secDiv) {
       placePrice(quantity);
     })
   );
+
   const btnPrice = M('span', 'price',
     M('button', 'button expanded-with-padding extra-space-button-modal', footer, { type: 'button' }).html('Aggiungi al carrello')
       .on('click', () => {
           const selectedQuantity = parseInt($(`#${pid} .modal-input-number`).val(), 10);
+          const currentPrice = formatNum(p.price1 * selectedQuantity);
           const cotturaV = $('#' + pid + 'cottura_ option:selected').text();
           const cotturaI = $('#' + pid + 'cottura_ option:selected').val();
           const cottura_id = $('#' + pid + 'cottura_').data().variation_id
 
-          addToCart(p, selectedQuantity, noteText, pid, price, cotturaV, cotturaI);
+          addToCart(p, selectedQuantity, noteText, pid, currentPrice, cotturaV, cotturaI);
           closeBtn.click();
       })
       //modal price
