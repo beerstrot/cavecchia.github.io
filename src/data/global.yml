@@ -21,7 +21,7 @@ menu-sushi-signature:
     item-name: Roll Special Salmone Fritto
     item-image-16-9: assets/img/prod/RollSpecialSalmoneFritto_rettangolare.jpg
     item-price: 15
-    item-description: Salmone fritto e insalata croccante ricoperti da carpaccio di branzino scottato e maionese piccante (8 pezzi).
+    item-description: Salmone in panko fritto e insalata croccante ricoperti da carpaccio di branzino scottato e maionese piccante (8 pezzi).
     item-allergeni: Uova, Pesce, Soia, Senape
     class-allergeni:
     class-price:
@@ -189,7 +189,7 @@ menu-sushi-uramaki-classici:
     item-name: Uramaki Philadelphia
     item-image-16-9: assets/img/prod/UramakiPhiladelphia_rettangolare.jpg
     item-price: 9
-    item-description: Salmone in panko croccante e philadelphia guarniti con salsa teriyaki (8 pezzi).
+    item-description: Salmone in panko fritto e philadelphia guarniti con salsa teriyaki (8 pezzi).
     item-allergeni: Glutine, Pesce, Soia, Latte, Senape
     class-allergeni:
     class-price:
