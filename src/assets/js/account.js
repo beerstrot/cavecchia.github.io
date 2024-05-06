@@ -1,5 +1,6 @@
 import { mkCall, ORIGIN } from './utils';
 import { carrelloCheckoutUser } from './htmlTemplates';
+const { v4: uuidv4 } = require('uuid');
 
 $(document).ready(() => {
   if (window.localStorage.currentClient)
@@ -108,7 +109,14 @@ function loadPreviousOrder(indexID) {
 }
 
 function confirmLoadPreviousOrder(orderToLoad) {
-  window.localStorage.currentOrder = JSON.stringify(orderToLoad);
+  const newOrderList = [];
+
+  for (const product of orderToLoad) {
+    const productWithUuid = { ...product, rowUuid: uuidv4() };
+    newOrderList.push(productWithUuid);
+  }
+
+  window.localStorage.currentOrder = JSON.stringify(newOrderList);
   window.location.href = ORIGIN + '/checkout.html'
 }
 
