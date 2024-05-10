@@ -546,42 +546,42 @@ menu-hamburger-stagione:
   #   class-allergeni:
   #   class-price:
   #   alt-image: Primavera Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
-  #   item-name: Estivo
-  #   item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 11,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Estivo
-  # -
-  #   item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
-  #   item-name: Estivo Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 15,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Estivo Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
-  #   item-name: Norma
-  #   item-description: Burger di manzo (180 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 11,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Estivo
-  # -
-  #   item-image-16-9: assets/img/prod/NormaDOPPIO_rettangolare.jpg
-  #   item-name: Norma Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 15,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Estivo Doppio
+  -
+    item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
+    item-name: Estivo
+    item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 12,9
+    class-allergeni:
+    class-price:
+    alt-image: Estivo
+  -
+    item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
+    item-name: Estivo Doppio
+    item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 16,9
+    class-allergeni:
+    class-price:
+    alt-image: Estivo Doppio
+  -
+    item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
+    item-name: Norma
+    item-description: Burger di manzo (180 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 12,9
+    class-allergeni:
+    class-price:
+    alt-image: Estivo
+  -
+    item-image-16-9: assets/img/prod/NormaDOPPIO_rettangolare.jpg
+    item-name: Norma Doppio
+    item-description: Doppio burger di manzo (360 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 16,9
+    class-allergeni:
+    class-price:
+    alt-image: Estivo Doppio
   -
     item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
     item-name: Deciso
@@ -638,19 +638,37 @@ menu-hamburger-stagione:
     alt-image: Carbonara Doppio
 
 menu-hamburger-vegetariano:
+  # -
+  #   item-image-16-9: assets/img/prod/VegetarianoFagioli_rettangolare.jpg
+  #   item-name: Vegetariano Fagioli
+  #   item-description: Burger di borlotti, julienne di cipolla fritta, crema di cicoria.
+  #   item-allergeni: Glutine, Latte, Soia, Uova
+  #   item-price: 10,5
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Vegetariano Fagioli
   -
-    item-image-16-9: assets/img/prod/VegetarianoFagioli_rettangolare.jpg
-    item-name: Vegetariano Fagioli
-    item-description: Hamburger di borlotti, julienne di cipolla fritta, crema di cicoria.
-    item-allergeni: Glutine, Latte, Soia, Uova
-    item-price: 10,5
+    item-image-16-9: assets/img/prod/VegetarianoMediterraneo_rettangolare.jpg
+    item-name: Vegetariano Mediterraneo
+    item-description: Burger di verdure (zucchine, peperoni, pomodori secchi, cipolle, melanzane), insalata, cipolla in agrodolce e maionese vegana.
+    item-allergeni: Glutine
+    item-price: 12,9
     class-allergeni:
     class-price:
-    alt-image: Vegetariano Fagioli
+    alt-image: Vegetariano Mediterraneo
+  -
+    item-image-16-9: assets/img/prod/VegetarianoAvena_rettangolare.jpg
+    item-name: Vegetariano Avena
+    item-description: urger di fiocchi d'avena e verdure (cipolle, cavolo riccio, spinaci, broccoli, scalogno), cipolla caramellata, insalata; composta di rape rosse, senape e miele.
+    item-allergeni: Glutine, Senape
+    item-price: 12,9
+    class-allergeni:
+    class-price:
+    alt-image: Vegetariano Avena
   -
     item-image-16-9: assets/img/prod/VegetarianoQuinoa_rettangolare.jpg
     item-name: Vegetariano Quinoa
-    item-description: Hamburger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele.
+    item-description: Burger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele.
     item-allergeni: Glutine, Latte, Senape, Uova
     item-price: 10,5
     class-allergeni:

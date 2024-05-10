@@ -4,19 +4,15 @@
     "currency": "EUR",  
     "external_id": "123456",  
     "name": "Order 123456",  
-    "notes": "Example header note",  
+    "notes": "",  
     "open_at": "2024-04-05 10:26:06",  
-    "order_type": "delivery",  
+    "order_type": "take-away",  
     "sale_customer": {  
         "customer_id": "126",  
-        "email": "[pinco.pallo@gmail.com](mailto:pinco.pallo@gmail.com)",  
+        "email": "pinco.pallo@gmail.com",  
         "first_name": "Pinco",  
-        "last_name": "Ball",  
-        "phone": "+3934512345678",  
-        "shipping_city": "Turin",  
-        "shipping_country": "IT",  
-        "shipping_street": "Via Colli, 3",  
-        "shipping_zip": "10128"  
+        "last_name": "Pallo",  
+        "mobile": "+3934512345678",  
     },  
     "sale_items": [  
         {  
@@ -33,10 +29,10 @@
             "price": "6",  
             "quantity": "1",  
             "seller_id": "0",  
-            "seller_name": "Beautiful Platform",  
+            "seller_name": "Ordini da Web",  
             "type": "sale",  
             "uuid": "5751114e-5094-4787-8be9-5ef9e92370c6",  
-            "watt_minute": "10"  
+            "vat_perc": "10"  
         },  
         {  
             "category_id": "3400",  
@@ -52,10 +48,10 @@
             "price": "10",  
             "quantity": "1",  
             "seller_id": "0",  
-            "seller_name": "Beautiful Platform",  
+            "seller_name": "Ordini da Web",  
             "type": "sale",  
             "uuid": "a134ea17-aeda-4bea-85d5-abfd4f6388fa",  
-            "watt_minute": "10"  
+            "vat_perc": "10"  
         },  
         {  
             "category_id": "3400",  
@@ -71,13 +67,13 @@
             "price": "3",  
             "quantity": "1",  
             "seller_id": "0",  
-            "seller_name": "Beautiful Platform",  
+            "seller_name": "Ordini da Web",  
             "type": "sale",  
             "uuid": "769c3907-b94d-4904-a772-f36e95441007",  
-            "watt_minute": "10"  
+            "vat_perc": "10"  
         }  
     ],  
     "seller_id": "0",  
-    "seller_name": "Beautiful Platform",  
+    "seller_name": "Ordini da Web",  
     "status": "open"  
 }
