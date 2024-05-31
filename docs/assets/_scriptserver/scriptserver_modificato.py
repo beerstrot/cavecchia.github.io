@@ -8,7 +8,7 @@ h = {
 
 order = {
     DA MODIFICARE
-    'order_items'.  sale_items : [
+    'order_items':  (sale_items) [
         {
             'item_id': 954,
             'name': 'Nigiri Special',
@@ -25,8 +25,8 @@ order = {
 
 
             DA MODIFICARE:
-            'operator_id': 0,   (seller_id)
-            'operator_name': 'Ordini da Web' (seller_name)
+            'operator_id' (seller_id): 0, 
+            'operator_name' (seller_name): 'Ordini da Web' 
 
 
             DA AGGIUNGERE
@@ -51,19 +51,18 @@ order = {
     },
 
     DA MODIFICARE
-    'type': 'take_away',  (order_type: 'take-awey')
+    'type' (order_type): 'take_away', 
 
     'status': 'open',
     'name': 'EXAMPLE - Renato Fabbri',
 
     DA MODIFICARE
-    'operator_id': 0,   (seller_id)
-    'operator_name': 'Ordini da Web' (seller_name)
+    'operator_id' (seller_id): 0,   
+    'operator_name' (seller_name): 'Ordini da Web' 
 
     DA AGGIUNGERE
     "auto_print_order": true,
     "currency": "EUR",
-
 
 
     'open_at': '2023-04-27T18:49:56.035080',
@@ -71,7 +70,10 @@ order = {
 }
 
 resp = requests.post(
-    'https://api.tilby.com/v2/orders',
+
+    DA MODIFICARE
+    'https://api.tilby.com/v2/orders' ('https://api.tilby.com/v2/sales'),
+    
     json=order,
     headers=h,
 )

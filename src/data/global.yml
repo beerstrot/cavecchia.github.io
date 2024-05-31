@@ -156,15 +156,15 @@ menu-sushi-hosomaki:
     class-allergeni:
     class-price:
     alt-image: Hosomaki Special Tonno
-  -
-    item-name: Hosomaki Vegetariano
-    item-image-16-9: assets/img/prod/HosomakiVegetariano_rettangolare.jpg
-    item-price: 10
-    item-description: Hosomaki di avocado, cetriolo e mango (8 pezzi).
-    item-allergeni: Soia
-    class-allergeni:
-    class-price:
-    alt-image: Hosomaki Vegetariano
+  # -
+  #   item-name: Hosomaki Vegetariano
+  #   item-image-16-9: assets/img/prod/HosomakiVegetariano_rettangolare.jpg
+  #   item-price: 10
+  #   item-description: Hosomaki di avocado, cetriolo e mango (8 pezzi).
+  #   item-allergeni: Soia
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Hosomaki Vegetariano
   -
     item-name: Hosomaki Special Salmone
     item-image-16-9: assets/img/prod/HosomakiSpecialSalmone_rettangolare.jpg
