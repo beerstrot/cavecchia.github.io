@@ -651,44 +651,44 @@ menu-hamburger-vegetariano:
     item-image-16-9: assets/img/prod/VegetarianoMediterraneo_rettangolare.jpg
     item-name: Vegetariano Mediterraneo
     item-description: Burger di verdure (zucchine, peperoni, pomodori secchi, cipolle, melanzane), insalata, cipolla in agrodolce e maionese vegana.
-    item-allergeni: Glutine
+    item-allergeni: Glutine, Sedano
     item-price: 12,9
     class-allergeni:
     class-price:
     alt-image: Vegetariano Mediterraneo
   -
-    item-image-16-9: assets/img/prod/VegetarianoAvena_rettangolare.jpg
-    item-name: Vegetariano Avena
-    item-description: urger di fiocchi d'avena e verdure (cipolle, cavolo riccio, spinaci, broccoli, scalogno), cipolla caramellata, insalata; composta di rape rosse, senape e miele.
+    item-image-16-9: assets/img/prod/VegetarianoDelicato_rettangolare.jpg
+    item-name: Vegetariano Delicato
+    item-description: Burger di fiocchi d'avena e verdure (cipolle, cavolo riccio, spinaci, broccoli, scalogno), cipolla caramellata, insalata; composta di rape rosse, senape e miele.
     item-allergeni: Glutine, Senape
     item-price: 12,9
     class-allergeni:
     class-price:
-    alt-image: Vegetariano Avena
-  -
-    item-image-16-9: assets/img/prod/VegetarianoQuinoa_rettangolare.jpg
-    item-name: Vegetariano Quinoa
-    item-description: Burger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele.
-    item-allergeni: Glutine, Latte, Senape, Uova
-    item-price: 10,5
-    class-allergeni:
-    class-price:
-    alt-image: Vegetariano Quinoa
+    alt-image: Vegetariano Delicato
+  # -
+  #   item-image-16-9: assets/img/prod/VegetarianoQuinoa_rettangolare.jpg
+  #   item-name: Vegetariano Quinoa
+  #   item-description: Burger di quinoa e bulgur, rucola, cipolla caramellata; composta di rape rosse, senape e miele.
+  #   item-allergeni: Glutine, Latte, Senape, Uova
+  #   item-price: 10,5
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Vegetariano Quinoa
 
 menu-carne:
   -
-    item-image-16-9: assets/img/prod/CostineinSalsaBBQ_rettangolare.jpg
-    item-name: Costine in Salsa BBQ
-    item-description: Baby ribs di suino allevato allo stato brado in salsa bbq.
+    item-image-16-9: assets/img/prod/CostineBBQ_rettangolare.jpg
+    item-name: Costine BBQ
+    item-description: Costine di suino allevato allo stato brado in salsa bbq.
     item-allergeni: Anidride Solforosa e Solfiti, Glutine, Pesce, Semi di Sesamo
     item-price: 14,9
     class-allergeni:
     class-price:
-    alt-image: Costine in Salsa BBQ
+    alt-image: Costine BBQ
   -
     item-image-16-9: assets/img/prod/Entrecote_rettangolare.jpg
     item-name: Entrecôte
-    item-description: Entrecôte di Manzetta Red Hereford irlandese.
+    item-description: 250 grammi circa di Entrecôte (controfiletto) di manzetta Red Hereford irlandese.
     item-allergeni: --
     item-price: 19
     class-allergeni:
@@ -701,7 +701,7 @@ menu-dolce:
     item-name: Cheesecake
     item-description: Cheesecake in stile new york. Squisitamente dolce, morbida e leggermente acidula.
     item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
-    item-price: 5
+    item-price: 5,5
     class-allergeni:
     class-price:
     alt-image: Cheesecake
@@ -709,7 +709,7 @@ menu-dolce:
     item-image-16-9: assets/img/prod/Blondie_rettangolare.jpg
     item-name: Blondie
     item-description: Brownie con nocciole. Servito con crema al mascarpone.
-    item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
+    item-allergeni: Frutta a Guscio, Latte, Uova
     item-price: 5
     class-allergeni:
     class-price:
@@ -726,9 +726,9 @@ menu-dolce:
   -
     item-image-16-9: assets/img/prod/Birramisu_rettangolare.jpg
     item-name: Birramisù
-    item-description: Tiramisù con mascarpone artigianale alla birra stout.
+    item-description: Tiramisù con savoiardi inzuppati in una birra stout. Avvolgente e cremoso.
     item-allergeni: Glutine, Latte, Uova
-    item-price: 5
+    item-price: 6
     class-allergeni:
     class-price:
     alt-image: Birramisù
@@ -962,14 +962,14 @@ menu-vino-caraffa:
     item-name: Rosso Piceno doc
     item-description: Vino Biologico. Cantina Collevite.
     item-allergeni: anidride solforosa e solfiti
-    item-price: Quarto 3,5 | Litro 9
+    item-price: Quarto 4 | Litro 11,5
     class-allergeni:
     class-price:
   -
     item-name: Verdicchio Matelica doc
     item-description: Cantina Belisario.
     item-allergeni: anidride solforosa e solfiti
-    item-price: Quarto 3,5 | Litro 9
+    item-price: Quarto 4 | Litro 11,5
     class-allergeni:
     class-price:
 
@@ -985,42 +985,42 @@ menu-vino:
     item-name: Serrano Rosso Conero doc
     item-description: Cantina Umani Ronchi. Colore rosso rubino con riflessi violacei. Profumo pulito di visciola matura. Gran polpa e gran rotondità di sapore, uniti ad una buona struttura garantiscono una piacevole bevibilità.
     item-allergeni: anidride solforosa e solfiti
-    item-price: 14,5 | 3,5
+    item-price: 16,5 | 4
     class-allergeni:
     class-price:
   -
     item-name: Rubico Lacrima Morro Alba doc
     item-description: Cantina Marotti Campi. Rosso vivace con riflessi porpora. Ha un aroma gradevole e fruttato con richiami discreti ai fiori di ciliegio e alla viola. Il gusto è morbido, vellutato e sapido.
     item-allergeni: anidride solforosa e solfiti
-    item-price: 15,5 | 3,5
+    item-price: 16 | 4
     class-allergeni:
     class-price:
   -
     item-name: Villa Bianchi Verdicchio doc
     item-description: Cantina Umani Ronchi. Colore giallo paglierino brillante, con riflessi verdognoli. Al gusto esprime una piacevole struttura basata su note sapide e fresche, in cui risalta un finale con tipico sentore di mandorla.
     item-allergeni: anidride solforosa e solfiti
-    item-price: 14,5 | 3,5
+    item-price: 16,5 | 4
     class-allergeni:
     class-price:
   -
     item-name: Casal di Serra Verdicchio Superiore Biologico doc
     item-description: Cantina Umani Ronchi. Colore giallo paglierino. Profumi intensi di fiori di campo, aromi di frutta a polpa gialla. Ricco e vellutato, con buona dose di freschezza e sapidità che bilancia l’eccellente morbidezza. Finale asciutto, persistente e fruttato.
     item-allergeni: anidride solforosa e solfiti
-    item-price: 18
+    item-price: 21
     class-allergeni:
     class-price:
   -
     item-name: Gewurztraminer doc
     item-description: Cantina H.Lun. Un inconfondibile bouquet speziato dal sentore di rose e frutta secca, una corposità generosa e un gusto pieno e intenso caratterizzano questo tipico vino bianco dell'Alto Adige.
     item-allergeni: anidride solforosa e solfiti
-    item-price: 20
+    item-price: 22
     class-allergeni:
     class-price:
   -
     item-name: Ribolla Gialla igt
     item-description: Cantina Branko. Al naso ricorda un bouquet di fiori bianchi. Al palato si evidenzia una giusta sapidità accompagnata dalla tipica acidità del vitigno.
     item-allergeni: anidride solforosa e solfiti
-    item-price: 20 | 5
+    item-price: 21 | 5
     class-allergeni:
     class-price:
   -
