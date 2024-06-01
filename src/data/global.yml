@@ -726,7 +726,7 @@ menu-dolce:
   -
     item-image-16-9: assets/img/prod/Birramisu_rettangolare.jpg
     item-name: Birramisù
-    item-description: Tiramisù con savoiardi inzuppati in una birra stout. Avvolgente e cremoso.
+    item-description: Tiramisù con savoiardi inzuppati nella birra stout. Avvolgente e cremoso.
     item-allergeni: Glutine, Latte, Uova
     item-price: 6
     class-allergeni:
