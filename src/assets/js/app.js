@@ -61,7 +61,7 @@ $(document).ready(() => {
   } else if (en('chi-siamo')) {
   } else if (en('informazioni-legali')) {
   } else if (en('disiscrizione')) {
-  } else if (en('torte-compleanno')) {
+  } else if (en('torte-ricorrenze')) {
   } else if (en('sala-comandi')) {
   } else if (en('404')) {
   } else { // index.html:
