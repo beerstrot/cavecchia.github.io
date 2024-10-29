@@ -71,7 +71,7 @@ menu-pesce-secondi:
     item-image-16-9: assets/img/prod/SpiedinidiPesce_rettangolare.jpg
     item-price: 21
     item-description: Spiedini arrosto con branzino, gamberi, calamari e coda di rospo.
-    item-allergeni: Pesce, Crostacei.
+    item-allergeni: Pesce, Crostacei
     class-allergeni:
     class-price:
     alt-image: Spiedini di Pesce
@@ -80,7 +80,7 @@ menu-pesce-secondi:
     item-image-16-9: assets/img/prod/CodadiRospo_rettangolare.jpg
     item-price: 19
     item-description: Coda di rospo al finocchietto e guanciale. Servita con purea di ceci.
-    item-allergeni: Pesce.
+    item-allergeni: Pesce
     class-allergeni:
     class-price:
     alt-image: Coda di Rospo
@@ -199,24 +199,24 @@ menu-hamburger-classici:
     class-allergeni:
     class-price:
     alt-image: Beerstrot Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/NewYork_rettangolare.jpg
-  #   item-name: New York
-  #   item-description: Burger di manzo (180 grammi), cheddar, cipolla caramellata, insalata.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 11,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: New York
-  # -
-  #   item-image-16-9: assets/img/prod/NewYorkDOPPIO_rettangolare.jpg
-  #   item-name: New York Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), cheddar, cipolla caramellata, insalata.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 15,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: New York Doppio
+  -
+    item-image-16-9: assets/img/prod/CheeseburgerSpecial_rettangolare.jpg
+    item-name: Cheeseburger Special
+    item-description: Burger di manzo (180 grammi), cheddar, cipolle rosse in agrodolce, insalata croccante, salsa speciale.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 12,9
+    class-allergeni:
+    class-price:
+    alt-image: Cheeseburger Special
+  -
+    item-image-16-9: assets/img/prod/CheeseburgerSpecial_rettangolare.jpg
+    item-name: Cheeseburger Special Doppio
+    item-description: Doppio burger di manzo (360 grammi), cheddar, cipolle rosse in agrodolce, insalata croccante, salsa speciale.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 16,9
+    class-allergeni:
+    class-price:
+    alt-image: Cheeseburger Special Doppio
   -
     item-image-16-9: assets/img/prod/Diablo_rettangolare.jpg
     item-name: Diablo
@@ -291,60 +291,78 @@ menu-hamburger-stagione:
     class-allergeni:
     class-price:
     alt-image: Cacio e Pepe Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/Greco_rettangolare.jpg
-  #   item-name: Greco
-  #   item-description: Burger di manzo (180 grammi), melanzana grigliata, insalata riccia, salsa tzatziki.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 10,5
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Cacio e Pepe
-  # -
-  #   item-image-16-9: assets/img/prod/GrecoDOPPIO_rettangolare.jpg
-  #   item-name: Greco Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), melanzana grigliata, insalata riccia, salsa tzatziki.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 14,5
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Cacio e Pepe Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
-  #   item-name: Inverno
-  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 12,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Inverno
-  # -
-  #   item-image-16-9: hssets/img/prod/InvernoDOPPIO_rettangolare.jpg
-  #   item-name: Inverno Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 16,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Inverno Doppio
-  # -
-  #   item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
-  #   item-name: Primavera
-  #   item-description: Burger di manzo (180 grammi), composta di feta, pomodorini e timo; insalata riccia.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 11,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Primavera
-  # -
-  #   item-image-16-9: assets/img/prod/PrimaveraDOPPIO_rettangolare.jpg
-  #   item-name: Primavera Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), omposta di feta, pomodorini e timo; insalata riccia.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 15,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Primavera Doppio
+  -
+    item-image-16-9: assets/img/prod/California_rettangolare.jpg
+    item-name: California
+    item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, cipolla rossa in agrodolce, salsa guacamole, salsa piccante.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 13,4
+    class-allergeni:
+    class-price:
+    alt-image: California
+  -
+    item-image-16-9: assets/img/prod/CaliforniaDOPPIO_rettangolare.jpg
+    item-name: California Doppio
+    item-description: Doppio burger di manzo (360 grammi), cheddar, bacon croccante, cipolla rossa in agrodolce,salsa guacamole, salsa piccante.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 17,9
+    class-allergeni:
+    class-price:
+    alt-image: California Doppio
+  -
+    item-image-16-9: assets/img/prod/Autunno_rettangolare.jpg
+    item-name: Autunno
+    item-description: Burger di manzo (180 grammi), scamorza affumicata, speck croccante, crema di funghi.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 13,4
+    class-allergeni:
+    class-price:
+    alt-image: Autunno
+  -
+    item-image-16-9: assets/img/prod/AutunnoDOPPIO_rettangolare.jpg
+    item-name: Autunno Doppio
+    item-description: Doppio burger di manzo (360 grammi), scamorza affumicata, speck croccante, crema di funghi.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 17,9
+    class-allergeni:
+    class-price:
+    alt-image: Autunno Doppio
+  -
+    item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
+    item-name: Inverno
+    item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 12,9
+    class-allergeni:
+    class-price:
+    alt-image: Inverno
+  -
+    item-image-16-9: hssets/img/prod/InvernoDOPPIO_rettangolare.jpg
+    item-name: Inverno Doppio
+    item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 16,9
+    class-allergeni:
+    class-price:
+    alt-image: Inverno Doppio
+  -
+    item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
+    item-name: Primavera
+    item-description: Burger di manzo (180 grammi), composta di feta, pomodorini e timo; insalata riccia.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 11,9
+    class-allergeni:
+    class-price:
+    alt-image: Primavera
+  -
+    item-image-16-9: assets/img/prod/PrimaveraDOPPIO_rettangolare.jpg
+    item-name: Primavera Doppio
+    item-description: Doppio burger di manzo (360 grammi), omposta di feta, pomodorini e timo; insalata riccia.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 15,9
+    class-allergeni:
+    class-price:
+    alt-image: Primavera Doppio
   -
     item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
     item-name: Estivo
@@ -713,7 +731,7 @@ menu-birra-bottiglia:
     item-name: Weisse 50cl
     item-description: Birrificio Franziskaner. Weisse tedesca 5,1%. Bionda con prevalenti note di banana.
     item-allergeni: Glutine
-    item-price: 6
+    item-price: 4,5
   -
     item-name: Natural Radler 50cl
     item-description: Birrificio Mönchshof. Radler 2,5%. Rinfrescante e fruttata con succo di limone naturale.
@@ -724,6 +742,11 @@ menu-birra-bottiglia:
     item-description: Birrificio Forst. Zero alcohol dal sapore sorprendente.
     item-allergeni: Glutine
     item-price: 4,5
+  -
+    item-name: Zona Mugnetti 50cl
+    item-description: Birrificio Mukkeller. Belgian Ale 6%. Colore arancio chiaro, gusto morbido con sentori di arance e limoni.
+    item-allergeni: Glutine
+    item-price: 6,5
   -
     item-name: Bockbier 50cl
     item-description: Birrificio Mönchshof. Rossa tedesca 6,9%. Birra corposa, si fa apprezzare grazie al suo bouquet leggermente maltato, alla sua schiuma cremosa e al suo gusto speziato e aromatico.
@@ -740,10 +763,15 @@ menu-birra-bottiglia:
     item-allergeni: Glutine
     item-price: 6,5
   -
+    item-name: Variante IPA 50cl
+    item-description: Birrificio Mukkeller. IPA 6,6%. Birra con un buon corpo, succosa con un amaro deciso. In bocca frutta gialla matura, agrumi e frutta tropicale.
+    item-allergeni: Glutine
+    item-price: 6,5
+  -
     item-name: Ridopoco 50cl
     item-description: Birrificio Mukkeller. America pale ale 6,2%. Corpo leggero, massiccia luppolatura.
     item-allergeni: Glutine
-    item-price: 6
+    item-price: 6,5
   -
     item-name: Hattori Hanzo 50cl
     item-description: Birrificio Mukkeller. Doppia IPA 8,2%. Birra bionda dall'amaro pulito e persistente. Crea dipendenza.
@@ -783,17 +811,16 @@ menu-vino-caraffa:
 
 menu-vino:
   -
-    item-name: Rosso igt Salento - Fichimori
-    item-description: Cantina Tormaresca. Da bere freddo. Colore rosso rubino. Al naso prevalgono le note di frutta rossa, di fragola e lampone, seguite da delicate sensazioni di rosa canina. Al palato è fresco, sapido e scorrevole, caratterizzato da un ingresso morbido e un retrogusto fruttato.
-    item-allergeni: Anidride solforosa e solfiti
-    item-price: 18 | 5
-    class-allergeni:
-    class-price:
-  -
     item-name: Rosso Conero doc - Serrano
     item-description: Cantina Umani Ronchi. Colore rosso rubino con riflessi violacei. Profumo pulito di visciola matura. Gran polpa e gran rotondità di sapore, uniti ad una buona struttura garantiscono una piacevole bevibilità.
     item-allergeni: Anidride solforosa e solfiti
-    item-price: 16,5 | 4
+    item-price: 15,5 | 4
+    class-allergeni:
+    class-price:
+  -
+    item-name: Rosso Conero doc - San Lorenzo
+    item-description: Cantina Umani Ronchi. Colore rosso rubino con riflessi granata. Profumi di frutta rossa e spezie dolci, gusto ricco di polpa e freschezza, contraddistinto da tannini ben levigati e da un persistente e lungo finale fruttato.
+    item-price: 19
     class-allergeni:
     class-price:
   -
@@ -804,10 +831,24 @@ menu-vino:
     class-allergeni:
     class-price:
   -
+    item-name: Syrah Cortona DOC - Achelo
+    item-description: Cantina La Braccesca - Antinori. Colore rosso rubino. Al naso regala profumi di frutti di bosco, sentori floreali di violetta e note di vaniglia, liquirizia e spezie scure. L'assaggio è morbido e avvolgente, con un piacevole finale balsamico e speziato.
+    item-allergeni: Anidride solforosa e solfiti
+    item-price: 23
+    class-allergeni:
+    class-price:
+  -
+    item-name: Chianti Superiore DOCG - Santa Cristina
+    item-description: Cantina Santa Cristina. Colore rosso rubino con riflessi violacei. Al naso è ricco, con note fruttate di marasca, erbe aromatiche e sensazioni balsamiche. Al palato è morbido, avvolgente, con tannini vellutati e un finale lungo e sapido.
+    item-allergeni: Anidride solforosa e solfiti
+    item-price: 18 | 4,5
+    class-allergeni:
+    class-price:
+  -
     item-name: Verdicchio doc - Villa Bianchi
     item-description: Cantina Umani Ronchi. Colore giallo paglierino brillante, con riflessi verdognoli. Al gusto esprime una piacevole struttura basata su note sapide e fresche, in cui risalta un finale con tipico sentore di mandorla.
     item-allergeni: Anidride solforosa e solfiti
-    item-price: 16,5 | 4
+    item-price: 15,5 | 4
     class-allergeni:
     class-price:
   -
@@ -825,20 +866,6 @@ menu-vino:
     class-allergeni:
     class-price:
   -
-    item-name: Syrah Cortona DOC - Achelo
-    item-description: Cantina La Braccesca - Antinori. Colore rosso rubino. Al naso regala profumi di frutti di bosco, sentori floreali di violetta e note di vaniglia, liquirizia e spezie scure. L'assaggio è morbido e avvolgente, con un piacevole finale balsamico e speziato.
-    item-allergeni: Anidride solforosa e solfiti
-    item-price: 23
-    class-allergeni:
-    class-price:
-  -
-    item-name: Chianti Superiore DOCG - Santa Cristina
-    item-description: Cantina Santa Cristina. Colore rosso rubino con riflessi violacei. Al naso è ricco, con note fruttate di marasca, erbe aromatiche e sensazioni balsamiche. Al palato è morbido, avvolgente, con tannini vellutati e un finale lungo e sapido.
-    item-allergeni: Anidride solforosa e solfiti
-    item-price: 18
-    class-allergeni:
-    class-price:
-  -
     item-name: Ribolla Gialla igt
     item-description: Cantina Branko. Al naso ricorda un bouquet di fiori bianchi. Al palato si evidenzia una giusta sapidità accompagnata dalla tipica acidità del vitigno.
     item-allergeni: Anidride solforosa e solfiti
@@ -846,17 +873,10 @@ menu-vino:
     class-allergeni:
     class-price:
   -
-    item-name: Prosecco docg - Treser
-    item-description: Cantina Serre di Pederiva. Brut. All’aspetto è giallo paglierino scarico con riflessi verdognoli, con spuma brillante e perlage fine e persistente. Frutta fresca e fiori estivi ne completano il profumo secco e croccante.
+    item-name: Rosato igt biologico - Centovie
+    item-description: Cantina Umani Ronchi. Colore rosa quarzo. Al naso profuma di giacinto e di rosa, di lampone e melograno, di rosmarino e caramella di liquirizia. In bocca ha acidità agrumata, è vivo e sapido.
     item-allergeni: Anidride solforosa e solfiti
     item-price: 18 | 4
-    class-allergeni:
-    class-price:
-  -
-    item-name: Rosato igt Salento - Calafuria
-    item-description: Al naso spicca per note fruttate e agrumate di pompelmo rosa, fiori di arancio, unite a delicate sensazioni gelsomino e tiglio. Al palato è gradevolmente fresco, contraddistinto da un’ottima persistenza aromatica e da una delicata sapidità.
-    item-allergeni: Anidride solforosa e solfiti
-    item-price: 20
     class-allergeni:
     class-price:
   -
@@ -866,24 +886,24 @@ menu-vino:
     item-price: 33
     class-allergeni:
     class-price:
+  -
+    item-name: Prosecco docg - Treser
+    item-description: Cantina Serre di Pederiva. Brut. All’aspetto è giallo paglierino scarico con riflessi verdognoli, con spuma brillante e perlage fine e persistente. Frutta fresca e fiori estivi ne completano il profumo secco e croccante.
+    item-allergeni: Anidride solforosa e solfiti
+    item-price: 18 | 4
+    class-allergeni:
+    class-price:
 
 menu-amaro:
   -
-    item-name: Sibilla, Amaro dell'Erborista, Anima Nera
+    item-name: Sibilla, Amaro dell'Erborista, Amaro del Capo, Sambuca Molinari, Fernet Branca, Brancamenta, Montenegro, Anima Nera
     item-description:
     item-allergeni:
     item-price: 4
     class-allergeni: hide
     class-price:
   -
-    item-name: Varnelli, Anisetta Meletti
-    item-description:
-    item-allergeni:
-    item-price: 3,5
-    class-allergeni: hide
-    class-price:
-  -
-    item-name: Fernet Branca, Brancamenta, Montenegro, Amaro del Capo
+    item-name: Varnelli
     item-description:
     item-allergeni:
     item-price: 3,5
