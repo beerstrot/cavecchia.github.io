@@ -273,24 +273,24 @@ menu-hamburger-classici:
     alt-image: Mini Burger
 
 menu-hamburger-stagione:
-  -
-    item-image-16-9: assets/img/prod/CacioePepe_rettangolare.jpg
-    item-name: Cacio e Pepe
-    item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, pepe.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4
-    class-allergeni:
-    class-price:
-    alt-image: Cacio e Pepe
-  -
-    item-image-16-9: assets/img/prod/CacioePepeDOPPIO_rettangolare.jpg
-    item-name: Cacio e Pepe Doppio
-    item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, guanciale, pepe.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 17,9
-    class-allergeni:
-    class-price:
-    alt-image: Cacio e Pepe Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/CacioePepe_rettangolare.jpg
+  #   item-name: Cacio e Pepe
+  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, pepe.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 13,4
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Cacio e Pepe
+  # -
+  #   item-image-16-9: assets/img/prod/CacioePepeDOPPIO_rettangolare.jpg
+  #   item-name: Cacio e Pepe Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, guanciale, pepe.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 17,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Cacio e Pepe Doppio
   -
     item-image-16-9: assets/img/prod/California_rettangolare.jpg
     item-name: California
@@ -327,114 +327,114 @@ menu-hamburger-stagione:
     class-allergeni:
     class-price:
     alt-image: Autunno Doppio
-  -
-    item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
-    item-name: Inverno
-    item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 12,9
-    class-allergeni:
-    class-price:
-    alt-image: Inverno
-  -
-    item-image-16-9: hssets/img/prod/InvernoDOPPIO_rettangolare.jpg
-    item-name: Inverno Doppio
-    item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 16,9
-    class-allergeni:
-    class-price:
-    alt-image: Inverno Doppio
-  -
-    item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
-    item-name: Primavera
-    item-description: Burger di manzo (180 grammi), composta di feta, pomodorini e timo; insalata riccia.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 11,9
-    class-allergeni:
-    class-price:
-    alt-image: Primavera
-  -
-    item-image-16-9: assets/img/prod/PrimaveraDOPPIO_rettangolare.jpg
-    item-name: Primavera Doppio
-    item-description: Doppio burger di manzo (360 grammi), omposta di feta, pomodorini e timo; insalata riccia.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 15,9
-    class-allergeni:
-    class-price:
-    alt-image: Primavera Doppio
-  -
-    item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
-    item-name: Estivo
-    item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 12,9
-    class-allergeni:
-    class-price:
-    alt-image: Estivo
-  -
-    item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
-    item-name: Estivo Doppio
-    item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 17,4
-    class-allergeni:
-    class-price:
-    alt-image: Estivo Doppio
-  -
-    item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
-    item-name: Norma
-    item-description: Burger di manzo (180 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4
-    class-allergeni:
-    class-price:
-    alt-image: Estivo
-  -
-    item-image-16-9: assets/img/prod/NormaDOPPIO_rettangolare.jpg
-    item-name: Norma Doppio
-    item-description: Doppio burger di manzo (360 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 17,9
-    class-allergeni:
-    class-price:
-    alt-image: Estivo Doppio
-  -
-    item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
-    item-name: Deciso
-    item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4
-    class-allergeni:
-    class-price:
-    alt-image: deciso
-  -
-    item-image-16-9: assets/img/prod/DecisoDOPPIO_rettangolare.jpg
-    item-name: Deciso Doppio
-    item-description: Doppio burger di manzo (360 grammi), gorgonzola, guanciale, pomodorini confit
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 17,9
-    class-allergeni:
-    class-price:
-    alt-image: Deciso Doppio
-  -
-    item-image-16-9: assets/img/prod/FaveePecorino_rettangolare.jpg
-    item-name: Fave e Pecorino
-    item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, fave in porchetta.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4
-    class-allergeni:
-    class-price:
-    alt-image: Fave e Pecorino
-  -
-    item-image-16-9: assets/img/prod/FaveePecorinoDOPPIO_rettangolare.jpg
-    item-name: Fave e Pecorini Doppio
-    item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, guanciale, fave in porchetta.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 17,9
-    class-allergeni:
-    class-price:
-    alt-image: Fave e Pecorino Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
+  #   item-name: Inverno
+  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 12,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Inverno
+  # -
+  #   item-image-16-9: hssets/img/prod/InvernoDOPPIO_rettangolare.jpg
+  #   item-name: Inverno Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 16,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Inverno Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
+  #   item-name: Primavera
+  #   item-description: Burger di manzo (180 grammi), composta di feta, pomodorini e timo; insalata riccia.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 11,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Primavera
+  # -
+  #   item-image-16-9: assets/img/prod/PrimaveraDOPPIO_rettangolare.jpg
+  #   item-name: Primavera Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), omposta di feta, pomodorini e timo; insalata riccia.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 15,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Primavera Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
+  #   item-name: Estivo
+  #   item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 12,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo
+  # -
+  #   item-image-16-9: assets/img/prod/EstivoDOPPIO_rettangolare.jpg
+  #   item-name: Estivo Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 17,4
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
+  #   item-name: Norma
+  #   item-description: Burger di manzo (180 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 13,4
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo
+  # -
+  #   item-image-16-9: assets/img/prod/NormaDOPPIO_rettangolare.jpg
+  #   item-name: Norma Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 17,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Estivo Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
+  #   item-name: Deciso
+  #   item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 13,4
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: deciso
+  # -
+  #   item-image-16-9: assets/img/prod/DecisoDOPPIO_rettangolare.jpg
+  #   item-name: Deciso Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), gorgonzola, guanciale, pomodorini confit
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 17,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Deciso Doppio
+  # -
+  #   item-image-16-9: assets/img/prod/FaveePecorino_rettangolare.jpg
+  #   item-name: Fave e Pecorino
+  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, fave in porchetta.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 13,4
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Fave e Pecorino
+  # -
+  #   item-image-16-9: assets/img/prod/FaveePecorinoDOPPIO_rettangolare.jpg
+  #   item-name: Fave e Pecorini Doppio
+  #   item-description: Doppio burger di manzo (360 grammi), pecorino vallesina, guanciale, fave in porchetta.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 17,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Fave e Pecorino Doppio
   -
     item-image-16-9: assets/img/prod/Carbonara_rettangolare.jpg
     item-name: Carbonara
@@ -673,21 +673,21 @@ menu-birra-spina:
     item-description: Rossa stile tedesco dolce 6,5%. Birrificio Forst.
     item-allergeni: Glutine
     item-price: 4 | 6 | 12
-  -
-    item-name: Palmares
-    item-description: Red Ale 5,6%. Birrificio dei Castelli.
-    item-allergeni: Glutine
-    item-price: 4 | 6,5 | 13
-  -
-    item-name: Ape Regina
-    item-description: Blonde Ale al miele 6,9%. Birrificio MC-77.
-    item-allergeni: Glutine
-    item-price: 4 | 6,5 | 13
-  -
-    item-name: Mazzu de Fiuri
-    item-description: IPA 6,5%. Birrificio Mukkeller.
-    item-allergeni: Glutine
-    item-price: 4 | 6,5 | 13
+  # -
+  #   item-name: Palmares
+  #   item-description: Red Ale 5,6%. Birrificio dei Castelli.
+  #   item-allergeni: Glutine
+  #   item-price: 4 | 6,5 | 13
+  # -
+  #   item-name: Ape Regina
+  #   item-description: Blonde Ale al miele 6,9%. Birrificio MC-77.
+  #   item-allergeni: Glutine
+  #   item-price: 4 | 6,5 | 13
+  # -
+  #   item-name: Mazzu de Fiuri
+  #   item-description: IPA 6,5%. Birrificio Mukkeller.
+  #   item-allergeni: Glutine
+  #   item-price: 4 | 6,5 | 13
   -
     item-name: Brevis Furor
     item-description: IPA 6,3%. Birrificio dei Castelli.
@@ -698,27 +698,26 @@ menu-birra-spina:
     item-description: Doppia IPA 7,4%. Birrificio dei Castelli.
     item-allergeni: Glutine
     item-price: 4 | 6,5 | 13
-  -
-    item-name: Hattori Hanzo
-    item-description: Doppia IPA 8,3%. Birrificio Mukkeller.
-    item-allergeni: Glutine
-    item-price: 4 | 6,5 | 13
-  -
-    item-name: Breaking Hops
-    item-description: Doppia IPA 7,2%. Birrificio MC-77.
-    item-allergeni: Glutine
-    item-price: 4 | 6,5 | 13
-  -
-    item-name: Billycock
-    item-description: Doppia New England IPA 7,8%. Birrificio MC-77.
-    item-allergeni: Glutine
-    item-price: 4 | 6,5 | 13
-  -
-    item-name: Velvet Suit
-    item-description: New England IPA 6,5%. Birrificio MC-77.
-    item-allergeni: Glutine
-    item-price: 4 | 6,5 | 13
-
+  # -
+  #   item-name: Hattori Hanzo
+  #   item-description: Doppia IPA 8,3%. Birrificio Mukkeller.
+  #   item-allergeni: Glutine
+  #   item-price: 4 | 6,5 | 13
+  # -
+  #   item-name: Breaking Hops
+  #   item-description: Doppia IPA 7,2%. Birrificio MC-77.
+  #   item-allergeni: Glutine
+  #   item-price: 4 | 6,5 | 13
+  # -
+  #   item-name: Billycock
+  #   item-description: Doppia New England IPA 7,8%. Birrificio MC-77.
+  #   item-allergeni: Glutine
+  #   item-price: 4 | 6,5 | 13
+  # -
+  #   item-name: Velvet Suit
+  #   item-description: New England IPA 6,5%. Birrificio MC-77.
+  #   item-allergeni: Glutine
+  #   item-price: 4 | 6,5 | 13
 
 
 menu-birra-bottiglia:
@@ -767,11 +766,11 @@ menu-birra-bottiglia:
     item-description: Birrificio Mukkeller. IPA 6,6%. Birra con un buon corpo, succosa con un amaro deciso. In bocca frutta gialla matura, agrumi e frutta tropicale.
     item-allergeni: Glutine
     item-price: 6,5
-  -
-    item-name: Ridopoco 50cl
-    item-description: Birrificio Mukkeller. America pale ale 6,2%. Corpo leggero, massiccia luppolatura.
-    item-allergeni: Glutine
-    item-price: 6,5
+  # -
+  #   item-name: Ridopoco 50cl
+  #   item-description: Birrificio Mukkeller. America pale ale 6,2%. Corpo leggero, massiccia luppolatura.
+  #   item-allergeni: Glutine
+  #   item-price: 6,5
   -
     item-name: Hattori Hanzo 50cl
     item-description: Birrificio Mukkeller. Doppia IPA 8,2%. Birra bionda dall'amaro pulito e persistente. Crea dipendenza.
@@ -782,16 +781,16 @@ menu-birra-bottiglia:
     item-description: Birrificio dei Castelli. Stout 6,7%. Color ebano scuro, schiuma compatta dai toni nocciola. Al naso elegante sentore di caffè e note di quercia.
     item-allergeni: Glutine
     item-price: 6
-  -
-    item-name: Guastafeste 33cl
-    item-description: Birrificio Mukkeller. Belgian Strong Ale 10%. Ambrata con malti aromatici che le conferiscono sapori fruttati. Birra pensata per il Natale.
-    item-allergeni: Glutine
-    item-price: 6
-  -
-    item-name: Mukkamannara 33cl
-    item-description: Birrificio Mukkeller. Belgian Strong Ale 9,3%. Bruna con aroma e sapore di malto, caramello, uva passa, frutti rossi secchi. Una birra ricca, forte, complessa.
-    item-allergeni: Glutine
-    item-price: 6
+  # -
+  #   item-name: Guastafeste 33cl
+  #   item-description: Birrificio Mukkeller. Belgian Strong Ale 10%. Ambrata con malti aromatici che le conferiscono sapori fruttati. Birra pensata per il Natale.
+  #   item-allergeni: Glutine
+  #   item-price: 6
+  # -
+  #   item-name: Mukkamannara 33cl
+  #   item-description: Birrificio Mukkeller. Belgian Strong Ale 9,3%. Bruna con aroma e sapore di malto, caramello, uva passa, frutti rossi secchi. Una birra ricca, forte, complessa.
+  #   item-allergeni: Glutine
+  #   item-price: 6
 
 menu-vino-caraffa:
   -
