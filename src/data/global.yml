@@ -892,6 +892,13 @@ menu-vino:
     item-price: 18 | 4
     class-allergeni:
     class-price:
+  -
+    item-name: Spumante Dolce
+    item-description: Cantina Serre di Pederiva. Colore giallo paglierino scarico, spuma sottile con perlage fine e persistente. Esprime gentili sentori floreali e fruttati, al palato si presenta gradevolmente amabile e vellutato.
+    item-allergeni: Anidride solforosa e solfiti
+    item-price: 14
+    class-allergeni:
+    class-price:
 
 menu-amaro:
   -
@@ -955,13 +962,13 @@ menu-rhum:
     class-price:
 
 menu-wiskey:
-  -
-    item-name: Arran
-    item-description: Scotch whisky Single Malt 43%. Invecchiato per circa 7 anni in botti di primo utilizzo ex-bourbon e imbottigliato col suo colore naturale. Aromi dolci e freschi di agrumi e vaniglia. Gusto fresco di mela e agrumi.
-    item-allergeni:
-    item-price: 8
-    class-allergeni: hide
-    class-price:
+  # -
+  #   item-name: Arran
+  #   item-description: Scotch whisky Single Malt 43%. Invecchiato per circa 7 anni in botti di primo utilizzo ex-bourbon e imbottigliato col suo colore naturale. Aromi dolci e freschi di agrumi e vaniglia. Gusto fresco di mela e agrumi.
+  #   item-allergeni:
+  #   item-price: 8
+  #   class-allergeni: hide
+  #   class-price:
   -
     item-name: Teeling
     item-description: Irlandese single malt 46%. Note di vaniglia e spezie con dolci sentori di rhum.
