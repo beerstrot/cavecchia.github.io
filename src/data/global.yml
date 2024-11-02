@@ -303,7 +303,7 @@ menu-hamburger-stagione:
   -
     item-image-16-9: assets/img/prod/CaliforniaDOPPIO_rettangolare.jpg
     item-name: California Doppio
-    item-description: Doppio burger di manzo (360 grammi), cheddar, bacon croccante, cipolla rossa in agrodolce,salsa guacamole, salsa piccante.
+    item-description: Doppio burger di manzo (360 grammi), cheddar, bacon croccante, cipolla rossa in agrodolce, salsa guacamole, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
     item-price: 17,9
     class-allergeni:
