@@ -202,8 +202,8 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/CheeseburgerSpecial_rettangolare.jpg
     item-name: Cheeseburger Special
-    item-description: Burger di manzo (180 grammi), cheddar, cipolle rosse in agrodolce, insalata croccante, salsa speciale.
-    item-allergeni: Glutine, Uova, Latte
+    item-description: Burger di manzo (180 grammi), cheddar, cipolle rosse in agrodolce, insalata croccante, salsa burger.
+    item-allergeni: Glutine, Uova, Latte, Senape
     item-price: 12,9 | Doppio 16,9
     class-allergeni:
     class-price:
@@ -211,8 +211,8 @@ menu-hamburger-classici:
   # -
   #   item-image-16-9: assets/img/prod/CheeseburgerSpecial_rettangolare.jpg
   #   item-name: Cheeseburger Special Doppio
-  #   item-description: Doppio burger di manzo (360 grammi), cheddar, cipolle rosse in agrodolce, insalata croccante, salsa speciale.
-  #   item-allergeni: Glutine, Uova, Latte
+  #   item-description: Doppio burger di manzo (360 grammi), cheddar, cipolle rosse in agrodolce, insalata croccante, salsa burger.
+  #   item-allergeni: Glutine, Uova, Latte, Senape
   #   item-price: 16,9
   #   class-allergeni:
   #   class-price:
@@ -222,7 +222,7 @@ menu-hamburger-classici:
     item-name: Diablo
     item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, rucola, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4
+    item-price: 13,4 | Doppio 17,9
     class-allergeni:
     class-price:
     alt-image: Diablo
@@ -235,15 +235,6 @@ menu-hamburger-classici:
   #   class-allergeni:
   #   class-price:
   #   alt-image: Diablo Doppio
-  -
-    item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
-    item-name: Pollo
-    item-description: Burger di pollo (180 grammi), fontina, cipolla caramellata, rucola, salsa allo yogurt.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 12,9
-    class-allergeni:
-    class-price:
-    alt-image: Pollo
   # -
   #   item-image-16-9: assets/img/prod/PolloDOPPIO_rettangolare.jpg
   #   item-name: Pollo Doppio
@@ -279,7 +270,7 @@ menu-hamburger-classici:
     item-name: California
     item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, cipolla rossa in agrodolce, salsa guacamole, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4
+    item-price: 13,4 | Doppio 17,9
     class-allergeni:
     class-price:
     alt-image: California
@@ -297,7 +288,7 @@ menu-hamburger-classici:
     item-name: Autunno
     item-description: Burger di manzo (180 grammi), scamorza affumicata, speck croccante, crema di funghi.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4
+    item-price: 13,4 | Doppio 17,9
     class-allergeni:
     class-price:
     alt-image: Autunno
@@ -423,10 +414,19 @@ menu-hamburger-classici:
     item-name: Carbonara
     item-description: Burger di manzo (180 grammi), guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4
+    item-price: 13,4 | Doppio 17,9
     class-allergeni:
     class-price:
     alt-image: Carbonara
+  -
+    item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
+    item-name: Pollo
+    item-description: Burger di pollo (180 grammi), fontina, cipolla caramellata, rucola, salsa allo yogurt.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: 12,9 | Doppio 16,5
+    class-allergeni:
+    class-price:
+    alt-image: Pollo
   -
     item-image-16-9: assets/img/prod/PulledPork_rettangolare.jpg
     item-name: Pulled Pork
@@ -504,14 +504,14 @@ menu-hamburger-pesce:
     class-price:
     alt-image: Tonno
   -
-    item-image-16-9: assets/img/prod/Fish&Chips_rettangolare.jpg
-    item-name: Merluzzo Panato
+    item-image-16-9: assets/img/prod/Merluzzo_rettangolare.jpg
+    item-name: Merluzzo 
     item-description: Burger di merluzzo, insalata, cipolla in agrodolce e maionese vegana.
     item-allergeni: Glutine, Pesce, Latte, Uova
     item-price: 13,9
     class-allergeni:
     class-price:
-    alt-image: Fish & Chips
+    alt-image: Merluzzo
 
 menu-carne:
   -
