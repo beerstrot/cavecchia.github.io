@@ -270,7 +270,7 @@ menu-hamburger-classici:
     item-name: California
     item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, cipolla rossa in agrodolce, salsa guacamole, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4 | Doppio 17,9
+    item-price: 13,4 | 17,9 Doppio
     class-allergeni:
     class-price:
     alt-image: California
@@ -288,7 +288,7 @@ menu-hamburger-classici:
     item-name: Autunno
     item-description: Burger di manzo (180 grammi), scamorza affumicata, speck croccante, crema di funghi.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4 | Doppio 17,9
+    item-price: 13,4 (singolo) | 17,9 (doppio)
     class-allergeni:
     class-price:
     alt-image: Autunno
@@ -428,6 +428,15 @@ menu-hamburger-classici:
     class-price:
     alt-image: Pollo
   -
+    item-image-16-9: assets/img/prod/PolloCroccante_rettangolare.jpg
+    item-name: Pollo Croccante
+    item-description: Cotoletta di petto di pollo panata super croccante, maionese, insalata riccia e cipolla in agrodolce.
+    item-allergeni: Glutine, Uova, Latte, Soia
+    item-price: 13,9
+    class-allergeni: 
+    class-price:
+    alt-image: Pollo Croccante
+  -
     item-image-16-9: assets/img/prod/PulledPork_rettangolare.jpg
     item-name: Pulled Pork
     item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante.
@@ -513,7 +522,34 @@ menu-hamburger-pesce:
     class-price:
     alt-image: Merluzzo
 
-menu-carne:
+menu-secondi:
+  -
+    item-image-16-9: assets/img/prod/Entrecote_rettangolare.jpg
+    item-name: Entrecôte
+    item-description: 250 grammi circa di Entrecôte (controfiletto) di manzetta Red Hereford irlandese.
+    item-allergeni: --
+    item-price: 19
+    class-allergeni:
+    class-price:
+    alt-image: Entrecôte
+  -
+    item-image-16-9: assets/img/prod/Fish&Chips_rettangolare.jpg
+    item-name: Fish & Chips
+    item-description: Filetto di merluzzo panato e patatine fritte.
+    item-allergeni: Glutine, Pesce
+    item-price: 16,9
+    class-allergeni: 
+    class-price:
+    alt-image: Fish & Chips
+  -
+    item-image-16-9: assets/img/prod/CotolettadiPollo_rettangolare.jpg
+    item-name: Cotoletta di Pollo
+    item-description: Cotoletta di petto di pollo panata e patatine fritte.
+    item-allergeni: Glutine, Soia
+    item-price: 14,9
+    class-allergeni: 
+    class-price:
+    alt-image: Cotoletta di Pollo
   -
     item-image-16-9: assets/img/prod/CostineBBQ_rettangolare.jpg
     item-name: Costine BBQ
@@ -532,15 +568,7 @@ menu-carne:
     class-allergeni:
     class-price:
     alt-image: Arrosticini
-  -
-    item-image-16-9: assets/img/prod/Entrecote_rettangolare.jpg
-    item-name: Entrecôte
-    item-description: 250 grammi circa di Entrecôte (controfiletto) di manzetta Red Hereford irlandese.
-    item-allergeni: --
-    item-price: 19
-    class-allergeni:
-    class-price:
-    alt-image: Entrecôte
+  
 
 menu-dolce:
   -

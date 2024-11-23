@@ -922,15 +922,15 @@ menu-drinks:
 
 
 # menu-sushi-signature:
-  # -
-  #   item-name: Roll Ca' Vecchia Beerstrot
-  #   item-image-16-9:
-  #   item-price: 15
-  #   item-description: Gambero in panko croccante e avocado ricoperti da carpaccio di carne marchigiana e citronette (8 pezzi).
-  #   item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo.
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Roll Ca' Vecchia Beerstrot
+#   -
+#     item-name: Roll Ca' Vecchia Beerstrot
+#     item-image-16-9:
+#     item-price: 15
+#     item-description: Gambero in panko croccante e avocado ricoperti da carpaccio di carne marchigiana e citronette (8 pezzi).
+#     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo.
+#     class-allergeni:
+#     class-price:
+#     alt-image: Roll Ca' Vecchia Beerstrot
 #   -
 #     item-name: Roll Special Tonno
 #     item-image-16-9: assets/img/prod/RollSpecialTonno_rettangolare.jpg
@@ -1032,15 +1032,15 @@ menu-drinks:
 #     class-allergeni:
 #     class-price:
 #     alt-image: Roll Branzino
-#   # -
-#   #   item-name: Roll Mediterraneo
-#   #   item-image-16-9:
-#   #   item-price: 13
-#   #   item-description: Gambero in panko croccante e mango ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche, pinoli tostati e maionese (8 pezzi).
-#   #   item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
-#   #   class-allergeni:
-#   #   class-price:
-#   #   alt-image: Roll Mediterraneo
+#   -
+#     item-name: Roll Mediterraneo
+#     item-image-16-9:
+#     item-price: 13
+#     item-description: Gambero in panko croccante e mango ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche, pinoli tostati e maionese (8 pezzi).
+#     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
+#     class-allergeni:
+#     class-price:
+#     alt-image: Roll Mediterraneo
 #   -
 #     item-name: Roll Vegetariano
 #     item-image-16-9: assets/img/prod/RollVegetariano_rettangolare.jpg
@@ -1079,15 +1079,15 @@ menu-drinks:
 #     class-allergeni:
 #     class-price:
 #     alt-image: Hosomaki Special Tonno
-#   # -
-#   #   item-name: Hosomaki Vegetariano
-#   #   item-image-16-9: assets/img/prod/HosomakiVegetariano_rettangolare.jpg
-#   #   item-price: 10
-#   #   item-description: Hosomaki di avocado, cetriolo e mango (8 pezzi).
-#   #   item-allergeni: Soia
-#   #   class-allergeni:
-#   #   class-price:
-#   #   alt-image: Hosomaki Vegetariano
+#   -
+#     item-name: Hosomaki Vegetariano
+#     item-image-16-9: assets/img/prod/HosomakiVegetariano_rettangolare.jpg
+#     item-price: 10
+#     item-description: Hosomaki di avocado, cetriolo e mango (8 pezzi).
+#     item-allergeni: Soia
+#     class-allergeni:
+#     class-price:
+#     alt-image: Hosomaki Vegetariano
 #   -
 #     item-name: Hosomaki Special Salmone
 #     item-image-16-9: assets/img/prod/HosomakiSpecialSalmone_rettangolare.jpg
