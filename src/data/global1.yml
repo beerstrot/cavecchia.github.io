@@ -607,6 +607,15 @@ menu-dolce:
     class-allergeni:
     class-price:
     alt-image: Birramisù
+  -
+    item-image-16-9: assets/img/prod/Whoop_rettangolare.jpg
+    item-name: Whoop
+    item-description: Tre biscotti al cioccolato ripieni di delicata crema al burro di arachidi.
+    item-allergeni: Glutine, Latte, Uova, Arachidi
+    item-price: 5,5
+    class-allergeni:
+    class-price:
+    alt-image: Whoop
   # -
   #   item-image-16-9: assets/img/prod/Crumble_rettangolare.jpg
   #   item-name: Crumble
@@ -625,15 +634,6 @@ menu-dolce:
   #   class-allergeni:
   #   class-price:
   #   alt-image: Cioccolatosa
-  # -
-  #   item-image-16-9: assets/img/prod/Whoop_rettangolare.jpg
-  #   item-name: Whoop
-  #   item-description: Morbido biscotto al cioccolato ripieno di burro di arachidi
-  #   item-allergeni: Arachidi, Glutine, Latte, Uova
-  #   item-price: 5
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Whoop
 
 menu-bevanda:
   -
