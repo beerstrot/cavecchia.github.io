@@ -1,89 +1,89 @@
-menu-pesce-antipasti:
-  -
-    item-name: Code di Gambero Barbate
-    item-image-16-9: assets/img/prod/CodediGamberoBarbate_rettangolare.jpg
-    item-price: 11
-    item-description: Code di gambero barbate avvolte in lardo di cinta e grigliate. Servito con vellutata di zucca alla menta.
-    item-allergeni: Crostacei
-    class-allergeni:
-    class-price:
-    alt-image: Code di Gambero Barbate
-  -
-    item-name: Carpaccio di Salmone Affumicato
-    item-image-16-9: assets/img/prod/CarpacciodiSalmoneAffumicato_rettangolare.jpg
-    item-price: 13
-    item-description: Carpaccio di salmone affumicato agli agrumi. Servito con salsa di yogurt.
-    item-allergeni: Pesce, Latte
-    class-allergeni:
-    class-price:
-    alt-image: Carpaccio di Salmone Affumicato
-  -
-    item-name: Polpo Croccante
-    item-image-16-9: assets/img/prod/PolpoCroccante_rettangolare.jpg
-    item-price: 13
-    item-description: Polpo croccante servito con crema di patate e pesto di olive.
-    item-allergeni: Pesce
-    class-allergeni:
-    class-price:
-    alt-image: Polpo Croccante
-  # -
-  #   item-name: Filetto di Sgombro
-  #   item-image-16-9: assets/img/prod/FilettodiSgombro_rettangolare.jpg
-  #   item-price: 13
-  #   item-description: Filetti di sgombro al rosmarino servito con salsa di broccoletti e burrata.
-  #   item-allergeni: Pesce, Latte
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Filetto di Sgombro
+# menu-pesce-antipasti:
+#   -
+#     item-name: Code di Gambero Barbate
+#     item-image-16-9: assets/img/prod/CodediGamberoBarbate_rettangolare.jpg
+#     item-price: 11
+#     item-description: Code di gambero barbate avvolte in lardo di cinta e grigliate. Servito con vellutata di zucca alla menta.
+#     item-allergeni: Crostacei
+#     class-allergeni:
+#     class-price:
+#     alt-image: Code di Gambero Barbate
+#   -
+#     item-name: Carpaccio di Salmone Affumicato
+#     item-image-16-9: assets/img/prod/CarpacciodiSalmoneAffumicato_rettangolare.jpg
+#     item-price: 13
+#     item-description: Carpaccio di salmone affumicato agli agrumi. Servito con salsa di yogurt.
+#     item-allergeni: Pesce, Latte
+#     class-allergeni:
+#     class-price:
+#     alt-image: Carpaccio di Salmone Affumicato
+#   -
+#     item-name: Polpo Croccante
+#     item-image-16-9: assets/img/prod/PolpoCroccante_rettangolare.jpg
+#     item-price: 13
+#     item-description: Polpo croccante servito con crema di patate e pesto di olive.
+#     item-allergeni: Pesce
+#     class-allergeni:
+#     class-price:
+#     alt-image: Polpo Croccante
+#   -
+#     item-name: Filetto di Sgombro
+#     item-image-16-9: assets/img/prod/FilettodiSgombro_rettangolare.jpg
+#     item-price: 13
+#     item-description: Filetti di sgombro al rosmarino servito con salsa di broccoletti e burrata.
+#     item-allergeni: Pesce, Latte
+#     class-allergeni:
+#     class-price:
+#     alt-image: Filetto di Sgombro
 
-menu-pesce-primi:
-  -
-    item-name: Chitarrine alle Vongole Veraci
-    item-image-16-9: assets/img/prod/ChitarrinealleVongoleVeraci_rettangolare.jpg
-    item-price: 19
-    item-description: Chitarrine con vongole veraci, pomodori pachino e spolverata di bottarga di muggine. 
-    item-allergeni: Pesce, Crostacei
-    class-allergeni:
-    class-price:
-    alt-image: Chitarrine alle Vongole Veraci
+# menu-pesce-primi:
+#   -
+#     item-name: Chitarrine alle Vongole Veraci
+#     item-image-16-9: assets/img/prod/ChitarrinealleVongoleVeraci_rettangolare.jpg
+#     item-price: 19
+#     item-description: Chitarrine con vongole veraci, pomodori pachino e spolverata di bottarga di muggine. 
+#     item-allergeni: Pesce, Crostacei
+#     class-allergeni:
+#     class-price:
+#     alt-image: Chitarrine alle Vongole Veraci
   
-menu-pesce-secondi:
-  -
-    item-name: Frittura di Mare 
-    item-image-16-9: assets/img/prod/FritturadiMare_rettangolare.jpg
-    item-price: 19
-    item-description: Frittura di gamberi e calamari.
-    item-allergeni: Pesce, Crostacei
-    class-allergeni:
-    class-price:
-    alt-image: Frittura di Mare
-  -
-    item-name: Salmone in Crosta
-    item-image-16-9: assets/img/prod/SalmoneinCrosta_rettangolare.jpg
-    item-price: 18
-    item-description: Trancio di salmone in crosta di mandorle e pistacchi. Servito con marmellata di cipolle rosse.
-    item-allergeni: Pesce
-    class-allergeni:
-    class-price:
-    alt-image: Salmone in Crosta
-  -
-    item-name: Spiedini di Pesce
-    item-image-16-9: assets/img/prod/SpiedinidiPesce_rettangolare.jpg
-    item-price: 21
-    item-description: Spiedini arrosto con branzino, gamberi, calamari e coda di rospo.
-    item-allergeni: Pesce, Crostacei
-    class-allergeni:
-    class-price:
-    alt-image: Spiedini di Pesce
-  -
-    item-name: Coda di Rospo
-    item-image-16-9: assets/img/prod/CodadiRospo_rettangolare.jpg
-    item-price: 19
-    item-description: Coda di rospo al finocchietto e guanciale. Servita con purea di ceci.
-    item-allergeni: Pesce
-    class-allergeni:
-    class-price:
-    alt-image: Coda di Rospo
+# menu-pesce-secondi:
+#   -
+#     item-name: Frittura di Mare 
+#     item-image-16-9: assets/img/prod/FritturadiMare_rettangolare.jpg
+#     item-price: 19
+#     item-description: Frittura di gamberi e calamari.
+#     item-allergeni: Pesce, Crostacei
+#     class-allergeni:
+#     class-price:
+#     alt-image: Frittura di Mare
+#   -
+#     item-name: Salmone in Crosta
+#     item-image-16-9: assets/img/prod/SalmoneinCrosta_rettangolare.jpg
+#     item-price: 18
+#     item-description: Trancio di salmone in crosta di mandorle e pistacchi. Servito con marmellata di cipolle rosse.
+#     item-allergeni: Pesce
+#     class-allergeni:
+#     class-price:
+#     alt-image: Salmone in Crosta
+#   -
+#     item-name: Spiedini di Pesce
+#     item-image-16-9: assets/img/prod/SpiedinidiPesce_rettangolare.jpg
+#     item-price: 21
+#     item-description: Spiedini arrosto con branzino, gamberi, calamari e coda di rospo.
+#     item-allergeni: Pesce, Crostacei
+#     class-allergeni:
+#     class-price:
+#     alt-image: Spiedini di Pesce
+#   -
+#     item-name: Coda di Rospo
+#     item-image-16-9: assets/img/prod/CodadiRospo_rettangolare.jpg
+#     item-price: 19
+#     item-description: Coda di rospo al finocchietto e guanciale. Servita con purea di ceci.
+#     item-allergeni: Pesce
+#     class-allergeni:
+#     class-price:
+#     alt-image: Coda di Rospo
 
 
 menu-per-stuzzicare:
@@ -159,26 +159,6 @@ menu-per-stuzzicare:
     class-allergeni:
     class-price:
     alt-image: Patate Fritte
-
-# menu-hamburger-monster:
-#   -
-#     item-image-16-9: assets/img/prod/MonsterSucculento_rettangolare.jpg
-#     item-name: Monster Succulento
-#     item-description: 450 grammi di carne macinata e cotta alla perfezione, cheddar, cipolle rosse in agrodolce, insalata croccante, salsa speciale.
-#     item-allergeni: Glutine, Uova, Latte
-#     item-price: 25,9
-#     class-allergeni:
-#     class-price:
-#     alt-image: Monster Succulento
-  # -
-  #   item-image-16-9: assets/img/prod/MonsterSucculento_rettangolare.jpg
-  #   item-name: Monster Piccante
-  #   item-description: 450 grammi di carne macinata e cotta alla perfezione, cheddar, peperoncini piccanti ripieni di robiola e avvolti in pancetta, insalata croccante, salsa piccante.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: 26,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Monster Piccante
 
 menu-hamburger-classici:
   -
@@ -288,7 +268,7 @@ menu-hamburger-classici:
     item-name: Autunno
     item-description: Burger di manzo (180 grammi), scamorza affumicata, speck croccante, crema di funghi.
     item-allergeni: Glutine, Uova, Latte
-    item-price: 13,4 (singolo) | 17,9 (doppio)
+    item-price: 13,4 | 17,9 Doppio
     class-allergeni:
     class-price:
     alt-image: Autunno
@@ -421,7 +401,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
     item-name: Pollo
-    item-description: Burger di pollo (180 grammi), fontina, cipolla caramellata, rucola, salsa allo yogurt.
+    item-description: Burger di petto di pollo (180 grammi), fontina, cipolla caramellata, rucola, salsa allo yogurt.
     item-allergeni: Glutine, Uova, Latte
     item-price: 12,9 | Doppio 16,5
     class-allergeni:
@@ -430,7 +410,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/PolloCroccante_rettangolare.jpg
     item-name: Pollo Croccante
-    item-description: Cotoletta di petto di pollo panata super croccante, maionese, insalata riccia e cipolla in agrodolce.
+    item-description: Cotoletta di petto di pollo panata super croccante e succosissima all'interno, maionese, insalata riccia e cipolla in agrodolce.
     item-allergeni: Glutine, Uova, Latte, Soia
     item-price: 13,9
     class-allergeni: 
