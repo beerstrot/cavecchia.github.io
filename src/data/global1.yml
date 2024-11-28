@@ -535,8 +535,8 @@ menu-secondi:
   -
     item-image-16-9: assets/img/prod/Fish&Chips_rettangolare.jpg
     item-name: Fish & Chips
-    item-description: Filetto di merluzzo panato e patatine fritte.
-    item-allergeni: Glutine, Pesce
+    item-description: Filetti di merluzzo panati e patatine fritte serviti con salsa aioli.
+    item-allergeni: Glutine, Pesce, Uova
     item-price: 16,9
     class-allergeni: 
     class-price:
