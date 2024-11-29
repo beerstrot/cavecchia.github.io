@@ -90,7 +90,7 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/BocconcinidiPollo_rettangolare.jpg
     item-name: Bocconcini di Pollo
-    item-description: Serviti con salsa piccante.
+    item-description: Bocconcini di petto di pollo. Serviti con salsa piccante fatta in casa (10 pezzi).
     item-allergeni: Glutine, Uova, Latte
     item-price: 6,5
     class-allergeni:
@@ -99,7 +99,7 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/OliveallAscolana_rettangolare.jpg
     item-name: Olive all'Ascolana
-    item-description: Il più tipico street food marchigiano.
+    item-description: Olive all'Ascolana prodotte artigianalmente (8 pezzi).
     item-allergeni: Glutine, Uova, Latte, Sedano
     item-price: 5,9
     class-allergeni:
@@ -108,12 +108,21 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/Falafel_rettangolare.jpg
     item-name: Falafel
-    item-description: Falafel di ceci, mais, cipolle e zucchine. Serviti con salsa tzatziki fatta in casa.
+    item-description: FFalafel di ceci, mais, cipolle e zucchine. Serviti con salsa tzatziki fatta in casa (8 pezzi).
     item-allergeni: Glutine, Sedano, Senape
     item-price: 5,9
     class-allergeni:
     class-price:
     alt-image: Falafel
+  -
+    item-image-16-9: assets/img/prod/lenticchie_rettangolare.jpg
+    item-name: Lenticchie
+    item-description: Mini burger di lenticchie e soffritto panati e fritti (4 pezzi).
+    item-allergeni: Glutine, Sedano, Soia
+    item-price: 5,9
+    class-allergeni:
+    class-price:
+    alt-image: Lenticchie
   -
     item-image-16-9: assets/img/prod/CipolleRosseinTempura_rettangolare.jpg
     item-name: Cipolle Rosse
@@ -135,21 +144,21 @@ menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/AlettediPollo_rettangolare.jpg
     item-name: Alette di Pollo
-    item-description: Leggermente piccanti.
+    item-description: Leggermente piccanti o piccanti (4 pezzi).
     item-allergeni: Glutine, Uova, Latte
     item-price: 5,9
     class-allergeni:
     class-price:
     alt-image: Alette di Pollo
-  -
-    item-image-16-9: assets/img/prod/AlettediPolloPiccanti_rettangolare.jpg
-    item-name: Alette di Pollo Piccanti
-    item-description: Piccanti.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: 5,9
-    class-allergeni:
-    class-price:
-    alt-image: Alette di Pollo Piccanti
+  # -
+  #   item-image-16-9: assets/img/prod/AlettediPolloPiccanti_rettangolare.jpg
+  #   item-name: Alette di Pollo Piccanti
+  #   item-description: Piccanti.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: 5,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Alette di Pollo Piccanti
   -
     item-image-16-9: assets/img/prod/PatateFritte_rettangolare.jpg
     item-name: Patate Fritte
@@ -164,7 +173,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Beerstrot_rettangolare.jpg
     item-name: Beerstrot
-    item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
+    item-description: Burger di manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
     item-allergeni: Glutine, Uova, Latte
     item-price: 13,4 | Doppio 17,9
     class-allergeni:
@@ -182,7 +191,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/CheeseburgerSpecial_rettangolare.jpg
     item-name: Cheeseburger Special
-    item-description: Burger di manzo (180 grammi), cheddar, cipolle rosse in agrodolce, insalata croccante, salsa burger.
+    item-description: Burger di manzo, cheddar, cipolle rosse in agrodolce, insalata croccante, salsa burger.
     item-allergeni: Glutine, Uova, Latte, Senape
     item-price: 12,9 | Doppio 16,9
     class-allergeni:
@@ -200,7 +209,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Diablo_rettangolare.jpg
     item-name: Diablo
-    item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, rucola, salsa piccante.
+    item-description: Burger di manzo, cheddar, bacon croccante, rucola, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
     item-price: 13,4 | Doppio 17,9
     class-allergeni:
@@ -248,7 +257,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/California_rettangolare.jpg
     item-name: California
-    item-description: Burger di manzo (180 grammi), cheddar, bacon croccante, cipolla rossa in agrodolce, salsa guacamole, salsa piccante.
+    item-description: Burger di manzo, cheddar, bacon croccante, cipolla rossa in agrodolce, salsa guacamole, salsa piccante.
     item-allergeni: Glutine, Uova, Latte
     item-price: 13,4 | 17,9 Doppio
     class-allergeni:
@@ -266,7 +275,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Autunno_rettangolare.jpg
     item-name: Autunno
-    item-description: Burger di manzo (180 grammi), scamorza affumicata, speck croccante, crema di funghi.
+    item-description: Burger di manzo, scamorza affumicata, speck croccante, crema di funghi.
     item-allergeni: Glutine, Uova, Latte
     item-price: 13,4 | 17,9 Doppio
     class-allergeni:
@@ -392,7 +401,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Carbonara_rettangolare.jpg
     item-name: Carbonara
-    item-description: Burger di manzo (180 grammi), guanciale, crema di uovo, pecorino romano e pepe.
+    item-description: Burger di manzo, guanciale, crema di uovo, pecorino romano e pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: 13,4 | Doppio 17,9
     class-allergeni:
@@ -401,7 +410,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
     item-name: Pollo
-    item-description: Burger di petto di pollo (180 grammi), fontina, cipolla caramellata, rucola, salsa allo yogurt.
+    item-description: Burger di petto di pollo, fontina, cipolla caramellata, rucola, salsa allo yogurt.
     item-allergeni: Glutine, Uova, Latte
     item-price: 12,9 | Doppio 16,5
     class-allergeni:
@@ -428,7 +437,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/MiniBurger_rettangolare.jpg
     item-name: Mini Burger
-    item-description: Manzo (100 grammi), cheddar. Servito ben cotto.
+    item-description: Burger di manzo (100 grammi), cheddar. Servito ben cotto.
     item-allergeni: Glutine, Latte, Uova
     item-price: 9,4
     class-allergeni:
@@ -492,21 +501,12 @@ menu-hamburger-pesce:
     class-allergeni:
     class-price:
     alt-image: Tonno
-  -
-    item-image-16-9: assets/img/prod/Merluzzo_rettangolare.jpg
-    item-name: Merluzzo 
-    item-description: Burger di merluzzo, insalata, cipolla in agrodolce e maionese vegana.
-    item-allergeni: Glutine, Pesce, Latte, Uova
-    item-price: 13,9
-    class-allergeni:
-    class-price:
-    alt-image: Merluzzo
 
 menu-secondi:
   -
     item-image-16-9: assets/img/prod/Entrecote_rettangolare.jpg
     item-name: Entrecôte
-    item-description: 250 grammi circa di Entrecôte (controfiletto) di manzetta Red Hereford irlandese.
+    item-description: 250 grammi circa di tenerissima Entrecôte (controfiletto) di manzetta Red Hereford irlandese.
     item-allergeni: --
     item-price: 19
     class-allergeni:
@@ -517,16 +517,16 @@ menu-secondi:
     item-name: Fish & Chips
     item-description: Filetti di merluzzo panati e patatine fritte serviti con salsa aioli.
     item-allergeni: Glutine, Pesce, Uova
-    item-price: 16,9
+    item-price: 10,9
     class-allergeni: 
     class-price:
     alt-image: Fish & Chips
   -
     item-image-16-9: assets/img/prod/CotolettadiPollo_rettangolare.jpg
     item-name: Cotoletta di Pollo
-    item-description: Cotoletta di petto di pollo panata e patatine fritte.
+    item-description: Cotoletta di petto di pollo panata super croccante e succosissima all'interno con patatine fritte.
     item-allergeni: Glutine, Soia
-    item-price: 14,9
+    item-price: 12,9
     class-allergeni: 
     class-price:
     alt-image: Cotoletta di Pollo
@@ -569,15 +569,15 @@ menu-dolce:
     class-allergeni:
     class-price:
     alt-image: Blondie
-  -
-    item-image-16-9: assets/img/prod/PannaCotta_rettangolare.jpg
-    item-name: Panna Cotta
-    item-description: Morbida e vellutata. Ricoperta a scelta con cioccolato o frutti di bosco.
-    item-allergeni: Latte
-    item-price: 5
-    class-allergeni:
-    class-price:
-    alt-image: Panna Cotta
+  # -
+  #   item-image-16-9: assets/img/prod/PannaCotta_rettangolare.jpg
+  #   item-name: Panna Cotta
+  #   item-description: Morbida e vellutata. Ricoperta a scelta con cioccolato o frutti di bosco.
+  #   item-allergeni: Latte
+  #   item-price: 5
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Panna Cotta
   -
     item-image-16-9: assets/img/prod/Birramisu_rettangolare.jpg
     item-name: Birramisù
@@ -931,36 +931,36 @@ menu-vino:
 
 menu-amaro:
   -
-    item-name: Sibilla, Amaro dell'Erborista, Amaro del Capo, Sambuca Molinari, Fernet Branca, Brancamenta, Montenegro, Anima Nera
-    item-description:
+    item-name: Amari
+    item-description: Sibilla, Amaro dell'Erborista, Varnelli, Amaro del Capo, Sambuca Molinari, Fernet Branca, Brancamenta, Montenegro, Anima Nera.
     item-allergeni:
     item-price: 4
     class-allergeni: hide
     class-price:
+  # -
+  #   item-name: Varnelli
+  #   item-description:
+  #   item-allergeni:
+  #   item-price: 3,5
+  #   class-allergeni: hide
+  #   class-price:
   -
-    item-name: Varnelli
-    item-description:
-    item-allergeni:
-    item-price: 3,5
-    class-allergeni: hide
-    class-price:
-  -
-    item-name: Grappa Bianca 903
-    item-description:
+    item-name: Grappa Bianca
+    item-description: Bonaventura Maschio 903.
     item-allergeni:
     item-price: 3,5
     class-allergeni: hide
     class-price:
   -
     item-name: Grappa Barricata
-    item-description:
+    item-description: Pilzer Grappa invecchiata 3 anni.
     item-allergeni:
     item-price: 4
     class-allergeni: hide
     class-price:
   -
     item-name: Vodka
-    item-description: Imperial Collection Gold
+    item-description: Imperial Collection Gold.
     item-allergeni:
     item-price: 4
     class-allergeni: hide
@@ -1023,21 +1023,21 @@ menu-drinks:
     class-price:
   -
     item-name: Gin Tonic Ginpilz
-    item-description: Gin con chiaro profumo e sapore di ginepro. Servito con acqua tonica J. Gasco.
+    item-description: Gin con chiaro profumo e sapore di ginepro. Servito con acqua tonica premium.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
     class-price:
   -
     item-name: Gin Tonic Silverback
-    item-description: London Dry Gin con profumi agrumati e floreali; speziato, erbaceo con note dolci di arancia, miele e citronella e sentori di ginepro. Servito con acqua tonica J. Gasco.
+    item-description: London Dry Gin con profumi agrumati e floreali; speziato, erbaceo con note dolci di arancia, miele e citronella e sentori di ginepro. Servito con acqua tonica premium.
     item-allergeni:
     item-price: 8
     class-allergeni: hide
     class-price:
   -
     item-name: Gin Tonic Insulae
-    item-description: Gin Siciliano fresco e pulito. Servito con acqua tonica J. Gasco.
+    item-description: Gin Siciliano fresco e pulito. Servito con acqua tonica premium.
     item-allergeni:
     item-price: 9
     class-allergeni: hide
@@ -1051,7 +1051,7 @@ menu-drinks:
     class-price:
   -
     item-name: Negroni
-    item-description: Vermut rosso, bitter Campari, gin Puro.
+    item-description: Vermut rosso, bitter Campari, gin Silverback.
     item-allergeni:
     item-price: 8.5
     class-allergeni: hide
