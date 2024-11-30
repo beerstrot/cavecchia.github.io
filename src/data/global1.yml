@@ -1,91 +1,3 @@
-# menu-pesce-antipasti:
-#   -
-#     item-name: Code di Gambero Barbate
-#     item-image-16-9: assets/img/prod/CodediGamberoBarbate_rettangolare.jpg
-#     item-price: 11
-#     item-description: Code di gambero barbate avvolte in lardo di cinta e grigliate. Servito con vellutata di zucca alla menta.
-#     item-allergeni: Crostacei
-#     class-allergeni:
-#     class-price:
-#     alt-image: Code di Gambero Barbate
-#   -
-#     item-name: Carpaccio di Salmone Affumicato
-#     item-image-16-9: assets/img/prod/CarpacciodiSalmoneAffumicato_rettangolare.jpg
-#     item-price: 13
-#     item-description: Carpaccio di salmone affumicato agli agrumi. Servito con salsa di yogurt.
-#     item-allergeni: Pesce, Latte
-#     class-allergeni:
-#     class-price:
-#     alt-image: Carpaccio di Salmone Affumicato
-#   -
-#     item-name: Polpo Croccante
-#     item-image-16-9: assets/img/prod/PolpoCroccante_rettangolare.jpg
-#     item-price: 13
-#     item-description: Polpo croccante servito con crema di patate e pesto di olive.
-#     item-allergeni: Pesce
-#     class-allergeni:
-#     class-price:
-#     alt-image: Polpo Croccante
-#   -
-#     item-name: Filetto di Sgombro
-#     item-image-16-9: assets/img/prod/FilettodiSgombro_rettangolare.jpg
-#     item-price: 13
-#     item-description: Filetti di sgombro al rosmarino servito con salsa di broccoletti e burrata.
-#     item-allergeni: Pesce, Latte
-#     class-allergeni:
-#     class-price:
-#     alt-image: Filetto di Sgombro
-
-# menu-pesce-primi:
-#   -
-#     item-name: Chitarrine alle Vongole Veraci
-#     item-image-16-9: assets/img/prod/ChitarrinealleVongoleVeraci_rettangolare.jpg
-#     item-price: 19
-#     item-description: Chitarrine con vongole veraci, pomodori pachino e spolverata di bottarga di muggine. 
-#     item-allergeni: Pesce, Crostacei
-#     class-allergeni:
-#     class-price:
-#     alt-image: Chitarrine alle Vongole Veraci
-  
-# menu-pesce-secondi:
-#   -
-#     item-name: Frittura di Mare 
-#     item-image-16-9: assets/img/prod/FritturadiMare_rettangolare.jpg
-#     item-price: 19
-#     item-description: Frittura di gamberi e calamari.
-#     item-allergeni: Pesce, Crostacei
-#     class-allergeni:
-#     class-price:
-#     alt-image: Frittura di Mare
-#   -
-#     item-name: Salmone in Crosta
-#     item-image-16-9: assets/img/prod/SalmoneinCrosta_rettangolare.jpg
-#     item-price: 18
-#     item-description: Trancio di salmone in crosta di mandorle e pistacchi. Servito con marmellata di cipolle rosse.
-#     item-allergeni: Pesce
-#     class-allergeni:
-#     class-price:
-#     alt-image: Salmone in Crosta
-#   -
-#     item-name: Spiedini di Pesce
-#     item-image-16-9: assets/img/prod/SpiedinidiPesce_rettangolare.jpg
-#     item-price: 21
-#     item-description: Spiedini arrosto con branzino, gamberi, calamari e coda di rospo.
-#     item-allergeni: Pesce, Crostacei
-#     class-allergeni:
-#     class-price:
-#     alt-image: Spiedini di Pesce
-#   -
-#     item-name: Coda di Rospo
-#     item-image-16-9: assets/img/prod/CodadiRospo_rettangolare.jpg
-#     item-price: 19
-#     item-description: Coda di rospo al finocchietto e guanciale. Servita con purea di ceci.
-#     item-allergeni: Pesce
-#     class-allergeni:
-#     class-price:
-#     alt-image: Coda di Rospo
-
-
 menu-per-stuzzicare:
   -
     item-image-16-9: assets/img/prod/BocconcinidiPollo_rettangolare.jpg
@@ -756,10 +668,19 @@ menu-birra-bottiglia:
     item-allergeni: Glutine
     item-price: 6
   -
+    item-name: Pilsner 50cl
+    item-description: Birrificio Flensburger. Pils tedesca 4,8%. Gusto amaro e profumo di malto e luppolo. Finale secco ed amaro che rinfresca il palato.
+    item-allergeni: Glutine
+    item-price: 6
+  -
     item-name: Weisse 50cl
     item-description: Birrificio Franziskaner. Weisse tedesca 5,1%. Bionda con prevalenti note di banana.
     item-allergeni: Glutine
     item-price: 4,5
+  -
+    item-name: Blanche 33cl
+    item-description: Birrificio Cornelissen. Blanche Belga 5%. Birra di frumento bianca non filtrata. Il frumento conferisce alla birra un sapore leggermente amaro, il coriandolo un tocco piccante, la buccia di limone il fruttato.
+    item-price: 5,5
   -
     item-name: Natural Radler 50cl
     item-description: Birrificio Mönchshof. Radler 2,5%. Rinfrescante e fruttata con succo di limone naturale.
@@ -781,18 +702,28 @@ menu-birra-bottiglia:
     item-allergeni: Glutine
     item-price: 6,5
   -
+    item-name: Red Ale 50cl
+    item-description: Birrificio Brewmaster. Rossa irlandese 4,2%. Tratti molto decisi di malto e luppolo con un finale caramellato.
+    item-allergeni: Glutine
+    item-price: 6,5
+  -
+    item-name: Hattori Hanzo 50cl
+    item-description: Birrificio Mukkeller. Doppia IPA 8,2%. Birra bionda dall'amaro pulito e persistente. Crea dipendenza.
+    item-allergeni: Glutine
+    item-price: 6,5
+  -
     item-name: Tulio 50cl
     item-description: Rye IPA 6,5%. Birrificio Mukkeller.
     item-allergeni: Glutine
     item-price: 6,5
   -
-    item-name: Mazzu de Fiuri 50cl
-    item-description: Birrificio Mukkeller. IPA 6%. Birra bionda dall'amaro persistente e speziato.
+    item-name: Variante IPA 50cl
+    item-description: Birrificio Mukkeller. IPA 6,6%. Birra con un buon corpo, succosa con un amaro deciso. In bocca frutta gialla matura, agrumi e frutta tropicale.
     item-allergeni: Glutine
     item-price: 6,5
   -
-    item-name: Variante IPA 50cl
-    item-description: Birrificio Mukkeller. IPA 6,6%. Birra con un buon corpo, succosa con un amaro deciso. In bocca frutta gialla matura, agrumi e frutta tropicale.
+    item-name: Mazzu de Fiuri 50cl
+    item-description: Birrificio Mukkeller. IPA 6%. Birra bionda dall'amaro persistente e speziato.
     item-allergeni: Glutine
     item-price: 6,5
   # -
@@ -801,15 +732,15 @@ menu-birra-bottiglia:
   #   item-allergeni: Glutine
   #   item-price: 6,5
   -
-    item-name: Hattori Hanzo 50cl
-    item-description: Birrificio Mukkeller. Doppia IPA 8,2%. Birra bionda dall'amaro pulito e persistente. Crea dipendenza.
-    item-allergeni: Glutine
-    item-price: 6,5
-  -
     item-name: Calix Niger 33cl
     item-description: Birrificio dei Castelli. Stout 6,7%. Color ebano scuro, schiuma compatta dai toni nocciola. Al naso elegante sentore di caffè e note di quercia.
     item-allergeni: Glutine
     item-price: 6
+  -
+    item-name: Black Stout 50cl
+    item-description: Birrificio Brewmaster. Stout irlandese 4,2%. Stout dal gusto deciso, cremoso e delicato.
+    item-allergeni: Glutine
+    item-price: 6,5
   # -
   #   item-name: Guastafeste 33cl
   #   item-description: Birrificio Mukkeller. Belgian Strong Ale 10%. Ambrata con malti aromatici che le conferiscono sapori fruttati. Birra pensata per il Natale.
@@ -1056,276 +987,3 @@ menu-drinks:
     item-price: 8.5
     class-allergeni: hide
     class-price:
-
-
-# menu-sushi-signature:
-  # -
-  #   item-name: Roll Ca' Vecchia Beerstrot
-  #   item-image-16-9:
-  #   item-price: 15
-  #   item-description: Gambero in panko croccante e avocado ricoperti da carpaccio di carne marchigiana e citronette (8 pezzi).
-  #   item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo.
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Roll Ca' Vecchia Beerstrot
-#   -
-#     item-name: Roll Special Tonno
-#     item-image-16-9: assets/img/prod/RollSpecialTonno_rettangolare.jpg
-#     item-price: 14
-#     item-description: Tonno e mango ricoperti da tartare di tonno, maionese e granella di pistacchio (8 pezzi).
-#     item-allergeni: Uova, Pesce, Soia, Frutta a guscio
-#     class-allergeni:
-#     class-price:
-#     alt-image: Roll Special Tonno
-#   -
-#     item-name: Roll Special Salmone Fritto
-#     item-image-16-9: assets/img/prod/RollSpecialSalmoneFritto_rettangolare.jpg
-#     item-price: 15
-#     item-description: Salmone in panko fritto e insalata croccante ricoperti da carpaccio di branzino scottato e maionese piccante (8 pezzi).
-#     item-allergeni: Uova, Pesce, Soia, Senape
-#     class-allergeni:
-#     class-price:
-#     alt-image: Roll Special Salmone Fritto
-#   -
-#     item-name: Nigiri Special
-#     item-image-16-9: assets/img/prod/NigiriSpecial_rettangolare.jpg
-#     item-price: 14
-#     item-description: 6 nigiri speciali dello chef.
-#     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
-#     class-allergeni:
-#     class-price:
-#     alt-image: Nigiri Special
-#   -
-#     item-name: Gunkan Special
-#     item-image-16-9: assets/img/prod/GunkanSpecial_rettangolare.jpg
-#     item-price: 14
-#     item-description: 6 gunkan speciali dello chef.
-#     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Latte, Frutta a guscio, Senape, Semi di sesamo
-#     class-allergeni:
-#     class-price:
-#     alt-image: Gunkan Special
-#   -
-#     item-name: Sashimi
-#     item-image-16-9: assets/img/prod/Sashimi_rettangolare.jpg
-#     item-price: 14
-#     item-description: 3 pezzi di salmone, 3 pezzi di tonno, 3 pezzi di branzino.
-#     item-allergeni: Pesce
-#     class-allergeni:
-#     class-price:
-#     alt-image: Sashimi Special
-
-# menu-sushi-roll-selection:
-#   -
-#     item-name: Roll Gambero e Salmone
-#     item-image-16-9: assets/img/prod/RollGamberoeSalmone_rettangolare.jpg
-#     item-price: 12
-#     item-description: Gambero in panko croccante e filetto di salmone ricoperti da tartare di salmone, maionese, pasta kataifi e zest di lime (8 pezzi).
-#     item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Senape, Semi di sesamo
-#     class-allergeni:
-#     class-price:
-#     alt-image: Roll Gambero e Salmone
-#   -
-#     item-name: Roll Mandorle
-#     item-image-16-9: assets/img/prod/RollMandorle_rettangolare.jpg
-#     item-price: 11
-#     item-description: Salmone e philadelphia ricoperti da tobiko red, mandorle, maionese piccante e pasta kataifi (8 pezzi).
-#     item-allergeni: Glutine, Uova, Pesce, Latte, Frutta a guscio, Senape
-#     class-allergeni:
-#     class-price:
-#     alt-image: Roll Mandorle
-#   -
-#     item-name: Roll Gambero Rosso
-#     item-image-16-9: assets/img/prod/RollGamberoRosso_rettangolare.jpg
-#     item-price: 14
-#     item-description: Salmone e avocado ricoperti da gamberi rossi (8 pezzi).
-#     item-allergeni: Crostacei, Pesce, Latte, Frutta a guscio
-#     class-allergeni:
-#     class-price:
-#     alt-image: Roll Gambero Rosso
-#   -
-#     item-name: Roll Tonno
-#     item-image-16-9: assets/img/prod/RollTonno_rettangolare.jpg
-#     item-price: 12
-#     item-description: Tonno, avocado e pomodoro secco ricoperti da tobiko red e maionese piccante (8 pezzi).
-#     item-allergeni: Uova, Pesce, Senape
-#     class-allergeni:
-#     class-price:
-#     alt-image: Roll Tonno
-#   -
-#     item-name: Roll Mexico
-#     item-image-16-9: assets/img/prod/RollMexico_rettangolare.jpg
-#     item-price: 13
-#     item-description: Gambero in panko croccante e avocado ricoperti da carpaccio di salmone scottato, maionese piccante, teriyaki e pasta kataifi (8 pezzi).
-#     item-allergeni: Glutine, Crostacei, Uova, Pesce, Senape
-#     class-allergeni:
-#     class-price:
-#     alt-image: Roll Mexico
-#   -
-#     item-name: Roll Branzino
-#     item-image-16-9: assets/img/prod/RollBranzino_rettangolare.jpg
-#     item-price: 12
-#     item-description: Branzino ricoperto da salmone scottato e maionese alla senape (8 pezzi).
-#     item-allergeni: Glutine, Uova, Pesce, Senape
-#     class-allergeni:
-#     class-price:
-#     alt-image: Roll Branzino
-#   # -
-#   #   item-name: Roll Mediterraneo
-#   #   item-image-16-9:
-#   #   item-price: 13
-#   #   item-description: Gambero in panko croccante e mango ricoperti da tartare di tonno, pomodorini secchi, olive taggiasche, pinoli tostati e maionese (8 pezzi).
-#   #   item-allergeni: Glutine, Crostacei, Uova, Pesce, Soia, Frutta a guscio, Senape, Semi di sesamo
-#   #   class-allergeni:
-#   #   class-price:
-#   #   alt-image: Roll Mediterraneo
-#   -
-#     item-name: Roll Vegetariano
-#     item-image-16-9: assets/img/prod/RollVegetariano_rettangolare.jpg
-#     item-price: 10
-#     item-description: Carota, cetrioli e avocado ricoperti da philadelphia, maionese rosa e cipolla fritta. Il tutto avvolto in carta di soia gialla (8 pezzi).
-#     item-allergeni: Glutine, Uova, Soia, Latte, Senape
-#     class-allergeni:
-#     class-price:
-#     alt-image: Roll Vegetariano
-
-# menu-sushi-hosomaki:
-#   -
-#     item-name: Hosomaki al Salmone
-#     item-image-16-9: assets/img/prod/HosomakialSalmone_rettangolare.jpg
-#     item-price: 7
-#     item-description: Hosomaki di salmone (8 pezzi).
-#     item-allergeni: Pesce, Soia
-#     class-allergeni:
-#     class-price:
-#     alt-image: Hosomaki al Salmone
-#   -
-#     item-name: Hosomaki al Tonno
-#     item-image-16-9: assets/img/prod/HosomakialTonno_rettangolare.jpg
-#     item-price: 8
-#     item-description: Hosomaki di tonno (8 pezzi).
-#     item-allergeni: Pesce, Soia
-#     class-allergeni:
-#     class-price:
-#     alt-image: Hosomaki al Tonno
-#   -
-#     item-name: Hosomaki Special Tonno
-#     item-image-16-9: assets/img/prod/HosomakiSpecialTonno_rettangolare.jpg
-#     item-price: 11
-#     item-description: Hosomaki di tonno ricoperto da tartare di tonno, cipolla fritta e maionese (8 pezzi).
-#     item-allergeni: Glutine, Pesce, Soia, Uova
-#     class-allergeni:
-#     class-price:
-#     alt-image: Hosomaki Special Tonno
-#   # -
-#   #   item-name: Hosomaki Vegetariano
-#   #   item-image-16-9: assets/img/prod/HosomakiVegetariano_rettangolare.jpg
-#   #   item-price: 10
-#   #   item-description: Hosomaki di avocado, cetriolo e mango (8 pezzi).
-#   #   item-allergeni: Soia
-#   #   class-allergeni:
-#   #   class-price:
-#   #   alt-image: Hosomaki Vegetariano
-#   -
-#     item-name: Hosomaki Special Salmone
-#     item-image-16-9: assets/img/prod/HosomakiSpecialSalmone_rettangolare.jpg
-#     item-price: 10
-#     item-description: Hosomaki di salmone ricoperto da philadelphia, fragole (o salmone a seconda della disponibiità) e salsa teriyaki (8 pezzi).
-#     item-allergeni: Glutine, Pesce, Soia, Latte, Senape
-#     class-allergeni:
-#     class-price:
-#     alt-image: Hosomoki Special Salmone
-
-# menu-sushi-uramaki-classici:
-#   -
-#     item-name: Uramaki California
-#     item-image-16-9: assets/img/prod/UramakiCalifornia_rettangolare.jpg
-#     item-price: 10
-#     item-description: Salmone, avocado e cetriolo ricoperti da tobiko red (8 pezzi).
-#     item-allergeni: Pesce
-#     class-allergeni:
-#     class-price:
-#     alt-image: Uramaki California
-#   -
-#     item-name: Uramaki Philadelphia
-#     item-image-16-9: assets/img/prod/UramakiPhiladelphia_rettangolare.jpg
-#     item-price: 9
-#     item-description: Salmone in panko fritto e philadelphia guarniti con salsa teriyaki (8 pezzi).
-#     item-allergeni: Glutine, Pesce, Soia, Latte, Senape
-#     class-allergeni:
-#     class-price:
-#     alt-image: Uramaki Philadelphia
-#   -
-#     item-name: Uramaki Salmone e Avocado
-#     item-image-16-9: assets/img/prod/UramakiSalmoneeAvocado_rettangolare.jpg
-#     item-price: 10
-#     item-description: Salmone, avocado e maionese (8 pezzi).
-#     item-allergeni: Uova, Pesce, Senape
-#     class-allergeni:
-#     class-price:
-#     alt-image: Uramaki Salmone e Avocado
-#   -
-#     item-name: Uramaki Tonno
-#     item-image-16-9: assets/img/prod/UramakiTonno_rettangolare.jpg
-#     item-price: 11
-#     item-description: Tonno, avocado e maionese ricoperti da semi di sesamo (8 pezzi).
-#     item-allergeni: Uova, Pesce, Semi di sesamo
-#     class-allergeni:
-#     class-price:
-#     alt-image: Uramaki Tonno
-#   -
-#     item-name: Uramaki Gambero in Panko
-#     item-image-16-9: assets/img/prod/UramakiGamberoinPanko_rettangolare.jpg
-#     item-price: 9
-#     item-description: Gambero in panko croccante e insalata guarniti con semi di sesamo, maionese e salsa teriyaki (8 pezzi).
-#     item-allergeni: Glutine, Crostacei, Uova, Soia, Senape, Semi di sesamo
-#     class-allergeni:
-#     class-price:
-#     alt-image: Uramaki Gambero in Panko
-
-# menu-sushi-nigiri:
-#   -
-#     item-name: Nigiri Salmone
-#     item-image-16-9: assets/img/prod/NigiriSalmone_rettangolare.jpg
-#     item-price: 3,5
-#     item-description: Salmone su riso (2 pezzi).
-#     item-allergeni: Pesce
-#     class-allergeni:
-#     class-price:
-#     alt-image: Nigiri Salmone
-#   -
-#     item-name: Nigiri Tonno
-#     item-image-16-9: assets/img/prod/NigiriTonno_rettangolare.jpg
-#     item-price: 4
-#     item-description: Tonno su riso (2 pezzi).
-#     item-allergeni: Pesce
-#     class-allergeni:
-#     class-price:
-#     alt-image: Uramaki Philadelphia
-#   -
-#     item-name: Nigiri Branzino
-#     item-image-16-9: assets/img/prod/NigiriBranzino_rettangolare.jpg
-#     item-price: 5
-#     item-description: Branzino su riso (2 pezzi).
-#     item-allergeni: Pesce
-#     class-allergeni:
-#     class-price:
-#     alt-image: Nigiri Branzino
-#   -
-#     item-name: Nigiri Gambero al Vapore
-#     item-image-16-9: assets/img/prod/NigiriGamberoalVapore_rettangolare.jpg
-#     item-price: 3,5
-#     item-description: Gambero al vapore su riso (2 pezzi).
-#     item-allergeni: Crostacei
-#     class-allergeni:
-#     class-price:
-#     alt-image: Nigiri Gambero al Vapore
-#   -
-#     item-name: Nigiri Gambero Rosso
-#     item-image-16-9: assets/img/prod/NigiriGamberoRosso_rettangolare.jpg
-#     item-price: 5
-#     item-description: Gambero rosso su riso (2 pezzi).
-#     item-allergeni: Crostacei
-#     class-allergeni:
-#     class-price:
-#     alt-image: Nigiri Gambero Rosso
-
