@@ -679,7 +679,8 @@ menu-birra-bottiglia:
     item-price: 4,5
   -
     item-name: Blanche 33cl
-    item-description: Birrificio Cornelissen. Blanche Belga 5%. Birra di frumento bianca non filtrata. Il frumento conferisce alla birra un sapore leggermente amaro, il coriandolo un tocco piccante, la buccia di limone il fruttato.
+    item-description: Birrificio Cornelissen. Blanche Belga 5%. Il frumento conferisce alla birra un sapore leggermente amaro, il coriandolo un tocco piccante, la buccia di limone il fruttato.
+    item-allergeni: Glutine
     item-price: 5,5
   -
     item-name: Natural Radler 50cl
