@@ -27,14 +27,14 @@ menu-per-stuzzicare:
     class-price:
     alt-image: Falafel
   -
-    item-image-16-9: assets/img/prod/FrittoMistoVegetariano_rettangolare.jpg
-    item-name: Fritto Misto Vegetariano
-    item-description: Mini burger di lenticchie (4 pezzi), triangolini di verdure (4 pezzi), mini burger di falafel (4 pezzi).
+    item-image-16-9: assets/img/prod/PolpettinediVerdure_rettangolare.jpg
+    item-name: Polpettine di Verdure
+    item-description: Polpettine fritte di verdure miste (6 pezzi).
     item-allergeni: Glutine, Sedano, Soia
-    item-price: 13,9
+    item-price: 5,5
     class-allergeni:
     class-price:
-    alt-image: Fritto Misto Vegetariano
+    alt-image: Polpettine di Verdure
   -
     item-image-16-9: assets/img/prod/CipolleRosseinTempura_rettangolare.jpg
     item-name: Cipolle Rosse
@@ -232,7 +232,7 @@ menu-hamburger-pesce:
   -
     item-image-16-9: assets/img/prod/Salmone_rettangolare.jpg
     item-name: Salmone
-    item-description: Burger di salmone, insalata, cipolla in agrodolce e maionese vegana.
+    item-description: Burger di salmone, rucola, cipolla caramellata.
     item-allergeni: Glutine, Pesce, Latte, Uova
     item-price: 13,9
     class-allergeni:
@@ -292,19 +292,19 @@ menu-secondi:
     item-name: Fish & Chips
     item-description: Filetti di merluzzo panati e patate fritte serviti con salsa aioli.
     item-allergeni: Glutine, Pesce, Uova
-    item-price: 10,9
+    item-price: 11,9
     class-allergeni: 
     class-price:
     alt-image: Fish & Chips
-  -
-    item-image-16-9: assets/img/prod/CotolettadiPollo_rettangolare.jpg
-    item-name: Cotoletta di Pollo
-    item-description: Cotoletta di petto di pollo panata super croccante e succosissima all'interno e patete fritte.
-    item-allergeni: Glutine, Soia
-    item-price: 12,9
-    class-allergeni: 
-    class-price:
-    alt-image: Cotoletta di Pollo
+  # -
+  #   item-image-16-9: assets/img/prod/CotolettadiPollo_rettangolare.jpg
+  #   item-name: Cotoletta di Pollo
+  #   item-description: Cotoletta di petto di pollo panata super croccante e succosissima all'interno e patete fritte.
+  #   item-allergeni: Glutine, Soia
+  #   item-price: 12,9
+  #   class-allergeni: 
+  #   class-price:
+  #   alt-image: Cotoletta di Pollo
   -
     item-image-16-9: assets/img/prod/CostineBBQ_rettangolare.jpg
     item-name: Costine BBQ
