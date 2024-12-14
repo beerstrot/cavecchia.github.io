@@ -232,7 +232,7 @@ menu-hamburger-pesce:
   -
     item-image-16-9: assets/img/prod/Salmone_rettangolare.jpg
     item-name: Salmone
-    item-description: Burger di salmone, rucola, cipolla caramellata.
+    item-description: Burger di salmone, cipolla caramellata, rucola, salsa piccante.
     item-allergeni: Glutine, Pesce, Latte, Uova
     item-price: 13,9
     class-allergeni:
@@ -290,21 +290,21 @@ menu-secondi:
   -
     item-image-16-9: assets/img/prod/Fish&Chips_rettangolare.jpg
     item-name: Fish & Chips
-    item-description: Filetti di merluzzo panati e patate fritte serviti con salsa aioli.
+    item-description: Filetti di merluzzo panati e patate fritte. Serviti con salsa aioli.
     item-allergeni: Glutine, Pesce, Uova
     item-price: 11,9
     class-allergeni: 
     class-price:
     alt-image: Fish & Chips
-  # -
-  #   item-image-16-9: assets/img/prod/CotolettadiPollo_rettangolare.jpg
-  #   item-name: Cotoletta di Pollo
-  #   item-description: Cotoletta di petto di pollo panata super croccante e succosissima all'interno e patete fritte.
-  #   item-allergeni: Glutine, Soia
-  #   item-price: 12,9
-  #   class-allergeni: 
-  #   class-price:
-  #   alt-image: Cotoletta di Pollo
+  -
+    item-image-16-9: assets/img/prod/CotolettadiPollo_rettangolare.jpg
+    item-name: Cotoletta di Pollo
+    item-description: Cotoletta di petto di pollo panata super croccante e succosissima all'interno e patete fritte.
+    item-allergeni: Glutine, Soia
+    item-price: 12,9
+    class-allergeni: 
+    class-price:
+    alt-image: Cotoletta di Pollo
   -
     item-image-16-9: assets/img/prod/CostineBBQ_rettangolare.jpg
     item-name: Costine BBQ
@@ -755,7 +755,7 @@ menu-amaro:
     class-price:
   -
     item-name: Grappa Barricata
-    item-description: Pilzer Grappa invecchiata 3 anni.
+    item-description: Pilzer grappa invecchiata 3 anni.
     item-allergeni:
     item-price: 4
     class-allergeni: hide
