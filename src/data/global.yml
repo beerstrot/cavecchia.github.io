@@ -27,14 +27,14 @@ menu-per-stuzzicare:
     class-price:
     alt-image: Falafel
   -
-    item-image-16-9: assets/img/prod/PolpettinediVerdure_rettangolare.jpg
-    item-name: Polpettine di Verdure
-    item-description: Polpettine fritte di verdure miste (6 pezzi).
-    item-allergeni: Glutine, Sedano, Soia
+    item-image-16-9: assets/img/prod/TriangolidiVerdure_rettangolare.jpg
+    item-name: Triangoli di Verdure
+    item-description: Carote, peperoni, piselli, mais e cipolle avvolte da una croccante panatura dorata. Serviti con salsa aioli (6 pezzi).
+    item-allergeni: Glutine, Sedano, Senape
     item-price: 5,5
     class-allergeni:
     class-price:
-    alt-image: Polpettine di Verdure
+    alt-image: PTriangoli di Verdure
   -
     item-image-16-9: assets/img/prod/CipolleRosseinTempura_rettangolare.jpg
     item-name: Cipolle Rosse
@@ -118,37 +118,37 @@ menu-hamburger-classici:
     class-allergeni:
     class-price:
     alt-image: California
+  # -
+  #   item-image-16-9: assets/img/prod/Autunno_rettangolare.jpg
+  #   item-name: Autunno
+  #   item-description: Burger di manzo, scamorza affumicata, speck croccante, crema di funghi.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: Singolo 13,4 | Doppio 17,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Autunno
   -
-    item-image-16-9: assets/img/prod/Autunno_rettangolare.jpg
-    item-name: Autunno
-    item-description: Burger di manzo, scamorza affumicata, speck croccante, crema di funghi.
+    item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
+    item-name: Inverno
+    item-description: Burger di manzo, pecorino vallesina, bacon croccante, erbe di campo strascinate
     item-allergeni: Glutine, Uova, Latte
     item-price: Singolo 13,4 | Doppio 17,9
     class-allergeni:
     class-price:
-    alt-image: Autunno
-  # -
-  #   item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
-  #   item-name: Inverno
-  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, bacon croccante, erbe di campo strascinate
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: Singolo 12,9 | Doppio 16,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Inverno
+    alt-image: Inverno
   # -
   #   item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
   #   item-name: Primavera
-  #   item-description: Burger di manzo (180 grammi), composta di feta, pomodorini e timo; insalata riccia.
+  #   item-description: Burger di manzo, composta di feta, pomodorini e timo; insalata riccia.
   #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: Singolo 11,9
+  #   item-price: Singolo 12,9 | Doppio 16,9
   #   class-allergeni:
   #   class-price:
   #   alt-image: Primavera
   # -
   #   item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
   #   item-name: Estivo
-  #   item-description: Burger di manzo (180 grammi), mozzarella di bufala, pomodoro fresco, maionese al basilico.
+  #   item-description: Burger di manzo, mozzarella di bufala, pomodoro fresco, maionese al basilico.
   #   item-allergeni: Glutine, Uova, Latte
   #   item-price: Singolo 12,9 | Doppio 16,9
   #   class-allergeni:
@@ -157,12 +157,12 @@ menu-hamburger-classici:
   # -
   #   item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
   #   item-name: Norma
-  #   item-description: Burger di manzo (180 grammi), crema di melanzane e basilico, pomodorini confit, ricotta salata.
+  #   item-description: Burger di manzo, crema di melanzane e basilico, pomodorini confit, ricotta salata.
   #   item-allergeni: Glutine, Uova, Latte
   #   item-price: Singolo 13,4 | Doppio 17,9
   #   class-allergeni:
   #   class-price:
-  #   alt-image: Estivo
+  #   alt-image: Norma
   # -
   #   item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
   #   item-name: Deciso
@@ -202,8 +202,8 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/PolloCroccante_rettangolare.jpg
     item-name: Pollo Croccante
-    item-description: Cotoletta di petto di pollo panata super croccante e succosissima all'interno, bacon croccante, cipolla in agrodolce, insalata e maionesee.
-    item-allergeni: Glutine, Uova, Latte, Soia
+    item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno, bacon croccante, cipolla in agrodolce, insalata e maionese.
+    item-allergeni: Glutine, Latte, Uova, Soia
     item-price: 13,9
     class-allergeni: 
     class-price:
@@ -241,7 +241,7 @@ menu-hamburger-pesce:
   -
     item-image-16-9: assets/img/prod/PesceSpada_rettangolare.jpg
     item-name: Pesce Spada
-    item-description: Burger di pesce spada, insalata, cipolla in agrodolce e maionese vegana.
+    item-description: Burger di pesce spada, insalata, cipolla in agrodolce e salsa tartara.
     item-allergeni: Glutine, Pesce, Latte, Uova
     item-price: 13,9
     class-allergeni:
@@ -250,7 +250,7 @@ menu-hamburger-pesce:
   -
     item-image-16-9: assets/img/prod/Tonno_rettangolare.jpg
     item-name: Tonno
-    item-description: Burger di tonno, insalata, cipolla in agrodolce e maionese vegana.
+    item-description: Burger di tonno, insalata, pomodoro e maionese vegana.
     item-allergeni: Glutine, Pesce, Latte, Uova
     item-price: 13,9
     class-allergeni:
@@ -299,7 +299,7 @@ menu-secondi:
   -
     item-image-16-9: assets/img/prod/CotolettadiPollo_rettangolare.jpg
     item-name: Cotoletta di Pollo
-    item-description: Cotoletta di petto di pollo panata super croccante e succosissima all'interno e patete fritte.
+    item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno. Servita con patate fritte.
     item-allergeni: Glutine, Soia
     item-price: 12,9
     class-allergeni: 
