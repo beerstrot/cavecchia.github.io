@@ -100,87 +100,6 @@ menu-hamburger-classici:
     class-allergeni:
     class-price:
     alt-image: Diablo
-  # -
-  #   item-image-16-9: assets/img/prod/CacioePepe_rettangolare.jpg
-  #   item-name: Cacio e Pepe
-  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, pepe.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: Singolo 13,4 | Doppio 17,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Cacio e Pepe
-  -
-    item-image-16-9: assets/img/prod/California_rettangolare.jpg
-    item-name: California
-    item-description: Burger di manzo, cheddar, bacon croccante, cipolla rossa in agrodolce, salsa guacamole, salsa piccante.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: Singolo 13,4 | Doppio 17,9
-    class-allergeni:
-    class-price:
-    alt-image: California
-  # -
-  #   item-image-16-9: assets/img/prod/Autunno_rettangolare.jpg
-  #   item-name: Autunno
-  #   item-description: Burger di manzo, scamorza affumicata, speck croccante, crema di funghi.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: Singolo 13,4 | Doppio 17,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Autunno
-  -
-    item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
-    item-name: Inverno
-    item-description: Burger di manzo, pecorino vallesina, bacon croccante, erbe di campo strascinate
-    item-allergeni: Glutine, Uova, Latte
-    item-price: Singolo 13,4 | Doppio 17,9
-    class-allergeni:
-    class-price:
-    alt-image: Inverno
-  # -
-  #   item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
-  #   item-name: Primavera
-  #   item-description: Burger di manzo, composta di feta, pomodorini e timo; insalata riccia.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: Singolo 12,9 | Doppio 16,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Primavera
-  # -
-  #   item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
-  #   item-name: Estivo
-  #   item-description: Burger di manzo, mozzarella di bufala, pomodoro fresco, maionese al basilico.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: Singolo 12,9 | Doppio 16,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Estivo
-  # -
-  #   item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
-  #   item-name: Norma
-  #   item-description: Burger di manzo, crema di melanzane e basilico, pomodorini confit, ricotta salata.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: Singolo 13,4 | Doppio 17,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Norma
-  # -
-  #   item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
-  #   item-name: Deciso
-  #   item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: Singolo 13,4 | Doppio 17,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: deciso
-  # -
-  #   item-image-16-9: assets/img/prod/FaveePecorino_rettangolare.jpg
-  #   item-name: Fave e Pecorino
-  #   item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, fave in porchetta.
-  #   item-allergeni: Glutine, Uova, Latte
-  #   item-price: Singolo 13,4 | Doppio 17,9
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Fave e Pecorino
   -
     item-image-16-9: assets/img/prod/Carbonara_rettangolare.jpg
     item-name: Carbonara
@@ -190,6 +109,96 @@ menu-hamburger-classici:
     class-allergeni:
     class-price:
     alt-image: Carbonara
+  -
+    item-image-16-9: assets/img/prod/CacioePepe_rettangolare.jpg
+    item-name: Cacio e Pepe
+    item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, pepe.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: Singolo 13,4 | Doppio 17,9
+    class-allergeni:
+    class-price:
+    alt-image: Cacio e Pepe
+  -
+    item-image-16-9: assets/img/prod/California_rettangolare.jpg
+    item-name: California
+    item-description: Burger di manzo, cheddar, bacon croccante, cipolla rossa in agrodolce, salsa guacamole, salsa piccante.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: Singolo 13,4 | Doppio 17,9
+    class-allergeni:
+    class-price:
+    alt-image: California
+  -
+    item-image-16-9: assets/img/prod/Autunno_rettangolare.jpg
+    item-name: Autunno
+    item-description: Burger di manzo, scamorza affumicata, speck croccante, crema di funghi.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: Singolo 13,4 | Doppio 17,9
+    class-allergeni:
+    class-price:
+    alt-image: Autunno
+  -
+    item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
+    item-name: Inverno
+    item-description: Burger di manzo, pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-allergeni: Glutine, Uova, Latte
+    item-price: Singolo 13,4 | Doppio 17,9
+    class-allergeni:
+    class-price:
+    alt-image: Inverno
+  -
+    item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
+    item-name: Primavera
+    item-description: Burger di manzo, composta di feta, pomodorini e timo; insalata riccia.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: Singolo 12,9 | Doppio 16,9
+    class-allergeni:
+    class-price:
+    alt-image: Primavera
+  -
+    item-image-16-9: assets/img/prod/Estivo_rettangolare.jpg
+    item-name: Estivo
+    item-description: Burger di manzo, mozzarella di bufala, pomodoro fresco, maionese al basilico.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: Singolo 12,9 | Doppio 16,9
+    class-allergeni:
+    class-price:
+    alt-image: Estivo
+  -
+    item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
+    item-name: Norma
+    item-description: Burger di manzo, crema di melanzane e basilico, pomodorini confit, ricotta salata.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: Singolo 13,4 | Doppio 17,9
+    class-allergeni:
+    class-price:
+    alt-image: Norma
+  -
+    item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
+    item-name: Deciso
+    item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
+    item-allergeni: Glutine, Uova, Latte
+    item-price: Singolo 13,4 | Doppio 17,9
+    class-allergeni:
+    class-price:
+    alt-image: Deciso
+  -
+    item-image-16-9: assets/img/prod/FaveePecorino_rettangolare.jpg
+    item-name: Fave e Pecorino
+    item-description: Burger di manzo, pecorino vallesina, guanciale, fave in porchetta.
+    item-allergeni: Glutine, Uova, Latte
+    item-price: Singolo 13,4 | Doppio 17,9
+    class-allergeni:
+    class-price:
+    alt-image: Fave e Pecorino
+  -
+    item-image-16-9: assets/img/prod/Mantovano_rettangolare.jpg
+    item-name: Mantovano
+    item-description: Burger di manzo, gorgonzola, speck croccante, crema di zucca, amaretto.
+    item-allergeni: Glutine, Uova, Latte, Frutta a Guscio
+    item-price: Singolo 12,9 | Doppio 16,9
+    class-allergeni:
+    class-price:
+    alt-image: FMantovano
   -
     item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
     item-name: Pollo
@@ -204,7 +213,7 @@ menu-hamburger-classici:
     item-name: Pollo Croccante
     item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno, bacon croccante, cipolla in agrodolce, insalata e maionese.
     item-allergeni: Glutine, Latte, Uova, Soia
-    item-price: 13,9
+    item-price: 13,4
     class-allergeni: 
     class-price:
     alt-image: Pollo Croccante
@@ -242,7 +251,7 @@ menu-hamburger-pesce:
     item-image-16-9: assets/img/prod/PesceSpada_rettangolare.jpg
     item-name: Pesce Spada
     item-description: Burger di pesce spada, insalata, cipolla in agrodolce e salsa tartara.
-    item-allergeni: Glutine, Pesce, Latte, Uova
+    item-allergeni: Glutine, Pesce, Latte, Uova, Sedano, Senape
     item-price: 13,9
     class-allergeni:
     class-price:
@@ -330,7 +339,7 @@ menu-dolce:
     item-image-16-9: assets/img/prod/Cheesecake_rettangolare.jpg
     item-name: Cheesecake
     item-description: Cheesecake in stile new york. Squisitamente dolce, morbida e leggermente acidula.
-    item-allergeni: Frutta a Guscio, Glutine, Latte, Uova
+    item-allergeni: Glutine, Latte, Uova, Frutta a Guscio
     item-price: 5,5
     class-allergeni:
     class-price:
