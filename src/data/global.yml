@@ -34,7 +34,7 @@ menu-per-stuzzicare:
     item-price: 5,5
     class-allergeni:
     class-price:
-    alt-image: PTriangoli di Verdure
+    alt-image: Triangoli di Verdure
   -
     item-image-16-9: assets/img/prod/CipolleRosseinTempura_rettangolare.jpg
     item-name: Cipolle Rosse
@@ -251,7 +251,7 @@ menu-hamburger-pesce:
     item-image-16-9: assets/img/prod/PesceSpada_rettangolare.jpg
     item-name: Pesce Spada
     item-description: Burger di pesce spada, insalata, cipolla in agrodolce e salsa tartara.
-    item-allergeni: Glutine, Pesce, Latte, Uova, Sedano, Senape
+    item-allergeni: Glutine, Pesce, Latte, Uova
     item-price: 13,9
     class-allergeni:
     class-price:
@@ -260,7 +260,7 @@ menu-hamburger-pesce:
     item-image-16-9: assets/img/prod/Tonno_rettangolare.jpg
     item-name: Tonno
     item-description: Burger di tonno, insalata, pomodoro e maionese vegana.
-    item-allergeni: Glutine, Pesce, Latte, Uova
+    item-allergeni: Glutine, Pesce, Latte, Uova, Sedano
     item-price: 13,9
     class-allergeni:
     class-price:
