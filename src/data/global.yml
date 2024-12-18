@@ -48,7 +48,7 @@ menu-per-stuzzicare:
     item-image-16-9: assets/img/prod/PeperonciniPiccanti_rettangolare.jpg
     item-name: Peperoncini Piccanti
     item-description: Peperoncini piccanti ripieni di robiola e avvolti in pancetta.
-    item-allergeni: Anidride solforosa e solfiti, Latte
+    item-allergeni: Solfiti, Latte
     item-price: 6,5
     class-allergeni:
     class-price:
@@ -139,7 +139,7 @@ menu-hamburger-classici:
   -
     item-image-16-9: assets/img/prod/Inverno_rettangolare.jpg
     item-name: Inverno
-    item-description: Burger di manzo, pecorino vallesina, bacon croccante, erbe di campo strascinate
+    item-description: Burger di manzo, pecorino vallesina, speck croccante, erbe di campo strascinate
     item-allergeni: Glutine, Uova, Latte
     item-price: Singolo 13,4 | Doppio 17,9
     class-allergeni:
@@ -198,7 +198,7 @@ menu-hamburger-classici:
     item-price: Singolo 12,9 | Doppio 16,9
     class-allergeni:
     class-price:
-    alt-image: FMantovano
+    alt-image: Mantovano
   -
     item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
     item-name: Pollo
@@ -221,7 +221,7 @@ menu-hamburger-classici:
     item-image-16-9: assets/img/prod/PulledPork_rettangolare.jpg
     item-name: Pulled Pork
     item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante.
-    item-allergeni: Anidride solforosa e solfiti, Glutine, Latte, Senape, Uova
+    item-allergeni: Glutine, Latte, Uova, Senape, Solfiti
     item-price: 13,4
     class-allergeni:
     class-price:
@@ -243,25 +243,25 @@ menu-hamburger-pesce:
     item-name: Salmone
     item-description: Burger di salmone, cipolla caramellata, rucola, salsa piccante.
     item-allergeni: Glutine, Pesce, Latte, Uova
-    item-price: 13,9
+    item-price: 13,4
     class-allergeni:
     class-price:
     alt-image: Salmone
   -
     item-image-16-9: assets/img/prod/PesceSpada_rettangolare.jpg
     item-name: Pesce Spada
-    item-description: Burger di pesce spada, insalata, cipolla in agrodolce e salsa tartara.
+    item-description: Burger di pesce spada, insalata, pomodoro e salsa tartara.
     item-allergeni: Glutine, Pesce, Latte, Uova
-    item-price: 13,9
+    item-price: 13,4
     class-allergeni:
     class-price:
     alt-image: Pesce Spada
   -
     item-image-16-9: assets/img/prod/Tonno_rettangolare.jpg
     item-name: Tonno
-    item-description: Burger di tonno, insalata, pomodoro e maionese vegana.
-    item-allergeni: Glutine, Pesce, Latte, Uova, Sedano
-    item-price: 13,9
+    item-description: Burger di tonno, insalata, pomodoro, maionese, salsa teriyaki.
+    item-allergeni: Glutine, Pesce, Latte, Uova, Soia, Solfiti
+    item-price: 13,4
     class-allergeni:
     class-price:
     alt-image: Tonno
@@ -318,7 +318,7 @@ menu-secondi:
     item-image-16-9: assets/img/prod/CostineBBQ_rettangolare.jpg
     item-name: Costine BBQ
     item-description: Costine di suino allevato allo stato brado in salsa bbq.
-    item-allergeni: Anidride solforosa e solfiti, Glutine, Pesce, Semi di Sesamo
+    item-allergeni: Solfiti, Glutine, Pesce, Semi di Sesamo
     item-price: 14,9
     class-allergeni:
     class-price:
@@ -636,14 +636,14 @@ menu-vino-caraffa:
   -
     item-name: Rosso Piceno doc
     item-description: Vino Biologico. Cantina Collevite.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: Quarto 4 | Litro 11,5
     class-allergeni:
     class-price:
   -
     item-name: Verdicchio Matelica doc
     item-description: Cantina Belisario.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: Quarto 4 | Litro 11,5
     class-allergeni:
     class-price:
@@ -652,90 +652,91 @@ menu-vino:
   -
     item-name: Rosso Conero doc - Serrano
     item-description: Cantina Umani Ronchi. Colore rosso rubino con riflessi violacei. Profumo pulito di visciola matura. Gran polpa e gran rotondità di sapore, uniti ad una buona struttura garantiscono una piacevole bevibilità.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 15,5 | 4
     class-allergeni:
     class-price:
   -
     item-name: Rosso Conero doc - San Lorenzo
     item-description: Cantina Umani Ronchi. Colore rosso rubino con riflessi granata. Profumi di frutta rossa e spezie dolci, gusto ricco di polpa e freschezza, contraddistinto da tannini ben levigati e da un persistente e lungo finale fruttato.
+    item-allergeni: Solfiti
     item-price: 19
     class-allergeni:
     class-price:
   -
     item-name: Lacrima Morro Alba doc - Rubico
     item-description: Cantina Marotti Campi. Rosso vivace con riflessi porpora. Ha un aroma gradevole e fruttato con richiami discreti ai fiori di ciliegio e alla viola. Il gusto è morbido, vellutato e sapido.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 16 | 4
     class-allergeni:
     class-price:
   -
     item-name: Syrah Cortona DOC - Achelo
     item-description: Cantina La Braccesca - Antinori. Colore rosso rubino. Al naso regala profumi di frutti di bosco, sentori floreali di violetta e note di vaniglia, liquirizia e spezie scure. L'assaggio è morbido e avvolgente, con un piacevole finale balsamico e speziato.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 23
     class-allergeni:
     class-price:
   -
     item-name: Chianti Superiore DOCG - Santa Cristina
     item-description: Cantina Santa Cristina. Colore rosso rubino con riflessi violacei. Al naso è ricco, con note fruttate di marasca, erbe aromatiche e sensazioni balsamiche. Al palato è morbido, avvolgente, con tannini vellutati e un finale lungo e sapido.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 18 | 4,5
     class-allergeni:
     class-price:
   -
     item-name: Verdicchio doc - Villa Bianchi
     item-description: Cantina Umani Ronchi. Colore giallo paglierino brillante, con riflessi verdognoli. Al gusto esprime una piacevole struttura basata su note sapide e fresche, in cui risalta un finale con tipico sentore di mandorla.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 15,5 | 4
     class-allergeni:
     class-price:
   -
     item-name: Verdicchio Superiore Biologico doc - Casal di Serra
     item-description: Cantina Umani Ronchi. Colore giallo paglierino. Profumi intensi di fiori di campo, aromi di frutta a polpa gialla. Ricco e vellutato, con buona dose di freschezza e sapidità che bilancia l’eccellente morbidezza. Finale asciutto, persistente e fruttato.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 19
     class-allergeni:
     class-price:
   -
     item-name: Gewurztraminer doc
     item-description: Cantina H.Lun. Un inconfondibile bouquet speziato dal sentore di rose e frutta secca, una corposità generosa e un gusto pieno e intenso caratterizzano questo tipico vino bianco dell'Alto Adige.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 22
     class-allergeni:
     class-price:
   -
     item-name: Ribolla Gialla igt
     item-description: Cantina Branko. Al naso ricorda un bouquet di fiori bianchi. Al palato si evidenzia una giusta sapidità accompagnata dalla tipica acidità del vitigno.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 22 | 5
     class-allergeni:
     class-price:
   -
     item-name: Rosato igt biologico - Centovie
     item-description: Cantina Umani Ronchi. Colore rosa quarzo. Al naso profuma di giacinto e di rosa, di lampone e melograno, di rosmarino e caramella di liquirizia. In bocca ha acidità agrumata, è vivo e sapido.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 18 | 4
     class-allergeni:
     class-price:
   -
     item-name: Franciacorta docg - Cuvée Royale
     item-description: Cantina Marchesi Antinori. Colore giallo scarico, spuma cremosa con perlage fine e persistente. A livello aromatico si colgono note di pesca a polpa bianca, crosta di pane e lieviti. Notevole equilibrio e vivacità tipica del Brut.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 33
     class-allergeni:
     class-price:
   -
     item-name: Prosecco docg - Treser
     item-description: Cantina Serre di Pederiva. Brut. All’aspetto è giallo paglierino scarico con riflessi verdognoli, con spuma brillante e perlage fine e persistente. Frutta fresca e fiori estivi ne completano il profumo secco e croccante.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 18 | 4
     class-allergeni:
     class-price:
   -
     item-name: Spumante Dolce
     item-description: Cantina Serre di Pederiva. Colore giallo paglierino scarico, spuma sottile con perlage fine e persistente. Esprime gentili sentori floreali e fruttati, al palato si presenta gradevolmente amabile e vellutato.
-    item-allergeni: Anidride solforosa e solfiti
+    item-allergeni: Solfiti
     item-price: 14
     class-allergeni:
     class-price:
