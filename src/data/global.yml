@@ -211,7 +211,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/PolloCroccante_rettangolare.jpg
     item-name: Pollo Croccante
-    item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno, bacon croccante, cipolla in agrodolce, insalata e maionese.
+    item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno, bacon croccante, cipolla in agrodolce, insalata, maionese.
     item-allergeni: Glutine, Uova, Soia, Latte 
     item-price: 13,4
     class-allergeni: 
@@ -250,7 +250,7 @@ menu-hamburger-pesce:
   -
     item-image-16-9: assets/img/prod/PesceSpada_rettangolare.jpg
     item-name: Pesce Spada
-    item-description: Burger di pesce spada, insalata, pomodoro fresco e salsa tartara.
+    item-description: Burger di pesce spada, insalata, pomodoro fresco, salsa tartara.
     item-allergeni: Glutine, Uova, Pesce, Latte, Sedano, Senape
     item-price: 13,4
     class-allergeni:
@@ -270,7 +270,7 @@ menu-hamburger-vegetariano:
   -
     item-image-16-9: assets/img/prod/VegetarianoMediterraneo_rettangolare.jpg
     item-name: Vegetariano Mediterraneo
-    item-description: Burger di verdure (zucchine, peperoni, pomodori secchi, cipolle, melanzane), insalata, cipolla in agrodolce e maionese vegana.
+    item-description: Burger di verdure (zucchine, peperoni, pomodori secchi, cipolle, melanzane), insalata, cipolla in agrodolce, maionese vegana.
     item-allergeni: Glutine, Uova, Latte, Sedano 
     item-price: 12,9
     class-allergeni:
