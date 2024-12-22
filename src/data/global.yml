@@ -241,9 +241,9 @@ menu-hamburger-pesce:
   -
     item-image-16-9: assets/img/prod/Salmone_rettangolare.jpg
     item-name: Salmone
-    item-description: Burger di salmone, cipolla caramellata, rucola, salsa piccante.
+    item-description: Burger di salmone, stracciatella, chips di topinambur.
     item-allergeni: Glutine, Uova, Pesce, Latte
-    item-price: 13,4
+    item-price: 13,9
     class-allergeni:
     class-price:
     alt-image: Salmone
