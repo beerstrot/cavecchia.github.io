@@ -59,7 +59,7 @@ function setPreviousOrders () {
   const mesi = 'gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre'.split(', ');
   // const temp = carrelliCheckoutUser(user.orders);
   $('#carrelli-accordion').empty();
-  console.log(user)
+  // console.log(user)
   user.orders.forEach((order, count) => {
     // Ottiene gli ordini passati, le vecchie api avevano order_items, sul db c'è la stessa struttura dalle api
     // La nuova struttura delle api ha sale_items, prende solo gli ordini che hanno sale_items.
