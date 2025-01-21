@@ -59,18 +59,23 @@ function setPreviousOrders () {
   const mesi = 'gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre'.split(', ');
   // const temp = carrelliCheckoutUser(user.orders);
   $('#carrelli-accordion').empty();
+  console.log(user)
   user.orders.forEach((order, count) => {
-    const d = new Date(order.deliver_at);
-    const title = `Ordine del ${d.getDate()} ${mesi[d.getMonth()]} ${d.getFullYear()}`;
-    const li = $('<li/>', { class: 'accordion-item', 'data-accordion-item': true }).appendTo($('#carrelli-accordion'));
-    $('<a/>', { class: 'accordion-title', href: '#order-' + count })
-      .html(title).appendTo(li);
-    const temp = carrelloCheckoutUser(order.order_items, count);
-    $('<div/>', { class: 'accordion-content ordine-salvato-content clearfix', 'data-tab-content': true, id: 'order-' + count }).appendTo(li).html(temp);
-    $('#load-' + count).show();
-    $('#remove-' + count).show();
-    $('#load-' + count).on('click', () => loadPreviousOrder(count));
-    $('#remove-' + count).on('click', () => deletePreviousOrder(count));
+    // Ottiene gli ordini passati, le vecchie api avevano order_items, sul db c'è la stessa struttura dalle api
+    // La nuova struttura delle api ha sale_items, prende solo gli ordini che hanno sale_items.
+    if (order.sale_items){
+        const d = new Date(order.deliver_at);
+        const title = `Ordine del ${d.getDate()} ${mesi[d.getMonth()]} ${d.getFullYear()}`;
+        const li = $('<li/>', { class: 'accordion-item', 'data-accordion-item': true }).appendTo($('#carrelli-accordion'));
+        $('<a/>', { class: 'accordion-title', href: '#order-' + count })
+          .html(title).appendTo(li);
+        const temp = carrelloCheckoutUser(order.sale_items, count); // nelle vecchie api era order_items invece di sale_items
+        $('<div/>', { class: 'accordion-content ordine-salvato-content clearfix', 'data-tab-content': true, id: 'order-' + count }).appendTo(li).html(temp);
+        $('#load-' + count).show();
+        $('#remove-' + count).show();
+        $('#load-' + count).on('click', () => loadPreviousOrder(count));
+        $('#remove-' + count).on('click', () => deletePreviousOrder(count));
+    }
   });
   // const li = $('<li/>', { class: 'accordion-item ordine-salvato-item', 'data-accordion-item': true }).appendTo($('#carrelli-accordion'));
   // $('<a/>', { class: 'accordion-title', href: '#dummy' }).html('ordine dummy').appendTo(li);

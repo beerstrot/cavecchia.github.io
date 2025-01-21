@@ -113,9 +113,9 @@ function setSendOrder () {
   });
   const data = {
     order: {
-      order_items: ps,
+      order_items: ps,  // Y000 FORSE NON NECESSARIO sale_items
     },
-    order_customer: {
+    order_customer: {  // Y000 FORSE NON NECESSARIO sale_customer
       email: client.email,
       first_name: client.name,
       last_name: client.surname,
@@ -128,6 +128,8 @@ function setSendOrder () {
       return window.alert('Seleziona l\'orario di ritiro dell\'asporto');
     }
     data.takeout_time = window.localStorage.timeSlot;
+    console.log("REGISTERORDER DATA")
+    console.log(data)
     mkCall(
       'POST',
       { action: 'registerOrder', data },
