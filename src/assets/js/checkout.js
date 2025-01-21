@@ -128,8 +128,8 @@ function setSendOrder () {
       return window.alert('Seleziona l\'orario di ritiro dell\'asporto');
     }
     data.takeout_time = window.localStorage.timeSlot;
-    console.log("REGISTERORDER DATA")
-    console.log(data)
+    // console.log("REGISTERORDER DATA")
+    // console.log(data)
     mkCall(
       'POST',
       { action: 'registerOrder', data },
