@@ -85,7 +85,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/CheeseburgerSpecial_rettangolare.jpg
     item-name: Cheeseburger Special
-    item-description: Burger di manzo, cheddar, cipolle rosse in agrodolce, insalata croccante, salsa burger.
+    item-description: Burger di manzo, cheddar, cipolle rosse in agrodolce, insalata, salsa burger.
     item-allergeni: Glutine, Uova, Latte, Senape
     item-price: Singolo 12,9 | Doppio 16,9
     class-allergeni:
@@ -148,7 +148,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/Primavera_rettangolare.jpg
     item-name: Primavera
-    item-description: Burger di manzo, composta di feta, pomodorini e timo; insalata riccia.
+    item-description: Burger di manzo, composta di feta, pomodorini e timo; insalata.
     item-allergeni: Glutine, Uova, Latte
     item-price: Singolo 12,9 | Doppio 16,9
     class-allergeni:
@@ -220,7 +220,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/PulledPork_rettangolare.jpg
     item-name: Pulled Pork
-    item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata riccia, salsa piccante.
+    item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata, salsa piccante.
     item-allergeni: Glutine, Uova, Latte, Senape, Anidride solforosa e solfiti
     item-price: 13,4
     class-allergeni:
@@ -305,15 +305,15 @@ menu-secondi:
     class-allergeni: 
     class-price:
     alt-image: Fish & Chips
-  -
-    item-image-16-9: assets/img/prod/CotolettadiPollo_rettangolare.jpg
-    item-name: Cotoletta di Pollo
-    item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno. Servita con patate fritte.
-    item-allergeni: Glutine, Soia
-    item-price: 12,9
-    class-allergeni: 
-    class-price:
-    alt-image: Cotoletta di Pollo
+  # -
+  #   item-image-16-9: assets/img/prod/CotolettadiPollo_rettangolare.jpg
+  #   item-name: Cotoletta di Pollo
+  #   item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno. Servita con patate fritte.
+  #   item-allergeni: Glutine, Soia
+  #   item-price: 12,9
+  #   class-allergeni: 
+  #   class-price:
+  #   alt-image: Cotoletta di Pollo
   -
     item-image-16-9: assets/img/prod/CostineBBQ_rettangolare.jpg
     item-name: Costine BBQ
@@ -656,13 +656,13 @@ menu-vino:
     item-price: 15,5 | 4
     class-allergeni:
     class-price:
-  -
-    item-name: Rosso Conero doc - San Lorenzo
-    item-description: Cantina Umani Ronchi. Colore rosso rubino con riflessi granata. Profumi di frutta rossa e spezie dolci, gusto ricco di polpa e freschezza, contraddistinto da tannini ben levigati e da un persistente e lungo finale fruttato.
-    item-allergeni: Anidride solforosa e solfiti
-    item-price: 19
-    class-allergeni:
-    class-price:
+  # -
+  #   item-name: Rosso Conero doc - San Lorenzo
+  #   item-description: Cantina Umani Ronchi. Colore rosso rubino con riflessi granata. Profumi di frutta rossa e spezie dolci, gusto ricco di polpa e freschezza, contraddistinto da tannini ben levigati e da un persistente e lungo finale fruttato.
+  #   item-allergeni: Anidride solforosa e solfiti
+  #   item-price: 19
+  #   class-allergeni:
+  #   class-price:
   -
     item-name: Lacrima Morro Alba doc - Rubico
     item-description: Cantina Marotti Campi. Rosso vivace con riflessi porpora. Ha un aroma gradevole e fruttato con richiami discreti ai fiori di ciliegio e alla viola. Il gusto è morbido, vellutato e sapido.
