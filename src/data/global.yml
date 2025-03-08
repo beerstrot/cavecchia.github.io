@@ -375,7 +375,7 @@ menu-dolce:
     item-image-16-9: assets/img/prod/Whoop_rettangolare.jpg
     item-name: Whoop
     item-description: Tre biscotti al cioccolato ripieni di delicata crema al burro di arachidi.
-    item-allergeni: Glutine, Latte, Uova, Arachidi
+    item-allergeni: Latte, Uova, Arachidi
     item-price: 5,5
     class-allergeni:
     class-price:
