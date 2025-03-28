@@ -76,7 +76,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/Beerstrot_rettangolare.jpg
     item-name: Beerstrot
-    item-description: Burger di manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodorini confit.
+    item-description: Burger di manzo, cheddar, bacon croccante, cipolla caramellata, insalata, pomodori confit.
     item-allergeni: Glutine, Uova, Latte
     item-price: Singolo 13,4 | Doppio 17,9
     class-allergeni:
@@ -112,7 +112,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/CacioePepe_rettangolare.jpg
     item-name: Cacio e Pepe
-    item-description: Burger di manzo (180 grammi), pecorino vallesina, guanciale, pepe.
+    item-description: Burger di manzo, guanciale, crema pecorino e pepe.
     item-allergeni: Glutine, Uova, Latte
     item-price: Singolo 13,4 | Doppio 17,9
     class-allergeni:
@@ -166,7 +166,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/Norma_rettangolare.jpg
     item-name: Norma
-    item-description: Burger di manzo, crema di melanzane e basilico, pomodorini confit, ricotta salata.
+    item-description: Burger di manzo, crema di melanzane e basilico, pomodori confit, ricotta salata.
     item-allergeni: Glutine, Uova, Latte
     item-price: Singolo 13,4 | Doppio 17,9
     class-allergeni:
@@ -175,7 +175,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/Deciso_rettangolare.jpg
     item-name: Deciso
-    item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodorini confit
+    item-description: Burger di manzo (180 grammi), gorgonzola, guanciale, pomodori confit
     item-allergeni: Glutine, Uova, Latte
     item-price: Singolo 13,4 | Doppio 17,9
     class-allergeni:
@@ -211,7 +211,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/PolloCroccante_rettangolare.jpg
     item-name: Pollo Croccante
-    item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno, bacon croccante, cipolla in agrodolce, insalata, maionese.
+    item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno, bacon croccante, cipolla in agrodolce, insalata, maionese, pane ciabatta.
     item-allergeni: Glutine, Uova, Soia, Latte 
     item-price: 13,4
     class-allergeni: 
@@ -220,7 +220,7 @@ menu-hamburger:
   -
     item-image-16-9: assets/img/prod/PulledPork_rettangolare.jpg
     item-name: Pulled Pork
-    item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata, salsa piccante.
+    item-description: Maiale sfilacciato, coleslaw, cetriolini, insalata, salsa piccante, pane ciabatta.
     item-allergeni: Glutine, Uova, Latte, Senape, Anidride solforosa e solfiti
     item-price: 13,4
     class-allergeni:
