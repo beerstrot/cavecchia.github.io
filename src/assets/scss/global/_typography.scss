@@ -57,4 +57,7 @@ a.highlight:hover {
 .input-group-label {
     padding-right: 1px;
     padding-left: 1px;
+    include breakpoint(small only) {
+       padding: 0px;
+    }
 }
