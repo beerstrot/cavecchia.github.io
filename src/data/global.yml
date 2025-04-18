@@ -436,6 +436,20 @@ menu-bevanda:
     class-allergeni: hide
     class-price:
   -
+    item-name: Estathé Limone
+    item-description: Tè al limone 40cl.
+    item-allergeni: nessuno
+    item-price: 3,5
+    class-allergeni: hide
+    class-price:
+  -
+    item-name: Estathé Pesca
+    item-description: Tè alla pesca 40cl.
+    item-allergeni: nessuno
+    item-price: 3,5
+    class-allergeni: hide
+    class-price:
+  -
     item-name: Succo alla Pesca
     item-description: Succo alla pesca. 200ml.
     item-allergeni: nessuno
