@@ -380,6 +380,15 @@ menu-dolce:
     class-allergeni:
     class-price:
     alt-image: Whoop
+  -
+    item-image-16-9: assets/img/prod/Anicetti_rettangolare.jpg
+    item-name: Anicetti
+    item-description: Sei biscotti secchi all'anice.
+    item-allergeni: Glutine, Anidride solforosa e solfiti
+    item-price: 4,5
+    class-allergeni:
+    class-price:
+    alt-image: Anicetti
   # -
   #   item-image-16-9: assets/img/prod/Crumble_rettangolare.jpg
   #   item-name: Crumble
