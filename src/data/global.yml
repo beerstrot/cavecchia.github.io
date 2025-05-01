@@ -851,9 +851,9 @@ menu-drinks:
   -
     item-name: Spritz
     item-description: Aperol o Campari.
-    item-allergeni:
+    item-allergeni: Anidride solforosa e solfiti
     item-price: 6
-    class-allergeni: hide
+    class-allergeni:
     class-price:
   -
     item-name: Gin Tonic Ginpilz
