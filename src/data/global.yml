@@ -199,19 +199,19 @@ menu-hamburger:
     class-allergeni:
     class-price:
     alt-image: Mantovano
-  -
-    item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
-    item-name: Pollo
-    item-description: Burger di petto di pollo, fontina, cipolla caramellata, rucola, salsa allo yogurt.
-    item-allergeni: Glutine, Uova, Latte
-    item-price: Singolo 12,9 | Doppio 16,9
-    class-allergeni:
-    class-price:
-    alt-image: Pollo
+  # -
+  #   item-image-16-9: assets/img/prod/Pollo_rettangolare.jpg
+  #   item-name: Pollo
+  #   item-description: Burger di petto di pollo, fontina, cipolla caramellata, rucola, salsa allo yogurt.
+  #   item-allergeni: Glutine, Uova, Latte
+  #   item-price: Singolo 12,9 | Doppio 16,9
+  #   class-allergeni:
+  #   class-price:
+  #   alt-image: Pollo
   -
     item-image-16-9: assets/img/prod/PolloCroccante_rettangolare.jpg
     item-name: Pollo Croccante
-    item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno, bacon croccante, cipolla in agrodolce, insalata, maionese, pane ciabatta.
+    item-description: Cotoletta di petto di pollo super croccante e succosissima all'interno con panatura leggermente speziata, bacon croccante, cipolla in agrodolce, insalata, maionese, pane ciabatta.
     item-allergeni: Glutine, Uova, Soia, Latte 
     item-price: 13,4
     class-allergeni: 
@@ -353,15 +353,15 @@ menu-dolce:
     class-allergeni:
     class-price:
     alt-image: Blondie
-  # -
-  #   item-image-16-9: assets/img/prod/PannaCotta_rettangolare.jpg
-  #   item-name: Panna Cotta
-  #   item-description: Morbida e vellutata. Ricoperta a scelta con cioccolato o frutti di bosco.
-  #   item-allergeni: Latte
-  #   item-price: 5
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Panna Cotta
+  -
+    item-image-16-9: assets/img/prod/PannaCotta_rettangolare.jpg
+    item-name: Panna Cotta
+    item-description: Morbida e vellutata. Ricoperta a scelta con cioccolato o frutti di bosco.
+    item-allergeni: Latte
+    item-price: 5,5
+    class-allergeni:
+    class-price:
+    alt-image: Panna Cotta
   -
     item-image-16-9: assets/img/prod/Birramisu_rettangolare.jpg
     item-name: Birramisù
@@ -389,15 +389,15 @@ menu-dolce:
     class-allergeni:
     class-price:
     alt-image: Anicetti
-  # -
-  #   item-image-16-9: assets/img/prod/Crumble_rettangolare.jpg
-  #   item-name: Crumble
-  #   item-description: Crema chantilly su croccante crumble di farina di mais, cannella e scaglie di cioccolato fondente.
-  #   item-allergeni: Latte, Uova
-  #   item-price: 5
-  #   class-allergeni:
-  #   class-price:
-  #   alt-image: Crumble
+  -
+    item-image-16-9: assets/img/prod/Crumble_rettangolare.jpg
+    item-name: Crumble
+    item-description: Crema chantilly su croccante crumble di farina di mais, cannella e scaglie di cioccolato fondente.
+    item-allergeni: Latte, Uova
+    item-price: 6
+    class-allergeni:
+    class-price:
+    alt-image: Crumble
   # -
   #   item-image-16-9: assets/img/prod/Cioccolatosa_rettangolare.jpg
   #   item-name: Cioccolatosa
